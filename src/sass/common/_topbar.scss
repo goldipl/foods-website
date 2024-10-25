@@ -1,0 +1,46 @@
+.topbar {
+  background-color: $main-bg-green-color;
+  height: auto;
+  padding: 4px 0;
+  border-top: 1px solid $grey-border-color01;
+  &-wrapper {
+    position: relative;
+    max-width: calc(1280px - 160px);
+    width: 100%;
+    margin: 0 auto;
+    code {
+      display: inline-flex;
+      font-family: "Source Code Pro", monospace;
+      font-weight: 700;
+      margin: 0 8px;
+    }
+    p {
+      color: $color-black;
+      font-size: 16px;
+      text-align: center;
+      margin: 8px 0;
+    }
+    a {
+      display: inline-flex;
+      margin-left: 4px;
+      text-align: center;
+      color: $color-white;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .topbar {
+    &-wrapper {
+      max-width: unset;
+      width: calc(100% - 64px);
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
