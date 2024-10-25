@@ -8,7 +8,7 @@ const Topbar = () => {
           Kod <strong>-10%</strong> zniżki <code>Karola10GTX</code> na produkty
           w sklepie{" "}
           <Link target="_blank" href="https://glutenex.pl/">
-            Glutenex
+            Glutenex 🛒
           </Link>
         </p>
       </div>
