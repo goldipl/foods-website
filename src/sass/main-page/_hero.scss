@@ -1,8 +1,10 @@
 #hero {
+  position: relative;
   display: flex;
   width: 100%;
   background-color: $white-bg-color;
   border-bottom: 1px solid $grey-border-color01;
+  z-index: 0;
   .hero-wrapper {
     display: flex;
     width: 100%;
