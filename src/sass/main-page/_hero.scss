@@ -1,7 +1,32 @@
 #hero {
-  min-height: 70dvh;
-  padding: 120px 0;
-  p {
-    text-align: center;
+  display: flex;
+  width: 100%;
+  background-color: $white-bg-color;
+  border-bottom: 1px solid $grey-border-color01;
+  .hero-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    .swiper {
+      height: 600px;
+      &-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &-button-next,
+      &-button-prev {
+        color: $main-bg-green-color;
+      }
+      &-pagination-bullet {
+        width: 14px;
+        height: 14px;
+        border: 2px solid $grey-border-color01;
+      }
+      &-pagination-bullet-active {
+        background-color: $main-bg-green-color;
+      }
+    }
   }
 }
