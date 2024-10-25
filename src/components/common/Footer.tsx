@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-wrapper">
-        <p>#BezglutenowaKarola © {currentYear}</p>
+        <p>@BezglutenowaKarola © {currentYear}</p>
         <span>
           Projekt i realizacja:
           <Link href="https://mgodlewskidev.pl/" target="_blank">

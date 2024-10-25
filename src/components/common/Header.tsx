@@ -160,7 +160,7 @@ const Header = () => {
                   height={40}
                   width={40}
                 />
-                <span>#bezglutenowakarola</span>
+                <span>@bezglutenowakarola</span>
               </Link>
             </li>
           </ul>
