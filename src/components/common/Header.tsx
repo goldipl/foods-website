@@ -147,7 +147,7 @@ const Header = () => {
                 Kontakt
               </Link>
             </li>
-            <li>
+            <li className="header-social-link">
               <Link
                 href="https://www.instagram.com/bezglutenowakarola/"
                 onClick={handleCloseDropdown}
@@ -160,6 +160,7 @@ const Header = () => {
                   height={40}
                   width={40}
                 />
+                <span>#bezglutenowakarola</span>
               </Link>
             </li>
           </ul>
