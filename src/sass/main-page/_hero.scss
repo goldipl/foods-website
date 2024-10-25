@@ -36,6 +36,57 @@
         height: 16px;
         background-color: $main-bg-green-color;
       }
+      .slide-content {
+        .swiper-slide-box {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+          &.text-right-side {
+            .swiper-slide-box__text {
+              display: flex;
+              flex-direction: column;
+              align-items: end;
+              margin-left: 40px;
+              text-align: right;
+            }
+          }
+          &__text {
+            display: flex;
+            flex-direction: column;
+            h2 {
+              display: inline-flex;
+              font-size: 48px;
+              width: 400px;
+              margin-bottom: 24px;
+            }
+            .hero-cta {
+              font-size: 16px;
+              text-decoration: none;
+              background: linear-gradient(
+                $main-bg-green-color,
+                $main-bg-green-color02
+              );
+              width: max-content;
+              padding: 8px 24px;
+              border-radius: 32px;
+              color: $color-white;
+              &:hover {
+                background: linear-gradient(
+                  $main-bg-green-color02,
+                  $main-bg-green-color
+                );
+              }
+            }
+          }
+          &__img {
+            img {
+              max-width: 450px;
+              height: auto;
+            }
+          }
+        }
+      }
     }
   }
 }

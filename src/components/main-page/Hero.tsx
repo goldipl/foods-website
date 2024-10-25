@@ -2,6 +2,12 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
 import { Pagination, Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
+import Image from "next/image";
+
+import avocadoImg from "./../../../public/img/hero/avocado.png";
+import lemonsImg from "./../../../public/img/hero/lemons.png";
+import Link from "next/link";
 
 SwiperCore.use([Pagination, Navigation]);
 
@@ -15,23 +21,70 @@ const Hero = () => {
           navigation
           pagination={{ clickable: true }}
           loop={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay, Pagination, Navigation]}
         >
           <SwiperSlide>
             <div className="slide-content">
-              <h2>Slide 1</h2>
-              <p>This is the first slide.</p>
+              <div className="swiper-slide-box">
+                <div className="swiper-slide-box__text">
+                  <h2>Zdrowo, smacznie, bezglutenowo!</h2>
+                  <Link className="hero-cta" href="">
+                    Sprawdź moje przepisy
+                  </Link>
+                </div>
+                <div className="swiper-slide-box__img">
+                  <Image
+                    src={avocadoImg}
+                    alt="awokado"
+                    width={450}
+                    height={450}
+                  ></Image>
+                </div>
+              </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="slide-content">
-              <h2>Slide 2</h2>
-              <p>This is the second slide.</p>
+              <div className="swiper-slide-box text-right-side">
+                <div className="swiper-slide-box__img">
+                  <Image
+                    src={lemonsImg}
+                    alt="cytryny"
+                    width={450}
+                    height={450}
+                  ></Image>
+                </div>
+                <div className="swiper-slide-box__text">
+                  <h2>Przykładowy tekst</h2>
+                  <Link className="hero-cta" href="">
+                    Przykładowy tekst
+                  </Link>
+                </div>
+              </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="slide-content">
-              <h2>Slide 3</h2>
-              <p>This is the third slide.</p>
+              <div className="swiper-slide-box">
+                <div className="swiper-slide-box__text">
+                  <h2>Przykładowy tekst</h2>
+                  <Link className="hero-cta" href="">
+                    Przykładowy tekst
+                  </Link>
+                </div>
+                <div className="swiper-slide-box__img">
+                  <Image
+                    src={avocadoImg}
+                    alt="awokado"
+                    width={450}
+                    height={450}
+                  ></Image>
+                </div>
+              </div>
             </div>
           </SwiperSlide>
         </Swiper>
