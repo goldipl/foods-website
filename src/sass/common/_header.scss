@@ -8,7 +8,6 @@ header {
     width: 100%;
     background-color: $white-bg-color;
     border-bottom: 1px solid $grey-border-color01;
-    padding: 14px 0;
     &-wrapper {
       position: relative;
       display: flex;
@@ -130,13 +129,13 @@ header {
         align-items: center;
         &__logo {
           width: auto;
-          height: 36px;
+          height: 68px;
           margin-left: 12px;
           a {
             img {
               margin: 0;
               width: auto;
-              height: 36px;
+              height: 68px;
             }
           }
         }
@@ -184,6 +183,7 @@ header {
               .header-social-link {
                 > a {
                   font-size: 15px;
+                  justify-content: flex-start;
                   .social-icon {
                     margin-right: 8px;
                   }
