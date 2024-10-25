@@ -1,8 +1,15 @@
-@import "./variables";
+@import "./global/fonts";
+@import "./global/variables";
+@import "./global/reset";
+@import "./global/global";
 
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: $white-color;
-}
+// Mixins
+@import "./mixins/nav-link-mixin";
+
+// Common styles
+@import "./common/header";
+@import "./common/footer";
+@import "./common/hamburger";
+
+// Main page
+@import "./main-page/hero";

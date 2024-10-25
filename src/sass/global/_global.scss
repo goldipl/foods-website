@@ -1,0 +1,22 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  &.blocked-body {
+    overflow: hidden;
+  }
+}
+
+body {
+  background-color: $white-bg-color;
+  section {
+    h2 {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
