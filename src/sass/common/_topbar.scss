@@ -13,6 +13,8 @@
       font-family: "Zen Maru Gothic", sans-serif;
       font-weight: 700;
       margin: 0 8px;
+      background-color: $white-bg-color;
+      padding: 1px 8px;
     }
     p {
       color: $color-black;
@@ -29,6 +31,10 @@
       text-decoration: none;
       &:hover {
         text-decoration: underline;
+      }
+      .cart-icon {
+        display: inline-flex;
+        margin-left: 6px;
       }
     }
   }

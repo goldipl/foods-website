@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import cartIcon from "./../../../public/icons/header/cart.svg";
 
 const Topbar = () => {
   return (
@@ -6,9 +8,16 @@ const Topbar = () => {
       <div className="topbar-wrapper">
         <p>
           Kod <strong>-10%</strong> zniżki <code>Karola10GTX</code> na produkty
-          w sklepie{" "}
+          w sklepie
           <Link target="_blank" href="https://glutenex.pl/">
-            Glutenex 🛒
+            Glutenex
+            <Image
+              className="cart-icon"
+              src={cartIcon}
+              width={24}
+              height={24}
+              alt="koszyk"
+            ></Image>
           </Link>
         </p>
       </div>
