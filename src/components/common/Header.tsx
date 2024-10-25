@@ -1,8 +1,8 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import logo from "@/assets/icons/header/bezglutenowakarola-logo.svg";
-import menuDownIcon from "@/assets/icons/common/menu-down-icon.svg";
-import instagramIcon from "@/assets/icons/common/instagram.svg";
+import logo from "./../../../public/icons/header/bezglutenowakarola-logo.svg";
+import menuDownIcon from "./../../../public/icons/common/menu-down-icon.svg";
+import instagramIcon from "./../../../public/icons/common/instagram.svg";
 import Image from "next/image";
 
 const Header = () => {
