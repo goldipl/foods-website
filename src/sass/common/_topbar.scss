@@ -24,6 +24,8 @@
     }
     a {
       display: inline-flex;
+      align-items: center;
+      justify-content: center;
       margin-left: 4px;
       text-align: center;
       color: $color-black;
@@ -47,6 +49,13 @@
       width: calc(100% - 64px);
       p {
         font-size: 14px;
+        line-height: 22px;
+      }
+      a {
+        .cart-icon {
+          width: 20px;
+          height: auto;
+        }
       }
     }
   }
