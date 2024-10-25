@@ -21,12 +21,19 @@
       &-button-prev {
         color: $main-bg-green-color;
       }
+      &-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       &-pagination-bullet {
-        width: 14px;
-        height: 14px;
+        width: 10px;
+        height: 10px;
         border: 2px solid $grey-border-color01;
       }
       &-pagination-bullet-active {
+        width: 16px;
+        height: 16px;
         background-color: $main-bg-green-color;
       }
     }
