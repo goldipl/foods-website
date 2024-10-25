@@ -131,10 +131,12 @@ header {
       &-wrapper {
         align-items: center;
         &__logo {
+          height: 70px;
           a {
             img {
-              margin: 4px 0 0 8px;
-              width: 260px;
+              margin: 0;
+              width: auto;
+              height: 70px;
             }
           }
         }
@@ -159,8 +161,13 @@ header {
               flex-direction: column;
               justify-content: flex-start;
               align-items: flex-start;
+              width: calc(100% - 16px);
+              > li {
+                border-bottom: 1px solid $grey-border-color01;
+              }
               li {
-                padding: 8px 0;
+                padding: 12px 0;
+                width: 100%;
                 &::after {
                   display: none;
                 }
@@ -168,6 +175,7 @@ header {
                   font-size: 19px;
                   padding: 0 0 0 8px;
                   color: $color-black;
+                  width: 100%;
                   &:hover {
                     color: $color-black;
                   }
@@ -187,6 +195,8 @@ header {
                 span {
                   font-size: 19px;
                   margin: 0;
+                  width: 100%;
+                  padding: 12px;
                   color: $color-black;
                   &:hover {
                     color: $color-black;
@@ -207,6 +217,7 @@ header {
                   background-color: unset;
                   &.active {
                     display: flex;
+                    border-bottom: 0;
                   }
                   li {
                     padding: 0;
