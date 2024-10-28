@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import logo from "./../../../public/icons/header/bezglutenowakarola-logo2.svg";
+import logo from "./../../../public/icons/header/bezglutenowakarola-logo.svg";
 import menuDownIcon from "./../../../public/icons/common/menu-down-icon.svg";
 import instagramIcon from "./../../../public/icons/common/instagram.svg";
 import Image from "next/image";
