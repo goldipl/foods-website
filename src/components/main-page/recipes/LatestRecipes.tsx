@@ -95,7 +95,7 @@ const LatestRecipes = () => {
             </span>
           </div>
           <div className="listing-v1-slot__labels">
-            <span className="dessert-label">Desery</span>
+            <span className="dessert-label">Deser</span>
           </div>
           <div className="listing-v1-slot__zoom">
             <div className="zoom-box">
