@@ -127,13 +127,13 @@ const Header = () => {
                 </li>
                 <li>
                   <Link href="" onClick={handleCloseDropdown}>
-                    Świat
+                    Europa
                   </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link href="#konsultacje" onClick={handleCloseDropdown}>
+              <Link href="#celiakia" onClick={handleCloseDropdown}>
                 Celiakia - co dalej?
               </Link>
             </li>
