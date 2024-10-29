@@ -7,6 +7,7 @@ import Footer from "@/components/common/Footer";
 import Hero from "@/components/main-page/Hero";
 import WelcomeSection from "@/components/main-page/WelcomeSection";
 import BoxesInfoSection from "@/components/main-page/BoxesInfoSection";
+import RecipesSection from "@/components/main-page/RecipesSection";
 
 const index = () => {
   return (
@@ -19,6 +20,7 @@ const index = () => {
         <Hero />
         <WelcomeSection />
         <BoxesInfoSection />
+        <RecipesSection />
       </main>
       <footer>
         <Footer />
