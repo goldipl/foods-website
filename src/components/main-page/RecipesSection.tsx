@@ -24,7 +24,12 @@ const RecipesSection = () => {
               ></Image>
             </div>
             <div className="listing-v1-slot__text">
-              <span>Makaron z dynią i szyneczką :)</span>
+              <span>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Laborum quam laboriosam in tempore veritatis perspiciatis quo
+                expedita officiis eaque esse recusandae aperiam maxime impedit,
+                deleniti sequi similique animi voluptate nesciunt.
+              </span>
             </div>
             <div className="listing-v1-slot__labels">
               <span>Obiad</span>
@@ -50,7 +55,12 @@ const RecipesSection = () => {
               ></Image>
             </div>
             <div className="listing-v1-slot__text">
-              <span>Makaron z dynią i szyneczką :)</span>
+              <span>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Laborum quam laboriosam in tempore veritatis perspiciatis quo
+                expedita officiis eaque esse recusandae aperiam maxime impedit,
+                deleniti sequi similique animi voluptate nesciunt.
+              </span>
             </div>
             <div className="listing-v1-slot__labels">
               <span>Obiad</span>
@@ -76,7 +86,12 @@ const RecipesSection = () => {
               ></Image>
             </div>
             <div className="listing-v1-slot__text">
-              <span>Makaron z dynią i szyneczką :)</span>
+              <span>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Laborum quam laboriosam in tempore veritatis perspiciatis quo
+                expedita officiis eaque esse recusandae aperiam maxime impedit,
+                deleniti sequi similique animi voluptate nesciunt.
+              </span>
             </div>
             <div className="listing-v1-slot__labels">
               <span>Obiad</span>
