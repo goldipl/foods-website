@@ -1,0 +1,22 @@
+#boxes-info-section {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: $light-grey-bg;
+  border-bottom: 1px solid $grey-border-color01;
+  z-index: 0;
+  .boxes-info-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 100px 0;
+    h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}

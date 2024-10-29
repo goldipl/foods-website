@@ -6,6 +6,7 @@ import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import Hero from "@/components/main-page/Hero";
 import WelcomeSection from "@/components/main-page/WelcomeSection";
+import BoxesInfoSection from "@/components/main-page/BoxesInfoSection";
 
 const index = () => {
   return (
@@ -17,6 +18,7 @@ const index = () => {
       <main>
         <Hero />
         <WelcomeSection />
+        <BoxesInfoSection />
       </main>
       <footer>
         <Footer />
