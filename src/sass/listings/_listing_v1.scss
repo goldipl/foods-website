@@ -9,7 +9,30 @@
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: auto;
+    height: 380px;
+    overflow: hidden;
+    &:has(.breakfast-label) {
+      .zoom-box {
+        span {
+          color: $breakfast-label-bg;
+        }
+        svg {
+          filter: brightness(0) saturate(100%) invert(91%) sepia(54%)
+            saturate(2411%) hue-rotate(328deg) brightness(121%) contrast(92%);
+        }
+      }
+    }
+    &:has(.dessert-label) {
+      .zoom-box {
+        span {
+          color: $dessert-label-bg;
+        }
+        svg {
+          filter: brightness(0) saturate(100%) invert(78%) sepia(12%)
+            saturate(4609%) hue-rotate(160deg) brightness(103%) contrast(97%);
+        }
+      }
+    }
     &:hover {
       box-shadow: $green-box-shadow;
       .listing-v1-slot__text {
@@ -66,10 +89,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $main-bg-green-color03;
         font-size: 14px;
         font-weight: 400;
         padding: 2px 12px;
+        &.breakfast-label {
+          background-color: $breakfast-label-bg;
+        }
+        &.dinner-label {
+          background-color: $dinner-label-bg;
+        }
+        &.dessert-label {
+          background-color: $dessert-label-bg;
+        }
       }
     }
     &__zoom {
@@ -82,7 +113,8 @@
         svg {
           width: 120px;
           height: 120px;
-          filter: invert(1);
+          filter: brightness(0) saturate(100%) invert(81%) sepia(16%)
+            saturate(6619%) hue-rotate(53deg) brightness(99%) contrast(99%);
         }
         span {
           display: flex;
