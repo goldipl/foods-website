@@ -13,7 +13,7 @@ const LatestRecipes = () => {
       <div className="listing-v1">
         {/* Recipe slot */}
         <Link
-          href="https://www.instagram.com/p/DBdvWQouPv2/"
+          href="https://www.instagram.com/p/DBnv7v3OYgM/"
           className="listing-v1-slot"
         >
           <div className="listing-v1-slot__img">
@@ -75,7 +75,7 @@ const LatestRecipes = () => {
         </Link>
         {/* Recipe slot */}
         <Link
-          href="https://www.instagram.com/p/DBdvWQouPv2/"
+          href="https://www.instagram.com/p/DBrI559o2Eb/"
           className="listing-v1-slot"
         >
           <div className="listing-v1-slot__img">
