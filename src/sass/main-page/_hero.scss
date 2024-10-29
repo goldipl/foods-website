@@ -19,9 +19,37 @@
         align-items: center;
         user-select: none;
       }
-      &-button-next,
+      &-button-next {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        background-image: url("./../../../public/icons/hero/arrow-right.svg");
+        background-size: contain;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center center;
+        top: 50%;
+        right: 40px;
+        z-index: 1;
+        &::after {
+          font-size: 0;
+        }
+      }
       &-button-prev {
-        color: $main-bg-green-color;
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        background-image: url("./../../../public/icons/hero/arrow-left.svg");
+        background-size: contain;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center center;
+        top: 50%;
+        left: 40px;
+        z-index: 1;
+        &::after {
+          font-size: 0;
+        }
       }
       &-pagination {
         display: flex;
@@ -106,6 +134,12 @@
       padding-bottom: 8px;
       .swiper {
         height: auto;
+        &-button-next {
+          right: 0;
+        }
+        &-button-prev {
+          left: 0;
+        }
         .slide-content {
           .swiper-slide-box {
             display: flex;
