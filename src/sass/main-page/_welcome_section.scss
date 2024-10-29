@@ -10,7 +10,35 @@
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    height: 600px;
-    padding: 24px 16px;
+    padding: 80px 16px;
+    .img-text-box {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 40px;
+      height: auto;
+      .img-box {
+        .border-img {
+          outline: 1px solid $green-border-color01;
+          border: 16px solid $white-border-color01;
+          height: auto;
+        }
+      }
+      .text-box {
+        h1 {
+          margin-bottom: 12px;
+        }
+        h2 {
+          margin-bottom: 12px;
+          font-weight: 400;
+          color: $color-green01;
+        }
+        p {
+          font-size: 16px;
+          margin-bottom: 8px;
+          font-weight: 300;
+        }
+      }
+    }
   }
 }
