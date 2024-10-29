@@ -15,6 +15,7 @@ const LatestRecipes = () => {
         <Link
           href="https://www.instagram.com/p/DBnv7v3OYgM/"
           className="listing-v1-slot"
+          target="_blank"
         >
           <div className="listing-v1-slot__img">
             <Image
@@ -46,6 +47,7 @@ const LatestRecipes = () => {
         <Link
           href="https://www.instagram.com/p/DBdvWQouPv2/"
           className="listing-v1-slot"
+          target="_blank"
         >
           <div className="listing-v1-slot__img">
             <Image
@@ -77,6 +79,7 @@ const LatestRecipes = () => {
         <Link
           href="https://www.instagram.com/p/DBrI559o2Eb/"
           className="listing-v1-slot"
+          target="_blank"
         >
           <div className="listing-v1-slot__img">
             <Image
@@ -108,6 +111,7 @@ const LatestRecipes = () => {
         <Link
           href="https://www.instagram.com/p/DBdvWQouPv2/"
           className="listing-v1-slot"
+          target="_blank"
         >
           <div className="listing-v1-slot__img">
             <Image
@@ -139,6 +143,7 @@ const LatestRecipes = () => {
         <Link
           href="https://www.instagram.com/p/DBdvWQouPv2/"
           className="listing-v1-slot"
+          target="_blank"
         >
           <div className="listing-v1-slot__img">
             <Image
