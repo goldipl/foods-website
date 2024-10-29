@@ -7,6 +7,8 @@ import Image from "next/image";
 
 import avocadoImg from "./../../../public/img/hero/avocado.png";
 import lemonsImg from "./../../../public/img/hero/lemons.png";
+import orangeImg from "./../../../public/img/hero/orange.png";
+import orangesImg from "./../../../public/img/hero/oranges.png";
 import Link from "next/link";
 
 SwiperCore.use([Pagination, Navigation]);
@@ -78,8 +80,28 @@ const Hero = () => {
                 </div>
                 <div className="swiper-slide-box__img">
                   <Image
-                    src={avocadoImg}
-                    alt="awokado"
+                    src={orangeImg}
+                    alt="pomarancz"
+                    width={450}
+                    height={450}
+                  ></Image>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="slide-content">
+              <div className="swiper-slide-box">
+                <div className="swiper-slide-box__text">
+                  <h2>Przykładowy tekst</h2>
+                  <Link className="hero-cta" href="">
+                    Przykładowy tekst
+                  </Link>
+                </div>
+                <div className="swiper-slide-box__img">
+                  <Image
+                    src={orangesImg}
+                    alt="pomarancze"
                     width={450}
                     height={450}
                   ></Image>
