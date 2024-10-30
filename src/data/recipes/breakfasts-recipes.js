@@ -1,4 +1,4 @@
-import tortillazJajkiem from "./../../public/img/recipes/breakfasts/001_bezglutenowa_tortilla_z_jajkiem.jpg";
+import tortillazJajkiem from "./../../../public/img/recipes/breakfasts/001_bezglutenowa_tortilla_z_jajkiem.jpg";
 
 export const breakfastsRecipesData = [
     {

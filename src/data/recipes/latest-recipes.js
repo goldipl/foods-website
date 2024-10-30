@@ -1,6 +1,6 @@
-import tortillazJajkiem from "./../../public/img/recipes/breakfasts/001_bezglutenowa_tortilla_z_jajkiem.jpg";
-import dyniowyMakaronzSzynkaSpeck from "./../../public/img/recipes/dinners/001_dyniowy_makaron_z_szynka_speck.jpg";
-import rozkiAlaOreo from "./../../public/img/recipes/desserts/001_bezglutenowe_rozki_a_la_oreo.jpg";
+import tortillazJajkiem from "./../../../public/img/recipes/breakfasts/001_bezglutenowa_tortilla_z_jajkiem.jpg";
+import dyniowyMakaronzSzynkaSpeck from "./../../../public/img/recipes/dinners/001_dyniowy_makaron_z_szynka_speck.jpg";
+import rozkiAlaOreo from "./../../../public/img/recipes/desserts/001_bezglutenowe_rozki_a_la_oreo.jpg";
 
 export const latestRecipesData = [
     {

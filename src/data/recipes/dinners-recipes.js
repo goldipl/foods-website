@@ -1,4 +1,4 @@
-import dyniowyMakaronzSzynkaSpeck from "./../../public/img/recipes/dinners/001_dyniowy_makaron_z_szynka_speck.jpg";
+import dyniowyMakaronzSzynkaSpeck from "./../../../public/img/recipes/dinners/001_dyniowy_makaron_z_szynka_speck.jpg";
 
 
 export const dinnersRecipesData = [
