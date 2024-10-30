@@ -61,9 +61,9 @@ const Hero = () => {
                   ></Image>
                 </div>
                 <div className="swiper-slide-box__text">
-                  <h2>Przykładowy tekst</h2>
+                  <h2>Bezglutenowe śniadania</h2>
                   <Link className="hero-cta" href="">
-                    Przykładowy tekst
+                    Sprawdź przepisy
                   </Link>
                 </div>
               </div>
@@ -73,9 +73,9 @@ const Hero = () => {
             <div className="slide-content">
               <div className="swiper-slide-box">
                 <div className="swiper-slide-box__text">
-                  <h2>Przykładowy tekst</h2>
+                  <h2>Bezglutenowe obiady</h2>
                   <Link className="hero-cta" href="">
-                    Przykładowy tekst
+                    Sprawdź przepisy
                   </Link>
                 </div>
                 <div className="swiper-slide-box__img">
@@ -101,9 +101,9 @@ const Hero = () => {
                   ></Image>
                 </div>
                 <div className="swiper-slide-box__text">
-                  <h2>Przykładowy tekst</h2>
+                  <h2>Bezglutenowe desery</h2>
                   <Link className="hero-cta" href="">
-                    Przykładowy tekst
+                    Sprawdź przepisy
                   </Link>
                 </div>
               </div>
