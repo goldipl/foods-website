@@ -145,6 +145,15 @@
           justify-content: center;
           color: $color-green01;
         }
+        @media (max-width: 772px) {
+          svg {
+            width: 70px;
+            height: 70px;
+          }
+          span {
+            font-size: 15px;
+          }
+        }
       }
     }
   }

@@ -49,6 +49,7 @@
         box-shadow: $grey-box-shadow;
         @media (max-width: 760px) {
           width: 100%;
+          padding: 24px;
         }
         &:hover {
           background-color: $main-bg-green-color03;
