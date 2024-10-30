@@ -9,6 +9,7 @@ import WelcomeSection from "@/components/main-page/WelcomeSection";
 import BoxesInfoSection from "@/components/main-page/BoxesInfoSection";
 import RecipesSection from "@/components/main-page/RecipesSection";
 import RestaurantsSection from "@/components/main-page/RestaurantsSection";
+import CeliacDiseaseSection from "@/components/main-page/CeliacDiseaseSection";
 
 const index = () => {
   return (
@@ -23,6 +24,7 @@ const index = () => {
         <BoxesInfoSection />
         <RecipesSection />
         <RestaurantsSection />
+        <CeliacDiseaseSection />
       </main>
       <footer>
         <Footer />
