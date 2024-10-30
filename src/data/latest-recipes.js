@@ -11,7 +11,7 @@ export const latestRecipesData = [
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum quam laboriosam in tempore veritatis perspiciatis quo expedita officiis eaque esse recusandae aperiam maxime impedit, deleniti sequi similique animi voluptate nesciunt.",
+        "Bezglutenowa tortilla z jajkiem - smaczne i pożywne śniadanie",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ export const latestRecipesData = [
       label: "Obiad",
       labelClass: "dinner-label",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum quam laboriosam in tempore veritatis perspiciatis quo expedita officiis eaque esse recusandae aperiam maxime impedit, deleniti sequi similique animi voluptate nesciunt.",
+        "Dyniowy bezglutenowy makaron z wędliną typu Speck ",
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ export const latestRecipesData = [
       label: "Deser",
       labelClass: "dessert-label",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum quam laboriosam in tempore veritatis perspiciatis quo expedita officiis eaque esse recusandae aperiam maxime impedit, deleniti sequi similique animi voluptate nesciunt.",
+        "Bezglutenowe rożki z nadzieniem a'la Oreo",
     },
     {
       id: 4,
@@ -41,6 +41,6 @@ export const latestRecipesData = [
       label: "Obiad",
       labelClass: "dinner-label",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum quam laboriosam in tempore veritatis perspiciatis quo expedita officiis eaque esse recusandae aperiam maxime impedit, deleniti sequi similique animi voluptate nesciunt.",
+        "Dyniowy bezglutenowy makaron z wędliną typu Speck ",
     },
   ];
