@@ -34,7 +34,7 @@ const Hero = () => {
               <div className="swiper-slide-box">
                 <div className="swiper-slide-box__text">
                   <h2>Zdrowo, smacznie, bezglutenowo!</h2>
-                  <Link className="hero-cta" href="">
+                  <Link className="hero-cta" href="#najnowsze-przepisy">
                     Sprawdź moje przepisy
                   </Link>
                 </div>
@@ -62,7 +62,7 @@ const Hero = () => {
                 </div>
                 <div className="swiper-slide-box__text">
                   <h2>Bezglutenowe śniadania</h2>
-                  <Link className="hero-cta" href="">
+                  <Link className="hero-cta" href="#sniadania">
                     Sprawdź przepisy
                   </Link>
                 </div>
@@ -74,7 +74,7 @@ const Hero = () => {
               <div className="swiper-slide-box">
                 <div className="swiper-slide-box__text">
                   <h2>Bezglutenowe obiady</h2>
-                  <Link className="hero-cta" href="">
+                  <Link className="hero-cta" href="#obiady">
                     Sprawdź przepisy
                   </Link>
                 </div>
@@ -102,7 +102,7 @@ const Hero = () => {
                 </div>
                 <div className="swiper-slide-box__text">
                   <h2>Bezglutenowe desery</h2>
-                  <Link className="hero-cta" href="">
+                  <Link className="hero-cta" href="#desery">
                     Sprawdź przepisy
                   </Link>
                 </div>
