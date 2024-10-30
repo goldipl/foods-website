@@ -17,33 +17,33 @@ const WelcomeSection = () => {
             ></Image>
           </div>
           <div className="text-box">
-            <h2>Codziennie swieże informacje i pyszne przepisy</h2>
+            <h2>Codziennie świeże informacje i pyszne przepisy</h2>
             <h1>
               Bezglutenowa Karola - bezglutenowe życie pełne smaków i aromatów
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-              ullam rem repudiandae laudantium, voluptatem dolorem cum quia ea
-              facere, officia iure perferendis vero, iusto distinctio laboriosam
-              animi non eius itaque.
+              Witaj w moim świecie! Jestem Karolina Wontorska, a życie bez
+              glutenu to moja codzienność – zmierzyłam się z celiakią w lipcu
+              2023 roku i od tego czasu dzielę się tutaj swoimi doświadczeniami,
+              sprawdzonymi przepisami i praktycznymi poradami.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-              ullam rem repudiandae laudantium, voluptatem dolorem cum quia ea
-              facere, officia iure perferendis vero, iusto distinctio laboriosam
-              animi non eius itaque.
+              Znajdziesz u mnie przepisy na potrawy, które nie tylko są
+              bezpieczne dla osób z nietolerancją glutenu, ale też smakowite i
+              proste w przygotowaniu. Bezglutenowa Karola to miejsce, gdzie mogę
+              wyrażać swoją pasję do gotowania i odkrywania nowych smaków.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-              ullam rem repudiandae laudantium, voluptatem dolorem cum quia ea
-              facere, officia iure perferendis vero, iusto distinctio laboriosam
-              animi non eius itaque.
+              Polecam również restauracje specjalizujące się w kuchni
+              bezglutenowej oraz dzielę się wskazówkami, jak świadomie i
+              bezpiecznie wybierać produkty na co dzień. Dla mnie i całej
+              społeczności Bezglutenowej Karoli zdrowie i smak zawsze idą w
+              parze.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-              ullam rem repudiandae laudantium, voluptatem dolorem cum quia ea
-              facere, officia iure perferendis vero, iusto distinctio laboriosam
-              animi non eius itaque.
+              Zapraszam do wspólnego odkrywania, smakowania i dzielenia się
+              wyjątkowymi przepisami. Razem stwórzmy zdrową, pełną smaków
+              przyszłość, pełną kulinarnych przygód!
             </p>
           </div>
         </div>
