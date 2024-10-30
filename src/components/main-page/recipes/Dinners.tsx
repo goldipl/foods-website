@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import { CiInstagram } from "react-icons/ci";
-import { dinnersRecipesData } from "@/data/dinners-recipes";
+import { dinnersRecipesData } from "@/data/recipes/dinners-recipes";
 
 const Dinners = () => {
   return (
