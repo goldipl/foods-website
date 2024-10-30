@@ -7,7 +7,7 @@ import Image from "next/image";
 
 import avocadoImg from "./../../../public/img/hero/avocado.png";
 import lemonsImg from "./../../../public/img/hero/lemons.png";
-import orangeImg from "./../../../public/img/hero/orange.png";
+import bananasImg from "./../../../public/img/hero/bananas.png";
 import orangesImg from "./../../../public/img/hero/oranges.png";
 import Link from "next/link";
 
@@ -80,8 +80,8 @@ const Hero = () => {
                 </div>
                 <div className="swiper-slide-box__img">
                   <Image
-                    src={orangeImg}
-                    alt="pomarancz"
+                    src={bananasImg}
+                    alt="banany"
                     width={450}
                     height={450}
                   ></Image>
