@@ -1,13 +1,13 @@
-import recipeImg001 from "./../../public/img/recipes/001_recipe.jpg";
-import recipeImg002 from "./../../public/img/recipes/002_recipe.jpg";
-import recipeImg003 from "./../../public/img/recipes/003_recipe.jpg";
+import tortillazJajkiem from "./../../public/img/recipes/breakfasts/001_bezglutenowa_tortilla_z_jajkiem.jpg";
+import dyniowyMakaronzSzynkaSpeck from "./../../public/img/recipes/dinners/001_dyniowy_makaron_z_szynka_speck.jpg";
+import rozkiAlaOreo from "./../../public/img/recipes/desserts/001_bezglutenowe_rozki_a_la_oreo.jpg";
 
 export const latestRecipesData = [
     {
       id: 1,
       href: "https://www.instagram.com/p/DBnv7v3OYgM/",
-      imgSrc: recipeImg002,
-      altText: "Makaron",
+      imgSrc: tortillazJajkiem,
+      altText: "Bezglutenowa tortilla z jajkiem",
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
@@ -16,18 +16,18 @@ export const latestRecipesData = [
     {
       id: 2,
       href: "https://www.instagram.com/p/DBdvWQouPv2/",
-      imgSrc: recipeImg001,
-      altText: "Makaron",
+      imgSrc: dyniowyMakaronzSzynkaSpeck,
+      altText: "Dyniowy bezglutenowy makaron z wędliną typu Speck",
       label: "Obiad",
       labelClass: "dinner-label",
       description:
-        "Dyniowy bezglutenowy makaron z wędliną typu Speck ",
+        "Dyniowy bezglutenowy makaron z wędliną typu Speck",
     },
     {
       id: 3,
       href: "https://www.instagram.com/p/DBrI559o2Eb/",
-      imgSrc: recipeImg003,
-      altText: "Makaron",
+      imgSrc: rozkiAlaOreo,
+      altText: "Bezglutenowe rożki z nadzieniem a'la Oreo",
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -37,10 +37,10 @@ export const latestRecipesData = [
       id: 4,
       href: "https://www.instagram.com/p/DBdvWQouPv2/",
       imgSrc: recipeImg001,
-      altText: "Makaron",
+      altText: "Dyniowy bezglutenowy makaron z wędliną typu Speck",
       label: "Obiad",
       labelClass: "dinner-label",
       description:
-        "Dyniowy bezglutenowy makaron z wędliną typu Speck ",
+        "Dyniowy bezglutenowy makaron z wędliną typu Speck",
     },
   ];
