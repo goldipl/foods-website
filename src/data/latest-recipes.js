@@ -36,7 +36,7 @@ export const latestRecipesData = [
     {
       id: 4,
       href: "https://www.instagram.com/p/DBdvWQouPv2/",
-      imgSrc: recipeImg001,
+      imgSrc: dyniowyMakaronzSzynkaSpeck,
       altText: "Dyniowy bezglutenowy makaron z wędliną typu Speck",
       label: "Obiad",
       labelClass: "dinner-label",
