@@ -4,7 +4,7 @@ import karolaImg from "./../../../public/img/welcome/karola.jpg";
 
 const WelcomeSection = () => {
   return (
-    <div id="welcome-section" className="welcome-section">
+    <div id="o-mnie" className="welcome-section">
       <div className="welcome-section-wrapper">
         <div className="img-text-box">
           <div className="img-box">
