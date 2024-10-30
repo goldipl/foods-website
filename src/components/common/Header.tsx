@@ -86,17 +86,17 @@ const Header = () => {
                 }`}
               >
                 <li>
-                  <Link href="" onClick={handleCloseDropdown}>
+                  <Link href="#sniadania" onClick={handleCloseDropdown}>
                     Śniadania
                   </Link>
                 </li>
                 <li>
-                  <Link href="" onClick={handleCloseDropdown}>
+                  <Link href="#obiady" onClick={handleCloseDropdown}>
                     Obiady
                   </Link>
                 </li>
                 <li>
-                  <Link href="" onClick={handleCloseDropdown}>
+                  <Link href="#desery" onClick={handleCloseDropdown}>
                     Desery
                   </Link>
                 </li>

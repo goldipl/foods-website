@@ -2,14 +2,14 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import { CiInstagram } from "react-icons/ci";
-import { latestRecipesData } from "@/data/latest-recipes";
+import { dessertsRecipesData } from "@/data/desserts-recipes";
 
 const Desserts = () => {
   return (
     <>
       <h2 id="desery">Desery</h2>
       <div className="listing-v1">
-        {latestRecipesData.map((recipe) => (
+        {dessertsRecipesData.map((recipe) => (
           <Link
             key={recipe.id}
             href={recipe.href}
