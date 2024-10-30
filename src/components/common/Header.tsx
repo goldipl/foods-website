@@ -121,19 +121,25 @@ const Header = () => {
                 }`}
               >
                 <li>
-                  <Link href="" onClick={handleCloseDropdown}>
+                  <Link
+                    href="#restauracje-polska"
+                    onClick={handleCloseDropdown}
+                  >
                     Polska
                   </Link>
                 </li>
                 <li>
-                  <Link href="" onClick={handleCloseDropdown}>
+                  <Link
+                    href="#restauracje-europa"
+                    onClick={handleCloseDropdown}
+                  >
                     Europa
                   </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link href="#celiakia" onClick={handleCloseDropdown}>
+              <Link href="#celiakia-co-dalej" onClick={handleCloseDropdown}>
                 Celiakia - co dalej?
               </Link>
             </li>
