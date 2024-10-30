@@ -4,10 +4,10 @@ import Link from "next/link";
 import { CiInstagram } from "react-icons/ci";
 import { latestRecipesData } from "@/data/latest-recipes";
 
-const LatestRecipes = () => {
+const Breakfasts = () => {
   return (
     <>
-      <h2 id="najnowsze-przepisy">Najnowsze przepisy</h2>
+      <h2 id="sniadania">Śniadania</h2>
       <div className="listing-v1">
         {latestRecipesData.map((recipe) => (
           <Link
@@ -43,4 +43,4 @@ const LatestRecipes = () => {
   );
 };
 
-export default LatestRecipes;
+export default Breakfasts;
