@@ -10,7 +10,10 @@
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 140px 0;
+    padding: 140px 16px;
+    @media (max-width: 992px) {
+      padding: 40px 0;
+    }
     h2 {
       display: flex;
       justify-content: center;
@@ -20,6 +23,11 @@
       margin-bottom: 64px;
       font-size: 26px;
       line-height: 32px;
+      @media (max-width: 992px) {
+        font-size: 22px;
+        line-height: 28px;
+        margin: 0 auto 40px;
+      }
     }
   }
 }

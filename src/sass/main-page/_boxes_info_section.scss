@@ -10,7 +10,10 @@
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 140px 0;
+    padding: 140px 16px;
+    @media (max-width: 992px) {
+      padding: 40px 16px;
+    }
     h2 {
       display: flex;
       justify-content: center;
@@ -20,6 +23,11 @@
       margin-bottom: 64px;
       font-size: 26px;
       line-height: 32px;
+      @media (max-width: 992px) {
+        font-size: 22px;
+        line-height: 28px;
+        margin: 0 auto 40px;
+      }
     }
     .boxes-info {
       display: flex;
@@ -39,6 +47,9 @@
         background-color: $white-bg-color;
         transition: all 0.6s;
         box-shadow: $grey-box-shadow;
+        @media (max-width: 760px) {
+          width: 100%;
+        }
         &:hover {
           background-color: $main-bg-green-color03;
         }
@@ -47,11 +58,18 @@
             width: 48px;
             height: auto;
             margin-right: 16px;
+            @media (max-width: 760px) {
+              width: 36px;
+              height: auto;
+            }
           }
         }
         &__text {
           span {
             font-size: 20px;
+            @media (max-width: 760px) {
+              font-size: 17px;
+            }
           }
         }
       }

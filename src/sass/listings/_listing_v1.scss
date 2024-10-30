@@ -3,14 +3,23 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
+  @media (max-width: 992px) {
+    gap: 12px;
+  }
   &-slot {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 294px;
     height: 380px;
     overflow: hidden;
+    @media (max-width: 992px) {
+      width: 45vw;
+      height: 54vw;
+    }
     &:has(.breakfast-label) {
       .zoom-box {
         span {
@@ -71,6 +80,9 @@
       padding: 16px;
       width: 100%;
       height: 27%;
+      @media (max-width: 992px) {
+        padding: 8px;
+      }
       span {
         display: -webkit-box;
         line-clamp: 3;
@@ -79,6 +91,11 @@
         overflow: hidden;
         font-size: 15px;
         color: $color-white;
+        @media (max-width: 640px) {
+          font-size: 12px;
+          line-clamp: 2;
+          -webkit-line-clamp: 2;
+        }
       }
     }
     &__labels {
@@ -100,6 +117,10 @@
         }
         &.dessert-label {
           background-color: $dessert-label-bg;
+        }
+        @media (max-width: 992px) {
+          font-size: 12px;
+          padding: 2px 8px;
         }
       }
     }

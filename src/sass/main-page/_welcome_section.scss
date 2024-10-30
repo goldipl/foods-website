@@ -10,14 +10,30 @@
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 100px 16px;
+    @media (max-width: 992px) {
+      padding: 40px 16px;
+    }
     .img-text-box {
       display: flex;
       flex-direction: row;
       align-items: center;
       gap: 40px;
       height: auto;
+      @media (max-width: 992px) {
+        flex-direction: column;
+        gap: 16px;
+      }
       .img-box {
+        @media (max-width: 992px) {
+          order: 2;
+          .border-img {
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            margin: 0 auto;
+          }
+        }
         .border-img {
           outline: 1px solid $green-border-color01;
           border: 16px solid $white-border-color01;
@@ -37,6 +53,18 @@
           font-size: 16px;
           margin-bottom: 8px;
           font-weight: 300;
+        }
+        @media (max-width: 992px) {
+          order: 1;
+          h1 {
+            font-size: 28px;
+          }
+          h2 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 15px;
+          }
         }
       }
     }
