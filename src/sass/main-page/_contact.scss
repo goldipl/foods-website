@@ -29,5 +29,41 @@
         margin: 0 auto 40px;
       }
     }
+    .contact-box {
+      &-slot {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 8px;
+        &__icon {
+          display: flex;
+          margin-right: 12px;
+          width: 32px;
+          height: 32px;
+          font-size: 32px;
+          &.instagram {
+            width: 40px;
+            height: 40px;
+            font-size: 40px;
+            margin-left: -4px;
+            margin-right: 8px;
+          }
+        }
+        &__content {
+          a {
+            font-size: 18px;
+            text-decoration: none;
+            color: $color-green01;
+            &:hover {
+              text-decoration: underline;
+            }
+            @media (max-width: 992px) {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
   }
 }
