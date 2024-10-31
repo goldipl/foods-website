@@ -21,6 +21,7 @@ class MyDocument extends Document {
           <meta name="robots" content="noindex, nofollow" />
           <link rel="icon" type="image/x-icon" href="./favicon.ico" />
           <link rel="apple-touch-icon" href="./favicon.ico" />
+          <title>Bezglutenowa Karola - Przepisy Gluten Free</title>
         </Head>
         <body>
           <Main />
