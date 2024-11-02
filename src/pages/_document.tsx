@@ -28,7 +28,7 @@ class MyDocument extends Document {
           <title>Bezglutenowa Karola - Przepisy Gluten Free</title>
           <meta
             name="description"
-            content="Bezglutenowa Karola - przepisy na dania bez glutenu, bez cukru i bez nabiału, idealne dla osób z celiakią. Odkryj zdrowe przepisy i porady dla diety bezglutenowej."
+            content="Bezglutenowa Karola - przepisy na dania bez glutenu, bez cukru, bez nabiału, idealne dla osób z celiakią. Odkryj zdrowe przepisy i porady dla diety bezglutenowej."
           />
           <meta
             name="keywords"
@@ -44,7 +44,7 @@ class MyDocument extends Document {
           />
           <meta
             property="og:description"
-            content="Znajdź przepisy na dania bez glutenu, bez cukru i bez nabiału, idealne dla osób z celiakią. Zdrowe i smaczne jedzenie dla diety bezglutenowej."
+            content="Znajdź przepisy na dania bez glutenu, bez cukru, bez nabiału, idealne dla osób z celiakią. Zdrowe i smaczne jedzenie dla diety bezglutenowej."
           />
           <meta property="og:url" content="https://bezglutenowakarola.pl" />
           <meta
@@ -61,7 +61,7 @@ class MyDocument extends Document {
           />
           <meta
             name="twitter:description"
-            content="Przepisy bez glutenu, bez cukru i bez nabiału, stworzone z myślą o osobach z celiakią i na diecie bezglutenowej. Sprawdź zdrowe inspiracje kulinarne."
+            content="Przepisy bez glutenu, bez cukru, bez nabiału, stworzone z myślą o osobach z celiakią i na diecie bezglutenowej. Sprawdź zdrowe inspiracje kulinarne."
           />
           <meta
             name="twitter:image"
@@ -74,7 +74,7 @@ class MyDocument extends Document {
               "@context": "https://schema.org",
               "@type": "Recipe",
               "name": "Bezglutenowa Karola - Przepisy Gluten Free",
-              "description": "Przepisy na dania bez glutenu, bez cukru i bez nabiału dla osób z celiakią i na diecie bezglutenowej.",
+              "description": "Przepisy na dania bez glutenu, bez cukru, bez nabiału dla osób z celiakią i na diecie bezglutenowej.",
               "image": "/img/header/bezglutenowakarola-logo.svg",
               "author": {
                 "@type": "Person",
