@@ -10,7 +10,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Live link
 
-https://goldipl.github.io/foods-website/
+https://bezglutenowakarola.pl/
 
 ## Getting Started
 
