@@ -140,36 +140,50 @@
         &-button-prev {
           left: 0;
         }
-        .slide-content {
-          .swiper-slide-box {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-            &.text-right-side {
-              .swiper-slide-box__text {
-                right: 0;
-              }
+        .swiper-slide {
+          .swiper-slide-box__img {
+            img {
+              transform: translateX(30vw);
+              filter: opacity(0.5);
             }
-            &__text {
-              position: absolute;
-              left: 0;
-              padding: 0 24px 0 64px;
-              z-index: 1;
-              h2 {
-                font-size: 32px;
-                line-height: 40px;
-                width: 70vw;
-              }
-              .hero-cta {
-                font-size: 13px;
-              }
+          }
+        }
+        .swiper-slide:has(.text-right-side) {
+          .swiper-slide-box__img {
+            img {
+              transform: translateX(-30vw);
             }
-            &__img {
-              z-index: 0;
-              img {
-                filter: opacity(0.4);
-                transform: translateX(-30vw);
+          }
+        }
+        .swiper-slide {
+          overflow: hidden;
+          .slide-content {
+            .swiper-slide-box {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-evenly;
+              align-items: center;
+              &.text-right-side {
+                .swiper-slide-box__text {
+                  right: 0;
+                }
+              }
+              &__text {
+                position: absolute;
+                left: 0;
+                padding: 0 40px;
+                z-index: 1;
+                h2 {
+                  font-size: 32px;
+                  line-height: 40px;
+                  width: 70vw;
+                }
+                .hero-cta {
+                  font-size: 13px;
+                }
+              }
+              &__img {
+                z-index: 0;
               }
             }
           }
