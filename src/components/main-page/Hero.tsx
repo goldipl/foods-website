@@ -6,9 +6,9 @@ import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 
 import avocadoImg from "./../../../public/img/hero/avocado.png";
-import lemonsImg from "./../../../public/img/hero/lemons.png";
-import bananasImg from "./../../../public/img/hero/bananas.png";
-import orangesImg from "./../../../public/img/hero/oranges.png";
+import breakfastImg from "./../../../public/img/hero/breakfast.png";
+import dinnerImg from "./../../../public/img/hero/dinner.png";
+import dessertImg from "./../../../public/img/hero/dessert.png";
 import Link from "next/link";
 
 SwiperCore.use([Pagination, Navigation]);
@@ -54,7 +54,7 @@ const Hero = () => {
               <div className="swiper-slide-box text-right-side">
                 <div className="swiper-slide-box__img">
                   <Image
-                    src={lemonsImg}
+                    src={breakfastImg}
                     alt="cytryny"
                     width={450}
                     height={450}
@@ -80,7 +80,7 @@ const Hero = () => {
                 </div>
                 <div className="swiper-slide-box__img">
                   <Image
-                    src={bananasImg}
+                    src={dinnerImg}
                     alt="banany"
                     width={450}
                     height={450}
@@ -94,7 +94,7 @@ const Hero = () => {
               <div className="swiper-slide-box text-right-side">
                 <div className="swiper-slide-box__img">
                   <Image
-                    src={orangesImg}
+                    src={dessertImg}
                     alt="pomarancze"
                     width={450}
                     height={450}
