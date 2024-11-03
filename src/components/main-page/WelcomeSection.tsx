@@ -22,7 +22,7 @@ const WelcomeSection = () => {
               Bezglutenowa Karola - bezglutenowe życie pełne smaków i aromatów
             </h1>
             <p>
-              Witaj w moim świecie! Jestem Karolina Wontorska, a życie bez
+              Witaj w moim świecie! Nazywa się Karolina Wontorska, a życie bez
               glutenu to moja codzienność – zmierzyłam się z celiakią w lipcu
               2023 roku i od tego czasu dzielę się tutaj swoimi doświadczeniami,
               sprawdzonymi przepisami i praktycznymi poradami.
