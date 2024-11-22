@@ -138,10 +138,38 @@ const Header = () => {
                 </li>
               </ul>
             </li>
-            <li>
-              <Link href="#celiakia-co-dalej" onClick={handleCloseDropdown}>
+            <li className="nav-expand">
+              <span onClick={() => handleDropdownToggle("thirdDropdown")}>
                 Celiakia - co dalej?
-              </Link>
+                <Image
+                  src={menuDownIcon.src}
+                  alt="strzałka"
+                  height={9}
+                  width={16}
+                  className={`arrow-img ${
+                    activeDropdown === "thirdDropdown" ? "rotate" : ""
+                  }`}
+                />
+              </span>
+              <ul
+                className={`nav-second-lvl ${
+                  activeDropdown === "thirdDropdown" ? "active" : ""
+                }`}
+              >
+                <li>
+                  <Link
+                    href="#celiakia-podstawowe-informacje"
+                    onClick={handleCloseDropdown}
+                  >
+                    Podstawowe informacje
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#celiakia-co-dalej" onClick={handleCloseDropdown}>
+                    Pierwsze kroki po diagnozie
+                  </Link>
+                </li>
+              </ul>
             </li>
             <li>
               <Link href="#o-mnie" onClick={handleCloseDropdown}>
