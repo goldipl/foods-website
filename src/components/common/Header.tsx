@@ -141,7 +141,7 @@ const Header = () => {
             </li>
             <li className="nav-expand">
               <span onClick={() => handleDropdownToggle("thirdDropdown")}>
-                Celiakia - co dalej?
+                Produkty
                 <Image
                   src={menuDownIcon.src}
                   alt="strzałka"
@@ -155,6 +155,42 @@ const Header = () => {
               <ul
                 className={`nav-second-lvl ${
                   activeDropdown === "thirdDropdown" ? "active" : ""
+                }`}
+              >
+                <li>
+                  <Link
+                    href="#restauracje-polska"
+                    onClick={handleCloseDropdown}
+                  >
+                    Polska
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#restauracje-europa"
+                    onClick={handleCloseDropdown}
+                  >
+                    Europa
+                  </Link>
+                </li>
+              </ul>
+            </li>
+            <li className="nav-expand">
+              <span onClick={() => handleDropdownToggle("fourthDropdown")}>
+                Celiakia i co dalej?
+                <Image
+                  src={menuDownIcon.src}
+                  alt="strzałka"
+                  height={9}
+                  width={16}
+                  className={`arrow-img ${
+                    activeDropdown === "fourthDropdown" ? "rotate" : ""
+                  }`}
+                />
+              </span>
+              <ul
+                className={`nav-second-lvl ${
+                  activeDropdown === "fourthDropdown" ? "active" : ""
                 }`}
               >
                 <li>

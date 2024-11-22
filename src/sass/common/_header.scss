@@ -57,7 +57,7 @@ header {
             &.nav-expand {
               span {
                 position: relative;
-                @include nav-link-mixin(8px, 18px);
+                @include nav-link-mixin(6px 0 6px 10px, 16px);
 
                 img {
                   margin: 0 8px;
@@ -75,9 +75,9 @@ header {
               .nav-second-lvl {
                 list-style: none;
                 position: absolute;
-                left: 0;
-                top: 60px;
-                display: flex;
+                left: 4px;
+                top: 40px;
+                display: none;
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: flex-start;
@@ -92,7 +92,7 @@ header {
                     display: none;
                   }
                   a {
-                    font-size: 16px;
+                    font-size: 15px;
                     white-space: pre;
                   }
                 }
@@ -100,7 +100,7 @@ header {
             }
 
             a {
-              @include nav-link-mixin(8px 16px, 18px);
+              @include nav-link-mixin(4px 8px, 16px);
             }
 
             &:not(:last-child)::after {
