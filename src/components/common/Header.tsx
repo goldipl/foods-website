@@ -10,7 +10,8 @@ const Header = () => {
   const [openHamburger, setOpenHamburger] = useState(false);
 
   const handleDropdownToggle = (dropdown: any) => {
-    setActiveDropdown((prev) => (prev === dropdown ? null : dropdown));
+    const isDropdownActive = activeDropdown === dropdown;
+    setActiveDropdown(isDropdownActive ? null : dropdown);
   };
 
   const addBlockedWindow = () => {
@@ -167,6 +168,15 @@ const Header = () => {
                 <li>
                   <Link href="#celiakia-co-dalej" onClick={handleCloseDropdown}>
                     Pierwsze kroki po diagnozie
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://www.youtube.com/watch?v=8TEFTAOyZss"
+                    target="_blank"
+                    onClick={handleCloseDropdown}
+                  >
+                    Jak wygląda życie z celiakią? (podcast)
                   </Link>
                 </li>
               </ul>
