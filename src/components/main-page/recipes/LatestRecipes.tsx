@@ -7,7 +7,7 @@ import { latestRecipesData } from "@/data/recipes/latest-recipes";
 const LatestRecipes = () => {
   return (
     <>
-      <h2 id="najnowsze-przepisy">Najnowsze przepisy</h2>
+      <h2 id="najnowsze-przepisy">Najnowsze</h2>
       <div className="listing-v1">
         {latestRecipesData.map((recipe) => (
           <Link
