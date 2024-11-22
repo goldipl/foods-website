@@ -162,7 +162,7 @@ const Header = () => {
                     href="#restauracje-polska"
                     onClick={handleCloseDropdown}
                   >
-                    Polska
+                    Lidl
                   </Link>
                 </li>
                 <li>
@@ -170,7 +170,7 @@ const Header = () => {
                     href="#restauracje-europa"
                     onClick={handleCloseDropdown}
                   >
-                    Europa
+                    Biedronka
                   </Link>
                 </li>
               </ul>
