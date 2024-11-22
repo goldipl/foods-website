@@ -88,6 +88,7 @@ header {
                 transition: opacity 0.3s ease, transform 0.3s ease;
                 border: 1px solid $grey-border-color01;
                 li {
+                  width: 100%;
                   &::after {
                     display: none;
                   }
@@ -95,6 +96,7 @@ header {
                     font-size: 15px;
                     white-space: pre;
                     padding: 6px 12px;
+                    width: calc(100% - 8px);
                   }
                 }
               }
