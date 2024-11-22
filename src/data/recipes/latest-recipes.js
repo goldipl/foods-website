@@ -1,6 +1,7 @@
 import tortillazJajkiem from "./../../../public/img/recipes/breakfasts/001_bezglutenowa_tortilla_z_jajkiem.jpg";
 import dyniowyMakaronzSzynkaSpeck from "./../../../public/img/recipes/dinners/001_dyniowy_makaron_z_szynka_speck.jpg";
 import rozkiAlaOreo from "./../../../public/img/recipes/desserts/001_bezglutenowe_rozki_a_la_oreo.jpg";
+import sushiWesolaWarszawa from "./../../../public/img/restaurants/poland/005_sushi_wesola_warszawa.jpg";
 
 export const latestRecipesData = [
     {
@@ -36,11 +37,11 @@ export const latestRecipesData = [
     {
       id: 4,
       href: "https://www.instagram.com/p/DBdvWQouPv2/",
-      imgSrc: dyniowyMakaronzSzynkaSpeck,
-      altText: "Dyniowy bezglutenowy makaron z wędliną typu Speck",
-      label: "Obiad",
-      labelClass: "dinner-label",
+      imgSrc: sushiWesolaWarszawa,
+      altText: "Sushi Wesoła Warszawa",
+      label: "Polska",
+      labelClass: "poland-label",
       description:
-        "Dyniowy bezglutenowy makaron z wędliną typu Speck",
+        "Sushi Wesoła Warszawa",
     },
   ];

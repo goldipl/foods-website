@@ -1,4 +1,7 @@
 import tortillazJajkiem from "./../../../public/img/recipes/breakfasts/001_bezglutenowa_tortilla_z_jajkiem.jpg";
+import NalesnikizDzemem from "./../../../public/img/recipes/breakfasts/002_nalesniki_z_dzemem.jpg";
+import sniadaniowaTortilla from "./../../../public/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.png";
+import sniadanieBoczekzJajkiem from "./../../../public/img/recipes/breakfasts/004_sniadanie_boczek_z_jajkiem.png";
 
 export const breakfastsRecipesData = [
     {
@@ -9,56 +12,36 @@ export const breakfastsRecipesData = [
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
-        "Bezglutenowa tortilla z jajkiem - smaczne i pożywne śniadanie",
+        "Bezglutenowa tortilla z jajkiem",
     },
     {
       id: 2,
       href: "https://www.instagram.com/p/DBnv7v3OYgM/",
-      imgSrc: tortillazJajkiem,
-      altText: "Bezglutenowa tortilla z jajkiem",
+      imgSrc: NalesnikizDzemem,
+      altText: "Naleśniki z dżemem",
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
-        "Bezglutenowa tortilla z jajkiem - smaczne i pożywne śniadanie",
+        "Naleśniki z dżemem",
     },
     {
       id: 3,
       href: "https://www.instagram.com/p/DBnv7v3OYgM/",
-      imgSrc: tortillazJajkiem,
-      altText: "Bezglutenowa tortilla z jajkiem",
+      imgSrc: sniadaniowaTortilla,
+      altText: "Bezglutenowa śniadaniowa tortilla",
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
-        "Bezglutenowa tortilla z jajkiem - smaczne i pożywne śniadanie",
+        "Bezglutenowa śniadaniowa tortilla",
     },
     {
       id: 4,
       href: "https://www.instagram.com/p/DBnv7v3OYgM/",
-      imgSrc: tortillazJajkiem,
-      altText: "Bezglutenowa tortilla z jajkiem",
+      imgSrc: sniadanieBoczekzJajkiem,
+      altText: "Jajka, boczek, bezglutenowey chlebek na oliwie",
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
-        "Bezglutenowa tortilla z jajkiem - smaczne i pożywne śniadanie",
-    },
-    {
-      id: 5,
-      href: "https://www.instagram.com/p/DBnv7v3OYgM/",
-      imgSrc: tortillazJajkiem,
-      altText: "Bezglutenowa tortilla z jajkiem",
-      label: "Śniadanie",
-      labelClass: "breakfast-label",
-      description:
-        "Bezglutenowa tortilla z jajkiem - smaczne i pożywne śniadanie",
-    },
-    {
-      id: 6,
-      href: "https://www.instagram.com/p/DBnv7v3OYgM/",
-      imgSrc: tortillazJajkiem,
-      altText: "Bezglutenowa tortilla z jajkiem",
-      label: "Śniadanie",
-      labelClass: "breakfast-label",
-      description:
-        "Bezglutenowa tortilla z jajkiem - smaczne i pożywne śniadanie",
+        "Jajka, boczek, bezglutenowey chlebek na oliwie",
     },
   ];
