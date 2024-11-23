@@ -141,7 +141,7 @@ const Header = () => {
             </li>
             <li className="nav-expand">
               <span onClick={() => handleDropdownToggle("thirdDropdown")}>
-                Produkty
+                Czy to ma gluten?
                 <Image
                   src={menuDownIcon.src}
                   alt="strzałka"
@@ -237,8 +237,8 @@ const Header = () => {
                   className="social-icon"
                   src={instagramIcon.src}
                   alt="instagram"
-                  height={40}
-                  width={40}
+                  height={32}
+                  width={32}
                 />
                 <span>@bezglutenowakarola</span>
               </Link>
