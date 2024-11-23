@@ -13,19 +13,25 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
+      justify-content: space-between;
       gap: 40px;
       padding: 40px 0;
       .footer-col {
         display: flex;
         flex-direction: column;
+        border-right: 1px solid $white-border-color01;
+        padding-right: 5%;
+        &:last-of-type {
+          border-right: 0;
+        }
         h2 {
-          font-size: 17px;
+          font-size: 16px;
           font-weight: 600;
           color: $color-green02;
           margin-bottom: 16px;
         }
         a {
-          font-size: 14px;
+          font-size: 13px;
           text-decoration: none;
           color: $color-black;
           margin-bottom: 4px;
@@ -66,11 +72,46 @@
   }
 }
 
+@media (max-width: 1180px) {
+  .footer {
+    &-wrapper {
+      &-top {
+        justify-content: flex-start;
+        gap: 40px;
+        padding: 40px 0;
+        .footer-col {
+          width: 25%;
+          padding-right: 0;
+          &:nth-of-type(3) {
+            border-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 960px) {
   .footer {
     &-wrapper {
       max-width: unset;
-      width: calc(100% - 64px);
+      width: 100%;
+      margin: 0;
+      padding: 24px 0 24px 16px;
+      &-top {
+        justify-content: flex-start;
+        gap: 24px;
+        padding: 24px 0;
+        .footer-col {
+          width: 45%;
+          padding-right: 16px;
+          border-right: 0;
+          h2 {
+            font-size: 15px;
+            margin-bottom: 10px;
+          }
+        }
+      }
     }
     &-bottom {
       p {

@@ -15,16 +15,37 @@ const Footer = () => {
             <Link href="#desery">Desery</Link>
           </div>
           <div className="footer-col">
-            <h2>Przepisy</h2>
-            <Link href="#sniadania">Śniadania</Link>
-            <Link href="#obiady">Obiady</Link>
-            <Link href="#desery">Desery</Link>
+            <h2>Restauracje</h2>
+            <Link href="#restauracje-polska">Polska</Link>
+            <Link href="#restauracje-europa">Europa</Link>
           </div>
           <div className="footer-col">
-            <h2>Przepisy</h2>
-            <Link href="#sniadania">Śniadania</Link>
-            <Link href="#obiady">Obiady</Link>
-            <Link href="#desery">Desery</Link>
+            <h2>Czy to ma gluten?</h2>
+            <Link href="#produkty">Lidl</Link>
+            <Link href="#produkty">Biedronka</Link>
+            <Link href="#produkty">Stokrotka</Link>
+            <Link href="#produkty">Inne</Link>
+          </div>
+          <div className="footer-col">
+            <h2>Celiakia i co dalej?</h2>
+            <Link href="#celiakia-podstawowe-informacje">
+              Podstawowe informacje
+            </Link>
+            <Link href="#pierwsze-kroki-po-diagnozie">
+              Pierwsze kroki po diagnozie
+            </Link>
+            <Link href="#produkty">Stokrotka</Link>
+          </div>
+          <div className="footer-col">
+            <h2>Dodatkowe informacje</h2>
+            <Link href="#o-mnie">O mnie</Link>
+            <Link href="#kontakt">Kontakt</Link>
+            <Link
+              href="https://www.instagram.com/bezglutenowakarola/"
+              target="_blank"
+            >
+              Instagram
+            </Link>
           </div>
         </div>
       </div>
