@@ -134,7 +134,8 @@
 @media (max-width: 992px) {
   #hero {
     .hero-wrapper {
-      padding-bottom: 8px;
+      padding-bottom: 0;
+      margin-bottom: -8px;
       .swiper {
         height: auto;
         &-button-next {
@@ -143,18 +144,14 @@
         &-button-prev {
           left: 0;
         }
+        .swiper-pagination {
+          bottom: 16px;
+        }
         .swiper-slide {
           .swiper-slide-box__img {
             img {
-              transform: translateX(30vw);
               filter: opacity(0.5);
-            }
-          }
-        }
-        .swiper-slide:has(.text-right-side) {
-          .swiper-slide-box__img {
-            img {
-              transform: translateX(-30vw);
+              clip-path: unset;
             }
           }
         }
@@ -174,7 +171,7 @@
               &__text {
                 position: absolute;
                 left: 0;
-                padding: 0 40px;
+                padding: 0 64px;
                 z-index: 1;
                 h2 {
                   font-size: 32px;
