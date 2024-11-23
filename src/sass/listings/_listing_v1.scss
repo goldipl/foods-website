@@ -67,6 +67,18 @@
         }
       }
     }
+    &:has(.product-label) {
+      .zoom-box {
+        span {
+          color: $product-label-bg;
+          filter: brightness(1);
+        }
+        svg {
+          filter: invert(50%) sepia(97%) saturate(1254%) hue-rotate(126deg)
+            brightness(89%) contrast(101%);
+        }
+      }
+    }
     &:hover {
       box-shadow: $green-box-shadow;
       .listing-v1-slot__text {
@@ -125,6 +137,9 @@
     }
     &__labels {
       position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
       top: 10px;
       left: 10px;
       span {
@@ -132,7 +147,7 @@
         justify-content: center;
         align-items: center;
         font-size: 14px;
-        font-weight: 400;
+        font-weight: 600;
         padding: 2px 12px;
         &.breakfast-label {
           background-color: $breakfast-label-bg;
@@ -150,6 +165,25 @@
         &.europe-label {
           background-color: $europe-label-bg;
           color: $color-white;
+        }
+        &.product-label {
+          background-color: $product-label-bg;
+        }
+        &.lidl-label {
+          background-color: $lidl-label-bg;
+          color: $lidl-label-text-color;
+        }
+        &.biedronka-label {
+          background-color: $biedronka-label-bg;
+          color: $biedronka-label-text-color;
+        }
+        &.stokrotka-label {
+          background-color: $stokrotka-label-bg;
+          color: $stokrotka-label-text-color;
+        }
+        &.shop-label {
+          background-color: $shop-label-bg;
+          color: $shop-label-text-color;
         }
         @media (max-width: 992px) {
           font-size: 12px;

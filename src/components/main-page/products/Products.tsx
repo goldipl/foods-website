@@ -2,33 +2,36 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import { CiInstagram } from "react-icons/ci";
-import { breakfastsRecipesData } from "@/data/recipes/breakfasts-recipes";
+import { productsData } from "@/data/products/products";
 
 const Products = () => {
   return (
     <>
       <h2 id="produkty">Produkty</h2>
       <div className="listing-v1">
-        {breakfastsRecipesData.map((recipe) => (
+        {productsData.map((product) => (
           <Link
-            key={recipe.id}
-            href={recipe.href}
+            key={product.id}
+            href={product.href}
             className="listing-v1-slot"
             target="_blank"
           >
             <div className="listing-v1-slot__img">
               <Image
-                src={recipe.imgSrc}
-                alt={recipe.altText}
+                src={product.imgSrc}
+                alt={product.altText}
                 width={400}
                 height={500}
               />
             </div>
             <div className="listing-v1-slot__text">
-              <span>{recipe.description}</span>
+              <span>{product.description}</span>
             </div>
             <div className="listing-v1-slot__labels">
-              <span className={recipe.labelClass}>{recipe.label}</span>
+              <span className={product.labelClass}>{product.label}</span>
+              <span className={product.labelShopClass}>
+                {product.labelShop}
+              </span>
             </div>
             <div className="listing-v1-slot__zoom">
               <div className="zoom-box">
