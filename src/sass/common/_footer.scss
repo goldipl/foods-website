@@ -1,13 +1,44 @@
 .footer {
   background-color: $white-bg-color;
   height: auto;
-  padding: 24px 0;
   border-top: 1px solid $grey-border-color01;
   &-wrapper {
     position: relative;
-    max-width: calc(1280px - 160px);
+    max-width: 1280px;
     width: 100%;
     margin: 0 auto;
+    width: 100%;
+    padding: 24px 16px;
+    &-top {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 40px;
+      padding: 40px 0;
+      .footer-col {
+        display: flex;
+        flex-direction: column;
+        h2 {
+          font-size: 17px;
+          font-weight: 600;
+          color: $color-green02;
+          margin-bottom: 16px;
+        }
+        a {
+          font-size: 14px;
+          text-decoration: none;
+          color: $color-black;
+          margin-bottom: 4px;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  &-bottom {
+    background-color: $light-grey-bg;
+    padding: 16px 0;
     p {
       color: $color-black;
       font-size: 16px;
@@ -37,10 +68,11 @@
 
 @media (max-width: 960px) {
   .footer {
-    padding: 16px 0;
     &-wrapper {
       max-width: unset;
       width: calc(100% - 64px);
+    }
+    &-bottom {
       p {
         font-size: 14px;
       }
