@@ -97,7 +97,7 @@ const CeliacDiseaseSection = () => {
         <div className="item">
           <div className="number">7</div>
           <strong>Opakowania</strong>
-          <p>Kup sobie praktyczne pudełka i torbę termiczną 😉</p>
+          <p>Kup sobie praktyczne pudełka i torbę termiczną</p>
         </div>
 
         <div className="item">
@@ -105,7 +105,7 @@ const CeliacDiseaseSection = () => {
           <strong>Wizyta u dietetyka</strong>
           <p>
             Umów się na choć jedną konsultację z dietetykiem, aby omówić
-            szczegóły swojej nowej diety 🙌
+            szczegóły swojej nowej diety
           </p>
         </div>
       </div>
