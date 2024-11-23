@@ -158,18 +158,12 @@ const Header = () => {
                 }`}
               >
                 <li>
-                  <Link
-                    href="#restauracje-polska"
-                    onClick={handleCloseDropdown}
-                  >
+                  <Link href="#produkty" onClick={handleCloseDropdown}>
                     Lidl
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="#restauracje-europa"
-                    onClick={handleCloseDropdown}
-                  >
+                  <Link href="#produkty" onClick={handleCloseDropdown}>
                     Biedronka
                   </Link>
                 </li>
