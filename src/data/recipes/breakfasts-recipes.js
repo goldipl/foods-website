@@ -6,6 +6,16 @@ import sniadanieBoczekzJajkiem from "./../../../public/img/recipes/breakfasts/00
 export const breakfastsRecipesData = [
     {
       id: 1,
+      href: "https://www.instagram.com/p/C-xC4XMIwvG/",
+      imgSrc: sniadanieBoczekzJajkiem,
+      altText: "Bezglutenowe śniadanie - jajka, boczek, bezglutenowy chlebek na oliwie",
+      label: "Śniadanie",
+      labelClass: "breakfast-label",
+      description:
+        "Bezglutenowe śniadanie - jajka, boczek, bezglutenowy chlebek na oliwie",
+    },
+    {
+      id: 2,
       href: "https://www.instagram.com/p/DBnv7v3OYgM/",
       imgSrc: tortillazJajkiem,
       altText: "Bezglutenowa tortilla z jajkiem, pomidorem, awokado i aromatyczną rukolą",
@@ -13,16 +23,6 @@ export const breakfastsRecipesData = [
       labelClass: "breakfast-label",
       description:
         "Bezglutenowa tortilla z jajkiem, pomidorem, awokado i aromatyczną rukolą",
-    },
-    {
-      id: 2,
-      href: "https://www.instagram.com/p/C5gka8usK82/",
-      imgSrc: NalesnikizDzemem,
-      altText: "Bezglutenowe naleśniki - idealnie smakują z domowym dżemem truskawkowym",
-      label: "Śniadanie",
-      labelClass: "breakfast-label",
-      description:
-        "Bezglutenowe naleśniki - idealnie smakują z domowym dżemem truskawkowym",
     },
     {
       id: 3,
@@ -36,12 +36,12 @@ export const breakfastsRecipesData = [
     },
     {
       id: 4,
-      href: "https://www.instagram.com/p/C-xC4XMIwvG/",
-      imgSrc: sniadanieBoczekzJajkiem,
-      altText: "Bezglutenowe śniadanie - jajka, boczek, bezglutenowy chlebek na oliwie",
+      href: "https://www.instagram.com/p/C5gka8usK82/",
+      imgSrc: NalesnikizDzemem,
+      altText: "Bezglutenowe naleśniki - idealnie smakują z domowym dżemem truskawkowym",
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
-        "Bezglutenowe śniadanie - jajka, boczek, bezglutenowy chlebek na oliwie",
+        "Bezglutenowe naleśniki - idealnie smakują z domowym dżemem truskawkowym",
     },
   ];

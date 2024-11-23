@@ -16,32 +16,32 @@ export const dessertsRecipesData = [
     },
     {
       id: 2,
-      href: "https://www.instagram.com/p/DBrI559o2Eb/",
+      href: "https://www.instagram.com/reel/DAgcKLeITeH/",
       imgSrc: cynamonki,
-      altText: "Bezglutenowe rożki z nadzieniem a'la Oreo",
+      altText: "Bezglutenowe cynamonki - musisz je spróbwać",
       label: "Deser",
       labelClass: "dessert-label",
       description:
-        "Bezglutenowe rożki z nadzieniem a'la Oreo",
+        "Bezglutenowe cynamonki - musisz je spróbwać",
     },
     {
       id: 3,
-      href: "https://www.instagram.com/p/DBrI559o2Eb/",
+      href: "https://www.instagram.com/reel/DB6Zle4oftX/",
       imgSrc: czekoladoweCynamonki,
-      altText: "Bezglutenowe rożki z nadzieniem a'la Oreo",
+      altText: "Czekoladowe bezglutenowe cynamonki z Nutellą",
       label: "Deser",
       labelClass: "dessert-label",
       description:
-        "Bezglutenowe rożki z nadzieniem a'la Oreo",
+        "Czekoladowe bezglutenowe cynamonki z Nutellą",
     },
     {
       id: 4,
-      href: "https://www.instagram.com/p/DBrI559o2Eb/",
+      href: "https://www.instagram.com/reel/DCebEsDoeVU/",
       imgSrc: wegeSernik,
-      altText: "Bezglutenowe rożki z nadzieniem a'la Oreo",
+      altText: "Wege sernik w stylu baskijskim",
       label: "Deser",
       labelClass: "dessert-label",
       description:
-        "Bezglutenowe rożki z nadzieniem a'la Oreo",
+        "Wege sernik w stylu baskijskim",
     },
   ];

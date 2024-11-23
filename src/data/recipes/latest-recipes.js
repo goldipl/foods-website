@@ -8,11 +8,11 @@ export const latestRecipesData = [
       id: 1,
       href: "https://www.instagram.com/p/DBnv7v3OYgM/",
       imgSrc: tortillazJajkiem,
-      altText: "Bezglutenowa tortilla z jajkiem",
+      altText: "Bezglutenowa tortilla z jajkiem, pomidorem, awokado i aromatyczną rukolą",
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
-        "Bezglutenowa tortilla z jajkiem - smaczne i pożywne śniadanie",
+        "Bezglutenowa tortilla z jajkiem, pomidorem, awokado i aromatyczną rukolą",
     },
     {
       id: 2,

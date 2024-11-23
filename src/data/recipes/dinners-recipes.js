@@ -17,32 +17,32 @@ export const dinnersRecipesData = [
     },
     {
       id: 2,
-      href: "https://www.instagram.com/p/DBdvWQouPv2/",
+      href: "https://www.instagram.com/p/DBJmwKfoFa4/",
       imgSrc: makaronzWeganskimBialymSerem,
-      altText: "Dyniowy bezglutenowy makaron z wędliną typu Speck",
+      altText: "Bezglutenowy makaron z wegańskim 'Białym Serem'",
       label: "Obiad",
       labelClass: "dinner-label",
       description:
-        "Dyniowy bezglutenowy makaron z wędliną typu Speck",
+        "Bezglutenowy makaron z wegańskim 'Białym Serem'",
     },
     {
       id: 3,
-      href: "https://www.instagram.com/p/DBdvWQouPv2/",
+      href: "https://www.instagram.com/p/DB5pgUtIKMZ/",
       imgSrc: pizzazRukola,
-      altText: "Dyniowy bezglutenowy makaron z wędliną typu Speck",
+      altText: "Bezglutenowa pizza z dynią, pieczarkami, szynką parmeńską, wegańskim serem i oliwą truflową",
       label: "Obiad",
       labelClass: "dinner-label",
       description:
-        "Dyniowy bezglutenowy makaron z wędliną typu Speck",
+        "Bezglutenowa pizza z dynią, pieczarkami, szynką parmeńską, wegańskim serem i oliwą truflową",
     },
     {
       id: 4,
-      href: "https://www.instagram.com/p/DBdvWQouPv2/",
+      href: "https://www.instagram.com/p/C_CugMjIJ0J/",
       imgSrc: BurgerTeriyakizKurczaka,
-      altText: "Dyniowy bezglutenowy makaron z wędliną typu Speck",
+      altText: "Bezglutenowy kurczako-burger w stylu Teriyaki",
       label: "Obiad",
       labelClass: "dinner-label",
       description:
-        "Dyniowy bezglutenowy makaron z wędliną typu Speck",
+        "Bezglutenowy kurczako-burger w stylu Teriyaki",
     },
   ];
