@@ -27,8 +27,8 @@
           color: $breakfast-label-bg;
         }
         svg {
-          filter: brightness(0) saturate(100%) invert(91%) sepia(54%)
-            saturate(2411%) hue-rotate(328deg) brightness(121%) contrast(92%);
+          filter: saturate(100%) invert(91%) sepia(54%) saturate(2411%)
+            hue-rotate(328deg) brightness(121%) contrast(92%);
         }
       }
     }
@@ -38,8 +38,8 @@
           color: $dessert-label-bg;
         }
         svg {
-          filter: brightness(0) saturate(100%) invert(78%) sepia(12%)
-            saturate(4609%) hue-rotate(160deg) brightness(103%) contrast(97%);
+          filter: saturate(100%) invert(78%) sepia(12%) saturate(4609%)
+            hue-rotate(160deg) brightness(103%) contrast(97%);
         }
       }
     }
@@ -50,8 +50,8 @@
           filter: brightness(2);
         }
         svg {
-          filter: brightness(0) saturate(100%) invert(6%) sepia(96%)
-            saturate(6176%) hue-rotate(277deg) brightness(141%) contrast(94%);
+          filter: saturate(100%) invert(6%) sepia(96%) saturate(6176%)
+            hue-rotate(277deg) brightness(141%) contrast(94%);
         }
       }
     }
@@ -62,8 +62,8 @@
           filter: brightness(2);
         }
         svg {
-          filter: brightness(0) saturate(100%) invert(32%) sepia(7%)
-            saturate(15%) hue-rotate(326deg) brightness(93%) contrast(88%);
+          filter: saturate(100%) invert(32%) sepia(7%) saturate(15%)
+            hue-rotate(326deg) brightness(203%) contrast(88%);
         }
       }
     }
