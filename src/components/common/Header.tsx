@@ -167,6 +167,16 @@ const Header = () => {
                     Biedronka
                   </Link>
                 </li>
+                <li>
+                  <Link href="#produkty" onClick={handleCloseDropdown}>
+                    Stokrotka
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#produkty" onClick={handleCloseDropdown}>
+                    Inne
+                  </Link>
+                </li>
               </ul>
             </li>
             <li className="nav-expand">
