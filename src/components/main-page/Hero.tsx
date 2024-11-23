@@ -5,10 +5,10 @@ import { Pagination, Navigation } from "swiper/modules";
 import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 
-import avocadoImg from "./../../../public/img/hero/avocado.png";
-import breakfastImg from "./../../../public/img/hero/breakfast.png";
-import dinnerImg from "./../../../public/img/hero/dinner.png";
-import dessertImg from "./../../../public/img/hero/dessert.png";
+import welcomeImg from "./../../../public/img/restaurants/poland/003_rola_pao_warszawa.jpg";
+import breakfastImg from "./../../../public/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.png";
+import dinnerImg from "./../../../public/img/recipes/dinners/004_bezglutenowy_burger_z_kurczaka_teriyaki.png";
+import dessertImg from "./../../../public/img/recipes/desserts/004_wege_sernik.jpg";
 import Link from "next/link";
 
 SwiperCore.use([Pagination, Navigation]);
@@ -40,7 +40,7 @@ const Hero = () => {
                 </div>
                 <div className="swiper-slide-box__img">
                   <Image
-                    src={avocadoImg}
+                    src={welcomeImg}
                     alt="awokado"
                     width={450}
                     height={450}
