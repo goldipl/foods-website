@@ -10,7 +10,7 @@ export const polishRestaurantsData = [
       href: "https://www.instagram.com/p/C-8CItzIVKk/",
       imgSrc: sushiWesolaWarszawa,
       altText: "Bezglutenowe sushi w Warszawie, Saska Sushi, ul. Zwycięzców 4, Warszawa",
-      label: "Polska",
+      label: "Warszawa",
       labelClass: "poland-label",
       description:
         "Bezglutenowe sushi w Warszawie, Saska Sushi, ul. Zwycięzców 4, Warszawa",
@@ -20,7 +20,7 @@ export const polishRestaurantsData = [
       href: "https://www.instagram.com/reel/C-S0V-rIpJ0/",
       imgSrc: rolaPaoWarszawa,
       altText: "Bezglutenowa restauracja indyjska w Warszawie, Rola Pao, al. Jerozolimskie 42",
-      label: "Polska",
+      label: "Warszawa",
       labelClass: "poland-label",
       description:
         "Bezglutenowa restauracja indyjska w Warszawie, Rola Pao, al. Jerozolimskie 42",
@@ -30,7 +30,7 @@ export const polishRestaurantsData = [
       href: "https://www.instagram.com/reel/DCOjHn-O-LQ/",
       imgSrc: kebabEnfesWarszawa,
       altText: "Bezglutenowy kebab i baklava w Warszawie, Enfes Kebab, ul. Leona Berensona 37",
-      label: "Polska",
+      label: "Warszawa",
       labelClass: "poland-label",
       description:
         "Bezglutenowy kebab i baklava w Warszawie, Enfes Kebab, ul. Leona Berensona 37",
@@ -40,7 +40,7 @@ export const polishRestaurantsData = [
       href: "https://www.instagram.com/p/C9fe2dnIjcY/",
       imgSrc: uKrolikaGdansk,
       altText: "Restauracja U Królika, Słonimskiego 6/12, Gdańsk",
-      label: "Polska",
+      label: "Gdańsk",
       labelClass: "poland-label",
       description:
         "Restauracja U Królika, Słonimskiego 6/12, Gdańsk",

@@ -10,7 +10,7 @@ export const  europeanRestaurantsData = [
       href: "https://www.instagram.com/p/DBHExqroFiQ/",
       imgSrc: zenZeroLidoDiOstia,
       altText: "Restauracja ZenZero, Lido di Ostia, Rzym, Włochy",
-      label: "Europa",
+      label: "Włochy",
       labelClass: "europe-label",
       description:
         "Restauracja ZenZero, Lido di Ostia, Rzym, Włochy",
@@ -20,7 +20,7 @@ export const  europeanRestaurantsData = [
       href: "https://www.instagram.com/p/DAMP3HvIRvd/",
       imgSrc: mamaEatRoma,
       altText: "Restauracja Mama Eat, Rzym, Włochy",
-      label: "Europa",
+      label: "Włochy",
       labelClass: "europe-label",
       description:
         "Restauracja Mama Eat, Rzym, Włochy",
@@ -30,7 +30,7 @@ export const  europeanRestaurantsData = [
       href: "https://www.instagram.com/p/DBVkMzgI27-/",
       imgSrc: laSoffittaRoma,
       altText: "Restauracja La Soffitta, Rzym, Włochy",
-      label: "Europa",
+      label: "Włochy",
       labelClass: "europe-label",
       description:
         "Restauracja La Soffitta, Rzym, Włochy",
@@ -40,7 +40,7 @@ export const  europeanRestaurantsData = [
       href: "https://www.instagram.com/p/C3IhmmhI9JO/",
       imgSrc: burgerShopCypr,
       altText: "Burger Shop, Nikozja, Cypr",
-      label: "Europa",
+      label: "Cypr",
       labelClass: "europe-label",
       description:
         "Burger Shop, Nikozja, Cypr",

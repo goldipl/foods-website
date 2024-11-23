@@ -39,7 +39,7 @@ export const latestRecipesData = [
       href: "https://www.instagram.com/p/DBdvWQouPv2/",
       imgSrc: sushiWesolaWarszawa,
       altText: "Sushi Wesoła Warszawa",
-      label: "Polska",
+      label: "Restauracje",
       labelClass: "poland-label",
       description:
         "Sushi Wesoła Warszawa",
