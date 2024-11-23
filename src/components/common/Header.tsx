@@ -206,7 +206,10 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#celiakia-co-dalej" onClick={handleCloseDropdown}>
+                  <Link
+                    href="#pierwsze-kroki-po-diagnozie"
+                    onClick={handleCloseDropdown}
+                  >
                     Pierwsze kroki po diagnozie
                   </Link>
                 </li>
