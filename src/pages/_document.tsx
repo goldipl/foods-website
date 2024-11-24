@@ -28,7 +28,7 @@ class MyDocument extends Document {
           <title>Bezglutenowa Karola - Przepisy Gluten Free</title>
           <meta
             name="description"
-            content="Bezglutenowa Karola - przepisy na dania bez glutenu, bez cukru, bez nabiału, idealne dla osób z celiakią. Odkryj zdrowe przepisy i porady dla diety bezglutenowej."
+            content="Bezglutenowa Karola - przepisy na dania bez glutenu, bez cukru, bez nabiału, idealne dla osób z celiakią. Odkryj zdrowe przepisy i porady dla osób na diecie bezglutenowej."
           />
           <meta
             name="keywords"
