@@ -76,7 +76,7 @@ const CeliacDiseaseSection = () => {
           </p>
         </div>
 
-        <h2 id="celiakia-co-dalej">
+        <h2 id="pierwsze-kroki-po-diagnozie">
           Celiakia - i co dalej? <br></br>Pierwsze kroki po diagnozie
         </h2>
 
