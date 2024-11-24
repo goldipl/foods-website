@@ -202,8 +202,9 @@
                 z-index: 0;
                 img {
                   &.welcome-hero-img {
-                    width: 100%;
+                    width: calc(100% + 24px);
                     max-height: unset;
+                    margin-left: -12px;
                   }
                 }
               }
