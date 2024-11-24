@@ -83,9 +83,7 @@ const CeliacDiseaseSection = () => {
         <div className="item">
           <div className="number">1</div>
           <strong>W kuchni</strong>
-          <div className="subitem">
-            <p>Wymień wszystkie przyprawy w kuchni na bezglutenowe</p>
-          </div>
+          <p>Wymień wszystkie przyprawy w kuchni na bezglutenowe</p>
         </div>
 
         <div className="item">
