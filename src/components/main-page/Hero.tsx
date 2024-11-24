@@ -9,6 +9,9 @@ import welcomeImg from "./../../../public/img/restaurants/poland/003_rola_pao_wa
 import breakfastImg from "./../../../public/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.png";
 import dinnerImg from "./../../../public/img/recipes/dinners/004_bezglutenowy_burger_z_kurczaka_teriyaki.png";
 import dessertImg from "./../../../public/img/recipes/desserts/004_wege_sernik.jpg";
+import dealz001 from "./../../../public/img/products/001_dealz_czy_to_ma_gluten.jpg";
+import zenZeroLidoDiOstia from "./../../../public/img/restaurants/europe/001_zenzero_lido_di_ostia.jpg";
+import saskaSushiWarszawa from "./../../../public/img/restaurants/poland/001_saska_sushi.jpg";
 import Link from "next/link";
 
 SwiperCore.use([Pagination, Navigation]);
@@ -41,7 +44,7 @@ const Hero = () => {
                 <div className="swiper-slide-box__img">
                   <Image
                     src={welcomeImg}
-                    alt="awokado"
+                    alt="Restauracja Rola Pao w Warszawie"
                     width={450}
                     height={450}
                   ></Image>
@@ -55,7 +58,7 @@ const Hero = () => {
                 <div className="swiper-slide-box__img">
                   <Image
                     src={breakfastImg}
-                    alt="cytryny"
+                    alt="Bezglutenowa śniadaniowa tortilla z komosy ryżowej"
                     width={450}
                     height={450}
                   ></Image>
@@ -81,7 +84,7 @@ const Hero = () => {
                 <div className="swiper-slide-box__img">
                   <Image
                     src={dinnerImg}
-                    alt="banany"
+                    alt="Kurczako-burger Teriyaki"
                     width={450}
                     height={450}
                   ></Image>
@@ -95,7 +98,7 @@ const Hero = () => {
                 <div className="swiper-slide-box__img">
                   <Image
                     src={dessertImg}
-                    alt="pomarancze"
+                    alt="Wege sernik"
                     width={450}
                     height={450}
                   ></Image>
@@ -105,6 +108,66 @@ const Hero = () => {
                   <Link className="hero-cta" href="#desery">
                     Sprawdź przepisy
                   </Link>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="slide-content">
+              <div className="swiper-slide-box">
+                <div className="swiper-slide-box__text">
+                  <h2>Bezglutenowe restauracje w Polsce</h2>
+                  <Link className="hero-cta" href="#restauracje-polska">
+                    Sprawdź
+                  </Link>
+                </div>
+                <div className="swiper-slide-box__img">
+                  <Image
+                    src={saskaSushiWarszawa}
+                    alt="Saska Sushi"
+                    width={450}
+                    height={450}
+                  ></Image>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="slide-content">
+              <div className="swiper-slide-box text-right-side">
+                <div className="swiper-slide-box__img">
+                  <Image
+                    src={zenZeroLidoDiOstia}
+                    alt="Restauracja ZenZero, Włochy"
+                    width={450}
+                    height={450}
+                  ></Image>
+                </div>
+                <div className="swiper-slide-box__text">
+                  <h2>Bezglutenowe restauracje na świecie</h2>
+                  <Link className="hero-cta" href="#restauracje-europa">
+                    Sprawdź
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="slide-content">
+              <div className="swiper-slide-box">
+                <div className="swiper-slide-box__text">
+                  <h2>Bezglutenowe produkty - "Czy to ma gluten?"</h2>
+                  <Link className="hero-cta" href="#produkty">
+                    Sprawdź
+                  </Link>
+                </div>
+                <div className="swiper-slide-box__img">
+                  <Image
+                    src={dealz001}
+                    alt="Czy to ma gluten? Sklep Dealz"
+                    width={450}
+                    height={450}
+                  ></Image>
                 </div>
               </div>
             </div>
