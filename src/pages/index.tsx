@@ -17,7 +17,7 @@ const index = () => {
   return (
     <>
       <header>
-        <Topbar />
+        {/* <Topbar /> */}
         <Header />
       </header>
       <main>
