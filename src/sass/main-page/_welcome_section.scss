@@ -38,6 +38,9 @@
           outline: 1px solid $green-border-color01;
           border: 16px solid $white-border-color01;
           height: auto;
+          @media (max-width: 992px) {
+            border: 8px solid $white-border-color01;
+          }
         }
       }
       .text-box {
