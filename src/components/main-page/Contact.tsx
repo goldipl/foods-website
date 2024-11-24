@@ -25,7 +25,10 @@ const Contact = () => {
               <CiInstagram />
             </div>
             <div className="contact-box-slot__content">
-              <Link href="https://www.instagram.com/bezglutenowakarola/">
+              <Link
+                href="https://www.instagram.com/bezglutenowakarola/"
+                target="_blank"
+              >
                 @bezglutenowakarola <span>- Obserwuj po więcej</span>
               </Link>
             </div>
