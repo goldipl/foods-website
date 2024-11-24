@@ -169,6 +169,8 @@ header {
           &.open {
             display: flex;
             z-index: 9;
+            overflow-y: scroll;
+            overflow-x: hidden;
             .nav-first-lvl {
               flex-direction: column;
               justify-content: flex-start;
@@ -226,6 +228,7 @@ header {
                   &.active {
                     display: flex;
                     border-bottom: 0;
+                    padding: 0;
                   }
                   li {
                     padding: 0;
@@ -252,6 +255,70 @@ header {
             }
           }
         }
+      }
+    }
+  }
+}
+
+// Third lvl menu
+
+.nav-sub-expand {
+  position: relative;
+  &:has(.nav-third-lvl) {
+    .arrow-img {
+      transform: rotate(270deg);
+      @media (max-width: 1180px) {
+        transform: rotate(0);
+      }
+      &.rotate {
+        transform: rotate(90deg) !important;
+        @media (max-width: 1180px) {
+          transform: rotate(180deg) !important;
+        }
+      }
+    }
+  }
+  span {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    .arrow-img {
+      margin-left: 8px;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  .nav-third-lvl {
+    list-style: none;
+    position: absolute;
+    top: -9px;
+    left: 100%;
+    display: none;
+    flex-direction: column;
+    background-color: $white-bg-color;
+    padding: 8px 0;
+    border: 1px solid $grey-border-color01;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+    @media (max-width: 1180px) {
+      position: relative;
+      top: 0;
+      left: 0;
+      border: 0;
+    }
+
+    &.active {
+      display: flex;
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    li {
+      a {
+        font-size: 14px;
       }
     }
   }

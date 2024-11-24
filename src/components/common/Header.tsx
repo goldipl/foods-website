@@ -7,11 +7,18 @@ import Image from "next/image";
 
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [activeSubDropdown, setActiveSubDropdown] = useState(null);
   const [openHamburger, setOpenHamburger] = useState(false);
 
   const handleDropdownToggle = (dropdown: any) => {
     const isDropdownActive = activeDropdown === dropdown;
     setActiveDropdown(isDropdownActive ? null : dropdown);
+    if (!isDropdownActive) setActiveSubDropdown(null);
+  };
+
+  const handleSubDropdownToggle = (dropdown: any) => {
+    const isSubDropdownActive = activeSubDropdown === dropdown;
+    setActiveSubDropdown(isSubDropdownActive ? null : dropdown);
   };
 
   const addBlockedWindow = () => {
@@ -26,6 +33,7 @@ const Header = () => {
 
   const handleCloseDropdown = () => {
     setActiveDropdown(null);
+    setActiveSubDropdown(null);
     removeBlockedWindow();
     setOpenHamburger(false);
   };
@@ -121,21 +129,77 @@ const Header = () => {
                   activeDropdown === "secondDropdown" ? "active" : ""
                 }`}
               >
-                <li>
-                  <Link
-                    href="#restauracje-polska"
-                    onClick={handleCloseDropdown}
-                  >
+                <li className="nav-sub-expand">
+                  <span onClick={() => handleSubDropdownToggle("Polska")}>
                     Polska
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#restauracje-europa"
-                    onClick={handleCloseDropdown}
+                    <Image
+                      src={menuDownIcon.src}
+                      alt="strzałka"
+                      height={9}
+                      width={16}
+                      className={`arrow-img ${
+                        activeSubDropdown === "Polska" ? "rotate" : ""
+                      }`}
+                    />
+                  </span>
+                  <ul
+                    className={`nav-third-lvl ${
+                      activeSubDropdown === "Polska" ? "active" : ""
+                    }`}
                   >
+                    <li>
+                      <Link
+                        href="#restauracje-polska"
+                        onClick={handleCloseDropdown}
+                      >
+                        Warszawa
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="#restauracje-polska"
+                        onClick={handleCloseDropdown}
+                      >
+                        Gdańsk
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li className="nav-sub-expand">
+                  <span onClick={() => handleSubDropdownToggle("Europa")}>
                     Europa
-                  </Link>
+                    <Image
+                      src={menuDownIcon.src}
+                      alt="strzałka"
+                      height={9}
+                      width={16}
+                      className={`arrow-img ${
+                        activeSubDropdown === "Europa" ? "rotate" : ""
+                      }`}
+                    />
+                  </span>
+                  <ul
+                    className={`nav-third-lvl ${
+                      activeSubDropdown === "Europa" ? "active" : ""
+                    }`}
+                  >
+                    <li>
+                      <Link
+                        href="#restauracje-europa"
+                        onClick={handleCloseDropdown}
+                      >
+                        Włochy
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="#restauracje-europa"
+                        onClick={handleCloseDropdown}
+                      >
+                        Cypr
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </li>
