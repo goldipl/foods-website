@@ -41,17 +41,16 @@ const CeliacDiseaseSection = () => {
           <div className="number">3</div>
           <strong>Jakie są objawy celiakii?</strong>
           <p>
-            Na pewno są nie są jednoznaczne i oczywiste jak wydaje się to w
-            teorii. Celiakia może mieć postać klasyczną i nieklasyczną. W
-            przypadku tej pierwszej charakterystycznymi objawami są m.in.:
-            biegunki, utrata masy ciała, zaburzenia rozwoju, niski wzrost,
-            wzdęty brzuch, ból brzucha. Natomiast w przypadku celiakii
-            nieklasycznej (która jest spotykana znacznie częściej), objawy
-            zaliczane są głównie do tych pozajelitowych m.in. anemia, afty,
-            zaburzenia neurologiczne, depresja, psychozy, bóle kostne i stawowe,
-            poronienia i problemy z płodnością, współistniejące choroby
-            autoimmunologiczne, niedobór witamin i składników mineralnych i
-            wiele innych.
+            Na pewno nie są jednoznaczne i oczywiste jak wydaje się to w teorii.
+            Celiakia może mieć postać klasyczną i nieklasyczną. W przypadku tej
+            pierwszej charakterystycznymi objawami są m.in.: biegunki, utrata
+            masy ciała, zaburzenia rozwoju, niski wzrost, wzdęty brzuch, ból
+            brzucha. Natomiast w przypadku celiakii nieklasycznej (która jest
+            spotykana znacznie częściej), objawy zaliczane są głównie do tych
+            pozajelitowych m.in. anemia, afty, zaburzenia neurologiczne,
+            depresja, psychozy, bóle kostne i stawowe, poronienia i problemy z
+            płodnością, współistniejące choroby autoimmunologiczne, niedobór
+            witamin i składników mineralnych i wiele innych.
           </p>
         </div>
 
