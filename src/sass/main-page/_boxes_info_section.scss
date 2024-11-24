@@ -57,13 +57,20 @@
           background-color: $main-bg-green-color03;
         }
         &__icon {
-          svg {
+          width: 48px;
+          height: 48px;
+          margin-right: 16px;
+          @media (max-width: 992px) {
+            width: 36px;
+            height: 36px;
+          }
+          svg,
+          img {
             width: 48px;
-            height: auto;
-            margin-right: 16px;
+            height: 48px;
             @media (max-width: 992px) {
               width: 36px;
-              height: auto;
+              height: 36px;
             }
           }
         }

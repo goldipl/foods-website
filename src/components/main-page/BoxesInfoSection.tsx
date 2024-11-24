@@ -1,7 +1,8 @@
 import React from "react";
-import { MdDoNotDisturb } from "react-icons/md";
-import { LuMilkOff } from "react-icons/lu";
-import { PiGrainsSlash } from "react-icons/pi";
+import nosugar from "./../../../public/icons/boxes-info/sugar-512.svg";
+import nomilk from "./../../../public/icons/boxes-info/milk-128.svg";
+import nogluten from "./../../../public/icons/boxes-info/gluten-128.svg";
+import Image from "next/image";
 
 const BoxesInfoSection = () => {
   return (
@@ -12,7 +13,7 @@ const BoxesInfoSection = () => {
           {/* Slot */}
           <div className="boxes-info-slot">
             <div className="boxes-info-slot__icon">
-              <PiGrainsSlash />
+              <Image src={nogluten} width={40} height={40} alt="bez glutenu" />
             </div>
             <div className="boxes-info-slot__text">
               <span>bez glutenu</span>
@@ -21,7 +22,7 @@ const BoxesInfoSection = () => {
           {/* Slot */}
           <div className="boxes-info-slot">
             <div className="boxes-info-slot__icon">
-              <LuMilkOff />
+              <Image src={nomilk} width={40} height={40} alt="bez nabiału" />
             </div>
             <div className="boxes-info-slot__text">
               <span>bez nabiału</span>
@@ -30,7 +31,7 @@ const BoxesInfoSection = () => {
           {/* Slot */}
           <div className="boxes-info-slot">
             <div className="boxes-info-slot__icon">
-              <MdDoNotDisturb />
+              <Image src={nosugar} width={40} height={40} alt="bez cukru" />
             </div>
             <div className="boxes-info-slot__text">
               <span>bez cukru</span>
