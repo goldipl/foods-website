@@ -49,7 +49,7 @@ class MyDocument extends Document {
           <meta property="og:url" content="https://bezglutenowakarola.pl" />
           <meta
             property="og:image"
-            content="/img/header/bezglutenowakarola-logo.svg"
+            content="https://bezglutenowakarola.pl/_next/static/media/bezglutenowakarola-logo.3e6eebf5.svg"
           />
           <meta property="og:locale" content="pl_PL" />
 
@@ -65,7 +65,7 @@ class MyDocument extends Document {
           />
           <meta
             name="twitter:image"
-            content="/img/header/bezglutenowakarola-logo.svg"
+            content="https://bezglutenowakarola.pl/_next/static/media/bezglutenowakarola-logo.3e6eebf5.svg"
           />
 
           {/* Structured Data (JSON-LD for Recipe Page) */}
@@ -75,7 +75,7 @@ class MyDocument extends Document {
               "@type": "Recipe",
               "name": "Bezglutenowa Karola - Przepisy Gluten Free",
               "description": "Przepisy na dania bez glutenu, bez cukru, bez nabiału dla osób z celiakią i na diecie bezglutenowej.",
-              "image": "/img/header/bezglutenowakarola-logo.svg",
+              "image": "https://bezglutenowakarola.pl/_next/static/media/bezglutenowakarola-logo.3e6eebf5.svg",
               "author": {
                 "@type": "Person",
                 "name": "Bezglutenowa Karola"
