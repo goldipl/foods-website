@@ -26,6 +26,7 @@ const LatestRecipes = () => {
                 alt={recipe.altText}
                 width={400}
                 height={500}
+                loading="lazy"
               />
             </div>
             <div className="listing-v1-slot__text">
