@@ -67,6 +67,9 @@
         background-color: $main-bg-green-color;
       }
       .slide-content {
+        &:has(.welcome-hero-img) {
+          margin-left: -180px;
+        }
         .swiper-slide-box {
           display: flex;
           flex-direction: row;
@@ -125,6 +128,12 @@
               height: 400px;
               clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
               object-fit: cover;
+              &.welcome-hero-img {
+                object-position: top;
+                width: 180%;
+                height: auto;
+                max-height: 460px;
+              }
             }
           }
         }
@@ -160,6 +169,9 @@
         .swiper-slide {
           overflow: hidden;
           .slide-content {
+            &:has(.welcome-hero-img) {
+              margin-left: unset;
+            }
             .swiper-slide-box {
               display: flex;
               flex-direction: row;
@@ -186,7 +198,14 @@
                 }
               }
               &__img {
+                height: 400px;
                 z-index: 0;
+                img {
+                  &.welcome-hero-img {
+                    width: 100%;
+                    max-height: unset;
+                  }
+                }
               }
             }
           }

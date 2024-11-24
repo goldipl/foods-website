@@ -47,6 +47,7 @@ const Hero = () => {
                     alt="Restauracja Rola Pao w Warszawie"
                     width={450}
                     height={450}
+                    className="welcome-hero-img"
                   ></Image>
                 </div>
               </div>
