@@ -7,6 +7,10 @@ import { latestRecipesData } from "@/data/recipes/latest-recipes";
 const LatestRecipes = () => {
   return (
     <>
+      <h1 className="seo-text">
+        <span>Bezglutenowa Karola</span> - bezglutenowe restauracje, przepisy,
+        produkty
+      </h1>
       <h2 id="najnowsze-przepisy">Najnowsze</h2>
       <div className="listing-v1">
         {latestRecipesData.map((recipe) => (

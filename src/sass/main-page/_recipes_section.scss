@@ -14,6 +14,19 @@
     @media (max-width: 992px) {
       padding: 32px 0 48px 0;
     }
+    h1.seo-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      text-decoration: underline 2px $color-green02;
+      span {
+        display: inline-flex;
+        margin-right: 8px;
+        color: $color-green02;
+      }
+    }
     h2 {
       display: flex;
       justify-content: center;
