@@ -15,7 +15,7 @@ const Contact = () => {
             </div>
             <div className="contact-box-slot__content">
               <Link href="mailto:karolinawontorska@gmail.com">
-                karolinawontorska@gmail.com
+                karolinawontorska@gmail.com <span>- Masz pytania? Napisz</span>
               </Link>
             </div>
           </div>
