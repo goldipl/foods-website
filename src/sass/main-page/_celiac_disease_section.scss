@@ -87,9 +87,11 @@
       padding: 15px;
 
       .item {
-        padding: 45px 15px 15px 80px;
+        padding: 48px 15px 15px 64px;
         .number {
-          font-size: 46px;
+          font-size: 40px;
+          width: 64px;
+          height: 64px;
         }
       }
     }
