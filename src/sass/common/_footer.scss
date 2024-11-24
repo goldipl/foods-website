@@ -105,7 +105,13 @@
         .footer-col {
           width: 45%;
           padding-right: 16px;
-          border-right: 0;
+          &:nth-of-type(odd) {
+            border-right: 1px solid $white-border-color01;
+          }
+          &:nth-of-type(even),
+          &:last-of-type {
+            border-right: 0;
+          }
           h2 {
             font-size: 15px;
             margin-bottom: 10px;
