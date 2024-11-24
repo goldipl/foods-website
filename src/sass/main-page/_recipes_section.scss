@@ -20,11 +20,18 @@
       align-items: center;
       text-align: center;
       width: 100%;
-      text-decoration: underline 2px $color-green02;
+      font-weight: 500;
       span {
-        display: inline-flex;
+        display: inline;
         margin-right: 8px;
         color: $color-green02;
+        font-weight: 700;
+      }
+      @media (max-width: 1180px) {
+        flex-direction: column;
+      }
+      @media (max-width: 992px) {
+        font-size: 24px;
       }
     }
     h2 {
