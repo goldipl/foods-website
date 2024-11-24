@@ -10,7 +10,7 @@ import breakfastImg from "./../../../public/img/recipes/breakfasts/003_sniadanio
 import dinnerImg from "./../../../public/img/recipes/dinners/004_bezglutenowy_burger_z_kurczaka_teriyaki.png";
 import dessertImg from "./../../../public/img/recipes/desserts/004_wege_sernik.jpg";
 import stokrotka002 from "./../../../public/img/products/002_stokrotka_czy_to_ma_gluten.jpg";
-import zenZeroLidoDiOstia from "./../../../public/img/restaurants/europe/001_zenzero_lido_di_ostia.jpg";
+import pastaGlutenFreeRoma from "./../../../public/img/welcome/wloski-makaron-gluten-free.jpg";
 import saskaSushiWarszawa from "./../../../public/img/restaurants/poland/001_saska_sushi.jpg";
 import Link from "next/link";
 
@@ -137,8 +137,8 @@ const Hero = () => {
               <div className="swiper-slide-box text-right-side">
                 <div className="swiper-slide-box__img">
                   <Image
-                    src={zenZeroLidoDiOstia}
-                    alt="Restauracja ZenZero, Włochy"
+                    src={pastaGlutenFreeRoma}
+                    alt="Restauracja Mama Eat, Włochy"
                     width={450}
                     height={450}
                   ></Image>
