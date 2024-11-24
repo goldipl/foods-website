@@ -55,8 +55,11 @@
             font-size: 18px;
             text-decoration: none;
             color: $color-green01;
+            span {
+              color: $color-black;
+            }
             &:hover {
-              text-decoration: underline;
+              color: $color-black;
             }
             @media (max-width: 992px) {
               font-size: 14px;
