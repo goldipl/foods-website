@@ -1,10 +1,12 @@
-import path from 'path';
+// next.config.js
 
 const nextConfig = {
-  // Your Next.js configuration options here
   reactStrictMode: true,
   swcMinify: true,
-  // Add other configurations as needed
+  output: 'export',  // Static export setting
+  images: {
+    unoptimized: true,  // Disable Image Optimization
+  },
 };
 
 export default nextConfig;
