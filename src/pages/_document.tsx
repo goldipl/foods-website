@@ -44,7 +44,7 @@ class MyDocument extends Document {
           />
           <meta
             property="og:description"
-            content="Znajdź przepisy na dania bez glutenu, bez cukru, bez nabiału, idealne dla osób z celiakią. Zdrowe i smaczne jedzenie dla diety bezglutenowej."
+            content="Znajdź przepisy na dania bez glutenu, bez cukru, bez nabiału, idealne dla osób z celiakią. Zdrowe i smaczne jedzenie dla osób na diecie bezglutenowej."
           />
           <meta property="og:url" content="https://bezglutenowakarola.pl" />
           <meta
