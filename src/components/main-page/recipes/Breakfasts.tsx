@@ -7,7 +7,9 @@ import { breakfastsRecipesData } from "@/data/recipes/breakfasts-recipes";
 const Breakfasts = () => {
   return (
     <>
-      <h2 id="sniadania">Śniadania</h2>
+      <div className="section-title">
+        <h2 id="sniadania">Śniadania</h2>
+      </div>
       <div className="listing-v1">
         {breakfastsRecipesData.map((recipe) => (
           <Link

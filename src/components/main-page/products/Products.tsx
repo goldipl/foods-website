@@ -7,7 +7,9 @@ import { productsData } from "@/data/products/products";
 const Products = () => {
   return (
     <>
-      <h2 id="produkty">Produkty</h2>
+      <div className="section-title">
+        <h2 id="produkty">Produkty</h2>
+      </div>
       <div className="listing-v1">
         {productsData.map((product) => (
           <Link

@@ -6,14 +6,14 @@ import Desserts from "./recipes/Desserts";
 
 const RecipesSection = () => {
   return (
-    <div id="recipes-section" className="recipes-section">
+    <section id="recipes-section" className="recipes-section insta-slots">
       <div className="recipes-wrapper">
         <LatestRecipes />
         <Breakfasts />
         <Dinners />
         <Desserts />
       </div>
-    </div>
+    </section>
   );
 };
 

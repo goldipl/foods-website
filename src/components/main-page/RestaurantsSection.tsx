@@ -4,12 +4,15 @@ import EuropeRestaurants from "./restaurants/EuropeRestaurants";
 
 const RestaurantsSection = () => {
   return (
-    <div id="restaurants-section" className="restaurants-section">
+    <section
+      id="restaurants-section"
+      className="restaurants-section insta-slots"
+    >
       <div className="restaurants-wrapper">
         <PolishRestaurants />
         <EuropeRestaurants />
       </div>
-    </div>
+    </section>
   );
 };
 

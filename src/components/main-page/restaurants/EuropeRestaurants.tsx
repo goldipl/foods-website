@@ -7,7 +7,9 @@ import { europeanRestaurantsData } from "@/data/restaurants/european-restaurants
 const EuropeRestaurants = () => {
   return (
     <>
-      <h2 id="restauracje-europa">Restauracje - Europa</h2>
+      <div className="section-title">
+        <h2 id="restauracje-europa">Restauracje - Europa</h2>
+      </div>
       <div className="listing-v1">
         {europeanRestaurantsData.map((recipe) => (
           <Link

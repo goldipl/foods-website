@@ -6,9 +6,11 @@ import Image from "next/image";
 
 const BoxesInfoSection = () => {
   return (
-    <div id="boxes-info-section" className="boxes-info-section">
+    <section id="boxes-info-section" className="boxes-info-section">
       <div className="boxes-info-wrapper">
-        <h2>Znajdziesz u mnie, potrawy i przepisy:</h2>
+        <div className="section-title">
+          <h2>Znajdziesz u mnie, potrawy i przepisy:</h2>
+        </div>
         <div className="boxes-info">
           {/* Slot */}
           <div className="boxes-info-slot">
@@ -39,7 +41,7 @@ const BoxesInfoSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

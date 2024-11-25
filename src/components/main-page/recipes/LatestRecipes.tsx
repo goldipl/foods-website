@@ -11,7 +11,9 @@ const LatestRecipes = () => {
         <span>Bezglutenowa Karola</span> - bezglutenowe restauracje, przepisy,
         produkty
       </h1>
-      <h2 id="najnowsze-przepisy">Najnowsze</h2>
+      <div className="section-title">
+        <h2 id="najnowsze-przepisy">Najnowsze</h2>
+      </div>
       <div className="listing-v1">
         {latestRecipesData.map((recipe) => (
           <Link

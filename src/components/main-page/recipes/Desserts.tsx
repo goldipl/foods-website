@@ -7,7 +7,9 @@ import { dessertsRecipesData } from "@/data/recipes/desserts-recipes";
 const Desserts = () => {
   return (
     <>
-      <h2 id="desery">Desery</h2>
+      <div className="section-title">
+        <h2 id="desery">Desery</h2>
+      </div>
       <div className="listing-v1">
         {dessertsRecipesData.map((recipe) => (
           <Link

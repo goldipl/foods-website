@@ -2,11 +2,13 @@ import React from "react";
 
 const CeliacDiseaseSection = () => {
   return (
-    <div className="celiac-disease-section">
+    <section className="celiac-disease-section info-title">
       <div className="celiac-disease-wrapper">
-        <h2 id="celiakia-podstawowe-informacje">
-          Celiakia - podstawowe informacje
-        </h2>
+        <div className="section-title">
+          <h2 id="celiakia-podstawowe-informacje">
+            Celiakia - podstawowe informacje
+          </h2>
+        </div>
 
         <div className="item">
           <div className="number">1</div>
@@ -75,9 +77,11 @@ const CeliacDiseaseSection = () => {
           </p>
         </div>
 
-        <h2 id="pierwsze-kroki-po-diagnozie">
-          Celiakia - i co dalej? <br></br>Pierwsze kroki po diagnozie
-        </h2>
+        <div className="section-title">
+          <h2 id="pierwsze-kroki-po-diagnozie">
+            Celiakia - i co dalej? <br></br>Pierwsze kroki po diagnozie
+          </h2>
+        </div>
 
         <div className="item">
           <div className="number">1</div>
@@ -143,7 +147,7 @@ const CeliacDiseaseSection = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

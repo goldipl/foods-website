@@ -5,9 +5,11 @@ import { CiInstagram } from "react-icons/ci";
 
 const Contact = () => {
   return (
-    <div id="kontakt" className="contact-section">
+    <section id="kontakt" className="contact-section contact-title">
       <div className="contact-wrapper">
-        <h2>Kontakt</h2>
+        <div className="section-title">
+          <h2>Kontakt</h2>
+        </div>
         <div className="contact-box">
           <div className="contact-box-slot">
             <div className="contact-box-slot__icon">
@@ -35,7 +37,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,0 +1,17 @@
+section {
+  &.insta-slots,
+  &.contact-title,
+  &.info-title {
+    .section-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      width: max-content;
+      h2 {
+        padding: 0 8px 6px 8px;
+        border-bottom: 2px solid $color-green01;
+      }
+    }
+  }
+}

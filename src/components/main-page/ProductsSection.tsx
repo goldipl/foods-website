@@ -3,11 +3,11 @@ import Products from "./products/Products";
 
 const ProductsSection = () => {
   return (
-    <div id="products-section" className="products-section">
+    <section id="products-section" className="products-section insta-slots">
       <div className="products-wrapper">
         <Products />
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -4,7 +4,7 @@ import karolaImg from "./../../../public/img/welcome/karola.jpg";
 
 const WelcomeSection = () => {
   return (
-    <div id="o-mnie" className="welcome-section">
+    <section id="o-mnie" className="welcome-section">
       <div className="welcome-section-wrapper">
         <div className="img-text-box">
           <div className="img-box">
@@ -73,7 +73,7 @@ const WelcomeSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

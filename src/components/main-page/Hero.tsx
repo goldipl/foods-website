@@ -18,7 +18,7 @@ SwiperCore.use([Pagination, Navigation]);
 
 const Hero = () => {
   return (
-    <div id="hero" className="hero">
+    <section id="hero" className="hero">
       <div className="hero-wrapper">
         <Swiper
           spaceBetween={30}
@@ -174,7 +174,7 @@ const Hero = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-    </div>
+    </section>
   );
 };
 
