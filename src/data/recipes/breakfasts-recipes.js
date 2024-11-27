@@ -2,6 +2,7 @@ import tortillazJajkiem from "./../../../public/img/recipes/breakfasts/001_bezgl
 import NalesnikizDzemem from "./../../../public/img/recipes/breakfasts/002_nalesniki_z_dzemem.jpg";
 import sniadaniowaTortilla from "./../../../public/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.png";
 import sniadanieBoczekzJajkiem from "./../../../public/img/recipes/breakfasts/004_sniadanie_boczek_z_jajkiem.png";
+import tortilla3Skladniki from "./../../../public/img/recipes/breakfasts/005_bezglutenowa_tortilla_z_buraka_komosy_ryzowej.jpg";
 
 export const breakfastsRecipesData = [
     {
@@ -43,5 +44,15 @@ export const breakfastsRecipesData = [
       labelClass: "breakfast-label",
       description:
         "Bezglutenowe naleśniki - idealnie smakują z domowym dżemem truskawkowym",
+    },
+    {
+      id: 5,
+      href: "https://www.instagram.com/p/DC4bQEoury2/",
+      imgSrc: tortilla3Skladniki,
+      altText: "Bezglutenowa tortilla - tylko 3 składniki - komosa ryżowa, buraki i woda",
+      label: "Śniadanie",
+      labelClass: "breakfast-label",
+      description:
+        "Bezglutenowa tortilla - tylko 3 składniki - komosa ryżowa, buraki i woda",
     },
   ];

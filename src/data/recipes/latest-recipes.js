@@ -2,6 +2,7 @@ import tortillazJajkiem from "./../../../public/img/recipes/breakfasts/001_bezgl
 import dyniowyMakaronzSzynkaSpeck from "./../../../public/img/recipes/dinners/001_dyniowy_makaron_z_szynka_speck.jpg";
 import rozkiAlaOreo from "./../../../public/img/recipes/desserts/001_bezglutenowe_rozki_a_la_oreo.jpg";
 import sushiWesolaWarszawa from "./../../../public/img/restaurants/poland/005_sushi_wesola_warszawa.jpg";
+import tortilla3Skladniki from "./../../../public/img/recipes/breakfasts/005_bezglutenowa_tortilla_z_buraka_komosy_ryzowej.jpg";
 
 export const latestRecipesData = [
     {
@@ -43,5 +44,15 @@ export const latestRecipesData = [
       labelClass: "poland-label",
       description:
         "Sushi Wesoła Warszawa",
+    },
+    {
+      id: 5,
+      href: "https://www.instagram.com/p/DC4bQEoury2/",
+      imgSrc: tortilla3Skladniki,
+      altText: "Bezglutenowa tortilla - tylko 3 składniki - komosa ryżowa, buraki i woda",
+      label: "Śniadanie",
+      labelClass: "breakfast-label",
+      description:
+        "Bezglutenowa tortilla - tylko 3 składniki - komosa ryżowa, buraki i woda",
     },
   ];
