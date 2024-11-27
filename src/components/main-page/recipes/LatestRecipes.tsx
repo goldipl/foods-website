@@ -9,7 +9,7 @@ const LatestRecipes = () => {
     <>
       <h1 className="seo-text">
         <span>Bezglutenowa Karola</span> - bezglutenowe restauracje, przepisy,
-        produkty | <span>Celiakia</span> - Karolina Wontorska
+        produkty, celiakia - <span>Karolina Wontorska</span>
       </h1>
       <div className="section-title">
         <h2 id="najnowsze-przepisy">Najnowsze</h2>
