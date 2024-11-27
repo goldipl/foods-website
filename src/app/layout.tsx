@@ -13,7 +13,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-      <title>Bezglutenowa Karola - Przepisy Gluten Free</title>
+      <title>
+        Bezglutenowa Karola - Przepisy Gluten Free | Celiakia - Karolina
+        Wontorska
+      </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <body>{children}</body>
     </html>

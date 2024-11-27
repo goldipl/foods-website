@@ -25,7 +25,10 @@ class MyDocument extends Document {
           <link rel="apple-touch-icon" href="/favicon.ico" />
 
           {/* SEO Meta Tags */}
-          <title>Bezglutenowa Karola - Przepisy Gluten Free</title>
+          <title>
+            Bezglutenowa Karola - Przepisy Gluten Free | Celiakia - Karolina
+            Wontorska
+          </title>
           <meta
             name="description"
             content="Bezglutenowa Karola - przepisy na dania bez glutenu, bez cukru, bez nabiału, idealne dla osób z celiakią. Odkryj zdrowe przepisy i porady dla osób na diecie bezglutenowej."
