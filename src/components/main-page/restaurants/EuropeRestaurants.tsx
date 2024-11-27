@@ -11,36 +11,41 @@ const EuropeRestaurants = () => {
         <h2 id="restauracje-europa">Restauracje - Europa</h2>
       </div>
       <div className="listing-v1">
-        {europeanRestaurantsData.map((recipe) => (
-          <Link
-            key={recipe.id}
-            href={recipe.href}
-            className="listing-v1-slot"
-            target="_blank"
-          >
-            <div className="listing-v1-slot__img">
-              <Image
-                src={recipe.imgSrc}
-                alt={recipe.altText}
-                width={400}
-                height={500}
-                loading="lazy"
-              />
-            </div>
-            <div className="listing-v1-slot__text">
-              <span>{recipe.description}</span>
-            </div>
-            <div className="listing-v1-slot__labels">
-              <span className={recipe.labelClass}>{recipe.label}</span>
-            </div>
-            <div className="listing-v1-slot__zoom">
-              <div className="zoom-box">
-                <CiInstagram />
-                <span>Zobacz</span>
+        {europeanRestaurantsData
+          .slice()
+          .reverse()
+          .map((restaurant) => (
+            <Link
+              key={restaurant.id}
+              href={restaurant.href}
+              className="listing-v1-slot"
+              target="_blank"
+            >
+              <div className="listing-v1-slot__img">
+                <Image
+                  src={restaurant.imgSrc}
+                  alt={restaurant.altText}
+                  width={400}
+                  height={500}
+                  loading="lazy"
+                />
               </div>
-            </div>
-          </Link>
-        ))}
+              <div className="listing-v1-slot__text">
+                <span>{restaurant.description}</span>
+              </div>
+              <div className="listing-v1-slot__labels">
+                <span className={restaurant.labelClass}>
+                  {restaurant.label}
+                </span>
+              </div>
+              <div className="listing-v1-slot__zoom">
+                <div className="zoom-box">
+                  <CiInstagram />
+                  <span>Zobacz</span>
+                </div>
+              </div>
+            </Link>
+          ))}
       </div>
     </>
   );
