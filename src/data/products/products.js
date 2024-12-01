@@ -2,6 +2,7 @@ import biedronka001  from "./../../../public/img/products/001_biedronka_czy_to_m
 import delismag001  from "./../../../public/img/products/001_delismag_sklep_czy_to_ma_gluten.jpg";
 import lidl001  from "./../../../public/img/products/001_lidl_czy_to_ma_gluten.jpg";
 import stokrotka001  from "./../../../public/img/products/001_stokrotka_czy_to_ma_gluten.jpg";
+import dealz001  from "./../../../public/img/products/001_dealz_czy_to_ma_gluten.jpg";
 
 export const productsData = [
     {
@@ -51,5 +52,17 @@ export const productsData = [
       labelShopClass: "lidl-label",
       description:
         "Czy to ma gluten? - Lidl",
+    },
+    {
+      id: 5,
+      href: "https://www.instagram.com/p/DDB1b-luM1E/",
+      imgSrc: dealz001,
+      altText: "Czy to ma gluten? - Dealz",
+      label: "Produkty",
+      labelShop: "Dealz",
+      labelClass: "product-label",
+      labelShopClass: "shop-label",
+      description:
+        "Czy to ma gluten? - Dealz",
     },
   ];
