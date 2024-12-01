@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import { CiInstagram } from "react-icons/ci";
-import { latestRecipesData } from "@/data/recipes/latest-recipes";
+import { latestSlotsData } from "@/data/latest/latest";
 
-const LatestRecipes = () => {
+const LatestSlots = () => {
   return (
     <>
       <h1 className="seo-text">
@@ -15,7 +15,7 @@ const LatestRecipes = () => {
         <h2 id="najnowsze-przepisy">Najnowsze</h2>
       </div>
       <div className="listing-v1">
-        {latestRecipesData
+        {latestSlotsData
           .slice()
           .reverse()
           .map((recipe) => (
@@ -53,4 +53,4 @@ const LatestRecipes = () => {
   );
 };
 
-export default LatestRecipes;
+export default LatestSlots;

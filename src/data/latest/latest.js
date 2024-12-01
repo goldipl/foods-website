@@ -5,7 +5,7 @@ import sushiWesolaWarszawa from "./../../../public/img/restaurants/poland/005_su
 import tortilla3Skladniki from "./../../../public/img/recipes/breakfasts/005_bezglutenowa_tortilla_z_buraka_komosy_ryzowej.jpg";
 import bezglutenoweLazanki from "./../../../public/img/recipes/dinners/005_bezglutenowe_lazanki.jpg";
 
-export const latestRecipesData = [
+export const latestSlotsData = [
     {
       id: 1,
       href: "https://www.instagram.com/p/DBnv7v3OYgM/",
