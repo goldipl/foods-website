@@ -4,6 +4,7 @@ import rozkiAlaOreo from "./../../../public/img/recipes/desserts/001_bezglutenow
 import sushiWesolaWarszawa from "./../../../public/img/restaurants/poland/005_sushi_wesola_warszawa.jpg";
 import tortilla3Skladniki from "./../../../public/img/recipes/breakfasts/005_bezglutenowa_tortilla_z_buraka_komosy_ryzowej.jpg";
 import bezglutenoweLazanki from "./../../../public/img/recipes/dinners/005_bezglutenowe_lazanki.jpg";
+import halfprice001  from "./../../../public/img/products/001_halfprice_czy_to_ma_gluten.jpg";
 
 export const latestSlotsData = [
     {
@@ -65,5 +66,15 @@ export const latestSlotsData = [
       labelClass: "dinner-label",
       description:
         "Bezglutenowe łazanki - idealny przepis na świąteczny stół",
+    },
+    {
+      id: 7,
+      href: "https://www.instagram.com/p/DDB1b-luM1E/",
+      imgSrc: halfprice001,
+      altText: "Czy to ma gluten? - Half Price",
+      label: "Produkty",
+      labelClass: "product-label",
+      description:
+        "Czy to ma gluten? - Half Price",
     },
   ];
