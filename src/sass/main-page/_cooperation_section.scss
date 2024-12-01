@@ -1,0 +1,105 @@
+.cooperation-section {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: $white-bg-color;
+  z-index: 0;
+  .cooperation-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px 80px 16px;
+    @media (max-width: 992px) {
+      padding: 32px 0 48px 0;
+    }
+    h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 64px;
+      font-size: 26px;
+      line-height: 32px;
+      margin-top: 64px;
+      @media (max-width: 992px) {
+        font-size: 22px;
+        line-height: 28px;
+        margin: 40px auto 40px;
+      }
+    }
+    .swiper-wrapper {
+      .swiper {
+        height: 180px;
+        &-slide {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          user-select: none;
+        }
+        &-button-next {
+          position: absolute;
+          width: 45px;
+          height: 45px;
+          background-image: url("./../../../public/icons/hero/arrow-right.svg");
+          background-size: contain;
+          display: block;
+          background-repeat: no-repeat;
+          background-position: center center;
+          top: 50%;
+          right: 40px;
+          z-index: 1;
+          display: none; /// Hide
+          &::after {
+            font-size: 0;
+          }
+        }
+        &-button-prev {
+          position: absolute;
+          width: 45px;
+          height: 45px;
+          background-image: url("./../../../public/icons/hero/arrow-left.svg");
+          background-size: contain;
+          display: block;
+          background-repeat: no-repeat;
+          background-position: center center;
+          top: 50%;
+          left: 40px;
+          z-index: 1;
+          display: none; /// Hide
+          &::after {
+            font-size: 0;
+          }
+        }
+        &-pagination {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        &-pagination-bullet {
+          width: 10px;
+          height: 10px;
+          border: 2px solid $color-white;
+        }
+        &-pagination-bullet-active {
+          width: 16px;
+          height: 16px;
+          background-color: $main-bg-green-color;
+        }
+        .slide-content {
+          a {
+            &:hover {
+              img {
+                filter: opacity(0.8);
+                width: 260px;
+                height: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

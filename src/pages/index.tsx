@@ -12,6 +12,7 @@ import RestaurantsSection from "@/components/main-page/RestaurantsSection";
 import CeliacDiseaseSection from "@/components/main-page/CeliacDiseaseSection";
 import Contact from "@/components/main-page/Contact";
 import ProductsSection from "@/components/main-page/ProductsSection";
+import CooperationSection from "@/components/main-page/CooperationSection";
 
 const index = () => {
   return (
@@ -28,6 +29,7 @@ const index = () => {
         <RestaurantsSection />
         <ProductsSection />
         <CeliacDiseaseSection />
+        <CooperationSection />
         <Contact />
       </main>
       <footer>
