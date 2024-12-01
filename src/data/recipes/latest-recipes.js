@@ -3,6 +3,7 @@ import dyniowyMakaronzSzynkaSpeck from "./../../../public/img/recipes/dinners/00
 import rozkiAlaOreo from "./../../../public/img/recipes/desserts/001_bezglutenowe_rozki_a_la_oreo.jpg";
 import sushiWesolaWarszawa from "./../../../public/img/restaurants/poland/005_sushi_wesola_warszawa.jpg";
 import tortilla3Skladniki from "./../../../public/img/recipes/breakfasts/005_bezglutenowa_tortilla_z_buraka_komosy_ryzowej.jpg";
+import bezglutenoweLazanki from "./../../../public/img/recipes/dinners/005_bezglutenowe_lazanki.jpg";
 
 export const latestRecipesData = [
     {
@@ -54,5 +55,15 @@ export const latestRecipesData = [
       labelClass: "breakfast-label",
       description:
         "Bezglutenowa tortilla - tylko 3 składniki - komosa ryżowa, buraki i woda",
+    },
+    {
+      id: 6,
+      href: "https://www.instagram.com/p/DC_zuLFodeV/",
+      imgSrc: bezglutenoweLazanki,
+      altText: "Bezglutenowe łazanki - idealny przepis na świąteczny stół",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Bezglutenowe łazanki - idealny przepis na świąteczny stół",
     },
   ];
