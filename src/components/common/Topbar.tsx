@@ -7,8 +7,8 @@ const Topbar = () => {
     <div id="topbar" className="topbar">
       <div className="topbar-wrapper">
         <p>
-          Kod <strong>-10%</strong> zniżki <code>Karola10GTX</code> na produkty
-          w sklepie
+          Kod <strong>10%</strong> zniżki <code>Karola10GTX</code> na produkty w
+          sklepie
           <Link target="_blank" href="https://glutenex.pl/">
             Glutenex
             <Image
