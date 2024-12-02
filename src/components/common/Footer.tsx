@@ -34,7 +34,12 @@ const Footer = () => {
             <Link href="#pierwsze-kroki-po-diagnozie">
               Pierwsze kroki po diagnozie
             </Link>
-            <Link href="#produkty">Stokrotka</Link>
+            <Link
+              href="https://www.youtube.com/watch?v=8TEFTAOyZss"
+              target="_blank"
+            >
+              Jak wygląda życie z celiakią? (podcast)
+            </Link>
           </div>
           <div className="footer-col">
             <h2>Dodatkowe informacje</h2>
