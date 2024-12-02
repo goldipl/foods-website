@@ -2,6 +2,7 @@ import rozkiAlaOreo from "./../../../public/img/recipes/desserts/001_bezglutenow
 import cynamonki from "./../../../public/img/recipes/desserts/002_cynamonki.jpg";
 import kokosoweTiramisu from "./../../../public/img/recipes/desserts/003_kokosowe_tiramisu.jpg";
 import wegeSernik from "./../../../public/img/recipes/desserts/004_wege_sernik.jpg";
+import ciasteczkaKukurydziane from "./../../../public/img/recipes/desserts/005_bezglutenowe_ciasteczka_kukurydziane.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -43,5 +44,15 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Wege sernik w stylu baskijskim",
+    },
+    {
+      id: 4,
+      href: "https://www.instagram.com/p/DDFUj2ZOXVB/",
+      imgSrc: ciasteczkaKukurydziane,
+      altText: "Bezglutenowe ciasteczka kukurydziane z czekoladą",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowe ciasteczka kukurydziane z czekoladą",
     },
   ];
