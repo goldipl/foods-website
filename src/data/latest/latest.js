@@ -5,6 +5,7 @@ import sushiWesolaWarszawa from "./../../../public/img/restaurants/poland/005_su
 import tortilla3Skladniki from "./../../../public/img/recipes/breakfasts/005_bezglutenowa_tortilla_z_buraka_komosy_ryzowej.jpg";
 import bezglutenoweLazanki from "./../../../public/img/recipes/dinners/005_bezglutenowe_lazanki.jpg";
 import halfprice001  from "./../../../public/img/products/001_halfprice_czy_to_ma_gluten.jpg";
+import ciasteczkaKukurydziane from "./../../../public/img/recipes/desserts/005_bezglutenowe_ciasteczka_kukurydziane.jpg";
 
 export const latestSlotsData = [
     {
@@ -76,5 +77,15 @@ export const latestSlotsData = [
       labelClass: "product-label",
       description:
         "Czy to ma gluten? - Half Price",
+    },
+    {
+      id: 8,
+      href: "https://www.instagram.com/p/DDFUj2ZOXVB/",
+      imgSrc: ciasteczkaKukurydziane,
+      altText: "Bezglutenowe ciasteczka kukurydziane z czekoladą",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowe ciasteczka kukurydziane z czekoladą",
     },
   ];
