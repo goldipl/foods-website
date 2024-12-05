@@ -43,7 +43,7 @@ class MyDocument extends Document {
           <meta property="og:type" content="website" />
           <meta
             property="og:title"
-            content="Bezglutenowa Karola - Przepisy Gluten Free"
+            content="Bezglutenowa Karola - Przepisy Gluten Free | Celiakia - Karolina Wontorska"
           />
           <meta
             property="og:description"
@@ -60,7 +60,7 @@ class MyDocument extends Document {
           <meta name="twitter:card" content="summary_large_image" />
           <meta
             name="twitter:title"
-            content="Bezglutenowa Karola - Przepisy Gluten Free"
+            content="Bezglutenowa Karola - Przepisy Gluten Free | Celiakia - Karolina Wontorska"
           />
           <meta
             name="twitter:description"
@@ -76,7 +76,7 @@ class MyDocument extends Document {
             {`{
               "@context": "https://schema.org",
               "@type": "Recipe",
-              "name": "Bezglutenowa Karola - Przepisy Gluten Free",
+              "name": "Bezglutenowa Karola - Przepisy Gluten Free | Celiakia - Karolina Wontorska",
               "description": "Przepisy na dania bez glutenu, bez cukru, bez nabiału dla osób z celiakią i na diecie bezglutenowej.",
               "image": "https://bezglutenowakarola.pl/_next/static/media/bezglutenowakarola-logo.3e6eebf5.svg",
               "author": {
