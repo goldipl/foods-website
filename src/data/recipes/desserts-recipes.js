@@ -3,6 +3,7 @@ import cynamonki from "./../../../public/img/recipes/desserts/002_cynamonki.jpg"
 import kokosoweTiramisu from "./../../../public/img/recipes/desserts/003_kokosowe_tiramisu.jpg";
 import wegeSernik from "./../../../public/img/recipes/desserts/004_wege_sernik.jpg";
 import ciasteczkaKukurydziane from "./../../../public/img/recipes/desserts/005_bezglutenowe_ciasteczka_kukurydziane.jpg";
+import jagodoweTiramisu from "./../../../public/img/recipes/desserts/006_bezglutenowe_jagodowe_tiramisu.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -54,5 +55,15 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Bezglutenowe ciasteczka kukurydziane z czekoladą",
+    },
+    {
+      id: 5,
+      href: "https://www.instagram.com/p/DDL9TinusK8/",
+      imgSrc: jagodoweTiramisu,
+      altText: "Bezglutenowe jagodowe Tiramisu",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowe jagodowe Tiramisu",
     },
   ];

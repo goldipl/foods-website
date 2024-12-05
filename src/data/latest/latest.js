@@ -6,6 +6,7 @@ import tortilla3Skladniki from "./../../../public/img/recipes/breakfasts/005_bez
 import bezglutenoweLazanki from "./../../../public/img/recipes/dinners/005_bezglutenowe_lazanki.jpg";
 import halfprice001  from "./../../../public/img/products/001_halfprice_czy_to_ma_gluten.jpg";
 import ciasteczkaKukurydziane from "./../../../public/img/recipes/desserts/005_bezglutenowe_ciasteczka_kukurydziane.jpg";
+import jagodoweTiramisu from "./../../../public/img/recipes/desserts/006_bezglutenowe_jagodowe_tiramisu.jpg";
 
 export const latestSlotsData = [
     {
@@ -87,5 +88,15 @@ export const latestSlotsData = [
       labelClass: "dessert-label",
       description:
         "Bezglutenowe ciasteczka kukurydziane z czekoladą",
+    },
+    {
+      id: 9,
+      href: "https://www.instagram.com/p/DDL9TinusK8/",
+      imgSrc: jagodoweTiramisu,
+      altText: "Bezglutenowe jagodowe Tiramisu",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowe jagodowe Tiramisu",
     },
   ];
