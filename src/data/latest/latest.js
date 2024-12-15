@@ -9,6 +9,7 @@ import ciasteczkaKukurydziane from "./../../../public/img/recipes/desserts/005_b
 import jagodoweTiramisu from "./../../../public/img/recipes/desserts/006_bezglutenowe_jagodowe_tiramisu.jpg";
 import obiadowyBowlzLososiem from "./../../../public/img/recipes/dinners/006_obiadowy_bowl_z_lososiem.jpg";
 import lepkiPiernik from "./../../../public/img/recipes/desserts/007_bezglutenowy_lepki_piernik_z_daktylami.jpg";
+import pizzaGoralskazZurawina from "./../../../public/img/recipes/dinners/007_bezglutenowa_pizza_goralska.jpg";
 
 export const latestSlotsData = [
     {
@@ -120,5 +121,15 @@ export const latestSlotsData = [
       labelClass: "dessert-label",
       description:
         "Bezglutenowy lepki piernik z daktylami i wegańskim, bezglutenowym deserem waniliowym",
+    },
+    {
+      id: 12,
+      href: "https://www.instagram.com/p/DDm5JUeO608/",
+      imgSrc: pizzaGoralskazZurawina,
+      altText: "Bezglutenowa pizza góralska z boczkiem, oscypkiem i żurawiną",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Bezglutenowa pizza góralska z boczkiem, oscypkiem i żurawiną",
     },
   ];

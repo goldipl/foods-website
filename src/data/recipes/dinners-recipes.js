@@ -4,6 +4,7 @@ import pizzazRukola from "./../../../public/img/recipes/dinners/003_bezglutenowa
 import BurgerTeriyakizKurczaka from "./../../../public/img/recipes/dinners/004_bezglutenowy_burger_z_kurczaka_teriyaki.png";
 import bezglutenoweLazanki from "./../../../public/img/recipes/dinners/005_bezglutenowe_lazanki.jpg";
 import obiadowyBowlzLososiem from "./../../../public/img/recipes/dinners/006_obiadowy_bowl_z_lososiem.jpg";
+import pizzaGoralskazZurawina from "./../../../public/img/recipes/dinners/007_bezglutenowa_pizza_goralska.jpg";
 
 
 export const dinnersRecipesData = [
@@ -66,5 +67,15 @@ export const dinnersRecipesData = [
       labelClass: "dinner-label",
       description:
         "Obiadowy bowl z wędzonym łososiem",
+    },
+    {
+      id: 7,
+      href: "https://www.instagram.com/p/DDm5JUeO608/",
+      imgSrc: pizzaGoralskazZurawina,
+      altText: "Bezglutenowa pizza góralska z boczkiem, oscypkiem i żurawiną",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Bezglutenowa pizza góralska z boczkiem, oscypkiem i żurawiną",
     },
   ];
