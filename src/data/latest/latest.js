@@ -7,6 +7,8 @@ import bezglutenoweLazanki from "./../../../public/img/recipes/dinners/005_bezgl
 import halfprice001  from "./../../../public/img/products/001_halfprice_czy_to_ma_gluten.jpg";
 import ciasteczkaKukurydziane from "./../../../public/img/recipes/desserts/005_bezglutenowe_ciasteczka_kukurydziane.jpg";
 import jagodoweTiramisu from "./../../../public/img/recipes/desserts/006_bezglutenowe_jagodowe_tiramisu.jpg";
+import obiadowyBowlzLososiem from "./../../../public/img/recipes/dinners/006_obiadowy_bowl_z_lososiem.jpg";
+import lepkiPiernik from "./../../../public/img/recipes/desserts/007_bezglutenowy_lepki_piernik_z_daktylami.jpg";
 
 export const latestSlotsData = [
     {
@@ -98,5 +100,25 @@ export const latestSlotsData = [
       labelClass: "dessert-label",
       description:
         "Bezglutenowe jagodowe Tiramisu",
+    },
+    {
+      id: 10,
+      href: "https://www.instagram.com/p/DDjza7Wu_Bn/",
+      imgSrc: obiadowyBowlzLososiem,
+      altText: "Obiadowy bowl z wędzonym łososiem",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Obiadowy bowl z wędzonym łososiem",
+    },
+    {
+      id: 11,
+      href: "https://www.instagram.com/p/DDkSsmbOLCI/",
+      imgSrc: lepkiPiernik,
+      altText: "Bezglutenowy lepki piernik z daktylami i wegańskim, bezglutenowym deserem waniliowym",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowy lepki piernik z daktylami i wegańskim, bezglutenowym deserem waniliowym",
     },
   ];

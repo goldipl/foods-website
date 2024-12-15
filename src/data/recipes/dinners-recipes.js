@@ -3,6 +3,7 @@ import makaronzWeganskimBialymSerem from "./../../../public/img/recipes/dinners/
 import pizzazRukola from "./../../../public/img/recipes/dinners/003_bezglutenowa_pizza_z_rukola.jpg";
 import BurgerTeriyakizKurczaka from "./../../../public/img/recipes/dinners/004_bezglutenowy_burger_z_kurczaka_teriyaki.png";
 import bezglutenoweLazanki from "./../../../public/img/recipes/dinners/005_bezglutenowe_lazanki.jpg";
+import obiadowyBowlzLososiem from "./../../../public/img/recipes/dinners/006_obiadowy_bowl_z_lososiem.jpg";
 
 
 export const dinnersRecipesData = [
@@ -55,5 +56,15 @@ export const dinnersRecipesData = [
       labelClass: "dinner-label",
       description:
         "Bezglutenowe łazanki - idealny przepis na świąteczny stół",
+    },
+    {
+      id: 6,
+      href: "https://www.instagram.com/p/DDjza7Wu_Bn/",
+      imgSrc: obiadowyBowlzLososiem,
+      altText: "Obiadowy bowl z wędzonym łososiem",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Obiadowy bowl z wędzonym łososiem",
     },
   ];

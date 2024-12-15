@@ -4,6 +4,7 @@ import kokosoweTiramisu from "./../../../public/img/recipes/desserts/003_kokosow
 import wegeSernik from "./../../../public/img/recipes/desserts/004_wege_sernik.jpg";
 import ciasteczkaKukurydziane from "./../../../public/img/recipes/desserts/005_bezglutenowe_ciasteczka_kukurydziane.jpg";
 import jagodoweTiramisu from "./../../../public/img/recipes/desserts/006_bezglutenowe_jagodowe_tiramisu.jpg";
+import lepkiPiernik from "./../../../public/img/recipes/desserts/007_bezglutenowy_lepki_piernik_z_daktylami.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -65,5 +66,15 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Bezglutenowe jagodowe Tiramisu",
+    },
+    {
+      id: 6,
+      href: "https://www.instagram.com/p/DDkSsmbOLCI/",
+      imgSrc: lepkiPiernik,
+      altText: "Bezglutenowy lepki piernik z daktylami i wegańskim, bezglutenowym deserem waniliowym",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowy lepki piernik z daktylami i wegańskim, bezglutenowym deserem waniliowym",
     },
   ];
