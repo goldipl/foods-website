@@ -1,8 +1,9 @@
 import tortillazJajkiem from "./../../../public/img/recipes/breakfasts/001_bezglutenowa_tortilla_z_jajkiem.jpg";
 import NalesnikizDzemem from "./../../../public/img/recipes/breakfasts/002_nalesniki_z_dzemem.jpg";
-import sniadaniowaTortilla from "./../../../public/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.png";
-import sniadanieBoczekzJajkiem from "./../../../public/img/recipes/breakfasts/004_sniadanie_boczek_z_jajkiem.png";
+import sniadaniowaTortilla from "./../../../public/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.jpg";
+import sniadanieBoczekzJajkiem from "./../../../public/img/recipes/breakfasts/004_sniadanie_boczek_z_jajkiem.jpg";
 import tortilla3Skladniki from "./../../../public/img/recipes/breakfasts/005_bezglutenowa_tortilla_z_buraka_komosy_ryzowej.jpg";
+import paluszkoweKoreczkiWegeFeta from "./../../../public/img/recipes/breakfasts/005_bezglutenowa_tortilla_z_buraka_komosy_ryzowej.jpg";
 
 export const breakfastsRecipesData = [
     {
@@ -54,5 +55,15 @@ export const breakfastsRecipesData = [
       labelClass: "breakfast-label",
       description:
         "Bezglutenowa tortilla - tylko 3 składniki - komosa ryżowa, buraki i woda",
+    },
+    {
+      id: 6,
+      href: "https://www.instagram.com/p/DDrP4IYO4WY/",
+      imgSrc: paluszkoweKoreczkiWegeFeta,
+      altText: "Paluszkowe koreczki z wege fety i pieczonego buraka",
+      label: "Śniadanie",
+      labelClass: "breakfast-label",
+      description:
+        "Paluszkowe koreczki z wege fety i pieczonego buraka",
     },
   ];

@@ -10,6 +10,7 @@ import jagodoweTiramisu from "./../../../public/img/recipes/desserts/006_bezglut
 import obiadowyBowlzLososiem from "./../../../public/img/recipes/dinners/006_obiadowy_bowl_z_lososiem.jpg";
 import lepkiPiernik from "./../../../public/img/recipes/desserts/007_bezglutenowy_lepki_piernik_z_daktylami.jpg";
 import pizzaGoralskazZurawina from "./../../../public/img/recipes/dinners/007_bezglutenowa_pizza_goralska.jpg";
+import paluszkoweKoreczkiWegeFeta from "./../../../public/img/recipes/breakfasts/005_bezglutenowa_tortilla_z_buraka_komosy_ryzowej.jpg";
 
 export const latestSlotsData = [
     {
@@ -131,5 +132,15 @@ export const latestSlotsData = [
       labelClass: "dinner-label",
       description:
         "Bezglutenowa pizza góralska z boczkiem, oscypkiem i żurawiną",
+    },
+    {
+      id: 13,
+      href: "https://www.instagram.com/p/DDrP4IYO4WY/",
+      imgSrc: paluszkoweKoreczkiWegeFeta,
+      altText: "Paluszkowe koreczki z wege fety i pieczonego buraka",
+      label: "Śniadanie",
+      labelClass: "breakfast-label",
+      description:
+        "Paluszkowe koreczki z wege fety i pieczonego buraka",
     },
   ];
