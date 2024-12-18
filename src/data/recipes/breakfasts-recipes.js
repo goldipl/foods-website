@@ -1,9 +1,9 @@
-import tortillazJajkiem from "./../../../public/img/recipes/breakfasts/001_bezglutenowa_tortilla_z_jajkiem.jpg";
-import NalesnikizDzemem from "./../../../public/img/recipes/breakfasts/002_nalesniki_z_dzemem.jpg";
+import tortillazJajkiem from "./../../../public/img/recipes/breakfasts/002_bezglutenowa_tortilla_z_jajkiem.jpg";
+import NalesnikizDzemem from "./../../../public/img/recipes/breakfasts/004_nalesniki_z_dzemem.jpg";
 import sniadaniowaTortilla from "./../../../public/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.jpg";
-import sniadanieBoczekzJajkiem from "./../../../public/img/recipes/breakfasts/004_sniadanie_boczek_z_jajkiem.jpg";
+import sniadanieBoczekzJajkiem from "./../../../public/img/recipes/breakfasts/001_sniadanie_boczek_z_jajkiem.jpg";
 import tortilla3Skladniki from "./../../../public/img/recipes/breakfasts/005_bezglutenowa_tortilla_z_buraka_komosy_ryzowej.jpg";
-import paluszkoweKoreczkiWegeFeta from "./../../../public/img/recipes/breakfasts/005_bezglutenowa_tortilla_z_buraka_komosy_ryzowej.jpg";
+import paluszkoweKoreczkiWegeFeta from "./../../../public/img/recipes/breakfasts/006_paluszkowe_koreczki_z_wege_fety.jpg";
 
 export const breakfastsRecipesData = [
     {

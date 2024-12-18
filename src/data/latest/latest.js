@@ -1,4 +1,4 @@
-import tortillazJajkiem from "./../../../public/img/recipes/breakfasts/001_bezglutenowa_tortilla_z_jajkiem.jpg";
+import tortillazJajkiem from "./../../../public/img/recipes/breakfasts/002_bezglutenowa_tortilla_z_jajkiem.jpg";
 import dyniowyMakaronzSzynkaSpeck from "./../../../public/img/recipes/dinners/001_dyniowy_makaron_z_szynka_speck.jpg";
 import rozkiAlaOreo from "./../../../public/img/recipes/desserts/001_bezglutenowe_rozki_a_la_oreo.jpg";
 import sushiWesolaWarszawa from "./../../../public/img/restaurants/poland/005_sushi_wesola_warszawa.jpg";
@@ -10,7 +10,7 @@ import jagodoweTiramisu from "./../../../public/img/recipes/desserts/006_bezglut
 import obiadowyBowlzLososiem from "./../../../public/img/recipes/dinners/006_obiadowy_bowl_z_lososiem.jpg";
 import lepkiPiernik from "./../../../public/img/recipes/desserts/007_bezglutenowy_lepki_piernik_z_daktylami.jpg";
 import pizzaGoralskazZurawina from "./../../../public/img/recipes/dinners/007_bezglutenowa_pizza_goralska.jpg";
-import paluszkoweKoreczkiWegeFeta from "./../../../public/img/recipes/breakfasts/005_bezglutenowa_tortilla_z_buraka_komosy_ryzowej.jpg";
+import paluszkoweKoreczkiWegeFeta from "./../../../public/img/recipes/breakfasts/006_paluszkowe_koreczki_z_wege_fety.jpg";
 
 export const latestSlotsData = [
     {
