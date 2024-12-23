@@ -5,6 +5,7 @@ import wegeSernik from "./../../../public/img/recipes/desserts/004_wege_sernik.j
 import ciasteczkaKukurydziane from "./../../../public/img/recipes/desserts/005_bezglutenowe_ciasteczka_kukurydziane.jpg";
 import jagodoweTiramisu from "./../../../public/img/recipes/desserts/006_bezglutenowe_jagodowe_tiramisu.jpg";
 import lepkiPiernik from "./../../../public/img/recipes/desserts/007_bezglutenowy_lepki_piernik_z_daktylami.jpg";
+import bezglutenoweSzyszki from "./../../../public/img/recipes/desserts/008_bezglutenowe_swiateczne_szyszki.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -48,7 +49,7 @@ export const dessertsRecipesData = [
         "Wege sernik w stylu baskijskim",
     },
     {
-      id: 4,
+      id: 5,
       href: "https://www.instagram.com/p/DDFUj2ZOXVB/",
       imgSrc: ciasteczkaKukurydziane,
       altText: "Bezglutenowe ciasteczka kukurydziane z czekoladą",
@@ -58,7 +59,7 @@ export const dessertsRecipesData = [
         "Bezglutenowe ciasteczka kukurydziane z czekoladą",
     },
     {
-      id: 5,
+      id: 6,
       href: "https://www.instagram.com/p/DDL9TinusK8/",
       imgSrc: jagodoweTiramisu,
       altText: "Bezglutenowe jagodowe Tiramisu",
@@ -68,7 +69,7 @@ export const dessertsRecipesData = [
         "Bezglutenowe jagodowe Tiramisu",
     },
     {
-      id: 6,
+      id: 7,
       href: "https://www.instagram.com/p/DDkSsmbOLCI/",
       imgSrc: lepkiPiernik,
       altText: "Bezglutenowy lepki piernik z daktylami i wegańskim, bezglutenowym deserem waniliowym",
@@ -76,5 +77,15 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Bezglutenowy lepki piernik z daktylami i wegańskim, bezglutenowym deserem waniliowym",
+    },
+    {
+      id: 8,
+      href: "https://www.instagram.com/p/DD1-OaCokLi/",
+      imgSrc: bezglutenoweSzyszki,
+      altText: "Bezglutenowe świąteczne szyszki",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowe świąteczne szyszki",
     },
   ];

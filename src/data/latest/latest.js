@@ -11,6 +11,7 @@ import obiadowyBowlzLososiem from "./../../../public/img/recipes/dinners/006_obi
 import lepkiPiernik from "./../../../public/img/recipes/desserts/007_bezglutenowy_lepki_piernik_z_daktylami.jpg";
 import pizzaGoralskazZurawina from "./../../../public/img/recipes/dinners/007_bezglutenowa_pizza_goralska.jpg";
 import paluszkoweKoreczkiWegeFeta from "./../../../public/img/recipes/breakfasts/006_paluszkowe_koreczki_z_wege_fety.jpg";
+import bezglutenoweSzyszki from "./../../../public/img/recipes/desserts/008_bezglutenowe_swiateczne_szyszki.jpg";
 
 export const latestSlotsData = [
     {
@@ -142,5 +143,15 @@ export const latestSlotsData = [
       labelClass: "breakfast-label",
       description:
         "Paluszkowe koreczki z wege fety i pieczonego buraka",
+    },
+    {
+      id: 14,
+      href: "https://www.instagram.com/p/DD1-OaCokLi/",
+      imgSrc: bezglutenoweSzyszki,
+      altText: "Bezglutenowe świąteczne szyszki",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowe świąteczne szyszki",
     },
   ];
