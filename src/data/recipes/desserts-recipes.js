@@ -6,6 +6,7 @@ import ciasteczkaKukurydziane from "./../../../public/img/recipes/desserts/005_b
 import jagodoweTiramisu from "./../../../public/img/recipes/desserts/006_bezglutenowe_jagodowe_tiramisu.jpg";
 import lepkiPiernik from "./../../../public/img/recipes/desserts/007_bezglutenowy_lepki_piernik_z_daktylami.jpg";
 import bezglutenoweSzyszki from "./../../../public/img/recipes/desserts/008_bezglutenowe_swiateczne_szyszki.jpg";
+import bezglutenowyMakowiecJaponski from "./../../../public/img/recipes/desserts/009_bezglutenowy_makowiec_japonski.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -87,5 +88,15 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Bezglutenowe świąteczne szyszki",
+    },
+    {
+      id: 9,
+      href: "https://www.instagram.com/p/DD9rLFIoSeo/",
+      imgSrc: bezglutenowyMakowiecJaponski,
+      altText: "Bezglutenowy makowiec japoński",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowy makowiec japoński",
     },
   ];
