@@ -10,7 +10,7 @@ import jagodoweTiramisu from "./../../../public/img/recipes/desserts/006_bezglut
 import obiadowyBowlzLososiem from "./../../../public/img/recipes/dinners/006_obiadowy_bowl_z_lososiem.jpg";
 import lepkiPiernik from "./../../../public/img/recipes/desserts/007_bezglutenowy_lepki_piernik_z_daktylami.jpg";
 import pizzaGoralskazZurawina from "./../../../public/img/recipes/dinners/007_bezglutenowa_pizza_goralska.jpg";
-import paluszkoweKoreczkiWegeFeta from "./../../../public/img/recipes/breakfasts/006_paluszkowe_koreczki_z_wege_fety.jpg";
+import paluszkoweKoreczkiWegeFeta from "./../../../public/img/recipes/appetizers/001_paluszkowe_koreczki_z_wege_fety.jpg";
 import bezglutenoweSzyszki from "./../../../public/img/recipes/desserts/008_bezglutenowe_swiateczne_szyszki.jpg";
 import bezglutenowyMakowiecJaponski from "./../../../public/img/recipes/desserts/009_bezglutenowy_makowiec_japonski.jpg";
 
@@ -140,8 +140,8 @@ export const latestSlotsData = [
       href: "https://www.instagram.com/p/DDrP4IYO4WY/",
       imgSrc: paluszkoweKoreczkiWegeFeta,
       altText: "Paluszkowe koreczki z wege fety i pieczonego buraka",
-      label: "Śniadanie",
-      labelClass: "breakfast-label",
+      label: "Przystawka",
+      labelClass: "appetizer-label",
       description:
         "Paluszkowe koreczki z wege fety i pieczonego buraka",
     },

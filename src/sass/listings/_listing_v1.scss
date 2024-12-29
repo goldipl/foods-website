@@ -79,6 +79,18 @@
         }
       }
     }
+    &:has(.appetizer-label) {
+      .zoom-box {
+        span {
+          color: $appetizer-label-bg;
+          filter: brightness(1);
+        }
+        svg {
+          filter: invert(83%) sepia(22%) saturate(7179%) hue-rotate(20deg)
+            brightness(93%) contrast(103%);
+        }
+      }
+    }
     &:hover {
       box-shadow: $green-box-shadow;
       .listing-v1-slot__text {
@@ -157,6 +169,9 @@
         }
         &.dessert-label {
           background-color: $dessert-label-bg;
+        }
+        &.appetizer-label {
+          background-color: $appetizer-label-bg;
         }
         &.poland-label {
           background-color: $poland-label-bg;

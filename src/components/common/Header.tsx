@@ -109,6 +109,11 @@ const Header = () => {
                     Desery
                   </Link>
                 </li>
+                <li>
+                  <Link href="#przystawki" onClick={handleCloseDropdown}>
+                    Przystawki
+                  </Link>
+                </li>
               </ul>
             </li>
             <li className="nav-expand">
