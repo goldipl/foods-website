@@ -7,6 +7,7 @@ import jagodoweTiramisu from "./../../../public/img/recipes/desserts/006_bezglut
 import lepkiPiernik from "./../../../public/img/recipes/desserts/007_bezglutenowy_lepki_piernik_z_daktylami.jpg";
 import bezglutenoweSzyszki from "./../../../public/img/recipes/desserts/008_bezglutenowe_swiateczne_szyszki.jpg";
 import bezglutenowyMakowiecJaponski from "./../../../public/img/recipes/desserts/009_bezglutenowy_makowiec_japonski.jpg";
+import bezglutenowyKopiecKreta from "./../../../public/img/recipes/desserts/010_bezglutenowy_kopiec_kreta.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -98,5 +99,15 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Bezglutenowy makowiec japoński",
+    },
+    {
+      id: 10,
+      href: "https://www.instagram.com/p/DEVCtHWoXHM/",
+      imgSrc: bezglutenowyKopiecKreta,
+      altText: "Bezglutenowy kopiec kreta",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowy kopiec kreta",
     },
   ];

@@ -13,6 +13,9 @@ import pizzaGoralskazZurawina from "./../../../public/img/recipes/dinners/007_be
 import paluszkoweKoreczkiWegeFeta from "./../../../public/img/recipes/appetizers/001_paluszkowe_koreczki_z_wege_fety.jpg";
 import bezglutenoweSzyszki from "./../../../public/img/recipes/desserts/008_bezglutenowe_swiateczne_szyszki.jpg";
 import bezglutenowyMakowiecJaponski from "./../../../public/img/recipes/desserts/009_bezglutenowy_makowiec_japonski.jpg";
+import stokrotka003  from "./../../../public/img/products/003_stokrotka_czy_to_ma_gluten.jpg";
+import bezglutenowyKopiecKreta from "./../../../public/img/recipes/desserts/010_bezglutenowy_kopiec_kreta.jpg";
+import bezglutenowyKotletCezar from "./../../../public/img/recipes/dinners/008_bezglutenowy_kotlet_cezar.jpg";
 
 export const latestSlotsData = [
     {
@@ -164,5 +167,37 @@ export const latestSlotsData = [
       labelClass: "dessert-label",
       description:
         "Bezglutenowy makowiec japoński",
+    },
+    {
+      id: 16,
+      href: "https://www.instagram.com/p/DEPEMNDuLPQ/",
+      imgSrc: stokrotka003,
+      altText: "Czy to ma gluten? - Stokrotka",
+      label: "Produkty",
+      labelShop: "Half Price",
+      labelClass: "product-label",
+      labelShopClass: "shop-label",
+      description:
+        "Czy to ma gluten? - Stokrotka",
+    },
+    {
+      id: 17,
+      href: "https://www.instagram.com/p/DEVCtHWoXHM/",
+      imgSrc: bezglutenowyKopiecKreta,
+      altText: "Bezglutenowy kopiec kreta",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowy kopiec kreta",
+    },
+    {
+      id: 18,
+      href: "https://www.instagram.com/p/DEb90DGoycD/",
+      imgSrc: bezglutenowyKotletCezar,
+      altText: "Bezglutenowy kotlet Cezar",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Bezglutenowy kotlet Cezar",
     },
   ];

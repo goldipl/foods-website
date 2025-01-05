@@ -3,6 +3,8 @@ import delismag001  from "./../../../public/img/products/001_delismag_sklep_czy_
 import lidl001  from "./../../../public/img/products/001_lidl_czy_to_ma_gluten.jpg";
 import stokrotka001  from "./../../../public/img/products/001_stokrotka_czy_to_ma_gluten.jpg";
 import halfprice001  from "./../../../public/img/products/001_halfprice_czy_to_ma_gluten.jpg";
+import stokrotka002  from "./../../../public/img/products/002_stokrotka_czy_to_ma_gluten.jpg";
+import stokrotka003  from "./../../../public/img/products/003_stokrotka_czy_to_ma_gluten.jpg";
 
 export const productsData = [
     {
@@ -64,5 +66,29 @@ export const productsData = [
       labelShopClass: "shop-label",
       description:
         "Czy to ma gluten? - Half Price",
+    },
+    {
+      id: 6,
+      href: "https://www.instagram.com/p/DCbix0LuJo6/",
+      imgSrc: stokrotka002,
+      altText: "Czy to ma gluten? - Stokrotka",
+      label: "Produkty",
+      labelShop: "Half Price",
+      labelClass: "product-label",
+      labelShopClass: "shop-label",
+      description:
+        "Czy to ma gluten? - Stokrotka",
+    },
+    {
+      id: 7,
+      href: "https://www.instagram.com/p/DEPEMNDuLPQ/",
+      imgSrc: stokrotka003,
+      altText: "Czy to ma gluten? - Stokrotka",
+      label: "Produkty",
+      labelShop: "Half Price",
+      labelClass: "product-label",
+      labelShopClass: "shop-label",
+      description:
+        "Czy to ma gluten? - Stokrotka",
     },
   ];

@@ -5,6 +5,7 @@ import BurgerTeriyakizKurczaka from "./../../../public/img/recipes/dinners/004_b
 import bezglutenoweLazanki from "./../../../public/img/recipes/dinners/005_bezglutenowe_lazanki.jpg";
 import obiadowyBowlzLososiem from "./../../../public/img/recipes/dinners/006_obiadowy_bowl_z_lososiem.jpg";
 import pizzaGoralskazZurawina from "./../../../public/img/recipes/dinners/007_bezglutenowa_pizza_goralska.jpg";
+import bezglutenowyKotletCezar from "./../../../public/img/recipes/dinners/008_bezglutenowy_kotlet_cezar.jpg";
 
 
 export const dinnersRecipesData = [
@@ -77,5 +78,15 @@ export const dinnersRecipesData = [
       labelClass: "dinner-label",
       description:
         "Bezglutenowa pizza góralska z boczkiem, oscypkiem i żurawiną",
+    },
+    {
+      id: 8,
+      href: "https://www.instagram.com/p/DEb90DGoycD/",
+      imgSrc: bezglutenowyKotletCezar,
+      altText: "Bezglutenowy kotlet Cezar",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Bezglutenowy kotlet Cezar",
     },
   ];
