@@ -6,6 +6,7 @@ import bezglutenoweLazanki from "./../../../public/img/recipes/dinners/005_bezgl
 import obiadowyBowlzLososiem from "./../../../public/img/recipes/dinners/006_obiadowy_bowl_z_lososiem.jpg";
 import pizzaGoralskazZurawina from "./../../../public/img/recipes/dinners/007_bezglutenowa_pizza_goralska.jpg";
 import bezglutenowyKotletCezar from "./../../../public/img/recipes/dinners/008_bezglutenowy_kotlet_cezar.jpg";
+import bezglutenowySushiBurger from "./../../../public/img/recipes/dinners/009_bezglutenowy_sushi_burger.jpg";
 
 
 export const dinnersRecipesData = [
@@ -88,5 +89,15 @@ export const dinnersRecipesData = [
       labelClass: "dinner-label",
       description:
         "Bezglutenowy kotlet Cezar",
+    },
+    {
+      id: 9,
+      href: "https://www.instagram.com/p/DEnMW8lu1a1/",
+      imgSrc: bezglutenowySushiBurger,
+      altText: "Bezglutenowy sushi burger",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Bezglutenowy sushi burger",
     },
   ];

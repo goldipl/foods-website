@@ -16,6 +16,7 @@ import bezglutenowyMakowiecJaponski from "./../../../public/img/recipes/desserts
 import stokrotka003  from "./../../../public/img/products/003_stokrotka_czy_to_ma_gluten.jpg";
 import bezglutenowyKopiecKreta from "./../../../public/img/recipes/desserts/010_bezglutenowy_kopiec_kreta.jpg";
 import bezglutenowyKotletCezar from "./../../../public/img/recipes/dinners/008_bezglutenowy_kotlet_cezar.jpg";
+import bezglutenowySushiBurger from "./../../../public/img/recipes/dinners/009_bezglutenowy_sushi_burger.jpg";
 
 export const latestSlotsData = [
     {
@@ -199,5 +200,15 @@ export const latestSlotsData = [
       labelClass: "dinner-label",
       description:
         "Bezglutenowy kotlet Cezar",
+    },
+    {
+      id: 19,
+      href: "https://www.instagram.com/p/DEnMW8lu1a1/",
+      imgSrc: bezglutenowySushiBurger,
+      altText: "Bezglutenowy sushi burger",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Bezglutenowy sushi burger",
     },
   ];
