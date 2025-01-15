@@ -17,6 +17,8 @@ import stokrotka003  from "./../../../public/img/products/003_stokrotka_czy_to_m
 import bezglutenowyKopiecKreta from "./../../../public/img/recipes/desserts/010_bezglutenowy_kopiec_kreta.jpg";
 import bezglutenowyKotletCezar from "./../../../public/img/recipes/dinners/008_bezglutenowy_kotlet_cezar.jpg";
 import bezglutenowySushiBurger from "./../../../public/img/recipes/dinners/009_bezglutenowy_sushi_burger.jpg";
+import bezglutenowaZupaPho from "./../../../public/img/recipes/dinners/010_bezglutenowa_zupa_pho.jpg";
+import bezglutenowyOmletMarchewkowy from "./../../../public/img/recipes/desserts/011_bezglutenowy_omlet_marchewkowy.jpg";
 
 export const latestSlotsData = [
     {
@@ -210,5 +212,25 @@ export const latestSlotsData = [
       labelClass: "dinner-label",
       description:
         "Bezglutenowy sushi burger",
+    },
+    {
+      id: 20,
+      href: "https://www.instagram.com/p/DExbgKCIYq3/",
+      imgSrc: bezglutenowaZupaPho,
+      altText: "Bezglutenowa zupa Pho",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Bezglutenowa zupa Pho",
+    },
+    {
+      id: 21,
+      href: "https://www.instagram.com/p/DE0EuYiOxY3/",
+      imgSrc: bezglutenowyOmletMarchewkowy,
+      altText: "Bezglutenowy omlet marchewkowy",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowy omlet marchewkowy",
     },
   ];

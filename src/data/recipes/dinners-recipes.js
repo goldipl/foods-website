@@ -7,7 +7,7 @@ import obiadowyBowlzLososiem from "./../../../public/img/recipes/dinners/006_obi
 import pizzaGoralskazZurawina from "./../../../public/img/recipes/dinners/007_bezglutenowa_pizza_goralska.jpg";
 import bezglutenowyKotletCezar from "./../../../public/img/recipes/dinners/008_bezglutenowy_kotlet_cezar.jpg";
 import bezglutenowySushiBurger from "./../../../public/img/recipes/dinners/009_bezglutenowy_sushi_burger.jpg";
-
+import bezglutenowaZupaPho from "./../../../public/img/recipes/dinners/010_bezglutenowa_zupa_pho.jpg";
 
 export const dinnersRecipesData = [
     {
@@ -99,5 +99,15 @@ export const dinnersRecipesData = [
       labelClass: "dinner-label",
       description:
         "Bezglutenowy sushi burger",
+    },
+    {
+      id: 10,
+      href: "https://www.instagram.com/p/DExbgKCIYq3/",
+      imgSrc: bezglutenowaZupaPho,
+      altText: "Bezglutenowa zupa Pho",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Bezglutenowa zupa Pho",
     },
   ];

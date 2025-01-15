@@ -8,6 +8,7 @@ import lepkiPiernik from "./../../../public/img/recipes/desserts/007_bezglutenow
 import bezglutenoweSzyszki from "./../../../public/img/recipes/desserts/008_bezglutenowe_swiateczne_szyszki.jpg";
 import bezglutenowyMakowiecJaponski from "./../../../public/img/recipes/desserts/009_bezglutenowy_makowiec_japonski.jpg";
 import bezglutenowyKopiecKreta from "./../../../public/img/recipes/desserts/010_bezglutenowy_kopiec_kreta.jpg";
+import bezglutenowyOmletMarchewkowy from "./../../../public/img/recipes/desserts/011_bezglutenowy_omlet_marchewkowy.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -110,4 +111,14 @@ export const dessertsRecipesData = [
       description:
         "Bezglutenowy kopiec kreta",
     },
-  ];
+    {
+      id: 11,
+      href: "https://www.instagram.com/p/DE0EuYiOxY3/",
+      imgSrc: bezglutenowyOmletMarchewkowy,
+      altText: "Bezglutenowy omlet marchewkowy",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowy omlet marchewkowy",
+    },
+];
