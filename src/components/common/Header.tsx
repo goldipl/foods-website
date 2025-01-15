@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import logo from "./../../../public/icons/header/bezglutenowakarola-logo.svg";
 import menuDownIcon from "./../../../public/icons/common/menu-down-icon.svg";
 import instagramIcon from "./../../../public/icons/common/instagram.svg";
+import youTubeIcon from "./../../../public/icons/common/instagram.svg";
 import Image from "next/image";
 
 const Header = () => {
@@ -312,6 +313,22 @@ const Header = () => {
                 <Image
                   className="social-icon"
                   src={instagramIcon.src}
+                  alt="instagram"
+                  height={32}
+                  width={32}
+                />
+                <span>@bezglutenowakarola</span>
+              </Link>
+            </li>
+            <li className="header-social-link">
+              <Link
+                href="https://www.youtube.com/@bezglutenowakarola"
+                onClick={handleCloseDropdown}
+                target="_blank"
+              >
+                <Image
+                  className="social-icon"
+                  src={youTubeIcon.src}
                   alt="instagram"
                   height={32}
                   width={32}
