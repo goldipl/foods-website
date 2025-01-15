@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { SlEnvolopeLetter } from "react-icons/sl";
 import { CiInstagram } from "react-icons/ci";
+import { PiYoutubeLogoThin } from "react-icons/pi";
 
 const Contact = () => {
   return (
@@ -32,6 +33,19 @@ const Contact = () => {
                 target="_blank"
               >
                 @bezglutenowakarola <span>- Obserwuj po więcej</span>
+              </Link>
+            </div>
+          </div>
+          <div className="contact-box-slot">
+            <div className="contact-box-slot__icon instagram">
+              <PiYoutubeLogoThin />
+            </div>
+            <div className="contact-box-slot__content">
+              <Link
+                href="https://www.youtube.com/@bezglutenowakarola"
+                target="_blank"
+              >
+                @bezglutenowakarola <span>- Subskrybuj i bądź na bieżąco</span>
               </Link>
             </div>
           </div>

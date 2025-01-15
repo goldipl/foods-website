@@ -51,6 +51,12 @@ const Footer = () => {
             >
               Instagram
             </Link>
+            <Link
+              href="https://www.youtube.com/@bezglutenowakarola"
+              target="_blank"
+            >
+              YouTube
+            </Link>
           </div>
         </div>
       </div>

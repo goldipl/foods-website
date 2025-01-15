@@ -60,7 +60,7 @@ header {
                 @include nav-link-mixin(4px 0 6px 8px, 15px);
 
                 @media (max-width: 1200px) {
-                  @include nav-link-mixin(4px 0 6px 8px, 14px);
+                  @include nav-link-mixin(4px 0 6px 6px, 14px);
                 }
 
                 img {
@@ -112,7 +112,7 @@ header {
               @include nav-link-mixin(4px 6px, 15px);
 
               @media (max-width: 1200px) {
-                @include nav-link-mixin(4px 6px, 15px);
+                @include nav-link-mixin(4px 4px, 14px);
               }
             }
 
