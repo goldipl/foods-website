@@ -1,6 +1,7 @@
 .topbar {
   background-color: $main-bg-green-color;
-  height: auto;
+  width: 100%;
+  height: 52px;
   padding: 4px 0;
   border-top: 1px solid $grey-border-color01;
   &-wrapper {
@@ -44,6 +45,7 @@
 
 @media (max-width: 960px) {
   .topbar {
+    height: auto;
     &-wrapper {
       max-width: unset;
       width: calc(100% - 64px);
