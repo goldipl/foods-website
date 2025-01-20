@@ -19,6 +19,7 @@ import bezglutenowyKotletCezar from "./../../../public/img/recipes/dinners/008_b
 import bezglutenowySushiBurger from "./../../../public/img/recipes/dinners/009_bezglutenowy_sushi_burger.jpg";
 import bezglutenowaZupaPho from "./../../../public/img/recipes/dinners/010_bezglutenowa_zupa_pho.jpg";
 import bezglutenowyOmletMarchewkowy from "./../../../public/img/recipes/desserts/011_bezglutenowy_omlet_marchewkowy.jpg";
+import carrefour01 from "./../../../public/img/products/001_carrefour_czy_to_ma_gluten.jpg";
 
 export const latestSlotsData = [
     {
@@ -232,5 +233,17 @@ export const latestSlotsData = [
       labelClass: "dessert-label",
       description:
         "Bezglutenowy omlet marchewkowy",
+    },
+    {
+      id: 22,
+      href: "https://www.instagram.com/p/DE9fwiPu4cB/",
+      imgSrc: carrefour01,
+      altText: "Czy to ma gluten? - Carrefour",
+      label: "Produkty",
+      labelShop: "Carrefour",
+      labelClass: "product-label",
+      labelShopClass: "shop-label",
+      description:
+        "Czy to ma gluten? - Carrefour",
     },
   ];

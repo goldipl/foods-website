@@ -5,6 +5,7 @@ import stokrotka001  from "./../../../public/img/products/001_stokrotka_czy_to_m
 import halfprice001  from "./../../../public/img/products/001_halfprice_czy_to_ma_gluten.jpg";
 import stokrotka002  from "./../../../public/img/products/002_stokrotka_czy_to_ma_gluten.jpg";
 import stokrotka003  from "./../../../public/img/products/003_stokrotka_czy_to_ma_gluten.jpg";
+import carrefour01 from "./../../../public/img/products/001_carrefour_czy_to_ma_gluten.jpg";
 
 export const productsData = [
     {
@@ -90,5 +91,17 @@ export const productsData = [
       labelShopClass: "shop-label",
       description:
         "Czy to ma gluten? - Stokrotka",
+    },
+    {
+      id: 8,
+      href: "https://www.instagram.com/p/DE9fwiPu4cB/",
+      imgSrc: carrefour01,
+      altText: "Czy to ma gluten? - Carrefour",
+      label: "Produkty",
+      labelShop: "Carrefour",
+      labelClass: "product-label",
+      labelShopClass: "shop-label",
+      description:
+        "Czy to ma gluten? - Carrefour",
     },
   ];
