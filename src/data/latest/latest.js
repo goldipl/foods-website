@@ -20,6 +20,7 @@ import bezglutenowySushiBurger from "./../../../public/img/recipes/dinners/009_b
 import bezglutenowaZupaPho from "./../../../public/img/recipes/dinners/010_bezglutenowa_zupa_pho.jpg";
 import bezglutenowyOmletMarchewkowy from "./../../../public/img/recipes/desserts/011_bezglutenowy_omlet_marchewkowy.jpg";
 import carrefour01 from "./../../../public/img/products/001_carrefour_czy_to_ma_gluten.jpg";
+import glutenex01 from "./../../../public/img/products/001_glutenex_czy_to_ma_gluten.jpg";
 
 export const latestSlotsData = [
     {
@@ -245,5 +246,17 @@ export const latestSlotsData = [
       labelShopClass: "shop-label",
       description:
         "Czy to ma gluten? - Carrefour",
+    },
+    {
+      id: 23,
+      href: "https://www.instagram.com/p/DFDo8oaO93V/",
+      imgSrc: glutenex01,
+      altText: "Unboxing produktów bezglutenowych od firmy Glutenex",
+      label: "Produkty",
+      labelShop: "Glutenex",
+      labelClass: "product-label",
+      labelShopClass: "shop-label",
+      description:
+        "Unboxing produktów bezglutenowych od firmy Glutenex",
     },
   ];

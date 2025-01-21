@@ -6,6 +6,7 @@ import halfprice001  from "./../../../public/img/products/001_halfprice_czy_to_m
 import stokrotka002  from "./../../../public/img/products/002_stokrotka_czy_to_ma_gluten.jpg";
 import stokrotka003  from "./../../../public/img/products/003_stokrotka_czy_to_ma_gluten.jpg";
 import carrefour01 from "./../../../public/img/products/001_carrefour_czy_to_ma_gluten.jpg";
+import glutenex01 from "./../../../public/img/products/001_glutenex_czy_to_ma_gluten.jpg";
 
 export const productsData = [
     {
@@ -103,5 +104,17 @@ export const productsData = [
       labelShopClass: "shop-label",
       description:
         "Czy to ma gluten? - Carrefour",
+    },
+    {
+      id: 9,
+      href: "https://www.instagram.com/p/DFDo8oaO93V/",
+      imgSrc: glutenex01,
+      altText: "Unboxing produktów bezglutenowych od firmy Glutenex",
+      label: "Produkty",
+      labelShop: "Glutenex",
+      labelClass: "product-label",
+      labelShopClass: "shop-label",
+      description:
+        "Unboxing produktów bezglutenowych od firmy Glutenex",
     },
   ];
