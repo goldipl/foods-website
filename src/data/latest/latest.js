@@ -21,6 +21,8 @@ import bezglutenowaZupaPho from "./../../../public/img/recipes/dinners/010_bezgl
 import bezglutenowyOmletMarchewkowy from "./../../../public/img/recipes/desserts/011_bezglutenowy_omlet_marchewkowy.jpg";
 import carrefour01 from "./../../../public/img/products/001_carrefour_czy_to_ma_gluten.jpg";
 import glutenex01 from "./../../../public/img/products/001_glutenex_czy_to_ma_gluten.jpg";
+import padThai from "./../../../public/img/recipes/dinners/011_pad_thai.jpg";
+import cafeCalimeroPaderewskiegoKielce from "./../../../public/img/restaurants/poland/006_cafe_calimero_kielce_paderewskiego.jpg";
 
 export const latestSlotsData = [
     {
@@ -258,5 +260,25 @@ export const latestSlotsData = [
       labelShopClass: "shop-label",
       description:
         "Unboxing produktów bezglutenowych od firmy Glutenex",
+    },
+    {
+      id: 24,
+      href: "https://www.instagram.com/p/DFGPPs3OddU/",
+      imgSrc: padThai,
+      altText: "Pad Thai bez glutenu i bez nabiału",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Pad Thai bez glutenu i bez nabiału",
+    },
+    {
+      id: 25,
+      href: "https://www.instagram.com/p/DFItUPROedN/",
+      imgSrc: cafeCalimeroPaderewskiegoKielce,
+      altText: "Calimero Cafe, Paderewskiego 4c/2, Kielce",
+      label: "Gdańsk",
+      labelClass: "poland-label",
+      description:
+        "Calimero Cafe, Paderewskiego 4c/2, Kielce",
     },
   ];

@@ -8,6 +8,7 @@ import pizzaGoralskazZurawina from "./../../../public/img/recipes/dinners/007_be
 import bezglutenowyKotletCezar from "./../../../public/img/recipes/dinners/008_bezglutenowy_kotlet_cezar.jpg";
 import bezglutenowySushiBurger from "./../../../public/img/recipes/dinners/009_bezglutenowy_sushi_burger.jpg";
 import bezglutenowaZupaPho from "./../../../public/img/recipes/dinners/010_bezglutenowa_zupa_pho.jpg";
+import padThai from "./../../../public/img/recipes/dinners/011_pad_thai.jpg";
 
 export const dinnersRecipesData = [
     {
@@ -109,5 +110,15 @@ export const dinnersRecipesData = [
       labelClass: "dinner-label",
       description:
         "Bezglutenowa zupa Pho",
+    },
+    {
+      id: 11,
+      href: "https://www.instagram.com/p/DFGPPs3OddU/",
+      imgSrc: padThai,
+      altText: "Pad Thai bez glutenu i bez nabiału",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Pad Thai bez glutenu i bez nabiału",
     },
   ];

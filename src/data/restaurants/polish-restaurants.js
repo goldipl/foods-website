@@ -2,7 +2,7 @@ import saskaSushiWarszawa from "./../../../public/img/restaurants/poland/001_sas
 import kebabEnfesWarszawa from "./../../../public/img/restaurants/poland/002_kebab_enfes_warszawa.jpg";
 import rolaPaoWarszawa from "./../../../public/img/restaurants/poland/003_rola_pao_warszawa.jpg";
 import uKrolikaGdansk from "./../../../public/img/restaurants/poland/004_u_krolika_gdansk.jpg";
-
+import cafeCalimeroPaderewskiegoKielce from "./../../../public/img/restaurants/poland/006_cafe_calimero_kielce_paderewskiego.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -44,5 +44,15 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Restauracja U Królika, Słonimskiego 6/12, Gdańsk",
+    },
+    {
+      id: 5,
+      href: "https://www.instagram.com/p/DFItUPROedN/",
+      imgSrc: cafeCalimeroPaderewskiegoKielce,
+      altText: "Calimero Cafe, Paderewskiego 4c/2, Kielce",
+      label: "Gdańsk",
+      labelClass: "poland-label",
+      description:
+        "Calimero Cafe, Paderewskiego 4c/2, Kielce",
     },
   ];
