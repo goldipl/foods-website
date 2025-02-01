@@ -18,6 +18,7 @@ const LatestSlots = () => {
         {latestSlotsData
           .slice()
           .reverse()
+          .slice(0, 8)
           .map((recipe) => (
             <Link
               key={recipe.id}
