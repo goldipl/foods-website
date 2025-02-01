@@ -23,6 +23,10 @@ import carrefour01 from "./../../../public/img/products/001_carrefour_czy_to_ma_
 import glutenex01 from "./../../../public/img/products/001_glutenex_czy_to_ma_gluten.jpg";
 import padThai from "./../../../public/img/recipes/dinners/011_pad_thai.jpg";
 import cafeCalimeroPaderewskiegoKielce from "./../../../public/img/restaurants/poland/006_cafe_calimero_kielce_paderewskiego.jpg";
+import bezglutenoweTostyFrancuskie from "./../../../public/img/recipes/desserts/012_bezglutenowe_tosty_francuskie.jpg";
+import selerSosTonnato from "./../../../public/img/recipes/appetizers/003_seler_sos_tonnato.jpg";
+import przekaskawStyluShogayaki from "./../../../public/img/recipes/appetizers/004_przekaska_w_stylu_shogayaki.jpg";
+import aldi01 from "./../../../public/img/products/001_aldi_czy_to_ma_gluten.jpg";
 
 export const latestSlotsData = [
     {
@@ -280,5 +284,47 @@ export const latestSlotsData = [
       labelClass: "poland-label",
       description:
         "Calimero Cafe, Paderewskiego 4c/2, Kielce",
+    },
+    {
+      id: 26,
+      href: "https://www.instagram.com/p/DFVw60MOGtx/",
+      imgSrc: bezglutenoweTostyFrancuskie,
+      altText: "Bezglutenowe tosty francuskie",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowe tosty francuskie",
+    },
+    {
+      id: 27,
+      href: "https://www.instagram.com/p/DFYHh20uswT/",
+      imgSrc: selerSosTonnato,
+      altText: "Seler sos Tonnato",
+      label: "Przystawka",
+      labelClass: "appetizer-label",
+      description:
+        "Seler sos Tonnato",
+    },
+    {
+      id: 28,
+      href: "https://www.instagram.com/p/DFdVoGUu7wV/",
+      imgSrc: przekaskawStyluShogayaki,
+      altText: "Japońska przekąska w stylu Shogayaki",
+      label: "Przystawka",
+      labelClass: "appetizer-label",
+      description:
+        "Japońska przekąska w stylu Shogayaki",
+    },
+    {
+      id: 29,
+      href: "https://www.instagram.com/p/DFhen7GOga6/",
+      imgSrc: aldi01,
+      altText: "Czy to ma gluten? - Aldi",
+      label: "Produkty",
+      labelShop: "Aldi",
+      labelClass: "product-label",
+      labelShopClass: "shop-label",
+      description:
+        "Czy to ma gluten? - Aldi",
     },
   ];

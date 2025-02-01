@@ -9,6 +9,7 @@ import bezglutenoweSzyszki from "./../../../public/img/recipes/desserts/008_bezg
 import bezglutenowyMakowiecJaponski from "./../../../public/img/recipes/desserts/009_bezglutenowy_makowiec_japonski.jpg";
 import bezglutenowyKopiecKreta from "./../../../public/img/recipes/desserts/010_bezglutenowy_kopiec_kreta.jpg";
 import bezglutenowyOmletMarchewkowy from "./../../../public/img/recipes/desserts/011_bezglutenowy_omlet_marchewkowy.jpg";
+import bezglutenoweTostyFrancuskie from "./../../../public/img/recipes/desserts/012_bezglutenowe_tosty_francuskie.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -120,5 +121,15 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Bezglutenowy omlet marchewkowy",
+    },
+    {
+      id: 12,
+      href: "https://www.instagram.com/p/DFVw60MOGtx/",
+      imgSrc: bezglutenoweTostyFrancuskie,
+      altText: "Bezglutenowe tosty francuskie",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowe tosty francuskie",
     },
 ];
