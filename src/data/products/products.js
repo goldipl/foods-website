@@ -8,6 +8,7 @@ import stokrotka003  from "./../../../public/img/products/003_stokrotka_czy_to_m
 import carrefour01 from "./../../../public/img/products/001_carrefour_czy_to_ma_gluten.jpg";
 import glutenex01 from "./../../../public/img/products/001_glutenex_czy_to_ma_gluten.jpg";
 import aldi01 from "./../../../public/img/products/001_aldi_czy_to_ma_gluten.jpg";
+import aldi02 from "./../../../public/img/products/002_aldi_czy_to_ma_gluten.jpg";
 
 export const productsData = [
     {
@@ -122,6 +123,18 @@ export const productsData = [
       id: 10,
       href: "https://www.instagram.com/p/DFhen7GOga6/",
       imgSrc: aldi01,
+      altText: "Czy to ma gluten? - Aldi",
+      label: "Produkty",
+      labelShop: "Aldi",
+      labelClass: "product-label",
+      labelShopClass: "shop-label",
+      description:
+        "Czy to ma gluten? - Aldi",
+    },
+    {
+      id: 11,
+      href: "https://www.instagram.com/p/DFznyNEO0tq/",
+      imgSrc: aldi02,
       altText: "Czy to ma gluten? - Aldi",
       label: "Produkty",
       labelShop: "Aldi",

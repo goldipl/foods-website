@@ -10,6 +10,7 @@ import bezglutenowyMakowiecJaponski from "./../../../public/img/recipes/desserts
 import bezglutenowyKopiecKreta from "./../../../public/img/recipes/desserts/010_bezglutenowy_kopiec_kreta.jpg";
 import bezglutenowyOmletMarchewkowy from "./../../../public/img/recipes/desserts/011_bezglutenowy_omlet_marchewkowy.jpg";
 import bezglutenoweTostyFrancuskie from "./../../../public/img/recipes/desserts/012_bezglutenowe_tosty_francuskie.jpg";
+import bezglutenowaCzekoladaTruskawkowa from "./../../../public/img/recipes/desserts/013_bezglutenowa_czekolada_truskawkowa.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -131,5 +132,15 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Bezglutenowe tosty francuskie",
+    },
+    {
+      id: 13,
+      href: "https://www.instagram.com/p/DFvlnndO6JS/",
+      imgSrc: bezglutenowaCzekoladaTruskawkowa,
+      altText: "Bezglutenowy deser w stylu kultowej truskawkowej czekolady",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowy deser w stylu kultowej truskawkowej czekolady",
     },
 ];

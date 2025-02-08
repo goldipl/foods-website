@@ -27,6 +27,8 @@ import bezglutenoweTostyFrancuskie from "./../../../public/img/recipes/desserts/
 import selerSosTonnato from "./../../../public/img/recipes/appetizers/003_seler_sos_tonnato.jpg";
 import przekaskawStyluShogayaki from "./../../../public/img/recipes/appetizers/004_przekaska_w_stylu_shogayaki.jpg";
 import aldi01 from "./../../../public/img/products/001_aldi_czy_to_ma_gluten.jpg";
+import bezglutenowaCzekoladaTruskawkowa from "./../../../public/img/recipes/desserts/013_bezglutenowa_czekolada_truskawkowa.jpg";
+import aldi02 from "./../../../public/img/products/002_aldi_czy_to_ma_gluten.jpg";
 
 export const latestSlotsData = [
     {
@@ -319,6 +321,28 @@ export const latestSlotsData = [
       id: 29,
       href: "https://www.instagram.com/p/DFhen7GOga6/",
       imgSrc: aldi01,
+      altText: "Czy to ma gluten? - Aldi",
+      label: "Produkty",
+      labelShop: "Aldi",
+      labelClass: "product-label",
+      labelShopClass: "shop-label",
+      description:
+        "Czy to ma gluten? - Aldi",
+    },
+    {
+      id: 30,
+      href: "https://www.instagram.com/p/DFvlnndO6JS/",
+      imgSrc: bezglutenowaCzekoladaTruskawkowa,
+      altText: "Bezglutenowy deser w stylu kultowej truskawkowej czekolady",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowy deser w stylu kultowej truskawkowej czekolady",
+    },
+    {
+      id: 31,
+      href: "https://www.instagram.com/p/DFznyNEO0tq/",
+      imgSrc: aldi02,
       altText: "Czy to ma gluten? - Aldi",
       label: "Produkty",
       labelShop: "Aldi",
