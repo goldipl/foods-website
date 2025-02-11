@@ -29,6 +29,7 @@ import przekaskawStyluShogayaki from "./../../../public/img/recipes/appetizers/0
 import aldi01 from "./../../../public/img/products/001_aldi_czy_to_ma_gluten.jpg";
 import bezglutenowaCzekoladaTruskawkowa from "./../../../public/img/recipes/desserts/013_bezglutenowa_czekolada_truskawkowa.jpg";
 import aldi02 from "./../../../public/img/products/002_aldi_czy_to_ma_gluten.jpg";
+import bezglutenowePuszysteFaworki from "./../../../public/img/recipes/desserts/014_bezglutenowe_puszyste_faworki.jpg";
 
 export const latestSlotsData = [
     {
@@ -350,5 +351,15 @@ export const latestSlotsData = [
       labelShopClass: "shop-label",
       description:
         "Czy to ma gluten? - Aldi",
+    },
+    {
+      id: 32,
+      href: "https://www.instagram.com/p/DF5ULvgoNTg/",
+      imgSrc: bezglutenowePuszysteFaworki,
+      altText: "Bezglutenowe puszyste faworki",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowe puszyste faworki",
     },
   ];

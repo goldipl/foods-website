@@ -11,6 +11,7 @@ import bezglutenowyKopiecKreta from "./../../../public/img/recipes/desserts/010_
 import bezglutenowyOmletMarchewkowy from "./../../../public/img/recipes/desserts/011_bezglutenowy_omlet_marchewkowy.jpg";
 import bezglutenoweTostyFrancuskie from "./../../../public/img/recipes/desserts/012_bezglutenowe_tosty_francuskie.jpg";
 import bezglutenowaCzekoladaTruskawkowa from "./../../../public/img/recipes/desserts/013_bezglutenowa_czekolada_truskawkowa.jpg";
+import bezglutenowePuszysteFaworki from "./../../../public/img/recipes/desserts/014_bezglutenowe_puszyste_faworki.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -142,5 +143,15 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Bezglutenowy deser w stylu kultowej truskawkowej czekolady",
+    },
+    {
+      id: 14,
+      href: "https://www.instagram.com/p/DF5ULvgoNTg/",
+      imgSrc: bezglutenowePuszysteFaworki,
+      altText: "Bezglutenowe puszyste faworki",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowe puszyste faworki",
     },
 ];
