@@ -22,23 +22,23 @@ const BoxesInfoSection = () => {
             </div>
           </div>
           {/* Slot */}
-          <div className="boxes-info-slot">
+          {/* <div className="boxes-info-slot">
             <div className="boxes-info-slot__icon">
               <Image src={nomilk} width={40} height={40} alt="bez nabiału" />
             </div>
             <div className="boxes-info-slot__text">
               <span>bez nabiału</span>
             </div>
-          </div>
+          </div> */}
           {/* Slot */}
-          <div className="boxes-info-slot">
+          {/* <div className="boxes-info-slot">
             <div className="boxes-info-slot__icon">
               <Image src={nosugar} width={40} height={40} alt="bez cukru" />
             </div>
             <div className="boxes-info-slot__text">
               <span>bez cukru</span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
