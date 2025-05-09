@@ -19,20 +19,6 @@ const Topbar = () => {
             ></Image>
           </Link>
         </p>
-        <p>
-          Kod <strong>10%</strong> zniżki <code>bezglutenowakarola10</code> w
-          sklepie
-          <Link target="_blank" href="https://www.sunday-natural.pl/">
-            Sunday Natural
-            <Image
-              className="cart-icon"
-              src={cartIcon}
-              width={24}
-              height={24}
-              alt="koszyk"
-            ></Image>
-          </Link>
-        </p>
       </div>
     </div>
   );
