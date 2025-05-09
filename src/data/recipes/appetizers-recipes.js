@@ -2,6 +2,8 @@ import paluszkoweKoreczkiWegeFeta from "./../../../public/img/recipes/appetizers
 import pieczarkiwCiescieNalesnikowym from "./../../../public/img/recipes/appetizers/002_pieczarki_w_ciescie_nalesnikowym.jpg";
 import selerSosTonnato from "./../../../public/img/recipes/appetizers/003_seler_sos_tonnato.jpg";
 import przekaskawStyluShogayaki from "./../../../public/img/recipes/appetizers/004_przekaska_w_stylu_shogayaki.jpg";
+import hotdogzCebulka from "./../../../public/img/recipes/appetizers/005_hotdog_z_cebulka.jpg";
+import jajkawSosieTatarskim from "./../../../public/img/recipes/appetizers/006_jajka_w_sosie_tatarskim_z_grissini.jpg";
 
 export const appetizersRecipesData = [
     {
@@ -43,5 +45,25 @@ export const appetizersRecipesData = [
         labelClass: "appetizer-label",
         description:
         "Japońska przekąska w stylu Shogayaki",
+    },
+    {
+        id: 5,
+        href: "https://www.instagram.com/p/DG6QTm_uj1q/",
+        imgSrc: hotdogzCebulka,
+        altText: "Bezglutenowe Hot Dogi z cebulką",
+        label: "Przystawka",
+        labelClass: "appetizer-label",
+        description:
+        "Bezglutenowe Hot Dogi z cebulką",
+    },
+    {
+        id: 6,
+        href: "https://www.instagram.com/p/DIJn1L0IYVp/",
+        imgSrc: jajkawSosieTatarskim,
+        altText: "Jajka w sosie tatarskim z grissini",
+        label: "Przystawka",
+        labelClass: "appetizer-label",
+        description:
+        "Jajka w sosie tatarskim z grissini",
     },
   ];

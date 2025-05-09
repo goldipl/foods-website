@@ -12,6 +12,10 @@ import bezglutenowyOmletMarchewkowy from "./../../../public/img/recipes/desserts
 import bezglutenoweTostyFrancuskie from "./../../../public/img/recipes/desserts/012_bezglutenowe_tosty_francuskie.jpg";
 import bezglutenowaCzekoladaTruskawkowa from "./../../../public/img/recipes/desserts/013_bezglutenowa_czekolada_truskawkowa.jpg";
 import bezglutenowePuszysteFaworki from "./../../../public/img/recipes/desserts/014_bezglutenowe_puszyste_faworki.jpg";
+import bezglutenowyLesnyMech from "./../../../public/img/recipes/desserts/015_bezglutenowy_lesny_mech.jpg";
+import jadalneSadzonki from "./../../../public/img/recipes/desserts/016_jadalne_sadzonki.jpg";
+import mazurekPistacjowy from "./../../../public/img/recipes/desserts/017_mazurek_pistacjowy.jpg";
+import bezglutenoweBrioche from "./../../../public/img/recipes/desserts/018_bezglutenowe_brioche.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -153,5 +157,45 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Bezglutenowe puszyste faworki",
+    },
+    {
+      id: 15,
+      href: "https://www.instagram.com/p/DHiihqPo-PE/",
+      imgSrc: bezglutenowyLesnyMech,
+      altText: "Bezglutenowe ciasto - leśny mech",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowe ciasto - leśny mech",
+    },
+    {
+      id: 16,
+      href: "https://www.instagram.com/p/DIMOkP4IgFw/",
+      imgSrc: jadalneSadzonki,
+      altText: "Słodkie, jadalne sadzonki",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Słodkie, jadalne sadzonki",
+    },
+    {
+      id: 17,
+      href: "https://www.instagram.com/p/DIeN6ijorry/",
+      imgSrc: mazurekPistacjowy,
+      altText: "Mazurek pistacjowy",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Mazurek pistacjowy",
+    },
+    {
+      id: 18,
+      href: "https://www.instagram.com/p/DJABWdWouqO/",
+      imgSrc: bezglutenoweBrioche,
+      altText: "Bezglutenowe brioche",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowe brioche",
     },
 ];

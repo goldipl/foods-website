@@ -3,6 +3,7 @@ import NalesnikizDzemem from "./../../../public/img/recipes/breakfasts/004_nales
 import sniadaniowaTortilla from "./../../../public/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.jpg";
 import sniadanieBoczekzJajkiem from "./../../../public/img/recipes/breakfasts/001_sniadanie_boczek_z_jajkiem.jpg";
 import tortilla3Skladniki from "./../../../public/img/recipes/breakfasts/005_bezglutenowa_tortilla_z_buraka_komosy_ryzowej.jpg";
+import zielonyBajgel from "./../../../public/img/recipes/breakfasts/006_zielony_bajgel.jpg";
 
 export const breakfastsRecipesData = [
     {
@@ -54,5 +55,15 @@ export const breakfastsRecipesData = [
       labelClass: "breakfast-label",
       description:
         "Bezglutenowa tortilla - tylko 3 składniki - komosa ryżowa, buraki i woda",
+    },
+    {
+      id: 6,
+      href: "https://www.instagram.com/p/DIjHN1gI_Gc/",
+      imgSrc: zielonyBajgel,
+      altText: "Zielony, wiosenny bajgel ze szparagami",
+      label: "Śniadanie",
+      labelClass: "breakfast-label",
+      description:
+        "Zielony, wiosenny bajgel ze szparagami",
     },
   ];

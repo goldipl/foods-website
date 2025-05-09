@@ -3,6 +3,9 @@ import kebabEnfesWarszawa from "./../../../public/img/restaurants/poland/002_keb
 import rolaPaoWarszawa from "./../../../public/img/restaurants/poland/003_rola_pao_warszawa.jpg";
 import uKrolikaGdansk from "./../../../public/img/restaurants/poland/004_u_krolika_gdansk.jpg";
 import cafeCalimeroPaderewskiegoKielce from "./../../../public/img/restaurants/poland/006_cafe_calimero_kielce_paderewskiego.jpg";
+import wieszCoZjeszWarszawa from "./../../../public/img/restaurants/poland/007_wieszcozjesz_warszawa.jpg";
+import bezglutenowyKrakow from "./../../../public/img/restaurants/poland/008_bezglutenowy_krakow.jpg";
+import cafeCalimeroSolnaPizza from "./../../../public/img/restaurants/poland/009_cafe_calimero_kielce_solna_pizza.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -50,9 +53,39 @@ export const polishRestaurantsData = [
       href: "https://www.instagram.com/p/DFItUPROedN/",
       imgSrc: cafeCalimeroPaderewskiegoKielce,
       altText: "Calimero Cafe, Paderewskiego 4c/2, Kielce",
-      label: "Gdańsk",
+      label: "Kielce",
       labelClass: "poland-label",
       description:
         "Calimero Cafe, Paderewskiego 4c/2, Kielce",
+    },
+    {
+      id: 6,
+      href: "https://www.instagram.com/p/DGaKXYkoBiV/",
+      imgSrc: wieszCoZjeszWarszawa,
+      altText: "Restauracja Wiesz Co Zjesz, plac Konstytucji 1, Warszawa",
+      label: "Warszawa",
+      labelClass: "poland-label",
+      description:
+        "Restauracja Wiesz Co Zjesz, plac Konstytucji 1, Warszawa",
+    },
+    {
+      id: 7,
+      href: "https://www.instagram.com/p/DIbSA8oowfa/",
+      imgSrc: bezglutenowyKrakow,
+      altText: "Cakester Cafe, Zapiekane Gluten Free Bistro, Bonjour Pho Restaurant; Kraków",
+      label: "Kraków",
+      labelClass: "poland-label",
+      description:
+        "Cakester Cafe, Zapiekane Gluten Free Bistro, Bonjour Pho Restaurant; Kraków",
+    },
+    {
+      id: 8,
+      href: "https://www.instagram.com/p/DJOsDa2Iq_8/",
+      imgSrc: cafeCalimeroSolnaPizza,
+      altText: "Calimero Café Solna, Solna 4a/11u, Kielce",
+      label: "Kielce",
+      labelClass: "poland-label",
+      description:
+        "Calimero Café Solna, Solna 4a/11u, Kielce",
     },
   ];

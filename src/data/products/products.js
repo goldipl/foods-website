@@ -9,6 +9,8 @@ import carrefour01 from "./../../../public/img/products/001_carrefour_czy_to_ma_
 import glutenex01 from "./../../../public/img/products/001_glutenex_czy_to_ma_gluten.jpg";
 import aldi01 from "./../../../public/img/products/001_aldi_czy_to_ma_gluten.jpg";
 import aldi02 from "./../../../public/img/products/002_aldi_czy_to_ma_gluten.jpg";
+import kaufland01 from "./../../../public/img/products/012_kaufland_czy_to_ma_gluten.jpg";
+import cucina01 from "./../../../public/img/products/013_cucina_glutenfree_focaccia.jpg";
 
 export const productsData = [
     {
@@ -142,5 +144,29 @@ export const productsData = [
       labelShopClass: "shop-label",
       description:
         "Czy to ma gluten? - Aldi",
+    },
+    {
+      id: 12,
+      href: "https://www.instagram.com/p/DGWBhJEOjSQ/",
+      imgSrc: kaufland01,
+      altText: "Czy to ma gluten? - Kaufland",
+      label: "Produkty",
+      labelShop: "Kaufland",
+      labelClass: "product-label",
+      labelShopClass: "shop-label",
+      description:
+        "Czy to ma gluten? - Kaufland",
+    },
+    {
+      id: 13,
+      href: "https://www.instagram.com/p/DHJNRafIPrZ/",
+      imgSrc: cucina01,
+      altText: "Bezglutenowa focaccia - Cucina Gluten Free",
+      label: "Produkty",
+      labelShop: "Cucina Gluten Free",
+      labelClass: "product-label",
+      labelShopClass: "shop-label",
+      description:
+        "Bezglutenowa focaccia - Cucina Gluten Free",
     },
   ];

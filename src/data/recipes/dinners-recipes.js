@@ -9,6 +9,10 @@ import bezglutenowyKotletCezar from "./../../../public/img/recipes/dinners/008_b
 import bezglutenowySushiBurger from "./../../../public/img/recipes/dinners/009_bezglutenowy_sushi_burger.jpg";
 import bezglutenowaZupaPho from "./../../../public/img/recipes/dinners/010_bezglutenowa_zupa_pho.jpg";
 import padThai from "./../../../public/img/recipes/dinners/011_pad_thai.jpg";
+import wloskiMakaronzKrewetkami from "./../../../public/img/recipes/dinners/012_wloski_makaron_z_krewetkami.jpg";
+import kurczakwCiescieKokosowym from "./../../../public/img/recipes/dinners/013_kurczak_w_ciescie_kokosowym.jpg";
+import bezglutenoweNalesnikiGryczane from "./../../../public/img/recipes/dinners/014_bezglutenowe_nalesniki_gryczane.jpg";
+import greckaPita from "./../../../public/img/recipes/dinners/015_bezglutenowa_grecka_pita.jpg";
 
 export const dinnersRecipesData = [
     {
@@ -120,5 +124,45 @@ export const dinnersRecipesData = [
       labelClass: "dinner-label",
       description:
         "Pad Thai bez glutenu i bez nabiału",
+    },
+    {
+      id: 12,
+      href: "https://www.instagram.com/p/DGBPZtzIBNJ/",
+      imgSrc: wloskiMakaronzKrewetkami,
+      altText: "Włoski makaron z krewetkami",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Włoski makaron z krewetkami",
+    },
+    {
+      id: 13,
+      href: "https://www.instagram.com/p/DG3svqSOl1j/",
+      imgSrc: kurczakwCiescieKokosowym,
+      altText: "Kurczak w bezglutenowym cieście kokosowym",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Kurczak w bezglutenowym cieście kokosowym",
+    },
+    {
+      id: 14,
+      href: "https://www.instagram.com/p/DGfMwDmI-yX/",
+      imgSrc: bezglutenoweNalesnikiGryczane,
+      altText: "Bezglutenowe naleśniki gryczane",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Bezglutenowe naleśniki gryczane",
+    },
+    {
+      id: 15,
+      href: "https://www.instagram.com/p/DHnSXv1IQy4/",
+      imgSrc: greckaPita,
+      altText: "Bezglutenowa grecka pita z kurczakiem",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Bezglutenowa grecka pita z kurczakiem",
     },
   ];
