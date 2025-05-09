@@ -38,6 +38,11 @@
           justify-content: center;
           align-items: center;
           user-select: none;
+          height: auto;
+          img {
+            height: 110px;
+            width: auto;
+          }
         }
         &-button-next {
           position: absolute;
@@ -51,7 +56,6 @@
           top: 50%;
           right: 40px;
           z-index: 1;
-          display: none; /// Hide
           &::after {
             font-size: 0;
           }
@@ -68,7 +72,6 @@
           top: 50%;
           left: 40px;
           z-index: 1;
-          display: none; /// Hide
           &::after {
             font-size: 0;
           }
@@ -77,6 +80,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          bottom: 0;
         }
         &-pagination-bullet {
           width: 10px;

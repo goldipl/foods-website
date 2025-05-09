@@ -6,7 +6,9 @@ import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 import Link from "next/link";
 
-import glutenexImg from "./../../../public/img/cooperation/glutenex.png";
+import Glutenex from "./../../../public/img/cooperation/glutenex.png";
+import Incola from "./../../../public/img/cooperation/incola.jpg";
+import Bezgluten from "./../../../public/img/cooperation/bezgluten.png";
 
 SwiperCore.use([Pagination, Navigation]);
 
@@ -38,8 +40,40 @@ const CooperationSection = () => {
                   target="_blank"
                 >
                   <Image
-                    src={glutenexImg}
+                    src={Glutenex}
                     alt="Glutenex"
+                    width={260}
+                    height={122}
+                  ></Image>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slide-content">
+                <Link
+                  className="cooperation-link"
+                  href="https://bezgluten.pl/"
+                  target="_blank"
+                >
+                  <Image
+                    src={Bezgluten}
+                    alt="Bezgluten"
+                    width={260}
+                    height={122}
+                  ></Image>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slide-content">
+                <Link
+                  className="cooperation-link"
+                  href="https://www.incola.com.pl/"
+                  target="_blank"
+                >
+                  <Image
+                    src={Incola}
+                    alt="Incola"
                     width={260}
                     height={122}
                   ></Image>
