@@ -13,6 +13,7 @@ import wloskiMakaronzKrewetkami from "./../../../public/img/recipes/dinners/012_
 import kurczakwCiescieKokosowym from "./../../../public/img/recipes/dinners/013_kurczak_w_ciescie_kokosowym.jpg";
 import bezglutenoweNalesnikiGryczane from "./../../../public/img/recipes/dinners/014_bezglutenowe_nalesniki_gryczane.jpg";
 import greckaPita from "./../../../public/img/recipes/dinners/015_bezglutenowa_grecka_pita.jpg";
+import burgerzKimchi from "./../../../public/img/recipes/dinners/016_bezglutenowy_burger_z_kimchi.jpg";
 
 export const dinnersRecipesData = [
     {
@@ -164,5 +165,15 @@ export const dinnersRecipesData = [
       labelClass: "dinner-label",
       description:
         "Bezglutenowa grecka pita z kurczakiem",
+    },
+    {
+      id: 16,
+      href: "https://www.instagram.com/p/DJtHU6AoLGz/",
+      imgSrc: burgerzKimchi,
+      altText: "Bezglutenowy burger wołowy z kimchi",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Bezglutenowy burger wołowy z kimchi",
     },
   ];

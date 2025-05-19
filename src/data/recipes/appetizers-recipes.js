@@ -4,6 +4,7 @@ import selerSosTonnato from "./../../../public/img/recipes/appetizers/003_seler_
 import przekaskawStyluShogayaki from "./../../../public/img/recipes/appetizers/004_przekaska_w_stylu_shogayaki.jpg";
 import hotdogzCebulka from "./../../../public/img/recipes/appetizers/005_hotdog_z_cebulka.jpg";
 import jajkawSosieTatarskim from "./../../../public/img/recipes/appetizers/006_jajka_w_sosie_tatarskim_z_grissini.jpg";
+import matchazSokiem from "./../../../public/img/recipes/appetizers/007_matcha_z_sokiem.jpg";
 
 export const appetizersRecipesData = [
     {
@@ -24,7 +25,7 @@ export const appetizersRecipesData = [
         label: "Przystawka",
         labelClass: "appetizer-label",
         description:
-        "Pieczarki w bezglutenowym cieście naleśnikowym",
+            "Pieczarki w bezglutenowym cieście naleśnikowym",
     },
     {
         id: 3,
@@ -34,7 +35,7 @@ export const appetizersRecipesData = [
         label: "Przystawka",
         labelClass: "appetizer-label",
         description:
-        "Seler sos Tonnato",
+            "Seler sos Tonnato",
     },
     {
         id: 4,
@@ -44,7 +45,7 @@ export const appetizersRecipesData = [
         label: "Przystawka",
         labelClass: "appetizer-label",
         description:
-        "Japońska przekąska w stylu Shogayaki",
+            "Japońska przekąska w stylu Shogayaki",
     },
     {
         id: 5,
@@ -54,7 +55,7 @@ export const appetizersRecipesData = [
         label: "Przystawka",
         labelClass: "appetizer-label",
         description:
-        "Bezglutenowe Hot Dogi z cebulką",
+            "Bezglutenowe Hot Dogi z cebulką",
     },
     {
         id: 6,
@@ -64,6 +65,16 @@ export const appetizersRecipesData = [
         label: "Przystawka",
         labelClass: "appetizer-label",
         description:
-        "Jajka w sosie tatarskim z grissini",
+            "Jajka w sosie tatarskim z grissini",
+    },
+    {
+        id: 7,
+        href: "https://www.instagram.com/p/DJmZ74wojnP/",
+        imgSrc: matchazSokiem,
+        altText: "Matcha z sokiem pomarańczowym",
+        label: "Przystawka",
+        labelClass: "appetizer-label",
+        description: 
+            "Matcha z sokiem pomarańczowym",
     },
   ];
