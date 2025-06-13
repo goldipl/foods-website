@@ -20,7 +20,7 @@ const Footer = () => {
             <Link href="#restauracje-europa">Europa</Link>
           </div>
           <div className="footer-col">
-            <h2>Czy to ma gluten?</h2>
+            <h2>Produkty</h2>
             <Link href="#produkty">Lidl</Link>
             <Link href="#produkty">Biedronka</Link>
             <Link href="#produkty">Stokrotka</Link>

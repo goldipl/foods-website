@@ -211,7 +211,7 @@ const Header = () => {
             </li>
             <li className="nav-expand">
               <span onClick={() => handleDropdownToggle("thirdDropdown")}>
-                Czy to ma gluten?
+                Produkty
                 <Image
                   src={menuDownIcon.src}
                   alt="strzałka"
