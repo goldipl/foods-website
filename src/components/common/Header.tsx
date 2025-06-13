@@ -294,7 +294,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link href="#wydarzenia" onClick={handleCloseDropdown}>
-                    Wydarzenia
+                    Wydarzenia i wiele więcej :)
                   </Link>
                 </li>
               </ul>

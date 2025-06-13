@@ -40,6 +40,7 @@ const Footer = () => {
             >
               Jak wygląda życie z celiakią? (podcast)
             </Link>
+            <Link href="#wydarzenia">Wydarzenia i wiele więcej :)</Link>
           </div>
           <div className="footer-col">
             <h2>Dodatkowe informacje</h2>
