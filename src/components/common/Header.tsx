@@ -292,6 +292,11 @@ const Header = () => {
                     Jak wygląda życie z celiakią? (podcast)
                   </Link>
                 </li>
+                <li>
+                  <Link href="#wydarzenia" onClick={handleCloseDropdown}>
+                    Wydarzenia
+                  </Link>
+                </li>
               </ul>
             </li>
             <li>

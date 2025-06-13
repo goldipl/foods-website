@@ -14,6 +14,7 @@ import kurczakwCiescieKokosowym from "./../../../public/img/recipes/dinners/013_
 import bezglutenoweNalesnikiGryczane from "./../../../public/img/recipes/dinners/014_bezglutenowe_nalesniki_gryczane.jpg";
 import greckaPita from "./../../../public/img/recipes/dinners/015_bezglutenowa_grecka_pita.jpg";
 import burgerzKimchi from "./../../../public/img/recipes/dinners/016_bezglutenowy_burger_z_kimchi.jpg";
+import grill from "./../../../public/img/recipes/dinners/017_grill.jpg";
 
 export const dinnersRecipesData = [
     {
@@ -175,5 +176,15 @@ export const dinnersRecipesData = [
       labelClass: "dinner-label",
       description:
         "Bezglutenowy burger wołowy z kimchi",
+    },
+    {
+      id: 17,
+      href: "https://www.instagram.com/p/DJ4UJPBIPD8/",
+      imgSrc: grill,
+      altText: "Bezglutenowy, wiosenny grill",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Bezglutenowy, wiosenny grill",
     },
   ];

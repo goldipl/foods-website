@@ -13,6 +13,7 @@ import CeliacDiseaseSection from "@/components/main-page/CeliacDiseaseSection";
 import Contact from "@/components/main-page/Contact";
 import ProductsSection from "@/components/main-page/ProductsSection";
 import CooperationSection from "@/components/main-page/CooperationSection";
+import Events from "@/components/main-page/Events";
 
 const index = () => {
   return (
@@ -29,6 +30,7 @@ const index = () => {
         <RestaurantsSection />
         <ProductsSection />
         <CeliacDiseaseSection />
+        <Events />
         <CooperationSection />
         <Contact />
       </main>

@@ -1,0 +1,76 @@
+.events-section {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: $light-grey-bg;
+  z-index: 0;
+  .events-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 140px 16px;
+    @media (max-width: 992px) {
+      padding: 40px 16px;
+    }
+    h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 64px;
+      font-size: 26px;
+      line-height: 32px;
+      @media (max-width: 992px) {
+        font-size: 22px;
+        line-height: 28px;
+        margin: 0 auto 40px;
+      }
+    }
+    .events-box {
+      &-slot {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 8px;
+        &__icon {
+          display: flex;
+          margin-right: 12px;
+          width: 32px;
+          height: 32px;
+          font-size: 32px;
+          &.instagram {
+            width: 40px;
+            height: 40px;
+            font-size: 40px;
+            margin-left: -4px;
+            margin-right: 8px;
+          }
+        }
+        &__content {
+          a {
+            font-size: 18px;
+            text-decoration: none;
+            color: $color-green01;
+            span {
+              color: $color-black;
+              font-size: 15px;
+            }
+            &:hover {
+              color: $color-black;
+            }
+            @media (max-width: 992px) {
+              font-size: 14px;
+              span {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

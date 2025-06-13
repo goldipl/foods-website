@@ -4,6 +4,7 @@ import sniadaniowaTortilla from "./../../../public/img/recipes/breakfasts/003_sn
 import sniadanieBoczekzJajkiem from "./../../../public/img/recipes/breakfasts/001_sniadanie_boczek_z_jajkiem.jpg";
 import tortilla3Skladniki from "./../../../public/img/recipes/breakfasts/005_bezglutenowa_tortilla_z_buraka_komosy_ryzowej.jpg";
 import zielonyBajgel from "./../../../public/img/recipes/breakfasts/006_zielony_bajgel.jpg";
+import omletzMakiGryczanej from "./../../../public/img/recipes/breakfasts/007_omlet_z_maki_gryczanej_i_jajek.jpg";
 
 export const breakfastsRecipesData = [
     {
@@ -65,5 +66,15 @@ export const breakfastsRecipesData = [
       labelClass: "breakfast-label",
       description:
         "Zielony, wiosenny bajgel ze szparagami",
+    },
+    {
+      id: 7,
+      href: "https://www.instagram.com/p/DJ91QNNI43j/",
+      imgSrc: omletzMakiGryczanej,
+      altText: "Omlet z bezglutenowej kaszy gryczanej i jajek",
+      label: "Śniadanie",
+      labelClass: "breakfast-label",
+      description:
+        "Omlet z bezglutenowej kaszy gryczanej i jajek",
     },
   ];
