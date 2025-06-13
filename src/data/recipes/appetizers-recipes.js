@@ -5,6 +5,8 @@ import przekaskawStyluShogayaki from "./../../../public/img/recipes/appetizers/0
 import hotdogzCebulka from "./../../../public/img/recipes/appetizers/005_hotdog_z_cebulka.jpg";
 import jajkawSosieTatarskim from "./../../../public/img/recipes/appetizers/006_jajka_w_sosie_tatarskim_z_grissini.jpg";
 import matchazSokiem from "./../../../public/img/recipes/appetizers/007_matcha_z_sokiem.jpg";
+import bezglutenowaChalka from "./../../../public/img/recipes/appetizers/008_bezglutenowa_chalka.jpg";
+import hotDogiiGrill from "./../../../public/img/recipes/appetizers/009_hot_dogi.jpg";
 
 export const appetizersRecipesData = [
     {
@@ -76,5 +78,25 @@ export const appetizersRecipesData = [
         labelClass: "appetizer-label",
         description: 
             "Matcha z sokiem pomarańczowym",
+    },
+    {
+        id: 8,
+        href: "https://www.instagram.com/p/DKFgkFPIm6p/",
+        imgSrc: bezglutenowaChalka,
+        altText: "Bezglutenowa chałka z truskawkami",
+        label: "Przystawka",
+        labelClass: "appetizer-label",
+        description: 
+            "Bezglutenowa chałka z truskawkami",
+    },
+    {
+        id: 9,
+        href: "https://www.instagram.com/p/DKH1M4rI4p6/",
+        imgSrc: hotDogiiGrill,
+        altText: "Hot Dogi i Grill",
+        label: "Przystawka",
+        labelClass: "appetizer-label",
+        description: 
+            "Hot Dogi i Grill",
     },
   ];

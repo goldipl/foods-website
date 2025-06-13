@@ -12,6 +12,7 @@ import aldi02 from "./../../../public/img/products/002_aldi_czy_to_ma_gluten.jpg
 import kaufland01 from "./../../../public/img/products/012_kaufland_czy_to_ma_gluten.jpg";
 import kaufland02 from "./../../../public/img/products/013_kaufland_czy_to_ma_gluten.jpg";
 import cucina01 from "./../../../public/img/products/014_cucina_glutenfree_focaccia.jpg";
+import zabka01 from "./../../../public/img/products/015_zabka_czy_to_ma_gluten.jpg";
 
 export const productsData = [
     {
@@ -181,5 +182,17 @@ export const productsData = [
       labelShopClass: "shop-label",
       description:
         "Bezglutenowa focaccia - Cucina Gluten Free",
+    },
+    {
+      id: 15,
+      href: "https://www.instagram.com/p/DKKgBmcIu9c/",
+      imgSrc: zabka01,
+      altText: "Czy to ma gluten? - Żabka",
+      label: "Produkty",
+      labelShop: "Żabka",
+      labelClass: "product-label",
+      labelShopClass: "stokrotka-label",
+      description:
+        "Czy to ma gluten? - Żabka",
     },
   ];

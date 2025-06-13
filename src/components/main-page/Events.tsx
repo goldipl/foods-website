@@ -9,7 +9,7 @@ const Events = () => {
     <section id="wydarzenia" className="events-section events-title">
       <div className="events-wrapper">
         <div className="section-title">
-          <h2>Wydarzenia</h2>
+          <h2>Wydarzenia i wiele więcej :)</h2>
         </div>
         <div className="listing-v1">
           {eventsData
