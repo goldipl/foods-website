@@ -61,7 +61,7 @@ export const eventsData = [
       href: "https://www.instagram.com/p/DKpD0PKocvZ/",
       imgSrc: nietypowaSobota,
       altText: "Otwarcie letniej altany w restauracji Pizza Naturalna w Poznaniu",
-      label: "Wydarzenie",
+      label: "Wydarzenia",
       labelClass: "breakfast-label",
       description:
         "Otwarcie letniej altany w restauracji Pizza Naturalna w Poznaniu",
