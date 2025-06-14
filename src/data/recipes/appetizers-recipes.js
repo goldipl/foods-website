@@ -4,11 +4,9 @@ import selerSosTonnato from "./../../../public/img/recipes/appetizers/003_seler_
 import przekaskawStyluShogayaki from "./../../../public/img/recipes/appetizers/004_przekaska_w_stylu_shogayaki.jpg";
 import hotdogzCebulka from "./../../../public/img/recipes/appetizers/005_hotdog_z_cebulka.jpg";
 import jajkawSosieTatarskim from "./../../../public/img/recipes/appetizers/006_jajka_w_sosie_tatarskim_z_grissini.jpg";
-import matchazSokiem from "./../../../public/img/recipes/appetizers/007_matcha_z_sokiem.jpg";
-import bezglutenowaChalka from "./../../../public/img/recipes/appetizers/008_bezglutenowa_chalka.jpg";
-import hotDogiiGrill from "./../../../public/img/recipes/appetizers/009_hot_dogi.jpg";
-import makaronzTruskawkami from "./../../../public/img/recipes/appetizers/010_makaron_z_truskawkami.jpg";
-import sokCzystyAloes from "./../../../public/img/recipes/appetizers/011_sok_czysty_aloes.jpg";
+import bezglutenowaChalka from "./../../../public/img/recipes/appetizers/007_bezglutenowa_chalka.jpg";
+import hotDogiiGrill from "./../../../public/img/recipes/appetizers/008_hot_dogi.jpg";
+import makaronzTruskawkami from "./../../../public/img/recipes/appetizers/009_makaron_z_truskawkami.jpg";
 
 export const appetizersRecipesData = [
     {
@@ -73,16 +71,6 @@ export const appetizersRecipesData = [
     },
     {
         id: 7,
-        href: "https://www.instagram.com/p/DJmZ74wojnP/",
-        imgSrc: matchazSokiem,
-        altText: "Matcha z sokiem pomarańczowym",
-        label: "Napój",
-        labelClass: "appetizer-label",
-        description: 
-            "Matcha z sokiem pomarańczowym",
-    },
-    {
-        id: 8,
         href: "https://www.instagram.com/p/DKFgkFPIm6p/",
         imgSrc: bezglutenowaChalka,
         altText: "Bezglutenowa chałka z truskawkami",
@@ -92,7 +80,7 @@ export const appetizersRecipesData = [
             "Bezglutenowa chałka z truskawkami",
     },
     {
-        id: 9,
+        id: 8,
         href: "https://www.instagram.com/p/DKH1M4rI4p6/",
         imgSrc: hotDogiiGrill,
         altText: "Hot Dogi i Grill",
@@ -102,7 +90,7 @@ export const appetizersRecipesData = [
             "Hot Dogi i Grill",
     },
     {
-        id: 10,
+        id: 9,
         href: "https://www.instagram.com/p/DKfAohYIU_p/",
         imgSrc: makaronzTruskawkami,
         altText: "Bezglutenowy makaron z truskawkami",
@@ -110,15 +98,5 @@ export const appetizersRecipesData = [
         labelClass: "appetizer-label",
         description: 
             "Bezglutenowy makaron z truskawkami",
-    },
-    {
-        id: 11,
-        href: "https://www.instagram.com/p/DKqvw4Vorzu/",
-        imgSrc: sokCzystyAloes,
-        altText: "Naturalny sok z aloesu",
-        label: "Sok",
-        labelClass: "appetizer-label",
-        description: 
-            "Naturalny sok z aloesu",
     },
   ];

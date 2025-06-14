@@ -113,7 +113,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link href="#przystawki" onClick={handleCloseDropdown}>
-                    Przystawki
+                    Przystawki / Przekąski
                   </Link>
                 </li>
               </ul>

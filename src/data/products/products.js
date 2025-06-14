@@ -13,6 +13,8 @@ import kaufland01 from "./../../../public/img/products/012_kaufland_czy_to_ma_gl
 import kaufland02 from "./../../../public/img/products/013_kaufland_czy_to_ma_gluten.jpg";
 import cucina01 from "./../../../public/img/products/014_cucina_glutenfree_focaccia.jpg";
 import zabka01 from "./../../../public/img/products/015_zabka_czy_to_ma_gluten.jpg";
+import matchazSokiem from "./../../../public/img/products/016_matcha_z_sokiem.jpg";
+import sokCzystyAloes from "./../../../public/img/products/017_sok_czysty_aloes.jpg";
 
 export const productsData = [
     {
@@ -194,5 +196,25 @@ export const productsData = [
       labelShopClass: "stokrotka-label",
       description:
         "Czy to ma gluten? - Żabka",
+    },
+        {
+        id: 16,
+        href: "https://www.instagram.com/p/DJmZ74wojnP/",
+        imgSrc: matchazSokiem,
+        altText: "Matcha z sokiem pomarańczowym",
+        label: "Napój",
+        labelClass: "product-label",
+        description: 
+            "Matcha z sokiem pomarańczowym",
+    },
+    {
+        id: 17,
+        href: "https://www.instagram.com/p/DKqvw4Vorzu/",
+        imgSrc: sokCzystyAloes,
+        altText: "Naturalny sok z aloesu",
+        label: "Sok",
+        labelClass: "product-label",
+        description: 
+            "Naturalny sok z aloesu",
     },
   ];
