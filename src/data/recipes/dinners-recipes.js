@@ -15,6 +15,7 @@ import bezglutenoweNalesnikiGryczane from "./../../../public/img/recipes/dinners
 import greckaPita from "./../../../public/img/recipes/dinners/015_bezglutenowa_grecka_pita.jpg";
 import burgerzKimchi from "./../../../public/img/recipes/dinners/016_bezglutenowy_burger_z_kimchi.jpg";
 import grill from "./../../../public/img/recipes/dinners/017_grill.jpg";
+import bezglutenoweChiliSinCarne from "./../../../public/img/recipes/dinners/018_bezglutenowe_chili_sin_carne.jpg";
 
 export const dinnersRecipesData = [
     {
@@ -186,5 +187,15 @@ export const dinnersRecipesData = [
       labelClass: "dinner-label",
       description:
         "Bezglutenowy, wiosenny grill",
+    },
+    {
+      id: 18,
+      href: "https://www.instagram.com/p/DKcarnTI1bM/",
+      imgSrc: bezglutenoweChiliSinCarne,
+      altText: "Bezglutenowe chili sin carne",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Bezglutenowe chili sin carne",
     },
   ];

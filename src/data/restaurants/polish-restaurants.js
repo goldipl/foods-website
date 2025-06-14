@@ -6,6 +6,7 @@ import cafeCalimeroPaderewskiegoKielce from "./../../../public/img/restaurants/p
 import wieszCoZjeszWarszawa from "./../../../public/img/restaurants/poland/007_wieszcozjesz_warszawa.jpg";
 import bezglutenowyKrakow from "./../../../public/img/restaurants/poland/008_bezglutenowy_krakow.jpg";
 import cafeCalimeroSolnaPizza from "./../../../public/img/restaurants/poland/009_cafe_calimero_kielce_solna_pizza.jpg";
+import cafeCalimeroKonstruktorska from "./../../../public/img/restaurants/poland/010_cafe_calimero_warszawa_konstruktorska.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -87,5 +88,15 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Calimero Café Solna, Solna 4a/11u, Kielce",
+    },
+    {
+      id: 9,
+      href: "https://www.instagram.com/p/DKO9OF-IY7O/",
+      imgSrc: cafeCalimeroKonstruktorska,
+      altText: "Calimero Café Konstruktorska, Konstruktorska 7/u1, Warszawa",
+      label: "Warszawa",
+      labelClass: "poland-label",
+      description:
+        "Calimero Café Konstruktorska, Konstruktorska 7/u1, Warszawa",
     },
   ];

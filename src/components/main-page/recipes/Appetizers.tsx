@@ -8,7 +8,7 @@ const Appetizers = () => {
   return (
     <>
       <div className="section-title">
-        <h2 id="przystawki">Przystawki</h2>
+        <h2 id="przystawki">Przystawki / Przekąski / Napoje</h2>
       </div>
       <div className="listing-v1">
         {appetizersRecipesData

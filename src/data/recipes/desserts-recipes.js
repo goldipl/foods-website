@@ -16,6 +16,7 @@ import bezglutenowyLesnyMech from "./../../../public/img/recipes/desserts/015_be
 import jadalneSadzonki from "./../../../public/img/recipes/desserts/016_jadalne_sadzonki.jpg";
 import mazurekPistacjowy from "./../../../public/img/recipes/desserts/017_mazurek_pistacjowy.jpg";
 import bezglutenoweBrioche from "./../../../public/img/recipes/desserts/018_bezglutenowe_brioche.jpg";
+import bezglutenowaSzarlotka from "./../../../public/img/recipes/desserts/019_bezglutenowa_szarlotka.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -197,5 +198,15 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Bezglutenowe brioche",
+    },
+    {
+      id: 19,
+      href: "https://www.instagram.com/p/DKSDnj2IXrH/",
+      imgSrc: bezglutenowaSzarlotka,
+      altText: "Bezglutenowa szarlotka",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowa szarlotka",
     },
 ];

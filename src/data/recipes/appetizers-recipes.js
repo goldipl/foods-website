@@ -7,6 +7,8 @@ import jajkawSosieTatarskim from "./../../../public/img/recipes/appetizers/006_j
 import matchazSokiem from "./../../../public/img/recipes/appetizers/007_matcha_z_sokiem.jpg";
 import bezglutenowaChalka from "./../../../public/img/recipes/appetizers/008_bezglutenowa_chalka.jpg";
 import hotDogiiGrill from "./../../../public/img/recipes/appetizers/009_hot_dogi.jpg";
+import makaronzTruskawkami from "./../../../public/img/recipes/appetizers/010_makaron_z_truskawkami.jpg";
+import sokCzystyAloes from "./../../../public/img/recipes/appetizers/011_sok_czysty_aloes.jpg";
 
 export const appetizersRecipesData = [
     {
@@ -74,7 +76,7 @@ export const appetizersRecipesData = [
         href: "https://www.instagram.com/p/DJmZ74wojnP/",
         imgSrc: matchazSokiem,
         altText: "Matcha z sokiem pomarańczowym",
-        label: "Przystawka",
+        label: "Napój",
         labelClass: "appetizer-label",
         description: 
             "Matcha z sokiem pomarańczowym",
@@ -98,5 +100,25 @@ export const appetizersRecipesData = [
         labelClass: "appetizer-label",
         description: 
             "Hot Dogi i Grill",
+    },
+    {
+        id: 10,
+        href: "https://www.instagram.com/p/DKfAohYIU_p/",
+        imgSrc: makaronzTruskawkami,
+        altText: "Bezglutenowy makaron z truskawkami",
+        label: "Słodka przekąska",
+        labelClass: "appetizer-label",
+        description: 
+            "Bezglutenowy makaron z truskawkami",
+    },
+    {
+        id: 11,
+        href: "https://www.instagram.com/p/DKqvw4Vorzu/",
+        imgSrc: sokCzystyAloes,
+        altText: "Naturalny sok z aloesu",
+        label: "Sok",
+        labelClass: "appetizer-label",
+        description: 
+            "Naturalny sok z aloesu",
     },
   ];
