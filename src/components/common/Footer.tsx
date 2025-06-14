@@ -13,6 +13,7 @@ const Footer = () => {
             <Link href="#sniadania">Śniadania</Link>
             <Link href="#obiady">Obiady</Link>
             <Link href="#desery">Desery</Link>
+            <Link href="#przystawki">Przystawki</Link>
           </div>
           <div className="footer-col">
             <h2>Restauracje</h2>
@@ -57,6 +58,12 @@ const Footer = () => {
               target="_blank"
             >
               YouTube
+            </Link>
+            <Link
+              href="https://www.facebook.com/profile.php?id=61576336200554"
+              target="_blank"
+            >
+              Facebook
             </Link>
           </div>
         </div>

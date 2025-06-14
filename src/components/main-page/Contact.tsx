@@ -1,8 +1,9 @@
 import Link from "next/link";
 import React from "react";
-import { SlEnvolopeLetter } from "react-icons/sl";
-import { CiInstagram } from "react-icons/ci";
-import { PiYoutubeLogoThin } from "react-icons/pi";
+import { MdAlternateEmail } from "react-icons/md";
+import { PiInstagramLogo } from "react-icons/pi";
+import { AiOutlineYoutube } from "react-icons/ai";
+import { LiaFacebook } from "react-icons/lia";
 
 const Contact = () => {
   return (
@@ -14,7 +15,7 @@ const Contact = () => {
         <div className="contact-box">
           <div className="contact-box-slot">
             <div className="contact-box-slot__icon">
-              <SlEnvolopeLetter />
+              <MdAlternateEmail />
             </div>
             <div className="contact-box-slot__content">
               <Link href="mailto:karolinawontorska@gmail.com">
@@ -25,7 +26,7 @@ const Contact = () => {
           </div>
           <div className="contact-box-slot">
             <div className="contact-box-slot__icon instagram">
-              <CiInstagram />
+              <PiInstagramLogo />
             </div>
             <div className="contact-box-slot__content">
               <Link
@@ -38,7 +39,7 @@ const Contact = () => {
           </div>
           <div className="contact-box-slot">
             <div className="contact-box-slot__icon instagram">
-              <PiYoutubeLogoThin />
+              <AiOutlineYoutube />
             </div>
             <div className="contact-box-slot__content">
               <Link
@@ -46,6 +47,20 @@ const Contact = () => {
                 target="_blank"
               >
                 @bezglutenowakarola <span>- Subskrybuj i bądź na bieżąco</span>
+              </Link>
+            </div>
+          </div>
+          <div className="contact-box-slot">
+            <div className="contact-box-slot__icon instagram">
+              <LiaFacebook />
+            </div>
+            <div className="contact-box-slot__content">
+              <Link
+                href="https://www.facebook.com/profile.php?id=61576336200554"
+                target="_blank"
+              >
+                @bezglutenowakarola{" "}
+                <span>- Polub i obserwuj mnie na Facebooku</span>
               </Link>
             </div>
           </div>

@@ -4,6 +4,7 @@ import logo from "./../../../public/icons/header/bezglutenowakarola-logo.svg";
 import menuDownIcon from "./../../../public/icons/common/menu-down-icon.svg";
 import instagramIcon from "./../../../public/icons/common/instagram.svg";
 import youTubeIcon from "./../../../public/icons/common/youtube.svg";
+import facebookIcon from "./../../../public/icons/common/facebook.svg";
 import Image from "next/image";
 
 const Header = () => {
@@ -335,6 +336,22 @@ const Header = () => {
                   className="social-icon"
                   src={youTubeIcon.src}
                   alt="YouTube"
+                  height={28}
+                  width={28}
+                />
+                <span>@bezglutenowakarola</span>
+              </Link>
+            </li>
+            <li className="header-social-link">
+              <Link
+                href="https://www.facebook.com/profile.php?id=61576336200554"
+                onClick={handleCloseDropdown}
+                target="_blank"
+              >
+                <Image
+                  className="social-icon"
+                  src={facebookIcon.src}
+                  alt="Facebook"
                   height={28}
                   width={28}
                 />
