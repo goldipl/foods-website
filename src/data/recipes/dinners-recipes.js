@@ -16,6 +16,7 @@ import greckaPita from "./../../../public/img/recipes/dinners/015_bezglutenowa_g
 import burgerzKimchi from "./../../../public/img/recipes/dinners/016_bezglutenowy_burger_z_kimchi.jpg";
 import grill from "./../../../public/img/recipes/dinners/017_grill.jpg";
 import bezglutenoweChiliSinCarne from "./../../../public/img/recipes/dinners/018_bezglutenowe_chili_sin_carne.jpg";
+import grillKielbasa from "./../../../public/img/recipes/dinners/019_grill_kielbasa.jpg";
 
 export const dinnersRecipesData = [
     {
@@ -197,5 +198,15 @@ export const dinnersRecipesData = [
       labelClass: "dinner-label",
       description:
         "Bezglutenowe chili sin carne",
+    },
+    {
+      id: 19,
+      href: "https://www.instagram.com/p/DK6ZMAWoPd3/",
+      imgSrc: grillKielbasa,
+      altText: "Grill, czyli kiełbasa + kajzerka",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Grill, czyli kiełbasa + kajzerka",
     },
   ];
