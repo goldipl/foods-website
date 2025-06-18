@@ -212,7 +212,7 @@ export const dessertsRecipesData = [
     },
     {
       id: 20,
-      href: "nalesnikizTruskawkowaFruzelina",
+      href: "https://www.instagram.com/p/DLAdjiyoklr/",
       imgSrc: nalesnikizTruskawkowaFruzelina,
       altText: "Bezglutenowe naleśniki z truskawkową frużeliną",
       label: "Deser",
