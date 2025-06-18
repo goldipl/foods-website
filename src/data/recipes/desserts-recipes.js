@@ -17,6 +17,7 @@ import jadalneSadzonki from "./../../../public/img/recipes/desserts/016_jadalne_
 import mazurekPistacjowy from "./../../../public/img/recipes/desserts/017_mazurek_pistacjowy.jpg";
 import bezglutenoweBrioche from "./../../../public/img/recipes/desserts/018_bezglutenowe_brioche.jpg";
 import bezglutenowaSzarlotka from "./../../../public/img/recipes/desserts/019_bezglutenowa_szarlotka.jpg";
+import nalesnikizTruskawkowaFruzelina from "./../../../public/img/recipes/desserts/020_nalesniki_z_truskawkowa_fruzelina.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -208,5 +209,15 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Bezglutenowa szarlotka",
+    },
+    {
+      id: 20,
+      href: "nalesnikizTruskawkowaFruzelina",
+      imgSrc: nalesnikizTruskawkowaFruzelina,
+      altText: "Bezglutenowe naleśniki z truskawkową frużeliną",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowe naleśniki z truskawkową frużeliną",
     },
 ];
