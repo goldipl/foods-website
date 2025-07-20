@@ -4,6 +4,9 @@ import mojaChwilaRelaksu from "./../../../public/img/events/003_moja_chwila_rela
 import coJemwCiaguDnia from "./../../../public/img/events/004_co_jem_w_ciagu_dnia.jpg";
 import warsztatyBezglutenowejPizzywRadomiu from "./../../../public/img/events/005_warsztaty_bezglutenowej_pizzy_radom.jpg";
 import nietypowaSobota from "./../../../public/img/events/006_moja_nietypowa_sobota.jpg";
+import weseleKrakow from "./../../../public/img/events/007_wesele_krakow.jpg";
+import spotkanieCeliakowCiachoBezCukruRadom from "./../../../public/img/events/008_spotkanie_celiakow_w_ciachobezcukru_radom.jpg";
+import wloskieSlodkosciVallongo from "./../../../public/img/events/009_wloskie_slodkosci_od_vallongo.jpg";
 
 export const eventsData = [
     {
@@ -65,5 +68,35 @@ export const eventsData = [
       labelClass: "breakfast-label",
       description:
         "Otwarcie letniej altany w restauracji Pizza Naturalna w Poznaniu",
+    },
+    {
+      id: 7,
+      href: "https://www.instagram.com/p/DLNUYDpIQCb/",
+      imgSrc: weseleKrakow,
+      altText: "Celiak na przyjęciu weselnym w Krakowie",
+      label: "Wydarzenia",
+      labelClass: "breakfast-label",
+      description:
+        "Celiak na przyjęciu weselnym w Krakowie",
+    },
+    {
+      id: 8,
+      href: "https://www.instagram.com/p/DMF40xkIeNF/",
+      imgSrc: spotkanieCeliakowCiachoBezCukruRadom,
+      altText: "Spotkanie celiaków w Ciacho Bez Cukru Radom",
+      label: "Wydarzenia",
+      labelClass: "breakfast-label",
+      description:
+        "Spotkanie celiaków w Ciacho Bez Cukru Radom",
+    },
+    {
+      id: 9,
+      href: "https://www.instagram.com/p/DMQEmk9Izsi/",
+      imgSrc: wloskieSlodkosciVallongo,
+      altText: "Włoskie słodkości od Vallongo",
+      label: "Rozdanie",
+      labelClass: "breakfast-label",
+      description:
+        "Włoskie słodkości od Vallongo",
     },
   ];

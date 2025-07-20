@@ -12,7 +12,7 @@ const Footer = () => {
             <h2>Przepisy</h2>
             <Link href="#sniadania">Śniadania</Link>
             <Link href="#obiady">Obiady</Link>
-            <Link href="#desery">Desery</Link>
+            <Link href="#desery">Desery / Słodkości</Link>
             <Link href="#przystawki">Przystawki / Przekąski</Link>
           </div>
           <div className="footer-col">

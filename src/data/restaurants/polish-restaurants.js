@@ -7,6 +7,8 @@ import wieszCoZjeszWarszawa from "./../../../public/img/restaurants/poland/007_w
 import bezglutenowyKrakow from "./../../../public/img/restaurants/poland/008_bezglutenowy_krakow.jpg";
 import cafeCalimeroSolnaPizza from "./../../../public/img/restaurants/poland/009_cafe_calimero_kielce_solna_pizza.jpg";
 import cafeCalimeroKonstruktorska from "./../../../public/img/restaurants/poland/010_cafe_calimero_warszawa_konstruktorska.jpg";
+import fitcakeKielce from "./../../../public/img/restaurants/poland/011_fitcake_kielce.jpg";
+import manufakturaCukierkowWarszawa from "./../../../public/img/restaurants/poland/012_manufaktura_cukierkow_warszawa.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -98,5 +100,25 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Calimero Café Konstruktorska, Konstruktorska 7/u1, Warszawa",
+    },
+    {
+      id: 10,
+      href: "https://www.instagram.com/p/DLSYH0_ocId/",
+      imgSrc: fitcakeKielce,
+      altText: "Fitcake, Piotrkowska 14, Kielce",
+      label: "Kielce",
+      labelClass: "poland-label",
+      description:
+        "Fitcake, Piotrkowska 14, Kielce",
+    },
+    {
+      id: 11,
+      href: "https://www.instagram.com/p/DLVEaUoIBSe/",
+      imgSrc: manufakturaCukierkowWarszawa,
+      altText: "Manufaktura Cukierków, ul. Nowy Świat 51, Warszawa",
+      label: "Warszawa",
+      labelClass: "poland-label",
+      description:
+        "Manufaktura Cukierków, ul. Nowy Świat 51, Warszawa"
     },
   ];

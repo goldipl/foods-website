@@ -18,6 +18,7 @@ import mazurekPistacjowy from "./../../../public/img/recipes/desserts/017_mazure
 import bezglutenoweBrioche from "./../../../public/img/recipes/desserts/018_bezglutenowe_brioche.jpg";
 import bezglutenowaSzarlotka from "./../../../public/img/recipes/desserts/019_bezglutenowa_szarlotka.jpg";
 import nalesnikizTruskawkowaFruzelina from "./../../../public/img/recipes/desserts/020_nalesniki_z_truskawkowa_fruzelina.jpg";
+import domoweLodyBezNabialuBezGlutenu from "./../../../public/img/recipes/desserts/021_domowe_lody_bez_nabialu_bez_glutenu.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -219,5 +220,15 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Bezglutenowe naleśniki z truskawkową frużeliną",
+    },
+    {
+      id: 21,
+      href: "https://www.instagram.com/p/DMNj5vKI84o/",
+      imgSrc: domoweLodyBezNabialuBezGlutenu,
+      altText: "Domowe lody bez nabiału i bez glutenu",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Domowe lody bez nabiału i bez glutenu",
     },
 ];

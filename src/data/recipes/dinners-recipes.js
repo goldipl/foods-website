@@ -17,6 +17,8 @@ import burgerzKimchi from "./../../../public/img/recipes/dinners/016_bezglutenow
 import grill from "./../../../public/img/recipes/dinners/017_grill.jpg";
 import bezglutenoweChiliSinCarne from "./../../../public/img/recipes/dinners/018_bezglutenowe_chili_sin_carne.jpg";
 import grillKielbasa from "./../../../public/img/recipes/dinners/019_grill_kielbasa.jpg";
+import carbonara from "./../../../public/img/recipes/dinners/020_carbonara.jpg";
+import zupaCebulowazGrzankami from "./../../../public/img/recipes/dinners/021_zupa_cebulowa_z_grzankami.jpg";
 
 export const dinnersRecipesData = [
     {
@@ -208,5 +210,35 @@ export const dinnersRecipesData = [
       labelClass: "dinner-label",
       description:
         "Grill, czyli kiełbasa + kajzerka",
+    },
+    {
+      id: 20,
+      href: "https://www.instagram.com/p/DLHpUiCI6uf/",
+      imgSrc: carbonara,
+      altText: "Carbonara - bezglutenowy makaron z boczkiem i jajkiem (bez nabiału)",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Carbonara - bezglutenowy makaron z boczkiem i jajkiem (bez nabiału)",
+    },
+    {
+      id: 21,
+      href: "https://www.instagram.com/p/DLfiLjKo4Wk/",
+      imgSrc: zupaCebulowazGrzankami,
+      altText: "Zupa cebulowa z grzankami, w 100% bez glutenu",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Zupa cebulowa z grzankami, w 100% bez glutenu",
+    },
+    {
+      id: 22,
+      href: "https://www.instagram.com/p/DMCjFaYIgVU/",
+      imgSrc: zupaCebulowazGrzankami,
+      altText: "Rosół z makaronem bezglutenowym",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Rosół z makaronem bezglutenowym",
     },
   ];

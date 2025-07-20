@@ -7,6 +7,7 @@ import jajkawSosieTatarskim from "./../../../public/img/recipes/appetizers/006_j
 import bezglutenowaChalka from "./../../../public/img/recipes/appetizers/007_bezglutenowa_chalka.jpg";
 import hotDogiiGrill from "./../../../public/img/recipes/appetizers/008_hot_dogi.jpg";
 import makaronzTruskawkami from "./../../../public/img/recipes/appetizers/009_makaron_z_truskawkami.jpg";
+import pizzerki from "./../../../public/img/recipes/appetizers/010_pizzerki.jpg";
 
 export const appetizersRecipesData = [
     {
@@ -98,5 +99,15 @@ export const appetizersRecipesData = [
         labelClass: "appetizer-label",
         description: 
             "Bezglutenowy makaron z truskawkami",
+    },
+    {
+        id: 10,
+        href: "https://www.instagram.com/p/DL5RPsUIjG7/",
+        imgSrc: pizzerki,
+        altText: "Bezglutenowe keto pizzerki",
+        label: "Słodka przekąska",
+        labelClass: "appetizer-label",
+        description: 
+            "Bezglutenowe keto pizzerki",
     },
   ];

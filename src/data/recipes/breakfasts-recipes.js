@@ -5,6 +5,7 @@ import sniadanieBoczekzJajkiem from "./../../../public/img/recipes/breakfasts/00
 import tortilla3Skladniki from "./../../../public/img/recipes/breakfasts/005_bezglutenowa_tortilla_z_buraka_komosy_ryzowej.jpg";
 import zielonyBajgel from "./../../../public/img/recipes/breakfasts/006_zielony_bajgel.jpg";
 import omletzMakiGryczanej from "./../../../public/img/recipes/breakfasts/007_omlet_z_maki_gryczanej_i_jajek.jpg";
+import sniadanieNaBalkonie from "./../../../public/img/recipes/breakfasts/008_sniadanie_na_balkonie.jpg";
 
 export const breakfastsRecipesData = [
     {
@@ -76,5 +77,15 @@ export const breakfastsRecipesData = [
       labelClass: "breakfast-label",
       description:
         "Omlet z bezglutenowej kaszy gryczanej i jajek",
+    },
+    {
+      id: 8,
+      href: "https://www.instagram.com/p/DLl-uTfIRWg/",
+      imgSrc: sniadanieNaBalkonie,
+      altText: "Śniadanie na balkonie - jajka, boczek, pomidory, rukola i bezglutenowy chlebek",
+      label: "Śniadanie",
+      labelClass: "breakfast-label",
+      description:
+        "Śniadanie na balkonie - jajka, boczek, pomidory, rukola i bezglutenowy chlebek",
     },
   ];
