@@ -19,6 +19,7 @@ import bezglutenoweChiliSinCarne from "./../../../public/img/recipes/dinners/018
 import grillKielbasa from "./../../../public/img/recipes/dinners/019_grill_kielbasa.jpg";
 import carbonara from "./../../../public/img/recipes/dinners/020_carbonara.jpg";
 import zupaCebulowazGrzankami from "./../../../public/img/recipes/dinners/021_zupa_cebulowa_z_grzankami.jpg";
+import rosolzBezglutenowymMakaronem from "./../../../public/img/recipes/dinners/022_rosol_z_bezglutenowym_makaronem.jpg";
 
 export const dinnersRecipesData = [
     {
@@ -234,7 +235,7 @@ export const dinnersRecipesData = [
     {
       id: 22,
       href: "https://www.instagram.com/p/DMCjFaYIgVU/",
-      imgSrc: zupaCebulowazGrzankami,
+      imgSrc: rosolzBezglutenowymMakaronem,
       altText: "Rosół z makaronem bezglutenowym",
       label: "Obiad",
       labelClass: "dinner-label",
