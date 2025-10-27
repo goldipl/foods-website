@@ -9,6 +9,8 @@ import cafeCalimeroSolnaPizza from "./../../../public/img/restaurants/poland/009
 import cafeCalimeroKonstruktorska from "./../../../public/img/restaurants/poland/010_cafe_calimero_warszawa_konstruktorska.jpg";
 import fitcakeKielce from "./../../../public/img/restaurants/poland/011_fitcake_kielce.jpg";
 import manufakturaCukierkowWarszawa from "./../../../public/img/restaurants/poland/012_manufaktura_cukierkow_warszawa.jpg";
+import bezglutenowyKrakow2 from "./../../../public/img/restaurants/poland/013_bezglutenowy_krakow.jpg";
+import OTSUMisziTo from "./../../../public/img/restaurants/poland/014_OTSUMisziTo.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -120,5 +122,25 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Manufaktura Cukierków, ul. Nowy Świat 51, Warszawa"
+    },
+    {
+      id: 12,
+      href: "https://www.instagram.com/p/DMmsqL2oijG/",
+      imgSrc: bezglutenowyKrakow2,
+      altText: "4 bezglutenowe miejscówki w Krakowie - więcej w rolce!",
+      label: "Kraków",
+      labelClass: "poland-label",
+      description:
+        "4 bezglutenowe miejscówki w Krakowie - więcej w rolce!"
+    },
+    {
+      id: 14,
+      href: "https://www.instagram.com/p/DNOLpcBI7Q9/",
+      imgSrc: OTSUMisziTo,
+      altText: "OTSU & MisziTo, ul. Wielicka 259, Kraków",
+      label: "Kraków",
+      labelClass: "poland-label",
+      description:
+        "OTSU & MisziTo, ul. Wielicka 259, Kraków"
     },
   ];

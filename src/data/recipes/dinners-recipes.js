@@ -20,6 +20,7 @@ import grillKielbasa from "./../../../public/img/recipes/dinners/019_grill_kielb
 import carbonara from "./../../../public/img/recipes/dinners/020_carbonara.jpg";
 import zupaCebulowazGrzankami from "./../../../public/img/recipes/dinners/021_zupa_cebulowa_z_grzankami.jpg";
 import rosolzBezglutenowymMakaronem from "./../../../public/img/recipes/dinners/022_rosol_z_bezglutenowym_makaronem.jpg";
+import bezglutenoweTagliatelle from "./../../../public/img/recipes/dinners/023_bezglutenowe_tagliatelle.jpg";
 
 export const dinnersRecipesData = [
     {
@@ -241,5 +242,15 @@ export const dinnersRecipesData = [
       labelClass: "dinner-label",
       description:
         "Rosół z makaronem bezglutenowym",
+    },
+    {
+      id: 23,
+      href: "https://www.instagram.com/p/DM2XWBZoAgy/",
+      imgSrc: bezglutenoweTagliatelle,
+      altText: "Bezglutenowe Tagliatelle z suszonymi pomidorami, kurkami i szpinakiem",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Bezglutenowe Tagliatelle z suszonymi pomidorami, kurkami i szpinakiem"
     },
   ];

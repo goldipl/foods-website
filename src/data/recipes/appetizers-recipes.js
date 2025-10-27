@@ -8,6 +8,7 @@ import bezglutenowaChalka from "./../../../public/img/recipes/appetizers/007_bez
 import hotDogiiGrill from "./../../../public/img/recipes/appetizers/008_hot_dogi.jpg";
 import makaronzTruskawkami from "./../../../public/img/recipes/appetizers/009_makaron_z_truskawkami.jpg";
 import pizzerki from "./../../../public/img/recipes/appetizers/010_pizzerki.jpg";
+import domoweZapiekanki from "./../../../public/img/recipes/appetizers/011_domowe_zapiekanki.jpg";
 
 export const appetizersRecipesData = [
     {
@@ -109,5 +110,15 @@ export const appetizersRecipesData = [
         labelClass: "appetizer-label",
         description: 
             "Bezglutenowe keto pizzerki",
+    },
+    {
+        id: 11,
+        href: "https://www.instagram.com/p/DMfyac-IrQg/",
+        imgSrc: domoweZapiekanki,
+        altText: "Bezglutenowe domowe zapiekanki",
+        label: "Przystawka",
+        labelClass: "appetizer-label",
+        description: 
+            "Bezglutenowe domowe zapiekanki",
     },
   ];
