@@ -277,6 +277,31 @@ const Header = () => {
                 </li>
                 <li>
                   <Link href="#produkty" onClick={handleCloseDropdown}>
+                    Aldi
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#produkty" onClick={handleCloseDropdown}>
+                    Kaufland
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#produkty" onClick={handleCloseDropdown}>
+                    Żabka
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#produkty" onClick={handleCloseDropdown}>
+                    Carrefour
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#produkty" onClick={handleCloseDropdown}>
+                    Half Price
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#produkty" onClick={handleCloseDropdown}>
                     Inne
                   </Link>
                 </li>
