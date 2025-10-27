@@ -15,6 +15,11 @@ import cucina01 from "./../../../public/img/products/014_cucina_glutenfree_focac
 import zabka01 from "./../../../public/img/products/015_zabka_czy_to_ma_gluten.jpg";
 import matchazSokiem from "./../../../public/img/products/016_matcha_z_sokiem.jpg";
 import sokCzystyAloes from "./../../../public/img/products/017_sok_czysty_aloes.jpg";
+import trufleVallongo from "./../../../public/img/products/018_bezglutenowe_trufle_vallongo.jpg";
+import chlebkiBalanseed from "./../../../public/img/products/019_chlebki_balanseed.jpg";
+import chrupakiIncolaGlutenFree from "./../../../public/img/products/020_chrupaki_incola.jpg";
+import bezglutenowePierogiNaturalna from "./../../../public/img/products/021_bezglutenowe_pierogi_naturalna.jpg";
+import bezglutenowePanettone from "./../../../public/img/products/022_bezglutenowe_panettone.jpg";
 
 export const productsData = [
     {
@@ -216,5 +221,55 @@ export const productsData = [
         labelClass: "product-label",
         description: 
             "Naturalny sok z aloesu",
+    },
+    {
+        id: 18,
+        href: "https://www.instagram.com/p/DNaAWONII1Z/",
+        imgSrc: trufleVallongo,
+        altText: "Bezglutenowe trufle od Vallongo",
+        label: "Vallongo",
+        labelClass: "product-label",
+        description: 
+            "Bezglutenowe trufle od Vallongo"
+    },
+    {
+        id: 19,
+        href: "https://www.instagram.com/p/DNfYlfao0LY/",
+        imgSrc: chlebkiBalanseed,
+        altText: "Chlebki bez glutenu od Balanseed",
+        label: "Balanseed",
+        labelClass: "product-label",
+        description: 
+            "Chlebki bez glutenu od Balanseed",
+    },
+    {
+        id: 20,
+        href: "https://www.instagram.com/p/DOQXvTViNNm/",
+        imgSrc: chrupakiIncolaGlutenFree,
+        altText: "Chrupaki od Incola Gluten Free",
+        label: "Incola",
+        labelClass: "product-label",
+        description: 
+            "Chrupaki od Incola Gluten Free",
+    },
+    {
+        id: 21,
+        href: "https://www.instagram.com/p/DP8chBGiKBm/",
+        imgSrc: bezglutenowePierogiNaturalna,
+        altText: "Bezglutenowe pierogi ze sklepu Pizza Naturalna - Poznań",
+        label: "Sklep Pizza Naturalna",
+        labelClass: "product-label",
+        description: 
+            "Bezglutenowe pierogi ze sklepu Pizza Naturalna - Poznań",
+    },
+    {
+        id: 22,
+        href: "https://www.instagram.com/p/DQHfYfViEjc/",
+        imgSrc: bezglutenowePanettone,
+        altText: "Bezglutenowe panettone od Vallongo Tradizione Italiana",
+        label: "Vallongo Tradizione Italiana",
+        labelClass: "product-label",
+        description: 
+            "Bezglutenowe panettone od Vallongo Tradizione Italiana",
     },
   ];

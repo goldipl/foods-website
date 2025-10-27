@@ -2,6 +2,7 @@ import zenZeroLidoDiOstia from "./../../../public/img/restaurants/europe/001_zen
 import mamaEatRoma from "./../../../public/img/restaurants/europe/002_mama_eat_rzym_wlochy.jpg";
 import laSoffittaRoma from "./../../../public/img/restaurants/europe/003_la_soffitta_rzym_wlochy.jpg";
 import burgerShopCypr from "./../../../public/img/restaurants/europe/004_burger_shop_nikozja_cypr.jpg";
+import bezglutenowaRumunia from "./../../../public/img/restaurants/europe/005_bezglutenowa_rumunia.jpg";
 
 
 export const  europeanRestaurantsData = [
@@ -44,5 +45,15 @@ export const  europeanRestaurantsData = [
       labelClass: "europe-label",
       description:
         "Burger Shop, Nikozja, Cypr",
+    },
+    {
+      id: 5,
+      href: "https://www.instagram.com/p/DN8eqvgCKd3/",
+      imgSrc: bezglutenowaRumunia,
+      altText: "10 bezglutenowych miejsc/restauracji w Rumunii",
+      label: "Rumunia",
+      labelClass: "europe-label",
+      description:
+        "10 bezglutenowych miejsc/restauracji w Rumunii",
     },
   ];

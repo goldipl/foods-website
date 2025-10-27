@@ -8,6 +8,7 @@ import weseleKrakow from "./../../../public/img/events/007_wesele_krakow.jpg";
 import spotkanieCeliakowCiachoBezCukruRadom from "./../../../public/img/events/008_spotkanie_celiakow_w_ciachobezcukru_radom.jpg";
 import wloskieSlodkosciVallongo from "./../../../public/img/events/009_wloskie_slodkosci_od_vallongo.jpg";
 import testCiastekIncola from "./../../../public/img/events/010_test_ciastek_incola.jpg";
+import bezglutenoweHalloween from "./../../../public/img/events/011_bezglutenowe_halloween.jpg";
 
 export const eventsData = [
     {
@@ -109,5 +110,15 @@ export const eventsData = [
       labelClass: "breakfast-label",
       description:
         "Test ciastek od Incola Gluten Free",
+    },
+    {
+      id: 11,
+      href: "https://www.instagram.com/p/DQSCpGLiJuM/",
+      imgSrc: bezglutenoweHalloween,
+      altText: "Bezglutenowe jedzenie na imprezę w stylu Halloween",
+      label: "Halloween",
+      labelClass: "breakfast-label",
+      description:
+        "Bezglutenowe jedzenie na imprezę w stylu Halloween",
     },
   ];

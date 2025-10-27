@@ -6,6 +6,9 @@ import tortilla3Skladniki from "./../../../public/img/recipes/breakfasts/005_bez
 import zielonyBajgel from "./../../../public/img/recipes/breakfasts/006_zielony_bajgel.jpg";
 import omletzMakiGryczanej from "./../../../public/img/recipes/breakfasts/007_omlet_z_maki_gryczanej_i_jajek.jpg";
 import sniadanieNaBalkonie from "./../../../public/img/recipes/breakfasts/008_sniadanie_na_balkonie.jpg";
+import pomysloweKanapkiCz1 from "./../../../public/img/recipes/breakfasts/009_pomyslowe_kanapki_cz1.jpg";
+import pomysloweKanapkiCz2 from "./../../../public/img/recipes/breakfasts/010_pomyslowe_kanapki_cz2.jpg";
+import owsiankaMatcha from "./../../../public/img/recipes/breakfasts/011_owsianka_z_matcha.jpg";
 
 export const breakfastsRecipesData = [
     {
@@ -87,5 +90,35 @@ export const breakfastsRecipesData = [
       labelClass: "breakfast-label",
       description:
         "Śniadanie na balkonie - jajka, boczek, pomidory, rukola i bezglutenowy chlebek",
+    },
+    {
+      id: 9,
+      href: "https://www.instagram.com/p/DO6P8kGiOta/",
+      imgSrc: pomysloweKanapkiCz1,
+      altText: "Pomysłowe kanapki część 1",
+      label: "Śniadanie/Lunchbox",
+      labelClass: "breakfast-label",
+      description:
+        "Pomysłowe kanapki część 1",
+    },
+    {
+      id: 10,
+      href: "https://www.instagram.com/p/DO_YlZViDgK/",
+      imgSrc: pomysloweKanapkiCz2,
+      altText: "Pomysłowe kanapki część 2",
+      label: "Śniadanie/Lunchbox",
+      labelClass: "breakfast-label",
+      description:
+        "Pomysłowe kanapki część 2",
+    },
+    {
+      id: 11,
+      href: "https://www.instagram.com/p/DPoUl2LiGlO/",
+      imgSrc: owsiankaMatcha,
+      altText: "Bezglutenowa owsianka z matchą",
+      label: "Śniadanie",
+      labelClass: "breakfast-label",
+      description:
+        "Bezglutenowa owsianka z matchą",
     },
   ];

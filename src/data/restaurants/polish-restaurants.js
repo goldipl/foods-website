@@ -11,6 +11,10 @@ import fitcakeKielce from "./../../../public/img/restaurants/poland/011_fitcake_
 import manufakturaCukierkowWarszawa from "./../../../public/img/restaurants/poland/012_manufaktura_cukierkow_warszawa.jpg";
 import bezglutenowyKrakow2 from "./../../../public/img/restaurants/poland/013_bezglutenowy_krakow.jpg";
 import OTSUMisziTo from "./../../../public/img/restaurants/poland/014_OTSUMisziTo.jpg";
+import OldTownKrakow from "./../../../public/img/restaurants/poland/015_OldTownKrakow.jpg";
+import TerraNostraPizza from "./../../../public/img/restaurants/poland/016_TerraNostraPizza.jpg";
+import PatilaDonerKebab from "./../../../public/img/restaurants/poland/017_PatilaDonerKebab.jpg";
+import Groole from "./../../../public/img/restaurants/poland/018_Groole.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -142,5 +146,45 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "OTSU & MisziTo, ul. Wielicka 259, Kraków"
+    },
+    {
+      id: 15,
+      href: "https://www.instagram.com/p/DNbJasAoEdl/",
+      imgSrc: OldTownKrakow,
+      altText: "Old Town, ul. Bracka 6, Kraków",
+      label: "Kraków",
+      labelClass: "poland-label",
+      description:
+        "Old Town, ul. Bracka 6, Kraków",
+    },
+    {
+      id: 16,
+      href: "https://www.instagram.com/p/DOL8Xq5iB1P/",
+      imgSrc: TerraNostraPizza,
+      altText: "Terra Nostra, Krośnieńska 52D, Miejsce Piastowe",
+      label: "Miejsce Piastowe",
+      labelClass: "poland-label",
+      description:
+        "Terra Nostra, Krośnieńska 52D, Miejsce Piastowe",
+    },
+    {
+      id: 17,
+      href: "https://www.instagram.com/p/DOinsrFiKNw/",
+      imgSrc: PatilaDonerKebab,
+      altText: "Patila Döner Kebap, ul. Świętokrzyska 34, Warszawa",
+      label: "Warszawa",
+      labelClass: "poland-label",
+      description:
+        "Patila Döner Kebap, ul. Świętokrzyska 34, Warszawa",
+    },
+    {
+      id: 18,
+      href: "https://www.instagram.com/p/DQKEYzmCNZg/",
+      imgSrc: Groole,
+      altText: "Groole, ul. Śniadeckich 8, Warszawa",
+      label: "Warszawa",
+      labelClass: "poland-label",
+      description:
+        "Groole, ul. Śniadeckich 8, Warszawa",
     },
   ];

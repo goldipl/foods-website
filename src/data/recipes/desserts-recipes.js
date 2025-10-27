@@ -19,6 +19,7 @@ import bezglutenoweBrioche from "./../../../public/img/recipes/desserts/018_bezg
 import bezglutenowaSzarlotka from "./../../../public/img/recipes/desserts/019_bezglutenowa_szarlotka.jpg";
 import nalesnikizTruskawkowaFruzelina from "./../../../public/img/recipes/desserts/020_nalesniki_z_truskawkowa_fruzelina.jpg";
 import domoweLodyBezNabialuBezGlutenu from "./../../../public/img/recipes/desserts/021_domowe_lody_bez_nabialu_bez_glutenu.jpg";
+import tygrysekMatcha from "./../../../public/img/recipes/desserts/022_ciasto_tygrysek_matcha.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -230,5 +231,15 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Domowe lody bez nabiału i bez glutenu",
+    },
+    {
+      id: 22,
+      href: "https://www.instagram.com/p/DOq4OM_CCuF/",
+      imgSrc: tygrysekMatcha,
+      altText: "Ciasto tygrysek matcha",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Ciasto tygrysek matcha",
     },
 ];

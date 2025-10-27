@@ -21,6 +21,9 @@ import carbonara from "./../../../public/img/recipes/dinners/020_carbonara.jpg";
 import zupaCebulowazGrzankami from "./../../../public/img/recipes/dinners/021_zupa_cebulowa_z_grzankami.jpg";
 import rosolzBezglutenowymMakaronem from "./../../../public/img/recipes/dinners/022_rosol_z_bezglutenowym_makaronem.jpg";
 import bezglutenoweTagliatelle from "./../../../public/img/recipes/dinners/023_bezglutenowe_tagliatelle.jpg";
+import burgerUdzcemKurczaka from "./../../../public/img/recipes/dinners/024_burger_z_udzcem_kurczaka.jpg";
+import makaronBurakamiFeta from "./../../../public/img/recipes/dinners/025_makaron_z_burakami_feta.jpg";
+import bezglutenowaPizzaSalamiBurrata from "./../../../public/img/recipes/dinners/026_bezglutenowa_pizza_salami_burrata.jpg";
 
 export const dinnersRecipesData = [
     {
@@ -252,5 +255,35 @@ export const dinnersRecipesData = [
       labelClass: "dinner-label",
       description:
         "Bezglutenowe Tagliatelle z suszonymi pomidorami, kurkami i szpinakiem"
+    },
+    {
+      id: 24,
+      href: "https://www.instagram.com/p/DOtO_geiI0I/",
+      imgSrc: burgerUdzcemKurczaka,
+      altText: "Burger bezglutenowy z udźcem z kurczaka",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Burger bezglutenowy z udźcem z kurczaka",
+    },
+    {
+      id: 24,
+      href: "https://www.instagram.com/p/DPJZ4vQCAoc/",
+      imgSrc: makaronBurakamiFeta,
+      altText: "Bezglutenowy makaron z burakami i fetą",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Bezglutenowy makaron z burakami i fetą",
+    },
+    {
+      id: 25,
+      href: "https://www.instagram.com/p/DPbrjbliHJe/",
+      imgSrc: bezglutenowaPizzaSalamiBurrata,
+      altText: "Bezglutenowa pizza z salami i burratą",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Bezglutenowa pizza z salami i burratą",
     },
   ];
