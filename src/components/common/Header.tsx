@@ -170,6 +170,30 @@ const Header = () => {
                         Gdańsk
                       </Link>
                     </li>
+                    <li>
+                      <Link
+                        href="#restauracje-polska"
+                        onClick={handleCloseDropdown}
+                      >
+                        Kraków
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="#restauracje-polska"
+                        onClick={handleCloseDropdown}
+                      >
+                        Kielce
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="#restauracje-polska"
+                        onClick={handleCloseDropdown}
+                      >
+                        Miejsce Piastowe
+                      </Link>
+                    </li>
                   </ul>
                 </li>
                 <li className="nav-sub-expand">
@@ -204,6 +228,14 @@ const Header = () => {
                         onClick={handleCloseDropdown}
                       >
                         Cypr
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="#restauracje-europa"
+                        onClick={handleCloseDropdown}
+                      >
+                        Rumunia
                       </Link>
                     </li>
                   </ul>
