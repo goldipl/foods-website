@@ -10,6 +10,7 @@ import Glutenex from "./../../../public/img/cooperation/glutenex.png";
 import Incola from "./../../../public/img/cooperation/incola.jpg";
 import Bezgluten from "./../../../public/img/cooperation/bezgluten.png";
 import Balviten from "./../../../public/img/cooperation/balviten.jpg";
+import Vallongo from "./../../../public/img/cooperation/vallongo.jpg";
 
 SwiperCore.use([Pagination, Navigation]);
 
@@ -91,6 +92,22 @@ const CooperationSection = () => {
                   <Image
                     src={Balviten}
                     alt="Balviten"
+                    width={260}
+                    height={122}
+                  ></Image>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slide-content">
+                <Link
+                  className="cooperation-link"
+                  href="https://vallongo.it/pl-pl"
+                  target="_blank"
+                >
+                  <Image
+                    src={Vallongo}
+                    alt="Vallongo"
                     width={260}
                     height={122}
                   ></Image>
