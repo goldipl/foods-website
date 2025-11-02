@@ -20,6 +20,7 @@ import bezglutenowaSzarlotka from "./../../../public/img/recipes/desserts/019_be
 import nalesnikizTruskawkowaFruzelina from "./../../../public/img/recipes/desserts/020_nalesniki_z_truskawkowa_fruzelina.jpg";
 import domoweLodyBezNabialuBezGlutenu from "./../../../public/img/recipes/desserts/021_domowe_lody_bez_nabialu_bez_glutenu.jpg";
 import tygrysekMatcha from "./../../../public/img/recipes/desserts/022_ciasto_tygrysek_matcha.jpg";
+import nalesniczkiBezglutenowe from "./../../../public/img/recipes/desserts/023_nalesniki_bezglutenowe.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -241,5 +242,15 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Ciasto tygrysek matcha",
+    },
+    {
+      id: 23,
+      href: "https://www.instagram.com/p/DQeYLiCCBMW/",
+      imgSrc: nalesniczkiBezglutenowe,
+      altText: "Bezglutenowe naleśniki",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowe naleśniki",
     },
 ];

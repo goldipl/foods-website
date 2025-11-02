@@ -20,6 +20,8 @@ import chlebkiBalanseed from "./../../../public/img/products/019_chlebki_balanse
 import chrupakiIncolaGlutenFree from "./../../../public/img/products/020_chrupaki_incola.jpg";
 import bezglutenowePierogiNaturalna from "./../../../public/img/products/021_bezglutenowe_pierogi_naturalna.jpg";
 import bezglutenowePanettone from "./../../../public/img/products/022_bezglutenowe_panettone.jpg";
+import wolnaPiekarniaBezglutenowa from "./../../../public/img/products/023_wolna_piekarnia_bezglutenowa.jpg";
+import rogalBialyMakPutkaBezGlutenu from "./../../../public/img/products/024_rogal_z_bialym_makiem.jpg";
 
 export const productsData = [
     {
@@ -271,5 +273,25 @@ export const productsData = [
         labelClass: "product-label",
         description: 
             "Bezglutenowe panettone od Vallongo Tradizione Italiana",
+    },
+    {
+        id: 23,
+        href: "https://www.instagram.com/p/DQcJk4ziLGF/",
+        imgSrc: wolnaPiekarniaBezglutenowa,
+        altText: "WOLNA - piekarnia bezglutenowa",
+        label: "WOLNA - piekarnia bezglutenowa",
+        labelClass: "product-label",
+        description: 
+            "WOLNA - piekarnia bezglutenowa",
+    },
+    {
+        id: 24,
+        href: "https://www.instagram.com/p/DQjBw73iBP9/",
+        imgSrc: rogalBialyMakPutkaBezGlutenu,
+        altText: "Rogal z białym makiem z Putka bez glutenu",
+        label: "Putka bez glutenu",
+        labelClass: "product-label",
+        description: 
+            "Rogal z białym makiem z Putka bez glutenu",
     },
   ];
