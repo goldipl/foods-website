@@ -9,6 +9,7 @@ import hotDogiiGrill from "./../../../public/img/recipes/appetizers/008_hot_dogi
 import makaronzTruskawkami from "./../../../public/img/recipes/appetizers/009_makaron_z_truskawkami.jpg";
 import pizzerki from "./../../../public/img/recipes/appetizers/010_pizzerki.jpg";
 import domoweZapiekanki from "./../../../public/img/recipes/appetizers/011_domowe_zapiekanki.jpg";
+import springRolls from "./../../../public/img/recipes/appetizers/012_spring_rolls.jpg";
 
 export const appetizersRecipesData = [
     {
@@ -120,5 +121,15 @@ export const appetizersRecipesData = [
         labelClass: "appetizer-label",
         description: 
             "Bezglutenowe domowe zapiekanki",
+    },
+    {
+        id: 12,
+        href: "https://www.instagram.com/p/DQmiDuoCG1m/",
+        imgSrc: springRolls,
+        altText: "Spring Rollsy",
+        label: "Przystawka",
+        labelClass: "appetizer-label",
+        description: 
+            "Spring Rollsy",
     },
   ];
