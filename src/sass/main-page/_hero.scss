@@ -103,24 +103,6 @@
               margin-bottom: 24px;
               text-align: left;
             }
-            .hero-cta {
-              font-size: 16px;
-              text-decoration: none;
-              background: linear-gradient(
-                $main-bg-green-color,
-                $main-bg-green-color02
-              );
-              width: max-content;
-              padding: 8px 24px;
-              border-radius: 32px;
-              color: $color-white;
-              &:hover {
-                background: linear-gradient(
-                  $main-bg-green-color02,
-                  $main-bg-green-color
-                );
-              }
-            }
           }
           &__img {
             img {
@@ -192,9 +174,6 @@
                   font-size: 30px;
                   line-height: 40px;
                   width: 70vw;
-                }
-                .hero-cta {
-                  font-size: 13px;
                 }
               }
               &__img {
