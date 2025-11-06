@@ -14,6 +14,7 @@ const Breakfasts = () => {
         {breakfastsRecipesData
           .slice()
           .reverse()
+          .slice(0, 4)
           .map((recipe) => (
             <Link
               key={recipe.id}
@@ -44,6 +45,12 @@ const Breakfasts = () => {
               </div>
             </Link>
           ))}
+      </div>
+
+      <div className="primary-button">
+        <Link href="/breakfasts-page" className="primary-button__text">
+          Zobacz wszystkie śniadania
+        </Link>
       </div>
     </>
   );
