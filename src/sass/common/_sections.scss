@@ -1,19 +1,43 @@
 section {
-  &.insta-slots,
-  &.contact-title,
-  &.info-title,
-  &.cooperation-title,
-  &.events-title {
-    .section-title {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-      width: auto;
-      h2 {
-        padding: 0 8px 6px 8px;
-        border-bottom: 2px solid $color-green01;
-      }
+  .section-description {
+    margin: 0 0 24px 0;
+  }
+  .section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 24px;
+    width: auto;
+    h2 {
+      padding: 0 8px 6px 8px;
+      border-bottom: 2px solid $color-green01;
     }
+  }
+
+  .section-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: auto;
+    p {
+      font-size: 16px;
+      margin: 0 0 12px 0;
+    }
+    h2 {
+      margin: 0 0 16px 0;
+    }
+    ul {
+      padding-left: 40px;
+    }
+  }
+  &#category-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 0;
   }
 }

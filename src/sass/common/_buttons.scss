@@ -13,3 +13,25 @@
     font-size: 13px;
   }
 }
+
+.primary-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  &__text {
+    font-size: 16px;
+    text-decoration: none;
+    background: linear-gradient($main-bg-green-color, $main-bg-green-color02);
+    width: max-content;
+    padding: 8px 24px;
+    border-radius: 32px;
+    color: $color-white;
+    &:hover {
+      background: linear-gradient($main-bg-green-color02, $main-bg-green-color);
+    }
+    @media (max-width: 992px) {
+      font-size: 13px;
+    }
+  }
+}
