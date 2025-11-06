@@ -1,5 +1,5 @@
-import burgerShopCypr from "./../../../public/img/restaurants/europe/010_burger_shop_nikozja_cypr.jpg";
-import bezglutenowaRumunia from "./../../../public/img/restaurants/europe/011_bezglutenowa_rumunia.jpg";
+import burgerShopCypr from "./../../../public/img/restaurants/europe/011_burger_shop_nikozja_cypr.jpg";
+import bezglutenowaRumunia from "./../../../public/img/restaurants/europe/010_bezglutenowa_rumunia.jpg";
 import lidoDiOstia1 from "./../../../public/img/restaurants/europe/001_lido_di_ostia_cz1.jpg";
 import lidoDiOstia2 from "./../../../public/img/restaurants/europe/002_lido_di_ostia_cz2.jpg";
 import lidoDiOstia3 from "./../../../public/img/restaurants/europe/003_lido_di_ostia_cz3.jpg";
@@ -103,16 +103,6 @@ export const  europeanRestaurantsData = [
     },
     {
       id: 10,
-      href: "https://www.instagram.com/p/C3IhmmhI9JO/",
-      imgSrc: burgerShopCypr,
-      altText: "Burger Shop, Nikozja, Cypr",
-      label: "Cypr",
-      labelClass: "europe-label",
-      description:
-        "Burger Shop, Nikozja, Cypr",
-    },
-    {
-      id: 11,
       href: "https://www.instagram.com/p/DN8eqvgCKd3/",
       imgSrc: bezglutenowaRumunia,
       altText: "10 bezglutenowych miejsc/restauracji w Rumunii",
@@ -120,5 +110,15 @@ export const  europeanRestaurantsData = [
       labelClass: "europe-label",
       description:
         "10 bezglutenowych miejsc/restauracji w Rumunii",
+    },
+    {
+      id: 11,
+      href: "https://www.instagram.com/p/C3IhmmhI9JO/",
+      imgSrc: burgerShopCypr,
+      altText: "Burger Shop, Nikozja, Cypr",
+      label: "Cypr",
+      labelClass: "europe-label",
+      description:
+        "Burger Shop, Nikozja, Cypr",
     },
   ];
