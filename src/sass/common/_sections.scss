@@ -1,6 +1,6 @@
 section {
   .section-description {
-    margin: 0 0 24px 0;
+    margin: 0 16px 24px 16px;
   }
   .section-title {
     display: flex;
@@ -39,5 +39,19 @@ section {
     max-width: 1280px;
     margin: 0 auto;
     padding: 40px 0;
+    @media (max-width: 992px) {
+      padding: 16px 0;
+      p ol,
+      ul,
+      li {
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+    }
   }
 }
