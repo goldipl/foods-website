@@ -22,6 +22,9 @@
       width: 45vw;
       height: 54vw;
     }
+    span[class$="-label"] {
+      border-radius: 8px;
+    }
     &:has(.breakfast-label) {
       .zoom-box {
         span {
