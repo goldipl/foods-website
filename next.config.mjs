@@ -6,14 +6,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  async rewrites() {
-    return [
-      {
-        source: '/sniadania/',
-        destination: '/breakfasts-page/',
-      },
-    ];
-  },
 };
 
 export default nextConfig;
