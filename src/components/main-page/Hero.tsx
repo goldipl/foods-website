@@ -37,9 +37,6 @@ const Hero = () => {
               <div className="swiper-slide-box">
                 <div className="swiper-slide-box__text">
                   <h2>Zdrowo, smacznie, bezglutenowo!</h2>
-                  <Link className="hero-cta" href="#najnowsze-przepisy">
-                    Sprawdź moje przepisy
-                  </Link>
                 </div>
                 <div className="swiper-slide-box__img">
                   <Image
