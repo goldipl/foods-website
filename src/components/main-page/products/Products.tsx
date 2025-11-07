@@ -14,6 +14,7 @@ const Products = () => {
         {productsData
           .slice()
           .reverse()
+          .slice(0, 4)
           .map((product) => (
             <Link
               key={product.id}
@@ -47,6 +48,12 @@ const Products = () => {
               </div>
             </Link>
           ))}
+      </div>
+
+      <div className="primary-button">
+        <Link href="/produkty/" className="primary-button__text">
+          Więcej z sekcji Produkty
+        </Link>
       </div>
     </>
   );

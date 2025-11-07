@@ -15,6 +15,7 @@ const Events = () => {
           {eventsData
             .slice()
             .reverse()
+            .slice(0, 4)
             .map((event) => (
               <Link
                 key={event.id}
@@ -45,6 +46,12 @@ const Events = () => {
                 </div>
               </Link>
             ))}
+        </div>
+
+        <div className="primary-button">
+          <Link href="/wydarzenia/" className="primary-button__text">
+            Więcej z sekcji Wydarzenia
+          </Link>
         </div>
       </div>
     </section>

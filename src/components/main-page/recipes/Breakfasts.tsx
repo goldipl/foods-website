@@ -49,7 +49,7 @@ const Breakfasts = () => {
 
       <div className="primary-button">
         <Link href="/sniadania/" className="primary-button__text">
-          Zobacz wszystkie śniadania
+          Więcej z sekcji Śniadania
         </Link>
       </div>
     </>

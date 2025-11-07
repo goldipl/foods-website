@@ -14,6 +14,7 @@ const PolishRestaurants = () => {
         {polishRestaurantsData
           .slice()
           .reverse()
+          .slice(0, 4)
           .map((restaurant) => (
             <Link
               key={restaurant.id}
@@ -46,6 +47,12 @@ const PolishRestaurants = () => {
               </div>
             </Link>
           ))}
+      </div>
+
+      <div className="primary-button">
+        <Link href="/restauracje-w-polsce/" className="primary-button__text">
+          Więcej z sekcji Restauracje w Polsce
+        </Link>
       </div>
     </>
   );

@@ -14,6 +14,7 @@ const EuropeRestaurants = () => {
         {europeanRestaurantsData
           .slice()
           .reverse()
+          .slice(0, 4)
           .map((restaurant) => (
             <Link
               key={restaurant.id}
@@ -46,6 +47,12 @@ const EuropeRestaurants = () => {
               </div>
             </Link>
           ))}
+      </div>
+
+      <div className="primary-button">
+        <Link href="/restauracje-w-europie/" className="primary-button__text">
+          Więcej z sekcji Restauracje w Europie
+        </Link>
       </div>
     </>
   );
