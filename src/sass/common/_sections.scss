@@ -33,8 +33,10 @@ section {
     h2 {
       margin: 0 0 16px 0;
     }
-    ul {
+    ul,
+    ol {
       padding-left: 40px;
+      margin: 0 0 12px 0;
     }
     @media (max-width: 992px) {
       p,
