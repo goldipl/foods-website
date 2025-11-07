@@ -31,6 +31,7 @@
         top: 50%;
         right: 40px;
         z-index: 1;
+        border-radius: 12px;
         &::after {
           font-size: 0;
         }
@@ -47,6 +48,7 @@
         top: 50%;
         left: 40px;
         z-index: 1;
+        border-radius: 12px;
         &::after {
           font-size: 0;
         }
