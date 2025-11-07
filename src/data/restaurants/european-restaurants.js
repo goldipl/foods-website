@@ -115,10 +115,10 @@ export const  europeanRestaurantsData = [
       id: 11,
       href: "https://www.instagram.com/p/C3IhmmhI9JO/",
       imgSrc: burgerShopCypr,
-      altText: "Burger Shop, Nikozja, Cypr",
+      altText: "Bezglutenowy Cypr i m.in. Burger Shop, Nikozja, Cypr",
       label: "Cypr",
       labelClass: "europe-label",
       description:
-        "Burger Shop, Nikozja, Cypr",
+        "Bezglutenowy Cypr i m.in. Burger Shop, Nikozja, Cypr",
     },
   ];
