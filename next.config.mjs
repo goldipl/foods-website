@@ -3,9 +3,10 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  output: 'export',  // Static export setting
+  output: 'export',
+  trailingSlash: true, 
   images: {
-    unoptimized: true,  // Disable Image Optimization
+    unoptimized: true, 
   },
 };
 
