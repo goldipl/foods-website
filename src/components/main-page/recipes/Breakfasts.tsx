@@ -48,7 +48,7 @@ const Breakfasts = () => {
       </div>
 
       <div className="primary-button">
-        <Link href="/breakfasts-page/" className="primary-button__text">
+        <Link href="/sniadania/" className="primary-button__text">
           Zobacz wszystkie śniadania
         </Link>
       </div>

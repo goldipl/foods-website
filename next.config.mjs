@@ -1,12 +1,18 @@
-// next.config.js
-
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   output: 'export',
-  trailingSlash: true, 
+  trailingSlash: true,
   images: {
-    unoptimized: true, 
+    unoptimized: true,
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/sniadania/',
+        destination: '/breakfasts-page/',
+      },
+    ];
   },
 };
 
