@@ -121,6 +121,9 @@
         &__text {
           border-bottom: 1px solid $white-border-color01;
           padding: 0 0 24px 0;
+          small {
+            font-size: 12px;
+          }
         }
       }
       &-top {
@@ -140,6 +143,9 @@
           h2 {
             font-size: 15px;
             margin-bottom: 10px;
+          }
+          a {
+            font-size: 12px;
           }
         }
       }
