@@ -18,47 +18,48 @@ const PolishRestaurantsPage = () => {
           <div className="section-description">
             <div className="section-title">
               <h1>
-                Polskie restauracje bezglutenowe – tradycyjny smak w nowoczesnym
-                wydaniu
+                Restauracje bezglutenowe w Polsce – różnorodność smaków bez
+                kompromisów
               </h1>
             </div>
             <div className="section-desc">
               <p>
-                Kochasz tradycyjną polską kuchnię, ale unikasz glutenu? Dobrze
-                trafiłeś! Coraz więcej restauracji w Polsce oferuje dania
-                bezglutenowe, dzięki którym możesz cieszyć się ulubionymi
-                smakami bez obaw o zdrowie i samopoczucie. Pierogi, schabowy,
-                zupy czy naleśniki – wszystko w wersji bez glutenu, z
-                zachowaniem pełni aromatu i domowego charakteru.
+                Szukasz miejsc, gdzie możesz zjeść pysznie i bez glutenu? Dobrze
+                trafiłeś! W całej Polsce znajdziesz coraz więcej restauracji
+                bezglutenowych – od tradycyjnych polskich, przez włoskie
+                pizzerie, aż po aromatyczne indyjskie knajpki czy bary z
+                kebabem. Bez względu na to, jaką kuchnię lubisz najbardziej,
+                możesz cieszyć się pełnią smaku bez obaw o gluten.
               </p>
-              <h2>
-                Dlaczego warto odwiedzać polskie restauracje bezglutenowe?
-              </h2>
+
+              <h2>Dlaczego warto odwiedzać restauracje bezglutenowe?</h2>
               <p>
-                Polskie restauracje bezglutenowe łączą tradycję z
-                nowoczesnością. Szefowie kuchni coraz częściej sięgają po
-                naturalne, lokalne składniki i zamienniki mąk pszenicznych,
-                dzięki czemu dania są lekkie, smaczne i bezpieczne dla osób z
-                nietolerancją glutenu. Wybierając takie miejsca, możesz:
+                Nowoczesne restauracje bezglutenowe w Polsce łączą pasję do
+                gotowania z dbałością o zdrowie. Szefowie kuchni wykorzystują
+                naturalne, lokalne składniki i wysokiej jakości zamienniki mąk
+                pszenicznych, tworząc dania lekkie, aromatyczne i bezpieczne dla
+                osób z nietolerancją glutenu. Wybierając takie miejsca, możesz:
               </p>
+
               <ul>
                 <li>
-                  delektować się autentycznymi smakami polskiej kuchni w wersji
-                  bezglutenowej,
+                  odkrywać bezglutenowe wersje ulubionych potraw z różnych stron
+                  świata,
                 </li>
                 <li>
-                  mieć pewność, że potrawy są przygotowane z dbałością o
-                  zdrowie,
+                  mieć pewność, że dania są przygotowywane z troską o zdrowie i
+                  jakość,
                 </li>
-                <li>poznawać nowe interpretacje klasycznych przepisów,</li>
+                <li>poznawać nowe interpretacje klasycznych receptur,</li>
                 <li>cieszyć się posiłkiem bez ryzyka kontaktu z glutenem.</li>
               </ul>
+
               <p>
-                Od bezglutenowych pierogów i naleśników po tradycyjne zupy i
-                dania główne – polskie restauracje bezglutenowe udowadniają, że
-                kuchnia bez glutenu może być równie pyszna, aromatyczna i
-                sycąca. To idealny wybór dla wszystkich, którzy chcą łączyć
-                zdrowie z miłością do klasycznych polskich smaków.
+                Od bezglutenowych pierogów i makaronów po curry, pizzę czy
+                kebaby – restauracje bezglutenowe w Polsce pokazują, że zdrowe
+                jedzenie może być równie pyszne i różnorodne. To doskonały wybór
+                dla wszystkich, którzy chcą łączyć świadome odżywianie z pasją
+                do odkrywania nowych smaków.
               </p>
             </div>
           </div>
