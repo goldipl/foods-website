@@ -10,9 +10,9 @@
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 16px 80px 16px;
+    padding: 0 16px 100px 16px;
     @media (max-width: 992px) {
-      padding: 32px 0 48px 0;
+      padding: 32px 0 88px 0;
     }
     h2 {
       display: flex;
@@ -20,19 +20,19 @@
       align-items: center;
       text-align: center;
       width: 100%;
-      margin-bottom: 64px;
+      margin-bottom: 16px;
       font-size: 26px;
       line-height: 32px;
       margin-top: 64px;
       @media (max-width: 992px) {
         font-size: 22px;
         line-height: 28px;
-        margin: 40px auto 40px;
+        margin: 40px auto 16px;
       }
     }
     .swiper-wrapper {
       .swiper {
-        height: 180px;
+        height: 240px;
         &-slide {
           display: flex;
           justify-content: center;
@@ -80,17 +80,57 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          bottom: 0;
-        }
-        &-pagination-bullet {
-          width: 10px;
-          height: 10px;
-          border: 2px solid $color-white;
-        }
-        &-pagination-bullet-active {
-          width: 16px;
-          height: 16px;
-          background-color: $main-bg-green-color;
+          margin: 0 auto;
+          bottom: 8px;
+          left: 50%;
+          transform: translateX(-50%);
+          background: rgba(255, 255, 255, 0.12);
+          backdrop-filter: blur(8px);
+          padding: 4px 16px;
+          border-radius: 48px;
+          width: fit-content;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+
+          &-bullet {
+            width: 8px;
+            height: 8px;
+            margin: 0 6px;
+            background: linear-gradient(135deg, $color-green01, $color-green02);
+            opacity: 0.6;
+            border: none;
+            border-radius: 50%;
+            transition: all 0.35s ease;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            @media (max-width: 992px) {
+              width: 9px;
+              height: 9px;
+            }
+
+            &:hover {
+              opacity: 0.9;
+              transform: scale(1.2);
+            }
+
+            &-active {
+              width: 16px;
+              height: 8px;
+              border-radius: 12px;
+              background: linear-gradient(
+                135deg,
+                $color-green02,
+                $color-green01
+              );
+              opacity: 1;
+              box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4);
+              transform: scale(1);
+              @media (max-width: 992px) {
+                width: 18px;
+                height: 9px;
+              }
+            }
+          }
         }
         .slide-content {
           a {
