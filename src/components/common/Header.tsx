@@ -97,22 +97,22 @@ const Header = () => {
                 }`}
               >
                 <li>
-                  <Link href="#sniadania" onClick={handleCloseDropdown}>
+                  <Link href="/#sniadania" onClick={handleCloseDropdown}>
                     Śniadania
                   </Link>
                 </li>
                 <li>
-                  <Link href="#obiady" onClick={handleCloseDropdown}>
+                  <Link href="/#obiady" onClick={handleCloseDropdown}>
                     Obiady
                   </Link>
                 </li>
                 <li>
-                  <Link href="#desery" onClick={handleCloseDropdown}>
+                  <Link href="/#desery" onClick={handleCloseDropdown}>
                     Desery
                   </Link>
                 </li>
                 <li>
-                  <Link href="#przystawki" onClick={handleCloseDropdown}>
+                  <Link href="/#przystawki" onClick={handleCloseDropdown}>
                     Przystawki / Przekąski
                   </Link>
                 </li>
@@ -156,7 +156,7 @@ const Header = () => {
                   >
                     <li>
                       <Link
-                        href="#restauracje-polska"
+                        href="/#restauracje-polska"
                         onClick={handleCloseDropdown}
                       >
                         Warszawa
@@ -164,7 +164,7 @@ const Header = () => {
                     </li>
                     <li>
                       <Link
-                        href="#restauracje-polska"
+                        href="/#restauracje-polska"
                         onClick={handleCloseDropdown}
                       >
                         Gdańsk
@@ -172,7 +172,7 @@ const Header = () => {
                     </li>
                     <li>
                       <Link
-                        href="#restauracje-polska"
+                        href="/#restauracje-polska"
                         onClick={handleCloseDropdown}
                       >
                         Kraków
@@ -180,7 +180,7 @@ const Header = () => {
                     </li>
                     <li>
                       <Link
-                        href="#restauracje-polska"
+                        href="/#restauracje-polska"
                         onClick={handleCloseDropdown}
                       >
                         Kielce
@@ -188,7 +188,7 @@ const Header = () => {
                     </li>
                     <li>
                       <Link
-                        href="#restauracje-polska"
+                        href="/#restauracje-polska"
                         onClick={handleCloseDropdown}
                       >
                         Miejsce Piastowe
@@ -216,7 +216,7 @@ const Header = () => {
                   >
                     <li>
                       <Link
-                        href="#restauracje-europa"
+                        href="/#restauracje-europa"
                         onClick={handleCloseDropdown}
                       >
                         Włochy
@@ -224,7 +224,7 @@ const Header = () => {
                     </li>
                     <li>
                       <Link
-                        href="#restauracje-europa"
+                        href="/#restauracje-europa"
                         onClick={handleCloseDropdown}
                       >
                         Cypr
@@ -232,7 +232,7 @@ const Header = () => {
                     </li>
                     <li>
                       <Link
-                        href="#restauracje-europa"
+                        href="/#restauracje-europa"
                         onClick={handleCloseDropdown}
                       >
                         Rumunia
@@ -261,47 +261,47 @@ const Header = () => {
                 }`}
               >
                 <li>
-                  <Link href="#produkty" onClick={handleCloseDropdown}>
+                  <Link href="/#produkty" onClick={handleCloseDropdown}>
                     Lidl
                   </Link>
                 </li>
                 <li>
-                  <Link href="#produkty" onClick={handleCloseDropdown}>
+                  <Link href="/#produkty" onClick={handleCloseDropdown}>
                     Biedronka
                   </Link>
                 </li>
                 <li>
-                  <Link href="#produkty" onClick={handleCloseDropdown}>
+                  <Link href="/#produkty" onClick={handleCloseDropdown}>
                     Stokrotka
                   </Link>
                 </li>
                 <li>
-                  <Link href="#produkty" onClick={handleCloseDropdown}>
+                  <Link href="/#produkty" onClick={handleCloseDropdown}>
                     Aldi
                   </Link>
                 </li>
                 <li>
-                  <Link href="#produkty" onClick={handleCloseDropdown}>
+                  <Link href="/#produkty" onClick={handleCloseDropdown}>
                     Kaufland
                   </Link>
                 </li>
                 <li>
-                  <Link href="#produkty" onClick={handleCloseDropdown}>
+                  <Link href="/#produkty" onClick={handleCloseDropdown}>
                     Żabka
                   </Link>
                 </li>
                 <li>
-                  <Link href="#produkty" onClick={handleCloseDropdown}>
+                  <Link href="/#produkty" onClick={handleCloseDropdown}>
                     Carrefour
                   </Link>
                 </li>
                 <li>
-                  <Link href="#produkty" onClick={handleCloseDropdown}>
+                  <Link href="/#produkty" onClick={handleCloseDropdown}>
                     Half Price
                   </Link>
                 </li>
                 <li>
-                  <Link href="#produkty" onClick={handleCloseDropdown}>
+                  <Link href="/#produkty" onClick={handleCloseDropdown}>
                     Inne
                   </Link>
                 </li>
@@ -358,12 +358,12 @@ const Header = () => {
               </ul>
             </li>
             <li>
-              <Link href="#o-mnie" onClick={handleCloseDropdown}>
+              <Link href="/#o-mnie" onClick={handleCloseDropdown}>
                 O mnie
               </Link>
             </li>
             <li>
-              <Link href="#kontakt" onClick={handleCloseDropdown}>
+              <Link href="/#kontakt" onClick={handleCloseDropdown}>
                 Kontakt
               </Link>
             </li>
