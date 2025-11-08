@@ -25,6 +25,11 @@ const Footer = () => {
             <Link href="#produkty">Lidl</Link>
             <Link href="#produkty">Biedronka</Link>
             <Link href="#produkty">Stokrotka</Link>
+            <Link href="#produkty">Aldi</Link>
+            <Link href="#produkty">Kaufland</Link>
+            <Link href="#produkty">Żabka</Link>
+            <Link href="#produkty">Carrefour</Link>
+            <Link href="#produkty">Half Price</Link>
             <Link href="#produkty">Inne</Link>
           </div>
           <div className="footer-col">
