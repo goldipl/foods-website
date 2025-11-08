@@ -9,6 +9,13 @@
     margin: 0 auto;
     width: 100%;
     padding: 24px 16px;
+    &-brand {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $white-border-color01;
+    }
     &-top {
       display: flex;
       flex-wrap: wrap;
@@ -23,6 +30,7 @@
         padding-right: 5%;
         &:last-of-type {
           border-right: 0;
+          padding-right: 0;
         }
         h2 {
           font-size: 16px;
@@ -98,6 +106,23 @@
       width: 100%;
       margin: 0;
       padding: 24px 0 24px 16px;
+      &-brand {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-bottom: 0;
+        &__logo {
+          img {
+            height: 56px;
+            width: auto;
+          }
+        }
+        &__text {
+          border-bottom: 1px solid $white-border-color01;
+          padding: 0 0 24px 0;
+        }
+      }
       &-top {
         justify-content: flex-start;
         gap: 24px;

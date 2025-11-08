@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import logo from "./../../../public/icons/header/bezglutenowakarola-logo.svg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -7,6 +9,24 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-wrapper">
+        <div className="footer-wrapper-brand">
+          <div className="footer-wrapper-brand__logo">
+            <Link href="/">
+              <Image
+                src={logo.src}
+                alt="Czytam przed seksem"
+                height={90}
+                width={300}
+              />
+            </Link>
+          </div>
+          <div className="footer-wrapper-brand__text">
+            <small>
+              Nazywam się Karolina Wontorska i zapraszam Cię do mojego
+              bezglutenowego świata.
+            </small>
+          </div>
+        </div>
         <div className="footer-wrapper-top">
           <div className="footer-col">
             <h2>Przepisy</h2>
