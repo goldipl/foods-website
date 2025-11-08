@@ -205,6 +205,12 @@
           height: 500px;
         }
 
+        &-button-next,
+        &-button-prev {
+          width: 40px;
+          height: 40px;
+        }
+
         .slide-content {
           .swiper-slide-box {
             flex-direction: column;
