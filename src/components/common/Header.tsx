@@ -327,7 +327,7 @@ const Header = () => {
               >
                 <li>
                   <Link
-                    href="#celiakia-podstawowe-informacje"
+                    href="/#celiakia-podstawowe-informacje"
                     onClick={handleCloseDropdown}
                   >
                     Podstawowe informacje
@@ -335,7 +335,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    href="#pierwsze-kroki-po-diagnozie"
+                    href="/#pierwsze-kroki-po-diagnozie"
                     onClick={handleCloseDropdown}
                   >
                     Pierwsze kroki po diagnozie
@@ -351,7 +351,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#wydarzenia" onClick={handleCloseDropdown}>
+                  <Link href="/#wydarzenia" onClick={handleCloseDropdown}>
                     Wydarzenia i wiele więcej :)
                   </Link>
                 </li>
