@@ -9,11 +9,13 @@ import WelcomeSection from "@/components/main-page/WelcomeSection";
 import BoxesInfoSection from "@/components/main-page/BoxesInfoSection";
 import RecipesSection from "@/components/main-page/RecipesSection";
 import RestaurantsSection from "@/components/main-page/RestaurantsSection";
-import CeliacDiseaseSection from "@/components/main-page/CeliacDiseaseSection";
 import Contact from "@/components/main-page/Contact";
 import ProductsSection from "@/components/main-page/ProductsSection";
 import CooperationSection from "@/components/main-page/CooperationSection";
 import Events from "@/components/main-page/Events";
+import CeliacDiseaseBasicInfoSection from "@/components/main-page/CeliacDiseaseBasicInfoSection";
+import CeliacDiseaseWhatsNextSection from "@/components/main-page/CeliacDiseaseWhatsNextSection";
+import VideoSection from "@/components/main-page/VideoSection";
 
 const index = () => {
   return (
@@ -29,7 +31,9 @@ const index = () => {
         <RecipesSection />
         <RestaurantsSection />
         <ProductsSection />
-        <CeliacDiseaseSection />
+        <CeliacDiseaseBasicInfoSection />
+        <VideoSection />
+        <CeliacDiseaseWhatsNextSection />
         <Events />
         <CooperationSection />
         <Contact />

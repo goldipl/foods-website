@@ -60,12 +60,7 @@ const Footer = () => {
             <Link href="#pierwsze-kroki-po-diagnozie">
               Pierwsze kroki po diagnozie
             </Link>
-            <Link
-              href="https://www.youtube.com/watch?v=8TEFTAOyZss"
-              target="_blank"
-            >
-              Jak wygląda życie z celiakią? (podcast)
-            </Link>
+            <Link href="/#video">Jak wygląda życie z celiakią? (podcast)</Link>
             <Link href="#wydarzenia">Wydarzenia i wiele więcej :)</Link>
           </div>
           <div className="footer-col">

@@ -342,11 +342,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="https://www.youtube.com/watch?v=8TEFTAOyZss"
-                    target="_blank"
-                    onClick={handleCloseDropdown}
-                  >
+                  <Link href="/#video" onClick={handleCloseDropdown}>
                     Jak wygląda życie z celiakią? (podcast)
                   </Link>
                 </li>
