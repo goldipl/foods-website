@@ -9,7 +9,7 @@ const BoxesInfoSection = () => {
     <section id="boxes-info-section" className="boxes-info-section">
       <div className="boxes-info-wrapper">
         <div className="section-title">
-          <h2>Znajdziesz u mnie, potrawy i przepisy:</h2>
+          <h2>Znajdziesz u mnie potrawy i przepisy:</h2>
         </div>
         <div className="boxes-info">
           {/* Slot */}
