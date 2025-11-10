@@ -9,6 +9,7 @@ import sniadanieNaBalkonie from "./../../../public/img/recipes/breakfasts/008_sn
 import pomysloweKanapkiCz1 from "./../../../public/img/recipes/breakfasts/009_pomyslowe_kanapki_cz1.jpg";
 import pomysloweKanapkiCz2 from "./../../../public/img/recipes/breakfasts/010_pomyslowe_kanapki_cz2.jpg";
 import owsiankaMatcha from "./../../../public/img/recipes/breakfasts/011_owsianka_z_matcha.jpg";
+import bezglutenowyBajgiel from "./../../../public/img/recipes/breakfasts/012_bezglutenowy_bajgel.jpg";
 
 export const breakfastsRecipesData = [
     {
@@ -120,5 +121,15 @@ export const breakfastsRecipesData = [
       labelClass: "breakfast-label",
       description:
         "Bezglutenowa owsianka z matchą",
+    },
+    {
+      id: 12,
+      href: "https://www.instagram.com/p/DQ1JeYNiK9B/",
+      imgSrc: bezglutenowyBajgiel,
+      altText: "Bezglutenowy bajgiel",
+      label: "Śniadanie",
+      labelClass: "breakfast-label",
+      description:
+        "Bezglutenowy bajgiel",
     },
   ];
