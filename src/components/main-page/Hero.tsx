@@ -12,6 +12,7 @@ import dessertImg from "./../../../public/img/recipes/desserts/004_wege_sernik.j
 import stokrotka002 from "./../../../public/img/products/002_stokrotka_czy_to_ma_gluten.jpg";
 import pastaGlutenFreeRoma from "./../../../public/img/welcome/wloski-makaron-gluten-free.jpg";
 import saskaSushiWarszawa from "./../../../public/img/restaurants/poland/001_saska_sushi.jpg";
+import bezglutenoweHalloween from "./../../../public/img/events/011_bezglutenowe_halloween.jpg";
 import Link from "next/link";
 
 SwiperCore.use([Pagination, Navigation]);
@@ -161,6 +162,26 @@ const Hero = () => {
                 <div className="swiper-slide-box__img">
                   <Image
                     src={stokrotka002}
+                    alt="Czy to ma gluten? Sklep Stokrotka"
+                    width={450}
+                    height={450}
+                  ></Image>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="slide-content">
+              <div className="swiper-slide-box">
+                <div className="swiper-slide-box__text">
+                  <h2>Bezglutenowe wydarzenia</h2>
+                  <Link className="hero-cta" href="#wydarzenia">
+                    Sprawdź
+                  </Link>
+                </div>
+                <div className="swiper-slide-box__img">
+                  <Image
+                    src={bezglutenoweHalloween}
                     alt="Czy to ma gluten? Sklep Stokrotka"
                     width={450}
                     height={450}
