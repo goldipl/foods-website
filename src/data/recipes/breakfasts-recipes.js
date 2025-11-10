@@ -126,10 +126,10 @@ export const breakfastsRecipesData = [
       id: 12,
       href: "https://www.instagram.com/p/DQ1JeYNiK9B/",
       imgSrc: bezglutenowyBajgiel,
-      altText: "Bezglutenowy bajgiel",
+      altText: "Bezglutenowy bajgiel z omletem jajecznym, cukinią, pieczarkami, sałatą, rzodkiewką, ogórkiem, majonezem",
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
-        "Bezglutenowy bajgiel",
+        "Bezglutenowy bajgiel z omletem jajecznym, cukinią, pieczarkami, sałatą, rzodkiewką, ogórkiem, majonezem",
     },
   ];
