@@ -6,7 +6,7 @@ const VideoSection = () => {
       <div className="video-section-wrapper">
         <div className="section-title">
           <h2>Jak wygląda życie z celiakią?</h2>
-          <h4>Podcast - zapraszam do wysłuchania</h4>
+          <h4>Zapraszam do wysłuchania podcastu.</h4>
         </div>
         <iframe
           width="560"
