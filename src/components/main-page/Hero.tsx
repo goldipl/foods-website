@@ -9,7 +9,7 @@ import welcomeImg from "./../../../public/img/welcome/karola-dynia.jpg";
 import breakfastImg from "./../../../public/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.jpg";
 import dinnerImg from "./../../../public/img/recipes/dinners/004_bezglutenowy_burger_z_kurczaka_teriyaki.jpg";
 import dessertImg from "./../../../public/img/recipes/desserts/004_wege_sernik.jpg";
-import stokrotka002 from "./../../../public/img/products/002_stokrotka_czy_to_ma_gluten.jpg";
+import pierogi from "./../../../public/img/products/022_bezglutenowe_panettone.jpg";
 import pastaGlutenFreeRoma from "./../../../public/img/welcome/wloski-makaron-gluten-free.jpg";
 import saskaSushiWarszawa from "./../../../public/img/restaurants/poland/001_saska_sushi.jpg";
 import bezglutenoweHalloween from "./../../../public/img/events/011_bezglutenowe_halloween.jpg";
@@ -161,8 +161,8 @@ const Hero = () => {
                 </div>
                 <div className="swiper-slide-box__img">
                   <Image
-                    src={stokrotka002}
-                    alt="Czy to ma gluten? Sklep Stokrotka"
+                    src={pierogi}
+                    alt="Czy to ma gluten?"
                     width={450}
                     height={450}
                   ></Image>
