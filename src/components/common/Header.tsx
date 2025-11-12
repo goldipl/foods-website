@@ -240,6 +240,14 @@ const Header = () => {
                     </li>
                   </ul>
                 </li>
+                <li>
+                  <Link
+                    href="/bezglutenowe-miejsca"
+                    onClick={handleCloseDropdown}
+                  >
+                    Mapa miejsc bezglutenowych
+                  </Link>
+                </li>
               </ul>
             </li>
             <li className="nav-expand">
