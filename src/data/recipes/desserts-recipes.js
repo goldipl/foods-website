@@ -21,6 +21,7 @@ import nalesnikizTruskawkowaFruzelina from "./../../../public/img/recipes/desser
 import domoweLodyBezNabialuBezGlutenu from "./../../../public/img/recipes/desserts/021_domowe_lody_bez_nabialu_bez_glutenu.jpg";
 import tygrysekMatcha from "./../../../public/img/recipes/desserts/022_ciasto_tygrysek_matcha.jpg";
 import nalesniczkiBezglutenowe from "./../../../public/img/recipes/desserts/023_nalesniki_bezglutenowe.jpg";
+import cynamonkiOrzechowe from "./../../../public/img/recipes/desserts/024_cynamonki_z_polewa_orzechowa.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -252,5 +253,15 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Bezglutenowe naleśniki",
+    },
+    {
+      id: 24,
+      href: "https://www.instagram.com/p/DQ7EDSAiNQS/",
+      imgSrc: cynamonkiOrzechowe,
+      altText: "Bezglutenowe cynamonki z polewą orzechową i kruszonymi orzechami laskowymi",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowe cynamonki z polewą orzechową i kruszonymi orzechami laskowymi",
     },
 ];
