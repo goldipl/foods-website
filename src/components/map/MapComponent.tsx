@@ -15,15 +15,6 @@ const greenIcon = new L.Icon({
   shadowSize: [41, 41],
 });
 
-interface MarkerItem {
-  id: number;
-  name: string;
-  addressLine1: string;
-  addressLine2: string;
-  link: string;
-  position: [number, number];
-}
-
 interface MapComponentProps {
   center?: [number, number];
   zoom?: number;
