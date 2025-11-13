@@ -30,47 +30,69 @@ const MapComponent: React.FC<MapComponentProps> = ({
   zIndex = "0",
 }) => {
   return (
-    <MapContainer
-      center={center}
-      zoom={zoom}
-      scrollWheelZoom={true}
-      style={{ height: height, width, zIndex }}
-    >
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>'
-        url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
-      />
-      <Marker position={[52.230471, 21.013947]} icon={greenIcon}>
-        <Popup>
-          <div>Rola Pao Restaurant</div>
-          <div>Al. Jerozolimskie 42,</div>
-          <div>00-042 Warszawa</div>
-          <div>
-            <Link
-              target="_blank"
-              href="https://www.instagram.com/reel/C-S0V-rIpJ0/"
-            >
-              Zobacz to miejsce
-            </Link>
-          </div>
-        </Popup>
-      </Marker>
-      <Marker position={[52.233997, 21.001116]} icon={greenIcon}>
-        <Popup>
-          <div>Patila Döner Kebap</div>
-          <div>ul. Świętokrzyska 34,</div>
-          <div>00-116 Warszawa</div>
-          <div>
-            <Link
-              target="_blank"
-              href="https://www.instagram.com/p/DOinsrFiKNw/"
-            >
-              Zobacz to miejsce
-            </Link>
-          </div>
-        </Popup>
-      </Marker>
-    </MapContainer>
+    <main>
+      <section className="map-section">
+        <div className="section-title">
+          <h1>Mapa miejsc bezglutenowych</h1>
+          <h4>
+            Przeglądaj mapę, <strong>klikaj w znaczniki</strong> i przemierzaj
+            świat bezglutenowych miejscówek i restauracji.
+          </h4>
+          <h4>
+            Każdy znacznik zawiera informacje oraz link do reelsa pokazującego
+            szczegóły dotyczące danego miejsca.
+          </h4>
+        </div>
+
+        <MapContainer
+          center={center}
+          zoom={zoom}
+          scrollWheelZoom={true}
+          style={{ height: height, width, zIndex }}
+        >
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>'
+            url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+          />
+          <Marker position={[52.230471, 21.013947]} icon={greenIcon}>
+            <Popup>
+              <div>Rola Pao Restaurant</div>
+              <div>Al. Jerozolimskie 42,</div>
+              <div>00-042 Warszawa</div>
+              <div>
+                <Link
+                  target="_blank"
+                  href="https://www.instagram.com/reel/C-S0V-rIpJ0/"
+                >
+                  Zobacz to miejsce
+                </Link>
+              </div>
+            </Popup>
+          </Marker>
+          <Marker position={[52.233997, 21.001116]} icon={greenIcon}>
+            <Popup>
+              <div>Patila Döner Kebap</div>
+              <div>ul. Świętokrzyska 34,</div>
+              <div>00-116 Warszawa</div>
+              <div>
+                <Link
+                  target="_blank"
+                  href="https://www.instagram.com/p/DOinsrFiKNw/"
+                >
+                  Zobacz to miejsce
+                </Link>
+              </div>
+            </Popup>
+          </Marker>
+        </MapContainer>
+
+        <div className="primary-button">
+          <Link href="/" className="primary-button__text">
+            Powrót
+          </Link>
+        </div>
+      </section>
+    </main>
   );
 };
 
