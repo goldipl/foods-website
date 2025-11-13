@@ -156,6 +156,23 @@ const MapComponent: React.FC<MapComponentProps> = ({
               </div>
             </Popup>
           </Marker>
+
+          <Marker key={6} position={[52.23038, 21.0519]} icon={greenIcon}>
+            <Popup>
+              <strong>Sushi Wesoła</strong>
+              <div>ul. Wspólna 37a,</div>
+              <div>05-075 Warszawa</div>
+              <div>
+                <Link
+                  className="map-link"
+                  target="_blank"
+                  href="https://www.instagram.com/p/DBZAnlfoEdF/"
+                >
+                  Zobacz to miejsce
+                </Link>
+              </div>
+            </Popup>
+          </Marker>
         </MapContainer>
 
         <div className="primary-button">
