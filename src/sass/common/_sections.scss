@@ -10,13 +10,28 @@ section {
   }
   .section-title {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto 24px;
     width: auto;
     h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 24px;
+      font-size: 26px;
+      line-height: 32px;
       padding: 0 8px 6px 8px;
       border-bottom: 2px solid $color-green01;
+    }
+    h4 {
+      font-weight: 400;
+      @media (max-width: 992px) {
+        font-size: 14px;
+      }
     }
     @media (max-width: 992px) {
       h1 {

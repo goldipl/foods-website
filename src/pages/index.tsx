@@ -16,6 +16,7 @@ import Events from "@/components/main-page/Events";
 import CeliacDiseaseBasicInfoSection from "@/components/main-page/CeliacDiseaseBasicInfoSection";
 import CeliacDiseaseWhatsNextSection from "@/components/main-page/CeliacDiseaseWhatsNextSection";
 import VideoSection from "@/components/main-page/VideoSection";
+import MapSection from "@/components/main-page/MapSection";
 
 const index = () => {
   return (
@@ -36,6 +37,7 @@ const index = () => {
         <CeliacDiseaseWhatsNextSection />
         <Events />
         <CooperationSection />
+        <MapSection />
         <Contact />
       </main>
       <footer>

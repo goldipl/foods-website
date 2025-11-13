@@ -1,0 +1,42 @@
+#mapa {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: $light-grey-bg;
+  z-index: 0;
+  .map-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 140px 16px 168px 16px;
+    @media (max-width: 992px) {
+      padding: 40px 16px 64px;
+    }
+    &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: fit-content;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 24px;
+      box-shadow: 0px 9px 28px 8px #0000000d, 0px 3px 6px -4px #0000001f,
+        0px 6px 16px 0px #00000014;
+    }
+    &__img {
+      transition: 0.8s;
+      &:hover {
+        opacity: 0.9;
+        transform: scale(1.1);
+      }
+      @media (max-width: 992px) {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
