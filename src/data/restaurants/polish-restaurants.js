@@ -15,6 +15,7 @@ import OldTownKrakow from "./../../../public/img/restaurants/poland/015_OldTownK
 import TerraNostraPizza from "./../../../public/img/restaurants/poland/016_TerraNostraPizza.jpg";
 import PatilaDonerKebab from "./../../../public/img/restaurants/poland/017_PatilaDonerKebab.jpg";
 import Groole from "./../../../public/img/restaurants/poland/018_Groole.jpg";
+import sushiWesola from "./../../../public/img/restaurants/poland/019_sushi_wesola.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -186,5 +187,15 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Groole, ul. Śniadeckich 8, Warszawa",
+    },
+    {
+      id: 19,
+      href: "https://www.instagram.com/p/DBZAnlfoEdF/",
+      imgSrc: sushiWesola,
+      altText: "Sushi Wesoła, ul. Wspólna 37a, 05-075 Warszawa",
+      label: "Warszawa",
+      labelClass: "poland-label",
+      description:
+        "Sushi Wesoła, ul. Wspólna 37a, 05-075 Warszawa",
     },
   ];
