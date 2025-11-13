@@ -14,6 +14,74 @@ const greenIcon = new L.Icon({
   shadowSize: [41, 41],
 });
 
+interface MarkerData {
+  id: number;
+  name: string;
+  addressLine1: string;
+  addressLine2: string;
+  link: string;
+  position: [number, number];
+}
+
+const markers: MarkerData[] = [
+  {
+    id: 1,
+    name: "Rola Pao",
+    addressLine1: "Al. Jerozolimskie 42,",
+    addressLine2: "00-042 Warszawa",
+    link: "https://www.instagram.com/reel/C-S0V-rIpJ0/",
+    position: [52.230625, 21.014178],
+  },
+  {
+    id: 2,
+    name: "Patila Döner Kebap",
+    addressLine1: "ul. Świętokrzyska 34,",
+    addressLine2: "00-116 Warszawa",
+    link: "https://www.instagram.com/p/DOinsrFiKNw/",
+    position: [52.233997, 21.001116],
+  },
+  {
+    id: 3,
+    name: "Restauracja Wiesz Co Zjesz",
+    addressLine1: "plac Konstytucji 1,",
+    addressLine2: "00-647 Warszawa",
+    link: "https://www.instagram.com/p/DGaKXYkoBiV/",
+    position: [52.221044, 21.016888],
+  },
+  {
+    id: 4,
+    name: "Groole",
+    addressLine1: "Jana i Jędrzeja Śniadeckich 8,",
+    addressLine2: "00-656 Warszawa",
+    link: "https://www.instagram.com/p/DQKEYzmCNZg/",
+    position: [52.221629, 21.015114],
+  },
+  {
+    id: 5,
+    name: "Calimero Café - Warszawa Mokotów",
+    addressLine1: "Konstruktorska 7/u1,",
+    addressLine2: "02-676 Warszawa",
+    link: "https://www.instagram.com/p/DKO9OF-IY7O/",
+    position: [52.185395, 20.993358],
+  },
+  {
+    id: 6,
+    name: "Saska Sushi",
+    addressLine1: "Zwycięzców 4,",
+    addressLine2: "03-941 Warszawa",
+    link: "https://www.instagram.com/p/C-8CItzIVKk/",
+    position: [52.23038, 21.0519],
+  },
+  {
+    id: 7,
+    name: "Sushi Wesoła",
+    addressLine1: "ul. Wspólna 37a,",
+    addressLine2: "05-075 Warszawa",
+    link: "https://www.instagram.com/p/DBZAnlfoEdF/",
+    position: [52.2479307, 21.1918854],
+  },
+];
+
 interface MapComponentProps {
   center?: [number, number];
   zoom?: number;
@@ -27,10 +95,10 @@ const MapComponent: React.FC<MapComponentProps> = ({
   zoom = 13,
   height = "800px",
   width = "100%",
-  zIndex = "0",
+  zIndex = 0,
 }) => {
   return (
-    <main>
+    <main className="map-page">
       <section className="map-section">
         <div className="section-title">
           <h1>Mapa miejsc bezglutenowych</h1>
@@ -44,6 +112,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
           </h4>
         </div>
 
+        {/* Map */}
         <MapContainer
           center={center}
           zoom={zoom}
@@ -51,131 +120,65 @@ const MapComponent: React.FC<MapComponentProps> = ({
           style={{ height: height, width, zIndex }}
         >
           <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>'
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>'
             url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
           />
 
-          <Marker key={1} position={[52.230625, 21.014178]} icon={greenIcon}>
-            <Popup>
-              <strong>Rola Pao</strong>
-              <div>Al. Jerozolimskie 42,</div>
-              <div>00-042 Warszawa</div>
-              <div>
-                <Link
-                  className="map-link"
-                  target="_blank"
-                  href="https://www.instagram.com/reel/C-S0V-rIpJ0/"
-                >
-                  Zobacz to miejsce
-                </Link>
-              </div>
-            </Popup>
-          </Marker>
-
-          <Marker key={2} position={[52.233997, 21.001116]} icon={greenIcon}>
-            <Popup>
-              <strong>Patila Döner Kebap</strong>
-              <div>ul. Świętokrzyska 34,</div>
-              <div>00-116 Warszawa</div>
-              <div>
-                <Link
-                  className="map-link"
-                  target="_blank"
-                  href="https://www.instagram.com/p/DOinsrFiKNw/"
-                >
-                  Zobacz to miejsce
-                </Link>
-              </div>
-            </Popup>
-          </Marker>
-
-          <Marker key={3} position={[52.221044, 21.016888]} icon={greenIcon}>
-            <Popup>
-              <strong>Restauracja Wiesz Co Zjesz</strong>
-              <div>plac Konstytucji 1,</div>
-              <div>00-647 Warszawa</div>
-              <div>
-                <Link
-                  className="map-link"
-                  target="_blank"
-                  href="https://www.instagram.com/p/DGaKXYkoBiV/"
-                >
-                  Zobacz to miejsce
-                </Link>
-              </div>
-            </Popup>
-          </Marker>
-
-          <Marker key={4} position={[52.221629, 21.015114]} icon={greenIcon}>
-            <Popup>
-              <strong>Groole</strong>
-              <div>Jana i Jędrzeja Śniadeckich 8,</div>
-              <div>00-656 Warszawa</div>
-              <div>
-                <Link
-                  className="map-link"
-                  target="_blank"
-                  href="https://www.instagram.com/p/DQKEYzmCNZg/"
-                >
-                  Zobacz to miejsce
-                </Link>
-              </div>
-            </Popup>
-          </Marker>
-
-          <Marker key={5} position={[52.185395, 20.993358]} icon={greenIcon}>
-            <Popup>
-              <strong>Calimero Café - Warszawa Mokotów</strong>
-              <div>Konstruktorska 7/u1,</div>
-              <div>02-676 Warszawa</div>
-              <div>
-                <Link
-                  className="map-link"
-                  target="_blank"
-                  href="https://www.instagram.com/p/DKO9OF-IY7O/"
-                >
-                  Zobacz to miejsce
-                </Link>
-              </div>
-            </Popup>
-          </Marker>
-
-          <Marker key={6} position={[52.23038, 21.0519]} icon={greenIcon}>
-            <Popup>
-              <strong>Saska Sushi</strong>
-              <div>Zwycięzców 4,</div>
-              <div>03-941 Warszawa</div>
-              <div>
-                <Link
-                  className="map-link"
-                  target="_blank"
-                  href="https://www.instagram.com/p/C-8CItzIVKk/"
-                >
-                  Zobacz to miejsce
-                </Link>
-              </div>
-            </Popup>
-          </Marker>
-
-          <Marker key={7} position={[52.2479307, 21.1918854]} icon={greenIcon}>
-            <Popup>
-              <strong>Sushi Wesoła</strong>
-              <div>ul. Wspólna 37a,</div>
-              <div>05-075 Warszawa</div>
-              <div>
-                <Link
-                  className="map-link"
-                  target="_blank"
-                  href="https://www.instagram.com/p/DBZAnlfoEdF/"
-                >
-                  Zobacz to miejsce
-                </Link>
-              </div>
-            </Popup>
-          </Marker>
+          {markers.map((m) => (
+            <Marker key={m.id} position={m.position} icon={greenIcon}>
+              <Popup>
+                <strong>{m.name}</strong>
+                <div>{m.addressLine1}</div>
+                <div>{m.addressLine2}</div>
+                <div>
+                  <Link className="map-link" target="_blank" href={m.link}>
+                    Zobacz to miejsce
+                  </Link>
+                </div>
+              </Popup>
+            </Marker>
+          ))}
         </MapContainer>
 
-        <div className="primary-button">
+        <div className="section-title">
+          <h3>Lista miejsc w formie tabelarycznej</h3>
+        </div>
+        {/* Table */}
+        <div className="places-table-container">
+          <table className="places-table">
+            <thead>
+              <tr>
+                <th>Nazwa</th>
+                <th>Adres</th>
+                <th>Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              {markers.map((m) => (
+                <tr key={m.id}>
+                  <td>{m.name}</td>
+                  <td>
+                    {m.addressLine1}
+                    <br />
+                    {m.addressLine2}
+                  </td>
+                  <td>
+                    <a
+                      href={m.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="places-link"
+                    >
+                      Zobacz to miejsce
+                    </a>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <div className="primary-button mt-6">
           <Link href="/" className="primary-button__text">
             Powrót
           </Link>

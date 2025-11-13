@@ -5,7 +5,61 @@
     color: $color-green02;
     margin-top: 8px;
   }
+
   @media (max-width: 992px) {
-    height: 60dvh !important;
+    height: 40dvh !important;
+  }
+}
+
+.places-table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 2rem;
+}
+
+.places-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  background: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  th,
+  td {
+    font-size: 14px;
+    border: 1px solid #ddd;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    a {
+      color: $color-green02;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    @media (max-width: 992px) {
+      font-size: 13px;
+    }
+  }
+
+  thead {
+    background-color: #f7f7f7;
+
+    th {
+      font-weight: 600;
+      color: #333;
+    }
+  }
+
+  tbody tr {
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: #f1f9f1;
+    }
+  }
+
+  td {
+    vertical-align: top;
   }
 }
