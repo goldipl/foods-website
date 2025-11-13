@@ -22,6 +22,7 @@ import bezglutenowePierogiNaturalna from "./../../../public/img/products/021_bez
 import bezglutenowePanettone from "./../../../public/img/products/022_bezglutenowe_panettone.jpg";
 import wolnaPiekarniaBezglutenowa from "./../../../public/img/products/023_wolna_piekarnia_bezglutenowa.jpg";
 import rogalBialyMakPutkaBezGlutenu from "./../../../public/img/products/024_rogal_z_bialym_makiem.jpg";
+import paluchyGrissini from "./../../../public/img/products/025_paluchy_grissini.jpg";
 
 export const productsData = [
     {
@@ -293,5 +294,15 @@ export const productsData = [
         labelClass: "product-label",
         description: 
             "Rogal z białym makiem z Putka bez glutenu",
+    },
+    {
+        id: 25,
+        href: "https://www.instagram.com/p/DQ9p3rniC6s/",
+        imgSrc: paluchyGrissini,
+        altText: "Paluchy chlebowe i grissini od firmy Glutenex",
+        label: "Glutenex",
+        labelClass: "product-label",
+        description: 
+            "Paluchy chlebowe i grissini od firmy Glutenex",
     },
   ];
