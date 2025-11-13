@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import Link from "next/link";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
@@ -30,6 +30,21 @@ const MapComponent: React.FC<MapComponentProps> = ({
   width = "100%",
   zIndex = 0,
 }) => {
+  const mapRef = useRef<L.Map | null>(null);
+
+  // Helper to zoom to a marker
+  const handleZoomTo = (position: [number, number], zoomLevel = 17) => {
+    if (mapRef.current) {
+      mapRef.current.setView(position, zoomLevel, { animate: true });
+      window.scrollTo(0, 0);
+    }
+  };
+
+  // Initialize mapRef after component mounts
+  useEffect(() => {
+    if (!mapRef.current) return;
+  }, []);
+
   return (
     <main className="map-page">
       <section className="map-section">
@@ -51,6 +66,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
           zoom={zoom}
           scrollWheelZoom={true}
           style={{ height, width, zIndex }}
+          ref={mapRef}
         >
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>'
@@ -85,6 +101,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
                 <th>Nazwa</th>
                 <th>Adres</th>
                 <th>Link</th>
+                <th>Akcja</th>
               </tr>
             </thead>
             <tbody>
@@ -106,13 +123,22 @@ const MapComponent: React.FC<MapComponentProps> = ({
                       Zobacz to miejsce
                     </a>
                   </td>
+                  <td>
+                    <button
+                      onClick={() => handleZoomTo(m.position)}
+                      className="zoom-button"
+                      type="button"
+                    >
+                      🔍 Pokaż na mapie
+                    </button>
+                  </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
 
-        <div className="primary-button mt-6">
+        <div className="primary-button">
           <Link href="/" className="primary-button__text">
             Powrót
           </Link>
