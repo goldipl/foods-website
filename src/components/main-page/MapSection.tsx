@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import glutenFreeMap from "./../../../public/img/map/gluten-free-map.jpg";
+import { TfiZoomIn } from "react-icons/tfi";
 
 const MapSection = () => {
   return (
@@ -23,6 +24,7 @@ const MapSection = () => {
               width={856}
               height={506}
             />
+            <TfiZoomIn className="map-section-wrapper__zoom-img" />
           </Link>
         </div>
       </div>
