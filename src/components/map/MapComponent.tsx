@@ -122,6 +122,40 @@ const MapComponent: React.FC<MapComponentProps> = ({
               </div>
             </Popup>
           </Marker>
+
+          <Marker key={5} position={[52.185395, 20.993358]} icon={greenIcon}>
+            <Popup>
+              <strong>Calimero Café - Warszawa Mokotów</strong>
+              <div>Konstruktorska 7/u1,</div>
+              <div>02-676 Warszawa</div>
+              <div>
+                <Link
+                  className="map-link"
+                  target="_blank"
+                  href="https://www.instagram.com/p/DKO9OF-IY7O/"
+                >
+                  Zobacz to miejsce
+                </Link>
+              </div>
+            </Popup>
+          </Marker>
+
+          <Marker key={6} position={[52.23048, 21.051836]} icon={greenIcon}>
+            <Popup>
+              <strong>Saska Sushi</strong>
+              <div>Zwycięzców 4,</div>
+              <div>03-941 Warszawa</div>
+              <div>
+                <Link
+                  className="map-link"
+                  target="_blank"
+                  href="https://www.instagram.com/p/C-8CItzIVKk/"
+                >
+                  Zobacz to miejsce
+                </Link>
+              </div>
+            </Popup>
+          </Marker>
         </MapContainer>
 
         <div className="primary-button">
