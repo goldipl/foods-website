@@ -140,7 +140,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
             </Popup>
           </Marker>
 
-          <Marker key={6} position={[52.23048, 21.051836]} icon={greenIcon}>
+          <Marker key={6} position={[52.23038, 21.0519]} icon={greenIcon}>
             <Popup>
               <strong>Saska Sushi</strong>
               <div>Zwycięzców 4,</div>
@@ -157,7 +157,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
             </Popup>
           </Marker>
 
-          <Marker key={7} position={[52.23038, 21.0519]} icon={greenIcon}>
+          <Marker key={7} position={[52.2479307, 21.1918854]} icon={greenIcon}>
             <Popup>
               <strong>Sushi Wesoła</strong>
               <div>ul. Wspólna 37a,</div>
