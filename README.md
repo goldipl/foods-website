@@ -1,3 +1,8 @@
+<h1 align="center">Bezglutenowa Karola</h1>
+<i align="center">
+<p>A gluten-free, sugar-free and dairy-free recipe platform</p>
+</i>
+
 <p align="center">
     <img src="./public/img/white-bg-logo.jpg" height="60"/>
 </p>
@@ -6,41 +11,71 @@
     This is a <a href="https://nextjs.org/">Next.js, TypeScript</a> project bootstrapped with <a href="https://github.com/vercel/next.js/tree/canary/packages/create-next-app">create-next-app</a>.
 </p>
 
-<p align="center">
-    <strong>bezglutenowakarola.pl</strong> - a website dedicated to sharing gluten-free, sugar-free, and dairy-free recipes, perfect for individuals with celiac disease or those following a gluten-free diet. Created by Karolina Wontorska, this platform is a place of support and inspiration for anyone navigating the challenges of dietary restrictions.
-</p>
+## Overview
 
-<p align="center">
-<strong>What You’ll Find on the Website:</strong> Through her blog and Instagram account, Karolina shares her passion for healthy, gluten-free cooking. She offers practical tips, personal experiences, and delicious recipes for those with celiac disease or other dietary needs. Whether you're newly diagnosed or simply looking for creative gluten-free meal ideas, this platform is a welcoming space to support your journey to better health.
-</p>
+This repository powers [bezglutenowakarola.pl](https://bezglutenowakarola.pl/), a website created by Marcin Godlewski. The site is dedicated to sharing delicious and wholesome recipes for those living with coeliac disease or following a gluten-free, sugar-free, and dairy-free diet.  
+The platform is built with modern web technologies and designed to be both inspiring and accessible for people navigating dietary restrictions.
 
-## Table of contents
+## Table of Contents
 
-- [License](#license)
+- [Features](#features)
 - [Technologies](#technologies)
 - [Getting Started](#getting-started)
-- [Live link](#live-link)
-- [Info about Next.js](#info-about-nextjs)
-- [Screenshots](#screenshots)
+- [Deployment](#deployment)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [About](#about)
 
-## License
+## Features
 
-License Creative Commons Non-Commercial (CC BY-NC) License ![license](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc.svg)
-
-This work is licensed under a Creative Commons Non-Commercial (CC BY-NC) License (not for commercial use)
+- A blog-style site presenting recipes that are **gluten-free**, **sugar-free**, and **dairy-free**.
+- Built with a strong foundation for maintainability: TypeScript, SCSS, React + Next.js.
+- Responsive design so users on mobile and desktop have a seamless experience.
+- Designed for accessibility and clarity to support individuals with dietary restrictions.
+- Easy to extend with new recipes, categories, and content.
 
 ## Technologies
 
-Used technologies:
-
-- Next.js
-- React.js
-- TypeScript
-- SASS/SCSS
+- [Next.js](https://nextjs.org/) – React framework for server-rendered and statically generated web apps. :contentReference[oaicite:0]{index=0}
+- React.js – UI library. :contentReference[oaicite:1]{index=1}
+- TypeScript – static typing for safer, more maintainable code. :contentReference[oaicite:2]{index=2}
+- SASS/SCSS – for modular and reusable styles. :contentReference[oaicite:3]{index=3}
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Make sure you have:
+
+- Node.js (version 14+ or as per `package.json`)
+- npm, Yarn or pnpm (whichever you prefer)
+- (Optional) bun, if you use it for local dev
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/goldipl/foods-website.git
+cd foods-website
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn
+# or
+pnpm install
+# or (if using bun)
+bun install
+```
+
+## Running Locally
+
+Start the development server:
 
 ```bash
 npm run dev
@@ -52,27 +87,51 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open your browser at http://localhost:3000 to view the site.
 
-## Live link
+## Building for Production
 
-https://bezglutenowakarola.pl/
+```bash
+npm run build
+npm run start
+```
+
+(or the equivalent commands for your package manager)
+
+## Deployment
+
+The site can be deployed to platforms that support Next.js (for example, Vercel
+).
+GitHub
+
+Ensure environment variables (if any) and build settings match your hosting provider.
+
+## Project Structure
+
+```bash
+.
+├── public/                # Static assets (images, icons, etc.)
+├── src/                   # Application source code (components, pages, styles)
+├── screenshots/           # Visual references / preview images
+├── package.json
+├── tsconfig.json
+├── next.config.mjs
+├── README.md
+└── LICENSE.md
+```
 
 ## Screenshots
 
 ![screenshot](./screenshots/screenshot01.jpg)
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
+This work is licensed under a Creative Commons Non-Commercial (CC BY-NC) License.
+GitHub
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+(Note: “Non-Commercial” means you may not use this work for commercial purposes without prior permission.)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## About
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This site is a labour of love by Karolina Wontorska, built to support individuals navigating gluten-free, sugar-free and dairy-free lifestyles.
+If you have questions or want to collaborate, feel free to open an issue or get in touch via the repository.
