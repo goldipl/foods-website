@@ -37,10 +37,10 @@ The platform is built with modern web technologies and designed to be both inspi
 
 ## Technologies
 
-- [Next.js](https://nextjs.org/) – React framework for server-rendered and statically generated web apps. :contentReference[oaicite:0]{index=0}
-- React.js – UI library. :contentReference[oaicite:1]{index=1}
-- TypeScript – static typing for safer, more maintainable code. :contentReference[oaicite:2]{index=2}
-- SASS/SCSS – for modular and reusable styles. :contentReference[oaicite:3]{index=3}
+- [Next.js](https://nextjs.org/) – React framework for server-rendered and statically generated web apps.
+- React.js – UI library.
+- TypeScript – static typing for safer, more maintainable code.
+- SASS/SCSS – for modular and reusable styles.
 
 ## Getting Started
 
