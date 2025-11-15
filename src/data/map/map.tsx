@@ -5,7 +5,7 @@ export const MarkerData = [
     addressLine1: "al. Jerozolimskie 42,",
     addressLine2: "00-042 Warszawa",
     link: "https://www.instagram.com/reel/C-S0V-rIpJ0/",
-    position: [52.230625, 21.014178] as [number, number],
+    position: [52.23067725445316, 21.01386378269282] as [number, number],
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const MarkerData = [
     addressLine1: "ul. Świętokrzyska 34,",
     addressLine2: "00-116 Warszawa",
     link: "https://www.instagram.com/p/DOinsrFiKNw/",
-    position: [52.233997, 21.001116] as [number, number],
+    position: [52.23413583300887, 21.001684222639668] as [number, number],
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const MarkerData = [
     addressLine1: "pl. Konstytucji 1,",
     addressLine2: "00-647 Warszawa",
     link: "https://www.instagram.com/p/DGaKXYkoBiV/",
-    position: [52.221044, 21.016888] as [number, number],
+    position: [52.221121163251425, 21.016915514391457] as [number, number],
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const MarkerData = [
     addressLine1: "ul. Jana i Jędrzeja Śniadeckich 8,",
     addressLine2: "00-656 Warszawa",
     link: "https://www.instagram.com/p/DQKEYzmCNZg/",
-    position: [52.221629, 21.015114] as [number, number],
+    position: [52.221713976436995, 21.015137425179198] as [number, number],
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ export const MarkerData = [
     addressLine1: "ul. Konstruktorska 7/u1,",
     addressLine2: "02-676 Warszawa",
     link: "https://www.instagram.com/p/DKO9OF-IY7O/",
-    position: [52.185395, 20.993358] as [number, number],
+    position: [52.18540891697404, 20.99331470031542] as [number, number],
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ export const MarkerData = [
     addressLine1: "ul. Zwycięzców 4,",
     addressLine2: "03-941 Warszawa",
     link: "https://www.instagram.com/p/C-8CItzIVKk/",
-    position: [52.23038, 21.0519] as [number, number],
+    position: [52.23031990775157, 21.05195050386571] as [number, number],
   },
   {
     id: 7,
@@ -53,6 +53,30 @@ export const MarkerData = [
     addressLine1: "ul. Wspólna 37a,",
     addressLine2: "05-075 Warszawa",
     link: "https://www.instagram.com/p/DBZAnlfoEdF/",
-    position: [52.2479307, 21.1918854] as [number, number],
+    position: [52.248088320155404, 21.19197122872503] as [number, number],
+  },
+  {
+    id: 8,
+    name: "Terra Nostra",
+    addressLine1: "ul. Krośnieńska 52D,",
+    addressLine2: "38-430 Miejsce Piastowe",
+    link: "https://www.instagram.com/p/DOL8Xq5iB1P/",
+    position: [49.64647262266288, 21.78415156910726] as [number, number],
+  },
+  {
+    id: 9,
+    name: "Old Town Restaurant Wine & Bar",
+    addressLine1: "ul. Bracka 6,",
+    addressLine2: "31-005 Kraków",
+    link: "https://www.instagram.com/p/DNbJasAoEdl/",
+    position: [50.06019600190139, 19.936343418838632] as [number, number],
+  },
+  {
+    id: 10,
+    name: "OTSU & MisziTo",
+    addressLine1: "ul. Wielicka 259,",
+    addressLine2: "30-663 Kraków",
+    link: "https://www.instagram.com/p/DNOLpcBI7Q9/",
+    position: [50.01372572608474, 19.996164924940615] as [number, number],
   },
 ];
