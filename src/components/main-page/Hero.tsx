@@ -13,6 +13,7 @@ import pierogi from "./../../../public/img/products/022_bezglutenowe_panettone.j
 import pastaGlutenFreeRoma from "./../../../public/img/welcome/wloski-makaron-gluten-free.jpg";
 import saskaSushiWarszawa from "./../../../public/img/restaurants/poland/001_saska_sushi.jpg";
 import bezglutenoweHalloween from "./../../../public/img/events/011_bezglutenowe_halloween.jpg";
+import glutenFreeMap from "./../../../public/img/map/gluten-free-map.jpg";
 import Link from "next/link";
 
 SwiperCore.use([Pagination, Navigation]);
@@ -182,7 +183,27 @@ const Hero = () => {
                 <div className="swiper-slide-box__img">
                   <Image
                     src={bezglutenoweHalloween}
-                    alt="Czy to ma gluten? Sklep Stokrotka"
+                    alt="Bezglutenowe wydarzenia"
+                    width={450}
+                    height={450}
+                  ></Image>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="slide-content">
+              <div className="swiper-slide-box">
+                <div className="swiper-slide-box__text">
+                  <h2>Mapa miejsc bezglutenowych</h2>
+                  <Link className="hero-cta" href="/bezglutenowe-miejsca">
+                    Sprawdź
+                  </Link>
+                </div>
+                <div className="swiper-slide-box__img">
+                  <Image
+                    src={glutenFreeMap}
+                    alt="Mapa miejsc bezglutenowych"
                     width={450}
                     height={450}
                   ></Image>
