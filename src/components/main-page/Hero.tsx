@@ -13,7 +13,7 @@ import pierogi from "./../../../public/img/products/022_bezglutenowe_panettone.j
 import pastaGlutenFreeRoma from "./../../../public/img/welcome/wloski-makaron-gluten-free.jpg";
 import saskaSushiWarszawa from "./../../../public/img/restaurants/poland/001_saska_sushi.jpg";
 import bezglutenoweHalloween from "./../../../public/img/events/011_bezglutenowe_halloween.jpg";
-import glutenFreeMap from "./../../../public/img/map/gluten-free-map.jpg";
+import glutenFreeHeroMap from "./../../../public/img/map/gluten-free-hero-map.jpg";
 import Link from "next/link";
 
 SwiperCore.use([Pagination, Navigation]);
@@ -202,7 +202,7 @@ const Hero = () => {
                 </div>
                 <div className="swiper-slide-box__img">
                   <Image
-                    src={glutenFreeMap}
+                    src={glutenFreeHeroMap}
                     alt="Mapa miejsc bezglutenowych"
                     width={450}
                     height={450}
