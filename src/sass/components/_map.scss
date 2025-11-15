@@ -1,19 +1,22 @@
 .map-page {
   .map-section {
-    .search-input {
-      padding: 10px;
-      width: 100%;
-      max-width: 500px;
-      margin: 0 auto 20px;
-      display: block;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      user-select: none;
-      &:active,
-      &:focus,
-      &:hover {
-        outline: 0;
-        border: 1px solid $color-green01;
+    .searchbar-box {
+      margin: 0 16px;
+      .search-input {
+        padding: 10px;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto 20px;
+        display: block;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        user-select: none;
+        &:active,
+        &:focus,
+        &:hover {
+          outline: 0;
+          border: 1px solid $color-green01;
+        }
       }
     }
   }
