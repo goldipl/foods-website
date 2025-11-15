@@ -33,7 +33,6 @@ const MapComponent: React.FC<MapComponentProps> = ({
 }) => {
   const mapRef = useRef<L.Map | null>(null);
 
-  // ⬇ ref na markery
   const markersRef = useRef<Record<number, L.Marker>>({});
 
   const [search, setSearch] = useState("");
@@ -47,7 +46,6 @@ const MapComponent: React.FC<MapComponentProps> = ({
     );
   });
 
-  // ⬇ funkcja zoom + otwarcie popup
   const handleZoomTo = (
     position: [number, number],
     zoomLevel = 17,
@@ -57,7 +55,6 @@ const MapComponent: React.FC<MapComponentProps> = ({
       mapRef.current.setView(position, zoomLevel, { animate: true });
       window.scrollTo(0, 0);
 
-      // popup po animacji
       if (id && markersRef.current[id]) {
         setTimeout(() => {
           markersRef.current[id].openPopup();
@@ -99,7 +96,6 @@ const MapComponent: React.FC<MapComponentProps> = ({
               key={m.id}
               position={m.position}
               icon={greenIcon}
-              // ⬇ zapisujemy marker do ref
               ref={(marker) => {
                 if (marker) markersRef.current[m.id] = marker;
               }}
@@ -136,7 +132,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
                 <th>Nazwa</th>
                 <th>Adres</th>
                 <th>Link</th>
-                <th>Akcja</th>
+                <th>Mapa</th>
               </tr>
             </thead>
             <tbody>
