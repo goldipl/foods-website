@@ -24,6 +24,7 @@ import bezglutenoweTagliatelle from "./../../../public/img/recipes/dinners/023_b
 import burgerUdzcemKurczaka from "./../../../public/img/recipes/dinners/024_burger_z_udzcem_kurczaka.jpg";
 import makaronBurakamiFeta from "./../../../public/img/recipes/dinners/025_makaron_z_burakami_feta.jpg";
 import bezglutenowaPizzaSalamiBurrata from "./../../../public/img/recipes/dinners/026_bezglutenowa_pizza_salami_burrata.jpg";
+import kremCurry from "./../../../public/img/recipes/dinners/027_krem_z_curry.jpg";
 
 export const dinnersRecipesData = [
     {
@@ -285,5 +286,15 @@ export const dinnersRecipesData = [
       labelClass: "dinner-label",
       description:
         "Bezglutenowa pizza z salami i burratą",
+    },
+    {
+      id: 26,
+      href: "https://www.instagram.com/p/DRFaUlsiD4m/",
+      imgSrc: kremCurry,
+      altText: "Zupa krem z dyni i marchwi",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Zupa krem z dyni i marchwi",
     },
   ];
