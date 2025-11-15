@@ -144,8 +144,8 @@ const MapComponent: React.FC<MapComponentProps> = ({
                 <tr key={m.id}>
                   <td>{m.name}</td>
                   <td>
-                    <span>{m.addressLine1}</span>
-                    <span>{m.addressLine2}</span>
+                    <span className="table-address-line">{m.addressLine1}</span>
+                    <span className="table-address-line">{m.addressLine2}</span>
                   </td>
                   <td>
                     <a
