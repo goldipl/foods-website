@@ -1,9 +1,10 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Link from "next/link";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { MarkerData } from "@/data/map/map";
+import SearchBar from "@/components/map/SearchBar";
 
 const greenIcon = new L.Icon({
   iconUrl:
@@ -32,7 +33,17 @@ const MapComponent: React.FC<MapComponentProps> = ({
 }) => {
   const mapRef = useRef<L.Map | null>(null);
 
-  // Helper to zoom to a marker
+  const [search, setSearch] = useState("");
+
+  const filteredData = MarkerData.filter((m) => {
+    const query = search.toLowerCase();
+    return (
+      m.name.toLowerCase().includes(query) ||
+      m.addressLine1.toLowerCase().includes(query) ||
+      m.addressLine2.toLowerCase().includes(query)
+    );
+  });
+
   const handleZoomTo = (position: [number, number], zoomLevel = 17) => {
     if (mapRef.current) {
       mapRef.current.setView(position, zoomLevel, { animate: true });
@@ -40,7 +51,6 @@ const MapComponent: React.FC<MapComponentProps> = ({
     }
   };
 
-  // Initialize mapRef after component mounts
   useEffect(() => {
     if (!mapRef.current) return;
   }, []);
@@ -54,10 +64,6 @@ const MapComponent: React.FC<MapComponentProps> = ({
             Przeglądaj mapę, <strong>klikaj w znaczniki</strong> i przemierzaj
             świat bezglutenowych miejscówek i restauracji.
           </h4>
-          <h4>
-            Każdy znacznik zawiera informacje oraz link do reelsa pokazującego
-            szczegóły dotyczące danego miejsca.
-          </h4>
         </div>
 
         {/* Map */}
@@ -69,11 +75,11 @@ const MapComponent: React.FC<MapComponentProps> = ({
           ref={mapRef}
         >
           <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>'
+            attribution="&copy; OpenStreetMap &copy; CARTO"
             url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
           />
 
-          {MarkerData.map((m) => (
+          {filteredData.map((m) => (
             <Marker key={m.id} position={m.position} icon={greenIcon}>
               <Popup>
                 <strong>{m.name}</strong>
@@ -93,6 +99,12 @@ const MapComponent: React.FC<MapComponentProps> = ({
           <h3>Lista miejsc w formie tabelarycznej</h3>
         </div>
 
+        <SearchBar
+          value={search}
+          onChange={setSearch}
+          placeholder="Szukaj po nazwie lub adresie..."
+        />
+
         {/* Table */}
         <div className="places-table-container">
           <table className="places-table">
@@ -105,7 +117,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
               </tr>
             </thead>
             <tbody>
-              {MarkerData.map((m) => (
+              {filteredData.map((m) => (
                 <tr key={m.id}>
                   <td>{m.name}</td>
                   <td>
@@ -134,6 +146,17 @@ const MapComponent: React.FC<MapComponentProps> = ({
                   </td>
                 </tr>
               ))}
+
+              {filteredData.length === 0 && (
+                <tr>
+                  <td
+                    colSpan={4}
+                    style={{ textAlign: "center", padding: "20px" }}
+                  >
+                    Brak wyników.
+                  </td>
+                </tr>
+              )}
             </tbody>
           </table>
         </div>
