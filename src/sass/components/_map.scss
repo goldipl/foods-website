@@ -23,19 +23,27 @@
 }
 .leaflet-container {
   height: 600px !important;
-
+  .map-link {
+    all: unset;
+    display: inline-flex;
+    color: $color-green02;
+    margin-top: 8px;
+    cursor: pointer;
+    &:hover {
+      color: $color-black;
+    }
+  }
   @media (max-width: 992px) {
     height: 40dvh !important;
   }
 }
-
-.leaflet-container .map-link,
+.places-link,
 .zoom-button {
   all: unset;
   display: inline-flex;
   color: $color-green02;
-  margin-top: 8px;
   cursor: pointer;
+  text-decoration: none;
   &:hover {
     color: $color-black;
   }
