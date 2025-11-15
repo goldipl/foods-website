@@ -34,7 +34,7 @@ export const MarkerData = [
   {
     id: 5,
     name: "Calimero Café - Warszawa Mokotów",
-    addressLine1: "il. Konstruktorska 7/u1,",
+    addressLine1: "ul. Konstruktorska 7/u1,",
     addressLine2: "02-676 Warszawa",
     link: "https://www.instagram.com/p/DKO9OF-IY7O/",
     position: [52.185395, 20.993358] as [number, number],
