@@ -2,7 +2,7 @@ export const MarkerData = [
   {
     id: 1,
     name: "Rola Pao",
-    addressLine1: "Al. Jerozolimskie 42,",
+    addressLine1: "al. Jerozolimskie 42,",
     addressLine2: "00-042 Warszawa",
     link: "https://www.instagram.com/reel/C-S0V-rIpJ0/",
     position: [52.230625, 21.014178] as [number, number],
@@ -18,7 +18,7 @@ export const MarkerData = [
   {
     id: 3,
     name: "Restauracja Wiesz Co Zjesz",
-    addressLine1: "plac Konstytucji 1,",
+    addressLine1: "pl. Konstytucji 1,",
     addressLine2: "00-647 Warszawa",
     link: "https://www.instagram.com/p/DGaKXYkoBiV/",
     position: [52.221044, 21.016888] as [number, number],
@@ -26,7 +26,7 @@ export const MarkerData = [
   {
     id: 4,
     name: "Groole",
-    addressLine1: "Jana i Jędrzeja Śniadeckich 8,",
+    addressLine1: "ul. Jana i Jędrzeja Śniadeckich 8,",
     addressLine2: "00-656 Warszawa",
     link: "https://www.instagram.com/p/DQKEYzmCNZg/",
     position: [52.221629, 21.015114] as [number, number],
@@ -34,7 +34,7 @@ export const MarkerData = [
   {
     id: 5,
     name: "Calimero Café - Warszawa Mokotów",
-    addressLine1: "Konstruktorska 7/u1,",
+    addressLine1: "il. Konstruktorska 7/u1,",
     addressLine2: "02-676 Warszawa",
     link: "https://www.instagram.com/p/DKO9OF-IY7O/",
     position: [52.185395, 20.993358] as [number, number],
@@ -42,7 +42,7 @@ export const MarkerData = [
   {
     id: 6,
     name: "Saska Sushi",
-    addressLine1: "Zwycięzców 4,",
+    addressLine1: "ul. Zwycięzców 4,",
     addressLine2: "03-941 Warszawa",
     link: "https://www.instagram.com/p/C-8CItzIVKk/",
     position: [52.23038, 21.0519] as [number, number],
