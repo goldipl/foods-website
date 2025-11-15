@@ -26,7 +26,7 @@ interface MapComponentProps {
 
 const MapComponent: React.FC<MapComponentProps> = ({
   center = [52.2297, 21.0122],
-  zoom = 13,
+  zoom = 5,
   height = "800px",
   width = "100%",
   zIndex = 0,
