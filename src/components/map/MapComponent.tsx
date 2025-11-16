@@ -42,7 +42,8 @@ const MapComponent: React.FC<MapComponentProps> = ({
     return (
       m.name.toLowerCase().includes(query) ||
       m.addressLine1.toLowerCase().includes(query) ||
-      m.addressLine2.toLowerCase().includes(query)
+      m.addressLine2.toLowerCase().includes(query) ||
+      m.country.toLowerCase().includes(query)
     );
   });
 
@@ -108,6 +109,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
                 <strong>{m.name}</strong>
                 <div>{m.addressLine1}</div>
                 <div>{m.addressLine2}</div>
+                <div>{m.country}</div>
                 <div>
                   <Link className="map-link" target="_blank" href={m.link}>
                     Zobacz to miejsce
@@ -125,7 +127,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
         <SearchBar
           value={search}
           onChange={setSearch}
-          placeholder="Szukaj po nazwie lub adresie..."
+          placeholder="Szukaj po nazwie, kraju lub adresie..."
         />
 
         {/* Table */}
@@ -135,6 +137,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
               <tr>
                 <th>Nazwa</th>
                 <th>Adres</th>
+                <th>Kraj</th>
                 <th>Link</th>
                 <th>Mapa</th>
               </tr>
@@ -146,6 +149,9 @@ const MapComponent: React.FC<MapComponentProps> = ({
                   <td>
                     <span className="table-address-line">{m.addressLine1}</span>
                     <span className="table-address-line">{m.addressLine2}</span>
+                  </td>
+                  <td>
+                    <span className="table-address-line">{m.country}</span>
                   </td>
                   <td>
                     <a
@@ -172,7 +178,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
               {filteredData.length === 0 && (
                 <tr>
                   <td
-                    colSpan={4}
+                    colSpan={5}
                     style={{ textAlign: "center", padding: "20px" }}
                   >
                     Brak wyników.
