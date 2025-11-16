@@ -5,6 +5,7 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { MarkerData } from "@/data/map/map";
 import SearchBar from "@/components/map/SearchBar";
+import Pagination from "@/components/common/Pagination";
 
 const greenIcon = new L.Icon({
   iconUrl:
@@ -203,27 +204,11 @@ const MapComponent: React.FC<MapComponentProps> = ({
         </div>
 
         {/* Pagination */}
-        {filteredData.length > 0 && (
-          <div className="pagination">
-            <button
-              disabled={currentPage === 1}
-              onClick={() => setCurrentPage((p) => p - 1)}
-            >
-              <span className="arrow-icon left">&#10132;</span> Poprzednia
-            </button>
-
-            <span className="pages">
-              Strona {currentPage} z {totalPages}
-            </span>
-
-            <button
-              disabled={currentPage === totalPages}
-              onClick={() => setCurrentPage((p) => p + 1)}
-            >
-              Następna <span className="arrow-icon right">&#10132;</span>
-            </button>
-          </div>
-        )}
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={setCurrentPage}
+        />
 
         <div className="primary-button">
           <Link href="/" className="primary-button__text">
