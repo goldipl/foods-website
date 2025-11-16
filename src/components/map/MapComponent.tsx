@@ -4,7 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { MarkerData } from "@/data/map/map";
-import Searchbar from "@/components/common/SearchBar";
+import Searchbar from "@/components/common/Searchbar";
 import Pagination from "@/components/common/Pagination";
 
 const greenIcon = new L.Icon({
