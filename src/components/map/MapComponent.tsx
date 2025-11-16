@@ -32,10 +32,17 @@ const MapComponent: React.FC<MapComponentProps> = ({
   zIndex = 0,
 }) => {
   const mapRef = useRef<L.Map | null>(null);
-
   const markersRef = useRef<Record<number, L.Marker>>({});
-
   const [search, setSearch] = useState("");
+
+  // Pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 10;
+
+  // Reset to page 1 when search changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [search]);
 
   const filteredData = MarkerData.filter((m) => {
     const query = search.toLowerCase();
@@ -46,6 +53,12 @@ const MapComponent: React.FC<MapComponentProps> = ({
       m.country.toLowerCase().includes(query)
     );
   });
+
+  const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+  const paginatedItems = filteredData.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
 
   const handleZoomTo = (
     position: [number, number],
@@ -143,16 +156,14 @@ const MapComponent: React.FC<MapComponentProps> = ({
               </tr>
             </thead>
             <tbody>
-              {filteredData.map((m) => (
+              {paginatedItems.map((m) => (
                 <tr key={m.id}>
                   <td>{m.name}</td>
                   <td>
                     <span className="table-address-line">{m.addressLine1}</span>
                     <span className="table-address-line">{m.addressLine2}</span>
                   </td>
-                  <td>
-                    <span className="table-address-line">{m.country}</span>
-                  </td>
+                  <td>{m.country}</td>
                   <td>
                     <a
                       href={m.link}
@@ -177,10 +188,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
 
               {filteredData.length === 0 && (
                 <tr>
-                  <td
-                    colSpan={5}
-                    style={{ textAlign: "center", padding: "20px" }}
-                  >
+                  <td colSpan={5} style={{ textAlign: "center", padding: 20 }}>
                     Brak wyników.
                   </td>
                 </tr>
@@ -188,6 +196,29 @@ const MapComponent: React.FC<MapComponentProps> = ({
             </tbody>
           </table>
         </div>
+
+        {/* Pagination */}
+        {filteredData.length > 0 && (
+          <div className="pagination">
+            <button
+              disabled={currentPage === 1}
+              onClick={() => setCurrentPage((p) => p - 1)}
+            >
+              <span className="arrow-icon left">&#10132;</span> Poprzednia
+            </button>
+
+            <span className="pages">
+              Strona {currentPage} z {totalPages}
+            </span>
+
+            <button
+              disabled={currentPage === totalPages}
+              onClick={() => setCurrentPage((p) => p + 1)}
+            >
+              Następna <span className="arrow-icon right">&#10132;</span>
+            </button>
+          </div>
+        )}
 
         <div className="primary-button">
           <Link href="/" className="primary-button__text">

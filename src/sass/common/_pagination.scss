@@ -1,0 +1,39 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+    @media (max-width: 992px) {
+      font-size: 12px;
+    }
+    .arrow-icon {
+      display: inline-block;
+      &.left {
+        transform: rotate(180deg) translateY(1px);
+      }
+    }
+    &:hover {
+      border-color: $color-green02;
+    }
+    &:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+  }
+  .pages {
+    @media (max-width: 992px) {
+      font-size: 12px;
+    }
+  }
+}
