@@ -145,6 +145,11 @@ const MapComponent: React.FC<MapComponentProps> = ({
 
         {/* Table */}
         <div className="places-table-container">
+          <h4>
+            Ilość bezglutenowych miejsc na mojej liście:{" "}
+            <strong>{filteredData.length}</strong>
+          </h4>
+
           <table className="places-table">
             <thead>
               <tr>

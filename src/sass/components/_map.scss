@@ -55,6 +55,9 @@
   padding-top: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  h4 {
+    font-weight: 400;
+  }
   @media (max-width: 992px) {
     overflow-x: scroll;
     &::before {
@@ -102,7 +105,7 @@
   border: 1px solid #ddd;
   background: #fff;
   width: 1200px;
-  margin: 0 auto;
+  margin: 16px auto 0;
   @media (max-width: 992px) {
     width: max-content;
   }
