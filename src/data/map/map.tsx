@@ -151,4 +151,20 @@ export const MarkerData = [
     link: "https://www.instagram.com/p/C9fe2dnIjcY/",
     position: [54.38364359658558, 18.590228049704542] as [number, number],
   },
+  {
+    id: 20,
+    name: "Marzano",
+    addressLine1: "Makarios Ave.III &,",
+    addressLine2: "Kalograion 6301, Larnaca, Cypr",
+    link: "https://www.instagram.com/p/C3IhmmhI9JO/",
+    position: [34.918174, 33.636509] as [number, number],
+  },
+  {
+    id: 21,
+    name: "Burger Shop Nicosia",
+    addressLine1: "Aristotelous 9,",
+    addressLine2: "Nicosia 1011, Cypr",
+    link: "https://www.instagram.com/p/C3IhmmhI9JO/",
+    position: [35.171311, 33.362075] as [number, number],
+  },
 ];
