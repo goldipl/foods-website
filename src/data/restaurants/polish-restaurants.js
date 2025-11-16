@@ -21,6 +21,7 @@ import bezglutenoweTrojmiasto from "./../../../public/img/restaurants/poland/021
 import bezglutenowyKrakow3 from "./../../../public/img/restaurants/poland/022_bezglutenowy_krakow.jpg";
 import bezglutenowaWawaCz3 from "./../../../public/img/restaurants/poland/023_bezglutenowa_warszawa_cz3.jpg";
 import bezglutenowyBialystok from "./../../../public/img/restaurants/poland/024_bezglutenowy_bialystok.jpg";
+import laCantinaWawa from "./../../../public/img/restaurants/poland/025_lacantina.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -252,5 +253,15 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Bezglutenowy Białystok",
+    },
+    {
+      id: 25,
+      href: "https://www.instagram.com/p/CvaC2vVIFZ-/",
+      imgSrc: laCantinaWawa,
+      altText: "La Cantina, Nowy Świat 64, Warszawa",
+      label: "Warszawa",
+      labelClass: "poland-label",
+      description:
+        "La Cantina, Nowy Świat 64, Warszawa",
     },
   ];
