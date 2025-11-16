@@ -51,7 +51,8 @@ const MapComponent: React.FC<MapComponentProps> = ({
       m.name.toLowerCase().includes(query) ||
       m.addressLine1.toLowerCase().includes(query) ||
       m.addressLine2.toLowerCase().includes(query) ||
-      m.country.toLowerCase().includes(query)
+      m.country.toLowerCase().includes(query) ||
+      m.city.toLowerCase().includes(query)
     );
   });
 
@@ -157,6 +158,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
                 <th>Nazwa</th>
                 <th>Adres</th>
                 <th>Kraj</th>
+                <th>Miasto</th>
                 <th>Link</th>
                 <th>Mapa</th>
               </tr>
@@ -170,6 +172,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
                     <span className="table-address-line">{m.addressLine2}</span>
                   </td>
                   <td>{m.country}</td>
+                  <td>{m.city}</td>
                   <td>
                     <a
                       href={m.link}
