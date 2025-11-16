@@ -15,7 +15,7 @@ export const MarkerData = [
     addressLine2: "00-116 Warszawa",
     country: "Polska",
     link: "https://www.instagram.com/p/DOinsrFiKNw/",
-    position: [52.23413583300887, 21.001684222639668] as [number, number],
+    position: [52.233993, 21.001082] as [number, number],
   },
   {
     id: 3,
@@ -123,7 +123,7 @@ export const MarkerData = [
     addressLine2: "00-042 Warszawa",
     country: "Polska",
     link: "https://www.instagram.com/p/DLVEaUoIBSe/",
-    position: [52.235587529785846, 21.018892830046784] as [number, number],
+    position: [52.235473, 21.018251] as [number, number],
   },
   {
     id: 15,
@@ -132,7 +132,7 @@ export const MarkerData = [
     addressLine2: "25-510 Kielce",
     country: "Polska",
     link: "https://www.instagram.com/p/DLSYH0_ocId/",
-    position: [50.873482936695815, 20.628988891902182] as [number, number],
+    position: [50.873151, 20.628746] as [number, number],
   },
   {
     id: 16,
@@ -141,7 +141,7 @@ export const MarkerData = [
     addressLine2: "25-006 Kielce",
     country: "Polska",
     link: "https://www.instagram.com/p/DJOsDa2Iq_8/",
-    position: [50.870869555534505, 20.625301109097713] as [number, number],
+    position: [50.870692, 20.624825] as [number, number],
   },
   {
     id: 17,
@@ -159,7 +159,7 @@ export const MarkerData = [
     addressLine2: "25-017 Kielce",
     country: "Polska",
     link: "https://www.instagram.com/p/DFItUPROedN/",
-    position: [50.869387978222115, 20.62301808686237] as [number, number],
+    position: [50.869253, 20.622304] as [number, number],
   },
   {
     id: 19,
