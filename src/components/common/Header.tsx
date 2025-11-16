@@ -210,6 +210,14 @@ const Header = () => {
                         Trójmiasto
                       </Link>
                     </li>
+                    <li>
+                      <Link
+                        href="/#restauracje-polska"
+                        onClick={handleCloseDropdown}
+                      >
+                        Poznań
+                      </Link>
+                    </li>
                   </ul>
                 </li>
                 <li className="nav-sub-expand">
