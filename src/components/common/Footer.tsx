@@ -39,6 +39,7 @@ const Footer = () => {
             <h2>Restauracje</h2>
             <Link href="#restauracje-polska">Polska</Link>
             <Link href="#restauracje-europa">Europa</Link>
+            <Link href="/bezglutenowe-miejsca">Mapa miejsc bezglutenowych</Link>
           </div>
           <div className="footer-col">
             <h2>Produkty</h2>
