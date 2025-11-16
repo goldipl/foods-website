@@ -1,12 +1,12 @@
 import React from "react";
 
-interface SearchBarProps {
+interface SearchbarProps {
   value: string;
   onChange: (value: string) => void;
   placeholder?: string;
 }
 
-const SearchBar: React.FC<SearchBarProps> = ({
+const Searchbar: React.FC<SearchbarProps> = ({
   value,
   onChange,
   placeholder,
@@ -24,4 +24,4 @@ const SearchBar: React.FC<SearchBarProps> = ({
   );
 };
 
-export default SearchBar;
+export default Searchbar;

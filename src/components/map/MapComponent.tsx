@@ -4,7 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { MarkerData } from "@/data/map/map";
-import SearchBar from "@/components/map/SearchBar";
+import Searchbar from "@/components/common/SearchBar";
 import Pagination from "@/components/common/Pagination";
 
 const greenIcon = new L.Icon({
@@ -138,7 +138,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
           <h3>Lista miejsc w formie tabelarycznej</h3>
         </div>
 
-        <SearchBar
+        <Searchbar
           value={search}
           onChange={setSearch}
           placeholder="Szukaj po nazwie, kraju lub adresie..."
