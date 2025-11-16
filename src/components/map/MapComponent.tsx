@@ -25,8 +25,8 @@ interface MapComponentProps {
 }
 
 const MapComponent: React.FC<MapComponentProps> = ({
-  center = [52.2297, 21.0122],
-  zoom = 5,
+  center = [48.2297, 21.0122],
+  zoom = 4,
   height = "800px",
   width = "100%",
   zIndex = 0,
@@ -75,6 +75,10 @@ const MapComponent: React.FC<MapComponentProps> = ({
           <h4>
             Przeglądaj mapę, <strong>klikaj w znaczniki</strong> i przemierzaj
             świat bezglutenowych miejscówek i restauracji.
+          </h4>
+          <h4>
+            Miejsca sprawdzone przeze mnie osobiście. Do każdej lokalizacji
+            dołączam relację w formie wideo — zapraszam do oglądania!
           </h4>
         </div>
 
