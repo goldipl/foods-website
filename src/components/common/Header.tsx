@@ -167,7 +167,7 @@ const Header = () => {
                         href="/#restauracje-polska"
                         onClick={handleCloseDropdown}
                       >
-                        Gdańsk
+                        Trójmiasto
                       </Link>
                     </li>
                     <li>
