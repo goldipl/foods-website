@@ -23,7 +23,7 @@
         transform: rotate(180deg) translateY(1px);
       }
     }
-    &:hover {
+    &:hover:not(:disabled) {
       border-color: $color-green02;
     }
     &:disabled {
