@@ -22,6 +22,8 @@ import domoweLodyBezNabialuBezGlutenu from "./../../../public/img/recipes/desser
 import tygrysekMatcha from "./../../../public/img/recipes/desserts/022_ciasto_tygrysek_matcha.jpg";
 import nalesniczkiBezglutenowe from "./../../../public/img/recipes/desserts/023_nalesniki_bezglutenowe.jpg";
 import cynamonkiOrzechowe from "./../../../public/img/recipes/desserts/024_cynamonki_z_polewa_orzechowa.jpg";
+import krucheZJagodami from "./../../../public/img/recipes/desserts/025_kruche_z_jagodami.jpg";
+import pistacjoweTiramisu from "./../../../public/img/recipes/desserts/026_pistacjowe_tiramisu.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -263,5 +265,25 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Bezglutenowe cynamonki z polewą orzechową i kruszonymi orzechami laskowymi",
+    },
+    {
+      id: 25,
+      href: "https://www.instagram.com/p/CvC-pbLMxJ3/",
+      imgSrc: krucheZJagodami,
+      altText: "Kruche ciasto z jagodami 🫐 BEZ GLUTENU | BEZ NABIAŁU | BEZ CUKRU",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Kruche ciasto z jagodami 🫐 BEZ GLUTENU | BEZ NABIAŁU | BEZ CUKRU",
+    },
+    {
+      id: 26,
+      href: "https://www.instagram.com/p/CuxLZoos78L/",
+      imgSrc: pistacjoweTiramisu,
+      altText: "Pistacjowe tiramisu 💚☕️💚 BEZ GLUTENU | BEZ NABIAŁU | BEZ CUKRU",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Pistacjowe tiramisu 💚☕️💚 BEZ GLUTENU | BEZ NABIAŁU | BEZ CUKRU",
     },
 ];

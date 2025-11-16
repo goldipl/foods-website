@@ -17,6 +17,10 @@ import PatilaDonerKebab from "./../../../public/img/restaurants/poland/017_Patil
 import Groole from "./../../../public/img/restaurants/poland/018_Groole.jpg";
 import sushiWesola from "./../../../public/img/restaurants/poland/019_sushi_wesola.jpg";
 import ciachoBezCukruRadom from "./../../../public/img/restaurants/poland/020_ciacho_bez_cukru_radom.jpg";
+import bezglutenoweTrojmiasto from "./../../../public/img/restaurants/poland/021_bezglutenowe_trojmiasto.jpg";
+import bezglutenowyKrakow3 from "./../../../public/img/restaurants/poland/022_bezglutenowy_krakow.jpg";
+import bezglutenowaWawaCz3 from "./../../../public/img/restaurants/poland/023_bezglutenowa_warszawa_cz3.jpg";
+import bezglutenowyBialystok from "./../../../public/img/restaurants/poland/024_bezglutenowy_bialystok.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -208,5 +212,45 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Ciacho Bez Cukru Radom, Bolesława Chrobrego 22, 26-615 Radom",
+    },
+    {
+      id: 21,
+      href: "https://www.instagram.com/p/C8uhcN0oCa6/",
+      imgSrc: bezglutenoweTrojmiasto,
+      altText: "Bezglutenowe Trójmiasto",
+      label: "Trójmiasto",
+      labelClass: "poland-label",
+      description:
+        "Bezglutenowe Trójmiasto",
+    },
+    {
+      id: 22,
+      href: "https://www.instagram.com/p/C89218eo8qD/",
+      imgSrc: bezglutenowyKrakow3,
+      altText: "Bezglutenowy Kraków",
+      label: "Kraków",
+      labelClass: "poland-label",
+      description:
+        "Bezglutenowy Kraków",
+    },
+    {
+      id: 23,
+      href: "https://www.instagram.com/p/C3NqMMZIakC/",
+      imgSrc: bezglutenowaWawaCz3,
+      altText: "Bezglutenowa Warszawa cz. 3",
+      label: "Warszawa",
+      labelClass: "poland-label",
+      description:
+        "Bezglutenowa Warszawa cz. 3",
+    },
+    {
+      id: 24,
+      href: "https://www.instagram.com/p/C2pbmKyoYsK/",
+      imgSrc: bezglutenowyBialystok,
+      altText: "Bezglutenowy Białystok",
+      label: "Białystok",
+      labelClass: "poland-label",
+      description:
+        "Bezglutenowy Białystok",
     },
   ];

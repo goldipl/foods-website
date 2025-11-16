@@ -9,6 +9,7 @@ import rzymCz3 from "./../../../public/img/restaurants/europe/006_rzym_cz3.jpg";
 import rzymCz4 from "./../../../public/img/restaurants/europe/007_rzym_cz4.jpg";
 import rzymCz5 from "./../../../public/img/restaurants/europe/008_rzym_cz5.jpg";
 import florencjaCz1 from "./../../../public/img/restaurants/europe/009_florencja_cz1.jpg";
+import rzymCz6 from "./../../../public/img/restaurants/europe/012_rzym_cz6.jpg";
 
 export const  europeanRestaurantsData = [
     {
@@ -120,5 +121,15 @@ export const  europeanRestaurantsData = [
       labelClass: "europe-label",
       description:
         "Bezglutenowy Cypr i m.in. Burger Shop, Nikozja, Cypr",
+    },
+    {
+      id: 12,
+      href: "https://www.instagram.com/p/CzePA9Bomu4/",
+      imgSrc: rzymCz6,
+      altText: "Bezglutenowy Rzym cz.6",
+      label: "Rzym",
+      labelClass: "europe-label",
+      description:
+        "Bezglutenowy Rzym cz.6",
     },
   ];
