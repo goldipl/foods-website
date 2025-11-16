@@ -16,6 +16,7 @@ import TerraNostraPizza from "./../../../public/img/restaurants/poland/016_Terra
 import PatilaDonerKebab from "./../../../public/img/restaurants/poland/017_PatilaDonerKebab.jpg";
 import Groole from "./../../../public/img/restaurants/poland/018_Groole.jpg";
 import sushiWesola from "./../../../public/img/restaurants/poland/019_sushi_wesola.jpg";
+import ciachoBezCukruRadom from "./../../../public/img/restaurants/poland/020_ciacho_bez_cukru_radom.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -197,5 +198,15 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Sushi Wesoła, ul. Wspólna 37a, 05-075 Warszawa",
+    },
+    {
+      id: 20,
+      href: "https://www.instagram.com/p/DMF40xkIeNF/",
+      imgSrc: ciachoBezCukruRadom,
+      altText: "Ciacho Bez Cukru Radom, Bolesława Chrobrego 22, 26-615 Radom",
+      label: "Radom",
+      labelClass: "poland-label",
+      description:
+        "Ciacho Bez Cukru Radom, Bolesława Chrobrego 22, 26-615 Radom",
     },
   ];

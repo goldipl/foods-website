@@ -404,4 +404,13 @@ export const MarkerData = [
     link: "https://www.instagram.com/p/DABZsxyId-Q/",
     position: [41.72676, 12.293966] as [number, number],
   },
+  {
+    id: 46,
+    name: "Ciacho bez cukru",
+    addressLine1: "Bolesława Chrobrego 22,",
+    addressLine2: "26-615 Radom",
+    country: "Polska",
+    link: "https://www.instagram.com/p/DMF40xkIeNF/",
+    position: [51.407785596386496, 21.157769942186327] as [number, number],
+  },
 ];
