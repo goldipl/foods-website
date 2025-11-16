@@ -101,9 +101,11 @@
   border-collapse: collapse;
   border: 1px solid #ddd;
   background: #fff;
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
-  width: max-content;
+  @media (max-width: 992px) {
+    width: max-content;
+  }
 
   th,
   td {
