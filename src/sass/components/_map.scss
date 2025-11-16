@@ -50,9 +50,50 @@
 }
 
 .places-table-container {
-  width: 100%;
-  overflow-x: auto;
+  position: relative;
   margin-top: 2rem;
+  padding-top: 2rem;
+  overflow-x: scroll;
+  max-width: 1200px;
+  margin: 0 auto;
+  @media (max-width: 992px) {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 20px;
+      top: 0;
+      left: 12px;
+      background: url(./../../../public/icons/common/swipe-hand.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      animation: swipe-icon 1.6s ease-in-out infinite;
+    }
+    &::after {
+      content: "Dotknij i przesuń, żeby zobaczyć więcej";
+      position: absolute;
+      width: 240px;
+      height: 10px;
+      top: 2px;
+      left: 40px;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 16px;
+      color: #505050;
+    }
+  }
+}
+
+@keyframes swipe-icon {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .places-table {
@@ -62,6 +103,7 @@
   background: #fff;
   max-width: 1200px;
   margin: 0 auto;
+  width: max-content;
 
   th,
   td {
