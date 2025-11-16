@@ -194,6 +194,22 @@ const Header = () => {
                         Miejsce Piastowe
                       </Link>
                     </li>
+                    <li>
+                      <Link
+                        href="/#restauracje-polska"
+                        onClick={handleCloseDropdown}
+                      >
+                        Białystok
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/#restauracje-polska"
+                        onClick={handleCloseDropdown}
+                      >
+                        Trójmiasto
+                      </Link>
+                    </li>
                   </ul>
                 </li>
                 <li className="nav-sub-expand">
