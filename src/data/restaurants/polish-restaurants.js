@@ -22,6 +22,7 @@ import bezglutenowyKrakow3 from "./../../../public/img/restaurants/poland/022_be
 import bezglutenowaWawaCz3 from "./../../../public/img/restaurants/poland/023_bezglutenowa_warszawa_cz3.jpg";
 import bezglutenowyBialystok from "./../../../public/img/restaurants/poland/024_bezglutenowy_bialystok.jpg";
 import laCantinaWawa from "./../../../public/img/restaurants/poland/025_lacantina.jpg";
+import pizzaNaturalnaPoznan from "./../../../public/img/restaurants/poland/026_pizza_naturalna_poznan.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -263,5 +264,15 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "La Cantina, Nowy Świat 64, Warszawa",
+    },
+    {
+      id: 26,
+      href: "https://www.instagram.com/bezglutenowakarola/reel/DKpD0PKocvZ/",
+      imgSrc: pizzaNaturalnaPoznan,
+      altText: "Pizza Naturalna, Hetmańska 26/2 wejście od, Kazimierza Jarochowskiego, 60-252 Poznań",
+      label: "Poznań",
+      labelClass: "poland-label",
+      description:
+        "Pizza Naturalna, Hetmańska 26/2 wejście od, Kazimierza Jarochowskiego, 60-252 Poznań",
     },
   ];
