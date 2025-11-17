@@ -1,0 +1,32 @@
+.header-social-link.has-tooltip {
+  position: relative;
+
+  .tooltip {
+    position: absolute;
+    bottom: -120%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: $color-black;
+    color: $white-bg-color;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 50;
+  }
+
+  &:hover .tooltip {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@media (max-width: 1180px) {
+  .header-social-link.has-tooltip .tooltip {
+    display: none !important;
+  }
+}

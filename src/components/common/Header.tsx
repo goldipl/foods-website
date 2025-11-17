@@ -396,7 +396,7 @@ const Header = () => {
                 Kontakt
               </Link>
             </li>
-            <li className="header-social-link">
+            <li className="header-social-link has-tooltip">
               <Link
                 href="https://www.instagram.com/bezglutenowakarola/"
                 onClick={handleCloseDropdown}
@@ -411,8 +411,9 @@ const Header = () => {
                 />
                 <span>@bezglutenowakarola</span>
               </Link>
+              <span className="tooltip">Instagram</span>
             </li>
-            <li className="header-social-link">
+            <li className="header-social-link has-tooltip">
               <Link
                 href="https://www.youtube.com/@bezglutenowakarola"
                 onClick={handleCloseDropdown}
@@ -427,8 +428,9 @@ const Header = () => {
                 />
                 <span>@bezglutenowakarola</span>
               </Link>
+              <span className="tooltip">YouTube</span>
             </li>
-            <li className="header-social-link">
+            <li className="header-social-link has-tooltip">
               <Link
                 href="https://www.facebook.com/profile.php?id=61576336200554"
                 onClick={handleCloseDropdown}
@@ -443,8 +445,9 @@ const Header = () => {
                 />
                 <span>@bezglutenowakarola</span>
               </Link>
+              <span className="tooltip">Facebook</span>
             </li>
-            <li className="header-social-link">
+            <li className="header-social-link has-tooltip">
               <Link href="/bezglutenowe-miejsca" onClick={handleCloseDropdown}>
                 <Image
                   className="social-icon"
@@ -455,6 +458,7 @@ const Header = () => {
                 />
                 <span>Mapa miejsc bezglutenowych</span>
               </Link>
+              <span className="tooltip">Mapa miejsc bezglutenowych</span>
             </li>
           </ul>
         </nav>
