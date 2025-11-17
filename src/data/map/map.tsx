@@ -91,7 +91,7 @@ export const MarkerData = [
   },
   {
     id: 10,
-    name: "OTSU & MisziTo",
+    name: "Sushi OTSU & MisziTo",
     addressLine1: "ul. Wielicka 259,",
     addressLine2: "30-663 Kraków",
     country: "Polska",
