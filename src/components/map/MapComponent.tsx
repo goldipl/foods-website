@@ -145,13 +145,15 @@ const MapComponent: React.FC<MapComponentProps> = ({
           placeholder="Szukaj po nazwie, kraju lub adresie..."
         />
 
-        {/* Table */}
-        <div className="places-table-container">
+        <div className="seo-table-container">
           <h4>
             Ilość bezglutenowych miejsc na mojej liście:{" "}
             <strong>{filteredData.length}</strong>
           </h4>
+        </div>
 
+        {/* Table */}
+        <div className="places-table-container">
           <table className="places-table">
             <thead>
               <tr>
