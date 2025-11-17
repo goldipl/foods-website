@@ -321,16 +321,26 @@ export const MarkerData = [
   },
   {
     id: 33,
+    name: "Caffè del Teatro Niccolin",
+    addressLine1: "Via Ricasoli, 3/5,",
+    addressLine2: "50122 Firenze FI",
+    country: "Włochy",
+    city: "Rzym",
+    link: "https://www.instagram.com/p/DAkgyrjI0VP/",
+    position: [43.77364922908441, 11.25600583543706] as [number, number],
+  },
+  {
+    id: 34,
     name: "Le Altre Farine Del Mulino",
     addressLine1: "Via di Porta Cavalleggeri, 151/153,",
     addressLine2: "00165 Roma RM",
     country: "Włochy",
     city: "Rzym",
     link: "https://www.instagram.com/p/DBVkMzgI27-/",
-    position: [43.77364922908441, 11.25600583543706] as [number, number],
+    position: [41.899161828307996, 12.452780981815277] as [number, number],
   },
   {
-    id: 34,
+    id: 35,
     name: "La Soffitta Renovatio",
     addressLine1: "Piazza del Risorgimento, 46/a,",
     addressLine2: "00192 Roma RM",
@@ -340,7 +350,7 @@ export const MarkerData = [
     position: [41.9059575724857, 12.45919704729351] as [number, number],
   },
   {
-    id: 35,
+    id: 36,
     name: "New Food Gluten Free - Piazza Fiume",
     addressLine1: "Via Salaria, 70, ",
     addressLine2: "00198 Roma RM",
@@ -350,7 +360,7 @@ export const MarkerData = [
     position: [41.91297965008312, 12.498337195233336] as [number, number],
   },
   {
-    id: 36,
+    id: 37,
     name: "McDonald's Roma Piazzale Flaminio",
     addressLine1: "Piazzale Flaminio, 15,",
     addressLine2: "00196 Roma RM",
@@ -360,7 +370,7 @@ export const MarkerData = [
     position: [41.91216608371564, 12.475868076747867] as [number, number],
   },
   {
-    id: 37,
+    id: 38,
     name: "New Food Gluten Free - Ponte Sisto",
     addressLine1: "P.za S. Vincenzo Pallotti, 208,",
     addressLine2: "00186 Roma RM",
@@ -370,7 +380,7 @@ export const MarkerData = [
     position: [41.892949, 12.471325] as [number, number],
   },
   {
-    id: 38,
+    id: 39,
     name: "Mama Eat Roma",
     addressLine1: "Via di S. Cosimato, 7/9,",
     addressLine2: "00153 Roma RM",
@@ -380,7 +390,7 @@ export const MarkerData = [
     position: [41.888419576274856, 12.47057215606983] as [number, number],
   },
   {
-    id: 39,
+    id: 40,
     name: "Pompi Trevi",
     addressLine1: "Via Santa Maria in Via, 17,",
     addressLine2: "00187 Roma RM",
@@ -390,7 +400,7 @@ export const MarkerData = [
     position: [41.90069917758035, 12.481810869655694] as [number, number],
   },
   {
-    id: 40,
+    id: 41,
     name: "Zenzero Ristorante Pizzeria Bar",
     addressLine1: "Via Mar dei Sargassi, 68,",
     addressLine2: "00122 Roma RM",
@@ -400,7 +410,7 @@ export const MarkerData = [
     position: [41.728306030942925, 12.303260256372933] as [number, number],
   },
   {
-    id: 41,
+    id: 42,
     name: "Bomber laboratorio gelateria pasticceria",
     addressLine1: "Via dei Velieri, 88,",
     addressLine2: "00121 Lido di Ostia RM",
@@ -410,7 +420,7 @@ export const MarkerData = [
     position: [41.73664844323322, 12.276752746889345] as [number, number],
   },
   {
-    id: 42,
+    id: 43,
     name: "Status Quo",
     addressLine1: "Corso Regina Maria Pia, 25/27,",
     addressLine2: "00122 Roma RM",
@@ -420,7 +430,7 @@ export const MarkerData = [
     position: [41.73030909349739, 12.283177955355587] as [number, number],
   },
   {
-    id: 43,
+    id: 44,
     name: "Zero Nodi",
     addressLine1: "Via Lucio Coilio, 17,",
     addressLine2: "00122 Lido di Ostia RM",
@@ -430,7 +440,7 @@ export const MarkerData = [
     position: [41.730274, 12.27742] as [number, number],
   },
   {
-    id: 44,
+    id: 45,
     name: "La Puntarella Pazza",
     addressLine1: "Piazza Vega, 10,",
     addressLine2: "00122 Lido di Ostia RM",
@@ -440,7 +450,7 @@ export const MarkerData = [
     position: [41.72676, 12.293966] as [number, number],
   },
   {
-    id: 45,
+    id: 46,
     name: "Ciacho bez cukru",
     addressLine1: "ul. Bolesława Chrobrego 22,",
     addressLine2: "26-615 Radom",
@@ -450,7 +460,7 @@ export const MarkerData = [
     position: [51.407785596386496, 21.157769942186327] as [number, number],
   },
   {
-    id: 46,
+    id: 47,
     name: "Trattoria Sano",
     addressLine1: "al. Grunwaldzka 415,",
     addressLine2: "80-309 Gdańsk",
@@ -460,7 +470,7 @@ export const MarkerData = [
     position: [54.400759271921515, 18.574999526954187] as [number, number],
   },
   {
-    id: 47,
+    id: 48,
     name: "Chleb z natury Piekarnia bezglutenowa",
     addressLine1: "al. Klonowa 1,",
     addressLine2: "80-264 Gdańsk",
@@ -470,7 +480,7 @@ export const MarkerData = [
     position: [54.380851025547216, 18.604620678540396] as [number, number],
   },
   {
-    id: 48,
+    id: 49,
     name: "EKOSOPOT",
     addressLine1: "ul. 3 Maja 18,",
     addressLine2: "81-847 Sopot",
@@ -480,7 +490,7 @@ export const MarkerData = [
     position: [54.43797173767725, 18.57168693992125] as [number, number],
   },
   {
-    id: 49,
+    id: 50,
     name: "Pod Baranem",
     addressLine1: "ul. Świętej Gertrudy 21,",
     addressLine2: "31-048 Kraków",
@@ -490,7 +500,7 @@ export const MarkerData = [
     position: [50.05497271819037, 19.940477749544698] as [number, number],
   },
   {
-    id: 50,
+    id: 51,
     name: "Fit Cake Warszawa Wola",
     addressLine1: "Browary Warszawskie, Krochmalna 56/lokal U6",
     addressLine2: "00-864 Warszawa",
@@ -500,7 +510,7 @@ export const MarkerData = [
     position: [52.23568797058899, 20.98633148454472] as [number, number],
   },
   {
-    id: 51,
+    id: 52,
     name: "La Cantina",
     addressLine1: "ul. Nowy Świat 64,",
     addressLine2: "00-357 Warszawa",
@@ -510,7 +520,7 @@ export const MarkerData = [
     position: [52.23649194621308, 21.01843185756062] as [number, number],
   },
   {
-    id: 52,
+    id: 53,
     name: "Restauracja RAJ",
     addressLine1: "ul. Jana Kilińskiego 13,",
     addressLine2: "15-089 Białystok",
@@ -520,7 +530,7 @@ export const MarkerData = [
     position: [53.13221887052059, 23.16568485306309] as [number, number],
   },
   {
-    id: 53,
+    id: 54,
     name: "Cukiernia Piekarnia Bezglutenowa Sweet Fit & Eat",
     addressLine1: "ul. Legionowa 30/6,",
     addressLine2: "15-281 Białystok",
@@ -530,7 +540,7 @@ export const MarkerData = [
     position: [53.12831332313275, 23.152604845953547] as [number, number],
   },
   {
-    id: 54,
+    id: 55,
     name: "Cimarra 4 Pizzeria & Cocktail Bar",
     addressLine1: "Via Cimarra, 4,",
     addressLine2: "00184 Roma RM",
@@ -540,7 +550,7 @@ export const MarkerData = [
     position: [41.896158149896245, 12.490627943426311] as [number, number],
   },
   {
-    id: 55,
+    id: 56,
     name: "Pizza in Trevi",
     addressLine1: "Via di S. Vincenzo, 30/30A,",
     addressLine2: "00187 Roma RM",
@@ -550,7 +560,7 @@ export const MarkerData = [
     position: [41.90064545763019, 12.483784580711305] as [number, number],
   },
   {
-    id: 56,
+    id: 57,
     name: "BEZ Piekarnia Bezglutenowa",
     addressLine1: "ul. Nowy Świat 64,",
     addressLine2: "00-357 Warszawa",
@@ -560,7 +570,7 @@ export const MarkerData = [
     position: [52.23653536845664, 21.01868674962378] as [number, number],
   },
   {
-    id: 57,
+    id: 58,
     name: "Pizza Naturalna",
     addressLine1: "ul. Hetmańska 26/2,",
     addressLine2: "60-252 Poznań",
