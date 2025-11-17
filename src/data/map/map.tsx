@@ -56,7 +56,7 @@ export const MarkerData = [
     addressLine2: "03-941 Warszawa",
     country: "Polska",
     city: "Warszawa",
-    link: "https://www.instagram.com/p/C-8CItzIVKk/",
+    link: "https://www.instagram.com/p/DRKgiBQCJJV/",
     position: [52.23031990775157, 21.05195050386571] as [number, number],
   },
   {
