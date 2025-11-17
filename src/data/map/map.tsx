@@ -337,7 +337,7 @@ export const MarkerData = [
     country: "Włochy",
     city: "Rzym",
     link: "https://www.instagram.com/p/DBVkMzgI27-/",
-    position: [41.899161828307996, 12.452780981815277] as [number, number],
+    position: [41.899063, 12.452232] as [number, number],
   },
   {
     id: 35,
@@ -367,7 +367,7 @@ export const MarkerData = [
     country: "Włochy",
     city: "Rzym",
     link: "https://www.instagram.com/p/DAcz8_QIabG/",
-    position: [41.91216608371564, 12.475868076747867] as [number, number],
+    position: [41.912064, 12.475655] as [number, number],
   },
   {
     id: 38,
@@ -397,7 +397,7 @@ export const MarkerData = [
     country: "Włochy",
     city: "Rzym",
     link: "https://www.instagram.com/p/DAKxCTaIF9Y/",
-    position: [41.90069917758035, 12.481810869655694] as [number, number],
+    position: [41.900701, 12.481722] as [number, number],
   },
   {
     id: 41,
@@ -557,7 +557,7 @@ export const MarkerData = [
     country: "Włochy",
     city: "Rzym",
     link: "https://www.instagram.com/p/CzePA9Bomu4/",
-    position: [41.90064545763019, 12.483784580711305] as [number, number],
+    position: [41.900685, 12.483604] as [number, number],
   },
   {
     id: 57,
