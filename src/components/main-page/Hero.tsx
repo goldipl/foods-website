@@ -75,6 +75,26 @@ const Hero = () => {
             <div className="slide-content">
               <div className="swiper-slide-box">
                 <div className="swiper-slide-box__text">
+                  <h2>Mapa miejsc bezglutenowych</h2>
+                  <Link className="hero-cta" href="/bezglutenowe-miejsca">
+                    Sprawdź
+                  </Link>
+                </div>
+                <div className="swiper-slide-box__img">
+                  <Image
+                    src={glutenFreeHeroMap}
+                    alt="Mapa miejsc bezglutenowych"
+                    width={450}
+                    height={450}
+                  ></Image>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="slide-content">
+              <div className="swiper-slide-box">
+                <div className="swiper-slide-box__text">
                   <h2>Bezglutenowe obiady</h2>
                   <Link className="hero-cta" href="#obiady">
                     Sprawdź przepisy
@@ -184,26 +204,6 @@ const Hero = () => {
                   <Image
                     src={bezglutenoweHalloween}
                     alt="Bezglutenowe wydarzenia"
-                    width={450}
-                    height={450}
-                  ></Image>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-content">
-              <div className="swiper-slide-box">
-                <div className="swiper-slide-box__text">
-                  <h2>Mapa miejsc bezglutenowych</h2>
-                  <Link className="hero-cta" href="/bezglutenowe-miejsca">
-                    Sprawdź
-                  </Link>
-                </div>
-                <div className="swiper-slide-box__img">
-                  <Image
-                    src={glutenFreeHeroMap}
-                    alt="Mapa miejsc bezglutenowych"
                     width={450}
                     height={450}
                   ></Image>
