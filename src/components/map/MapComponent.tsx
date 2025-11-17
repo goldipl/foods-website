@@ -94,8 +94,16 @@ const MapComponent: React.FC<MapComponentProps> = ({
           </h4>
           <h4>
             Miejsca sprawdzone przeze mnie osobiście. Do każdej lokalizacji
-            dołączam relację w formie wideo — zapraszam do oglądania!
+            dołączam relację w formie foto/wideo — zapraszam do oglądania!
           </h4>
+          <div className="primary-button">
+            <Link
+              href="#tabela-miejsc-bezglutenowych"
+              className="primary-button__text"
+            >
+              Przejdź do tabeli
+            </Link>
+          </div>
         </div>
 
         {/* Map */}
@@ -135,85 +143,94 @@ const MapComponent: React.FC<MapComponentProps> = ({
           ))}
         </MapContainer>
 
-        <div className="section-title">
-          <h3>Lista miejsc w formie tabelarycznej</h3>
-        </div>
+        <div id="tabela-miejsc-bezglutenowych">
+          <div className="section-title">
+            <h3>Lista miejsc w formie tabelarycznej</h3>
+          </div>
 
-        <Searchbar
-          value={search}
-          onChange={setSearch}
-          placeholder="Szukaj po nazwie, kraju lub adresie..."
-        />
+          <Searchbar
+            value={search}
+            onChange={setSearch}
+            placeholder="Szukaj po nazwie, kraju lub adresie..."
+          />
 
-        <div className="seo-table-container">
-          <h4>
-            Ilość bezglutenowych miejsc na mojej liście:{" "}
-            <strong>{filteredData.length}</strong>
-          </h4>
-        </div>
+          <div className="seo-table-container">
+            <h4>
+              Ilość bezglutenowych miejsc na mojej liście:{" "}
+              <strong>{filteredData.length}</strong>
+            </h4>
+          </div>
 
-        {/* Table */}
-        <div className="places-table-container">
-          <table className="places-table">
-            <thead>
-              <tr>
-                <th>Nazwa</th>
-                <th>Adres</th>
-                <th>Kraj</th>
-                <th>Miasto</th>
-                <th>Link</th>
-                <th>Mapa</th>
-              </tr>
-            </thead>
-            <tbody>
-              {paginatedItems.map((m) => (
-                <tr key={m.id}>
-                  <td>{m.name}</td>
-                  <td>
-                    <span className="table-address-line">{m.addressLine1}</span>
-                    <span className="table-address-line">{m.addressLine2}</span>
-                  </td>
-                  <td>{m.country}</td>
-                  <td>{m.city}</td>
-                  <td>
-                    <a
-                      href={m.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="places-link"
-                    >
-                      Zobacz to miejsce
-                    </a>
-                  </td>
-                  <td>
-                    <button
-                      onClick={() => handleZoomTo(m.position, 17, m.id)}
-                      className="zoom-button"
-                      type="button"
-                    >
-                      🔍 Pokaż na mapie
-                    </button>
-                  </td>
-                </tr>
-              ))}
-
-              {filteredData.length === 0 && (
+          {/* Table */}
+          <div className="places-table-container">
+            <table className="places-table">
+              <thead>
                 <tr>
-                  <td colSpan={5} style={{ textAlign: "center", padding: 20 }}>
-                    Brak wyników.
-                  </td>
+                  <th>Nazwa</th>
+                  <th>Adres</th>
+                  <th>Kraj</th>
+                  <th>Miasto</th>
+                  <th>Link</th>
+                  <th>Mapa</th>
                 </tr>
-              )}
-            </tbody>
-          </table>
-        </div>
+              </thead>
+              <tbody>
+                {paginatedItems.map((m) => (
+                  <tr key={m.id}>
+                    <td>{m.name}</td>
+                    <td>
+                      <span className="table-address-line">
+                        {m.addressLine1}
+                      </span>
+                      <span className="table-address-line">
+                        {m.addressLine2}
+                      </span>
+                    </td>
+                    <td>{m.country}</td>
+                    <td>{m.city}</td>
+                    <td>
+                      <a
+                        href={m.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="places-link"
+                      >
+                        Zobacz to miejsce
+                      </a>
+                    </td>
+                    <td>
+                      <button
+                        onClick={() => handleZoomTo(m.position, 17, m.id)}
+                        className="zoom-button"
+                        type="button"
+                      >
+                        🔍 Pokaż na mapie
+                      </button>
+                    </td>
+                  </tr>
+                ))}
 
-        {/* Pagination */}
-        <Pagination
-          currentPage={currentPage}
-          totalPages={totalPages}
-          onPageChange={setCurrentPage}
-        />
+                {filteredData.length === 0 && (
+                  <tr>
+                    <td
+                      colSpan={5}
+                      style={{ textAlign: "center", padding: 20 }}
+                    >
+                      Brak wyników.
+                    </td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Pagination */}
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={setCurrentPage}
+          />
+        </div>
 
         <div className="primary-button">
           <Link href="/" className="primary-button__text">
