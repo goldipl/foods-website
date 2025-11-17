@@ -23,6 +23,7 @@ import bezglutenowaWawaCz3 from "./../../../public/img/restaurants/poland/023_be
 import bezglutenowyBialystok from "./../../../public/img/restaurants/poland/024_bezglutenowy_bialystok.jpg";
 import laCantinaWawa from "./../../../public/img/restaurants/poland/025_lacantina.jpg";
 import pizzaNaturalnaPoznan from "./../../../public/img/restaurants/poland/026_pizza_naturalna_poznan.jpg";
+import saskaSushiWarszawaNoweMenu2025 from "./../../../public/img/restaurants/poland/027_saska_sushi_warszawa.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -274,5 +275,15 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Pizza Naturalna, Hetmańska 26/2 wejście od, Kazimierza Jarochowskiego, 60-252 Poznań",
+    },
+    {
+      id: 27,
+      href: "https://www.instagram.com/p/DRKgiBQCJJV/",
+      imgSrc: saskaSushiWarszawaNoweMenu2025,
+      altText: "Saska Sushi - nowe bezglutenowe menu. ul. Zwycięzców 4, 03-941 Warszawa",
+      label: "Warszawa",
+      labelClass: "poland-label",
+      description:
+        "Saska Sushi - nowe bezglutenowe menu. ul. Zwycięzców 4, 03-941 Warszawa",
     },
   ];
