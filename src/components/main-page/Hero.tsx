@@ -53,26 +53,6 @@ const Hero = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="slide-content">
-              <div className="swiper-slide-box text-right-side">
-                <div className="swiper-slide-box__img">
-                  <Image
-                    src={breakfastImg}
-                    alt="Bezglutenowa śniadaniowa tortilla z komosy ryżowej"
-                    width={450}
-                    height={450}
-                  ></Image>
-                </div>
-                <div className="swiper-slide-box__text">
-                  <h2>Bezglutenowe śniadania</h2>
-                  <Link className="hero-cta" href="#sniadania">
-                    Sprawdź przepisy
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-content">
               <div className="swiper-slide-box">
                 <div className="swiper-slide-box__text">
                   <h2>Mapa miejsc bezglutenowych</h2>
@@ -87,6 +67,26 @@ const Hero = () => {
                     width={450}
                     height={450}
                   ></Image>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="slide-content">
+              <div className="swiper-slide-box text-right-side">
+                <div className="swiper-slide-box__img">
+                  <Image
+                    src={breakfastImg}
+                    alt="Bezglutenowa śniadaniowa tortilla z komosy ryżowej"
+                    width={450}
+                    height={450}
+                  ></Image>
+                </div>
+                <div className="swiper-slide-box__text">
+                  <h2>Bezglutenowe śniadania</h2>
+                  <Link className="hero-cta" href="#sniadania">
+                    Sprawdź przepisy
+                  </Link>
                 </div>
               </div>
             </div>
