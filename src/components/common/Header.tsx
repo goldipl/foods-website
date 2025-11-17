@@ -5,6 +5,7 @@ import menuDownIcon from "./../../../public/icons/common/menu-down-icon.svg";
 import instagramIcon from "./../../../public/icons/common/instagram.svg";
 import youTubeIcon from "./../../../public/icons/common/youtube.svg";
 import facebookIcon from "./../../../public/icons/common/facebook.svg";
+import mapIcon from "./../../../public/img/map/map-icon.png";
 import Image from "next/image";
 
 const Header = () => {
@@ -437,10 +438,22 @@ const Header = () => {
                   className="social-icon"
                   src={facebookIcon.src}
                   alt="Facebook"
-                  height={28}
-                  width={28}
+                  height={24}
+                  width={24}
                 />
                 <span>@bezglutenowakarola</span>
+              </Link>
+            </li>
+            <li className="header-social-link">
+              <Link href="/bezglutenowe-miejsca" onClick={handleCloseDropdown}>
+                <Image
+                  className="social-icon"
+                  src={mapIcon.src}
+                  alt="Mapa"
+                  height={24}
+                  width={24}
+                />
+                <span>Mapa miejsc bezglutenowych</span>
               </Link>
             </li>
           </ul>
