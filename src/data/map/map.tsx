@@ -567,7 +567,7 @@ export const MarkerData = [
     country: "Polska",
     city: "Warszawa",
     link: "https://www.instagram.com/p/CvaC2vVIFZ-/",
-    position: [52.23653536845664, 21.01868674962378] as [number, number],
+    position: [52.23649194621308, 21.01823185756062] as [number, number],
   },
   {
     id: 58,
