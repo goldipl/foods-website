@@ -24,6 +24,7 @@ import nalesniczkiBezglutenowe from "./../../../public/img/recipes/desserts/023_
 import cynamonkiOrzechowe from "./../../../public/img/recipes/desserts/024_cynamonki_z_polewa_orzechowa.jpg";
 import krucheZJagodami from "./../../../public/img/recipes/desserts/025_kruche_z_jagodami.jpg";
 import pistacjoweTiramisu from "./../../../public/img/recipes/desserts/026_pistacjowe_tiramisu.jpg";
+import brownie from "./../../../public/img/recipes/desserts/027_brownie.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -285,5 +286,15 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Pistacjowe tiramisu 💚☕️💚 BEZ GLUTENU | BEZ NABIAŁU | BEZ CUKRU",
+    },
+    {
+      id: 27,
+      href: "https://www.instagram.com/p/DRNdz93CC75/",
+      imgSrc: brownie,
+      altText: "Bezglutenowe i ekspresowe brownie 🍫 od Celiko",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowe i ekspresowe brownie 🍫 od Celiko",
     },
 ];
