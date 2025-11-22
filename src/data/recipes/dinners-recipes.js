@@ -25,6 +25,7 @@ import burgerUdzcemKurczaka from "./../../../public/img/recipes/dinners/024_burg
 import makaronBurakamiFeta from "./../../../public/img/recipes/dinners/025_makaron_z_burakami_feta.jpg";
 import bezglutenowaPizzaSalamiBurrata from "./../../../public/img/recipes/dinners/026_bezglutenowa_pizza_salami_burrata.jpg";
 import kremCurry from "./../../../public/img/recipes/dinners/027_krem_z_curry.jpg";
+import viralowyKebab from "./../../../public/img/recipes/dinners/028_viralowy_kebab.jpg";
 
 export const dinnersRecipesData = [
     {
@@ -296,5 +297,15 @@ export const dinnersRecipesData = [
       labelClass: "dinner-label",
       description:
         "Zupa krem z dyni i marchwi",
+    },
+    {
+      id: 27,
+      href: "https://www.instagram.com/p/DRXeWR7CIX5/",
+      imgSrc: viralowyKebab,
+      altText: "WIRALOWY KEBAB BEZ GLUTENU 🥙",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "WIRALOWY KEBAB BEZ GLUTENU 🥙",
     },
   ];
