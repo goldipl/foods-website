@@ -579,4 +579,14 @@ export const MarkerData = [
     link: "https://www.instagram.com/bezglutenowakarola/reel/DKpD0PKocvZ/",
     position: [52.391339, 16.89023] as [number, number],
   },
+  {
+    id: 59,
+    name: "Restauracja BEZ GLUTENU Vernus Hotel Crocus****",
+    addressLine1: "ul. Tytusa Chałubińskiego 40,",
+    addressLine2: "34-500 Zakopane",
+    country: "Polska",
+    city: "Zakopane",
+    link: "https://www.instagram.com/p/DRkTfI4iDWE/",
+    position: [49.28623522349777, 19.971797655163456] as [number, number],
+  },
 ];

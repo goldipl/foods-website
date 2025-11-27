@@ -219,6 +219,14 @@ const Header = () => {
                         Poznań
                       </Link>
                     </li>
+                    <li>
+                      <Link
+                        href="/#restauracje-polska"
+                        onClick={handleCloseDropdown}
+                      >
+                        Zakopane
+                      </Link>
+                    </li>
                   </ul>
                 </li>
                 <li className="nav-sub-expand">

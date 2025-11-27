@@ -24,6 +24,7 @@ import bezglutenowyBialystok from "./../../../public/img/restaurants/poland/024_
 import laCantinaWawa from "./../../../public/img/restaurants/poland/025_lacantina.jpg";
 import pizzaNaturalnaPoznan from "./../../../public/img/restaurants/poland/026_pizza_naturalna_poznan.jpg";
 import saskaSushiWarszawaNoweMenu2025 from "./../../../public/img/restaurants/poland/027_saska_sushi_warszawa.jpg";
+import bezglutenoweZakopaneVernusCrocus from "./../../../public/img/restaurants/poland/028_bezglutenowe_zakopane.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -285,5 +286,15 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Saska Sushi - nowe bezglutenowe menu. ul. Zwycięzców 4, 03-941 Warszawa",
+    },
+    {
+      id: 28,
+      href: "https://www.instagram.com/p/DRkTfI4iDWE/",
+      imgSrc: bezglutenoweZakopaneVernusCrocus,
+      altText: "Restauracja BEZ GLUTENU Vernus Hotel Crocus****, ul. Tytusa Chałubińskiego 40, 34-500 Zakopane",
+      label: "Zakopane",
+      labelClass: "poland-label",
+      description:
+        "Restauracja BEZ GLUTENU Vernus Hotel Crocus****, ul. Tytusa Chałubińskiego 40, 34-500 Zakopane",
     },
   ];
