@@ -10,6 +10,7 @@ import pomysloweKanapkiCz1 from "./../../../public/img/recipes/breakfasts/009_po
 import pomysloweKanapkiCz2 from "./../../../public/img/recipes/breakfasts/010_pomyslowe_kanapki_cz2.jpg";
 import owsiankaMatcha from "./../../../public/img/recipes/breakfasts/011_owsianka_z_matcha.jpg";
 import bezglutenowyBajgiel from "./../../../public/img/recipes/breakfasts/012_bezglutenowy_bajgel.jpg";
+import zapiekaneBulkiSniadaniowe from "./../../../public/img/recipes/breakfasts/013_zapiekane_bulki_sniadaniowe.jpg";
 
 export const breakfastsRecipesData = [
     {
@@ -131,5 +132,15 @@ export const breakfastsRecipesData = [
       labelClass: "breakfast-label",
       description:
         "Bezglutenowy bajgiel z omletem jajecznym, cukinią, pieczarkami, sałatą, rzodkiewką, ogórkiem, majonezem",
+    },
+    {
+      id: 13,
+      href: "https://www.instagram.com/p/DRorNJ2iJT3/?img_index=1",
+      imgSrc: zapiekaneBulkiSniadaniowe,
+      altText: "Zapiekane bułki śniadaniowe",
+      label: "Śniadanie",
+      labelClass: "breakfast-label",
+      description:
+        "Zapiekane bułki śniadaniowe",
     },
   ];
