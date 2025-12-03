@@ -9,6 +9,7 @@ import spotkanieCeliakowCiachoBezCukruRadom from "./../../../public/img/events/0
 import wloskieSlodkosciVallongo from "./../../../public/img/events/009_wloskie_slodkosci_od_vallongo.jpg";
 import testCiastekIncola from "./../../../public/img/events/010_test_ciastek_incola.jpg";
 import bezglutenoweHalloween from "./../../../public/img/events/011_bezglutenowe_halloween.jpg";
+import imprezaFirmowa from "./../../../public/img/events/012_impreza_firmowa.jpg";
 
 export const eventsData = [
     {
@@ -120,5 +121,15 @@ export const eventsData = [
       labelClass: "breakfast-label",
       description:
         "Bezglutenowe jedzenie na imprezę w stylu Halloween",
+    },
+    {
+      id: 12,
+      href: "https://www.instagram.com/p/DRzxs5lCEG-/?img_index=1",
+      imgSrc: imprezaFirmowa,
+      altText: "Celiakia vs. impreza firmowa",
+      label: "Impreza firmowa",
+      labelClass: "breakfast-label",
+      description:
+        "Celiakia vs. impreza firmowa",
     },
   ];

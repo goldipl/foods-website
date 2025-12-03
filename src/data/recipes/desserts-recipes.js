@@ -25,6 +25,7 @@ import cynamonkiOrzechowe from "./../../../public/img/recipes/desserts/024_cynam
 import krucheZJagodami from "./../../../public/img/recipes/desserts/025_kruche_z_jagodami.jpg";
 import pistacjoweTiramisu from "./../../../public/img/recipes/desserts/026_pistacjowe_tiramisu.jpg";
 import brownie from "./../../../public/img/recipes/desserts/027_brownie.jpg";
+import swiateczneSzyszki from "./../../../public/img/recipes/desserts/028_swiateczne_szyszki.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -296,5 +297,15 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Bezglutenowe i ekspresowe brownie 🍫 od Celiko",
+    },
+    {
+      id: 28,
+      href: "https://www.instagram.com/p/DRuypQ7iLC6/",
+      imgSrc: swiateczneSzyszki,
+      altText: "Bezglutenowe świąteczne szyszki 🌲🤎",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowe świąteczne szyszki 🌲🤎",
     },
 ];
