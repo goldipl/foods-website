@@ -23,6 +23,7 @@ import bezglutenowePanettone from "./../../../public/img/products/022_bezgluteno
 import wolnaPiekarniaBezglutenowa from "./../../../public/img/products/023_wolna_piekarnia_bezglutenowa.jpg";
 import rogalBialyMakPutkaBezGlutenu from "./../../../public/img/products/024_rogal_z_bialym_makiem.jpg";
 import paluchyGrissini from "./../../../public/img/products/025_paluchy_grissini.jpg";
+import swiatecznaPutkaBezGlutenu from "./../../../public/img/products/026_swiateczna_putka_bez_glutenujpg.jpg";
 
 export const productsData = [
     {
@@ -304,5 +305,15 @@ export const productsData = [
         labelClass: "product-label",
         description: 
             "Paluchy chlebowe i grissini od firmy Glutenex",
+    },
+    {
+        id: 26,
+        href: "https://www.instagram.com/p/DR2mn1diEbD/?img_index=1",
+        imgSrc: swiatecznaPutkaBezGlutenu,
+        altText: "Świąteczne słodkości bez wychodzenia z domu od Putka bez glutenu",
+        label: "Putka bez glutenu",
+        labelClass: "product-label",
+        description: 
+            "Świąteczne słodkości bez wychodzenia z domu od Putka bez glutenu",
     },
   ];
