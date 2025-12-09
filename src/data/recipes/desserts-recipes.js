@@ -26,6 +26,7 @@ import krucheZJagodami from "./../../../public/img/recipes/desserts/025_kruche_z
 import pistacjoweTiramisu from "./../../../public/img/recipes/desserts/026_pistacjowe_tiramisu.jpg";
 import brownie from "./../../../public/img/recipes/desserts/027_brownie.jpg";
 import swiateczneSzyszki from "./../../../public/img/recipes/desserts/028_swiateczne_szyszki.jpg";
+import swiateczneKorzenneCiastka from "./../../../public/img/recipes/desserts/029_swiateczne_korzenne_ciastka.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -307,5 +308,15 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Bezglutenowe świąteczne szyszki 🌲🤎",
+    },
+    {
+      id: 29,
+      href: "https://www.instagram.com/p/DSAzOQViKLI/",
+      imgSrc: swiateczneKorzenneCiastka,
+      altText: "Świąteczne korzenne ciasteczka 🍪🎄",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Świąteczne korzenne ciasteczka 🍪🎄",
     },
 ];
