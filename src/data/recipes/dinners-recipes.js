@@ -26,6 +26,7 @@ import makaronBurakamiFeta from "./../../../public/img/recipes/dinners/025_makar
 import bezglutenowaPizzaSalamiBurrata from "./../../../public/img/recipes/dinners/026_bezglutenowa_pizza_salami_burrata.jpg";
 import kremCurry from "./../../../public/img/recipes/dinners/027_krem_z_curry.jpg";
 import viralowyKebab from "./../../../public/img/recipes/dinners/028_viralowy_kebab.jpg";
+import obiadNaSzybkoLosos from "./../../../public/img/recipes/dinners/029_obiad_na_szybko_losos.jpg";
 
 export const dinnersRecipesData = [
     {
@@ -307,5 +308,15 @@ export const dinnersRecipesData = [
       labelClass: "dinner-label",
       description:
         "WIRALOWY KEBAB BEZ GLUTENU 🥙",
+    },
+    {
+      id: 28,
+      href: "https://www.instagram.com/p/DSVWHLuCAd-/",
+      imgSrc: obiadNaSzybkoLosos,
+      altText: "Obiad w 5 minut - wędzony łosoś, kasza, jajko i zielony ogórek",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Obiad w 5 minut - wędzony łosoś, kasza, jajko i zielony ogórek",
     },
   ];

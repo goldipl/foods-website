@@ -25,6 +25,7 @@ import laCantinaWawa from "./../../../public/img/restaurants/poland/025_lacantin
 import pizzaNaturalnaPoznan from "./../../../public/img/restaurants/poland/026_pizza_naturalna_poznan.jpg";
 import saskaSushiWarszawaNoweMenu2025 from "./../../../public/img/restaurants/poland/027_saska_sushi_warszawa.jpg";
 import bezglutenoweZakopaneVernusCrocus from "./../../../public/img/restaurants/poland/028_bezglutenowe_zakopane.jpg";
+import sushiWesolaNoweMenu2025 from "./../../../public/img/restaurants/poland/029_sushi_warszawa_wesola_nowe_menu2025.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -296,5 +297,15 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Restauracja BEZ GLUTENU Vernus Hotel Crocus****, ul. Tytusa Chałubińskiego 40, 34-500 Zakopane",
+    },
+    {
+      id: 29,
+      href: "https://www.instagram.com/p/DSfrdR0iK2o/",
+      imgSrc: sushiWesolaNoweMenu2025,
+      altText: "Sushi Wesoła ♥️ - nowe menu 2025, ul. Wspólna 37a, 05-075 Warszawa",
+      label: "Warszawa",
+      labelClass: "poland-label",
+      description:
+        "Sushi Wesoła ♥️ - nowe menu 2025, ul. Wspólna 37a, 05-075 Warszawa",
     },
   ];

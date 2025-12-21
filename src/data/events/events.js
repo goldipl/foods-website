@@ -10,6 +10,8 @@ import wloskieSlodkosciVallongo from "./../../../public/img/events/009_wloskie_s
 import testCiastekIncola from "./../../../public/img/events/010_test_ciastek_incola.jpg";
 import bezglutenoweHalloween from "./../../../public/img/events/011_bezglutenowe_halloween.jpg";
 import imprezaFirmowa from "./../../../public/img/events/012_impreza_firmowa.jpg";
+import jedzenieDoPracy from "./../../../public/img/events/013_jedzenie_do_pracy.jpg";
+import celiaczkaNaBudowie from "./../../../public/img/events/014_celiaczka_na_budowie.jpg";
 
 export const eventsData = [
     {
@@ -131,5 +133,25 @@ export const eventsData = [
       labelClass: "breakfast-label",
       description:
         "Celiakia vs. impreza firmowa",
+    },
+    {
+      id: 13,
+      href: "https://www.instagram.com/p/DSQgKTWCHq5/",
+      imgSrc: jedzenieDoPracy,
+      altText: "Jedzenie do pracy dla osób z celiakią",
+      label: "Jedzenie do pracy",
+      labelClass: "breakfast-label",
+      description:
+        "Jedzenie do pracy dla osób z celiakią",
+    },
+    {
+      id: 14,
+      href: "https://www.instagram.com/p/DSaVU0oCLCu/?img_index=1",
+      imgSrc: celiaczkaNaBudowie,
+      altText: "Celiaczka na budowie 👷🏻‍♀️, czyli jak radzić sobie z bezglutenową dietą na co dzień w pracy - odpowiedź w poście",
+      label: "Jedzenie w pracy",
+      labelClass: "breakfast-label",
+      description:
+        "Celiaczka na budowie 👷🏻‍♀️, czyli jak radzić sobie z bezglutenową dietą na co dzień w pracy - odpowiedź w poście",
     },
   ];
