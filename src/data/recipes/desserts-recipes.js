@@ -28,6 +28,7 @@ import brownie from "./../../../public/img/recipes/desserts/027_brownie.jpg";
 import swiateczneSzyszki from "./../../../public/img/recipes/desserts/028_swiateczne_szyszki.jpg";
 import swiateczneKorzenneCiastka from "./../../../public/img/recipes/desserts/029_swiateczne_korzenne_ciastka.jpg";
 import makamonki from "./../../../public/img/recipes/desserts/030_makamonki.jpg";
+import ciastkazJablkamizAirfryera from "./../../../public/img/recipes/desserts/031_ciastka_z_jablkami_z_airfryera.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -329,5 +330,15 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Makamonki, czyli coś jak cynamonki ale z makiem🎄",
+    },
+    {
+      id: 31,
+      href: "https://www.instagram.com/p/DS0Wu6fiGPv/?img_index=1",
+      imgSrc: ciastkazJablkamizAirfryera,
+      altText: "Ciastka z jabłkami z airfryera 🍎",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Ciastka z jabłkami z airfryera 🍎",
     },
 ];
