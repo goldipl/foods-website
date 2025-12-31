@@ -26,6 +26,7 @@ import pizzaNaturalnaPoznan from "./../../../public/img/restaurants/poland/026_p
 import saskaSushiWarszawaNoweMenu2025 from "./../../../public/img/restaurants/poland/027_saska_sushi_warszawa.jpg";
 import bezglutenoweZakopaneVernusCrocus from "./../../../public/img/restaurants/poland/028_bezglutenowe_zakopane.jpg";
 import sushiWesolaNoweMenu2025 from "./../../../public/img/restaurants/poland/029_sushi_warszawa_wesola_nowe_menu2025.jpg";
+import gastroPodsumowaniePolska2025 from "./../../../public/img/restaurants/poland/030_gastro_podsumowanie_polska_2025.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -307,5 +308,15 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Sushi Wesoła ♥️ - nowe menu 2025, ul. Wspólna 37a, 05-075 Warszawa",
+    },
+    {
+      id: 30,
+      href: "https://www.instagram.com/p/DS44CFOiNfQ/?img_index=1",
+      imgSrc: gastroPodsumowaniePolska2025,
+      altText: "Gastro podsumowanie roku 2025 cz. 1 - Polska",
+      label: "Polska",
+      labelClass: "poland-label",
+      description:
+        "Gastro podsumowanie roku 2025 cz. 1 - Polska",
     },
   ];

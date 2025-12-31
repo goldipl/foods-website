@@ -10,6 +10,7 @@ import makaronzTruskawkami from "./../../../public/img/recipes/appetizers/009_ma
 import pizzerki from "./../../../public/img/recipes/appetizers/010_pizzerki.jpg";
 import domoweZapiekanki from "./../../../public/img/recipes/appetizers/011_domowe_zapiekanki.jpg";
 import springRolls from "./../../../public/img/recipes/appetizers/012_spring_rolls.jpg";
+import kapusniaczkizAirfryera from "./../../../public/img/recipes/appetizers/013_kapusniaczki_z_airfryera.jpg";
 
 export const appetizersRecipesData = [
     {
@@ -131,5 +132,15 @@ export const appetizersRecipesData = [
         labelClass: "appetizer-label",
         description: 
             "Spring Rollsy",
+    },
+    {
+        id: 13,
+        href: "https://www.instagram.com/p/DS7DA8RiDIn/",
+        imgSrc: kapusniaczkizAirfryera,
+        altText: "Kapuśniaczki z airfryera 🥬",
+        label: "Przystawka",
+        labelClass: "appetizer-label",
+        description: 
+            "Kapuśniaczki z airfryera 🥬",
     },
   ];
