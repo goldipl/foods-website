@@ -124,8 +124,11 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-
           gap: 48px;
+          background: url(./../../../public/img/backgrounds/bg-gradient01.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
 
           &__text {
             flex: 1;
