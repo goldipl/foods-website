@@ -12,6 +12,7 @@ import bezglutenoweHalloween from "./../../../public/img/events/011_bezglutenowe
 import imprezaFirmowa from "./../../../public/img/events/012_impreza_firmowa.jpg";
 import jedzenieDoPracy from "./../../../public/img/events/013_jedzenie_do_pracy.jpg";
 import celiaczkaNaBudowie from "./../../../public/img/events/014_celiaczka_na_budowie.jpg";
+import rok2025 from "./../../../public/img/events/015_2025.jpg";
 
 export const eventsData = [
     {
@@ -153,5 +154,15 @@ export const eventsData = [
       labelClass: "breakfast-label",
       description:
         "Celiaczka na budowie 👷🏻‍♀️, czyli jak radzić sobie z bezglutenową dietą na co dzień w pracy - odpowiedź w poście",
+    },
+    {
+      id: 15,
+      href: "https://www.instagram.com/p/DS91h8bCNUP/",
+      imgSrc: rok2025,
+      altText: "Rok 2025 w pigułce",
+      label: "2025",
+      labelClass: "breakfast-label",
+      description:
+        "Rok 2025 w pigułce",
     },
   ];
