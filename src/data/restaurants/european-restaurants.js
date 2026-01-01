@@ -10,6 +10,7 @@ import rzymCz4 from "./../../../public/img/restaurants/europe/007_rzym_cz4.jpg";
 import rzymCz5 from "./../../../public/img/restaurants/europe/008_rzym_cz5.jpg";
 import florencjaCz1 from "./../../../public/img/restaurants/europe/009_florencja_cz1.jpg";
 import rzymCz6 from "./../../../public/img/restaurants/europe/012_rzym_cz6.jpg";
+import gastroPodsumowanieZagranica2025 from "./../../../public/img/restaurants/europe/013_gastro_podsumowanie_2025_zagranica.jpg";
 
 export const  europeanRestaurantsData = [
     {
@@ -131,5 +132,15 @@ export const  europeanRestaurantsData = [
       labelClass: "europe-label",
       description:
         "Bezglutenowy Rzym cz.6",
+    },
+    {
+      id: 13,
+      href: "https://www.instagram.com/p/DS9q5w7CITr/?img_index=1",
+      imgSrc: gastroPodsumowanieZagranica2025,
+      altText: "Gastro Podsumowanie 2025 - Bezglutenowe podróże zagraniczne",
+      label: "Europa",
+      labelClass: "europe-label",
+      description:
+        "Gastro Podsumowanie 2025 - Bezglutenowe podróże zagraniczne",
     },
   ];
