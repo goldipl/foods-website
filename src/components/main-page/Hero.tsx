@@ -48,13 +48,13 @@ const Hero = () => {
                   </h3>
                   <div className="hero-cta-box">
                     <Link className="hero-cta" href="#sniadania">
-                      Zobacz przepisy <HiChevronRight />
+                      Przepisy <HiChevronRight />
                     </Link>
                     <Link
                       className="hero-cta white"
                       href="#celiakia-podstawowe-informacje"
                     >
-                      Poradniki bezglutenowe <HiChevronRight />
+                      Poradniki <HiChevronRight />
                     </Link>
                   </div>
                 </div>
