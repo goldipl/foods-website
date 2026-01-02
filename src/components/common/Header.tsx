@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import logo from "./../../../public/icons/header/bezglutenowakarola-logo.svg";
 import menuDownIcon from "./../../../public/icons/common/menu-down-icon.svg";
 import instagramIcon from "./../../../public/icons/common/instagram.svg";
@@ -53,8 +53,32 @@ const Header = () => {
     }
   }, [openHamburger]);
 
+  const headerRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (window.innerWidth < 992) return;
+
+      if (
+        headerRef.current &&
+        !headerRef.current.contains(event.target as Node)
+      ) {
+        setActiveDropdown(null);
+        setActiveSubDropdown(null);
+      }
+    };
+
+    if (activeDropdown) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [activeDropdown]);
+
   return (
-    <div className="header">
+    <div className="header" ref={headerRef}>
       <div className="header-wrapper">
         <div className="header-wrapper__logo">
           <Link href="/">
