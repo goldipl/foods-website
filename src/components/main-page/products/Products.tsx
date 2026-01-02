@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { CiInstagram } from "react-icons/ci";
 import { productsData } from "@/data/products/products";
+import { HiChevronRight } from "react-icons/hi2";
 
 const Products = () => {
   return (
@@ -52,7 +53,7 @@ const Products = () => {
 
       <div className="primary-button">
         <Link href="/produkty/" className="primary-button__text">
-          Więcej z sekcji Produkty
+          Więcej z sekcji Produkty <HiChevronRight />
         </Link>
       </div>
     </>

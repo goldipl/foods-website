@@ -3,6 +3,7 @@ import React from "react";
 import { CiInstagram } from "react-icons/ci";
 import Image from "next/image";
 import { eventsData } from "@/data/events/events";
+import { HiChevronRight } from "react-icons/hi2";
 
 const Events = () => {
   return (
@@ -50,7 +51,7 @@ const Events = () => {
 
         <div className="primary-button">
           <Link href="/wydarzenia/" className="primary-button__text">
-            Więcej z sekcji Wydarzenia
+            Więcej z sekcji Wydarzenia <HiChevronRight />
           </Link>
         </div>
       </div>

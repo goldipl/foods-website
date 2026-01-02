@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { CiInstagram } from "react-icons/ci";
 import { polishRestaurantsData } from "@/data/restaurants/polish-restaurants";
+import { HiChevronRight } from "react-icons/hi2";
 
 const PolishRestaurants = () => {
   return (
@@ -51,7 +52,7 @@ const PolishRestaurants = () => {
 
       <div className="primary-button">
         <Link href="/restauracje-w-polsce/" className="primary-button__text">
-          Więcej z sekcji Restauracje w Polsce
+          Więcej z sekcji Restauracje w Polsce <HiChevronRight />
         </Link>
       </div>
     </>
