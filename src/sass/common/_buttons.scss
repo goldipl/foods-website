@@ -31,7 +31,7 @@
     &:hover {
       color: $color-green05;
       background: $color-white;
-    } 
+    }
   }
 
   &:hover {
@@ -76,10 +76,27 @@
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-    @media (max-width: 992px) {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-    }
+  @media (max-width: 992px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+}
+
+.read-more-btn {
+  margin-top: 16px;
+  @extend .hero-cta;
+  background: $color-green04;
+  color: $color-green05;
+  &:hover {
+    background: $color-green04;
+    color: $color-green05;
+  }
+  @media (max-width: 992px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px auto 0;
+  }
 }
