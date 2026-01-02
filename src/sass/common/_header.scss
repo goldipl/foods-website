@@ -78,7 +78,6 @@ header {
                   display: flex;
                   opacity: 1;
                   transform: translateY(0);
-                  border-radius: 8px;
                 }
               }
               .nav-second-lvl {
@@ -96,6 +95,7 @@ header {
                 transform: translateY(-10px);
                 transition: opacity 0.3s ease, transform 0.3s ease;
                 border: 1px solid $grey-border-color01;
+                border-radius: 8px;
                 li {
                   width: 100%;
                   &::after {
@@ -307,6 +307,7 @@ header {
     padding: 8px 0;
     border: 1px solid $grey-border-color01;
     opacity: 0;
+    border-radius: 8px;
     transform: translateX(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
 
