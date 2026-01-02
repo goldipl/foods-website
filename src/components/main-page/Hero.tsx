@@ -30,7 +30,7 @@ const Hero = () => {
           pagination={{ clickable: true }}
           loop={true}
           autoplay={{
-            delay: 5000,
+            delay: 5500,
             disableOnInteraction: false,
           }}
           modules={[Autoplay, Pagination, Navigation]}
