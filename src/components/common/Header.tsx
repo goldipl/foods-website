@@ -400,7 +400,11 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href="/#kontakt" onClick={handleCloseDropdown}>
+              <Link
+                href="/#kontakt"
+                onClick={handleCloseDropdown}
+                className="contact"
+              >
                 Kontakt
               </Link>
             </li>

@@ -52,6 +52,7 @@ header {
                 align-items: center;
                 justify-content: center;
                 font-size: 0;
+                width: 33px;
               }
             }
 
@@ -77,6 +78,7 @@ header {
                   display: flex;
                   opacity: 1;
                   transform: translateY(0);
+                  border-radius: 8px;
                 }
               }
               .nav-second-lvl {
@@ -110,10 +112,25 @@ header {
             }
 
             a {
-              @include nav-link-mixin(4px 6px, 15px);
+              @include nav-link-mixin(6px 8px, 14px);
 
-              @media (max-width: 1200px) {
-                @include nav-link-mixin(4px 4px, 14px);
+              @media (max-width: 1360px) {
+                @include nav-link-mixin(4px 6px, 14px);
+              }
+              &.contact {
+                text-decoration: none;
+                background-color: $color-green03;
+                border-radius: 8px;
+                padding: 6px 8px;
+                &:hover {
+                  background: linear-gradient(
+                    135deg,
+                    $main-bg-green-color,
+                    $main-bg-green-color02
+                  );
+                  color: $color-white;
+                  transition: background 0.25s ease-in-out;
+                }
               }
             }
           }

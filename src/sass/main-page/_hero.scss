@@ -211,7 +211,6 @@
       .swiper {
         height: auto;
         padding-bottom: 40px;
-        background-color: $color-white;
         border-radius: 0;
         &-pagination {
           bottom: 16px !important;
@@ -219,6 +218,7 @@
         &-slide {
           flex-direction: column;
           height: 500px;
+          background: unset;
         }
 
         &-button-next,
