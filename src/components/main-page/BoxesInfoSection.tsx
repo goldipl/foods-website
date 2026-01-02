@@ -1,44 +1,54 @@
-import React from "react";
-import nosugar from "./../../../public/icons/boxes-info/sugar-512.svg";
-import nomilk from "./../../../public/icons/boxes-info/milk-128.svg";
-import nogluten from "./../../../public/icons/boxes-info/gluten-128.svg";
-import Image from "next/image";
+import { PiCookingPot } from "react-icons/pi";
+import { IoLocationOutline } from "react-icons/io5";
+import { LiaShoppingBasketSolid } from "react-icons/lia";
+import Link from "next/link";
+import { HiChevronRight } from "react-icons/hi2";
+
 
 const BoxesInfoSection = () => {
   return (
     <section id="boxes-info-section" className="boxes-info-section">
       <div className="boxes-info-wrapper">
-        <div className="section-title">
-          <h2>Znajdziesz u mnie potrawy i przepisy:</h2>
-        </div>
         <div className="boxes-info">
           {/* Slot */}
           <div className="boxes-info-slot">
             <div className="boxes-info-slot__icon">
-              <Image src={nogluten} width={40} height={40} alt="bez glutenu" />
+              <PiCookingPot size={40} />
             </div>
             <div className="boxes-info-slot__text">
-              <span>bez glutenu</span>
+              <h3>Przepisy bezglutenowe</h3>
+              <h4>Szybkie i zdrowe przepisy na każdą okazję</h4>
+            </div>
+            <div className="boxes-info-slot__link">
+              <Link href="#sniadania">Zobacz przepisy <HiChevronRight /></Link>
             </div>
           </div>
           {/* Slot */}
-          {/* <div className="boxes-info-slot">
+          <div className="boxes-info-slot">
             <div className="boxes-info-slot__icon">
-              <Image src={nomilk} width={40} height={40} alt="bez nabiału" />
+              <IoLocationOutline size={40} />
             </div>
             <div className="boxes-info-slot__text">
-              <span>bez nabiału</span>
+              <h3>Resturacje bez glutenu</h3>
+              <h4>Sprawdź lokale w Twojej okolicy</h4>
             </div>
-          </div> */}
+            <div className="boxes-info-slot__link">
+              <Link href="/bezglutenowe-miejsca">Znajdź restauracje <HiChevronRight /></Link>
+            </div>
+          </div>
           {/* Slot */}
-          {/* <div className="boxes-info-slot">
+          <div className="boxes-info-slot">
             <div className="boxes-info-slot__icon">
-              <Image src={nosugar} width={40} height={40} alt="bez cukru" />
+              <LiaShoppingBasketSolid size={40} />
             </div>
             <div className="boxes-info-slot__text">
-              <span>bez cukru</span>
+              <h3>Ulubione produkty</h3>
+              <h4>Polecane bezglutenowe produkty</h4>
             </div>
-          </div> */}
+            <div className="boxes-info-slot__link">
+              <Link href="#produkty">Zobacz produkty <HiChevronRight /></Link>
+            </div>
+          </div>
         </div>
       </div>
     </section>

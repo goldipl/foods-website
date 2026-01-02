@@ -42,10 +42,10 @@ const Hero = () => {
                   <h2 className="slide-title">Zdrowo, smacznie, bezglutenowo!</h2>
                   <h3 className="slide-subtitle">Przepisy, restauracje i porady dla osób na diecie bezglutenowej</h3>
                   <div className="hero-cta-box">
-                    <Link className="hero-cta" href="/bezglutenowe-miejsca">
+                    <Link className="hero-cta" href="#sniadania">
                       Zobacz przepisy <HiChevronRight />
                     </Link>
-                    <Link className="hero-cta white" href="/celiakia-podstawowe-informacje">
+                    <Link className="hero-cta white" href="#celiakia-podstawowe-informacje">
                       Poradniki bezglutenowe <HiChevronRight />
                     </Link>
                   </div>

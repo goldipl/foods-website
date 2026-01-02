@@ -27,8 +27,8 @@ const index = () => {
       </header>
       <main>
         <Hero />
-        <WelcomeSection />
         <BoxesInfoSection />
+        <WelcomeSection />
         <RecipesSection />
         <RestaurantsSection />
         <ProductsSection />
