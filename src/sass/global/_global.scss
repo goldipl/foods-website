@@ -6,6 +6,7 @@ html,
 body {
   overflow-x: clip;
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: $transparent;
   &.blocked-body {
     overflow: hidden;
   }
