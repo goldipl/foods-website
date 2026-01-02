@@ -54,7 +54,7 @@ const Footer = () => {
             <Link href="#produkty">Inne</Link>
           </div>
           <div className="footer-col">
-            <h2>Celiakia i co dalej?</h2>
+            <h2>Celiakia (co dalej?)</h2>
             <Link href="#celiakia-podstawowe-informacje">
               Podstawowe informacje
             </Link>

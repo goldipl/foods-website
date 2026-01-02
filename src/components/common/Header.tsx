@@ -350,7 +350,7 @@ const Header = () => {
             </li>
             <li className="nav-expand">
               <span onClick={() => handleDropdownToggle("fourthDropdown")}>
-                Celiakia i co dalej?
+                Celiakia (co dalej?)
                 <Image
                   src={menuDownIcon.src}
                   alt="strzałka"
