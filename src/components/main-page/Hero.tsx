@@ -4,6 +4,7 @@ import SwiperCore from "swiper";
 import { Pagination, Navigation } from "swiper/modules";
 import { Autoplay } from "swiper/modules";
 import Image from "next/image";
+import { HiChevronRight } from "react-icons/hi2";
 
 import welcomeImg from "./../../../public/img/welcome/karola-dynia.jpg";
 import breakfastImg from "./../../../public/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.jpg";
@@ -38,7 +39,16 @@ const Hero = () => {
             <div className="slide-content">
               <div className="swiper-slide-box">
                 <div className="swiper-slide-box__text">
-                  <h2>Zdrowo, smacznie, bezglutenowo!</h2>
+                  <h2 className="slide-title">Zdrowo, smacznie, bezglutenowo!</h2>
+                  <h3 className="slide-subtitle">Przepisy, restauracje i porady dla osób na diecie bezglutenowej</h3>
+                  <div className="hero-cta-box">
+                    <Link className="hero-cta" href="/bezglutenowe-miejsca">
+                      Zobacz przepisy <HiChevronRight />
+                    </Link>
+                    <Link className="hero-cta white" href="/celiakia-podstawowe-informacje">
+                      Poradniki bezglutenowe <HiChevronRight />
+                    </Link>
+                  </div>
                 </div>
                 <div className="swiper-slide-box__img">
                   <Image
@@ -57,7 +67,7 @@ const Hero = () => {
                 <div className="swiper-slide-box__text">
                   <h2>Mapa miejsc bezglutenowych</h2>
                   <Link className="hero-cta" href="/bezglutenowe-miejsca">
-                    Sprawdź
+                    Sprawdź <HiChevronRight />
                   </Link>
                 </div>
                 <div className="swiper-slide-box__img">
@@ -85,7 +95,7 @@ const Hero = () => {
                 <div className="swiper-slide-box__text">
                   <h2>Bezglutenowe śniadania</h2>
                   <Link className="hero-cta" href="#sniadania">
-                    Sprawdź przepisy
+                    Sprawdź przepisy <HiChevronRight />
                   </Link>
                 </div>
               </div>
@@ -97,7 +107,7 @@ const Hero = () => {
                 <div className="swiper-slide-box__text">
                   <h2>Bezglutenowe obiady</h2>
                   <Link className="hero-cta" href="#obiady">
-                    Sprawdź przepisy
+                    Sprawdź przepisy <HiChevronRight />
                   </Link>
                 </div>
                 <div className="swiper-slide-box__img">
@@ -125,7 +135,7 @@ const Hero = () => {
                 <div className="swiper-slide-box__text">
                   <h2>Bezglutenowe desery</h2>
                   <Link className="hero-cta" href="#desery">
-                    Sprawdź przepisy
+                    Sprawdź przepisy <HiChevronRight />
                   </Link>
                 </div>
               </div>
@@ -137,7 +147,7 @@ const Hero = () => {
                 <div className="swiper-slide-box__text">
                   <h2>Bezglutenowe restauracje w Polsce</h2>
                   <Link className="hero-cta" href="#restauracje-polska">
-                    Sprawdź
+                    Sprawdź <HiChevronRight />
                   </Link>
                 </div>
                 <div className="swiper-slide-box__img">
@@ -165,7 +175,7 @@ const Hero = () => {
                 <div className="swiper-slide-box__text">
                   <h2>Bezglutenowe restauracje na świecie</h2>
                   <Link className="hero-cta" href="#restauracje-europa">
-                    Sprawdź
+                    Sprawdź <HiChevronRight />
                   </Link>
                 </div>
               </div>
@@ -177,7 +187,7 @@ const Hero = () => {
                 <div className="swiper-slide-box__text">
                   <h2>Bezglutenowe produkty - "Czy to ma gluten?"</h2>
                   <Link className="hero-cta" href="#produkty">
-                    Sprawdź
+                    Sprawdź <HiChevronRight />
                   </Link>
                 </div>
                 <div className="swiper-slide-box__img">
@@ -197,7 +207,7 @@ const Hero = () => {
                 <div className="swiper-slide-box__text">
                   <h2>Bezglutenowe wydarzenia</h2>
                   <Link className="hero-cta" href="#wydarzenia">
-                    Sprawdź
+                    Sprawdź <HiChevronRight />
                   </Link>
                 </div>
                 <div className="swiper-slide-box__img">
