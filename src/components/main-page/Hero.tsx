@@ -39,13 +39,21 @@ const Hero = () => {
             <div className="slide-content">
               <div className="swiper-slide-box">
                 <div className="swiper-slide-box__text">
-                  <h2 className="slide-title">Zdrowo, smacznie, bezglutenowo!</h2>
-                  <h3 className="slide-subtitle">Przepisy, restauracje i porady dla osób na diecie bezglutenowej</h3>
+                  <h2 className="slide-title">
+                    Zdrowo, smacznie, bezglutenowo!
+                  </h2>
+                  <h3 className="slide-subtitle">
+                    Przepisy, restauracje i porady dla osób na diecie
+                    bezglutenowej
+                  </h3>
                   <div className="hero-cta-box">
                     <Link className="hero-cta" href="#sniadania">
                       Zobacz przepisy <HiChevronRight />
                     </Link>
-                    <Link className="hero-cta white" href="#celiakia-podstawowe-informacje">
+                    <Link
+                      className="hero-cta white"
+                      href="#celiakia-podstawowe-informacje"
+                    >
                       Poradniki bezglutenowe <HiChevronRight />
                     </Link>
                   </div>
@@ -66,6 +74,10 @@ const Hero = () => {
               <div className="swiper-slide-box">
                 <div className="swiper-slide-box__text">
                   <h2>Mapa miejsc bezglutenowych</h2>
+                  <h3 className="slide-subtitle">
+                    Restauracje, kawiarnie, cukiernie bez glutenu w Polsce i na
+                    świecie
+                  </h3>
                   <Link className="hero-cta" href="/bezglutenowe-miejsca">
                     Sprawdź <HiChevronRight />
                   </Link>
