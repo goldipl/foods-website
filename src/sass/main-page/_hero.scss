@@ -2,7 +2,10 @@
   position: relative;
   display: flex;
   width: 100%;
-  background: linear-gradient(145deg, #f3f3f3, #f1f5f9);
+  background: url(./../../../public/img/backgrounds/bg-gradient02.png);
+  background-repeat: no-repeat;
+  background-size: 250vw;
+  height: auto;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   overflow: hidden;
   z-index: 0;

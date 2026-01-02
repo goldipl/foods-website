@@ -21,7 +21,7 @@ const WelcomeSection = () => {
           </div>
 
           <div className="text-box">
-            <h2>Cześć! Miło mi, że tu jesteś 😊</h2>
+            <h2>Cześć! Miło mi, że tu jesteś!</h2>
             <p>
               Jeśli tu trafiłaś/eś, zapewne temat diety bezglutenowej nie jest
               Ci z jakiegoś powodu obcy. Rozgość się, a ja postaram Ci w tej

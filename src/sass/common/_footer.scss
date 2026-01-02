@@ -1,5 +1,7 @@
 .footer {
-  background-color: $footer-light-green-bg;
+  background: url(./../../../public/img/backgrounds/bg-gradient02.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: auto;
   border-top: 1px solid $grey-border-color01;
   &-wrapper {
@@ -51,7 +53,9 @@
     }
   }
   &-bottom {
-    background-color: $light-grey-bg;
+    background: url(./../../../public/img/backgrounds/bg-gradient01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 16px 0;
     p {
       color: $color-black;

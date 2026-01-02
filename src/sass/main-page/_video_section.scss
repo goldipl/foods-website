@@ -2,7 +2,10 @@
   position: relative;
   display: flex;
   width: 100%;
-  background-color: $light-grey-bg;
+  background: url(./../../../public/img/backgrounds/bg-gradient02.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
   z-index: 0;
   .video-section-wrapper {
     display: flex;
@@ -18,21 +21,22 @@
       display: flex;
       flex-direction: column;
       h2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        font-size: 36px;
+        line-height: 1.3;
+        margin-bottom: 14px;
+        font-weight: 600;
+        color: $color-green05;
+        margin-bottom: 8px;
+        margin-top: 0;
         text-align: center;
-        width: 100%;
-        margin-bottom: 24px;
-        font-size: 26px;
-        line-height: 32px;
         @media (max-width: 992px) {
-          font-size: 22px;
-          line-height: 28px;
+          font-size: 24px;
         }
       }
       h4 {
+        font-size: 16px;
         font-weight: 400;
+        margin-bottom: 24px;
         @media (max-width: 992px) {
           font-size: 14px;
         }

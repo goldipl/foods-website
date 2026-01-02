@@ -4,7 +4,9 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: $light-grey-bg;
+  background: url(./../../../public/img/backgrounds/bg-gradient02.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: 0;
   .map-section-wrapper {
     display: flex;
@@ -15,6 +17,24 @@
     padding: 140px 16px 168px 16px;
     @media (max-width: 992px) {
       padding: 40px 16px 64px;
+    }
+    h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 0;
+      margin-top: 0;
+      font-size: 36px;
+      line-height: 1.3;
+      @media (max-width: 992px) {
+        font-size: 22px;
+        line-height: 28px;
+      }
+    }
+    h4 {
+      margin: 16px auto 24px;
     }
     &__link {
       position: relative;

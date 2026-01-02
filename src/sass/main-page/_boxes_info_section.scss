@@ -24,7 +24,7 @@
       align-items: center;
       gap: 18px;
       @media (max-width: 992px) {
-        gap: 16px;
+        gap: 32px;
       }
       &-slot {
         display: flex;
@@ -40,8 +40,9 @@
         box-shadow: $grey-box-shadow;
         min-height: 317px;
         @media (max-width: 992px) {
-          width: 100%;
+          width: 85%;
           padding: 24px;
+          min-height: auto;
         }
         &:hover {
           box-shadow: $green-box-shadow;
@@ -49,8 +50,11 @@
         &__icon {
           width: 96px;
           height: 96px;
-          margin-right: 16px;
           margin-bottom: 12px;
+          @media (max-width: 992px) {
+            width: 72px;
+            height: 72px;
+          }
           svg,
           img {
             width: 96px;
@@ -61,6 +65,11 @@
             padding: 18px;
             fill: $color-green02;
             stroke: $color-green02;
+            @media (max-width: 992px) {
+              width: 72px;
+              height: 72px;
+              padding: 14px;
+            }
           }
         }
         &__text {
