@@ -73,7 +73,7 @@ const Hero = () => {
             <div className="slide-content">
               <div className="swiper-slide-box">
                 <div className="swiper-slide-box__text">
-                  <h2>Mapa miejsc bezglutenowych</h2>
+                  <h2 className="slide-title">Mapa miejsc bezglutenowych</h2>
                   <h3 className="slide-subtitle">
                     Restauracje, kawiarnie, cukiernie bez glutenu w Polsce i na
                     świecie
@@ -105,7 +105,11 @@ const Hero = () => {
                   ></Image>
                 </div>
                 <div className="swiper-slide-box__text">
-                  <h2>Bezglutenowe śniadania</h2>
+                  <h2 className="slide-title">Bezglutenowe śniadania</h2>
+                  <h3 className="slide-subtitle">
+                    Szukasz pomysłów na śniadania bezglutenowe, które są nie
+                    tylko zdrowe, ale i pyszne? Dobrze trafiłeś!
+                  </h3>
                   <Link className="hero-cta" href="#sniadania">
                     Sprawdź przepisy <HiChevronRight />
                   </Link>
@@ -117,7 +121,11 @@ const Hero = () => {
             <div className="slide-content">
               <div className="swiper-slide-box">
                 <div className="swiper-slide-box__text">
-                  <h2>Bezglutenowe obiady</h2>
+                  <h2 className="slide-title">Bezglutenowe obiady</h2>
+                  <h3 className="slide-subtitle">
+                    Szukasz inspiracji na obiady bezglutenowe, które będą nie
+                    tylko zdrowe, ale też naprawdę pyszne? Świetnie trafiłeś!
+                  </h3>
                   <Link className="hero-cta" href="#obiady">
                     Sprawdź przepisy <HiChevronRight />
                   </Link>
@@ -145,7 +153,12 @@ const Hero = () => {
                   ></Image>
                 </div>
                 <div className="swiper-slide-box__text">
-                  <h2>Bezglutenowe desery</h2>
+                  <h2 className="slide-title">Bezglutenowe desery</h2>
+                  <h3 className="slide-subtitle">
+                    Marzysz o pysznych deserach bezglutenowych, które zachwycą
+                    smakiem, a przy tym będą lekkie i zdrowe? Jesteś we
+                    właściwym miejscu!
+                  </h3>
                   <Link className="hero-cta" href="#desery">
                     Sprawdź przepisy <HiChevronRight />
                   </Link>
@@ -157,7 +170,13 @@ const Hero = () => {
             <div className="slide-content">
               <div className="swiper-slide-box">
                 <div className="swiper-slide-box__text">
-                  <h2>Bezglutenowe restauracje w Polsce</h2>
+                  <h2 className="slide-title">
+                    Bezglutenowe restauracje w Polsce
+                  </h2>
+                  <h3 className="slide-subtitle">
+                    Szukasz miejsc, gdzie możesz zjeść pysznie i bez glutenu w
+                    Polsce? Oto moje rekomendacje!
+                  </h3>
                   <Link className="hero-cta" href="#restauracje-polska">
                     Sprawdź <HiChevronRight />
                   </Link>
@@ -185,7 +204,13 @@ const Hero = () => {
                   ></Image>
                 </div>
                 <div className="swiper-slide-box__text">
-                  <h2>Bezglutenowe restauracje na świecie</h2>
+                  <h2 className="slide-title">
+                    Bezglutenowe restauracje na świecie
+                  </h2>
+                  <h3 className="slide-subtitle">
+                    Szukasz miejsc, gdzie możesz zjeść pysznie i bez glutenu na
+                    świecie? Oto moje rekomendacje!
+                  </h3>
                   <Link className="hero-cta" href="#restauracje-europa">
                     Sprawdź <HiChevronRight />
                   </Link>
@@ -197,7 +222,13 @@ const Hero = () => {
             <div className="slide-content">
               <div className="swiper-slide-box">
                 <div className="swiper-slide-box__text">
-                  <h2>Bezglutenowe produkty - "Czy to ma gluten?"</h2>
+                  <h2 className="slide-title">
+                    Bezglutenowe produkty - "Czy to ma gluten?"
+                  </h2>
+                  <h3 className="slide-subtitle">
+                    Sprawdzone produkty bezglutenowe, które warto mieć w swojej
+                    kuchni i w codziennym życiu
+                  </h3>
                   <Link className="hero-cta" href="#produkty">
                     Sprawdź <HiChevronRight />
                   </Link>
@@ -217,7 +248,11 @@ const Hero = () => {
             <div className="slide-content">
               <div className="swiper-slide-box">
                 <div className="swiper-slide-box__text">
-                  <h2>Bezglutenowe wydarzenia</h2>
+                  <h2 className="slide-title">Bezglutenowe wydarzenia</h2>
+                  <h3 className="slide-subtitle">
+                    Bezglutenowe eventy, warsztaty i spotkania dla osób na
+                    diecie bezglutenowej
+                  </h3>
                   <Link className="hero-cta" href="#wydarzenia">
                     Sprawdź <HiChevronRight />
                   </Link>
