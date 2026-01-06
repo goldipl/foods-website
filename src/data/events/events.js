@@ -13,6 +13,7 @@ import imprezaFirmowa from "./../../../public/img/events/012_impreza_firmowa.jpg
 import jedzenieDoPracy from "./../../../public/img/events/013_jedzenie_do_pracy.jpg";
 import celiaczkaNaBudowie from "./../../../public/img/events/014_celiaczka_na_budowie.jpg";
 import rok2025 from "./../../../public/img/events/015_2025.jpg";
+import czyCeliakieMialamCaleZycie from "./../../../public/img/events/016_czy_celiakie_mialam_cale_zycie.jpg";
 
 export const eventsData = [
     {
@@ -164,5 +165,15 @@ export const eventsData = [
       labelClass: "breakfast-label",
       description:
         "Rok 2025 w pigułce",
+    },
+    {
+      id: 16,
+      href: "https://www.instagram.com/p/DTLHgUnCD3H/?img_index=1",
+      imgSrc: czyCeliakieMialamCaleZycie,
+      altText: "Czy celiakię miałam całe życie?",
+      label: "Celiakia",
+      labelClass: "breakfast-label",
+      description:
+        "Czy celiakię miałam całe życie?",
     },
   ];
