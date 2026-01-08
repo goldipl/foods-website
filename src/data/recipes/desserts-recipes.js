@@ -29,6 +29,7 @@ import swiateczneSzyszki from "./../../../public/img/recipes/desserts/028_swiate
 import swiateczneKorzenneCiastka from "./../../../public/img/recipes/desserts/029_swiateczne_korzenne_ciastka.jpg";
 import makamonki from "./../../../public/img/recipes/desserts/030_makamonki.jpg";
 import ciastkazJablkamizAirfryera from "./../../../public/img/recipes/desserts/031_ciastka_z_jablkami_z_airfryera.jpg";
+import paczusieBezDrozdzy from "./../../../public/img/recipes/desserts/032_paczusie_bez_drozdzy.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -275,7 +276,7 @@ export const dessertsRecipesData = [
       id: 25,
       href: "https://www.instagram.com/p/CvC-pbLMxJ3/",
       imgSrc: krucheZJagodami,
-      altText: "Kruche ciasto z jagodami 🫐 BEZ GLUTENU | BEZ NABIAŁU | BEZ CUKRU",
+      altText: "Kruche ciasto z jagodami BEZ GLUTENU | BEZ NABIAŁU | BEZ CUKRU",
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -285,7 +286,7 @@ export const dessertsRecipesData = [
       id: 26,
       href: "https://www.instagram.com/p/CuxLZoos78L/",
       imgSrc: pistacjoweTiramisu,
-      altText: "Pistacjowe tiramisu 💚☕️💚 BEZ GLUTENU | BEZ NABIAŁU | BEZ CUKRU",
+      altText: "Pistacjowe tiramisu BEZ GLUTENU | BEZ NABIAŁU | BEZ CUKRU",
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -295,7 +296,7 @@ export const dessertsRecipesData = [
       id: 27,
       href: "https://www.instagram.com/p/DRNdz93CC75/",
       imgSrc: brownie,
-      altText: "Bezglutenowe i ekspresowe brownie 🍫 od Celiko",
+      altText: "Bezglutenowe i ekspresowe brownie od Celiko",
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -305,7 +306,7 @@ export const dessertsRecipesData = [
       id: 28,
       href: "https://www.instagram.com/p/DRuypQ7iLC6/",
       imgSrc: swiateczneSzyszki,
-      altText: "Bezglutenowe świąteczne szyszki 🌲🤎",
+      altText: "Bezglutenowe świąteczne szyszki",
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -315,7 +316,7 @@ export const dessertsRecipesData = [
       id: 29,
       href: "https://www.instagram.com/p/DSAzOQViKLI/",
       imgSrc: swiateczneKorzenneCiastka,
-      altText: "Świąteczne korzenne ciasteczka 🍪🎄",
+      altText: "Świąteczne korzenne ciasteczka",
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -325,7 +326,7 @@ export const dessertsRecipesData = [
       id: 30,
       href: "https://www.instagram.com/p/DSiMH8DiHlV/",
       imgSrc: makamonki,
-      altText: "Makamonki, czyli coś jak cynamonki ale z makiem🎄",
+      altText: "Makamonki, czyli coś jak cynamonki ale z makiem",
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -335,10 +336,20 @@ export const dessertsRecipesData = [
       id: 31,
       href: "https://www.instagram.com/p/DS0Wu6fiGPv/?img_index=1",
       imgSrc: ciastkazJablkamizAirfryera,
-      altText: "Ciastka z jabłkami z airfryera 🍎",
+      altText: "Ciastka z jabłkami z airfryera",
       label: "Deser",
       labelClass: "dessert-label",
       description:
         "Ciastka z jabłkami z airfryera 🍎",
+    },
+    {
+      id: 32,
+      href: "https://www.instagram.com/p/DTQgerBiOVl/?img_index=1",
+      imgSrc: paczusieBezDrozdzy,
+      altText: "Pączusie bez drożdży",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Pączusie bez drożdży 🍩",
     },
 ];
