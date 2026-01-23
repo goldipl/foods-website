@@ -11,6 +11,7 @@ import pizzerki from "./../../../public/img/recipes/appetizers/010_pizzerki.jpg"
 import domoweZapiekanki from "./../../../public/img/recipes/appetizers/011_domowe_zapiekanki.jpg";
 import springRolls from "./../../../public/img/recipes/appetizers/012_spring_rolls.jpg";
 import kapusniaczkizAirfryera from "./../../../public/img/recipes/appetizers/013_kapusniaczki_z_airfryera.jpg";
+import pieczonyZiemniakZeSledziem from "./../../../public/img/recipes/appetizers/014_pieczony_ziemniak_ze_sledziem.jpg";
 
 export const appetizersRecipesData = [
     {
@@ -142,5 +143,15 @@ export const appetizersRecipesData = [
         labelClass: "appetizer-label",
         description: 
             "Kapuśniaczki z airfryera 🥬",
+    },
+    {
+        id: 14,
+        href: "https://www.instagram.com/p/DTn8StVCBLZ/?img_index=1",
+        imgSrc: pieczonyZiemniakZeSledziem,
+        altText: "Pieczony ziemniak ze śledziem z majonezem, szczypiorkiem, koperkiem 🥔🌱",
+        label: "Przystawka",
+        labelClass: "appetizer-label",
+        description: 
+            "Pieczony ziemniak ze śledziem z majonezem, szczypiorkiem, koperkiem 🥔🌱",
     },
   ];

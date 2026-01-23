@@ -27,6 +27,7 @@ import saskaSushiWarszawaNoweMenu2025 from "./../../../public/img/restaurants/po
 import bezglutenoweZakopaneVernusCrocus from "./../../../public/img/restaurants/poland/028_bezglutenowe_zakopane.jpg";
 import sushiWesolaNoweMenu2025 from "./../../../public/img/restaurants/poland/029_sushi_warszawa_wesola_nowe_menu2025.jpg";
 import gastroPodsumowaniePolska2025 from "./../../../public/img/restaurants/poland/030_gastro_podsumowanie_polska_2025.jpg";
+import theChefHouseWarszawa from "./../../../public/img/restaurants/poland/031_the_chef_house_warszawa.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -318,5 +319,15 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Gastro podsumowanie roku 2025 cz. 1 - Polska",
+    },
+    {
+      id: 31,
+      href: "https://www.instagram.com/p/DTvd4vUiOHj/?img_index=1",
+      imgSrc: theChefHouseWarszawa,
+      altText: "Restauracja The Chef House, ul. Obrzeżna 3, 02-691 Warszawa",
+      label: "Polska",
+      labelClass: "poland-label",
+      description:
+        "Restauracja The Chef House, ul. Obrzeżna 3, 02-691 Warszawa",
     },
   ];

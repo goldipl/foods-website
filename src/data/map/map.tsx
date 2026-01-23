@@ -589,4 +589,14 @@ export const MarkerData = [
     link: "https://www.instagram.com/p/DRkTfI4iDWE/",
     position: [49.28623522349777, 19.971797655163456] as [number, number],
   },
+  {
+    id: 60,
+    name: "Restauracja The Chef House",
+    addressLine1: "ul. Obrzeżna 3,",
+    addressLine2: "02-691 Warszawa",
+    country: "Polska",
+    city: "Warszawa",
+    link: "https://www.instagram.com/p/DTvd4vUiOHj/?img_index=1",
+    position: [52.17337235113483, 20.999428242400025] as [number, number],
+  },
 ];
