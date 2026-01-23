@@ -325,7 +325,7 @@ export const polishRestaurantsData = [
       href: "https://www.instagram.com/p/DTvd4vUiOHj/?img_index=1",
       imgSrc: theChefHouseWarszawa,
       altText: "Restauracja The Chef House, ul. Obrzeżna 3, 02-691 Warszawa",
-      label: "Polska",
+      label: "Warszawa",
       labelClass: "poland-label",
       description:
         "Restauracja The Chef House, ul. Obrzeżna 3, 02-691 Warszawa",
