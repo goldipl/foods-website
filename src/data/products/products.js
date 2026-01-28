@@ -23,7 +23,8 @@ import bezglutenowePanettone from "./../../../public/img/products/022_bezgluteno
 import wolnaPiekarniaBezglutenowa from "./../../../public/img/products/023_wolna_piekarnia_bezglutenowa.jpg";
 import rogalBialyMakPutkaBezGlutenu from "./../../../public/img/products/024_rogal_z_bialym_makiem.jpg";
 import paluchyGrissini from "./../../../public/img/products/025_paluchy_grissini.jpg";
-import swiatecznaPutkaBezGlutenu from "./../../../public/img/products/026_swiateczna_putka_bez_glutenujpg.jpg";
+import swiatecznaPutkaBezGlutenu from "./../../../public/img/products/026_swiateczna_putka_bez_glutenu.jpg";
+import cateringCzapielskiePudelka from "./../../../public/img/products/027_catering_czapielskie_pudelka.jpg";
 
 export const productsData = [
     {
@@ -315,5 +316,15 @@ export const productsData = [
         labelClass: "product-label",
         description: 
             "Świąteczne słodkości bez wychodzenia z domu od Putka bez glutenu",
+    },
+    {
+        id: 27,
+        href: "https://www.instagram.com/p/DUBkbgbCJBC/",
+        imgSrc: cateringCzapielskiePudelka,
+        altText: "Bezglutenowy catering od Czapielskie Pudełka",
+        label: "Czapielskie Pudełka",
+        labelClass: "product-label",
+        description: 
+            "Bezglutenowy catering od Czapielskie Pudełka",
     },
   ];
