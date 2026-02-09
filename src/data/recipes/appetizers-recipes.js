@@ -12,6 +12,7 @@ import domoweZapiekanki from "./../../../public/img/recipes/appetizers/011_domow
 import springRolls from "./../../../public/img/recipes/appetizers/012_spring_rolls.jpg";
 import kapusniaczkizAirfryera from "./../../../public/img/recipes/appetizers/013_kapusniaczki_z_airfryera.jpg";
 import pieczonyZiemniakZeSledziem from "./../../../public/img/recipes/appetizers/014_pieczony_ziemniak_ze_sledziem.jpg";
+import salatkaPieczonyRyz from "./../../../public/img/recipes/appetizers/015_salatka_z_pieczonym_ryzem.jpg";
 
 export const appetizersRecipesData = [
     {
@@ -153,5 +154,15 @@ export const appetizersRecipesData = [
         labelClass: "appetizer-label",
         description: 
             "Pieczony ziemniak ze śledziem z majonezem, szczypiorkiem, koperkiem 🥔🌱",
+    },
+    {
+        id: 15,
+        href: "https://www.instagram.com/p/DUfWUERCF0-/",
+        imgSrc: salatkaPieczonyRyz,
+        altText: "Sałatka z pieczonym ryżem, ogórkiem, awokado, czerwoną cebulą, szczypiorkiem i sosem",
+        label: "Przystawka",
+        labelClass: "appetizer-label",
+        description: 
+            "Sałatka z pieczonym ryżem, ogórkiem, awokado, czerwoną cebulą, szczypiorkiem i sosem",
     },
   ];

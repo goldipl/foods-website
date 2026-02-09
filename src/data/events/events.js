@@ -14,6 +14,7 @@ import jedzenieDoPracy from "./../../../public/img/events/013_jedzenie_do_pracy.
 import celiaczkaNaBudowie from "./../../../public/img/events/014_celiaczka_na_budowie.jpg";
 import rok2025 from "./../../../public/img/events/015_2025.jpg";
 import czyCeliakieMialamCaleZycie from "./../../../public/img/events/016_czy_celiakie_mialam_cale_zycie.jpg";
+import celiakiaIcoDalej from "./../../../public/img/events/017_caliakia_i_co_dalej.jpg";
 
 export const eventsData = [
     {
@@ -175,5 +176,15 @@ export const eventsData = [
       labelClass: "breakfast-label",
       description:
         "Czy celiakię miałam całe życie?",
+    },
+    {
+      id: 17,
+      href: "https://www.instagram.com/p/DUJTBcaiGrU/?img_index=1",
+      imgSrc: celiakiaIcoDalej,
+      altText: "Caliakia - i co dalej?",
+      label: "Celiakia",
+      labelClass: "breakfast-label",
+      description:
+        "Caliakia - i co dalej?",
     },
   ];

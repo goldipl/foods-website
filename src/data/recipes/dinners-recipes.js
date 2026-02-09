@@ -27,6 +27,7 @@ import bezglutenowaPizzaSalamiBurrata from "./../../../public/img/recipes/dinner
 import kremCurry from "./../../../public/img/recipes/dinners/027_krem_z_curry.jpg";
 import viralowyKebab from "./../../../public/img/recipes/dinners/028_viralowy_kebab.jpg";
 import obiadNaSzybkoLosos from "./../../../public/img/recipes/dinners/029_obiad_na_szybko_losos.jpg";
+import ekspresowaZupawAzjatyckimStylu from "./../../../public/img/recipes/dinners/030_ekspresowa_zupa_w_azjatyckim_stylu.jpg";
 
 export const dinnersRecipesData = [
     {
@@ -318,5 +319,15 @@ export const dinnersRecipesData = [
       labelClass: "dinner-label",
       description:
         "Obiad w 5 minut - wędzony łosoś, kasza, jajko i zielony ogórek",
+    },
+    {
+      id: 29,
+      href: "https://www.instagram.com/p/DUdMfr3iHj2/",
+      imgSrc: ekspresowaZupawAzjatyckimStylu,
+      altText: "Ekspresowa zupa w azjatyckim stylu",
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Ekspresowa zupa w azjatyckim stylu",
     },
   ];

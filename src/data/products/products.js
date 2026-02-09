@@ -25,6 +25,7 @@ import rogalBialyMakPutkaBezGlutenu from "./../../../public/img/products/024_rog
 import paluchyGrissini from "./../../../public/img/products/025_paluchy_grissini.jpg";
 import swiatecznaPutkaBezGlutenu from "./../../../public/img/products/026_swiateczna_putka_bez_glutenu.jpg";
 import cateringCzapielskiePudelka from "./../../../public/img/products/027_catering_czapielskie_pudelka.jpg";
+import tymbarkJustPlants from "./../../../public/img/products/028_tymbark_just_plants.jpg";
 
 export const productsData = [
     {
@@ -326,5 +327,15 @@ export const productsData = [
         labelClass: "product-label",
         description: 
             "Bezglutenowy catering od Czapielskie Pudełka",
+    },
+    {
+        id: 28,
+        href: "https://www.instagram.com/p/DULzDhFCPAR/?img_index=1",
+        imgSrc: tymbarkJustPlants,
+        altText: "Bezglutenowy Tymbark Just Plants - Pistacja i Wanilia",
+        label: "Tymbark Just Plants",
+        labelClass: "product-label",
+        description: 
+            "Bezglutenowy Tymbark Just Plants - Pistacja i Wanilia",
     },
   ];
