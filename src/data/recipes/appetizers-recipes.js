@@ -160,7 +160,7 @@ export const appetizersRecipesData = [
         href: "https://www.instagram.com/p/DUfWUERCF0-/",
         imgSrc: salatkaPieczonyRyz,
         altText: "Sałatka z pieczonym ryżem, ogórkiem, awokado, czerwoną cebulą, szczypiorkiem i sosem",
-        label: "Przystawka",
+        label: "Sałatka",
         labelClass: "appetizer-label",
         description: 
             "Sałatka z pieczonym ryżem, ogórkiem, awokado, czerwoną cebulą, szczypiorkiem i sosem",
