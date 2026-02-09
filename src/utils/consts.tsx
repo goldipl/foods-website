@@ -1,9 +1,9 @@
-import Glutenex from "@/public/img/cooperation/glutenex.png";
-import Incola from "@/public/img/cooperation/incola.jpg";
-import Bezgluten from "@/public/img/cooperation/bezgluten.png";
-import Balviten from "@/public/img/cooperation/balviten.jpg";
-import Vallongo from "@/public/img/cooperation/vallongo.jpg";
-import Moncana from "@/public/img/cooperation/moncana.png";
+import Glutenex from "../../public/img/cooperation/glutenex.png";
+import Incola from "../../public/img/cooperation/incola.jpg";
+import Bezgluten from "../../public/img/cooperation/bezgluten.png";
+import Balviten from "../../public/img/cooperation/balviten.jpg";
+import Vallongo from "../../public/img/cooperation/vallongo.jpg";
+import Moncana from "../../public/img/cooperation/moncana.png";
 
 export const PARTNERS = [
   { name: "Glutenex", href: "https://glutenex.pl/", src: Glutenex },
