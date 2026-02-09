@@ -11,6 +11,7 @@ import Incola from "./../../../public/img/cooperation/incola.jpg";
 import Bezgluten from "./../../../public/img/cooperation/bezgluten.png";
 import Balviten from "./../../../public/img/cooperation/balviten.jpg";
 import Vallongo from "./../../../public/img/cooperation/vallongo.jpg";
+import Moncana from "./../../../public/img/cooperation/moncana.png";
 
 SwiperCore.use([Pagination, Navigation]);
 
@@ -108,6 +109,22 @@ const CooperationSection = () => {
                   <Image
                     src={Vallongo}
                     alt="Vallongo"
+                    width={260}
+                    height={122}
+                  ></Image>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slide-content">
+                <Link
+                  className="cooperation-link"
+                  href="https://moncana.pl/"
+                  target="_blank"
+                >
+                  <Image
+                    src={Moncana}
+                    alt="Moncana"
                     width={260}
                     height={122}
                   ></Image>
