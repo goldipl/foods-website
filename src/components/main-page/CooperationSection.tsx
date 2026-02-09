@@ -44,6 +44,7 @@ const CooperationSection = () => {
                     className="cooperation-link"
                   >
                     <Image
+                      className="partner-logo"
                       src={partner.src}
                       alt={`${partner.name} logo`}
                       width={260}
