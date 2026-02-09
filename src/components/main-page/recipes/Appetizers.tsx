@@ -9,7 +9,7 @@ const Appetizers = () => {
   return (
     <>
       <div className="section-title">
-        <h2 id="przystawki">Przystawki / Przekąski</h2>
+        <h2 id="przystawki">Przystawki / Przekąski / Sałatki</h2>
       </div>
       <div className="listing-v1">
         {appetizersRecipesData
@@ -50,7 +50,7 @@ const Appetizers = () => {
 
       <div className="primary-button">
         <Link href="/przekaski/" className="primary-button__text">
-          Więcej z sekcji Przystawki / Przekąski <HiChevronRight />
+          Więcej z sekcji Przystawki / Przekąski / Sałatki <HiChevronRight />
         </Link>
       </div>
     </>
