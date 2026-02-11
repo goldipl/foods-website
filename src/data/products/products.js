@@ -26,6 +26,7 @@ import paluchyGrissini from "./../../../public/img/products/025_paluchy_grissini
 import swiatecznaPutkaBezGlutenu from "./../../../public/img/products/026_swiateczna_putka_bez_glutenu.jpg";
 import cateringCzapielskiePudelka from "./../../../public/img/products/027_catering_czapielskie_pudelka.jpg";
 import tymbarkJustPlants from "./../../../public/img/products/028_tymbark_just_plants.jpg";
+import tlustyCzwartekPutka from "./../../../public/img/products/029_tlusty_czwartek.jpg";
 
 export const productsData = [
     {
@@ -337,5 +338,15 @@ export const productsData = [
         labelClass: "product-label",
         description: 
             "Bezglutenowy Tymbark Just Plants - Pistacja i Wanilia",
+    },
+    {
+        id: 29,
+        href: "https://www.instagram.com/p/DUlpmWXCMDg/",
+        imgSrc: tlustyCzwartekPutka,
+        altText: "Tłusty Czwartek, last minute z Putka bez glutenu",
+        label: "Tymbark Just Plants",
+        labelClass: "product-label",
+        description: 
+            "Tłusty Czwartek, last minute 🍩 z Putka bez glutenu",
     },
   ];
