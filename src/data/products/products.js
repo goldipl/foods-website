@@ -344,7 +344,7 @@ export const productsData = [
         href: "https://www.instagram.com/p/DUlpmWXCMDg/",
         imgSrc: tlustyCzwartekPutka,
         altText: "Tłusty Czwartek, last minute z Putka bez glutenu",
-        label: "Tymbark Just Plants",
+        label: "Putka bez glutenu",
         labelClass: "product-label",
         description: 
             "Tłusty Czwartek, last minute 🍩 z Putka bez glutenu",
