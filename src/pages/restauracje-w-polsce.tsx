@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { CiInstagram } from "react-icons/ci";
 import { polishRestaurantsData } from "@/data/restaurants/polish-restaurants";
+import Topbar from "@/components/common/Topbar";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 
@@ -11,6 +12,7 @@ const PolishRestaurantsPage = () => {
   return (
     <>
       <header>
+        <Topbar />
         <Header />
       </header>
       <main>

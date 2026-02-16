@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import React from "react";
 import "@/sass/main.scss";
+import Topbar from "@/components/common/Topbar";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 
@@ -12,6 +13,7 @@ export default function GlutenFreePlaces() {
   return (
     <>
       <header>
+        <Topbar />
         <Header />
       </header>
       <main>
