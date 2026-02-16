@@ -1,9 +1,13 @@
 .topbar {
-  background-color: $main-bg-green-color;
   width: 100%;
+  background: url(./../../../public/img/backgrounds/bg-gradient02.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
   height: auto;
   padding: 4px 0;
-  border-top: 1px solid $grey-border-color01;
+  border-bottom: 1px solid $grey-border-color01;
   &-wrapper {
     position: relative;
     max-width: calc(1280px - 160px);
@@ -16,6 +20,7 @@
       margin: 0 8px;
       background-color: $white-bg-color;
       padding: 1px 8px;
+      border-radius: 8px;
     }
     p {
       color: $color-black;
