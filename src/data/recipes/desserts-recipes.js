@@ -30,6 +30,7 @@ import swiateczneKorzenneCiastka from "./../../../public/img/recipes/desserts/02
 import makamonki from "./../../../public/img/recipes/desserts/030_makamonki.jpg";
 import ciastkazJablkamizAirfryera from "./../../../public/img/recipes/desserts/031_ciastka_z_jablkami_z_airfryera.jpg";
 import paczusieBezDrozdzy from "./../../../public/img/recipes/desserts/032_paczusie_bez_drozdzy.jpg";
+import kokosankiVelKudlacze from "./../../../public/img/recipes/desserts/033_kokosanki_vel_kudlacze.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -351,5 +352,15 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Pączusie bez drożdży 🍩",
+    },
+    {
+      id: 33,
+      href: "https://www.instagram.com/p/DUxYyhGiBAT/",
+      imgSrc: kokosankiVelKudlacze,
+      altText: "Kokosanki vel kudłacze",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Kokosanki vel kudłacze",
     },
 ];
