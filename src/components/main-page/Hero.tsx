@@ -76,7 +76,7 @@ const Hero = () => {
                   <h2 className="slide-title">Mapa miejsc bezglutenowych</h2>
                   <h3 className="slide-subtitle">
                     Restauracje, kawiarnie, cukiernie bez glutenu w Polsce i na
-                    świecie
+                    świecie sprawdzone osobiście przeze mnie
                   </h3>
                   <Link className="hero-cta" href="/bezglutenowe-miejsca">
                     Sprawdź <HiChevronRight />
