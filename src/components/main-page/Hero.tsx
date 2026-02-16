@@ -1,10 +1,13 @@
 import React from "react";
+import Link from "next/link";
+import Image, { StaticImageData } from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore from "swiper";
-import { Pagination, Navigation } from "swiper/modules";
-import { Autoplay } from "swiper/modules";
-import Image from "next/image";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import { HiChevronRight } from "react-icons/hi2";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 import welcomeImg from "./../../../public/img/welcome/karola-dynia.jpg";
 import breakfastImg from "./../../../public/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.jpg";
@@ -15,11 +18,139 @@ import pastaGlutenFreeRoma from "./../../../public/img/welcome/wloski-makaron-gl
 import saskaSushiWarszawa from "./../../../public/img/restaurants/poland/001_saska_sushi.jpg";
 import bezglutenoweHalloween from "./../../../public/img/events/011_bezglutenowe_halloween.jpg";
 import glutenFreeHeroMap from "./../../../public/img/map/gluten-free-hero-map.jpg";
-import Link from "next/link";
 
-SwiperCore.use([Pagination, Navigation]);
+interface SlideLink {
+  label: string;
+  href: string;
+  className?: string;
+}
 
-const Hero = () => {
+interface SlideItem {
+  title: string;
+  subtitle: string;
+  image: StaticImageData;
+  alt: string;
+  links: SlideLink[];
+  reverse?: boolean;
+}
+
+const SLIDES_DATA: SlideItem[] = [
+  {
+    title: "Zdrowo, smacznie, bezglutenowo!",
+    subtitle: "Przepisy, restauracje i porady dla osób na diecie bezglutenowej",
+    image: welcomeImg,
+    alt: "Restauracja Rola Pao w Warszawie",
+    links: [
+      { label: "Przepisy", href: "#sniadania" },
+      {
+        label: "Poradniki",
+        href: "#celiakia-podstawowe-informacje",
+        className: "white",
+      },
+    ],
+  },
+  {
+    title: "Mapa miejsc bezglutenowych",
+    subtitle:
+      "Restauracje, kawiarnie, cukiernie bez glutenu w Polsce i na świecie sprawdzone osobiście przeze mnie",
+    image: glutenFreeHeroMap,
+    alt: "Mapa miejsc bezglutenowych",
+    links: [{ label: "Sprawdź", href: "/bezglutenowe-miejsca" }],
+  },
+  {
+    title: "Bezglutenowe śniadania",
+    subtitle:
+      "Szukasz pomysłów na śniadania bezglutenowe, które są nie tylko zdrowe, ale i pyszne?",
+    image: breakfastImg,
+    alt: "Bezglutenowa śniadaniowa tortilla z komosy ryżowej",
+    reverse: true,
+    links: [{ label: "Sprawdź przepisy", href: "#sniadania" }],
+  },
+  {
+    title: "Bezglutenowe obiady",
+    subtitle:
+      "Szukasz inspiracji na obiady bezglutenowe, które będą nie tylko zdrowe, ale też pyszne?",
+    image: dinnerImg,
+    alt: "Kurczako-burger Teriyaki",
+    links: [{ label: "Sprawdź przepisy", href: "#obiady" }],
+  },
+  {
+    title: "Bezglutenowe desery",
+    subtitle:
+      "Marzysz o pysznych deserach bezglutenowych, które zachwycą smakiem?",
+    image: dessertImg,
+    alt: "Wege sernik",
+    reverse: true,
+    links: [{ label: "Sprawdź przepisy", href: "#desery" }],
+  },
+  {
+    title: "Bezglutenowe restauracje w Polsce",
+    subtitle:
+      "Szukasz miejsc, gdzie możesz zjeść pysznie i bez glutenu w Polsce?",
+    image: saskaSushiWarszawa,
+    alt: "Saska Sushi",
+    links: [{ label: "Sprawdź", href: "#restauracje-polska" }],
+  },
+  {
+    title: "Bezglutenowe restauracje na świecie",
+    subtitle:
+      "Szukasz miejsc, gdzie możesz zjeść pysznie i bez glutenu na świecie?",
+    image: pastaGlutenFreeRoma,
+    alt: "Restauracja Mama Eat, Włochy",
+    reverse: true,
+    links: [{ label: "Sprawdź", href: "#restauracje-europa" }],
+  },
+  {
+    title: 'Bezglutenowe produkty - "Czy to ma gluten?"',
+    subtitle:
+      "Sprawdzone produkty bezglutenowe, które warto mieć w swojej kuchni",
+    image: pierogi,
+    alt: "Czy to ma gluten?",
+    links: [{ label: "Sprawdź", href: "#produkty" }],
+  },
+  {
+    title: "Bezglutenowe wydarzenia",
+    subtitle:
+      "Bezglutenowe eventy, warsztaty i spotkania dla osób na diecie bezglutenowej",
+    image: bezglutenoweHalloween,
+    alt: "Bezglutenowe wydarzenia",
+    links: [{ label: "Sprawdź", href: "#wydarzenia" }],
+  },
+];
+
+const SlideText: React.FC<{
+  title: string;
+  subtitle: string;
+  links: SlideLink[];
+}> = ({ title, subtitle, links }) => (
+  <div className="swiper-slide-box__text">
+    <h2 className="slide-title">{title}</h2>
+    <h3 className="slide-subtitle">{subtitle}</h3>
+    <div className="hero-cta-box">
+      {links.map((link, idx) => (
+        <Link
+          key={`${link.label}-${idx}`}
+          href={link.href}
+          className={`hero-cta ${link.className || ""}`}
+        >
+          {link.label} <HiChevronRight />
+        </Link>
+      ))}
+    </div>
+  </div>
+);
+
+const SlideImage: React.FC<{
+  src: StaticImageData;
+  alt: string;
+  priority?: boolean;
+}> = ({ src, alt, priority }) => (
+  <div className="swiper-slide-box__img">
+    <Image src={src} alt={alt} width={450} height={450} priority={priority} />
+  </div>
+);
+
+const Hero: React.FC = () => {
   return (
     <section id="hero" className="hero">
       <div className="hero-wrapper">
@@ -35,239 +166,32 @@ const Hero = () => {
           }}
           modules={[Autoplay, Pagination, Navigation]}
         >
-          <SwiperSlide>
-            <div className="slide-content">
-              <div className="swiper-slide-box">
-                <div className="swiper-slide-box__text">
-                  <h2 className="slide-title">
-                    Zdrowo, smacznie, bezglutenowo!
-                  </h2>
-                  <h3 className="slide-subtitle">
-                    Przepisy, restauracje i porady dla osób na diecie
-                    bezglutenowej
-                  </h3>
-                  <div className="hero-cta-box">
-                    <Link className="hero-cta" href="#sniadania">
-                      Przepisy <HiChevronRight />
-                    </Link>
-                    <Link
-                      className="hero-cta white"
-                      href="#celiakia-podstawowe-informacje"
-                    >
-                      Poradniki <HiChevronRight />
-                    </Link>
-                  </div>
-                </div>
-                <div className="swiper-slide-box__img">
-                  <Image
-                    src={welcomeImg}
-                    alt="Restauracja Rola Pao w Warszawie"
-                    width={450}
-                    height={450}
-                  ></Image>
+          {SLIDES_DATA.map((slide, index) => (
+            <SwiperSlide key={`hero-slide-${index}`}>
+              <div className="slide-content">
+                <div
+                  className={`swiper-slide-box ${slide.reverse ? "text-right-side" : ""}`}
+                >
+                  {/* Clean logic: Reverse slides swap the DOM order of Text/Image */}
+                  {!slide.reverse ? (
+                    <>
+                      <SlideText {...slide} />
+                      <SlideImage
+                        src={slide.image}
+                        alt={slide.alt}
+                        priority={index === 0}
+                      />
+                    </>
+                  ) : (
+                    <>
+                      <SlideImage src={slide.image} alt={slide.alt} />
+                      <SlideText {...slide} />
+                    </>
+                  )}
                 </div>
               </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-content">
-              <div className="swiper-slide-box">
-                <div className="swiper-slide-box__text">
-                  <h2 className="slide-title">Mapa miejsc bezglutenowych</h2>
-                  <h3 className="slide-subtitle">
-                    Restauracje, kawiarnie, cukiernie bez glutenu w Polsce i na
-                    świecie sprawdzone osobiście przeze mnie
-                  </h3>
-                  <Link className="hero-cta" href="/bezglutenowe-miejsca">
-                    Sprawdź <HiChevronRight />
-                  </Link>
-                </div>
-                <div className="swiper-slide-box__img">
-                  <Image
-                    src={glutenFreeHeroMap}
-                    alt="Mapa miejsc bezglutenowych"
-                    width={450}
-                    height={450}
-                  ></Image>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-content">
-              <div className="swiper-slide-box text-right-side">
-                <div className="swiper-slide-box__img">
-                  <Image
-                    src={breakfastImg}
-                    alt="Bezglutenowa śniadaniowa tortilla z komosy ryżowej"
-                    width={450}
-                    height={450}
-                  ></Image>
-                </div>
-                <div className="swiper-slide-box__text">
-                  <h2 className="slide-title">Bezglutenowe śniadania</h2>
-                  <h3 className="slide-subtitle">
-                    Szukasz pomysłów na śniadania bezglutenowe, które są nie
-                    tylko zdrowe, ale i pyszne? Dobrze trafiłeś!
-                  </h3>
-                  <Link className="hero-cta" href="#sniadania">
-                    Sprawdź przepisy <HiChevronRight />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-content">
-              <div className="swiper-slide-box">
-                <div className="swiper-slide-box__text">
-                  <h2 className="slide-title">Bezglutenowe obiady</h2>
-                  <h3 className="slide-subtitle">
-                    Szukasz inspiracji na obiady bezglutenowe, które będą nie
-                    tylko zdrowe, ale też naprawdę pyszne? Świetnie trafiłeś!
-                  </h3>
-                  <Link className="hero-cta" href="#obiady">
-                    Sprawdź przepisy <HiChevronRight />
-                  </Link>
-                </div>
-                <div className="swiper-slide-box__img">
-                  <Image
-                    src={dinnerImg}
-                    alt="Kurczako-burger Teriyaki"
-                    width={450}
-                    height={450}
-                  ></Image>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-content">
-              <div className="swiper-slide-box text-right-side">
-                <div className="swiper-slide-box__img">
-                  <Image
-                    src={dessertImg}
-                    alt="Wege sernik"
-                    width={450}
-                    height={450}
-                  ></Image>
-                </div>
-                <div className="swiper-slide-box__text">
-                  <h2 className="slide-title">Bezglutenowe desery</h2>
-                  <h3 className="slide-subtitle">
-                    Marzysz o pysznych deserach bezglutenowych, które zachwycą
-                    smakiem, a przy tym będą lekkie i zdrowe? Jesteś we
-                    właściwym miejscu!
-                  </h3>
-                  <Link className="hero-cta" href="#desery">
-                    Sprawdź przepisy <HiChevronRight />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-content">
-              <div className="swiper-slide-box">
-                <div className="swiper-slide-box__text">
-                  <h2 className="slide-title">
-                    Bezglutenowe restauracje w Polsce
-                  </h2>
-                  <h3 className="slide-subtitle">
-                    Szukasz miejsc, gdzie możesz zjeść pysznie i bez glutenu w
-                    Polsce? Oto moje rekomendacje!
-                  </h3>
-                  <Link className="hero-cta" href="#restauracje-polska">
-                    Sprawdź <HiChevronRight />
-                  </Link>
-                </div>
-                <div className="swiper-slide-box__img">
-                  <Image
-                    src={saskaSushiWarszawa}
-                    alt="Saska Sushi"
-                    width={450}
-                    height={450}
-                  ></Image>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-content">
-              <div className="swiper-slide-box text-right-side">
-                <div className="swiper-slide-box__img">
-                  <Image
-                    src={pastaGlutenFreeRoma}
-                    alt="Restauracja Mama Eat, Włochy"
-                    width={450}
-                    height={450}
-                  ></Image>
-                </div>
-                <div className="swiper-slide-box__text">
-                  <h2 className="slide-title">
-                    Bezglutenowe restauracje na świecie
-                  </h2>
-                  <h3 className="slide-subtitle">
-                    Szukasz miejsc, gdzie możesz zjeść pysznie i bez glutenu na
-                    świecie? Oto moje rekomendacje!
-                  </h3>
-                  <Link className="hero-cta" href="#restauracje-europa">
-                    Sprawdź <HiChevronRight />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-content">
-              <div className="swiper-slide-box">
-                <div className="swiper-slide-box__text">
-                  <h2 className="slide-title">
-                    Bezglutenowe produkty - "Czy to ma gluten?"
-                  </h2>
-                  <h3 className="slide-subtitle">
-                    Sprawdzone produkty bezglutenowe, które warto mieć w swojej
-                    kuchni i w codziennym życiu
-                  </h3>
-                  <Link className="hero-cta" href="#produkty">
-                    Sprawdź <HiChevronRight />
-                  </Link>
-                </div>
-                <div className="swiper-slide-box__img">
-                  <Image
-                    src={pierogi}
-                    alt="Czy to ma gluten?"
-                    width={450}
-                    height={450}
-                  ></Image>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-content">
-              <div className="swiper-slide-box">
-                <div className="swiper-slide-box__text">
-                  <h2 className="slide-title">Bezglutenowe wydarzenia</h2>
-                  <h3 className="slide-subtitle">
-                    Bezglutenowe eventy, warsztaty i spotkania dla osób na
-                    diecie bezglutenowej
-                  </h3>
-                  <Link className="hero-cta" href="#wydarzenia">
-                    Sprawdź <HiChevronRight />
-                  </Link>
-                </div>
-                <div className="swiper-slide-box__img">
-                  <Image
-                    src={bezglutenoweHalloween}
-                    alt="Bezglutenowe wydarzenia"
-                    width={450}
-                    height={450}
-                  ></Image>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </section>
