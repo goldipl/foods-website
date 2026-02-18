@@ -87,6 +87,11 @@ class MyDocument extends Document {
               "url": "https://bezglutenowakarola.pl"
             }`}
           </script>
+
+          <meta
+            name="google-site-verification"
+            content="Wwdgti5L7WUD354p16SJSkp1xWEkAU95jfBNILTVeFc"
+          />
         </Head>
         <body>
           <Main />
