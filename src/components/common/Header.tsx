@@ -321,7 +321,7 @@ const Header = () => {
                 />
               </span>
               <ul
-                className={`nav-second-lvl ${
+                className={`nav-second-lvl grid-3-col ${
                   activeDropdown === "thirdDropdown" ? "active" : ""
                 }`}
               >
@@ -363,6 +363,36 @@ const Header = () => {
                 <li>
                   <Link href="/#produkty" onClick={handleCloseDropdown}>
                     Half Price
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/#produkty" onClick={handleCloseDropdown}>
+                    Putka bez glutnenu
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/#produkty" onClick={handleCloseDropdown}>
+                    Czapielskie pudełka
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/#produkty" onClick={handleCloseDropdown}>
+                    Tymbark Just Plants
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/#produkty" onClick={handleCloseDropdown}>
+                    Sklep pizza naturalna
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/#produkty" onClick={handleCloseDropdown}>
+                    Incola
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/#produkty" onClick={handleCloseDropdown}>
+                    Vallongo
                   </Link>
                 </li>
                 <li>
