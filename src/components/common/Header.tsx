@@ -382,7 +382,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link href="/#produkty" onClick={handleCloseDropdown}>
-                    Sklep pizza naturalna
+                    Sklep Pizza Naturalna
                   </Link>
                 </li>
                 <li>
@@ -393,6 +393,11 @@ const Header = () => {
                 <li>
                   <Link href="/#produkty" onClick={handleCloseDropdown}>
                     Vallongo
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/#produkty" onClick={handleCloseDropdown}>
+                    Glutenex
                   </Link>
                 </li>
                 <li>
