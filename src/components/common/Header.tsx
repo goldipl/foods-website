@@ -448,7 +448,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link href="/#wydarzenia" onClick={handleCloseDropdown}>
-                    Wydarzenia i wiele więcej :)
+                    Wydarzenia i warsztaty bezglutenowe
                   </Link>
                 </li>
               </ul>

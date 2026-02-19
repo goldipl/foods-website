@@ -62,7 +62,7 @@ const Footer = () => {
               Pierwsze kroki po diagnozie
             </Link>
             <Link href="/#video">Jak wygląda życie z celiakią? (podcast)</Link>
-            <Link href="#wydarzenia">Wydarzenia i wiele więcej :)</Link>
+            <Link href="#wydarzenia">Wydarzenia i warsztaty bezglutenowe</Link>
           </div>
           <div className="footer-col">
             <h2>Dodatkowe informacje</h2>
