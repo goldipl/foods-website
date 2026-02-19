@@ -9,7 +9,7 @@ const Dinners = () => {
   return (
     <>
       <div className="section-title">
-        <h2 id="obiady">Obiady</h2>
+        <h2 id="obiady">Bezglutenowe obiady</h2>
       </div>
       <div className="listing-v1">
         {dinnersRecipesData

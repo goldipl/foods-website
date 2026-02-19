@@ -9,7 +9,7 @@ const Breakfasts = () => {
   return (
     <>
       <div className="section-title">
-        <h2 id="sniadania">Śniadania</h2>
+        <h2 id="sniadania">Bezglutenowe śniadania</h2>
       </div>
       <div className="listing-v1">
         {breakfastsRecipesData

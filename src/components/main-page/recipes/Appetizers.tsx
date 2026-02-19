@@ -9,7 +9,7 @@ const Appetizers = () => {
   return (
     <>
       <div className="section-title">
-        <h2 id="przystawki">Przystawki / Przekąski / Sałatki</h2>
+        <h2 id="przystawki">Bezglutenowe przystawki / przekąski / sałatki</h2>
       </div>
       <div className="listing-v1">
         {appetizersRecipesData

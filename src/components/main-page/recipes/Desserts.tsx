@@ -9,7 +9,7 @@ const Desserts = () => {
   return (
     <>
       <div className="section-title">
-        <h2 id="desery">Desery / Słodkości</h2>
+        <h2 id="desery">Bezglutenowe desery / słodkości</h2>
       </div>
       <div className="listing-v1">
         {dessertsRecipesData
