@@ -9,7 +9,7 @@ const Products = () => {
   return (
     <>
       <div className="section-title">
-        <h2 id="produkty">Produkty</h2>
+        <h2 id="produkty">Bezglutenowe produkty</h2>
       </div>
       <div className="listing-v1">
         {productsData

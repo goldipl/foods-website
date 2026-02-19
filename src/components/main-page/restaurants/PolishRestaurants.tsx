@@ -9,7 +9,7 @@ const PolishRestaurants = () => {
   return (
     <>
       <div className="section-title">
-        <h2 id="restauracje-polska">Restauracje - Polska</h2>
+        <h2 id="restauracje-polska">Bezglutenowe restauracje w Polsce</h2>
       </div>
       <div className="listing-v1">
         {polishRestaurantsData
