@@ -18,6 +18,7 @@ import Bezgluten from "../../public/img/cooperation/bezgluten.png";
 import Balviten from "../../public/img/cooperation/balviten.jpg";
 import Vallongo from "../../public/img/cooperation/vallongo.jpg";
 import Moncana from "../../public/img/cooperation/moncana.png";
+import PutkaBezGlutenu from "../../public/img/cooperation/putka-bez-glutenu.png";
 
 // --- TYPES & INTERFACES ---
 export interface SlideLink {
@@ -45,6 +46,11 @@ export interface PartnerItem {
 export const PARTNERS: PartnerItem[] = [
   { name: "Glutenex", href: "https://glutenex.pl/", src: Glutenex },
   { name: "Bezgluten", href: "https://bezgluten.pl/", src: Bezgluten },
+  {
+    name: "Putka bez glutenu",
+    href: "https://www.putka.pl/produkty/produkty-bezglutenowe/",
+    src: PutkaBezGlutenu,
+  },
   { name: "Incola", href: "https://www.incola.com.pl/", src: Incola },
   { name: "Balviten", href: "https://balviten.com/", src: Balviten },
   { name: "Vallongo", href: "https://vallongo.it/pl-pl", src: Vallongo },
