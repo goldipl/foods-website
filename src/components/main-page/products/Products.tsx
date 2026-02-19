@@ -15,7 +15,7 @@ const Products = () => {
         {productsData
           .slice()
           .reverse()
-          .slice(0, 4)
+          .slice(0, 8)
           .map((product) => (
             <Link
               key={product.id}
