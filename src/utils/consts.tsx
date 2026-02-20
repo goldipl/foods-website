@@ -1,5 +1,13 @@
 import { StaticImageData } from "next/image";
 
+// --- ICON IMPORTS ---
+import logo from "../../public/icons/header/bezglutenowakarola-logo.svg";
+import menuDownIcon from "../../public/icons/common/menu-down-icon.svg";
+import instagramIcon from "../../public/icons/common/instagram.svg";
+import youTubeIcon from "../../public/icons/common/youtube.svg";
+import facebookIcon from "../../public/icons/common/facebook.svg";
+import mapIcon from "../../public/img/map/map-icon.png";
+
 // --- HERO SLIDE IMPORTS ---
 import welcomeImg from "../../public/img/welcome/karola-dynia.jpg";
 import breakfastImg from "../../public/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.jpg";
@@ -12,15 +20,31 @@ import bezglutenoweHalloween from "../../public/img/events/011_bezglutenowe_hall
 import glutenFreeHeroMap from "../../public/img/map/gluten-free-hero-map.jpg";
 
 // --- PARTNER IMPORTS ---
-import Glutenex from "../../public/img/cooperation/glutenex.png";
-import Incola from "../../public/img/cooperation/incola.jpg";
-import Bezgluten from "../../public/img/cooperation/bezgluten.png";
-import Balviten from "../../public/img/cooperation/balviten.jpg";
-import Vallongo from "../../public/img/cooperation/vallongo.jpg";
-import Moncana from "../../public/img/cooperation/moncana.png";
-import PutkaBezGlutenu from "../../public/img/cooperation/putka-bez-glutenu.png";
+import GlutenexImg from "../../public/img/cooperation/glutenex.png";
+import IncolaImg from "../../public/img/cooperation/incola.jpg";
+import BezglutenImg from "../../public/img/cooperation/bezgluten.png";
+import BalvitenImg from "../../public/img/cooperation/balviten.jpg";
+import VallongoImg from "../../public/img/cooperation/vallongo.jpg";
+import MoncanaImg from "../../public/img/cooperation/moncana.png";
+import PutkaBezGlutenuImg from "../../public/img/cooperation/putka-bez-glutenu.png";
 
-// --- TYPES & INTERFACES ---
+// --- INTERFACES ---
+
+export interface HeaderNavItem {
+  label: string;
+  href?: string;
+  children?: HeaderNavItem[];
+  grid?: boolean;
+  className?: string;
+}
+
+export interface HeaderSocialLink {
+  label: string;
+  icon: string | StaticImageData;
+  href: string;
+  handle: string;
+}
+
 export interface SlideLink {
   label: string;
   href: string;
@@ -42,19 +66,118 @@ export interface PartnerItem {
   src: StaticImageData;
 }
 
-// --- DATA ARRAYS ---
+// --- NAVIGATION DATA ---
+
+export const HEADER_ICONS = {
+  logo,
+  menuDownIcon,
+};
+
+export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
+  {
+    label: "Przepisy",
+    children: [
+      { label: "Śniadania", href: "/#sniadania" },
+      { label: "Obiady", href: "/#obiady" },
+      { label: "Desery", href: "/#desery" },
+      { label: "Przystawki / Przekąski / Sałatki", href: "/#przystawki" },
+    ],
+  },
+  {
+    label: "Restauracje",
+    children: [
+      {
+        label: "Polska",
+        children: [
+          { label: "Warszawa", href: "/#restauracje-polska" },
+          { label: "Trójmiasto", href: "/#restauracje-polska" },
+          { label: "Kraków", href: "/#restauracje-polska" },
+          { label: "Kielce", href: "/#restauracje-polska" },
+          { label: "Zakopane", href: "/#restauracje-polska" },
+        ],
+      },
+      {
+        label: "Europa",
+        children: [
+          { label: "Włochy", href: "/#restauracje-europa" },
+          { label: "Cypr", href: "/#restauracje-europa" },
+          { label: "Rumunia", href: "/#restauracje-europa" },
+        ],
+      },
+      { label: "Mapa miejsc bezglutenowych", href: "/bezglutenowe-miejsca" },
+    ],
+  },
+  {
+    label: "Produkty",
+    grid: true,
+    children: [
+      { label: "Lidl", href: "/#produkty" },
+      { label: "Biedronka", href: "/#produkty" },
+      { label: "Stokrotka", href: "/#produkty" },
+      { label: "Żabka", href: "/#produkty" },
+      { label: "Incola", href: "/#produkty" },
+      { label: "Glutenex", href: "/#produkty" },
+    ],
+  },
+  {
+    label: "Celiakia (co dalej?)",
+    children: [
+      {
+        label: "Podstawowe informacje",
+        href: "/#celiakia-podstawowe-informacje",
+      },
+      {
+        label: "Pierwsze kroki po diagnozie",
+        href: "/#pierwsze-kroki-po-diagnozie",
+      },
+      { label: "Jak wygląda życie z celiakią?", href: "/#video" },
+    ],
+  },
+  { label: "O mnie", href: "/#o-mnie" },
+  { label: "Kontakt", href: "/#kontakt", className: "contact" },
+];
+
+export const HEADER_SOCIAL_LINKS: HeaderSocialLink[] = [
+  {
+    label: "Instagram",
+    icon: instagramIcon,
+    href: "https://www.instagram.com/bezglutenowakarola/",
+    handle: "@bezglutenowakarola",
+  },
+  {
+    label: "YouTube",
+    icon: youTubeIcon,
+    href: "https://www.youtube.com/@bezglutenowakarola",
+    handle: "@bezglutenowakarola",
+  },
+  {
+    label: "Facebook",
+    icon: facebookIcon,
+    href: "https://www.facebook.com/profile.php?id=61576336200554",
+    handle: "@bezglutenowakarola",
+  },
+  {
+    label: "Mapa",
+    icon: mapIcon,
+    href: "/bezglutenowe-miejsca",
+    handle: "Mapa miejsc",
+  },
+];
+
+// --- CONTENT DATA ---
+
 export const PARTNERS: PartnerItem[] = [
-  { name: "Glutenex", href: "https://glutenex.pl/", src: Glutenex },
-  { name: "Bezgluten", href: "https://bezgluten.pl/", src: Bezgluten },
+  { name: "Glutenex", href: "https://glutenex.pl/", src: GlutenexImg },
+  { name: "Bezgluten", href: "https://bezgluten.pl/", src: BezglutenImg },
   {
     name: "Putka bez glutenu",
     href: "https://www.putka.pl/produkty/produkty-bezglutenowe/",
-    src: PutkaBezGlutenu,
+    src: PutkaBezGlutenuImg,
   },
-  { name: "Incola", href: "https://www.incola.com.pl/", src: Incola },
-  { name: "Balviten", href: "https://balviten.com/", src: Balviten },
-  { name: "Vallongo", href: "https://vallongo.it/pl-pl", src: Vallongo },
-  { name: "Moncana", href: "https://moncana.pl/", src: Moncana },
+  { name: "Incola", href: "https://www.incola.com.pl/", src: IncolaImg },
+  { name: "Balviten", href: "https://balviten.com/", src: BalvitenImg },
+  { name: "Vallongo", href: "https://vallongo.it/pl-pl", src: VallongoImg },
+  { name: "Moncana", href: "https://moncana.pl/", src: MoncanaImg },
 ];
 
 export const HERO_SLIDES: HeroSlideItem[] = [

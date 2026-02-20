@@ -1,112 +1,14 @@
+"use client";
+
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
-import logo from "./../../../public/icons/header/bezglutenowakarola-logo.svg";
-import menuDownIcon from "./../../../public/icons/common/menu-down-icon.svg";
-import instagramIcon from "./../../../public/icons/common/instagram.svg";
-import youTubeIcon from "./../../../public/icons/common/youtube.svg";
-import facebookIcon from "./../../../public/icons/common/facebook.svg";
-import mapIcon from "./../../../public/img/map/map-icon.png";
-
-interface HeaderNavItem {
-  label: string;
-  href?: string;
-  children?: HeaderNavItem[];
-  grid?: boolean;
-  className?: string;
-}
-
-const HEADER_NAV_ITEMS: HeaderNavItem[] = [
-  {
-    label: "Przepisy",
-    children: [
-      { label: "Śniadania", href: "/#sniadania" },
-      { label: "Obiady", href: "/#obiady" },
-      { label: "Desery", href: "/#desery" },
-      { label: "Przystawki / Przekąski / Sałatki", href: "/#przystawki" },
-    ],
-  },
-  {
-    label: "Restauracje",
-    children: [
-      {
-        label: "Polska",
-        children: [
-          { label: "Warszawa", href: "/#restauracje-polska" },
-          { label: "Trójmiasto", href: "/#restauracje-polska" },
-          { label: "Kraków", href: "/#restauracje-polska" },
-          { label: "Kielce", href: "/#restauracje-polska" },
-          { label: "Zakopane", href: "/#restauracje-polska" },
-        ],
-      },
-      {
-        label: "Europa",
-        children: [
-          { label: "Włochy", href: "/#restauracje-europa" },
-          { label: "Cypr", href: "/#restauracje-europa" },
-          { label: "Rumunia", href: "/#restauracje-europa" },
-        ],
-      },
-      { label: "Mapa miejsc bezglutenowych", href: "/bezglutenowe-miejsca" },
-    ],
-  },
-  {
-    label: "Produkty",
-    grid: true,
-    children: [
-      { label: "Lidl", href: "/#produkty" },
-      { label: "Biedronka", href: "/#produkty" },
-      { label: "Stokrotka", href: "/#produkty" },
-      { label: "Żabka", href: "/#produkty" },
-      { label: "Incola", href: "/#produkty" },
-      { label: "Glutenex", href: "/#produkty" },
-    ],
-  },
-  {
-    label: "Celiakia (co dalej?)",
-    children: [
-      {
-        label: "Podstawowe informacje",
-        href: "/#celiakia-podstawowe-informacje",
-      },
-      {
-        label: "Pierwsze kroki po diagnozie",
-        href: "/#pierwsze-kroki-po-diagnozie",
-      },
-      { label: "Jak wygląda życie z celiakią?", href: "/#video" },
-    ],
-  },
-  { label: "O mnie", href: "/#o-mnie" },
-  { label: "Kontakt", href: "/#kontakt", className: "contact" },
-];
-
-const HEADER_SOCIAL_LINKS = [
-  {
-    label: "Instagram",
-    icon: instagramIcon,
-    href: "https://www.instagram.com/bezglutenowakarola/",
-    handle: "@bezglutenowakarola",
-  },
-  {
-    label: "YouTube",
-    icon: youTubeIcon,
-    href: "https://www.youtube.com/@bezglutenowakarola",
-    handle: "@bezglutenowakarola",
-  },
-  {
-    label: "Facebook",
-    icon: facebookIcon,
-    href: "https://www.facebook.com/profile.php?id=61576336200554",
-    handle: "@bezglutenowakarola",
-  },
-  {
-    label: "Mapa",
-    icon: mapIcon,
-    href: "/bezglutenowe-miejsca",
-    handle: "Mapa miejsc",
-  },
-];
+import {
+  HEADER_NAV_ITEMS,
+  HEADER_SOCIAL_LINKS,
+  HEADER_ICONS,
+} from "./../../utils/consts";
 
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -121,6 +23,7 @@ const Header = () => {
   const headerRef = useRef<HTMLDivElement | null>(null);
 
   const toggleBodyScroll = (isBlocked: boolean) => {
+    if (typeof document === "undefined") return;
     const action = isBlocked ? "add" : "remove";
     document.body.classList[action]("blocked-body");
     document.documentElement.classList[action]("blocked-body");
@@ -133,11 +36,11 @@ const Header = () => {
     toggleBodyScroll(false);
   };
 
-  // Timer effect: Hide label after 10 seconds
+  // Timer effect: Hide label after 15 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowInstaLabel(false);
-    }, 10000);
+    }, 15000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -165,7 +68,13 @@ const Header = () => {
       <div className="header-wrapper">
         <div className="header-wrapper__logo">
           <Link href="/">
-            <Image src={logo} alt="Logo" height={90} width={300} />
+            <Image
+              src={HEADER_ICONS.logo}
+              alt="Logo"
+              height={90}
+              width={300}
+              priority
+            />
           </Link>
         </div>
 
@@ -204,7 +113,7 @@ const Header = () => {
                   >
                     {item.label}
                     <Image
-                      src={menuDownIcon}
+                      src={HEADER_ICONS.menuDownIcon}
                       alt="arrow"
                       className={`arrow-img ${activeDropdown === item.label ? "rotate" : ""}`}
                     />
@@ -237,7 +146,7 @@ const Header = () => {
                             >
                               {subItem.label}
                               <Image
-                                src={menuDownIcon}
+                                src={HEADER_ICONS.menuDownIcon}
                                 alt="arrow"
                                 className={`arrow-img ${activeSubDropdown === subItem.label ? "rotate" : ""}`}
                               />
