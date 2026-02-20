@@ -206,6 +206,10 @@ header {
                     color: $color-black;
                   }
                 }
+
+                &.header-social-link.insta-shake {
+                  margin-top: 16px;
+                }
               }
               .header-social-link {
                 > a {
@@ -413,6 +417,12 @@ header {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   z-index: 100;
   pointer-events: none;
+
+  @media (max-width: 1180px) {
+    left: 20px;
+    transform: none;
+    bottom: 130%;
+  }
 }
 
 /* The little triangle under the bubble */
@@ -424,7 +434,11 @@ header {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: $color-instagram $transparent $transparent $transparent;
+  border-color: $color-instagram transparent transparent transparent;
+
+  @media (max-width: 1180px) {
+    left: 20px;
+  }
 }
 
 /* Shake Animation Logic */

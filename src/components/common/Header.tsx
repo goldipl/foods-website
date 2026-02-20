@@ -17,8 +17,8 @@ const Header = () => {
   );
   const [openHamburger, setOpenHamburger] = useState(false);
 
-  // State for the 10-second shaking label
-  const [showInstaLabel, setShowInstaLabel] = useState(true);
+  // State for the shaking label - initially false
+  const [showInstaLabel, setShowInstaLabel] = useState(false);
 
   const headerRef = useRef<HTMLDivElement | null>(null);
 
@@ -36,13 +36,30 @@ const Header = () => {
     toggleBodyScroll(false);
   };
 
-  // Timer effect: Hide label after 15 seconds
+  // Logic to trigger Instagram animation
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowInstaLabel(false);
-    }, 15000);
-    return () => clearTimeout(timer);
-  }, []);
+    const isMobile = window.innerWidth <= 1180;
+
+    if (isMobile) {
+      // On mobile, trigger only when hamburger is opened
+      if (openHamburger) {
+        setShowInstaLabel(true);
+      }
+    } else {
+      // On desktop, trigger immediately on mount
+      setShowInstaLabel(true);
+    }
+  }, [openHamburger]);
+
+  // Timer effect: Hide label after 15 seconds once it becomes visible
+  useEffect(() => {
+    if (showInstaLabel) {
+      const timer = setTimeout(() => {
+        setShowInstaLabel(false);
+      }, 15000);
+      return () => clearTimeout(timer);
+    }
+  }, [showInstaLabel]);
 
   useEffect(() => {
     toggleBodyScroll(openHamburger);
@@ -175,36 +192,41 @@ const Header = () => {
             ))}
 
             {/* Social Links with Instagram Effect */}
-            {HEADER_SOCIAL_LINKS.map((social) => (
-              <li
-                key={social.label}
-                className={`header-social-link has-tooltip ${social.label === "Instagram" && showInstaLabel ? "insta-shake" : ""}`}
-              >
-                <Link
-                  href={social.href}
-                  target="_blank"
-                  onClick={handleCloseAll}
-                  style={{ position: "relative" }}
-                >
-                  <Image
-                    src={social.icon}
-                    alt={social.label}
-                    width={24}
-                    height={24}
-                    className="social-icon"
-                  />
-                  <span>{social.handle}</span>
+            {HEADER_SOCIAL_LINKS.map((social) => {
+              const isInstagram = social.label === "Instagram";
+              const shouldAnimate = isInstagram && showInstaLabel;
 
-                  {/* Shaking Label for Instagram */}
-                  {social.label === "Instagram" && showInstaLabel && (
-                    <div className="insta-promo-bubble">
-                      Zaobserwuj mnie na Instagramie
-                    </div>
-                  )}
-                </Link>
-                <span className="tooltip">{social.label}</span>
-              </li>
-            ))}
+              return (
+                <li
+                  key={social.label}
+                  className={`header-social-link has-tooltip ${shouldAnimate ? "insta-shake" : ""}`}
+                >
+                  <Link
+                    href={social.href}
+                    target="_blank"
+                    onClick={handleCloseAll}
+                    style={{ position: "relative" }}
+                  >
+                    <Image
+                      src={social.icon}
+                      alt={social.label}
+                      width={24}
+                      height={24}
+                      className="social-icon"
+                    />
+                    <span>{social.handle}</span>
+
+                    {/* Shaking Label for Instagram */}
+                    {shouldAnimate && (
+                      <div className="insta-promo-bubble">
+                        Zaobserwuj mnie na Instagramie
+                      </div>
+                    )}
+                  </Link>
+                  <span className="tooltip">{social.label}</span>
+                </li>
+              );
+            })}
           </ul>
         </nav>
       </div>
