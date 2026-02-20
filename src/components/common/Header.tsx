@@ -9,15 +9,15 @@ import youTubeIcon from "./../../../public/icons/common/youtube.svg";
 import facebookIcon from "./../../../public/icons/common/facebook.svg";
 import mapIcon from "./../../../public/img/map/map-icon.png";
 
-interface NavItem {
+interface HeaderNavItem {
   label: string;
   href?: string;
-  children?: NavItem[];
+  children?: HeaderNavItem[];
   grid?: boolean;
   className?: string;
 }
 
-const NAV_ITEMS: NavItem[] = [
+const HEADER_NAV_ITEMS: HeaderNavItem[] = [
   {
     label: "Przepisy",
     children: [
@@ -81,23 +81,23 @@ const NAV_ITEMS: NavItem[] = [
   { label: "Kontakt", href: "/#kontakt", className: "contact" },
 ];
 
-const SOCIAL_LINKS = [
+const HEADER_SOCIAL_LINKS = [
   {
     label: "Instagram",
     icon: instagramIcon,
-    href: "https://instagram.com/...",
+    href: "https://www.instagram.com/bezglutenowakarola/",
     handle: "@bezglutenowakarola",
   },
   {
     label: "YouTube",
     icon: youTubeIcon,
-    href: "https://youtube.com/...",
+    href: "https://www.youtube.com/@bezglutenowakarola",
     handle: "@bezglutenowakarola",
   },
   {
     label: "Facebook",
     icon: facebookIcon,
-    href: "https://facebook.com/...",
+    href: "https://www.facebook.com/profile.php?id=61576336200554",
     handle: "@bezglutenowakarola",
   },
   {
@@ -181,7 +181,7 @@ const Header = () => {
 
         <nav className={`header-wrapper__nav ${openHamburger ? "open" : ""}`}>
           <ul className="nav-first-lvl">
-            {NAV_ITEMS.map((item) => (
+            {HEADER_NAV_ITEMS.map((item) => (
               <li
                 key={item.label}
                 className={item.children ? "nav-expand" : ""}
@@ -266,7 +266,7 @@ const Header = () => {
             ))}
 
             {/* Social Links with Instagram Effect */}
-            {SOCIAL_LINKS.map((social) => (
+            {HEADER_SOCIAL_LINKS.map((social) => (
               <li
                 key={social.label}
                 className={`header-social-link has-tooltip ${social.label === "Instagram" && showInstaLabel ? "insta-shake" : ""}`}
