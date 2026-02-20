@@ -204,6 +204,10 @@
       .header {
         height: 50px;
         &-wrapper {
+          &__nav {
+            top: 49px;
+            border-top: 1px solid $grey-border-color01;
+          }
           &__logo {
             height: 56px;
             a {
@@ -266,7 +270,7 @@
           height: 100dvh;
           top: 70px;
           left: 0;
-          padding: 16px 0 200px 16px;
+          padding: 0 0 200px 16px;
           overflow-x: hidden;
           overflow-y: scroll;
           background-color: $white-bg-color;
