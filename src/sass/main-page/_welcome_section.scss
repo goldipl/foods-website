@@ -3,21 +3,25 @@
   display: flex;
   width: 100%;
   background-color: $white-bg-color;
+  padding: 80px 16px 0;
   z-index: 0;
+  @media (max-width: 992px) {
+    padding: 16px 0 0 0;
+  }
   .welcome-section-wrapper {
     display: flex;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
     padding: 80px 16px 24px;
-    @media (max-width: 992px) {
-      padding: 40px 16px 24px;
-    }
+
     .more-text {
       max-height: 0;
       overflow: hidden;
       opacity: 0;
-      transition: max-height 0.7s ease, opacity 0.8s ease;
+      transition:
+        max-height 0.7s ease,
+        opacity 0.8s ease;
       &.open {
         max-height: 2000px;
         opacity: 1;
@@ -37,7 +41,9 @@
         .border-img {
           border-radius: 24px;
           overflow: hidden;
-          box-shadow: 0px 9px 28px 8px #0000000d, 0px 3px 6px -4px #0000001f,
+          box-shadow:
+            0px 9px 28px 8px #0000000d,
+            0px 3px 6px -4px #0000001f,
             0px 6px 16px 0px #00000014;
           width: 300px;
           height: 300px;

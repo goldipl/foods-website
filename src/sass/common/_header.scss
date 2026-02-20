@@ -200,6 +200,46 @@
 @media (max-width: 1180px) {
   .header-main-container {
     width: 100%;
+    &.is-fixed {
+      .header {
+        height: 50px;
+        &-wrapper {
+          &__logo {
+            height: 56px;
+            a {
+              img {
+                width: auto;
+                height: 48px;
+                margin: 4px 0;
+              }
+            }
+          }
+          .hamburger {
+            width: 50px;
+            min-width: 50px;
+            height: 40px;
+            margin: 0 8px 0 0;
+            &-line {
+              height: 3px;
+            }
+            &.open {
+              .hamburger-line {
+                &:nth-child(1) {
+                  transform: rotate(45deg) translate(5px, 5px);
+                }
+                &:nth-child(2) {
+                  top: 14px;
+                  left: calc(50% - 5px);
+                }
+                &:nth-child(3) {
+                  transform: rotate(-45deg) translate(6px, -6px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
     .header {
       height: 70px;
       &-wrapper {
@@ -210,9 +250,9 @@
           margin-left: 12px;
           a {
             img {
-              margin: 0;
               width: auto;
-              height: 68px;
+              height: 58px;
+              margin: 6px 0;
             }
           }
         }
