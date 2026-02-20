@@ -1,25 +1,64 @@
-header {
+// Animation for sliding in the fixed header
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.header-main-container {
   position: relative;
-  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.2);
   width: 100vw;
-  z-index: 1;
+  z-index: 999;
+  transition: padding-top 0.3s ease; // Smooth transition for the insta padding
+
+  // FIXED HEADER LOGIC
+  &.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $white-bg-color;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.4s ease-out forwards;
+
+    .header {
+      height: 86px; // Slightly slimmer when fixed
+      @media (max-width: 1180px) {
+        height: 70px;
+      }
+    }
+  }
+
+  // DESKTOP ONLY: Extra padding when fixed AND insta label is showing
+  @media (min-width: 1181px) {
+    &.is-fixed.insta-fixed-active {
+      padding-top: 16px;
+    }
+  }
+
   .header {
     display: flex;
     width: 100%;
     height: 92px;
     background-color: $white-bg-color;
     border-bottom: 1px solid $grey-border-color01;
+    transition: height 0.3s ease;
+
     &-wrapper {
       position: relative;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      background-color: $white-bg-color;
+      background-color: transparent;
       width: 100%;
       max-width: 1280px;
       margin: 0 auto;
       z-index: 1;
+
       &__logo {
         a {
           text-decoration: none;
@@ -30,6 +69,7 @@ header {
           }
         }
       }
+
       &__nav {
         ul * {
           user-select: none;
@@ -146,129 +186,32 @@ header {
 }
 
 @media (max-width: 1180px) {
-  header {
+  .header-main-container {
     width: 100%;
     .header {
       height: 70px;
       &-wrapper {
-        align-items: center;
         &__logo {
           width: auto;
           height: 68px;
           margin-left: 12px;
-          a {
-            img {
-              margin: 0;
-              width: auto;
-              height: 68px;
-            }
+          a img {
+            margin: 0;
+            width: auto;
+            height: 68px;
           }
         }
         &__nav {
           display: none;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: flex-start;
           position: absolute;
           width: 100%;
           height: 100dvh;
           top: 70px;
           left: 0;
-          padding: 16px 0 200px 16px;
-          overflow-x: hidden;
-          overflow-y: scroll;
           background-color: $white-bg-color;
           &.open {
             display: flex;
             z-index: 9;
-            overflow-y: scroll;
-            overflow-x: hidden;
-            .nav-first-lvl {
-              flex-direction: column;
-              justify-content: flex-start;
-              align-items: flex-start;
-              width: calc(100% - 16px);
-              > li {
-                border-bottom: 1px solid $grey-border-color01;
-              }
-              li {
-                padding: 12px 0;
-                width: 100%;
-                &::after {
-                  display: none;
-                }
-                a {
-                  font-size: 17px;
-                  padding: 0 0 0 8px;
-                  color: $color-black;
-                  width: 100%;
-                  &:hover {
-                    color: $color-black;
-                  }
-                }
-
-                &.header-social-link.insta-shake {
-                  margin-top: 16px;
-                }
-              }
-              .header-social-link {
-                > a {
-                  font-size: 15px;
-                  justify-content: flex-start;
-                  .social-icon {
-                    margin-right: 8px;
-                  }
-                }
-              }
-              .nav-expand {
-                padding: 0;
-                span {
-                  font-size: 17px;
-                  margin: 0;
-                  width: 100%;
-                  padding: 12px;
-                  color: $color-black;
-                  &:hover {
-                    color: $color-black;
-                    &::before {
-                      animation: unset;
-                    }
-                  }
-                }
-                .nav-second-lvl {
-                  display: none;
-                  position: relative;
-                  top: 0;
-                  left: 0;
-                  background-color: unset;
-                  &.active {
-                    display: flex;
-                    border-bottom: 0;
-                    padding: 0;
-                  }
-                  li {
-                    padding: 0;
-                    a {
-                      font-size: 16px;
-                      padding: 8px 0 8px 24px;
-                      white-space: break-spaces;
-                      &::before {
-                        content: "";
-                        position: absolute;
-                        left: 12px;
-                        top: 16px;
-                        transform: translateY(50%);
-                        width: 5px;
-                        height: 5px;
-                        background-color: $black-bg-color;
-                        border-radius: 50%;
-                        margin-left: 0;
-                      }
-                    }
-                  }
-                }
-              }
-            }
           }
         }
       }
@@ -277,34 +220,12 @@ header {
 }
 
 // Third lvl menu
-
 .nav-sub-expand {
   position: relative;
-  &:has(.nav-third-lvl) {
-    .arrow-img {
-      transform: rotate(270deg);
-      @media (max-width: 1180px) {
-        transform: rotate(0);
-      }
-      &.rotate {
-        transform: rotate(90deg) !important;
-        @media (max-width: 1180px) {
-          transform: rotate(180deg) !important;
-        }
-      }
-    }
+  span .arrow-img {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
   }
-  span {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-
-    .arrow-img {
-      margin-left: 8px;
-      transition: transform 0.3s ease;
-    }
-  }
-
   .nav-third-lvl {
     list-style: none;
     position: absolute;
@@ -334,74 +255,10 @@ header {
       opacity: 1;
       transform: translateX(0);
     }
-
-    li {
-      a {
-        font-size: 14px;
-      }
-    }
   }
 }
 
-@media (max-width: 320px) {
-  header {
-    .header {
-      &-wrapper {
-        &__logo {
-          a {
-            img {
-              width: 220px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 1181px) {
-  header .header-wrapper__nav {
-    ul.nav-first-lvl {
-      li.nav-expand {
-        .nav-second-lvl.grid-3-col {
-          display: none;
-          min-width: 450px;
-
-          &.active {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-          }
-
-          li {
-            width: 100%;
-
-            a {
-              white-space: nowrap;
-              padding: 8px;
-              display: block;
-
-              &:hover {
-                background-color: rgba(0, 0, 0, 0.05);
-                border-radius: 4px;
-              }
-            }
-          }
-        }
-      }
-
-      @media (max-width: 1180px) {
-        .nav-second-lvl.grid-3-col {
-          &.active {
-            display: flex;
-            flex-direction: column;
-          }
-        }
-      }
-    }
-  }
-}
-
-/* Styling for the floating bubble */
+/* Instagram promo bubble */
 .insta-promo-bubble {
   position: absolute;
   bottom: 120%;
@@ -418,35 +275,21 @@ header {
   z-index: 100;
   pointer-events: none;
 
-  @media (max-width: 1180px) {
-    left: 20px;
-    transform: none;
-    bottom: 130%;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: $color-instagram transparent transparent transparent;
   }
 }
 
-/* The little triangle under the bubble */
-.insta-promo-bubble::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: $color-instagram transparent transparent transparent;
-
-  @media (max-width: 1180px) {
-    left: 20px;
-  }
-}
-
-/* Shake Animation Logic */
+/* Shake Animation */
 .insta-shake {
-  animation: shake 2s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
+  animation: shake 2s infinite;
 }
 
 @keyframes shake {
