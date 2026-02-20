@@ -42,6 +42,7 @@ export interface HeaderSocialLink {
   label: string;
   icon: string | StaticImageData;
   href: string;
+  target: string;
   handle: string;
 }
 
@@ -148,25 +149,29 @@ export const HEADER_SOCIAL_LINKS: HeaderSocialLink[] = [
     label: "Instagram",
     icon: instagramIcon,
     href: "https://www.instagram.com/bezglutenowakarola/",
+    target: "_blank",
     handle: "@bezglutenowakarola",
   },
   {
     label: "YouTube",
     icon: youTubeIcon,
     href: "https://www.youtube.com/@bezglutenowakarola",
+    target: "_blank",
     handle: "@bezglutenowakarola",
   },
   {
     label: "Facebook",
     icon: facebookIcon,
     href: "https://www.facebook.com/profile.php?id=61576336200554",
+    target: "_blank",
     handle: "@bezglutenowakarola",
   },
   {
-    label: "Mapa",
+    label: "Mapa miejsc bezglutenowych",
     icon: mapIcon,
     href: "/bezglutenowe-miejsca",
-    handle: "Mapa miejsc",
+    target: "_self",
+    handle: "Mapa miejsc bezglutenowych",
   },
 ];
 

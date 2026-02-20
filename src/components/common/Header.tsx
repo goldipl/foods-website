@@ -224,7 +224,7 @@ const Header = () => {
                   >
                     <Link
                       href={social.href}
-                      target="_blank"
+                      target={social.target}
                       onClick={handleCloseAll}
                       style={{ position: "relative" }}
                     >
