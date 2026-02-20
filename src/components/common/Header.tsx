@@ -1,65 +1,154 @@
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
+import Image from "next/image";
+
 import logo from "./../../../public/icons/header/bezglutenowakarola-logo.svg";
 import menuDownIcon from "./../../../public/icons/common/menu-down-icon.svg";
 import instagramIcon from "./../../../public/icons/common/instagram.svg";
 import youTubeIcon from "./../../../public/icons/common/youtube.svg";
 import facebookIcon from "./../../../public/icons/common/facebook.svg";
 import mapIcon from "./../../../public/img/map/map-icon.png";
-import Image from "next/image";
+
+interface NavItem {
+  label: string;
+  href?: string;
+  children?: NavItem[];
+  grid?: boolean;
+  className?: string;
+}
+
+const NAV_ITEMS: NavItem[] = [
+  {
+    label: "Przepisy",
+    children: [
+      { label: "Śniadania", href: "/#sniadania" },
+      { label: "Obiady", href: "/#obiady" },
+      { label: "Desery", href: "/#desery" },
+      { label: "Przystawki / Przekąski / Sałatki", href: "/#przystawki" },
+    ],
+  },
+  {
+    label: "Restauracje",
+    children: [
+      {
+        label: "Polska",
+        children: [
+          { label: "Warszawa", href: "/#restauracje-polska" },
+          { label: "Trójmiasto", href: "/#restauracje-polska" },
+          { label: "Kraków", href: "/#restauracje-polska" },
+          { label: "Kielce", href: "/#restauracje-polska" },
+          { label: "Zakopane", href: "/#restauracje-polska" },
+        ],
+      },
+      {
+        label: "Europa",
+        children: [
+          { label: "Włochy", href: "/#restauracje-europa" },
+          { label: "Cypr", href: "/#restauracje-europa" },
+          { label: "Rumunia", href: "/#restauracje-europa" },
+        ],
+      },
+      { label: "Mapa miejsc bezglutenowych", href: "/bezglutenowe-miejsca" },
+    ],
+  },
+  {
+    label: "Produkty",
+    grid: true,
+    children: [
+      { label: "Lidl", href: "/#produkty" },
+      { label: "Biedronka", href: "/#produkty" },
+      { label: "Stokrotka", href: "/#produkty" },
+      { label: "Żabka", href: "/#produkty" },
+      { label: "Incola", href: "/#produkty" },
+      { label: "Glutenex", href: "/#produkty" },
+    ],
+  },
+  {
+    label: "Celiakia (co dalej?)",
+    children: [
+      {
+        label: "Podstawowe informacje",
+        href: "/#celiakia-podstawowe-informacje",
+      },
+      {
+        label: "Pierwsze kroki po diagnozie",
+        href: "/#pierwsze-kroki-po-diagnozie",
+      },
+      { label: "Jak wygląda życie z celiakią?", href: "/#video" },
+    ],
+  },
+  { label: "O mnie", href: "/#o-mnie" },
+  { label: "Kontakt", href: "/#kontakt", className: "contact" },
+];
+
+const SOCIAL_LINKS = [
+  {
+    label: "Instagram",
+    icon: instagramIcon,
+    href: "https://instagram.com/...",
+    handle: "@bezglutenowakarola",
+  },
+  {
+    label: "YouTube",
+    icon: youTubeIcon,
+    href: "https://youtube.com/...",
+    handle: "@bezglutenowakarola",
+  },
+  {
+    label: "Facebook",
+    icon: facebookIcon,
+    href: "https://facebook.com/...",
+    handle: "@bezglutenowakarola",
+  },
+  {
+    label: "Mapa",
+    icon: mapIcon,
+    href: "/bezglutenowe-miejsca",
+    handle: "Mapa miejsc",
+  },
+];
 
 const Header = () => {
-  const [activeDropdown, setActiveDropdown] = useState(null);
-  const [activeSubDropdown, setActiveSubDropdown] = useState(null);
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [activeSubDropdown, setActiveSubDropdown] = useState<string | null>(
+    null,
+  );
   const [openHamburger, setOpenHamburger] = useState(false);
 
-  const handleDropdownToggle = (dropdown: any) => {
-    const isDropdownActive = activeDropdown === dropdown;
-    setActiveDropdown(isDropdownActive ? null : dropdown);
-    if (!isDropdownActive) setActiveSubDropdown(null);
-  };
-
-  const handleSubDropdownToggle = (dropdown: any) => {
-    const isSubDropdownActive = activeSubDropdown === dropdown;
-    setActiveSubDropdown(isSubDropdownActive ? null : dropdown);
-  };
-
-  const addBlockedWindow = () => {
-    document.body.classList.add("blocked-body");
-    document.getElementsByTagName("html")[0].classList.add("blocked-body");
-  };
-
-  const removeBlockedWindow = () => {
-    document.body.classList.remove("blocked-body");
-    document.getElementsByTagName("html")[0].classList.remove("blocked-body");
-  };
-
-  const handleCloseDropdown = () => {
-    setActiveDropdown(null);
-    setActiveSubDropdown(null);
-    removeBlockedWindow();
-    setOpenHamburger(false);
-  };
-
-  const handleHamburgerMenu = () => {
-    setOpenHamburger((prev) => !prev);
-  };
-
-  useEffect(() => {
-    if (openHamburger) {
-      addBlockedWindow();
-    } else {
-      removeBlockedWindow();
-    }
-  }, [openHamburger]);
+  // State for the 10-second shaking label
+  const [showInstaLabel, setShowInstaLabel] = useState(true);
 
   const headerRef = useRef<HTMLDivElement | null>(null);
 
+  const toggleBodyScroll = (isBlocked: boolean) => {
+    const action = isBlocked ? "add" : "remove";
+    document.body.classList[action]("blocked-body");
+    document.documentElement.classList[action]("blocked-body");
+  };
+
+  const handleCloseAll = () => {
+    setActiveDropdown(null);
+    setActiveSubDropdown(null);
+    setOpenHamburger(false);
+    toggleBodyScroll(false);
+  };
+
+  // Timer effect: Hide label after 10 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowInstaLabel(false);
+    }, 10000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    toggleBodyScroll(openHamburger);
+  }, [openHamburger]);
+
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (window.innerWidth < 992) return;
-
       if (
+        window.innerWidth >= 992 &&
         headerRef.current &&
         !headerRef.current.contains(event.target as Node)
       ) {
@@ -67,470 +156,146 @@ const Header = () => {
         setActiveSubDropdown(null);
       }
     };
-
-    if (activeDropdown) {
-      document.addEventListener("mousedown", handleClickOutside);
-    }
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [activeDropdown]);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <div className="header" ref={headerRef}>
       <div className="header-wrapper">
         <div className="header-wrapper__logo">
           <Link href="/">
-            <Image
-              src={logo.src}
-              alt="Czytam przed seksem"
-              height={90}
-              width={300}
-            />
+            <Image src={logo} alt="Logo" height={90} width={300} />
           </Link>
         </div>
+
+        {/* Hamburger Menu */}
         <div
           className={`hamburger ${openHamburger ? "open" : ""}`}
-          onClick={handleHamburgerMenu}
+          onClick={() => setOpenHamburger(!openHamburger)}
         >
-          <span className="hamburger-line"></span>
-          <span className="hamburger-line"></span>
-          <span className="hamburger-line"></span>
-          <span className="hamburger-line"></span>
-          <span className="hamburger-line"></span>
-          <span className="hamburger-line"></span>
+          {[...Array(6)].map((_, i) => (
+            <span key={i} className="hamburger-line" />
+          ))}
         </div>
+
         <nav className={`header-wrapper__nav ${openHamburger ? "open" : ""}`}>
           <ul className="nav-first-lvl">
-            <li className="nav-expand">
-              <span onClick={() => handleDropdownToggle("firstDropdown")}>
-                Przepisy
-                <Image
-                  src={menuDownIcon.src}
-                  alt="strzałka"
-                  height={9}
-                  width={16}
-                  className={`arrow-img ${
-                    activeDropdown === "firstDropdown" ? "rotate" : ""
-                  }`}
-                />
-              </span>
-              <ul
-                className={`nav-second-lvl ${
-                  activeDropdown === "firstDropdown" ? "active" : ""
-                }`}
+            {NAV_ITEMS.map((item) => (
+              <li
+                key={item.label}
+                className={item.children ? "nav-expand" : ""}
               >
-                <li>
-                  <Link href="/#sniadania" onClick={handleCloseDropdown}>
-                    Śniadania
+                {item.href ? (
+                  <Link
+                    href={item.href}
+                    className={item.className}
+                    onClick={handleCloseAll}
+                  >
+                    {item.label}
                   </Link>
-                </li>
-                <li>
-                  <Link href="/#obiady" onClick={handleCloseDropdown}>
-                    Obiady
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#desery" onClick={handleCloseDropdown}>
-                    Desery
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#przystawki" onClick={handleCloseDropdown}>
-                    Przystawki / Przekąski / Sałatki
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="nav-expand">
-              <span onClick={() => handleDropdownToggle("secondDropdown")}>
-                Restauracje
-                <Image
-                  src={menuDownIcon.src}
-                  alt="strzałka"
-                  height={9}
-                  width={16}
-                  className={`arrow-img ${
-                    activeDropdown === "secondDropdown" ? "rotate" : ""
-                  }`}
-                />
-              </span>
-              <ul
-                className={`nav-second-lvl ${
-                  activeDropdown === "secondDropdown" ? "active" : ""
-                }`}
-              >
-                <li className="nav-sub-expand">
-                  <span onClick={() => handleSubDropdownToggle("Polska")}>
-                    Polska
+                ) : (
+                  <span
+                    onClick={() =>
+                      setActiveDropdown(
+                        activeDropdown === item.label ? null : item.label,
+                      )
+                    }
+                  >
+                    {item.label}
                     <Image
-                      src={menuDownIcon.src}
-                      alt="strzałka"
-                      height={9}
-                      width={16}
-                      className={`arrow-img ${
-                        activeSubDropdown === "Polska" ? "rotate" : ""
-                      }`}
+                      src={menuDownIcon}
+                      alt="arrow"
+                      className={`arrow-img ${activeDropdown === item.label ? "rotate" : ""}`}
                     />
                   </span>
+                )}
+
+                {item.children && (
                   <ul
-                    className={`nav-third-lvl ${
-                      activeSubDropdown === "Polska" ? "active" : ""
-                    }`}
+                    className={`nav-second-lvl ${item.grid ? "grid-3-col" : ""} ${activeDropdown === item.label ? "active" : ""}`}
                   >
-                    <li>
-                      <Link
-                        href="/#restauracje-polska"
-                        onClick={handleCloseDropdown}
+                    {item.children.map((subItem) => (
+                      <li
+                        key={subItem.label}
+                        className={subItem.children ? "nav-sub-expand" : ""}
                       >
-                        Warszawa
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/#restauracje-polska"
-                        onClick={handleCloseDropdown}
-                      >
-                        Trójmiasto
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/#restauracje-polska"
-                        onClick={handleCloseDropdown}
-                      >
-                        Kraków
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/#restauracje-polska"
-                        onClick={handleCloseDropdown}
-                      >
-                        Kielce
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/#restauracje-polska"
-                        onClick={handleCloseDropdown}
-                      >
-                        Miejsce Piastowe
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/#restauracje-polska"
-                        onClick={handleCloseDropdown}
-                      >
-                        Białystok
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/#restauracje-polska"
-                        onClick={handleCloseDropdown}
-                      >
-                        Trójmiasto
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/#restauracje-polska"
-                        onClick={handleCloseDropdown}
-                      >
-                        Poznań
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/#restauracje-polska"
-                        onClick={handleCloseDropdown}
-                      >
-                        Zakopane
-                      </Link>
-                    </li>
+                        {subItem.href ? (
+                          <Link href={subItem.href} onClick={handleCloseAll}>
+                            {subItem.label}
+                          </Link>
+                        ) : (
+                          <>
+                            <span
+                              onClick={() =>
+                                setActiveSubDropdown(
+                                  activeSubDropdown === subItem.label
+                                    ? null
+                                    : subItem.label,
+                                )
+                              }
+                            >
+                              {subItem.label}
+                              <Image
+                                src={menuDownIcon}
+                                alt="arrow"
+                                className={`arrow-img ${activeSubDropdown === subItem.label ? "rotate" : ""}`}
+                              />
+                            </span>
+                            <ul
+                              className={`nav-third-lvl ${activeSubDropdown === subItem.label ? "active" : ""}`}
+                            >
+                              {subItem.children?.map((deepItem) => (
+                                <li key={deepItem.label}>
+                                  <Link
+                                    href={deepItem.href!}
+                                    onClick={handleCloseAll}
+                                  >
+                                    {deepItem.label}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </>
+                        )}
+                      </li>
+                    ))}
                   </ul>
-                </li>
-                <li className="nav-sub-expand">
-                  <span onClick={() => handleSubDropdownToggle("Europa")}>
-                    Europa
-                    <Image
-                      src={menuDownIcon.src}
-                      alt="strzałka"
-                      height={9}
-                      width={16}
-                      className={`arrow-img ${
-                        activeSubDropdown === "Europa" ? "rotate" : ""
-                      }`}
-                    />
-                  </span>
-                  <ul
-                    className={`nav-third-lvl ${
-                      activeSubDropdown === "Europa" ? "active" : ""
-                    }`}
-                  >
-                    <li>
-                      <Link
-                        href="/#restauracje-europa"
-                        onClick={handleCloseDropdown}
-                      >
-                        Włochy
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/#restauracje-europa"
-                        onClick={handleCloseDropdown}
-                      >
-                        Cypr
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/#restauracje-europa"
-                        onClick={handleCloseDropdown}
-                      >
-                        Rumunia
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <Link
-                    href="/bezglutenowe-miejsca"
-                    onClick={handleCloseDropdown}
-                  >
-                    Mapa miejsc bezglutenowych
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="nav-expand">
-              <span onClick={() => handleDropdownToggle("thirdDropdown")}>
-                Produkty
-                <Image
-                  src={menuDownIcon.src}
-                  alt="strzałka"
-                  height={9}
-                  width={16}
-                  className={`arrow-img ${
-                    activeDropdown === "thirdDropdown" ? "rotate" : ""
-                  }`}
-                />
-              </span>
-              <ul
-                className={`nav-second-lvl grid-3-col ${
-                  activeDropdown === "thirdDropdown" ? "active" : ""
-                }`}
+                )}
+              </li>
+            ))}
+
+            {/* Social Links with Instagram Effect */}
+            {SOCIAL_LINKS.map((social) => (
+              <li
+                key={social.label}
+                className={`header-social-link has-tooltip ${social.label === "Instagram" && showInstaLabel ? "insta-shake" : ""}`}
               >
-                <li>
-                  <Link href="/#produkty" onClick={handleCloseDropdown}>
-                    Lidl
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#produkty" onClick={handleCloseDropdown}>
-                    Biedronka
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#produkty" onClick={handleCloseDropdown}>
-                    Stokrotka
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#produkty" onClick={handleCloseDropdown}>
-                    Aldi
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#produkty" onClick={handleCloseDropdown}>
-                    Kaufland
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#produkty" onClick={handleCloseDropdown}>
-                    Żabka
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#produkty" onClick={handleCloseDropdown}>
-                    Carrefour
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#produkty" onClick={handleCloseDropdown}>
-                    Half Price
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#produkty" onClick={handleCloseDropdown}>
-                    Putka bez glutnenu
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#produkty" onClick={handleCloseDropdown}>
-                    Czapielskie pudełka
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#produkty" onClick={handleCloseDropdown}>
-                    Tymbark Just Plants
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#produkty" onClick={handleCloseDropdown}>
-                    Sklep Pizza Naturalna
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#produkty" onClick={handleCloseDropdown}>
-                    Incola
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#produkty" onClick={handleCloseDropdown}>
-                    Vallongo
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#produkty" onClick={handleCloseDropdown}>
-                    Glutenex
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#produkty" onClick={handleCloseDropdown}>
-                    Inne
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="nav-expand">
-              <span onClick={() => handleDropdownToggle("fourthDropdown")}>
-                Celiakia (co dalej?)
-                <Image
-                  src={menuDownIcon.src}
-                  alt="strzałka"
-                  height={9}
-                  width={16}
-                  className={`arrow-img ${
-                    activeDropdown === "fourthDropdown" ? "rotate" : ""
-                  }`}
-                />
-              </span>
-              <ul
-                className={`nav-second-lvl ${
-                  activeDropdown === "fourthDropdown" ? "active" : ""
-                }`}
-              >
-                <li>
-                  <Link
-                    href="/#celiakia-podstawowe-informacje"
-                    onClick={handleCloseDropdown}
-                  >
-                    Podstawowe informacje
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/#pierwsze-kroki-po-diagnozie"
-                    onClick={handleCloseDropdown}
-                  >
-                    Pierwsze kroki po diagnozie
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#video" onClick={handleCloseDropdown}>
-                    Jak wygląda życie z celiakią? (podcast)
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#wydarzenia" onClick={handleCloseDropdown}>
-                    Wydarzenia i warsztaty bezglutenowe
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Link href="/#o-mnie" onClick={handleCloseDropdown}>
-                O mnie
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/#kontakt"
-                onClick={handleCloseDropdown}
-                className="contact"
-              >
-                Kontakt
-              </Link>
-            </li>
-            <li className="header-social-link has-tooltip">
-              <Link
-                href="https://www.instagram.com/bezglutenowakarola/"
-                onClick={handleCloseDropdown}
-                target="_blank"
-              >
-                <Image
-                  className="social-icon"
-                  src={instagramIcon.src}
-                  alt="instagram"
-                  height={24}
-                  width={24}
-                />
-                <span>@bezglutenowakarola</span>
-              </Link>
-              <span className="tooltip">Instagram</span>
-            </li>
-            <li className="header-social-link has-tooltip">
-              <Link
-                href="https://www.youtube.com/@bezglutenowakarola"
-                onClick={handleCloseDropdown}
-                target="_blank"
-              >
-                <Image
-                  className="social-icon"
-                  src={youTubeIcon.src}
-                  alt="YouTube"
-                  height={28}
-                  width={28}
-                />
-                <span>@bezglutenowakarola</span>
-              </Link>
-              <span className="tooltip">YouTube</span>
-            </li>
-            <li className="header-social-link has-tooltip">
-              <Link
-                href="https://www.facebook.com/profile.php?id=61576336200554"
-                onClick={handleCloseDropdown}
-                target="_blank"
-              >
-                <Image
-                  className="social-icon"
-                  src={facebookIcon.src}
-                  alt="Facebook"
-                  height={24}
-                  width={24}
-                />
-                <span>@bezglutenowakarola</span>
-              </Link>
-              <span className="tooltip">Facebook</span>
-            </li>
-            <li className="header-social-link has-tooltip">
-              <Link href="/bezglutenowe-miejsca" onClick={handleCloseDropdown}>
-                <Image
-                  className="social-icon"
-                  src={mapIcon.src}
-                  alt="Mapa"
-                  height={24}
-                  width={24}
-                />
-                <span>Mapa miejsc bezglutenowych</span>
-              </Link>
-              <span className="tooltip">Mapa miejsc bezglutenowych</span>
-            </li>
+                <Link
+                  href={social.href}
+                  target="_blank"
+                  onClick={handleCloseAll}
+                  style={{ position: "relative" }}
+                >
+                  <Image
+                    src={social.icon}
+                    alt={social.label}
+                    width={24}
+                    height={24}
+                    className="social-icon"
+                  />
+                  <span>{social.handle}</span>
+
+                  {/* Shaking Label for Instagram */}
+                  {social.label === "Instagram" && showInstaLabel && (
+                    <div className="insta-promo-bubble">
+                      Zaobserwuj mnie na Instagramie
+                    </div>
+                  )}
+                </Link>
+                <span className="tooltip">{social.label}</span>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>
