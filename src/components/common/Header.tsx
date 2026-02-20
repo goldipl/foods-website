@@ -17,32 +17,40 @@ const Header = () => {
   );
   const [openHamburger, setOpenHamburger] = useState(false);
   const [showInstaLabel, setShowInstaLabel] = useState(false);
-
-  // State for scroll position
   const [isScrolled, setIsScrolled] = useState(false);
 
   const headerRef = useRef<HTMLDivElement | null>(null);
 
-  // Handle scroll threshold (300px)
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 300) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+  // --- Logic: Body Scroll Lock ---
   const toggleBodyScroll = (isBlocked: boolean) => {
     if (typeof document === "undefined") return;
-    const action = isBlocked ? "add" : "remove";
+
+    // Only apply the block if the menu is open AND width is below 1180px
+    const shouldBlock = isBlocked && window.innerWidth <= 1180;
+    const action = shouldBlock ? "add" : "remove";
+
     document.body.classList[action]("blocked-body");
     document.documentElement.classList[action]("blocked-body");
   };
+
+  // Update scroll lock when hamburger state changes
+  useEffect(() => {
+    toggleBodyScroll(openHamburger);
+  }, [openHamburger]);
+
+  // Handle window resizing (e.g., rotating tablet or resizing browser)
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1180) {
+        toggleBodyScroll(false);
+      } else if (openHamburger) {
+        toggleBodyScroll(true);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [openHamburger]);
 
   const handleCloseAll = () => {
     setActiveDropdown(null);
@@ -51,7 +59,14 @@ const Header = () => {
     toggleBodyScroll(false);
   };
 
-  // Logic to trigger Instagram animation
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 300);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   useEffect(() => {
     const isMobile = window.innerWidth <= 1180;
     if (isMobile) {
@@ -61,19 +76,12 @@ const Header = () => {
     }
   }, [openHamburger]);
 
-  // Hide label after 15 seconds
   useEffect(() => {
     if (showInstaLabel) {
-      const timer = setTimeout(() => {
-        setShowInstaLabel(false);
-      }, 15000);
+      const timer = setTimeout(() => setShowInstaLabel(false), 10000);
       return () => clearTimeout(timer);
     }
   }, [showInstaLabel]);
-
-  useEffect(() => {
-    toggleBodyScroll(openHamburger);
-  }, [openHamburger]);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -93,13 +101,13 @@ const Header = () => {
   return (
     <header
       className={`header-main-container 
-            ${isScrolled ? "is-fixed" : ""} 
-            ${isScrolled && showInstaLabel ? "insta-fixed-active" : ""}`}
+        ${isScrolled ? "is-fixed" : ""} 
+        ${isScrolled && showInstaLabel ? "insta-fixed-active" : ""}`}
     >
       <div className="header" ref={headerRef}>
         <div className="header-wrapper">
           <div className="header-wrapper__logo">
-            <Link href="/">
+            <Link href="/" onClick={handleCloseAll}>
               <Image
                 src={HEADER_ICONS.logo}
                 alt="Logo"
