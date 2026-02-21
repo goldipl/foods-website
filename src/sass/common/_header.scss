@@ -12,9 +12,8 @@
   position: relative;
   width: 100vw;
   z-index: 999;
-  transition: padding-top 0.3s ease; // Smooth transition for the insta padding
+  transition: padding-top 0.3s ease;
 
-  // FIXED HEADER LOGIC
   &.is-fixed {
     position: fixed;
     top: 0;
@@ -25,14 +24,13 @@
     animation: slideDown 0.4s ease-out forwards;
 
     .header {
-      height: 86px; // Slightly slimmer when fixed
+      height: 86px;
       @media (max-width: 1180px) {
         height: 70px;
       }
     }
   }
 
-  // DESKTOP ONLY: Extra padding when fixed AND insta label is showing
   @media (min-width: 1181px) {
     &.is-fixed.insta-fixed-active {
       padding-top: 16px;
