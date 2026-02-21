@@ -313,12 +313,10 @@
                 }
               }
               .nav-expand {
-                padding: 0;
                 span {
                   font-size: 16px;
                   margin: 0;
                   width: 100%;
-                  padding: 12px;
                   color: $color-black;
                   &:hover {
                     color: $color-black;
@@ -337,6 +335,7 @@
                     display: flex;
                     border-bottom: 0;
                     padding: 0;
+                    margin-top: 8px;
                   }
                   li {
                     padding: 0;
