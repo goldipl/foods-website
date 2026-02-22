@@ -274,3 +274,84 @@ export const HERO_SLIDES: HeroSlideItem[] = [
     links: [{ label: "Sprawdź", href: "#wydarzenia" }],
   },
 ];
+
+// --- FOOTER ---
+
+export const FOOTER_LINKS = [
+  {
+    title: "Przepisy",
+    links: [
+      { label: "Śniadania", href: "#sniadania" },
+      { label: "Obiady", href: "#obiady" },
+      { label: "Desery / Słodkości", href: "#desery" },
+      { label: "Przystawki / Przekąski / Sałatki", href: "#przystawki" },
+    ],
+  },
+  {
+    title: "Restauracje",
+    links: [
+      { label: "Polska", href: "#restauracje-polska" },
+      { label: "Europa", href: "#restauracje-europa" },
+      { label: "Mapa miejsc bezglutenowych", href: "/bezglutenowe-miejsca" },
+    ],
+  },
+  {
+    title: "Produkty",
+    links: [
+      { label: "Lidl", href: "#produkty" },
+      { label: "Biedronka", href: "#produkty" },
+      { label: "Stokrotka", href: "#produkty" },
+      { label: "Aldi", href: "#produkty" },
+      { label: "Kaufland", href: "#produkty" },
+      { label: "Żabka", href: "#produkty" },
+      { label: "Carrefour", href: "#produkty" },
+      { label: "Half Price", href: "#produkty" },
+      { label: "Inne", href: "#produkty" },
+    ],
+  },
+  {
+    title: "Celiakia (co dalej?)",
+    links: [
+      {
+        label: "Podstawowe informacje",
+        href: "#celiakia-podstawowe-informacje",
+      },
+      {
+        label: "Pierwsze kroki po diagnozie",
+        href: "#pierwsze-kroki-po-diagnozie",
+      },
+      { label: "Jak wygląda życie z celiakią? (podcast)", href: "/#video" },
+      { label: "Wydarzenia i warsztaty bezglutenowe", href: "#wydarzenia" },
+    ],
+  },
+  {
+    title: "Dodatkowe informacje",
+    links: [
+      { label: "O mnie", href: "#o-mnie" },
+      { label: "Kontakt", href: "#kontakt" },
+      {
+        label: "Instagram",
+        href: "https://www.instagram.com/bezglutenowakarola/",
+        isExternal: true,
+      },
+      {
+        label: "YouTube",
+        href: "https://www.youtube.com/@bezglutenowakarola/",
+        isExternal: true,
+      },
+      {
+        label: "Facebook",
+        href: "https://www.facebook.com/profile.php?id=61576336200554",
+        isExternal: true,
+      },
+    ],
+  },
+];
+
+export const BRAND_DATA = {
+  description:
+    "Nazywam się Karolina Wontorska i zapraszam Cię do mojego bezglutenowego świata.",
+  copy: "@BezglutenowaKarola",
+  author: "mgodlewskidev.pl",
+  authorHref: "https://mgodlewskidev.pl/",
+};
