@@ -21,6 +21,17 @@ class MyDocument extends Document {
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
+
+          <title>Bezglutenowa Karola | Przepisy bezglutenowe i Celiakia</title>
+          <meta
+            name="description"
+            content="Bezglutenowa Karola: Odkryj proste i pyszne przepisy bez glutenu, cukru i nabiału. Idealne dla osób z celiakią i na diecie eliminacyjnej. Gotuj zdrowo z Karoliną!"
+          />
+          <meta
+            name="keywords"
+            content="przepisy bezglutenowe, dieta bezglutenowa, celiakia, bez cukru, bez nabiału, Karolina Wontorska"
+          />
+
           <link rel="icon" type="image/x-icon" href="/favicon.ico" />
           <link rel="apple-touch-icon" href="/favicon.ico" />
 
