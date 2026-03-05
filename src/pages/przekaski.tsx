@@ -1,4 +1,5 @@
 import "@/sass/main.scss";
+import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
@@ -11,6 +12,16 @@ import Footer from "@/components/common/Footer";
 const AppetizersPage = () => {
   return (
     <>
+      <Head>
+        <title>
+          Przepisy na Przekąski Bezglutenowe - Paradach Smaków | Bezglutenowa
+          Karola
+        </title>
+        <meta
+          name="description"
+          content="Zbiór pomysłów na przekąski bez glutenu. Idealne do imprez, na piknik lub szybką żoługę - wszystkie bez glutenu."
+        />
+      </Head>
       <header>
         <Topbar />
         <Header />

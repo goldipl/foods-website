@@ -1,4 +1,5 @@
 import "@/sass/main.scss";
+import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
@@ -11,6 +12,16 @@ import Footer from "@/components/common/Footer";
 const BreakfastsPage = () => {
   return (
     <>
+      <Head>
+        <title>
+          Przepisy na Śniadania Bezglutenowe - Pyszne Pomysły | Bezglutenowa
+          Karola
+        </title>
+        <meta
+          name="description"
+          content="Kolekcja pysznych przepisów na śniadania bez glutenu. Proste, szybkie i pełne energii pomysły na idealny początek dnia bez glutenu."
+        />
+      </Head>
       <header>
         <Topbar />
         <Header />

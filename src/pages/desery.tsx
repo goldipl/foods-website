@@ -1,4 +1,5 @@
 import "@/sass/main.scss";
+import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
@@ -11,6 +12,16 @@ import Footer from "@/components/common/Footer";
 const DessertsPage = () => {
   return (
     <>
+      <Head>
+        <title>
+          Przepisy na Desery Bezglutenowe - Słodkie Przyjemności | Bezglutenowa
+          Karola
+        </title>
+        <meta
+          name="description"
+          content="Kuszące przepisy na desery bez glutenu. Ciasta, ciasteczka i słodkie kreacje, które każdy polubi - bez glutenu i bez kompromisów."
+        />
+      </Head>
       <header>
         <Topbar />
         <Header />

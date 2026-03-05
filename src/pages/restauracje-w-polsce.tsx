@@ -1,4 +1,5 @@
 import "@/sass/main.scss";
+import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
@@ -11,6 +12,16 @@ import Footer from "@/components/common/Footer";
 const PolishRestaurantsPage = () => {
   return (
     <>
+      <Head>
+        <title>
+          Restauracje Bezglutenowe w Polsce - Różnorodne Smaki | Bezglutenowa
+          Karola
+        </title>
+        <meta
+          name="description"
+          content="Mapa restauracji bezglutenowych w Polsce. Znajduj miejsca, gdzie możesz zjeść pysznie bez glutenu w każdym zakątku Polski."
+        />
+      </Head>
       <header>
         <Topbar />
         <Header />

@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import "@/css/swiper-bundle.min.css";
 import "@/sass/main.scss";
 import Topbar from "@/components/common/Topbar";
@@ -21,6 +22,49 @@ import MapSection from "@/components/main-page/MapSection";
 const index = () => {
   return (
     <>
+      <Head>
+        <title>
+          Bezglutenowa Karola - Przepisy Gluten Free | Celiakia - Karolina
+          Wontorska
+        </title>
+        <meta
+          name="description"
+          content="Bezglutenowa Karola: Odkryj proste i pyszne przepisy bez glutenu, cukru i nabiału. Idealne dla osób z celiakią i na diecie eliminacyjnej. Gotuj zdrowo z Karoliną!"
+        />
+        <meta
+          name="keywords"
+          content="przepisy bezglutenowe, dieta bezglutenowa, celiakia, bez cukru, bez nabiału, Karolina Wontorska, bezglutenowe, gluten free, przepisy bez glutenu, zdrowe jedzenie"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="pl_PL" />
+        <meta property="og:url" content="https://bezglutenowakarola.pl" />
+        <meta
+          property="og:title"
+          content="Bezglutenowa Karola - Przepisy Gluten Free | Celiakia - Karolina Wontorska"
+        />
+        <meta property="og:site_name" content="Bezglutenowa Karola" />
+        <meta
+          property="og:description"
+          content="Znajdź przepisy na dania bez glutenu, bez cukru, bez nabiału, idealne dla osób z celiakią. Zdrowe i smaczne jedzenie dla osób na diecie bezglutenowej."
+        />
+        <meta
+          property="og:image"
+          content="https://bezglutenowakarola.pl/_next/static/media/bezglutenowakarola-logo.3e6eebf5.svg"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Bezglutenowa Karola - Przepisy Gluten Free | Celiakia - Karolina Wontorska"
+        />
+        <meta
+          name="twitter:description"
+          content="Przepisy bez glutenu, bez cukru, bez nabiału, stworzone z myślą o osobach z celiakią i na diecie bezglutenowej. Sprawdź zdrowe inspiracje kulinarne."
+        />
+        <meta
+          name="twitter:image"
+          content="https://bezglutenowakarola.pl/_next/static/media/bezglutenowakarola-logo.3e6eebf5.svg"
+        />
+      </Head>
       <header>
         <Topbar />
         <Header />

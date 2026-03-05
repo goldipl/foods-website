@@ -1,4 +1,5 @@
 import "@/sass/main.scss";
+import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
@@ -11,6 +12,15 @@ import Footer from "@/components/common/Footer";
 const DinnersPage = () => {
   return (
     <>
+      <Head>
+        <title>
+          Przepisy na Obiady Bezglutenowe - Sycące Dania | Bezglutenowa Karola
+        </title>
+        <meta
+          name="description"
+          content="Odkryj apetyczne przepisy na obiady bez glutenu. Od tradycyjnych dań do nowoczesnych kreacji - wszystko bez glutenu."
+        />
+      </Head>
       <header>
         <Topbar />
         <Header />

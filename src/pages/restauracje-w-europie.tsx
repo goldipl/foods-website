@@ -1,4 +1,5 @@
 import "@/sass/main.scss";
+import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
@@ -11,6 +12,16 @@ import Footer from "@/components/common/Footer";
 const EuropeanRestaurantsData = () => {
   return (
     <>
+      <Head>
+        <title>
+          Restauracje Bezglutenowe w Europie - Przewodnik Smaków | Bezglutenowa
+          Karola
+        </title>
+        <meta
+          name="description"
+          content="Odkryj najlepsze restauracje bezglutenowe w całej Europie. Przewodnik po kulinarnych perełkach dla osób na diecie bezglutenowej."
+        />
+      </Head>
       <header>
         <Topbar />
         <Header />

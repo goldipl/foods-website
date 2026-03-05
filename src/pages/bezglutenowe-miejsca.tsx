@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import Head from "next/head";
 import React from "react";
 import "@/sass/main.scss";
 import Topbar from "@/components/common/Topbar";
@@ -12,6 +13,15 @@ const MapWithNoSSR = dynamic(() => import("@/components/map/MapComponent"), {
 export default function GlutenFreePlaces() {
   return (
     <>
+      <Head>
+        <title>
+          Bezglutenowe Miejsca - Interaktywna Mapa | Bezglutenowa Karola
+        </title>
+        <meta
+          name="description"
+          content="Interaktywna mapa bezglutenowych restauracji i sklepów. Znajdź bliskie Tobie miejsca serwujące pyszne potrawy bez glutenu."
+        />
+      </Head>
       <header>
         <Topbar />
         <Header />

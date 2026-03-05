@@ -1,4 +1,5 @@
 import "@/sass/main.scss";
+import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
@@ -11,6 +12,16 @@ import Footer from "@/components/common/Footer";
 const EventsPage = () => {
   return (
     <>
+      <Head>
+        <title>
+          wydarzenia i Warsztaty Bezglutenowe - Ucz Się i Smakuj | Bezglutenowa
+          Karola
+        </title>
+        <meta
+          name="description"
+          content="Bądź na bieżąco z eventami i warsztatami bezglutenowymi. Poznaj nowe receptury, posłuchaj ekspertów i dołącz do społeczności bez glutenu."
+        />
+      </Head>
       <header>
         <Topbar />
         <Header />
