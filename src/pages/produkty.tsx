@@ -13,9 +13,7 @@ const ProductsPage = () => {
   return (
     <>
       <Head>
-        <title>
-          Produkty Bezglutenowe - Sprawdzeni Dostawcy | Bezglutenowa Karola
-        </title>
+        <title>Produkty Bezglutenowe | Bezglutenowa Karola</title>
         <meta
           name="description"
           content="Odkryj najlepsze produkty bezglutenowe dostępne na rynku. Wybierane przez Karolinę - naturalne, zdrowe i smaczne produkty bez glutenu."

@@ -15,7 +15,7 @@ export default function GlutenFreePlaces() {
     <>
       <Head>
         <title>
-          Bezglutenowe Miejsca - Interaktywna Mapa | Bezglutenowa Karola
+          Bezglutenowe Miejsca - Interaktywna mapa | Bezglutenowa Karola
         </title>
         <meta
           name="description"

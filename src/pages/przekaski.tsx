@@ -13,10 +13,7 @@ const AppetizersPage = () => {
   return (
     <>
       <Head>
-        <title>
-          Przepisy na Przekąski Bezglutenowe - Paradach Smaków | Bezglutenowa
-          Karola
-        </title>
+        <title>Przepisy na przekąski bezglutenowe | Bezglutenowa Karola</title>
         <meta
           name="description"
           content="Zbiór pomysłów na przekąski bez glutenu. Idealne do imprez, na piknik lub szybką żoługę - wszystkie bez glutenu."

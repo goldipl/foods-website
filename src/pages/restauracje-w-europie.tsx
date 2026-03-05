@@ -14,7 +14,7 @@ const EuropeanRestaurantsData = () => {
     <>
       <Head>
         <title>
-          Restauracje Bezglutenowe w Europie - Przewodnik Smaków | Bezglutenowa
+          Restauracje bezglutenowe w Europie - Przewodnik smaków | Bezglutenowa
           Karola
         </title>
         <meta

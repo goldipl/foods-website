@@ -14,7 +14,7 @@ const PolishRestaurantsPage = () => {
     <>
       <Head>
         <title>
-          Restauracje Bezglutenowe w Polsce - Różnorodne Smaki | Bezglutenowa
+          Restauracje bezglutenowe w Polsce - Różnorodne smaki | Bezglutenowa
           Karola
         </title>
         <meta

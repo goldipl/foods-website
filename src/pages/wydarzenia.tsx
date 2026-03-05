@@ -14,7 +14,7 @@ const EventsPage = () => {
     <>
       <Head>
         <title>
-          wydarzenia i Warsztaty Bezglutenowe - Ucz Się i Smakuj | Bezglutenowa
+          Wydarzenia i warsztaty bezglutenowe - Ucz się i smakuj | Bezglutenowa
           Karola
         </title>
         <meta

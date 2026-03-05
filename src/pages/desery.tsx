@@ -14,7 +14,7 @@ const DessertsPage = () => {
     <>
       <Head>
         <title>
-          Przepisy na Desery Bezglutenowe - Słodkie Przyjemności | Bezglutenowa
+          Przepisy na desery bezglutenowe - Słodkie przyjemności | Bezglutenowa
           Karola
         </title>
         <meta

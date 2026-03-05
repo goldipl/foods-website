@@ -13,9 +13,7 @@ const DinnersPage = () => {
   return (
     <>
       <Head>
-        <title>
-          Przepisy na Obiady Bezglutenowe - Sycące Dania | Bezglutenowa Karola
-        </title>
+        <title>Przepisy na obiady bezglutenowe | Bezglutenowa Karola</title>
         <meta
           name="description"
           content="Odkryj apetyczne przepisy na obiady bez glutenu. Od tradycyjnych dań do nowoczesnych kreacji - wszystko bez glutenu."

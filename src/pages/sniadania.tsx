@@ -14,7 +14,7 @@ const BreakfastsPage = () => {
     <>
       <Head>
         <title>
-          Przepisy na Śniadania Bezglutenowe - Pyszne Pomysły | Bezglutenowa
+          Przepisy na śniadania bezglutenowe - Pyszne pomysły | Bezglutenowa
           Karola
         </title>
         <meta
