@@ -451,12 +451,12 @@ export const MarkerData = [
   },
   {
     id: 46,
-    name: "Ciacho bez cukru",
+    name: "Bez Lukru i Cukru - Magda Patynowska",
     addressLine1: "ul. Bolesława Chrobrego 22,",
-    addressLine2: "26-615 Radom",
+    addressLine2: "26-609 Radom",
     country: "Polska",
     city: "Radom",
-    link: "https://www.instagram.com/p/DMF40xkIeNF/",
+    link: "https://www.instagram.com/p/DVnx38hCMQA/?img_index=1",
     position: [51.407785596386496, 21.157769942186327] as [number, number],
   },
   {

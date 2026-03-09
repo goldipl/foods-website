@@ -28,6 +28,7 @@ import bezglutenoweZakopaneVernusCrocus from "./../../../public/img/restaurants/
 import sushiWesolaNoweMenu2025 from "./../../../public/img/restaurants/poland/029_sushi_warszawa_wesola_nowe_menu2025.jpg";
 import gastroPodsumowaniePolska2025 from "./../../../public/img/restaurants/poland/030_gastro_podsumowanie_polska_2025.jpg";
 import theChefHouseWarszawa from "./../../../public/img/restaurants/poland/031_the_chef_house_warszawa.jpg";
+import radomBezLukruiCukru from "./../../../public/img/restaurants/poland/032_bez_lukru_i_cukru.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -329,5 +330,15 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Restauracja The Chef House, ul. Obrzeżna 3, 02-691 Warszawa",
+    },
+    {
+      id: 32,
+      href: "https://www.instagram.com/p/DVnx38hCMQA/?img_index=1",
+      imgSrc: radomBezLukruiCukru,
+      altText: "Bez Lukru i Cukru - Magda Patynowska , ul. Bolesława Chrobrego 22, 26-609 Radom",
+      label: "Radom",
+      labelClass: "poland-label",
+      description:
+        "Bez Lukru i Cukru - Magda Patynowska , ul. Bolesława Chrobrego 22, 26-609 Radom",
     },
   ];
