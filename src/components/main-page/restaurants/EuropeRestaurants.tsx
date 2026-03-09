@@ -9,7 +9,9 @@ const EuropeRestaurants = () => {
   return (
     <>
       <div className="section-title">
-        <h2 id="restauracje-europa">Bezglutenowe restauracje w Europie</h2>
+        <h2 id="restauracje-europa">
+          Bezglutenowe restauracje i cukiernie w Europie
+        </h2>
       </div>
       <div className="listing-v1">
         {europeanRestaurantsData

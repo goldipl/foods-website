@@ -241,7 +241,7 @@ export const HERO_SLIDES: HeroSlideItem[] = [
     links: [{ label: "Sprawdź przepisy", href: "#desery" }],
   },
   {
-    title: "Bezglutenowe restauracje w Polsce",
+    title: "Bezglutenowe restauracje i cukiernie w Polsce",
     subtitle:
       "Szukasz miejsc, gdzie możesz zjeść pysznie i bez glutenu w Polsce? Oto moje rekomendacje!",
     image: saskaSushiWarszawa,
@@ -249,7 +249,7 @@ export const HERO_SLIDES: HeroSlideItem[] = [
     links: [{ label: "Sprawdź", href: "#restauracje-polska" }],
   },
   {
-    title: "Bezglutenowe restauracje na świecie",
+    title: "Bezglutenowe restauracje i cukiernie na świecie",
     subtitle:
       "Szukasz miejsc, gdzie możesz zjeść pysznie i bez glutenu na świecie? Oto moje rekomendacje!",
     image: pastaGlutenFreeRoma,
