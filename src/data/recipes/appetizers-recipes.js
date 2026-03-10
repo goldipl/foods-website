@@ -13,6 +13,7 @@ import springRolls from "./../../../public/img/recipes/appetizers/012_spring_rol
 import kapusniaczkizAirfryera from "./../../../public/img/recipes/appetizers/013_kapusniaczki_z_airfryera.jpg";
 import pieczonyZiemniakZeSledziem from "./../../../public/img/recipes/appetizers/014_pieczony_ziemniak_ze_sledziem.jpg";
 import salatkaPieczonyRyz from "./../../../public/img/recipes/appetizers/015_salatka_z_pieczonym_ryzem.jpg";
+import bezglutenowaPinsa from "./../../../public/img/recipes/appetizers/016_bezglutenowa_pinsa.jpg";
 
 export const appetizersRecipesData = [
     {
@@ -164,5 +165,15 @@ export const appetizersRecipesData = [
         labelClass: "appetizer-label",
         description: 
             "Sałatka z pieczonym ryżem, ogórkiem, awokado, czerwoną cebulą, szczypiorkiem i sosem",
+    },
+    {
+        id: 16,
+        href: "https://www.instagram.com/p/DVq-5waiJ7R/?img_index=1",
+        imgSrc: bezglutenowaPinsa,
+        altText: "Bezglutenowa Pinsa w dwóch smakach - z włoską mortadelą i rukolą oraz z kurczakiem BBQ",
+        label: "Pinsa",
+        labelClass: "appetizer-label",
+        description: 
+            "Bezglutenowa Pinsa w dwóch smakach - z włoską mortadelą i rukolą oraz z kurczakiem BBQ",
     },
   ];
