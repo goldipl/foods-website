@@ -10,9 +10,19 @@
   border-bottom: 1px solid $grey-border-color01;
   &-wrapper {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     max-width: calc(1280px - 160px);
     width: 100%;
+    gap: 40px;
     margin: 0 auto;
+    @media (max-width: 760px) {
+      flex-direction: column;
+      gap: 0;
+    }
     code {
       display: inline-flex;
       font-family: "Zen Maru Gothic", sans-serif;
@@ -27,6 +37,10 @@
       font-size: 14px;
       text-align: center;
       margin: 8px 0;
+      &::before {
+        content: "🔖";
+        margin-right: 8px;
+      }
     }
     a {
       display: inline-flex;

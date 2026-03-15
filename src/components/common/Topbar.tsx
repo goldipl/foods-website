@@ -20,6 +20,19 @@ const Topbar = () => {
             ></Image>
           </Link>
         </p>
+        <p>
+          Kod <strong>10%</strong> zniżki <code>karola10</code> w sklepie
+          <Link target="_blank" href="https://sklep.balviten.com/pl">
+            Balviten Gluten Free
+            <Image
+              className="cart-icon"
+              src={cartIcon}
+              width={24}
+              height={24}
+              alt="koszyk"
+            ></Image>
+          </Link>
+        </p>
       </div>
     </div>
   );
