@@ -31,7 +31,7 @@ import makamonki from "./../../../public/img/recipes/desserts/030_makamonki.jpg"
 import ciastkazJablkamizAirfryera from "./../../../public/img/recipes/desserts/031_ciastka_z_jablkami_z_airfryera.jpg";
 import paczusieBezDrozdzy from "./../../../public/img/recipes/desserts/032_paczusie_bez_drozdzy.jpg";
 import kokosankiVelKudlacze from "./../../../public/img/recipes/desserts/033_kokosanki_vel_kudlacze.jpg";
-import pistacjoweTiramisu from "./../../../public/img/recipes/desserts/034_pistacjowe_tiramisu.jpg";
+import bezglutenowePistacjoweTiramisu from "./../../../public/img/recipes/desserts/034_pistacjowe_tiramisu.jpg";
 import tartaToffifee from "./../../../public/img/recipes/desserts/035_tarta_toffifee.jpg";
 
 export const dessertsRecipesData = [
@@ -368,7 +368,7 @@ export const dessertsRecipesData = [
     {
       id: 34,
       href: "https://www.instagram.com/p/DVyiKTjjPFE/",
-      imgSrc: pistacjoweTiramisu,
+      imgSrc: bezglutenowePistacjoweTiramisu,
       altText: "Pistacjowe tiramisu",
       label: "Deser",
       labelClass: "dessert-label",
