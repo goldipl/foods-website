@@ -33,6 +33,7 @@ import paczusieBezDrozdzy from "./../../../public/img/recipes/desserts/032_paczu
 import kokosankiVelKudlacze from "./../../../public/img/recipes/desserts/033_kokosanki_vel_kudlacze.jpg";
 import bezglutenowePistacjoweTiramisu from "./../../../public/img/recipes/desserts/034_pistacjowe_tiramisu.jpg";
 import tartaToffifee from "./../../../public/img/recipes/desserts/035_tarta_toffifee.jpg";
+import malinowaKostka from "./../../../public/img/recipes/desserts/036_malinowa_kostka.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -384,5 +385,15 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Tarta Toffifee z białą czekoladą 🤍🌰",
+    },
+    {
+      id: 36,
+      href: "https://www.instagram.com/p/DWLbaS_CF6k/",
+      imgSrc: malinowaKostka,
+      altText: "Malinowa kostka z białą czekoladą",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Malinowa kostka z białą czekoladą 🌸",
     },
 ];
