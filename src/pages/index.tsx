@@ -64,6 +64,10 @@ const index = () => {
           name="twitter:image"
           content="https://bezglutenowakarola.pl/_next/static/media/bezglutenowakarola-logo.3e6eebf5.svg"
         />
+        <meta
+          name="google-site-verification"
+          content="Wwdgti5L7WUD354p16SJSkp1xWEkAU95jfBNILTVeFc"
+        />
       </Head>
       <header>
         <Topbar />
