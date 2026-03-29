@@ -137,7 +137,12 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
         label: "Pierwsze kroki po diagnozie",
         href: "/#pierwsze-kroki-po-diagnozie",
       },
-      { label: "Jak wygląda życie z celiakią?", href: "/#video" },
+      { label: "Jak wygląda życie z celiakią? (podcast)", href: "/#video" },
+      { label: "Wydarzenia i warsztaty bezglutenowe", href: "#wydarzenia" },
+      {
+        label: "Bezglutenowe marki - współpraca",
+        href: "#wspolpraca",
+      },
     ],
   },
   { label: "O mnie", href: "/#o-mnie" },
@@ -322,6 +327,10 @@ export const FOOTER_LINKS = [
       },
       { label: "Jak wygląda życie z celiakią? (podcast)", href: "/#video" },
       { label: "Wydarzenia i warsztaty bezglutenowe", href: "#wydarzenia" },
+      {
+        label: "Bezglutenowe marki - współpraca",
+        href: "#wspolpraca",
+      },
     ],
   },
   {
