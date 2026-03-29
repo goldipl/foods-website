@@ -219,6 +219,7 @@
         }
         &-slide {
           flex-direction: column;
+          justify-content: flex-start;
           height: 500px;
           background: unset;
         }
