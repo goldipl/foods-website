@@ -9,7 +9,7 @@ import facebookIcon from "../../public/icons/common/facebook.svg";
 import mapIcon from "../../public/img/map/map-icon.png";
 
 // --- HERO SLIDE IMPORTS ---
-import welcomeImg from "../../public/img/welcome/karola-dynia.jpg";
+import welcomeImg from "../../public/img/profile/Karola-profile2026.jpg";
 import breakfastImg from "../../public/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.jpg";
 import dinnerImg from "../../public/img/recipes/dinners/004_bezglutenowy_burger_z_kurczaka_teriyaki.jpg";
 import dessertImg from "../../public/img/recipes/desserts/004_wege_sernik.jpg";
