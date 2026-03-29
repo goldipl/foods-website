@@ -11,6 +11,7 @@ import pomysloweKanapkiCz2 from "./../../../public/img/recipes/breakfasts/010_po
 import owsiankaMatcha from "./../../../public/img/recipes/breakfasts/011_owsianka_z_matcha.jpg";
 import bezglutenowyBajgiel from "./../../../public/img/recipes/breakfasts/012_bezglutenowy_bajgel.jpg";
 import zapiekaneBulkiSniadaniowe from "./../../../public/img/recipes/breakfasts/013_zapiekane_bulki_sniadaniowe.jpg";
+import bezglutenowyChleb from "./../../../public/img/recipes/breakfasts/014_bezglutenowy_chleb.jpg";
 
 export const breakfastsRecipesData = [
     {
@@ -142,5 +143,15 @@ export const breakfastsRecipesData = [
       labelClass: "breakfast-label",
       description:
         "Zapiekane bułki śniadaniowe",
+    },
+    {
+      id: 14,
+      href: "https://www.instagram.com/p/DWdcDX9CB-d/",
+      imgSrc: bezglutenowyChleb,
+      altText: "Bezglutenowy chleb gryczany z siemieniem lnianym",
+      label: "Śniadanie",
+      labelClass: "breakfast-label",
+      description:
+        "Bezglutenowy chleb gryczany z siemieniem lnianym",
     },
   ];
