@@ -1,4 +1,6 @@
-﻿# Bezglutenowa Karola
+﻿<div align="center">
+    <h1>Bezglutenowa Karola</h1>
+</div>
 
 <div align="center">
   <img src="./public/img/white-bg-logo.jpg" height="80" alt="Bezglutenowa Karola Logo"/>
@@ -56,15 +58,15 @@ Ensure you have the following installed:
 ### Installation
 
 1. **Clone the repository**:
-   ```bash
+
+```bash
    git clone https://github.com/goldipl/foods-website.git
    cd foods-website
-   ```
-
-````
+```
 
 2. **Install dependencies**:
-   ```bash
+
+```bash
    npm install
    # or
    yarn install
@@ -72,7 +74,7 @@ Ensure you have the following installed:
    pnpm install
    # or
    bun install
-````
+```
 
 ### Usage
 
@@ -102,7 +104,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 
 1. Build the application:
 
-   ```bash
+```bash
    npm run build
 
    # or
@@ -112,10 +114,11 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
    # or
 
    bun run build
-   ```
+```
 
 2. Start the production server:
-   ```bash
+
+```bash
    npm run start
    # or
    yarn start
@@ -123,7 +126,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
    pnpm start
    # or
    bun run start
-   ```
+```
 
 ## 🌐 Deployment
 
