@@ -1,54 +1,63 @@
+import Link from "next/link";
 import { PiCookingPot } from "react-icons/pi";
 import { IoLocationOutline } from "react-icons/io5";
 import { LiaShoppingBasketSolid } from "react-icons/lia";
-import Link from "next/link";
 import { HiChevronRight } from "react-icons/hi2";
 
+export const BoxesInfoItems = [
+  {
+    icon: PiCookingPot,
+    title: "Przepisy bezglutenowe",
+    subtitle: "Szybkie i zdrowe przepisy na każdą okazję",
+    href: "#sniadania",
+    label: "Zobacz przepisy",
+  },
+  {
+    icon: IoLocationOutline,
+    title: "Resturacje bez glutenu",
+    subtitle: "Sprawdź lokale w Twojej okolicy",
+    href: "/bezglutenowe-miejsca",
+    label: "Znajdź restauracje",
+  },
+  {
+    icon: LiaShoppingBasketSolid,
+    title: "Ulubione produkty",
+    subtitle: "Polecane bezglutenowe produkty",
+    href: "#produkty",
+    label: "Zobacz produkty",
+  },
+];
 
 const BoxesInfoSection = () => {
   return (
     <section id="boxes-info-section" className="boxes-info-section">
       <div className="boxes-info-wrapper">
         <div className="boxes-info">
-          {/* Slot */}
-          <div className="boxes-info-slot">
-            <div className="boxes-info-slot__icon">
-              <PiCookingPot size={40} />
-            </div>
-            <div className="boxes-info-slot__text">
-              <h3>Przepisy bezglutenowe</h3>
-              <h4>Szybkie i zdrowe przepisy na każdą okazję</h4>
-            </div>
-            <div className="boxes-info-slot__link">
-              <Link href="#sniadania">Zobacz przepisy <HiChevronRight /></Link>
-            </div>
-          </div>
-          {/* Slot */}
-          <div className="boxes-info-slot">
-            <div className="boxes-info-slot__icon">
-              <IoLocationOutline size={40} />
-            </div>
-            <div className="boxes-info-slot__text">
-              <h3>Resturacje bez glutenu</h3>
-              <h4>Sprawdź lokale w Twojej okolicy</h4>
-            </div>
-            <div className="boxes-info-slot__link">
-              <Link href="/bezglutenowe-miejsca">Znajdź restauracje <HiChevronRight /></Link>
-            </div>
-          </div>
-          {/* Slot */}
-          <div className="boxes-info-slot">
-            <div className="boxes-info-slot__icon">
-              <LiaShoppingBasketSolid size={40} />
-            </div>
-            <div className="boxes-info-slot__text">
-              <h3>Ulubione produkty</h3>
-              <h4>Polecane bezglutenowe produkty</h4>
-            </div>
-            <div className="boxes-info-slot__link">
-              <Link href="#produkty">Zobacz produkty <HiChevronRight /></Link>
-            </div>
-          </div>
+          {BoxesInfoItems.map((item, index) => {
+            const Icon = item.icon;
+
+            return (
+              <Link
+                key={index}
+                href={item.href}
+                className="boxes-info-slot group"
+              >
+                <div className="boxes-info-slot__icon">
+                  <Icon size={40} />
+                </div>
+
+                <div className="boxes-info-slot__text">
+                  <h3>{item.title}</h3>
+                  <h4>{item.subtitle}</h4>
+                </div>
+
+                <div className="boxes-info-slot__cta">
+                  <span>{item.label}</span>
+                  <HiChevronRight className="transition-transform group-hover:translate-x-1" />
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>
