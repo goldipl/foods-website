@@ -205,7 +205,7 @@ export const HERO_SLIDES: HeroSlideItem[] = [
     links: [
       { label: "Przepisy", href: "#sniadania" },
       {
-        label: "Poradniki",
+        label: "Porady",
         href: "#celiakia-podstawowe-informacje",
         className: "white",
       },
