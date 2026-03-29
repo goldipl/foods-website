@@ -9,9 +9,9 @@
 
 <div align="center">
   <a href="https://bezglutenowakarola.pl">🌐 Live Demo</a> •
-  <a href="#features">Features</a> •
-  <a href="#getting-started">Getting Started</a> •
-  <a href="#contributing">Contributing</a>
+  <a href="#-features">Features</a> •
+  <a href="#-getting-started">Getting Started</a> •
+  <a href="#-contributing">Contributing</a>
 </div>
 
 ---
