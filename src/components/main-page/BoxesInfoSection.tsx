@@ -21,7 +21,7 @@ export const BoxesInfoItems = [
   },
   {
     icon: LiaShoppingBasketSolid,
-    title: "Ulubione produkty",
+    title: "Bezglutenowe produkty",
     subtitle: "Polecane bezglutenowe produkty",
     href: "#produkty",
     label: "Zobacz produkty",
