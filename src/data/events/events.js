@@ -16,6 +16,7 @@ import rok2025 from "./../../../public/img/events/015_2025.jpg";
 import czyCeliakieMialamCaleZycie from "./../../../public/img/events/016_czy_celiakie_mialam_cale_zycie.jpg";
 import celiakiaIcoDalej from "./../../../public/img/events/017_caliakia_i_co_dalej.jpg";
 import coJemNaDiecieBezglutenowej from "./../../../public/img/events/018_co_jem_na_diecie_bezglutenowej.jpg";
+import coSlyszyCeliakVsRzeczywistosc from "./../../../public/img/events/019_co_slyszy_celiak_vs_rzeczywistosc.jpg";
 
 export const eventsData = [
     {
@@ -197,5 +198,15 @@ export const eventsData = [
       labelClass: "breakfast-label",
       description:
         "Co jem na diecie bezglutenowej?",
+    },
+    {
+      id: 19,
+      href: "https://www.instagram.com/p/DW4NcO9CO7J/?img_index=1",
+      imgSrc: coSlyszyCeliakVsRzeczywistosc,
+      altText: "Co słyszy celiak vs jaka jest rzeczywistość",
+      label: "Celiakia i dieta bezglutenowa",
+      labelClass: "breakfast-label",
+      description:
+        "Co słyszy celiak vs jaka jest rzeczywistość",
     },
   ];
