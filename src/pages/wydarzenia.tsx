@@ -1,7 +1,6 @@
 import "@/sass/main.scss";
 import Head from "next/head";
 import Image from "next/image";
-import React from "react";
 import Link from "next/link";
 import { CiInstagram } from "react-icons/ci";
 import { eventsData } from "@/data/events/events";
@@ -14,12 +13,12 @@ const EventsPage = () => {
     <>
       <Head>
         <title>
-          Wydarzenia i warsztaty bezglutenowe - Ucz się i smakuj | Bezglutenowa
-          Karola
+          Wydarzenia, warsztaty bezglutenowe i przydatne informacje - Ucz się i
+          smakuj | Bezglutenowa Karola
         </title>
         <meta
           name="description"
-          content="Bądź na bieżąco z eventami i warsztatami bezglutenowymi. Poznaj nowe receptury, posłuchaj ekspertów i dołącz do społeczności bez glutenu."
+          content="Bądź na bieżąco z eventami i warsztatami bezglutenowymi. Poznaj nowe receptury, dowiedz się więcej o celiakii i sprawdź moje codzienne menu."
         />
       </Head>
       <header>
@@ -31,56 +30,68 @@ const EventsPage = () => {
           <div className="section-description">
             <div className="section-title">
               <h1>
-                Wydarzenia i warsztaty bezglutenowe – ucz się, smakuj i poznawaj
+                Wydarzenia, warsztaty bezglutenowe i przydatne informacje o
+                celiakii – ucz się, smakuj i poznawaj
               </h1>
             </div>
             <div className="section-desc">
               <p>
-                Interesujesz się zdrowym stylem życia i kuchnią bezglutenową? A
-                może dopiero zaczynasz swoją przygodę z dietą bez glutenu?
-                Wydarzenia i warsztaty bezglutenowe to doskonała okazja, by
-                zdobyć praktyczną wiedzę, poznać nowe przepisy, a także spotkać
-                ludzi, którzy – tak jak Ty – stawiają na zdrowie i świadome
-                odżywianie.
+                Interesujesz się kuchnią bezglutenową, a może niedawno
+                zdiagnozowano u Ciebie celiakię? Życie z celiakią to znacznie
+                więcej niż tylko zmiana jadłospisu – to nauka czytania etykiet,
+                dbanie o bezpieczeństwo w kuchni i całkowita zmiana stylu życia.
+                Znajdziesz tutaj nie tylko informacje o nadchodzących
+                wydarzeniach, ale przede wszystkim potężną dawkę przydatnej
+                wiedzy o tym, jak odnaleźć się w nowej rzeczywistości.
               </p>
-              <h2>Dlaczego warto uczestniczyć w warsztatach bezglutenowych?</h2>
               <p>
-                Warsztaty kulinarne i wydarzenia bezglutenowe to coś więcej niż
-                tylko gotowanie. To inspirujące spotkania, które pozwalają:
+                Dzielę się z Tobą moimi codziennymi doświadczeniami oraz
+                potrawami, które sama przygotowuję i jem na ścisłej diecie
+                bezglutenowej. Chcę Ci pokazać, że jedzenie bez glutenu może być
+                równie smaczne, różnorodne i w pełni bezpieczne. Moje przepisy
+                to dowód na to, że dieta to nie wyrok, ale kulinarna przygoda!
+              </p>
+              <h2>
+                Dlaczego warto uczestniczyć w warsztatach i śledzić wpisy?
+              </h2>
+              <p>
+                Warsztaty kulinarne i wydarzenia branżowe to doskonała
+                przestrzeń, w której możemy spotkać się na żywo i uczyć od
+                siebie nawzajem. Co zyskasz, będąc częścią tej społeczności?
               </p>
               <ul>
                 <li>
-                  nauczyć się przygotowywać smaczne i zdrowe dania bez glutenu,
+                  <strong>Praktyczną wiedzę o celiakii:</strong> dowiesz się,
+                  jak unikać zanieczyszczeń krzyżowych i bezpiecznie
+                  funkcjonować na co dzień.
                 </li>
                 <li>
-                  poznać produkty i techniki, które ułatwiają życie na diecie
-                  bezglutenowej,
+                  <strong>Inspiracje kulinarne:</strong> poznasz moje sprawdzone
+                  potrawy bezglutenowe oraz nauczysz się przygotowywać pyszne,
+                  zdrowe dania od podstaw.
                 </li>
-                <li>wymienić doświadczenia z innymi uczestnikami,</li>
                 <li>
-                  zainspirować się pomysłami kucharzy, dietetyków i pasjonatów
-                  zdrowego jedzenia.
+                  <strong>Nowe produkty i techniki:</strong> odkryjesz
+                  zamienniki tradycyjnych mąk, które ułatwiają gotowanie i
+                  pieczenie.
+                </li>
+                <li>
+                  <strong>Wsparcie społeczności:</strong> wymienisz
+                  doświadczenia z ludźmi, którzy doskonale rozumieją Twoje
+                  codzienne zmagania z dietą.
                 </li>
               </ul>
               <p>
-                Podczas takich wydarzeń nie brakuje także degustacji, pokazów
-                gotowania na żywo, a często również prelekcji o zdrowym stylu
-                życia, zbilansowanej diecie i produktach naturalnych. To idealna
-                przestrzeń, by odkrywać nowe smaki, zdobywać praktyczne
-                umiejętności i dobrze się bawić.
+                Wydarzenia bezglutenowe to nie tylko warsztaty – to także targi,
+                festiwale i spotkania z ekspertami. To idealny moment na
+                degustacje, pokazy gotowania i poznawanie certyfikowanych
+                produktów.
               </p>
               <p>
-                Wydarzenia bezglutenowe to nie tylko warsztaty kulinarne – to
-                także targi, spotkania tematyczne i festiwale, podczas których
-                możesz poznać producentów bezglutenowych produktów, znaleźć nowe
-                inspiracje i odkryć, jak różnorodna i pyszna może być kuchnia
-                bez glutenu.
-              </p>
-              <p>
-                Niezależnie od tego, czy jesteś początkującym, czy doświadczonym
-                kucharzem, warsztaty i wydarzenia bezglutenowe to doskonały
-                sposób, by rozwijać pasję, poszerzać wiedzę i poznawać ludzi,
-                którzy – tak jak Ty – cenią zdrowe jedzenie i dobrą atmosferę.
+                Niezależnie od tego, czy dopiero zaczynasz życie bez glutenu,
+                czy jesteś już weteranem – zapraszam Cię do wspólnego odkrywania
+                smaków, poszerzania wiedzy i cieszenia się dobrym jedzeniem w
+                bezpiecznej atmosferze!
               </p>
             </div>
           </div>

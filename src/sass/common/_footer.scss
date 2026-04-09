@@ -30,6 +30,7 @@
         flex-direction: column;
         border-right: 1px solid $white-border-color01;
         padding-right: 2%;
+        max-width: 300px;
         &:last-of-type {
           border-right: 0;
           padding-right: 0;
