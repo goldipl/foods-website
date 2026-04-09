@@ -140,11 +140,11 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
       { label: "Jak wygląda życie z celiakią? (podcast)", href: "/#video" },
       {
         label: "Wydarzenia, warsztaty bezglutenowe i przydatne informacje",
-        href: "#wydarzenia",
+        href: "/#wydarzenia",
       },
       {
         label: "Bezglutenowe marki - współpraca",
-        href: "#wspolpraca",
+        href: "/#wspolpraca",
       },
     ],
   },
@@ -322,20 +322,20 @@ export const FOOTER_LINKS = [
     links: [
       {
         label: "Podstawowe informacje",
-        href: "#celiakia-podstawowe-informacje",
+        href: "/#celiakia-podstawowe-informacje",
       },
       {
         label: "Pierwsze kroki po diagnozie",
-        href: "#pierwsze-kroki-po-diagnozie",
+        href: "/#pierwsze-kroki-po-diagnozie",
       },
       { label: "Jak wygląda życie z celiakią? (podcast)", href: "/#video" },
       {
         label: "Wydarzenia, warsztaty bezglutenowe i przydatne informacje",
-        href: "#wydarzenia",
+        href: "/#wydarzenia",
       },
       {
         label: "Bezglutenowe marki - współpraca",
-        href: "#wspolpraca",
+        href: "/#wspolpraca",
       },
     ],
   },
