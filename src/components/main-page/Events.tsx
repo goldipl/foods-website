@@ -16,7 +16,7 @@ const Events = () => {
           {eventsData
             .slice()
             .reverse()
-            .slice(0, 4)
+            .slice(0, 8)
             .map((event) => (
               <Link
                 key={event.id}
