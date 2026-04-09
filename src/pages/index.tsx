@@ -23,10 +23,7 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>
-          Bezglutenowa Karola - Przepisy Gluten Free | Celiakia - Karolina
-          Wontorska
-        </title>
+        <title>Przepisy bezglutenowe i celiakia | Bezglutenowa Karola</title>
         <meta
           name="description"
           content="Bezglutenowa Karola: Odkryj proste i pyszne przepisy bez glutenu, cukru i nabiału. Idealne dla osób z celiakią i na diecie eliminacyjnej. Gotuj zdrowo z Karoliną!"
