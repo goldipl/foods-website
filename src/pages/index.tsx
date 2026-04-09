@@ -40,7 +40,7 @@ const index = () => {
         <meta property="og:url" content="https://bezglutenowakarola.pl" />
         <meta
           property="og:title"
-          content="Bezglutenowa Karola - Przepisy Gluten Free | Celiakia - Karolina Wontorska"
+          content="Przepisy bezglutenowe i celiakia | Bezglutenowa Karola"
         />
         <meta property="og:site_name" content="Bezglutenowa Karola" />
         <meta
@@ -54,7 +54,7 @@ const index = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Bezglutenowa Karola - Przepisy Gluten Free | Celiakia - Karolina Wontorska"
+          content="Przepisy bezglutenowe i celiakia | Bezglutenowa Karola"
         />
         <meta
           name="twitter:description"

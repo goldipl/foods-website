@@ -3,8 +3,7 @@ import "@/sass/main.scss";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bezglutenowakarola.pl"),
-  title:
-    "Bezglutenowa Karola - Przepisy Gluten Free | Celiakia - Karolina Wontorska",
+  title: "Przepisy bezglutenowe i celiakia | Bezglutenowa Karola",
   description:
     "Bezglutenowa Karola: Odkryj proste i pyszne przepisy bez glutenu, cukru i nabiału. Idealne dla osób z celiakią i na diecie eliminacyjnej. Gotuj zdrowo z Karoliną!",
   keywords: [
@@ -28,8 +27,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pl_PL",
     url: "https://bezglutenowakarola.pl",
-    title:
-      "Bezglutenowa Karola - Przepisy Gluten Free | Celiakia - Karolina Wontorska",
+    title: "Przepisy bezglutenowe i celiakia | Bezglutenowa Karola",
     description:
       "Znajdź przepisy na dania bez glutenu, bez cukru, bez nabiału, idealne dla osób z celiakią. Zdrowe i smaczne jedzenie dla osób na diecie bezglutenowej.",
     images: [
@@ -42,8 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Bezglutenowa Karola - Przepisy Gluten Free | Celiakia - Karolina Wontorska",
+    title: "Przepisy bezglutenowe i celiakia | Bezglutenowa Karola",
     description:
       "Przepisy bez glutenu, bez cukru, bez nabiału, stworzone z myślą o osobach z celiakią i na diecie bezglutenowej. Sprawdź zdrowe inspiracje kulinarne.",
     images: [
