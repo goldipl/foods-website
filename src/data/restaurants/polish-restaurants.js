@@ -29,6 +29,7 @@ import sushiWesolaNoweMenu2025 from "./../../../public/img/restaurants/poland/02
 import gastroPodsumowaniePolska2025 from "./../../../public/img/restaurants/poland/030_gastro_podsumowanie_polska_2025.jpg";
 import theChefHouseWarszawa from "./../../../public/img/restaurants/poland/031_the_chef_house_warszawa.jpg";
 import radomBezLukruiCukru from "./../../../public/img/restaurants/poland/032_bez_lukru_i_cukru.jpg";
+import saskaSushizDziewczynami from "./../../../public/img/restaurants/poland/033_saska_sushi.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -340,5 +341,15 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Bez Lukru i Cukru - Magda Patynowska , ul. Bolesława Chrobrego 22, 26-609 Radom",
+    },
+    {
+      id: 33,
+      href: "https://www.instagram.com/p/DXW5K6vCJFf/?img_index=1",
+      imgSrc: saskaSushizDziewczynami,
+      altText: "Bezglutenowe sushi burgery, miso, sushi rolls w Warszawie, Saska Sushi, ul. Zwycięzców 4, Warszawa",
+      label: "Warszawa",
+      labelClass: "poland-label",
+      description:
+        "Bezglutenowe sushi burgery, miso, sushi rolls w Warszawie, Saska Sushi, ul. Zwycięzców 4, Warszawa",
     },
   ];
