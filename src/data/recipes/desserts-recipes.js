@@ -34,6 +34,7 @@ import kokosankiVelKudlacze from "./../../../public/img/recipes/desserts/033_kok
 import bezglutenowePistacjoweTiramisu from "./../../../public/img/recipes/desserts/034_pistacjowe_tiramisu.jpg";
 import tartaToffifee from "./../../../public/img/recipes/desserts/035_tarta_toffifee.jpg";
 import malinowaKostka from "./../../../public/img/recipes/desserts/036_malinowa_kostka.jpg";
+import gofry from "./../../../public/img/recipes/desserts/037_gofry.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -395,5 +396,15 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Malinowa kostka z białą czekoladą 🌸",
+    },
+    {
+      id: 37,
+      href: "https://www.instagram.com/p/DXpQEqoiHTO/?img_index=1",
+      imgSrc: gofry,
+      altText: "Bezglutenowe gofry z bitą śmietaną i owocami",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Bezglutenowe gofry z bitą śmietaną i owocami 🍓🍌🧇",
     },
 ];
