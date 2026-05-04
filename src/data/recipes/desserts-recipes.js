@@ -35,6 +35,7 @@ import bezglutenowePistacjoweTiramisu from "./../../../public/img/recipes/desser
 import tartaToffifee from "./../../../public/img/recipes/desserts/035_tarta_toffifee.jpg";
 import malinowaKostka from "./../../../public/img/recipes/desserts/036_malinowa_kostka.jpg";
 import gofry from "./../../../public/img/recipes/desserts/037_gofry.jpg";
+import drozdzowki from "./../../../public/img/recipes/desserts/038_drozdzowki.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -406,5 +407,15 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Bezglutenowe gofry z bitą śmietaną i owocami 🍓🍌🧇",
+    },
+    {
+      id: 38,
+      href: "https://www.instagram.com/p/DX08HP7IP9E/",
+      imgSrc: drozdzowki,
+      altText: "Letnie drożdżówki z owocami bez glutenu",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Letnie drożdżówki z owocami 🫐 bez glutenu",
     },
 ];
