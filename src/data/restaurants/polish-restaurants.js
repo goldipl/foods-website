@@ -30,6 +30,7 @@ import gastroPodsumowaniePolska2025 from "./../../../public/img/restaurants/pola
 import theChefHouseWarszawa from "./../../../public/img/restaurants/poland/031_the_chef_house_warszawa.jpg";
 import radomBezLukruiCukru from "./../../../public/img/restaurants/poland/032_bez_lukru_i_cukru.jpg";
 import saskaSushizDziewczynami from "./../../../public/img/restaurants/poland/033_saska_sushi.jpg";
+import grooleWarszawa from "./../../../public/img/restaurants/poland/034_groole.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -351,5 +352,15 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Bezglutenowe sushi burgery, miso, sushi rolls w Warszawie, Saska Sushi, ul. Zwycięzców 4, Warszawa",
+    },
+    {
+      id: 34,
+      href: "https://www.instagram.com/p/DX7AN4qCKlj/?img_index=1",
+      imgSrc: grooleWarszawa,
+      altText: "Groole, ul. Śniadeckich 8, Warszawa; Grool boczek i espresso tonic w słońcu",
+      label: "Warszawa",
+      labelClass: "poland-label",
+      description:
+        "Groole, ul. Śniadeckich 8, Warszawa; Grool boczek i espresso tonic w słońcu ☀️",
     },
   ];
