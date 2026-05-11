@@ -36,6 +36,7 @@ import tartaToffifee from "./../../../public/img/recipes/desserts/035_tarta_toff
 import malinowaKostka from "./../../../public/img/recipes/desserts/036_malinowa_kostka.jpg";
 import gofry from "./../../../public/img/recipes/desserts/037_gofry.jpg";
 import drozdzowki from "./../../../public/img/recipes/desserts/038_drozdzowki.jpg";
+import tiramisu from "./../../../public/img/recipes/desserts/039_tiramisu.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -417,5 +418,15 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Letnie drożdżówki z owocami 🫐 bez glutenu",
+    },
+    {
+      id: 39,
+      href: "https://www.instagram.com/p/DYM8DVKIAk1/",
+      imgSrc: tiramisu,
+      altText: "Tiramisu na bezglutenowym biszkopcie ☕️🍰",
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Tiramisu na bezglutenowym biszkopcie",
     },
 ];
