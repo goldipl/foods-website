@@ -27,6 +27,7 @@ import swiatecznaPutkaBezGlutenu from "./../../../public/img/products/026_swiate
 import cateringCzapielskiePudelka from "./../../../public/img/products/027_catering_czapielskie_pudelka.jpg";
 import tymbarkJustPlants from "./../../../public/img/products/028_tymbark_just_plants.jpg";
 import tlustyCzwartekPutka from "./../../../public/img/products/029_tlusty_czwartek.jpg";
+import trzyProdukty from "./../../../public/img/products/030_trzy_produkty.jpg";
 
 export const productsData = [
     {
@@ -348,5 +349,15 @@ export const productsData = [
         labelClass: "product-label",
         description: 
             "Tłusty Czwartek, last minute 🍩 z Putka bez glutenu",
+    },
+    {
+        id: 30,
+        href: "https://www.instagram.com/p/DYPeJTiCKVZ/?img_index=1",
+        imgSrc: trzyProdukty,
+        altText: "Trzy produkty z glutenem, które możesz jeść przy celiakii",
+        label: "Ważne informacje",
+        labelClass: "product-label",
+        description: 
+            "Trzy produkty z glutenem, które możesz jeść przy celiakii",
     },
   ];
