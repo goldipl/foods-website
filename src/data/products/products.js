@@ -28,6 +28,7 @@ import cateringCzapielskiePudelka from "./../../../public/img/products/027_cater
 import tymbarkJustPlants from "./../../../public/img/products/028_tymbark_just_plants.jpg";
 import tlustyCzwartekPutka from "./../../../public/img/products/029_tlusty_czwartek.jpg";
 import trzyProdukty from "./../../../public/img/products/030_trzy_produkty.jpg";
+import tydzienCeliakiiPutka from "./../../../public/img/products/031_tydzien_celiakii_putka.jpg";
 
 export const productsData = [
     {
@@ -359,5 +360,15 @@ export const productsData = [
         labelClass: "product-label",
         description: 
             "Trzy produkty z glutenem, które możesz jeść przy celiakii",
+    },
+    {
+        id: 31,
+        href: "https://www.instagram.com/p/DYSTeYlo-qN/",
+        imgSrc: tydzienCeliakiiPutka,
+        altText: "Tydzień celiakii z Putka bez glutenu",
+        label: "Putka bez glutenu",
+        labelClass: "product-label",
+        description: 
+            "Tydzień celiakii z Putka bez glutenu",
     },
   ];
