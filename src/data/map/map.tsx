@@ -40,16 +40,6 @@ export const MarkerData = [
     position: [52.221713976436995, 21.015137425179198] as [number, number],
   },
   {
-    id: 5,
-    name: "Calimero Café - Warszawa Mokotów",
-    addressLine1: "ul. Konstruktorska 7/u1,",
-    addressLine2: "02-676 Warszawa",
-    country: "Polska",
-    city: "Warszawa",
-    link: "https://www.instagram.com/p/DKO9OF-IY7O/",
-    position: [52.18540891697404, 20.99331470031542] as [number, number],
-  },
-  {
     id: 6,
     name: "Saska Sushi",
     addressLine1: "ul. Zwycięzców 4,",
