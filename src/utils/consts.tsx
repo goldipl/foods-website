@@ -95,6 +95,7 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
           { label: "Kraków", href: "/#restauracje-polska" },
           { label: "Kielce", href: "/#restauracje-polska" },
           { label: "Zakopane", href: "/#restauracje-polska" },
+          { label: "Karpacz", href: "/#restauracje-polska" },
         ],
       },
       {
