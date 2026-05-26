@@ -30,6 +30,7 @@ import theChefHouseWarszawa from "./../../../public/img/restaurants/poland/031_t
 import radomBezLukruiCukru from "./../../../public/img/restaurants/poland/032_bez_lukru_i_cukru.jpg";
 import saskaSushizDziewczynami from "./../../../public/img/restaurants/poland/033_saska_sushi.jpg";
 import grooleWarszawa from "./../../../public/img/restaurants/poland/034_groole.jpg";
+import villaKarpaczBezGlutenu from "./../../../public/img/restaurants/poland/035_villa_karpacz_bezglutenu.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -351,5 +352,15 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Groole, ul. Śniadeckich 8, Warszawa; Grool boczek i espresso tonic w słońcu ☀️",
+    },
+    {
+      id: 35,
+      href: "https://www.instagram.com/p/DYxND-7IOBl/",
+      imgSrc: villaKarpaczBezGlutenu,
+      altText: "Villa Karpacz GLUTEN FREE, ul. Curie-Skłodowskiej 9A, 58-540 Karpacz",
+      label: "Karpacz",
+      labelClass: "poland-label",
+      description:
+        "Villa Karpacz GLUTEN FREE, ul. Curie-Skłodowskiej 9A, 58-540 Karpacz",
     },
   ];

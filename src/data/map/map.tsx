@@ -589,4 +589,14 @@ export const MarkerData = [
     link: "https://www.instagram.com/p/DTvd4vUiOHj/?img_index=1",
     position: [52.17337235113483, 20.999428242400025] as [number, number],
   },
+  {
+    id: 61,
+    name: "Villa Karpacz GLUTEN FREE",
+    addressLine1: " ul. Curie-Skłodowskiej 9A,",
+    addressLine2: "58-540 Karpacz",
+    country: "Polska",
+    city: "Karpacz",
+    link: "https://www.instagram.com/p/DYxND-7IOBl/",
+    position: [50.77488014915756, 15.768735662715056] as [number, number],
+  },
 ];
