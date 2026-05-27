@@ -31,6 +31,7 @@ import radomBezLukruiCukru from "./../../../public/img/restaurants/poland/032_be
 import saskaSushizDziewczynami from "./../../../public/img/restaurants/poland/033_saska_sushi.jpg";
 import grooleWarszawa from "./../../../public/img/restaurants/poland/034_groole.jpg";
 import villaKarpaczBezGlutenu from "./../../../public/img/restaurants/poland/035_villa_karpacz_bezglutenu.jpg";
+import villaKarpaczBezGlutenu02 from "./../../../public/img/restaurants/poland/036_villa_karpacz_bezglutenu02.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -362,5 +363,15 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Villa Karpacz GLUTEN FREE, ul. Curie-Skłodowskiej 9A, 58-540 Karpacz",
+    },
+    {
+      id: 36,
+      href: "https://www.instagram.com/p/DYz_-ViRuCm/",
+      imgSrc: villaKarpaczBezGlutenu02,
+      altText: "Bezglutenowe śniadania i obiadokolacje w Villa Karpacz GLUTEN FREE, ul. Curie-Skłodowskiej 9A, 58-540 Karpacz",
+      label: "Karpacz",
+      labelClass: "poland-label",
+      description:
+        "Bezglutenowe śniadania i obiadokolacje w Villa Karpacz GLUTEN FREE, ul. Curie-Skłodowskiej 9A, 58-540 Karpacz",
     },
   ];
