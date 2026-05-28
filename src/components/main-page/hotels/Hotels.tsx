@@ -9,7 +9,7 @@ const Hotels = () => {
   return (
     <>
       <div className="section-title">
-        <h2 id="hotele">Bezglutenowe hotele i pensjonaty</h2>
+        <h2 id="hotele-i-pensjonaty">Bezglutenowe hotele i pensjonaty</h2>
       </div>
       <div className="listing-v1">
         {hotelsData

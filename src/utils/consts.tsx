@@ -85,10 +85,10 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
     ],
   },
   {
-    label: "Restauracje",
+    label: "Miejsca",
     children: [
       {
-        label: "Polska",
+        label: "Resturacje w Polsce",
         children: [
           { label: "Warszawa", href: "/#restauracje-polska" },
           { label: "Trójmiasto", href: "/#restauracje-polska" },
@@ -99,11 +99,18 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
         ],
       },
       {
-        label: "Europa",
+        label: "Restauracje w Europie",
         children: [
           { label: "Włochy", href: "/#restauracje-europa" },
           { label: "Cypr", href: "/#restauracje-europa" },
           { label: "Rumunia", href: "/#restauracje-europa" },
+        ],
+      },
+      {
+        label: "Hotele i pensjonaty",
+        children: [
+          { label: "Zakopane", href: "/#hotele-i-pensjonaty" },
+          { label: "Karpacz", href: "/#hotele-i-pensjonaty" },
         ],
       },
       { label: "Mapa miejsc bezglutenowych", href: "/bezglutenowe-miejsca" },
@@ -297,10 +304,11 @@ export const FOOTER_LINKS = [
     ],
   },
   {
-    title: "Restauracje",
+    title: "Miejsca",
     links: [
-      { label: "Polska", href: "#restauracje-polska" },
-      { label: "Europa", href: "#restauracje-europa" },
+      { label: "Restauracje w Polsce", href: "/#restauracje-polska" },
+      { label: "Restauracje w Europie", href: "/#restauracje-europa" },
+      { label: "Hotele i pensjonaty", href: "/#hotele-i-pensjonaty" },
       { label: "Mapa miejsc bezglutenowych", href: "/bezglutenowe-miejsca" },
     ],
   },

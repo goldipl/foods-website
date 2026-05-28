@@ -10,6 +10,7 @@ import WelcomeSection from "@/components/main-page/WelcomeSection";
 import BoxesInfoSection from "@/components/main-page/BoxesInfoSection";
 import RecipesSection from "@/components/main-page/RecipesSection";
 import RestaurantsSection from "@/components/main-page/RestaurantsSection";
+import HotelsSection from "@/components/main-page/HotelsSection";
 import Contact from "@/components/main-page/Contact";
 import ProductsSection from "@/components/main-page/ProductsSection";
 import CooperationSection from "@/components/main-page/CooperationSection";
@@ -76,6 +77,7 @@ const index = () => {
         <WelcomeSection />
         <RecipesSection />
         <RestaurantsSection />
+        <HotelsSection />
         <ProductsSection />
         <CeliacDiseaseBasicInfoSection />
         <VideoSection />

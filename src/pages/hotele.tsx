@@ -27,7 +27,10 @@ const HotelsPage = () => {
         <section id="category-page">
           <div className="section-description">
             <div className="section-title">
-              <h1>Hotele bezglutenowe – zdrowy wybór na co dzień</h1>
+              <h1>
+                Hotele i pensjonaty z opcją bezglutenową – raj dla każdego
+                celiaka
+              </h1>
             </div>
             <div className="section-desc">
               <p>
