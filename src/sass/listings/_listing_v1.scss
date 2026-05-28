@@ -1,9 +1,17 @@
+.section-description + .listing-v1 {
+  margin: 0 16px;
+  @media (max-width: 992px) {
+    gap: 12px;
+    margin: 0 12px;
+  }
+}
+
 .listing-v1 {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 24px;
   @media (max-width: 992px) {
@@ -44,6 +52,17 @@
         svg {
           filter: saturate(100%) invert(78%) sepia(12%) saturate(4609%)
             hue-rotate(160deg) brightness(103%) contrast(97%);
+        }
+      }
+    }
+    &:has(.hotel-label) {
+      .zoom-box {
+        span {
+          color: $hotel-label-bg;
+        }
+        svg {
+          filter: brightness(0) saturate(100%) invert(35%) sepia(88%)
+            saturate(5024%) hue-rotate(143deg) brightness(96%) contrast(106%);
         }
       }
     }
@@ -206,6 +225,10 @@
         &.shop-label {
           background-color: $shop-label-bg;
           color: $shop-label-text-color;
+        }
+        &.hotel-label {
+          background-color: $hotel-label-bg;
+          color: $color-white;
         }
         @media (max-width: 992px) {
           font-size: 12px;
