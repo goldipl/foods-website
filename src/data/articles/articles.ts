@@ -17,7 +17,7 @@ export const articlesData: ArticleItem[] = [
     title: "Czym jest celiakia?",
     excerpt:
       "Pełny przewodnik po celiakii: charakterystyka choroby trzewnej, objawy, gluten i metody leczenia. Poznaj podstawowe informacje o tej chorobie autoimmunologicznej.",
-    image: "/img/products/015_zabka_czy_to_ma_gluten.jpg",
+    image: "/img/articles/article-celiac.jpg",
     category: "Celiakia",
     author: "Karolina Wontorska",
     date: "29.05.2026",
@@ -118,7 +118,7 @@ export const articlesData: ArticleItem[] = [
     title: "Jak czytać etykiety bezglutenowych produktów",
     excerpt:
       "Naucz się rozpoznawać ukryte źródła glutenu i wybierać produkty bezpieczne dla celiakii.",
-    image: "/img/products/015_zabka_czy_to_ma_gluten.jpg",
+    image: "/img/articles/article-reading-labels.jpg",
     category: "Porady",
     author: "Karolina Wontorska",
     date: "28.05.2026",
