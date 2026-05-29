@@ -29,6 +29,7 @@ import tymbarkJustPlants from "./../../../public/img/products/028_tymbark_just_p
 import tlustyCzwartekPutka from "./../../../public/img/products/029_tlusty_czwartek.jpg";
 import trzyProdukty from "./../../../public/img/products/030_trzy_produkty.jpg";
 import tydzienCeliakiiPutka from "./../../../public/img/products/031_tydzien_celiakii_putka.jpg";
+import przekaskaBezGlutenuIncola from "./../../../public/img/products/032_przekaska_bez_glutenu_incola.jpg";
 
 export const productsData = [
     {
@@ -370,5 +371,15 @@ export const productsData = [
         labelClass: "product-label",
         description: 
             "Tydzień celiakii z Putka bez glutenu",
+    },
+    {
+        id: 32,
+        href: "https://www.instagram.com/p/DY7DA95CEAa/?img_index=1",
+        imgSrc: przekaskaBezGlutenuIncola,
+        altText: "Kakaowe muffinki i ciasteczka bez glutenu od Incola Gluten Free",
+        label: "Incola Gluten Free",
+        labelClass: "product-label",
+        description: 
+            "Kakaowe muffinki i ciasteczka bez glutenu od Incola Gluten Free",
     },
   ];
