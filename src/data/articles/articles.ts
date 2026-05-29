@@ -19,7 +19,7 @@ export const articlesData: ArticleItem[] = [
       "Przewodnik dla początkujących: czym jest celiakia, jak rozpoznać gluten i jak bezpiecznie rozpocząć dietę bezglutenową.",
     image: "/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.jpg",
     category: "Celiakia",
-    author: "Karola",
+    author: "Karolina Wontorska",
     date: "29 maja 2026",
     content: [
       "Celiakia to choroba autoimmunologiczna, w której spożycie glutenu uruchamia reakcję odpornościową wewnątrz organizmu. Największe szkody powstają w jelicie cienkim, dlatego szybka zmiana diety jest kluczowa dla zdrowia.",
@@ -44,7 +44,7 @@ export const articlesData: ArticleItem[] = [
       "Przegląd najlepszych restauracji i hoteli bezglutenowych oraz praktyczne wskazówki na wyjazdach.",
     image: "/img/restaurants/poland/001_saska_sushi.jpg",
     category: "Podróże",
-    author: "Karola",
+    author: "Karolina Wontorska",
     date: "20 maja 2026",
     content: [
       "Podróżując, warto wcześniej sprawdzić ofertę restauracji i hoteli pod kątem bezglutenowych opcji.",
@@ -68,7 +68,7 @@ export const articlesData: ArticleItem[] = [
       "Przepis na prosty, pełnowartościowy bezglutenowy obiad z wykorzystaniem popularnych składników.",
     image: "/img/recipes/dinners/016_bezglutenowy_burger_z_kimchi.jpg",
     category: "Kuchnia",
-    author: "Karola",
+    author: "Karolina Wontorska",
     date: "24 maja 2026",
     content: [
       "Szybki obiad bez glutenu może być smaczny i odżywczy. Kluczem jest wykorzystanie naturalnych składników i prostych zamienników.",
@@ -92,7 +92,7 @@ export const articlesData: ArticleItem[] = [
       "Naucz się rozpoznawać ukryte źródła glutenu i wybierać produkty bezpieczne dla celiakii.",
     image: "/img/products/015_zabka_czy_to_ma_gluten.jpg",
     category: "Porady",
-    author: "Karola",
+    author: "Karolina Wontorska",
     date: "28 maja 2026",
     content: [
       "Etykiety potrafią być mylące, ale kilka prostych zasad pozwoli Ci odczytać skład i potencjalne zagrożenia glutenowe.",
@@ -116,7 +116,7 @@ export const articlesData: ArticleItem[] = [
       "Pomysły na szybkie, zdrowe i sycące śniadania bez glutenu, które ułatwią codzienne poranki.",
     image: "/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.jpg",
     category: "Kuchnia",
-    author: "Karola",
+    author: "Karolina Wontorska",
     date: "29 maja 2026",
     content: [
       "Śniadanie jest podstawą dobrego dnia, szczególnie na diecie bezglutenowej. Warto mieć kilka gotowych pomysłów na szybkie posiłki.",

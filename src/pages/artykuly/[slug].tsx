@@ -34,11 +34,17 @@ const ArticleDetailPage = ({ article }: ArticlePageProps) => {
               priority
             />
             <div className="article-hero__overlay">
-              <span>{article.category}</span>
+              <span className="overlay__article-category">
+                {article.category}
+              </span>
               <h1>{article.title}</h1>
               <div className="article-hero__meta">
-                <span>Autor: {article.author}</span>
-                <span>Data: {article.date}</span>
+                <span>
+                  Autor: <span className="meta-author">{article.author}</span>
+                </span>
+                <span>
+                  Data: <span className="meta-date">{article.date}</span>
+                </span>
               </div>
             </div>
           </div>
