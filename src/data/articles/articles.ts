@@ -13,6 +13,34 @@ export interface ArticleItem {
 
 export const articlesData: ArticleItem[] = [
   {
+    slug: "czym-jest-celiakia",
+    title: "Czym jest celiakia?",
+    excerpt:
+      "Pełny przewodnik po celiakii: charakterystyka choroby trzewnej, objawy, gluten i metody leczenia. Poznaj podstawowe informacje o tej chorobie autoimmunologicznej.",
+    image: "/img/products/015_zabka_czy_to_ma_gluten.jpg",
+    category: "Celiakia",
+    author: "Karolina Wontorska",
+    date: "29.05.2026",
+    content: [
+      "Celiakia, inaczej zwana chorobą trzewną, ma podłoże genetyczne i zaliczana jest do grupy chorób autoimmunologicznych. W układzie odpornościowym osoby chorej, po spożyciu glutenu dochodzi do niepożądanej reakcji immunologicznej. Mówiąc najprościej, reaction ta jest skierowana przeciwko własnym tkankom organizmu chorego.",
+      "Największe szkody zachodzą w jelicie cienkim, co prowadzi do stanu zapalnego jelit, zaniku kosmków jelitowych, co w następstwie ogranicza lub uniemożliwia wchłanianie składników odżywczych z pokarmów. Jednak oprócz jelita cienkiego, na niszczycielskie działanie glutenu narażone są również inne narządy chorego.",
+      "Gluten jest mieszaniną białek (prolamin i glutenin) charakterystycznych dla produktów zbożowych takich jak np.: pszenica, żyto, jęczmień, orkisz, owies. Ten ostatni (m.in. ze względu na zanieczyszczenia podczas produkcji) musi być koniecznie oznaczony jako bezglutenowy.",
+      "Objawy celiakii nie są jednoznaczne i oczywiste. Celiakia może mieć postać klasyczną i nieklasyczną. W przypadku tej pierwszej charakterystycznymi objawami są m.in.: biegunki, utrata masy ciała, zaburzenia rozwoju, niski wzrost, wzdęty brzuch, ból brzucha.",
+      "W przypadku celiakii nieklasycznej (która jest spotykana znacznie częściej), objawy zaliczane są głównie do tych pozajelitowych m.in. anemia, afty, zaburzenia neurologiczne, depresja, psychozy, bóle kostne i stawowe, poronienia i problemy z płodnością, współistniejące choroby autoimmunologiczne, niedobór witamin i składników mineralnych.",
+      "Niestety celiakia jest nieuleczalna. Jedyną metodą leczenia dla chorego jest stosowanie ścisłej diety bezglutenowej przez całe życie.",
+      "Choroby autoimmunologiczne mogą pojawiać się parami lub grupami, w każdym momencie życia. Przy celiakii mogą pojawić się inne choroby autoimmunologiczne, dlatego warto monitorować swoje zdrowie i być w stałym kontakcie z lekarzem.",
+    ],
+    highlights: [
+      "Celiakia to choroba autoimmunologiczna o podłożu genetycznym, w której gluten uruchamia reakcję odpornościową.",
+      "Największe szkody zachodzą w jelicie cienkim, uniemożliwiając wchłanianie składników odżywczych.",
+      "Objawy celiakii mogą być klasyczne (biegunki, utrata wagi) lub nieklasyczne (anemia, zaburzenia neurologiczne, problemy z płodnością).",
+      "Jedynym leczeniem celiakii jest ścisła, całkowita dieta bezglutenowa przez całe życie.",
+      "Osoby z celiakią mogą mieć również inne choroby autoimmunologiczne, które pojawiają się w różnych momentach życia.",
+    ],
+    quote:
+      "Celiakia nie jest wyrokiem, lecz zaproszeniem do świadomego i zdrowego życia.",
+  },
+  {
     slug: "pierwsze-kroki-z-celiakia",
     title: "Pierwsze kroki z celiakią i dietą bezglutenową",
     excerpt:
