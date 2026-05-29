@@ -88,7 +88,7 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
     label: "Miejsca",
     children: [
       {
-        label: "Resturacje w Polsce",
+        label: "Resturacje/cukiernie w Polsce",
         children: [
           { label: "Warszawa", href: "/#restauracje-polska" },
           { label: "Trójmiasto", href: "/#restauracje-polska" },
@@ -96,10 +96,12 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
           { label: "Kielce", href: "/#restauracje-polska" },
           { label: "Zakopane", href: "/#restauracje-polska" },
           { label: "Karpacz", href: "/#restauracje-polska" },
+          { label: "Radom", href: "/#restauracje-polska" },
+          { label: "Poznań", href: "/#restauracje-polska" },
         ],
       },
       {
-        label: "Restauracje w Europie",
+        label: "Resturacje/cukiernie w Europie",
         children: [
           { label: "Włochy", href: "/#restauracje-europa" },
           { label: "Cypr", href: "/#restauracje-europa" },

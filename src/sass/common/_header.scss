@@ -379,6 +379,9 @@ body:has(.header-main-container.is-fixed) {
   span .arrow-img {
     margin-left: 8px;
     transition: transform 0.3s ease;
+    @media (min-width: 1181px) {
+      rotate: -90deg;
+    }
   }
   .nav-third-lvl {
     list-style: none;
