@@ -124,7 +124,7 @@ export const articlesData: ArticleItem[] = [
     date: "28.05.2026",
     content: [
       "Etykiety potrafią być mylące, ale kilka prostych zasad pozwoli Ci odczytać skład i potencjalne zagrożenia glutenowe.",
-      'Zwracaj uwagę nie tylko na deklaracje "bez glutenu", ale także na symbole i informacje o możliwym zanieczyszczeniu krzyżowym.',
+      'Zwracaj uwagę nie tylko na deklaracje "bezglutenowy", ale także na symbole i informacje o możliwym zanieczyszczeniu krzyżowym.',
       "Unikaj produktów z nieznanymi składnikami i dodatkami, które mogą ukrywać śladowe ilości glutenu.",
       "Wybierając certyfikowane bezglutenowe marki, masz większą pewność, że produkt spełnia normy dla osób z celiakią.",
     ],
@@ -132,7 +132,7 @@ export const articlesData: ArticleItem[] = [
       "Sprawdzaj składniki każdej nowej paczki produktu.",
       "Zwracaj uwagę na informacje o produkcji w tym samym zakładzie.",
       "Poznaj alternatywne nazwy glutenu, takie jak maltodekstryna czy aromaty.",
-      'Wybieraj produkty z certyfikatem i wyraźnym oznaczeniem "bez glutenu".',
+      'Wybieraj produkty z certyfikatem i wyraźnym oznaczeniem "bezglutenowy".',
     ],
     quote:
       "Czytanie etykiet to umiejętność, która daje największe bezpieczeństwo na diecie bezglutenowej.",
