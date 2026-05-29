@@ -131,7 +131,7 @@ export const articlesData: ArticleItem[] = [
     highlights: [
       "Sprawdzaj składniki każdej nowej paczki produktu.",
       "Zwracaj uwagę na informacje o produkcji w tym samym zakładzie.",
-      "Poznaj alternatywne nazwy glutenu, takie jak maltodekstryna czy aromaty.",
+      "Czytaj etykiety z uwagą, zwracając uwagę na alergeny.",
       'Wybieraj produkty z certyfikatem i wyraźnym oznaczeniem "bezglutenowy".',
     ],
     quote:
