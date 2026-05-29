@@ -7,10 +7,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 0;
+  padding: 16px 0 40px;
   &-wrapper {
-    padding: 16px 0 40px;
     max-width: 1280px;
     margin: 0 auto;
+  }
+  @media (min-width: 1281px) {
+    padding-bottom: 160px;
   }
 }
 
@@ -18,6 +21,10 @@
   font-size: clamp(2rem, 2.2vw, 2.8rem);
   margin-bottom: 0.75rem;
   margin-top: 0;
+  @media (max-width: 760px) {
+    padding: 0;
+    font-size: 24px;
+  }
 }
 
 .articles-preview .section-desc {
@@ -28,7 +35,11 @@
 .articles-preview__grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(260px, 1fr));
+  margin: 0 16px;
   gap: 24px;
+  @media (min-width: 1281px) {
+    margin: 0;
+  }
 }
 
 .article-card--preview {
@@ -53,5 +64,6 @@
 
   .articles-preview__grid {
     grid-template-columns: 1fr;
+    margin: 0;
   }
 }
