@@ -1,0 +1,57 @@
+.articles-preview {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: url(./../../../public/img/backgrounds/bg-gradient02.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  &-wrapper {
+    padding: 16px 0 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
+
+.articles-preview .section-title h2 {
+  font-size: clamp(2rem, 2.2vw, 2.8rem);
+  margin-bottom: 0.75rem;
+  margin-top: 0;
+}
+
+.articles-preview .section-desc {
+  max-width: 760px;
+  margin-bottom: 32px;
+}
+
+.articles-preview__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.article-card--preview {
+  min-height: 100%;
+}
+
+.articles-preview__more {
+  margin-top: 32px;
+  text-align: center;
+}
+
+@media (max-width: 1100px) {
+  .articles-preview__grid {
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .articles-preview {
+    padding: 60px 16px 30px;
+  }
+
+  .articles-preview__grid {
+    grid-template-columns: 1fr;
+  }
+}

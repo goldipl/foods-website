@@ -1,11 +1,7 @@
 #boxes-info-section {
   position: relative;
   display: flex;
-  width: 100%;
-  background: url(./../../../public/img/backgrounds/bg-gradient02.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 
   .boxes-info-wrapper {
     display: flex;

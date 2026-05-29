@@ -156,7 +156,13 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
       },
     ],
   },
-  { label: "O mnie", href: "/#o-mnie" },
+  {
+    label: "Więcej",
+    children: [
+      { label: "O mnie", href: "/#o-mnie" },
+      { label: "Artykuły", href: "/artykuly" },
+    ],
+  },
   { label: "Kontakt", href: "/#kontakt", className: "contact" },
 ];
 
@@ -217,7 +223,7 @@ export const HERO_SLIDES: HeroSlideItem[] = [
       { label: "Przepisy", href: "#sniadania" },
       {
         label: "Porady",
-        href: "#celiakia-podstawowe-informacje",
+        href: "/artykuly",
         className: "white",
       },
     ],

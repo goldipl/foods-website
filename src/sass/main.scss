@@ -10,6 +10,7 @@
 @import "./common/topbar";
 @import "./common/header";
 @import "./common/footer";
+@import "./common/articles";
 @import "./common/hamburger";
 @import "./common/sections";
 @import "./common/buttons";
@@ -18,6 +19,7 @@
 
 // Main page
 @import "./main-page/hero";
+@import "./main-page/articles_preview";
 @import "./main-page/welcome_section";
 @import "./main-page/boxes_info_section";
 @import "./main-page/recipes_section";
