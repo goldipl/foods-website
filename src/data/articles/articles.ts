@@ -20,7 +20,7 @@ export const articlesData: ArticleItem[] = [
     image: "/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.jpg",
     category: "Celiakia",
     author: "Karolina Wontorska",
-    date: "29 maja 2026",
+    date: "29.05.2026",
     content: [
       "Celiakia to choroba autoimmunologiczna, w której spożycie glutenu uruchamia reakcję odpornościową wewnątrz organizmu. Największe szkody powstają w jelicie cienkim, dlatego szybka zmiana diety jest kluczowa dla zdrowia.",
       "Gluten występuje w pszenicy, żytnim, jęczmieniu i orkiszach. Nawet owies musi być oznaczony jako bezglutenowy, ponieważ często zawiera śladowe ilości glutenu z zanieczyszczeń produkcyjnych.",
@@ -45,7 +45,7 @@ export const articlesData: ArticleItem[] = [
     image: "/img/restaurants/poland/001_saska_sushi.jpg",
     category: "Podróże",
     author: "Karolina Wontorska",
-    date: "20 maja 2026",
+    date: "20.05.2026",
     content: [
       "Podróżując, warto wcześniej sprawdzić ofertę restauracji i hoteli pod kątem bezglutenowych opcji.",
       "Aplikacje oraz grupy społecznościowe potrafią pomóc w znalezieniu miejsc, które serwują bezpieczne dania bez glutenu.",
@@ -69,7 +69,7 @@ export const articlesData: ArticleItem[] = [
     image: "/img/recipes/dinners/016_bezglutenowy_burger_z_kimchi.jpg",
     category: "Kuchnia",
     author: "Karolina Wontorska",
-    date: "24 maja 2026",
+    date: "24.05.2026",
     content: [
       "Szybki obiad bez glutenu może być smaczny i odżywczy. Kluczem jest wykorzystanie naturalnych składników i prostych zamienników.",
       "Zacznij od wyboru bezglutenowego mięsa, świeżych warzyw oraz naturalnych przypraw.",
@@ -93,7 +93,7 @@ export const articlesData: ArticleItem[] = [
     image: "/img/products/015_zabka_czy_to_ma_gluten.jpg",
     category: "Porady",
     author: "Karolina Wontorska",
-    date: "28 maja 2026",
+    date: "28.05.2026",
     content: [
       "Etykiety potrafią być mylące, ale kilka prostych zasad pozwoli Ci odczytać skład i potencjalne zagrożenia glutenowe.",
       'Zwracaj uwagę nie tylko na deklaracje "bez glutenu", ale także na symbole i informacje o możliwym zanieczyszczeniu krzyżowym.',
@@ -117,7 +117,7 @@ export const articlesData: ArticleItem[] = [
     image: "/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.jpg",
     category: "Kuchnia",
     author: "Karolina Wontorska",
-    date: "29 maja 2026",
+    date: "29.05.2026",
     content: [
       "Śniadanie jest podstawą dobrego dnia, szczególnie na diecie bezglutenowej. Warto mieć kilka gotowych pomysłów na szybkie posiłki.",
       "Proste mieszanki bezglutenowe, świeże owoce i warzywa oraz pełnowartościowe białko to najlepsza baza na śniadanie.",
