@@ -31,6 +31,7 @@ import radomBezLukruiCukru from "./../../../public/img/restaurants/poland/032_be
 import saskaSushizDziewczynami from "./../../../public/img/restaurants/poland/033_saska_sushi.jpg";
 import grooleWarszawa from "./../../../public/img/restaurants/poland/034_groole.jpg";
 import villaKarpaczBezGlutenu from "./../../../public/img/restaurants/poland/035_villa_karpacz_bezglutenu.jpg";
+import hiltonRadom from "./../../../public/img/restaurants/poland/036_hilton_radom.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -362,5 +363,15 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Bezglutenowe śniadania i obiadokolacje w Villa Karpacz GLUTEN FREE, ul. Curie-Skłodowskiej 9A, 58-540 Karpacz",
+    },
+    {
+      id: 36,
+      href: "https://www.instagram.com/p/DZF0d6_iAL8/?img_index=1",
+      imgSrc: hiltonRadom,
+      altText: "Hilton Garden Inn Radom, ul. Jana Kilińskiego 14, 26-610 Radom",
+      label: "Radom",
+      labelClass: "poland-label",
+      description:
+        "Hilton Garden Inn Radom, ul. Jana Kilińskiego 14, 26-610 Radom",
     },
   ];

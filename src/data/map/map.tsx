@@ -599,4 +599,14 @@ export const MarkerData = [
     link: "https://www.instagram.com/p/DYxND-7IOBl/",
     position: [50.77488014915756, 15.768735662715056] as [number, number],
   },
+  {
+    id: 62,
+    name: "Hilton Garden Inn Radom",
+    addressLine1: " ul. Jana Kilińskiego 14,",
+    addressLine2: "26-610 Radom",
+    country: "Polska",
+    city: "Radom",
+    link: "https://www.instagram.com/p/DZF0d6_iAL8/?img_index=1",
+    position: [51.40195467545976, 21.15440669624938] as [number, number],
+  },
 ];
