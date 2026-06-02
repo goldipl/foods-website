@@ -296,9 +296,20 @@
 }
 
 @media (max-width: 760px) {
-  .articles-page,
+  .articles-page {
+    padding: 16px 16px 40px;
+  }
+
   .article-page {
     padding: 16px 16px 40px;
+    &__navigation {
+      margin-top: 48px;
+      display: flex;
+      justify-content: center;
+      .primary-button__text {
+        display: inline-flex;
+      }
+    }
   }
 
   .articles-grid {
@@ -315,5 +326,6 @@
 
   .article-content {
     margin-top: 16px;
+    gap: 16px;
   }
 }
