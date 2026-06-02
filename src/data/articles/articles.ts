@@ -13,6 +13,33 @@ export interface ArticleItem {
 
 export const articlesData: ArticleItem[] = [
   {
+    slug: "villa-karpacz-bezglutenowy-pensjonat-w-gorach",
+    title:
+      "Villa Karpacz Gluten Free – bezglutenowy pensjonat z wyżywieniem w górach",
+    excerpt:
+      "Villa Karpacz Gluten Free w Karpaczu to pensjonat z wyżywieniem i ofertą dostosowaną do diety bezglutenowej. Komfortowe pokoje, regionalne smaki i bliskość szlaków tworzą idealne warunki na relaks w Karkonoszach.",
+    image: "/img/hotels/002_villa_karpacz_bezglutenu.jpg",
+    category: "Podróże",
+    author: "Karolina Wontorska",
+    date: "02.06.2026",
+    content: [
+      "Villa Karpacz Gluten Free to kameralny pensjonat w samym sercu Karkonoszy, przy ul. Curie-Skłodowskiej 9A. Miejsce przyciąga wygodą, nowoczesnym wystrojem i opcją pełnego wyżywienia, dzięki czemu goście mogą skupić się na wypoczynku zamiast na gotowaniu.",
+      "Obiekt oferuje 20 komfortowych pokoi z łazienkami, telewizją satelitarną oraz lodówką i czajnikiem. Dostępne są pokoje dwuosobowe oraz przestronne studia dla 5–6 osób, co sprawia, że Villa Karpacz świetnie sprawdza się zarówno dla par, rodzin jak i grup zorganizowanych.",
+      "W ofercie pensjonatu znajduje się pełne wyżywienie: śniadania, obiady i obiadokolacje przygotowane z lokalnych produktów. Szczególnie ważne dla osób na diecie bezglutenowej jest to, że Villa Karpacz deklaruje możliwość dostosowania menu do indywidualnych potrzeb dietetycznych, w tym podawania bezpiecznych dań bez glutenu.",
+      "Położenie willi u podnóża Śnieżki i blisko szlaku na Sowią Przełęcz zapewnia szybki dostęp do najpiękniejszych karkonoskich tras. W pobliżu są też popularne atrakcje: Świątynia Wang, Muzeum Zabawek, Krucze Skały i Dziki Wodospad, co czyni pobyt atrakcyjnym zarówno latem, jak i zimą.",
+      "Dla osób, które szukają wygodnych noclegów z wyżywieniem, Villa Karpacz jest dobrym wyborem także dlatego, że możliwe są tam kompleksowe pobyty tematyczne i imprezy okolicznościowe. Obiekt przyjmuje także grupy zorganizowane, a oferta obejmuje pakiety na weekend, święta i inne okazje.",
+    ],
+    highlights: [
+      "Pensjonat Villa Karpacz znajduje się przy ul. Curie-Skłodowskiej 9A, w centrum Karpacza.",
+      "Obiekt oferuje 20 komfortowych pokoi, w tym pokoje dwuosobowe i studia dla 5–6 osób.",
+      "Menu można dostosować do diety bezglutenowej, a pełne wyżywienie obejmuje śniadania, obiady i obiadokolacje.",
+      "Villa Karpacz to idealna baza wypadowa do Śnieżki, Sowie Przełęczy, Świątyni Wang i Dzikiego Wodospadu.",
+      "Pensjonat jest otwarty przez cały rok i oferuje pakiety pobytowe oraz imprezy okolicznościowe.",
+    ],
+    quote:
+      "W Karpaczu odpoczynek nabiera smaku, gdy po górskiej wycieczce czeka na Ciebie bezglutenowy posiłek i komfortowy pokój w Villa Karpacz.",
+  },
+  {
     slug: "czym-jest-celiakia",
     title: "Czym jest celiakia?",
     excerpt:
