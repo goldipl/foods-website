@@ -601,7 +601,7 @@ export const MarkerData = [
   },
   {
     id: 62,
-    name: "Hilton Garden Inn Radom",
+    name: "Restauracja Meritum w Hilton Garden Inn Radom",
     addressLine1: " ul. Jana Kilińskiego 14,",
     addressLine2: "26-610 Radom",
     country: "Polska",

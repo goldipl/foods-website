@@ -368,10 +368,10 @@ export const polishRestaurantsData = [
       id: 36,
       href: "https://www.instagram.com/p/DZF0d6_iAL8/?img_index=1",
       imgSrc: hiltonRadom,
-      altText: "Hilton Garden Inn Radom, ul. Jana Kilińskiego 14, 26-610 Radom",
+      altText: "Restauracja Meritum w Hilton Garden Inn Radom, ul. Jana Kilińskiego 14, 26-610 Radom",
       label: "Radom",
       labelClass: "poland-label",
       description:
-        "Hilton Garden Inn Radom, ul. Jana Kilińskiego 14, 26-610 Radom",
+        "Restauracja Meritum w Hilton Garden Inn Radom, ul. Jana Kilińskiego 14, 26-610 Radom",
     },
   ];
