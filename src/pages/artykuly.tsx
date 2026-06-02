@@ -17,7 +17,8 @@ const ArticlesPage = () => {
     <>
       <Head>
         <title>
-          Artykuły bezglutenowe - Inspiracje i porady | Bezglutenowa Karola
+          Artykuły i poradniki o diecie bezglutenowej - Inspiracje i porady |
+          Bezglutenowa Karola
         </title>
         <meta
           name="description"
