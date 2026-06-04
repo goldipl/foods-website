@@ -14,7 +14,7 @@ export const hotelsData = [
     },
     {
       id: 2,
-      href: "https://www.instagram.com/p/DYz_-ViRuCm/",
+      href: "https://www.instagram.com/p/DYxND-7IOBl/",
       imgSrc: villaKarpaczBezGlutenu,
       altText: "Villa Karpacz GLUTEN FREE, ul. Curie-Skłodowskiej 9A, 58-540 Karpacz",
       label: "Karpacz",
