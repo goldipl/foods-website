@@ -127,15 +127,67 @@ export const articlesData: ArticleItem[] = [
       "Aplikacje oraz grupy społecznościowe potrafią pomóc w znalezieniu miejsc, które serwują bezpieczne dania bez glutenu.",
       "Na miejscu pytaj obsługę o sposób przygotowania potraw oraz o możliwość uniknięcia szkód krzyżowych.",
       "Czasami najlepsze miejsca to te, gdzie szef kuchni sam chętnie podzieli się wiedzą na temat składników i sposobów przygotowania.",
+      "Polska staje się coraz bardziej przyjazna dla osób na diecie bezglutenowej. W górach, nad morzem i w miastach znajdziesz coraz więcej miejsc, które wspierają bezglutenowy styl życia. Zapraszamy do odkrywania polskich perełek i europejskich smaków bez glutenu!",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DYxND-7IOBl/",
+        caption:
+          "Villa Karpacz GLUTEN FREE – ul. Curie-Skłodowskiej 9A, 58-540 Karpacz. Kameralny pensjonat w sercu Karkonoszy oferuje komfortowe pokoje i pełne wyżywienie dostosowane do diety bezglutenowej. Idealna baza wypadowa dla miłośników górskich szlaków i osób z celiakią.",
+        image: "/img/hotels/002_villa_karpacz_bezglutenu.jpg",
+      },
+      "Villa Karpacz GLUTEN FREE to wyjątkowe miejsce położone w sercu Karkonoszy. Pensjonat specjalizuje się w obsłudze gości na diecie bezglutenowej, oferując 20 komfortowych pokoi z pełnym wyżywieniem. Każdego ranka goście mogą cieszyć się bezpiecznym śniadaniem przygotowanym z dbałością o detale. Obiady i obiadokolacje przygotowywane są z lokalnych, wysokiej jakości produktów, a szef kuchni z chęcią dostosowuje menu do indywidualnych potrzeb dietetycznych. Bliskość Śnieżki, Sowie Przełęczy i Dzikiego Wodospadu sprawia, że Villa Karpacz to idealna baza wypadowa dla aktywnych turystów. Oprócz wycieczek, goście mogą cieszyć się spa, sauną i nowoczesnym wyposażeniem obiektu. Pensjonat jest otwarty przez cały rok i oferuje kompleksowe pobyty zarówno dla par, rodzin jak i grup zorganizowanych.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DRkTfI4iDWE/",
+        caption:
+          "Hotel Crocus****, ul. Tytusa Chałubińskiego 40, 34-500 Zakopane. Luksusowy hotel w sercu Tatr oferuje doskonałą gastronomię oraz dedykowaną obsługę dla osób na diecie bezglutenowej. Idealne miejsce do relaksu w górach z pełnym komfortem.",
+        image: "/img/hotels/001_hotel_crocus_zakopane.jpg",
+      },
+      "Hotel Crocus**** w Zakopanem to luksusowy hotel położony u podnóża Tatr, który doskonale rozumie potrzeby osób z celiakią. Dla gości na diecie bezglutenowej hotel oferuje dedykowaną obsługę kulinną w swojej restauracji. Menu przygotowywane jest z uwzględnieniem bezpieczeństwa osób z celiakią, a kuchnia dysponuje oddzielnym zapleczem do przygotowywania dań bez glutenu, co minimalizuje ryzyko kontaminacji krzyżowej. Hotel Crocus to idealne miejsce zarówno dla osób szukających aktywnego wypoczynku na szlakach tatrzańskich, jak i dla tych, które pragną relaksu w pełnym komforcie. Pokoje są nowocześnie urządzone, a obsługa zawsze gotowa pomóc gościom z specjalnymi potrzebami dietetycznymi.",
+      "Podróżowanie bez glutenu do krajów śródziemnomorskich to prawdziwa przygoda sensoryczna. Włoskie, greckie i rumuńskie restauracje coraz częściej rozumieją potrzeby osób z celiakią i z dumą serwują bezglutenowe specjały.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DABZsxyId-Q/",
+        caption:
+          "Lido di Ostia – Rzym, Włochy. Piękne widoki na Morze Śródziemne i pyszne potrawy bez glutenu. Lokalna kuchnia włoska na najwyższym poziomie z dbałością o gości na diecie bezglutenowej.",
+        image: "/img/restaurants/europe/001_lido_di_ostia_cz1.jpg",
+      },
+      "Lido di Ostia w Rzymie to restauracja położona nad samym morzem Śródziemnym, gdzie można cieszyć się autentyczną włoską kuchnią bez glutenu. Specjalność restauracji to świeże owoce morza oraz makarony przygotowywane ze zbóż bez glutenu. Każdy posiłek to kombinacja tradycyjnych receptur z nowoczesnym podejściem do bezglutenowych potraw. Atmosfera restauracji jest ciepła i rodzinna, a obsługa doskonale rozumie potrzeby osób z celiakią. Zachód słońca nad Morzem Śródziemnym podczas posiłku to niepowtarzalne doświadczenie kulinarne.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DAKxCTaIF9Y/",
+        caption:
+          "Rzym – Włochy. Odkrywaj włoskie kulinarne tradycje w mieście wiecznym z pewnością bezglutenowego posiłku.",
+        image: "/img/restaurants/europe/004_rzym_cz1.jpg",
+      },
+      "Rzym to miasto, które ukazuje bogactwo włoskiej gastronomii. W ostatnich latach coraz więcej restauracji rzymskich wprowadza dedykowane menu bezglutenowe. Tradycyjne dania takie jak carbonara czy cacio e pepe są przygotowywane również w wersji bezglutenowej z wykorzystaniem wysokiej jakości makaronów bez glutenu. Historia i kultura Rzymu idą w parze z nowoczesnymi podejściami do dietetyki. Spacery po zabytkowych uliczkach przeplata się tu z zapamiętanym smakami autentycznej włoskiej kuchni.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DAkgyrjI0VP/",
+        caption:
+          "Florencja – Włochy. Sztuka, historia i kulinarna doskonałość bez glutenu. Słynne toskanackie smaki w mieście Renesansu czekają na podróżników na diecie bezglutenowej.",
+        image: "/img/restaurants/europe/009_florencja_cz1.jpg",
+      },
+      "Florencja, kolыbka Renesansu, to również miejsce, gdzie można cieszyć się pysznymi bezglutenowymi posiłkami. Toskanacka kuchnia słynie z prostoty i doskonałości składników. Oliwa z oliwek, pomidory, świeży chleb – wszystko to można znaleźć tutaj w wersjach dostosowanych do potrzeb osób z celiakią. Restauracje w Florencji coraz chętniej przygotowują potrawy bez glutenu, nie rezygnując z tradycyjnych receptur. Posiłek w Florencji to nie tylko smak, ale również doświadczenie kulturalne i historyczne.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DBHExqroFiQ/",
+        caption:
+          "Lido di Ostia – Rzym, Włochy. Morskie skarby, bezglutenowe specjały i słoneczne włoskie popołudnia. Restauracja nad morzem, gdzie każdy gość otrzyma wsparcie w wyborze bezglutenowych dań.",
+        image: "/img/restaurants/europe/003_lido_di_ostia_cz3.jpg",
+      },
+      "Podróż do Lido di Ostia ukazuje różnorodność menu bezglutenowego dostępnego w tej restauracji. Świeże ryby, owoce morza, warzywa sezonowe – wszystko przygotowywane ze szczególną uwagą na bezpieczeństwo osób z celiakią. Każdy posiłek to rezult pracy doświadczonych kucharzy, którzy rozumieją znaczenie specjalnych potrzeb dietetycznych swoich gości. Restauracja oferuje również warianty dań dla innych typów alergii i nietolerancji, co czyni ją uniwersalnym miejscem dla każdego.",
     ],
     highlights: [
-      "Wybieraj miejsca z certyfikacją lub wyraźnymi informacjami o bezglutenowej kuchni.",
-      "Zawsze pytaj o schemat przygotowania posiłku i czystość kuchni.",
-      "Sprawdzaj menu online przed wyjazdem.",
-      "Bądź gotowy na propozycje domowych alternatyw lub zmiany składników.",
+      "W podróży warto korzystać z aplikacji i grup społecznościowych, które pomagają znaleźć restauracje i hotele przyjazne dla osób z celiakią.",
+      "Zawsze pytaj obsługę o sposób przygotowania potraw i możliwość uniknięcia szkód krzyżowych.",
+      "Villa Karpacz w Polsce – pensjonat z pełnym wyżywieniem dla osób na diecie bezglutenowej.",
+      "Hotel Crocus w Zakopanem – luksusowy hotel z dedykowaną obsługą kulinarną bez glutenu.",
+      "Rzym – miasto pełne restauracji oferujących tradycyjną włoską kuchnię w wersji bezglutenowej.",
+      "Florencja – toskanacka kuchnia i tradycyjne smaki dostosowane do potrzeb osób z celiakią.",
     ],
     quote:
-      "Podróżowanie bez glutenu to świetna przygoda, jeśli tylko dobrze przygotujesz się na drodze.",
+      "Podróżowanie bez glutenu to nie ograniczenie, lecz okazja do odkrywania autentycznych smaków świata w miejscach, które gotowaniem wyrażają swoją historię i serce.",
   },
   {
     slug: "przepis-na-szybki-obiad-bez-glutenu",
