@@ -4,6 +4,11 @@ export type ArticleContentBlock =
       type: "gallery";
       title?: string;
       images: string[];
+    }
+  | {
+      type: "instagramLink";
+      url: string;
+      caption: string;
     };
 
 export interface ArticleItem {
@@ -36,6 +41,12 @@ export const articlesData: ArticleItem[] = [
       "W ofercie pensjonatu znajduje się pełne wyżywienie: śniadania, obiady i obiadokolacje przygotowane z lokalnych produktów. Szczególnie ważne dla osób na diecie bezglutenowej jest to, że Villa Karpacz deklaruje możliwość dostosowania menu do indywidualnych potrzeb dietetycznych, w tym podawania bezpiecznych dań bez glutenu.",
       "Położenie willi u podnóża Śnieżki i blisko szlaku na Sowią Przełęcz zapewnia szybki dostęp do najpiękniejszych karkonoskich tras. W pobliżu są też popularne atrakcje: Świątynia Wang, Muzeum Zabawek, Krucze Skały i Dziki Wodospad, co czyni pobyt atrakcyjnym zarówno latem, jak i zimą.",
       "Dla osób, które szukają wygodnych noclegów z wyżywieniem, Villa Karpacz jest dobrym wyborem także dlatego, że możliwe są tam kompleksowe pobyty tematyczne i imprezy okolicznościowe. Obiekt przyjmuje także grupy zorganizowane, a oferta obejmuje pakiety na weekend, święta i inne okazje.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DYxND-7IOBl/",
+        caption:
+          "Sprawdź galerię na Instagramie i zobacz więcej chwil spędzonych w Villa Karpacz Gluten Free!",
+      },
     ],
     highlights: [
       "Pensjonat Villa Karpacz znajduje się przy ul. Curie-Skłodowskiej 9A, w centrum Karpacza.",

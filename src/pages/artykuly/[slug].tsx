@@ -19,6 +19,39 @@ type ArticleGalleryProps = {
   onThumbnailClick: (index: number) => void;
 };
 
+type ArticleInstagramLinkProps = {
+  url: string;
+  caption: string;
+};
+
+const ArticleInstagramLink = ({ url, caption }: ArticleInstagramLinkProps) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="article-instagram-link"
+  >
+    <div className="article-instagram-link__inner">
+      <svg
+        viewBox="0 0 24 24"
+        className="article-instagram-link__icon"
+        aria-hidden="true"
+      >
+        <path
+          fill="currentColor"
+          d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163C8.756 0 8.335.012 7.052.07 2.696.278.278 2.579.07 7.052.012 8.335 0 8.756 0 12c0 3.244.012 3.665.07 4.948.278 4.466 2.579 6.885 7.052 7.093 1.283.058 1.704.07 4.948.07 3.243 0 3.665-.012 4.948-.07 4.466-.278 6.879-2.579 7.093-7.052.058-1.283.07-1.704.07-4.948 0-3.244-.012-3.665-.07-4.948C23.722 2.697 21.422.278 16.948.07 15.665.012 15.244 0 12 0z"
+        />
+        <circle cx="12" cy="12" r="3.6" fill="currentColor" />
+        <circle cx="18.406" cy="5.594" r="0.6" fill="currentColor" />
+      </svg>
+      <p>{caption}</p>
+      <span className="article-instagram-link__cta">
+        Otwórz na Instagramie →
+      </span>
+    </div>
+  </a>
+);
+
 const ArticleGallery = ({
   title,
   images,
@@ -132,16 +165,28 @@ const ArticleDetailPage = ({ article }: ArticlePageProps) => {
                   return <p key={index}>{block}</p>;
                 }
 
-                return (
-                  <ArticleGallery
-                    key={index}
-                    title={block.title}
-                    images={block.images}
-                    onThumbnailClick={(imageIndex) =>
-                      openGalleryImage(block.images, imageIndex)
-                    }
-                  />
-                );
+                if (block.type === "gallery") {
+                  return (
+                    <ArticleGallery
+                      key={index}
+                      title={block.title}
+                      images={block.images}
+                      onThumbnailClick={(imageIndex) =>
+                        openGalleryImage(block.images, imageIndex)
+                      }
+                    />
+                  );
+                }
+
+                if (block.type === "instagramLink") {
+                  return (
+                    <ArticleInstagramLink
+                      key={index}
+                      url={block.url}
+                      caption={block.caption}
+                    />
+                  );
+                }
               })}
 
               <h2>Najważniejsze wskazówki</h2>
