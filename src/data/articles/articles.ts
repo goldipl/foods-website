@@ -9,6 +9,7 @@ export type ArticleContentBlock =
       type: "instagramLink";
       url: string;
       caption: string;
+      image: string;
     };
 
 export interface ArticleItem {
@@ -46,6 +47,7 @@ export const articlesData: ArticleItem[] = [
         url: "https://www.instagram.com/p/DYxND-7IOBl/",
         caption:
           "Sprawdź galerię na Instagramie i zobacz więcej chwil spędzonych w Villa Karpacz Gluten Free!",
+        image: "/img/hotels/002_villa_karpacz_bezglutenu.jpg",
       },
     ],
     highlights: [
@@ -148,38 +150,50 @@ export const articlesData: ArticleItem[] = [
       "Szybki obiad bez glutenu może być smaczny i odżywczy. Kluczem jest wykorzystanie naturalnych składników i prostych zamienników. Poniżej znajdziesz kilka moich ulubionych przepisów, które sprawdzą się doskonale w każdy dzień tygodnia!",
       {
         type: "instagramLink",
-        url: "https://www.instagram.com/p/DJmK9pZCL5t/",
-        caption: "Pad Thai - azjatyckie połączenie smaków w mniej niż 20 minut. Ryż, warzywa i krewetki w idealnym sosie.",
+        url: "https://www.instagram.com/p/DFGPPs3OddU/",
+        caption:
+          "Pad Thai - azjatyckie połączenie smaków w mniej niż 20 minut. Ryż, warzywa i krewetki w idealnym sosie.",
+        image: "/img/recipes/dinners/011_pad_thai.jpg",
       },
       "Pad Thai to klasyk azjatyckiej kuchni, doskonały dla osób na diecie bezglutenowej. Ta wersja wykorzystuje warzywa sezonowe i makaronowe noodle bez glutenu, które nadają fantastyczną teksturę. Sos z tamari, limonki i masła orzechowego tworzy harmonijną kompozycję smaków.",
       {
         type: "instagramLink",
-        url: "https://www.instagram.com/p/DHvK8tpI_K2/",
-        caption: "Bezglutenowe Lazanki - tradycyjna polska kuchnia bez glutenu. Warstwowe ciepło na talerzu.",
+        url: "https://www.instagram.com/p/DC_zuLFodeV/",
+        caption:
+          "Bezglutenowe Łazanki - tradycyjna polska kuchnia bez glutenu. Warstwowe ciepło na talerzu.",
+        image: "/img/recipes/dinners/005_bezglutenowe_lazanki.jpg",
       },
-      "Lazanki to doskonały przepis na coś ciepłego i sycącego. Zastępuję tradycyjną mąkę mąką z ryżu i mąką gryczaną, co daje wspaniały smak i nie wpływa na konsystencję. Każda warstwa to gwarancja zadowolenia dla całej rodziny.",
+      "Łazanki to doskonały przepis na coś ciepłego i sycącego. Zastępuję tradycyjną mąkę mąką z ryżu i mąką gryczaną, co daje wspaniały smak i nie wpływa na konsystencję. Każda warstwa to gwarancja zadowolenia dla całej rodziny.",
       {
         type: "instagramLink",
-        url: "https://www.instagram.com/p/DGjL0KzI6N3/",
-        caption: "Bezglutenowa Pizza Górska - kraina i smaki w każdym kęsie. Drożdżowe ciasto bez glutenu z tradycyjnymi dodatkami.",
+        url: "https://www.instagram.com/p/DDm5JUeO608/",
+        caption:
+          "Bezglutenowa Pizza Górska - kraina i smaki w każdym kęsie. Drożdżowe ciasto bez glutenu z tradycyjnymi dodatkami.",
+        image: "/img/recipes/dinners/007_bezglutenowa_pizza_goralska.jpg",
       },
       "Pizza bez glutenu nie musi być kompromisem. Moje ciasto na bazie mąki bezglutenowej i drożdży piekarskiego jest równie puszyste i smaczne co tradycyjne. Dodatki: szynka, ser, grzyby i świeża cebula tworzą klasyczną kombinację.",
       {
         type: "instagramLink",
-        url: "https://www.instagram.com/p/DBlX9D2I0Qp/",
-        caption: "Sushi Burger - innowacyjna fuzja kuchni japońskiej. Ryż sushi zamiast chleba, łosoś, awokado i warzywa.",
+        url: "https://www.instagram.com/p/DEnMW8lu1a1/",
+        caption:
+          "Sushi Burger - innowacyjna fuzja kuchni japońskiej. Ryż sushi zamiast chleba, łosoś, awokado i warzywa.",
+        image: "/img/recipes/dinners/009_bezglutenowy_sushi_burger.jpg",
       },
       "Sushi burger to idealna opcja dla tych, którzy chcą czegoś lekszego i bardziej egzotycznego. Ryż sushi słodko-słony tworzy idealną bazę, a świeże składniki sprawiają, że to danie jest zarówno zdrowe, jak i niezwykle smaczne.",
       {
         type: "instagramLink",
-        url: "https://www.instagram.com/p/C9kM2T5IoP1/",
-        caption: "Obiadowy Bowl z Łososiem - połączenie zdrowia i smaku. Ryż, warzywa sezonowe, łosoś i tahini.",
+        url: "https://www.instagram.com/p/DDjza7Wu_Bn/",
+        caption:
+          "Obiadowy Bowl z Łososiem - połączenie zdrowia i smaku. Ryż, warzywa sezonowe, łosoś i tahini.",
+        image: "/img/recipes/dinners/006_obiadowy_bowl_z_lososiem.jpg",
       },
       "Bowl z łososiem to przepis na szybki i pełnowartościowy obiad. Łosoś bogaty w omega-3, świeże warzywa i sos tahini tworzą doskonałą kombinację, która zaspokaja głód i dostarcza energii do końca dnia.",
       {
         type: "instagramLink",
-        url: "https://www.instagram.com/p/C7jK1ZpI2Nm/",
-        caption: "Burger z Udzcem Kurczaka - domowa wersja fast-foodu bez glutenu. Mięso grillowane, warzywa i sos domowy.",
+        url: "https://www.instagram.com/p/DOtO_geiI0I/",
+        caption:
+          "Burger z Udzcem Kurczaka - domowa wersja fast-foodu bez glutenu. Mięso grillowane, warzywa i sos domowy.",
+        image: "/img/recipes/dinners/024_burger_z_udzcem_kurczaka.jpg",
       },
       "Burger z udzcem kurczaka to moja wersja na szybki obiad, który nie obciąża żołądka. Marynuję mięso w sosie sojowym bez glutenu, miodzie i czosnku. Podaję na bezglutenowej bułce lub liściach sałaty dla lżejszej wersji.",
     ],
