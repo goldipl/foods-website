@@ -145,10 +145,43 @@ export const articlesData: ArticleItem[] = [
     author: "Karolina Wontorska",
     date: "24.05.2026",
     content: [
-      "Szybki obiad bez glutenu może być smaczny i odżywczy. Kluczem jest wykorzystanie naturalnych składników i prostych zamienników.",
-      "Zacznij od wyboru bezglutenowego mięsa, świeżych warzyw oraz naturalnych przypraw.",
-      "Do sosu użyj bezglutenowego tamari lub sosu sojowego oznaczonego jako bezglutenowy.",
-      "Taki obiad przygotujesz w mniej niż 30 minut, a jednocześnie będziesz mieć pewność, że jest bezpieczny dla diety.",
+      "Szybki obiad bez glutenu może być smaczny i odżywczy. Kluczem jest wykorzystanie naturalnych składników i prostych zamienników. Poniżej znajdziesz kilka moich ulubionych przepisów, które sprawdzą się doskonale w każdy dzień tygodnia!",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DJmK9pZCL5t/",
+        caption: "Pad Thai - azjatyckie połączenie smaków w mniej niż 20 minut. Ryż, warzywa i krewetki w idealnym sosie.",
+      },
+      "Pad Thai to klasyk azjatyckiej kuchni, doskonały dla osób na diecie bezglutenowej. Ta wersja wykorzystuje warzywa sezonowe i makaronowe noodle bez glutenu, które nadają fantastyczną teksturę. Sos z tamari, limonki i masła orzechowego tworzy harmonijną kompozycję smaków.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DHvK8tpI_K2/",
+        caption: "Bezglutenowe Lazanki - tradycyjna polska kuchnia bez glutenu. Warstwowe ciepło na talerzu.",
+      },
+      "Lazanki to doskonały przepis na coś ciepłego i sycącego. Zastępuję tradycyjną mąkę mąką z ryżu i mąką gryczaną, co daje wspaniały smak i nie wpływa na konsystencję. Każda warstwa to gwarancja zadowolenia dla całej rodziny.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DGjL0KzI6N3/",
+        caption: "Bezglutenowa Pizza Górska - kraina i smaki w każdym kęsie. Drożdżowe ciasto bez glutenu z tradycyjnymi dodatkami.",
+      },
+      "Pizza bez glutenu nie musi być kompromisem. Moje ciasto na bazie mąki bezglutenowej i drożdży piekarskiego jest równie puszyste i smaczne co tradycyjne. Dodatki: szynka, ser, grzyby i świeża cebula tworzą klasyczną kombinację.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DBlX9D2I0Qp/",
+        caption: "Sushi Burger - innowacyjna fuzja kuchni japońskiej. Ryż sushi zamiast chleba, łosoś, awokado i warzywa.",
+      },
+      "Sushi burger to idealna opcja dla tych, którzy chcą czegoś lekszego i bardziej egzotycznego. Ryż sushi słodko-słony tworzy idealną bazę, a świeże składniki sprawiają, że to danie jest zarówno zdrowe, jak i niezwykle smaczne.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/C9kM2T5IoP1/",
+        caption: "Obiadowy Bowl z Łososiem - połączenie zdrowia i smaku. Ryż, warzywa sezonowe, łosoś i tahini.",
+      },
+      "Bowl z łososiem to przepis na szybki i pełnowartościowy obiad. Łosoś bogaty w omega-3, świeże warzywa i sos tahini tworzą doskonałą kombinację, która zaspokaja głód i dostarcza energii do końca dnia.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/C7jK1ZpI2Nm/",
+        caption: "Burger z Udzcem Kurczaka - domowa wersja fast-foodu bez glutenu. Mięso grillowane, warzywa i sos domowy.",
+      },
+      "Burger z udzcem kurczaka to moja wersja na szybki obiad, który nie obciąża żołądka. Marynuję mięso w sosie sojowym bez glutenu, miodzie i czosnku. Podaję na bezglutenowej bułce lub liściach sałaty dla lżejszej wersji.",
     ],
     highlights: [
       "Użyj bezglutenowego pieczywa lub sałatki zamiast bułek.",
