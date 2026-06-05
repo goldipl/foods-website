@@ -318,4 +318,40 @@ export const articlesData: ArticleItem[] = [
     quote:
       "Dobre śniadanie to pierwszy krok do dnia pełnego energii, nawet bez glutenu.",
   },
+  {
+    slug: "hotel-crocus-zakopane",
+    title:
+      "Hotel Crocus**** Zakopane – komfort, spa i restauracja z opcją bez glutenu",
+    excerpt:
+      "Hotel Crocus w Zakopanem to 4-gwiazdkowy hotel z basenem, SPA i restauracją Vernus oferującą certyfikowane menu bezglutenowe. Blisko Krupówek, idealny dla rodzin, par i osób z celiakią.",
+    image: "/img/hotels/001_hotel_crocus_zakopane.jpg",
+    category: "Podróże",
+    author: "Karolina Wontorska",
+    date: "27.11.2025",
+    content: [
+      "Hotel Crocus**** w Zakopanem to czterogwiazdkowy obiekt w podhalańskim stylu, położony w centrum miasta przy ulicy Tytusa Chałubińskiego 40. Zaledwie 700 m od Krupówek i w kierunku Kuźnic, hotel łączy komfortowe pokoje z bogatą strefą SPA i basenem.",
+      "W Hotelu Crocus znajduje się 49 nowoczesnych pokoi i apartamentów, często z widokiem na góry. To miejsce przyjazne rodzinom, osobom podróżującym z psami oraz osobom szukającym wygodnego wypoczynku blisko centrum Zakopanego.",
+      "Dla gości, którzy chcą zregenerować siły po górskich wycieczkach, hotel oferuje odnowioną strefę wellness z basenem, jacuzzi, saunami oraz pakietami zabiegów w Medical SPA. Hotel Crocus staje się więc nie tylko bazą noclegową, ale też miejscem odpoczynku i relaksu.",
+      "Restauracja Vernus w Hotelu Crocus to wyjątkowe miejsce, gdzie podhalańska tradycja łączy się z nowoczesną kuchnią. Restauracja oferuje certyfikowane menu bez glutenu, autorskie dania à la carte oraz bogate śniadania, które mogą być przygotowane tak, by osoby z celiakią czuły się bezpiecznie.",
+      "Opcja Bez Glutenu w restauracji obejmuje starannie dobrane składniki, a personel pomaga w dobraniu dań i unikaniu krzyżowego zanieczyszczenia. To ważna informacja dla tych, którzy chcą cieszyć się smacznym jedzeniem bez kompromisów.",
+      "Hotel Crocus przyciąga nie tylko miłośników górskich tras, ale też gości planujących pobyty biznesowe lub rodzinne. Dzięki ofercie specjalnej, salom konferencyjnym i pakietom relaksacyjnym, każdy znajdzie tu coś dla siebie.",
+      "Doskonała lokalizacja pozwala szybko dotrzeć do Krupówek, Wielkiej Krokwi, Nosala i Kasprowego Wierchu. Po dniu w Tatrach warto wrócić do hotelu, gdzie czeka wygodny pokój, pyszna kolacja w Vernus i chwila odprężenia w strefie SPA.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DRkTfI4iDWE/",
+        caption:
+          "Hotel Crocus****, ul. Tytusa Chałubińskiego 40, 34-500 Zakopane. Luksusowy hotel w sercu Tatr oferuje doskonałą gastronomię oraz dedykowaną obsługę dla osób na diecie bezglutenowej.",
+        image: "/img/hotels/001_hotel_crocus_zakopane.jpg",
+      },
+    ],
+    highlights: [
+      "Hotel Crocus znajduje się 700 m od Krupówek i niedaleko wejścia do Kuźnic.",
+      "W obiekcie jest 49 pokoi oraz strefa SPA z basenem, jacuzzi i saunami.",
+      "Restauracja Vernus oferuje certyfikowane menu bez glutenu oraz dedykowaną obsługę dla osób z celiakią.",
+      "Hotel Crocus to dobry wybór dla rodzin, par, grup biznesowych oraz osób podróżujących ze zwierzętami.",
+      "Doskonała lokalizacja sprawia, że hotel jest świetną bazą wypadową na szlaki i do atrakcji Zakopanego.",
+    ],
+    quote:
+      "W Crocusie komfortowy pobyt łączy się z bezpiecznym menu bezglutenowym i relaksem w SPA — idealne miejsce na wypoczynek w Tatrach.",
+  },
 ];
