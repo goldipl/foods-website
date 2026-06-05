@@ -1,3 +1,11 @@
+export type ArticleContentBlock =
+  | string
+  | {
+      type: "gallery";
+      title?: string;
+      images: string[];
+    };
+
 export interface ArticleItem {
   slug: string;
   title: string;
@@ -6,7 +14,7 @@ export interface ArticleItem {
   category: string;
   author: string;
   date: string;
-  content: string[];
+  content: ArticleContentBlock[];
   highlights: string[];
   quote: string;
 }
@@ -176,6 +184,18 @@ export const articlesData: ArticleItem[] = [
     content: [
       "Śniadanie jest podstawą dobrego dnia, szczególnie na diecie bezglutenowej. Warto mieć kilka gotowych pomysłów na szybkie posiłki.",
       "Proste mieszanki bezglutenowe, świeże owoce i warzywa oraz pełnowartościowe białko to najlepsza baza na śniadanie.",
+      {
+        type: "gallery",
+        title: "Galeria bezglutenowych śniadań",
+        images: [
+          "/img/recipes/breakfasts/001_sniadanie_boczek_z_jajkiem.jpg",
+          "/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.jpg",
+          "/img/recipes/breakfasts/006_zielony_bajgel.jpg",
+          "/img/recipes/breakfasts/007_omlet_z_maki_gryczanej_i_jajek.jpg",
+          "/img/recipes/breakfasts/011_owsianka_z_matcha.jpg",
+          "/img/recipes/breakfasts/013_zapiekane_bulki_sniadaniowe.jpg",
+        ],
+      },
       "Możesz przygotować weekendowe porcje i zamrozić je na dni, kiedy brakuje Ci czasu.",
       "Wykorzystaj talerz pełen kolorów i różnorodnych tekstur, aby poranna kawa miała idealne, zdrowe wsparcie.",
     ],

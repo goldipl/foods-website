@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { GetStaticPaths, GetStaticProps } from "next";
+import { useState } from "react";
 import Topbar from "@/components/common/Topbar";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
@@ -12,7 +13,82 @@ interface ArticlePageProps {
   article: ArticleItem;
 }
 
+type ArticleGalleryProps = {
+  title?: string;
+  images: string[];
+  onThumbnailClick: (index: number) => void;
+};
+
+const ArticleGallery = ({
+  title,
+  images,
+  onThumbnailClick,
+}: ArticleGalleryProps) => (
+  <div className="article-gallery">
+    {title && <h3>{title}</h3>}
+    <div className="article-gallery__preview">
+      {images.slice(0, 4).map((src, index) => (
+        <button
+          key={`${src}-${index}`}
+          type="button"
+          className="article-gallery__thumb"
+          onClick={() => onThumbnailClick(index)}
+          aria-label={`Otwórz zdjęcie ${index + 1} z galerii`}
+        >
+          <Image
+            src={src}
+            alt={`Zdjęcie galerii ${index + 1}`}
+            width={480}
+            height={320}
+            priority={index === 0}
+          />
+          {index === 3 && images.length > 4 ? (
+            <span className="article-gallery__more">+{images.length - 4}</span>
+          ) : null}
+        </button>
+      ))}
+    </div>
+  </div>
+);
+
 const ArticleDetailPage = ({ article }: ArticlePageProps) => {
+  const [galleryState, setGalleryState] = useState<{
+    images: string[];
+    index: number;
+  } | null>(null);
+
+  const openGalleryImage = (images: string[], index: number) => {
+    setGalleryState({ images, index });
+  };
+
+  const closeGallery = () => setGalleryState(null);
+
+  const showPreviousImage = () => {
+    if (!galleryState) return;
+    setGalleryState((current) =>
+      current
+        ? {
+            ...current,
+            index:
+              (current.index + current.images.length - 1) %
+              current.images.length,
+          }
+        : null,
+    );
+  };
+
+  const showNextImage = () => {
+    if (!galleryState) return;
+    setGalleryState((current) =>
+      current
+        ? {
+            ...current,
+            index: (current.index + 1) % current.images.length,
+          }
+        : null,
+    );
+  };
+
   return (
     <>
       <Head>
@@ -51,9 +127,22 @@ const ArticleDetailPage = ({ article }: ArticlePageProps) => {
 
           <div className="article-content">
             <div className="article-content__text">
-              {article.content.map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
-              ))}
+              {article.content.map((block, index) => {
+                if (typeof block === "string") {
+                  return <p key={index}>{block}</p>;
+                }
+
+                return (
+                  <ArticleGallery
+                    key={index}
+                    title={block.title}
+                    images={block.images}
+                    onThumbnailClick={(imageIndex) =>
+                      openGalleryImage(block.images, imageIndex)
+                    }
+                  />
+                );
+              })}
 
               <h2>Najważniejsze wskazówki</h2>
               <ul>
@@ -64,6 +153,44 @@ const ArticleDetailPage = ({ article }: ArticlePageProps) => {
 
               <blockquote>{article.quote}</blockquote>
             </div>
+            {galleryState ? (
+              <div
+                className="article-gallery-modal"
+                role="dialog"
+                aria-modal="true"
+              >
+                <div className="article-gallery-modal__inner">
+                  <button
+                    type="button"
+                    className="article-gallery-modal__close"
+                    onClick={closeGallery}
+                    aria-label="Zamknij galerię"
+                  >
+                    ×
+                  </button>
+                  <div className="article-gallery-modal__image">
+                    <Image
+                      src={galleryState.images[galleryState.index]}
+                      alt={`Zdjęcie ${galleryState.index + 1} z galerii`}
+                      width={1200}
+                      height={800}
+                      priority
+                    />
+                  </div>
+                  <div className="article-gallery-modal__controls">
+                    <button type="button" onClick={showPreviousImage}>
+                      ‹
+                    </button>
+                    <span>
+                      {galleryState.index + 1} / {galleryState.images.length}
+                    </span>
+                    <button type="button" onClick={showNextImage}>
+                      ›
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ) : null}
 
             <div className="article-content__aside">
               <div className="article-aside-card">
