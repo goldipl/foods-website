@@ -106,10 +106,10 @@ body:has(.header-main-container.is-fixed) {
             &.nav-expand {
               span {
                 position: relative;
-                @include nav-link-mixin(4px 0 6px 8px, 15px);
+                @include nav-link-mixin(4px 0 6px 8px, 14px);
 
                 @media (max-width: 1200px) {
-                  @include nav-link-mixin(4px 0 6px 6px, 14px);
+                  @include nav-link-mixin(4px 0 6px 6px, 13px);
                 }
 
                 img {
@@ -125,6 +125,7 @@ body:has(.header-main-container.is-fixed) {
                   display: flex;
                   opacity: 1;
                   transform: translateY(0);
+                  min-width: 264px;
                   &.grid-3-col {
                     display: grid;
                     grid-template-columns: repeat(3, minmax(100px, 1fr));

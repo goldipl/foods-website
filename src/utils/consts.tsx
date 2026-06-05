@@ -158,13 +158,8 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
       },
     ],
   },
-  {
-    label: "Więcej",
-    children: [
-      { label: "O mnie", href: "/#o-mnie" },
-      { label: "Artykuły", href: "/artykuly" },
-    ],
-  },
+  { label: "Artykuły", href: "/artykuly" },
+  { label: "O mnie", href: "/#o-mnie" },
   { label: "Kontakt", href: "/#kontakt", className: "contact" },
 ];
 
