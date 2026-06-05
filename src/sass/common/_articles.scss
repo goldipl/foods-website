@@ -435,8 +435,8 @@
 .article-instagram-link p {
   margin: 0;
   color: #fff;
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: 500;
+  font-size: 0.9rem;
 }
 
 .article-instagram-link__cta {
@@ -445,7 +445,7 @@
   white-space: nowrap;
   opacity: 0.9;
   transition: opacity 0.3s ease;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .article-instagram-link:hover .article-instagram-link__cta {
@@ -467,12 +467,17 @@
   }
 
   .article-instagram-link__icon {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    background: linear-gradient(135deg, #f58529 0%, #dd2a7b 50%, #8134af 100%);
+    border-radius: 12px;
     width: 36px;
     height: 36px;
   }
 
   .article-instagram-link p {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
 
   .article-instagram-link__cta {
