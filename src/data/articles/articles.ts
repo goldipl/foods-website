@@ -46,7 +46,7 @@ export const articlesData: ArticleItem[] = [
         type: "instagramLink",
         url: "https://www.instagram.com/p/DYxND-7IOBl/",
         caption:
-          "Sprawdź galerię na Instagramie i zobacz więcej chwil spędzonych w Villa Karpacz Gluten Free!",
+          "Sprawdź relację na Instagramie i zobacz więcej chwil spędzonych w Villa Karpacz Gluten Free!",
         image: "/img/hotels/002_villa_karpacz_bezglutenu.jpg",
       },
     ],
