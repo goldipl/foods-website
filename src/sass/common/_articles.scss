@@ -220,6 +220,12 @@
   }
 }
 
+.article-page__navigation {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
 .article-content {
   display: grid;
   grid-template-columns: 1.8fr 1fr;
@@ -247,12 +253,85 @@
 }
 
 .article-aside-card p {
+  font-size: 0.9rem;
   margin-bottom: 24px;
 }
 
 .article-aside-card .primary-button__text {
+  font-size: 0.9rem;
   display: inline-flex;
   margin-right: 14px;
+}
+
+.article-aside-card--related {
+  margin-top: 24px;
+}
+
+.article-related-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.article-related-item {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 16px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 14px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.06);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.article-related-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
+}
+
+.article-related-item__img {
+  border-radius: 16px;
+  overflow: hidden;
+  min-width: 110px;
+  height: 170px;
+}
+
+.article-related-item__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-related-item__content h3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 0 8px;
+  font-size: 0.9rem;
+  line-height: 1.1;
+}
+
+.article-related-item__content p {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 0 10px;
+  color: #5f5f5f;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.article-related-item__content span {
+  color: #7f7f7f;
+  font-size: 0.85rem;
 }
 
 .article-content__text ul {
@@ -379,7 +458,7 @@
 
 .article-instagram-link {
   display: block;
-  margin: 36px 0;
+  margin: 24px 0;
   text-decoration: none;
   border-radius: 20px;
   overflow: hidden;
@@ -486,7 +565,7 @@
 }
 
 .article-content__text blockquote {
-  margin: 32px 0;
+  margin: 24px 0;
   padding: 24px 28px;
   border-left: 4px solid #7f9d34;
   background: #f7f8f1;

@@ -132,6 +132,10 @@ const ArticleDetailPage = ({ article }: ArticlePageProps) => {
     );
   };
 
+  const relatedArticles = articlesData
+    .filter((item) => item.slug !== article.slug)
+    .slice(0, 5);
+
   return (
     <>
       <Head>
@@ -261,6 +265,34 @@ const ArticleDetailPage = ({ article }: ArticlePageProps) => {
                 <Link href="/#o-mnie" className="primary-button__text">
                   O mnie
                 </Link>
+              </div>
+
+              <div className="article-aside-card article-aside-card--related">
+                <h2>5 wybranych artykułów</h2>
+                <div className="article-related-list">
+                  {relatedArticles.map((item) => (
+                    <Link
+                      key={item.slug}
+                      href={`/artykuly/${item.slug}`}
+                      className="article-related-item"
+                    >
+                      <div className="article-related-item__img">
+                        <Image
+                          src={item.image}
+                          alt={item.title}
+                          width={110}
+                          height={80}
+                          priority={false}
+                        />
+                      </div>
+                      <div className="article-related-item__content">
+                        <h3>{item.title}</h3>
+                        <p>{item.excerpt}</p>
+                        <span>{item.date}</span>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
