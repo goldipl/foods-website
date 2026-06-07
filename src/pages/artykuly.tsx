@@ -8,10 +8,13 @@ import Footer from "@/components/common/Footer";
 import { articlesData } from "@/data/articles/articles";
 
 const ArticlesPage = () => {
-  const articles = articlesData.map((article) => ({
-    ...article,
-    href: `/artykuly/${article.slug}`,
-  }));
+  const articles = articlesData
+    .slice()
+    .reverse()
+    .map((article) => ({
+      ...article,
+      href: `/artykuly/${article.slug}`,
+    }));
 
   return (
     <>

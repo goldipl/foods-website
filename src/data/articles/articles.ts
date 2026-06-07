@@ -27,38 +27,40 @@ export interface ArticleItem {
 
 export const articlesData: ArticleItem[] = [
   {
-    slug: "villa-karpacz-bezglutenowy-pensjonat-w-gorach",
+    slug: "hotel-crocus-zakopane",
     title:
-      "Villa Karpacz Gluten Free – bezglutenowy pensjonat z wyżywieniem w górach",
+      "Hotel Crocus**** Zakopane – komfort, spa i restauracja z opcją bez glutenu",
     excerpt:
-      "Villa Karpacz Gluten Free w Karpaczu to pensjonat z wyżywieniem i ofertą dostosowaną do diety bezglutenowej. Komfortowe pokoje, regionalne smaki i bliskość szlaków tworzą idealne warunki na relaks w Karkonoszach.",
-    image: "/img/hotels/002_villa_karpacz_bezglutenu.jpg",
+      "Hotel Crocus w Zakopanem to 4-gwiazdkowy hotel z basenem, SPA i restauracją Vernus oferującą certyfikowane menu bezglutenowe. Blisko Krupówek, idealny dla rodzin, par i osób z celiakią.",
+    image: "/img/hotels/001_hotel_crocus_zakopane.jpg",
     category: "Podróże",
     author: "Karolina Wontorska",
-    date: "02.06.2026",
+    date: "27.11.2025",
     content: [
-      "Villa Karpacz Gluten Free to kameralny pensjonat w samym sercu Karkonoszy, przy ul. Curie-Skłodowskiej 9A. Miejsce przyciąga wygodą, nowoczesnym wystrojem i opcją pełnego wyżywienia, dzięki czemu goście mogą skupić się na wypoczynku zamiast na gotowaniu.",
-      "Obiekt oferuje 20 komfortowych pokoi z łazienkami, telewizją satelitarną oraz lodówką i czajnikiem. Dostępne są pokoje dwuosobowe oraz przestronne studia dla 5–6 osób, co sprawia, że Villa Karpacz świetnie sprawdza się zarówno dla par, rodzin jak i grup zorganizowanych.",
-      "W ofercie pensjonatu znajduje się pełne wyżywienie: śniadania, obiady i obiadokolacje przygotowane z lokalnych produktów. Szczególnie ważne dla osób na diecie bezglutenowej jest to, że Villa Karpacz deklaruje możliwość dostosowania menu do indywidualnych potrzeb dietetycznych, w tym podawania bezpiecznych dań bez glutenu.",
-      "Położenie willi u podnóża Śnieżki i blisko szlaku na Sowią Przełęcz zapewnia szybki dostęp do najpiękniejszych karkonoskich tras. W pobliżu są też popularne atrakcje: Świątynia Wang, Muzeum Zabawek, Krucze Skały i Dziki Wodospad, co czyni pobyt atrakcyjnym zarówno latem, jak i zimą.",
-      "Dla osób, które szukają wygodnych noclegów z wyżywieniem, Villa Karpacz jest dobrym wyborem także dlatego, że możliwe są tam kompleksowe pobyty tematyczne i imprezy okolicznościowe. Obiekt przyjmuje także grupy zorganizowane, a oferta obejmuje pakiety na weekend, święta i inne okazje.",
+      "Hotel Crocus**** w Zakopanem to czterogwiazdkowy obiekt w podhalańskim stylu, położony w centrum miasta przy ulicy Tytusa Chałubińskiego 40. Zaledwie 700 m od Krupówek i w kierunku Kuźnic, hotel łączy komfortowe pokoje z bogatą strefą SPA i basenem.",
+      "W Hotelu Crocus znajduje się 49 nowoczesnych pokoi i apartamentów, często z widokiem na góry. To miejsce przyjazne rodzinom, osobom podróżującym z psami oraz osobom szukającym wygodnego wypoczynku blisko centrum Zakopanego.",
+      "Dla gości, którzy chcą zregenerować siły po górskich wycieczkach, hotel oferuje odnowioną strefę wellness z basenem, jacuzzi, saunami oraz pakietami zabiegów w Medical SPA. Hotel Crocus staje się więc nie tylko bazą noclegową, ale też miejscem odpoczynku i relaksu.",
+      "Restauracja Vernus w Hotelu Crocus to wyjątkowe miejsce, gdzie podhalańska tradycja łączy się z nowoczesną kuchnią. Restauracja oferuje certyfikowane menu bez glutenu, autorskie dania à la carte oraz bogate śniadania, które mogą być przygotowane tak, by osoby z celiakią czuły się bezpiecznie.",
+      "Opcja Bez Glutenu w restauracji obejmuje starannie dobrane składniki, a personel pomaga w dobraniu dań i unikaniu krzyżowego zanieczyszczenia. To ważna informacja dla tych, którzy chcą cieszyć się smacznym jedzeniem bez kompromisów.",
+      "Hotel Crocus przyciąga nie tylko miłośników górskich tras, ale też gości planujących pobyty biznesowe lub rodzinne. Dzięki ofercie specjalnej, salom konferencyjnym i pakietom relaksacyjnym, każdy znajdzie tu coś dla siebie.",
+      "Doskonała lokalizacja pozwala szybko dotrzeć do Krupówek, Wielkiej Krokwi, Nosala i Kasprowego Wierchu. Po dniu w Tatrach warto wrócić do hotelu, gdzie czeka wygodny pokój, pyszna kolacja w Vernus i chwila odprężenia w strefie SPA.",
       {
         type: "instagramLink",
-        url: "https://www.instagram.com/p/DYxND-7IOBl/",
+        url: "https://www.instagram.com/p/DRkTfI4iDWE/",
         caption:
-          "Sprawdź relację na Instagramie i zobacz więcej chwil spędzonych w Villa Karpacz Gluten Free!",
-        image: "/img/hotels/002_villa_karpacz_bezglutenu.jpg",
+          "Hotel Crocus****, ul. Tytusa Chałubińskiego 40, 34-500 Zakopane. Luksusowy hotel w sercu Tatr oferuje doskonałą gastronomię oraz dedykowaną obsługę dla osób na diecie bezglutenowej.",
+        image: "/img/hotels/001_hotel_crocus_zakopane.jpg",
       },
     ],
     highlights: [
-      "Pensjonat Villa Karpacz znajduje się przy ul. Curie-Skłodowskiej 9A, w centrum Karpacza.",
-      "Obiekt oferuje 20 komfortowych pokoi, w tym pokoje dwuosobowe i studia dla 5–6 osób.",
-      "Menu można dostosować do diety bezglutenowej, a pełne wyżywienie obejmuje śniadania, obiady i obiadokolacje.",
-      "Villa Karpacz to idealna baza wypadowa do Śnieżki, Sowie Przełęczy, Świątyni Wang i Dzikiego Wodospadu.",
-      "Pensjonat jest otwarty przez cały rok i oferuje pakiety pobytowe oraz imprezy okolicznościowe.",
+      "Hotel Crocus znajduje się 700 m od Krupówek i niedaleko wejścia do Kuźnic.",
+      "W obiekcie jest 49 pokoi oraz strefa SPA z basenem, jacuzzi i saunami.",
+      "Restauracja Vernus oferuje certyfikowane menu bez glutenu oraz dedykowaną obsługę dla osób z celiakią.",
+      "Hotel Crocus to dobry wybór dla rodzin, par, grup biznesowych oraz osób podróżujących ze zwierzętami.",
+      "Doskonała lokalizacja sprawia, że hotel jest świetną bazą wypadową na szlaki i do atrakcji Zakopanego.",
     ],
     quote:
-      "W Karpaczu odpoczynek nabiera smaku, gdy po górskiej wycieczce czeka na Ciebie bezglutenowy posiłek i komfortowy pokój w Villa Karpacz.",
+      "W Crocusie komfortowy pobyt łączy się z bezpiecznym menu bezglutenowym i relaksem w SPA — idealne miejsce na wypoczynek w Tatrach.",
   },
   {
     slug: "czym-jest-celiakia",
@@ -68,7 +70,7 @@ export const articlesData: ArticleItem[] = [
     image: "/img/articles/article-celiac.jpg",
     category: "Celiakia",
     author: "Karolina Wontorska",
-    date: "29.05.2026",
+    date: "15.05.2026",
     content: [
       "Celiakia, inaczej zwana chorobą trzewną, ma podłoże genetyczne i zaliczana jest do grupy chorób autoimmunologicznych. W układzie odpornościowym osoby chorej, po spożyciu glutenu dochodzi do niepożądanej reakcji immunologicznej. Mówiąc najprościej, reakcja ta jest skierowana przeciwko własnym tkankom organizmu chorego.",
       "Największe szkody zachodzą w jelicie cienkim, co prowadzi do stanu zapalnego jelit, zaniku kosmków jelitowych, co w następstwie ogranicza lub uniemożliwia wchłanianie składników odżywczych z pokarmów. Jednak oprócz jelita cienkiego, na niszczycielskie działanie glutenu narażone są również inne narządy chorego.",
@@ -96,7 +98,7 @@ export const articlesData: ArticleItem[] = [
     image: "/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.jpg",
     category: "Celiakia",
     author: "Karolina Wontorska",
-    date: "29.05.2026",
+    date: "18.05.2026",
     content: [
       "Celiakia to choroba autoimmunologiczna, w której spożycie glutenu uruchamia reakcję odpornościową wewnątrz organizmu. Największe szkody powstają w jelicie cienkim, dlatego szybka zmiana diety jest kluczowa dla zdrowia.",
       "Gluten występuje w pszenicy, żytnim, jęczmieniu i orkiszach. Nawet owies musi być oznaczony jako bezglutenowy, ponieważ często zawiera śladowe ilości glutenu z zanieczyszczeń produkcyjnych.",
@@ -190,6 +192,66 @@ export const articlesData: ArticleItem[] = [
       "Podróżowanie bez glutenu to nie ograniczenie, lecz okazja do odkrywania autentycznych smaków świata w miejscach, które gotowaniem wyrażają swoją historię i serce.",
   },
   {
+    slug: "bezglutenowe-sniadanie-na-caly-tydzien",
+    title: "Bezglutenowe śniadanie na cały tydzień",
+    excerpt:
+      "Pomysły na szybkie, zdrowe i sycące śniadania bez glutenu, które ułatwią codzienne poranki.",
+    image: "/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.jpg",
+    category: "Kuchnia",
+    author: "Karolina Wontorska",
+    date: "27.05.2026",
+    content: [
+      "Śniadanie jest podstawą dobrego dnia, szczególnie na diecie bezglutenowej. Warto mieć kilka gotowych pomysłów na szybkie posiłki.",
+      "Proste mieszanki bezglutenowe, świeże owoce i warzywa oraz pełnowartościowe białko to najlepsza baza na śniadanie.",
+      {
+        type: "gallery",
+        title: "Galeria bezglutenowych śniadań",
+        images: [
+          "/img/recipes/breakfasts/001_sniadanie_boczek_z_jajkiem.jpg",
+          "/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.jpg",
+          "/img/recipes/breakfasts/006_zielony_bajgel.jpg",
+          "/img/recipes/breakfasts/007_omlet_z_maki_gryczanej_i_jajek.jpg",
+          "/img/recipes/breakfasts/011_owsianka_z_matcha.jpg",
+          "/img/recipes/breakfasts/013_zapiekane_bulki_sniadaniowe.jpg",
+        ],
+      },
+      "Możesz przygotować weekendowe porcje i zamrozić je na dni, kiedy brakuje Ci czasu.",
+      "Wykorzystaj talerz pełen kolorów i różnorodnych tekstur, aby poranna kawa miała idealne, zdrowe wsparcie.",
+    ],
+    highlights: [
+      "Przygotuj rano owsiankę z bezglutenowych płatków i ulubionych dodatków.",
+      "Zamarynuj warzywa i podawaj je z jajkiem lub hummusem.",
+      "Wykorzystaj bezglutenowe pieczywo lub placki jako bazę do kanapek.",
+      "Planowanie rano pomaga zaoszczędzić czas i zachować zdrowy rytm dnia.",
+    ],
+    quote:
+      "Dobre śniadanie to pierwszy krok do dnia pełnego energii, nawet bez glutenu.",
+  },
+  {
+    slug: "czytanie-etykiet-bez-glutenu",
+    title: "Jak czytać etykiety bezglutenowych produktów",
+    excerpt:
+      "Naucz się rozpoznawać ukryte źródła glutenu i wybierać produkty bezpieczne dla celiakii.",
+    image: "/img/articles/article-reading-labels.jpg",
+    category: "Porady",
+    author: "Karolina Wontorska",
+    date: "28.05.2026",
+    content: [
+      "Etykiety potrafią być mylące, ale kilka prostych zasad pozwoli Ci odczytać skład i potencjalne zagrożenia glutenowe.",
+      'Zwracaj uwagę nie tylko na deklaracje "bezglutenowy", ale także na symbole i informacje o możliwym zanieczyszczeniu krzyżowym.',
+      "Unikaj produktów z nieznanymi składnikami i dodatkami, które mogą ukrywać śladowe ilości glutenu.",
+      "Wybierając certyfikowane bezglutenowe marki, masz większą pewność, że produkt spełnia normy dla osób z celiakią.",
+    ],
+    highlights: [
+      "Sprawdzaj składniki każdej nowej paczki produktu.",
+      "Zwracaj uwagę na informacje o produkcji w tym samym zakładzie.",
+      "Czytaj etykiety z uwagą, zwracając uwagę na alergeny.",
+      'Wybieraj produkty z certyfikatem i wyraźnym oznaczeniem "bezglutenowy".',
+    ],
+    quote:
+      "Czytanie etykiet to umiejętność, która daje największe bezpieczeństwo na diecie bezglutenowej.",
+  },
+  {
     slug: "przepis-na-szybki-obiad-bez-glutenu",
     title: "Przepis na szybki obiad bez glutenu",
     excerpt:
@@ -197,7 +259,7 @@ export const articlesData: ArticleItem[] = [
     image: "/img/recipes/dinners/016_bezglutenowy_burger_z_kimchi.jpg",
     category: "Kuchnia",
     author: "Karolina Wontorska",
-    date: "24.05.2026",
+    date: "30.05.2026",
     content: [
       "Szybki obiad bez glutenu może być smaczny i odżywczy. Kluczem jest wykorzystanie naturalnych składników i prostych zamienników. Poniżej znajdziesz kilka moich ulubionych przepisów, które sprawdzą się doskonale w każdy dzień tygodnia!",
       {
@@ -259,99 +321,76 @@ export const articlesData: ArticleItem[] = [
       "Dobry obiad bez glutenu to nie tylko zamiennik, lecz prawdziwa kulinarna przyjemność.",
   },
   {
-    slug: "czytanie-etykiet-bez-glutenu",
-    title: "Jak czytać etykiety bezglutenowych produktów",
-    excerpt:
-      "Naucz się rozpoznawać ukryte źródła glutenu i wybierać produkty bezpieczne dla celiakii.",
-    image: "/img/articles/article-reading-labels.jpg",
-    category: "Porady",
-    author: "Karolina Wontorska",
-    date: "28.05.2026",
-    content: [
-      "Etykiety potrafią być mylące, ale kilka prostych zasad pozwoli Ci odczytać skład i potencjalne zagrożenia glutenowe.",
-      'Zwracaj uwagę nie tylko na deklaracje "bezglutenowy", ale także na symbole i informacje o możliwym zanieczyszczeniu krzyżowym.',
-      "Unikaj produktów z nieznanymi składnikami i dodatkami, które mogą ukrywać śladowe ilości glutenu.",
-      "Wybierając certyfikowane bezglutenowe marki, masz większą pewność, że produkt spełnia normy dla osób z celiakią.",
-    ],
-    highlights: [
-      "Sprawdzaj składniki każdej nowej paczki produktu.",
-      "Zwracaj uwagę na informacje o produkcji w tym samym zakładzie.",
-      "Czytaj etykiety z uwagą, zwracając uwagę na alergeny.",
-      'Wybieraj produkty z certyfikatem i wyraźnym oznaczeniem "bezglutenowy".',
-    ],
-    quote:
-      "Czytanie etykiet to umiejętność, która daje największe bezpieczeństwo na diecie bezglutenowej.",
-  },
-  {
-    slug: "bezglutenowe-sniadanie-na-caly-tydzien",
-    title: "Bezglutenowe śniadanie na cały tydzień",
-    excerpt:
-      "Pomysły na szybkie, zdrowe i sycące śniadania bez glutenu, które ułatwią codzienne poranki.",
-    image: "/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.jpg",
-    category: "Kuchnia",
-    author: "Karolina Wontorska",
-    date: "29.05.2026",
-    content: [
-      "Śniadanie jest podstawą dobrego dnia, szczególnie na diecie bezglutenowej. Warto mieć kilka gotowych pomysłów na szybkie posiłki.",
-      "Proste mieszanki bezglutenowe, świeże owoce i warzywa oraz pełnowartościowe białko to najlepsza baza na śniadanie.",
-      {
-        type: "gallery",
-        title: "Galeria bezglutenowych śniadań",
-        images: [
-          "/img/recipes/breakfasts/001_sniadanie_boczek_z_jajkiem.jpg",
-          "/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.jpg",
-          "/img/recipes/breakfasts/006_zielony_bajgel.jpg",
-          "/img/recipes/breakfasts/007_omlet_z_maki_gryczanej_i_jajek.jpg",
-          "/img/recipes/breakfasts/011_owsianka_z_matcha.jpg",
-          "/img/recipes/breakfasts/013_zapiekane_bulki_sniadaniowe.jpg",
-        ],
-      },
-      "Możesz przygotować weekendowe porcje i zamrozić je na dni, kiedy brakuje Ci czasu.",
-      "Wykorzystaj talerz pełen kolorów i różnorodnych tekstur, aby poranna kawa miała idealne, zdrowe wsparcie.",
-    ],
-    highlights: [
-      "Przygotuj rano owsiankę z bezglutenowych płatków i ulubionych dodatków.",
-      "Zamarynuj warzywa i podawaj je z jajkiem lub hummusem.",
-      "Wykorzystaj bezglutenowe pieczywo lub placki jako bazę do kanapek.",
-      "Planowanie rano pomaga zaoszczędzić czas i zachować zdrowy rytm dnia.",
-    ],
-    quote:
-      "Dobre śniadanie to pierwszy krok do dnia pełnego energii, nawet bez glutenu.",
-  },
-  {
-    slug: "hotel-crocus-zakopane",
+    slug: "villa-karpacz-bezglutenowy-pensjonat-w-gorach",
     title:
-      "Hotel Crocus**** Zakopane – komfort, spa i restauracja z opcją bez glutenu",
+      "Villa Karpacz Gluten Free – bezglutenowy pensjonat z wyżywieniem w górach",
     excerpt:
-      "Hotel Crocus w Zakopanem to 4-gwiazdkowy hotel z basenem, SPA i restauracją Vernus oferującą certyfikowane menu bezglutenowe. Blisko Krupówek, idealny dla rodzin, par i osób z celiakią.",
-    image: "/img/hotels/001_hotel_crocus_zakopane.jpg",
+      "Villa Karpacz Gluten Free w Karpaczu to pensjonat z wyżywieniem i ofertą dostosowaną do diety bezglutenowej. Komfortowe pokoje, regionalne smaki i bliskość szlaków tworzą idealne warunki na relaks w Karkonoszach.",
+    image: "/img/hotels/002_villa_karpacz_bezglutenu.jpg",
     category: "Podróże",
     author: "Karolina Wontorska",
-    date: "27.11.2025",
+    date: "02.06.2026",
     content: [
-      "Hotel Crocus**** w Zakopanem to czterogwiazdkowy obiekt w podhalańskim stylu, położony w centrum miasta przy ulicy Tytusa Chałubińskiego 40. Zaledwie 700 m od Krupówek i w kierunku Kuźnic, hotel łączy komfortowe pokoje z bogatą strefą SPA i basenem.",
-      "W Hotelu Crocus znajduje się 49 nowoczesnych pokoi i apartamentów, często z widokiem na góry. To miejsce przyjazne rodzinom, osobom podróżującym z psami oraz osobom szukającym wygodnego wypoczynku blisko centrum Zakopanego.",
-      "Dla gości, którzy chcą zregenerować siły po górskich wycieczkach, hotel oferuje odnowioną strefę wellness z basenem, jacuzzi, saunami oraz pakietami zabiegów w Medical SPA. Hotel Crocus staje się więc nie tylko bazą noclegową, ale też miejscem odpoczynku i relaksu.",
-      "Restauracja Vernus w Hotelu Crocus to wyjątkowe miejsce, gdzie podhalańska tradycja łączy się z nowoczesną kuchnią. Restauracja oferuje certyfikowane menu bez glutenu, autorskie dania à la carte oraz bogate śniadania, które mogą być przygotowane tak, by osoby z celiakią czuły się bezpiecznie.",
-      "Opcja Bez Glutenu w restauracji obejmuje starannie dobrane składniki, a personel pomaga w dobraniu dań i unikaniu krzyżowego zanieczyszczenia. To ważna informacja dla tych, którzy chcą cieszyć się smacznym jedzeniem bez kompromisów.",
-      "Hotel Crocus przyciąga nie tylko miłośników górskich tras, ale też gości planujących pobyty biznesowe lub rodzinne. Dzięki ofercie specjalnej, salom konferencyjnym i pakietom relaksacyjnym, każdy znajdzie tu coś dla siebie.",
-      "Doskonała lokalizacja pozwala szybko dotrzeć do Krupówek, Wielkiej Krokwi, Nosala i Kasprowego Wierchu. Po dniu w Tatrach warto wrócić do hotelu, gdzie czeka wygodny pokój, pyszna kolacja w Vernus i chwila odprężenia w strefie SPA.",
+      "Villa Karpacz Gluten Free to kameralny pensjonat w samym sercu Karkonoszy, przy ul. Curie-Skłodowskiej 9A. Miejsce przyciąga wygodą, nowoczesnym wystrojem i opcją pełnego wyżywienia, dzięki czemu goście mogą skupić się na wypoczynku zamiast na gotowaniu.",
+      "Obiekt oferuje 20 komfortowych pokoi z łazienkami, telewizją satelitarną oraz lodówką i czajnikiem. Dostępne są pokoje dwuosobowe oraz przestronne studia dla 5–6 osób, co sprawia, że Villa Karpacz świetnie sprawdza się zarówno dla par, rodzin jak i grup zorganizowanych.",
+      "W ofercie pensjonatu znajduje się pełne wyżywienie: śniadania, obiady i obiadokolacje przygotowane z lokalnych produktów. Szczególnie ważne dla osób na diecie bezglutenowej jest to, że Villa Karpacz deklaruje możliwość dostosowania menu do indywidualnych potrzeb dietetycznych, w tym podawania bezpiecznych dań bez glutenu.",
+      "Położenie willi u podnóża Śnieżki i blisko szlaku na Sowią Przełęcz zapewnia szybki dostęp do najpiękniejszych karkonoskich tras. W pobliżu są też popularne atrakcje: Świątynia Wang, Muzeum Zabawek, Krucze Skały i Dziki Wodospad, co czyni pobyt atrakcyjnym zarówno latem, jak i zimą.",
+      "Dla osób, które szukają wygodnych noclegów z wyżywieniem, Villa Karpacz jest dobrym wyborem także dlatego, że możliwe są tam kompleksowe pobyty tematyczne i imprezy okolicznościowe. Obiekt przyjmuje także grupy zorganizowane, a oferta obejmuje pakiety na weekend, święta i inne okazje.",
       {
         type: "instagramLink",
-        url: "https://www.instagram.com/p/DRkTfI4iDWE/",
+        url: "https://www.instagram.com/p/DYxND-7IOBl/",
         caption:
-          "Hotel Crocus****, ul. Tytusa Chałubińskiego 40, 34-500 Zakopane. Luksusowy hotel w sercu Tatr oferuje doskonałą gastronomię oraz dedykowaną obsługę dla osób na diecie bezglutenowej.",
-        image: "/img/hotels/001_hotel_crocus_zakopane.jpg",
+          "Sprawdź relację na Instagramie i zobacz więcej chwil spędzonych w Villa Karpacz Gluten Free!",
+        image: "/img/hotels/002_villa_karpacz_bezglutenu.jpg",
       },
     ],
     highlights: [
-      "Hotel Crocus znajduje się 700 m od Krupówek i niedaleko wejścia do Kuźnic.",
-      "W obiekcie jest 49 pokoi oraz strefa SPA z basenem, jacuzzi i saunami.",
-      "Restauracja Vernus oferuje certyfikowane menu bez glutenu oraz dedykowaną obsługę dla osób z celiakią.",
-      "Hotel Crocus to dobry wybór dla rodzin, par, grup biznesowych oraz osób podróżujących ze zwierzętami.",
-      "Doskonała lokalizacja sprawia, że hotel jest świetną bazą wypadową na szlaki i do atrakcji Zakopanego.",
+      "Pensjonat Villa Karpacz znajduje się przy ul. Curie-Skłodowskiej 9A, w centrum Karpacza.",
+      "Obiekt oferuje 20 komfortowych pokoi, w tym pokoje dwuosobowe i studia dla 5–6 osób.",
+      "Menu można dostosować do diety bezglutenowej, a pełne wyżywienie obejmuje śniadania, obiady i obiadokolacje.",
+      "Villa Karpacz to idealna baza wypadowa do Śnieżki, Sowie Przełęczy, Świątyni Wang i Dzikiego Wodospadu.",
+      "Pensjonat jest otwarty przez cały rok i oferuje pakiety pobytowe oraz imprezy okolicznościowe.",
     ],
     quote:
-      "W Crocusie komfortowy pobyt łączy się z bezpiecznym menu bezglutenowym i relaksem w SPA — idealne miejsce na wypoczynek w Tatrach.",
+      "W Karpaczu odpoczynek nabiera smaku, gdy po górskiej wycieczce czeka na Ciebie bezglutenowy posiłek i komfortowy pokój w Villa Karpacz.",
+  },
+  {
+    slug: "bezglutenowe-salatki",
+    title: "Bezglutenowe sałatki: lekkie i pełne smaku inspiracje",
+    excerpt:
+      "Bezglutenowe sałatki z naturalnymi składnikami. Pomysły na lekkie i smaczne kompozycje, które możesz wykorzystać jako inspirację dla własnych przepisów.",
+    image: "/img/recipes/appetizers/015_salatka_z_pieczonym_ryzem.jpg",
+    category: "Kuchnia",
+    author: "Karolina Wontorska",
+    date: "07.06.2026",
+    content: [
+      "Sałatki bezglutenowe mogą być jednocześnie lekkie i sycące. Wystarczy postawić na dobrą bazę, świeże warzywa oraz dodatki, które nadają charakter i teksturę każdemu daniu.",
+      "W tym artykule znajdziesz przykładowe propozycje sałatek, które są w 100% bezglutenowe i doskonale sprawdzą się jako lunch, kolacja lub efektowna przystawka.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DUfWUERCF0-/",
+        caption:
+          "Sałatka z pieczonym ryżem, ogórkiem, awokado, czerwoną cebulą i szczypiorkiem – idealna propozycja na szybki, bezglutenowy lunch.",
+        image: "/img/recipes/appetizers/015_salatka_z_pieczonym_ryzem.jpg",
+      },
+      "Ta sałatka to połączenie pieczonego ryżu, świeżego ogórka, kremowego awokado i chrupiącego szczypiorku. Sos na bazie oliwy z oliwek i cytryny podkreśla naturalną świeżość składników, a kompozycja jest lekka, a jednocześnie pełna smaku.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DZRudgboNQT/",
+        caption:
+          "Sałatka z suszonym mango, rukolą, wędzonym łososiem, pestkami dyni i kaszą gryczaną – bezglutenowa propozycja o wyrazistym aromacie.",
+        image: "/img/recipes/appetizers/017_salatka_z_mango.jpg",
+      },
+      "Druga propozycja to sałatka na bazie kaszy gryczanej z rukolą, suszonym mango i wędzonym łososiem. Pestki dyni, pomidorki koktajlowe oraz ciecierzyca tworzą bogactwo tekstur i wartości odżywczych, a sos na bazie musztardy, soku z cytryny i oliwy dodaje charakteru.",
+      "Obie sałatki pokazują, że z bezglutenowych składników można stworzyć dania eleganckie, aromatyczne i pełne kontrastów. Warto przygotować je z produktów bez glutenu, pamiętając o dobrej jakości oliwie, świeżych ziołach oraz delikatnym doprawieniu.",
+    ],
+    highlights: [
+      "Sałatka z pieczonym ryżem i awokado to lekka, pełna świeżości propozycja bez glutenu.",
+      "Sałatka z suszonym mango i wędzonym łososiem łączy słodycz owoców z nutą umami.",
+      "Obie propozycje wykorzystują tylko naturalne, bezglutenowe składniki.",
+      "Dodatki takie jak pestki dyni, ciecierzyca oraz świeże zioła podnoszą wartość odżywczą.",
+    ],
+    quote:
+      "Bezglutenowe sałatki to nie tylko zdrowie, ale też smak i kreatywność na talerzu.",
   },
 ];
