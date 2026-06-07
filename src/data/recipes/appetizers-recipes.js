@@ -181,10 +181,10 @@ export const appetizersRecipesData = [
         id: 17,
         href: "https://www.instagram.com/p/DZRudgboNQT/",
         imgSrc: SalatkazMango,
-        altText: "Sałatka z suszonym mango, sałatą rzymską, rukolą, wędzonym łososiem, pomidorkami, pestkami dyni, ciecierzycą, pomidorkami koktajlowymi, kaszą gryczaną i sosem na bazie musztardy, soku z cytryny i oliwy",
+        altText: "Sałatka z suszonym mango, sałatą rzymską, rukolą, wędzonym łososiem, pestkami dyni, ciecierzycą, pomidorkami koktajlowymi, kaszą gryczaną i sosem na bazie musztardy, soku z cytryny i oliwy",
         label: "Sałatka",
         labelClass: "appetizer-label",
         description: 
-            "Sałatka z suszonym mango, sałatą rzymską, rukolą, wędzonym łososiem, pomidorkami, pestkami dyni, ciecierzycą, pomidorkami koktajlowymi, kaszą gryczaną i sosem na bazie musztardy, soku z cytryny i oliwy",
+            "Sałatka z suszonym mango, sałatą rzymską, rukolą, wędzonym łososiem, pestkami dyni, ciecierzycą, pomidorkami koktajlowymi, kaszą gryczaną i sosem na bazie musztardy, soku z cytryny i oliwy",
     },
   ];
