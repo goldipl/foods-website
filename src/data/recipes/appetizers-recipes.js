@@ -14,6 +14,7 @@ import kapusniaczkizAirfryera from "./../../../public/img/recipes/appetizers/013
 import pieczonyZiemniakZeSledziem from "./../../../public/img/recipes/appetizers/014_pieczony_ziemniak_ze_sledziem.jpg";
 import salatkaPieczonyRyz from "./../../../public/img/recipes/appetizers/015_salatka_z_pieczonym_ryzem.jpg";
 import bezglutenowaPinsa from "./../../../public/img/recipes/appetizers/016_bezglutenowa_pinsa.jpg";
+import SalatkazMango from "./../../../public/img/recipes/appetizers/017_salatka_z_mango.jpg";
 
 export const appetizersRecipesData = [
     {
@@ -175,5 +176,15 @@ export const appetizersRecipesData = [
         labelClass: "appetizer-label",
         description: 
             "Bezglutenowa Pinsa w dwóch smakach - z włoską mortadelą i rukolą oraz z kurczakiem BBQ",
+    },
+    {
+        id: 17,
+        href: "https://www.instagram.com/p/DZRudgboNQT/",
+        imgSrc: SalatkazMango,
+        altText: "Sałatka z suszonym mango, sałatą rzymską, rukolą, wędzonym łososiem, pomidorkami, pestkami dyni, ciecierzycą, pomidorkami koktajlowymi, kaszą gryczaną i sosem na bazie musztardy, soku z cytryny i oliwy",
+        label: "Sałatka",
+        labelClass: "appetizer-label",
+        description: 
+            "Sałatka z suszonym mango, sałatą rzymską, rukolą, wędzonym łososiem, pomidorkami, pestkami dyni, ciecierzycą, pomidorkami koktajlowymi, kaszą gryczaną i sosem na bazie musztardy, soku z cytryny i oliwy",
     },
   ];
