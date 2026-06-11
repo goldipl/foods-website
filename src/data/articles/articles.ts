@@ -393,4 +393,53 @@ export const articlesData: ArticleItem[] = [
     quote:
       "Bezglutenowe sałatki to nie tylko zdrowie, ale też smak i kreatywność na talerzu.",
   },
+  {
+    slug: "bezglutenowe-burgery",
+    title: "Bezglutenowe burgery: pomysły na soczysty obiad bez kompromisów",
+    excerpt:
+      "Przewodnik po burgerach bezglutenowych: jak łączyć lekkie bułki, wyraziste dodatki i pewność, że każda porcja jest bezpieczna dla osób z celiakią.",
+    image: "/img/recipes/dinners/024_burger_z_udzcem_kurczaka.jpg",
+    category: "Kuchnia",
+    author: "Karolina Wontorska",
+    date: "11.06.2026",
+    content: [
+      "Bezglutenowy burger może być tak samo soczysty i aromatyczny jak klasyczny, jeśli postawisz na dobre składniki i przemyślane dodatki.",
+      "Początek każdej udanej kanapki to dobra baza: bezglutenowa bułka lub liść sałaty, które utrzymają wszystkie smaki i dodadzą tekstury.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DOtO_geiI0I/",
+        caption:
+          "Burger z udzcem kurczaka – domowa wersja fast-foodu bez glutenu. Mięso grillowane, warzywa i sos domowy tworzą pełne smaku danie.",
+        image: "/img/recipes/dinners/024_burger_z_udzcem_kurczaka.jpg",
+      },
+      "Marynata do kurczaka z tamari bez glutenu, miodem i czosnkiem nadaje mięsu głębi, a świeże warzywa w bułce dodają chrupkości.",
+      "Jeżeli chcesz spróbować wersji bardziej egzotycznej, wybierz burger sushi: zamiast bułki podaj pulę z ryżu sushi, awokado i filet z łososia.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DEnMW8lu1a1/",
+        caption:
+          "Sushi Burger – innowacyjna fuzja kuchni japońskiej. Ryż sushi zamiast chleba, łosoś, awokado i warzywa tworzą lekki, bezglutenowy posiłek.",
+        image: "/img/recipes/dinners/009_bezglutenowy_sushi_burger.jpg",
+      },
+      "Takie burgery bez glutenu świetnie sprawdzą się zarówno na kolację z przyjaciółmi, jak i na szybki posiłek w ciągu tygodnia.",
+      "Warto myśleć o dodatkach: świeże ogórki, kiszona kapusta, pikle czy domowy sos tahini sprawiają, że każdy kęs zyskuje charakter.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DZdA1rMIQER/",
+        caption:
+          "Burger z kurką - nowa wersja bezglutenowego burgera, w której delikatne mięso z kurki łączy się z chrupiącymi warzywami i wyrazistym sosem mango-mayo.",
+        image: "/img/recipes/dinners/031_burger_z_kurka.jpg",
+      },
+      "W najnowszej propozycji burgera z kurką znajdziesz połączenie lekko pieczonych kurek, chrupiącej sałaty i sosu mango-mayo, które idealnie pasują do bezglutenowej bułki.",
+      "Warianty na bazie mięsa, ryb czy zielonych składników pokazują, że burger bez glutenu może być kreatywny, lekki i sycący jednocześnie.",
+    ],
+    highlights: [
+      "Bezglutenowy burger może być soczysty i pełen aromatów, jeśli dobierzesz odpowiednie składniki.",
+      "Zamiast tradycyjnej bułki użyj bezglutenowego pieczywa lub liści sałaty.",
+      "Kanałowe dodatki takie jak pikle, kiszona kapusta i sosy bez glutenu podnoszą burgera na wyższy poziom.",
+      "Sushi burger to ciekawa alternatywa dla klasycznej kanapki bez glutenu.",
+    ],
+    quote:
+      "Bezglutenowy burger to nie kompromis, lecz nowe oblicze ulubionej klasyki.",
+  },
 ];

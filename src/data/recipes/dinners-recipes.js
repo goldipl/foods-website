@@ -28,7 +28,7 @@ import kremCurry from "./../../../public/img/recipes/dinners/027_krem_z_curry.jp
 import viralowyKebab from "./../../../public/img/recipes/dinners/028_viralowy_kebab.jpg";
 import obiadNaSzybkoLosos from "./../../../public/img/recipes/dinners/029_obiad_na_szybko_losos.jpg";
 import ekspresowaZupawAzjatyckimStylu from "./../../../public/img/recipes/dinners/030_ekspresowa_zupa_w_azjatyckim_stylu.jpg";
-import burgerzKurka from "./../../../public/img/recipes/dinners/031_burger_z_kurka.jpgg";
+import burgerzKurka from "./../../../public/img/recipes/dinners/031_burger_z_kurka.jpg";
 
 export const dinnersRecipesData = [
     {
