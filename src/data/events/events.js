@@ -17,6 +17,7 @@ import czyCeliakieMialamCaleZycie from "./../../../public/img/events/016_czy_cel
 import celiakiaIcoDalej from "./../../../public/img/events/017_caliakia_i_co_dalej.jpg";
 import coJemNaDiecieBezglutenowej from "./../../../public/img/events/018_co_jem_na_diecie_bezglutenowej.jpg";
 import coSlyszyCeliakVsRzeczywistosc from "./../../../public/img/events/019_co_slyszy_celiak_vs_rzeczywistosc.jpg";
+import glutenOffFestival2026 from "./../../../public/img/events/020_gluten_off_festival_2026.jpg";
 
 export const eventsData = [
     {
@@ -208,5 +209,15 @@ export const eventsData = [
       labelClass: "breakfast-label",
       description:
         "Co słyszy celiak vs jaka jest rzeczywistość",
+    },
+    {
+      id: 20,
+      href: "https://www.instagram.com/p/DZkixj5iERi/?img_index=1",
+      imgSrc: glutenOffFestival2026,
+      altText: "Gluten Off Festiwal 2026 - relacja z wydarzenia",
+      label: "Gluten Off Festiwal",
+      labelClass: "breakfast-label",
+      description:
+        "Gluten Off Festiwal 2026 - relacja z wydarzenia",
     },
   ];
