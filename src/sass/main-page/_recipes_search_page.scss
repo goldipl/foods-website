@@ -19,6 +19,12 @@
         margin: 0px 16px 16px;
       }
     }
+    .section-title,
+    .section-desc {
+      @media (max-width: 991px) {
+        margin: 0 16px;
+      }
+    }
   }
 }
 
