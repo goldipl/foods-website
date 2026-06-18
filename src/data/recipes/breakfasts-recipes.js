@@ -73,12 +73,12 @@ export const breakfastsRecipesData = [
       id: 6,
       href: "https://www.instagram.com/p/DIjHN1gI_Gc/",
       imgSrc: zielonyBajgel,
-      altText: "Zielony, wiosenny bajgel ze szparagami",
-      tags: ["śniadanie", "bajgel"],
+      altText: "Zielony, wiosenny bajgiel ze szparagami",
+      tags: ["śniadanie", "bajgiel"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
-        "Zielony, wiosenny bajgel ze szparagami",
+        "Zielony, wiosenny bajgiel ze szparagami",
     },
     {
       id: 7,
@@ -139,12 +139,12 @@ export const breakfastsRecipesData = [
       id: 12,
       href: "https://www.instagram.com/p/DQ1JeYNiK9B/",
       imgSrc: bezglutenowyBajgiel,
-      altText: "Bezglutenowy bajgel z omletem jajecznym, cukinią, pieczarkami, sałatą, rzodkiewką, ogórkiem, majonezem",
-      tags: ["śniadanie", "bajgel"],
+      altText: "Bezglutenowy bajgiel z omletem jajecznym, cukinią, pieczarkami, sałatą, rzodkiewką, ogórkiem, majonezem",
+      tags: ["śniadanie", "bajgiel"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
-        "Bezglutenowy bajgel z omletem jajecznym, cukinią, pieczarkami, sałatą, rzodkiewką, ogórkiem, majonezem",
+        "Bezglutenowy bajgiel z omletem jajecznym, cukinią, pieczarkami, sałatą, rzodkiewką, ogórkiem, majonezem",
     },
     {
       id: 13,
