@@ -19,7 +19,7 @@ export const breakfastsRecipesData = [
       href: "https://www.instagram.com/p/C-xC4XMIwvG/",
       imgSrc: sniadanieBoczekzJajkiem,
       altText: "Bezglutenowe śniadanie - jajka, boczek, bezglutenowy chlebek na oliwie",
-      tags: ["sniadanie", "jajka"],
+      tags: ["śniadanie", "jajka"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
@@ -30,7 +30,7 @@ export const breakfastsRecipesData = [
       href: "https://www.instagram.com/p/DBnv7v3OYgM/",
       imgSrc: tortillazJajkiem,
       altText: "Bezglutenowa tortilla z jajkiem, pomidorem, awokado i aromatyczną rukolą",
-      tags: ["sniadanie", "tortilla", "szybkie"],
+      tags: ["śniadanie", "tortilla"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
@@ -41,7 +41,7 @@ export const breakfastsRecipesData = [
       href: "https://www.instagram.com/p/C3xwcftoDMh/",
       imgSrc: sniadaniowaTortilla,
       altText: "Bezglutenowa śniadaniowa tortilla z komosy ryżowej",
-      tags: ["sniadanie", "tortilla"],
+      tags: ["śniadanie", "tortilla"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
@@ -52,6 +52,7 @@ export const breakfastsRecipesData = [
       href: "https://www.instagram.com/p/C5gka8usK82/",
       imgSrc: NalesnikizDzemem,
       altText: "Bezglutenowe naleśniki - idealnie smakują z domowym dżemem truskawkowym",
+      tags: ["śniadanie", "naleśniki"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
@@ -62,6 +63,7 @@ export const breakfastsRecipesData = [
       href: "https://www.instagram.com/p/DC4bQEoury2/",
       imgSrc: tortilla3Skladniki,
       altText: "Bezglutenowa tortilla - tylko 3 składniki - komosa ryżowa, buraki i woda",
+      tags: ["śniadanie", "tortilla"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
@@ -72,6 +74,7 @@ export const breakfastsRecipesData = [
       href: "https://www.instagram.com/p/DIjHN1gI_Gc/",
       imgSrc: zielonyBajgel,
       altText: "Zielony, wiosenny bajgel ze szparagami",
+      tags: ["śniadanie", "bajgel"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
@@ -82,6 +85,7 @@ export const breakfastsRecipesData = [
       href: "https://www.instagram.com/p/DJ91QNNI43j/",
       imgSrc: omletzMakiGryczanej,
       altText: "Omlet z bezglutenowej kaszy gryczanej i jajek",
+      tags: ["śniadanie", "omlet"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
@@ -92,6 +96,7 @@ export const breakfastsRecipesData = [
       href: "https://www.instagram.com/p/DLl-uTfIRWg/",
       imgSrc: sniadanieNaBalkonie,
       altText: "Śniadanie na balkonie - jajka, boczek, pomidory, rukola i bezglutenowy chlebek",
+      tags: ["śniadanie", "jajka"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
@@ -102,6 +107,7 @@ export const breakfastsRecipesData = [
       href: "https://www.instagram.com/p/DO6P8kGiOta/",
       imgSrc: pomysloweKanapkiCz1,
       altText: "Pomysłowe kanapki część 1",
+      tags: ["śniadanie", "kanapki"],
       label: "Śniadanie/Lunchbox",
       labelClass: "breakfast-label",
       description:
@@ -112,6 +118,7 @@ export const breakfastsRecipesData = [
       href: "https://www.instagram.com/p/DO_YlZViDgK/",
       imgSrc: pomysloweKanapkiCz2,
       altText: "Pomysłowe kanapki część 2",
+      tags: ["śniadanie", "kanapki"],
       label: "Śniadanie/Lunchbox",
       labelClass: "breakfast-label",
       description:
@@ -122,6 +129,7 @@ export const breakfastsRecipesData = [
       href: "https://www.instagram.com/p/DPoUl2LiGlO/",
       imgSrc: owsiankaMatcha,
       altText: "Bezglutenowa owsianka z matchą",
+      tags: ["śniadanie", "owsianka"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
@@ -131,17 +139,19 @@ export const breakfastsRecipesData = [
       id: 12,
       href: "https://www.instagram.com/p/DQ1JeYNiK9B/",
       imgSrc: bezglutenowyBajgiel,
-      altText: "Bezglutenowy bajgiel z omletem jajecznym, cukinią, pieczarkami, sałatą, rzodkiewką, ogórkiem, majonezem",
+      altText: "Bezglutenowy bajgel z omletem jajecznym, cukinią, pieczarkami, sałatą, rzodkiewką, ogórkiem, majonezem",
+      tags: ["śniadanie", "bajgel"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
-        "Bezglutenowy bajgiel z omletem jajecznym, cukinią, pieczarkami, sałatą, rzodkiewką, ogórkiem, majonezem",
+        "Bezglutenowy bajgel z omletem jajecznym, cukinią, pieczarkami, sałatą, rzodkiewką, ogórkiem, majonezem",
     },
     {
       id: 13,
       href: "https://www.instagram.com/p/DRorNJ2iJT3/?img_index=1",
       imgSrc: zapiekaneBulkiSniadaniowe,
       altText: "Zapiekane bułki śniadaniowe",
+      tags: ["śniadanie", "bułki"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
@@ -152,6 +162,7 @@ export const breakfastsRecipesData = [
       href: "https://www.instagram.com/p/DWdcDX9CB-d/",
       imgSrc: bezglutenowyChleb,
       altText: "Bezglutenowy chleb gryczany z siemieniem lnianym",
+      tags: ["śniadanie", "chleb"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
