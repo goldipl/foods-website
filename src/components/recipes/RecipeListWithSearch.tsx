@@ -24,6 +24,7 @@ const RecipeListWithSearch: React.FC<Props> = ({ data }) => {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [pageSize, setPageSize] = useState<number>(12);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const inferTagsFromText = (text: string) => {
     const t = (text || "").toLowerCase();
@@ -102,20 +103,36 @@ const RecipeListWithSearch: React.FC<Props> = ({ data }) => {
             <>
               <h3>Filtruj po tagach:</h3>
               <div className="recipes-tags-list">
-                {allTags.map((tag) => (
-                  <label key={tag} className="tag-checkbox">
-                    <input
-                      type="checkbox"
-                      checked={selectedTags.includes(tag)}
-                      onChange={(e) => {
-                        if (e.target.checked)
-                          setSelectedTags((s) => [...s, tag]);
-                        else setSelectedTags((s) => s.filter((t) => t !== tag));
-                      }}
-                    />
-                    <span>{tag}</span>
-                  </label>
-                ))}
+                {allTags
+                  .slice(0, isExpanded ? allTags.length : 9)
+                  .map((tag) => (
+                    <label key={tag} className="tag-checkbox">
+                      <input
+                        type="checkbox"
+                        checked={selectedTags.includes(tag)}
+                        onChange={(e) => {
+                          if (e.target.checked)
+                            setSelectedTags((s) => [...s, tag]);
+                          else
+                            setSelectedTags((s) => s.filter((t) => t !== tag));
+                        }}
+                      />
+                      <span>{tag}</span>
+                    </label>
+                  ))}
+
+                {allTags.length > 9 && (
+                  <button
+                    type="button"
+                    className="toggle-tags-btn"
+                    onClick={() => setIsExpanded(!isExpanded)}
+                  >
+                    {isExpanded
+                      ? "Pokaż mniej"
+                      : `Pokaż więcej (${allTags.length - 9})`}
+                  </button>
+                )}
+
                 <button
                   type="button"
                   onClick={() => setSelectedTags([])}
