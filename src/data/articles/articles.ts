@@ -31,15 +31,78 @@ export interface ArticleItem {
 const dessertsArticleContent: ArticleContentBlock[] = [
   "Desery bezglutenowe mogą być efektowne i jednocześnie bezpieczne dla osób z celiakią. Wystarczy kilka sprawdzonych składników i odrobina kreatywności, by przygotować słodkości, które smakują równie dobrze jak tradycyjne wypieki.",
   "Podstawą udanych deserów są naturalne słodziki, bezglutenowe mąki oraz świeże owoce. Dzięki temu można stworzyć lekkie, aromatyczne kompozycje bez konieczności rezygnacji z tekstury i bogatego smaku.",
-  ...dessertsRecipesData.slice(-10).flatMap((recipe, index) => [
-    {
-      type: "instagramLink",
-      url: recipe.href,
-      caption: recipe.description,
-      image: recipe.imgSrc,
-    },
-    `${index + 1}. ${recipe.description}`,
-  ]),
+  {
+    type: "instagramLink",
+    url: "https://www.instagram.com/p/DQ7EDSAiNQS/",
+    caption:
+      "Bezglutenowe cynamonki z polewą orzechową i kruszonymi orzechami laskowymi.",
+    image: "/img/recipes/desserts/024_cynamonki_z_polewa_orzechowa.jpg",
+  },
+  "1. Bezglutenowe cynamonki z polewą orzechową: miękkie, cynamonowe zawijańce z chrupiącą polewą orzechową i lekko karmelowym aromatem.",
+  {
+    type: "instagramLink",
+    url: "https://www.instagram.com/p/DS0Wu6fiGPv/?img_index=1",
+    caption: "Ciastka z jabłkami z airfryera 🍎.",
+    image: "/img/recipes/desserts/031_ciastka_z_jablkami_z_airfryera.jpg",
+  },
+  "2. Ciastka z jabłkami z airfryera: szybkie i delikatnie słodkie wypieki z kawałkami soczystych jabłek, idealne do popołudniowej kawy.",
+  {
+    type: "instagramLink",
+    url: "https://www.instagram.com/p/DTQgerBiOVl/?img_index=1",
+    caption: "Pączusie bez drożdży 🍩.",
+    image: "/img/recipes/desserts/032_paczusie_bez_drozdzy.jpg",
+  },
+  "3. Pączusie bez drożdży: puszyste, delikatne bułeczki z odrobiną wanilii, przygotowane bez drożdży, które zachowują lekkość i piękną strukturę.",
+  {
+    type: "instagramLink",
+    url: "https://www.instagram.com/p/DUxYyhGiBAT/",
+    caption: "Kokosanki vel kudłacze.",
+    image: "/img/recipes/desserts/033_kokosanki_vel_kudlacze.jpg",
+  },
+  "4. Kokosanki vel kudłacze: chrupiące i kokosowe łakocie, które dzięki gęstej strukturze zyskują przyjemną konsystencję i intensywny smak kokosa.",
+  {
+    type: "instagramLink",
+    url: "https://www.instagram.com/p/DVyiKTjjPFE/",
+    caption:
+      "Pistacjowe tiramisu 💚☕️💚 BEZ GLUTENU | BEZ NABIAŁU | BEZ CUKRU.",
+    image: "/img/recipes/desserts/034_pistacjowe_tiramisu.jpg",
+  },
+  "5. Pistacjowe tiramisu: kremowy deser z nutą pistacji, doskonały dla miłośników lekkich, orzechowych kompozycji bez glutenu.",
+  {
+    type: "instagramLink",
+    url: "https://www.instagram.com/p/DV22bDBiNzD/?img_index=1",
+    caption: "Tarta Toffifee z białą czekoladą 🤍🌰.",
+    image: "/img/recipes/desserts/035_tarta_toffifee.jpg",
+  },
+  "6. Tarta Toffifee: słodki deser z białej czekolady i chrupiącymi orzechami, który łączy kremową konsystencję z wyrazistym blaskiem karmelu.",
+  {
+    type: "instagramLink",
+    url: "https://www.instagram.com/p/DWLbaS_CF6k/",
+    caption: "Malinowa kostka z białą czekoladą 🌸.",
+    image: "/img/recipes/desserts/036_malinowa_kostka.jpg",
+  },
+  "7. Malinowa kostka: delikatne ciasto z białą czekoladą i wyraźną nutą malin, idealne na wiosenne i letnie przyjęcia.",
+  {
+    type: "instagramLink",
+    url: "https://www.instagram.com/p/DXpQEqoiHTO/?img_index=1",
+    caption: "Bezglutenowe gofry z bitą śmietaną i owocami 🍓🍌🧇.",
+    image: "/img/recipes/desserts/037_gofry.jpg",
+  },
+  "8. Bezglutenowe gofry: złociste, chrupiące na zewnątrz i miękkie w środku, podane z bitą śmietaną i owocami sezonowymi.",
+  {
+    type: "instagramLink",
+    url: "https://www.instagram.com/p/DX08HP7IP9E/",
+    caption: "Letnie drożdżówki z owocami 🫐 bez glutenu.",
+    image: "/img/recipes/desserts/038_drozdzowki.jpg",
+  },
+  "9. Letnie drożdżówki z owocami: puszyste, owocowe bułeczki z bezglutenowego ciasta, idealne na lekki deser do herbaty.",
+  {
+    type: "instagramLink",
+    url: "https://www.instagram.com/p/DYM8DVKIAk1/",
+    caption: "Tiramisu na bezglutenowym biszkopcie.",
+    image: "/img/recipes/desserts/039_tiramisu.jpg",
+  },
+  "10. Tiramisu na bezglutenowym biszkopcie: klasyczny włoski deser w wersji bez glutenu, z delikatną kawową nutą i kremową masą.",
   "Przygotowując desery bezglutenowe, warto eksperymentować z różnymi mąkami: ryżową, migdałową, kokosową czy gryczaną. Dzięki temu każdy przepis zyskuje unikalny smak i konsystencję.",
   "Pamiętaj, że bezpieczeństwo zaczyna się od składników. Wybieraj produkty certyfikowane jako bezglutenowe, czytaj etykiety i unikaj krzyżowego zanieczyszczenia w kuchni.",
 ];
