@@ -215,6 +215,40 @@ export const articlesData: ArticleItem[] = [
           "/img/recipes/breakfasts/013_zapiekane_bulki_sniadaniowe.jpg",
         ],
       },
+      "Te pomysły na śniadania możesz wykorzystać jako inspirację na cały tydzień. Warto przygotować porcje wcześniej i mieć gotowe propozycje na dni, kiedy brakuje czasu.",
+      "Bezglutenowa tortilla z jajkiem, awokado i rukolą to szybka propozycja, która syci i dostarcza zbilansowanej energii na poranek.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DBnv7v3OYgM/",
+        caption:
+          "Bezglutenowa tortilla z jajkiem, pomidorem i awokado – idealna opcja na pyszne śniadanie z Instagramu.",
+        image:
+          "/img/recipes/breakfasts/002_bezglutenowa_tortilla_z_jajkiem.jpg",
+      },
+      "Zielony bajgel z warzywami i ziołami to propozycja dla osób, które chcą zacząć dzień nieco lżej, ale wciąż sycąco.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DIjHN1gI_Gc/",
+        caption:
+          "Zielony bezglutenowy bajgel ze szparagami i świeżymi ziołami – doskonały smak na rozpoczęcie dnia.",
+        image: "/img/recipes/breakfasts/006_zielony_bajgel.jpg",
+      },
+      "Owsianka z matchą to idealne połączenie zdrowia i smaku. Doskonale sprawdzi się jako ciepłe, sycące śniadanie, które możesz doprawić ulubionymi dodatkami.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DPoUl2LiGlO/",
+        caption:
+          "Bezglutenowa owsianka z matchą – zielona propozycja z Instagramu o wyjątkowym smaku.",
+        image: "/img/recipes/breakfasts/011_owsianka_z_matcha.jpg",
+      },
+      "Zapiekane bułki śniadaniowe to pomysł na weekendowy posiłek dla rodziny. Aromatyczne i chrupiące, z pysznym nadzieniem bez glutenu.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DRorNJ2iJT3/?img_index=1",
+        caption:
+          "Zapiekane bułki śniadaniowe – chrupiąca i słodka propozycja na bezglutenowe śniadanie.",
+        image: "/img/recipes/breakfasts/013_zapiekane_bulki_sniadaniowe.jpg",
+      },
       "Możesz przygotować weekendowe porcje i zamrozić je na dni, kiedy brakuje Ci czasu.",
       "Wykorzystaj talerz pełen kolorów i różnorodnych tekstur, aby poranna kawa miała idealne, zdrowe wsparcie.",
     ],
