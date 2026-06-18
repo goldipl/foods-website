@@ -102,6 +102,12 @@
       padding: 10px 12px;
       border-radius: 8px;
       border: 1px solid #ddd;
+      &:active,
+      &:focus,
+      &:hover {
+        border-color: $color-green02;
+        outline: none;
+      }
     }
   }
 
@@ -116,6 +122,13 @@
       padding: 8px 10px;
       border-radius: 6px;
       border: 1px solid #ddd;
+      cursor: pointer;
+      &:active,
+      &:focus,
+      &:hover {
+        border-color: $color-green02;
+        outline: none;
+      }
     }
   }
 }
@@ -134,39 +147,67 @@
 
   .pagination-controls {
     display: flex;
-    gap: 8px;
+    flex-direction: column;
+    gap: 24px;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 16px;
 
-    button {
-      min-width: 36px;
-      height: 36px;
-      border-radius: 6px;
-      border: 1px solid #e6e6e6;
-      background: #fff;
-      cursor: pointer;
-      &.active,
-      &:hover {
-        background: $color-green02;
-        color: #fff;
-        border-color: $color-green02;
-      }
-      &:disabled {
-        opacity: 0.5;
-        cursor: default;
-      }
-    }
-
-    .pagination-size {
+    .pagination-buttons {
       display: flex;
-      align-items: center;
+      flex-direction: row;
       gap: 8px;
-      label {
-        font-weight: 600;
-      }
-      select {
-        padding: 6px 8px;
+      align-items: center;
+      justify-content: center;
+      button {
+        min-width: 36px;
+        height: 36px;
         border-radius: 6px;
+        border: 1px solid #e6e6e6;
+        background: #fff;
+        cursor: pointer;
+        &:focus,
+        &.active,
+        &:hover {
+          background: $color-green02;
+          color: #fff;
+          border-color: $color-green02;
+        }
+        &:disabled {
+          opacity: 0.5;
+          cursor: default;
+        }
       }
     }
   }
+}
+
+.pagination-size {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  label {
+    font-weight: 600;
+  }
+  select {
+    padding: 6px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    &:active,
+    &:focus,
+    &:hover {
+      border-color: $color-green02;
+      outline: none;
+    }
+  }
+}
+
+.sort-pages-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
 }

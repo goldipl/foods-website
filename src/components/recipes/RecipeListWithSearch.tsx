@@ -138,16 +138,30 @@ const RecipeListWithSearch: React.FC<Props> = ({ data }) => {
           />
         </div>
 
-        <div className="recipes-sort">
-          <label htmlFor="recipes-sort-select">Sortuj:</label>
-          <select
-            id="recipes-sort-select"
-            value={sort}
-            onChange={(e) => setSort(e.target.value as "newest" | "oldest")}
-          >
-            <option value="newest">Najnowsze</option>
-            <option value="oldest">Najstarsze</option>
-          </select>
+        <div className="sort-pages-wrapper">
+          <div className="recipes-sort">
+            <label htmlFor="recipes-sort-select">Sortuj:</label>
+            <select
+              id="recipes-sort-select"
+              value={sort}
+              onChange={(e) => setSort(e.target.value as "newest" | "oldest")}
+            >
+              <option value="newest">Najnowsze</option>
+              <option value="oldest">Najstarsze</option>
+            </select>
+          </div>
+
+          <div className="pagination-size">
+            <label>Na stronie:</label>
+            <select
+              value={pageSize}
+              onChange={(e) => setPageSize(Number(e.target.value))}
+            >
+              <option value={8}>8</option>
+              <option value={12}>12</option>
+              <option value={24}>24</option>
+            </select>
+          </div>
         </div>
       </div>
 
@@ -200,40 +214,32 @@ const RecipeListWithSearch: React.FC<Props> = ({ data }) => {
 
         {totalPages > 1 && (
           <div className="pagination-controls">
-            <button
-              onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
-              disabled={currentPage === 1}
-            >
-              ←
-            </button>
-
-            {Array.from({ length: totalPages }).map((_, i) => (
+            <div className="pagination-buttons">
               <button
-                key={i}
-                className={i + 1 === currentPage ? "active" : ""}
-                onClick={() => setCurrentPage(i + 1)}
+                onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                disabled={currentPage === 1}
               >
-                {i + 1}
+                ←
               </button>
-            ))}
 
-            <button
-              onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
-              disabled={currentPage === totalPages}
-            >
-              →
-            </button>
+              {Array.from({ length: totalPages }).map((_, i) => (
+                <button
+                  key={i}
+                  className={i + 1 === currentPage ? "active" : ""}
+                  onClick={() => setCurrentPage(i + 1)}
+                >
+                  {i + 1}
+                </button>
+              ))}
 
-            <div className="pagination-size">
-              <label>Na stronie:</label>
-              <select
-                value={pageSize}
-                onChange={(e) => setPageSize(Number(e.target.value))}
+              <button
+                onClick={() =>
+                  setCurrentPage((p) => Math.min(totalPages, p + 1))
+                }
+                disabled={currentPage === totalPages}
               >
-                <option value={6}>6</option>
-                <option value={12}>12</option>
-                <option value={24}>24</option>
-              </select>
+                →
+              </button>
             </div>
           </div>
         )}
