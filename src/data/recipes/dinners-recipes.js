@@ -36,6 +36,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DBdvWQouPv2/",
       imgSrc: dyniowyMakaronzSzynkaSpeck,
       altText: "Dyniowy bezglutenowy makaron z wędliną typu Speck",
+      tags: ["obiad", "makaron"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -46,6 +47,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DBJmwKfoFa4/",
       imgSrc: makaronzWeganskimBialymSerem,
       altText: "Bezglutenowy makaron z wegańskim 'Białym Serem'",
+      tags: ["obiad", "wegańskie"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -56,6 +58,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DB5pgUtIKMZ/",
       imgSrc: pizzazRukola,
       altText: "Bezglutenowa pizza z dynią, pieczarkami, szynką parmeńską, wegańskim serem i oliwą truflową",
+      tags: ["obiad", "pizza"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:

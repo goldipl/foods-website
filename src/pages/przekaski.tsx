@@ -8,6 +8,7 @@ import { appetizersRecipesData } from "@/data/recipes/appetizers-recipes";
 import Topbar from "@/components/common/Topbar";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
+import RecipeListWithSearch from "@/components/recipes/RecipeListWithSearch";
 
 const AppetizersPage = () => {
   return (
@@ -65,41 +66,7 @@ const AppetizersPage = () => {
             </div>
           </div>
 
-          <div className="listing-v1">
-            {appetizersRecipesData
-              .slice()
-              .reverse()
-              .map((recipe) => (
-                <Link
-                  key={recipe.id}
-                  href={recipe.href}
-                  className="listing-v1-slot"
-                  target="_blank"
-                >
-                  <div className="listing-v1-slot__img">
-                    <Image
-                      src={recipe.imgSrc}
-                      alt={recipe.altText}
-                      width={400}
-                      height={500}
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="listing-v1-slot__text">
-                    <span>{recipe.description}</span>
-                  </div>
-                  <div className="listing-v1-slot__labels">
-                    <span className={recipe.labelClass}>{recipe.label}</span>
-                  </div>
-                  <div className="listing-v1-slot__zoom">
-                    <div className="zoom-box">
-                      <CiInstagram />
-                      <span>Zobacz</span>
-                    </div>
-                  </div>
-                </Link>
-              ))}
-          </div>
+          <RecipeListWithSearch data={appetizersRecipesData} />
           <div className="primary-button">
             <Link href="/" className="primary-button__text">
               Powrót

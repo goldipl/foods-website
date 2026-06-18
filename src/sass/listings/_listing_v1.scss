@@ -6,6 +6,15 @@
   }
 }
 
+body:has(.recipes-tags) {
+  @media (min-width: 992px) {
+    .listing-v1 {
+      margin: 0px 16px 28px;
+      justify-content: flex-start;
+    }
+  }
+}
+
 .listing-v1 {
   position: relative;
   display: flex;

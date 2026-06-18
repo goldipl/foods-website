@@ -44,6 +44,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/C_XerbBoQV-/",
       imgSrc: kokosoweTiramisu,
       altText: "Kokosowe tiramisu - bez głutenu i bez nabiału",
+      tags: ["deser", "bez nabiału", "wegańskie"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -54,6 +55,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DBrI559o2Eb/",
       imgSrc: rozkiAlaOreo,
       altText: "Bezglutenowe rożki z nadzieniem a'la Oreo",
+      tags: ["deser", "szybkie"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -64,6 +66,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/reel/DAgcKLeITeH/",
       imgSrc: cynamonki,
       altText: "Bezglutenowe cynamonki - musisz je spróbwać",
+      tags: ["deser"],
       label: "Deser",
       labelClass: "dessert-label",
       description:

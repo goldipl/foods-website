@@ -22,6 +22,7 @@ export const appetizersRecipesData = [
         href: "https://www.instagram.com/p/DDrP4IYO4WY/",
         imgSrc: paluszkoweKoreczkiWegeFeta,
         altText: "Paluszkowe koreczki z wege fety i pieczonego buraka",
+        tags: ["przystawka", "wege"],
         label: "Przystawka",
         labelClass: "appetizer-label",
         description:
@@ -32,6 +33,7 @@ export const appetizersRecipesData = [
         href: "https://www.instagram.com/p/DEKGQ1duOKK/",
         imgSrc: pieczarkiwCiescieNalesnikowym,
         altText: "Pieczarki w bezglutenowym cieście naleśnikowym",
+        tags: ["przystawka", "airfryer"],
         label: "Przystawka",
         labelClass: "appetizer-label",
         description:
@@ -42,6 +44,7 @@ export const appetizersRecipesData = [
         href: "https://www.instagram.com/p/DFYHh20uswT/",
         imgSrc: selerSosTonnato,
         altText: "Seler sos Tonnato",
+        tags: ["przystawka", "wege"],
         label: "Przystawka",
         labelClass: "appetizer-label",
         description:

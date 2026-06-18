@@ -82,6 +82,7 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
       { label: "Obiady", href: "/#obiady" },
       { label: "Desery", href: "/#desery" },
       { label: "Przystawki / Przekąski / Sałatki", href: "/#przystawki" },
+      { label: "Wyszukiwarka przepisów", href: "/szukaj-przepisow" },
     ],
   },
   {

@@ -19,6 +19,7 @@ export const breakfastsRecipesData = [
       href: "https://www.instagram.com/p/C-xC4XMIwvG/",
       imgSrc: sniadanieBoczekzJajkiem,
       altText: "Bezglutenowe śniadanie - jajka, boczek, bezglutenowy chlebek na oliwie",
+      tags: ["sniadanie", "jajka"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
@@ -29,6 +30,7 @@ export const breakfastsRecipesData = [
       href: "https://www.instagram.com/p/DBnv7v3OYgM/",
       imgSrc: tortillazJajkiem,
       altText: "Bezglutenowa tortilla z jajkiem, pomidorem, awokado i aromatyczną rukolą",
+      tags: ["sniadanie", "tortilla", "szybkie"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
@@ -39,6 +41,7 @@ export const breakfastsRecipesData = [
       href: "https://www.instagram.com/p/C3xwcftoDMh/",
       imgSrc: sniadaniowaTortilla,
       altText: "Bezglutenowa śniadaniowa tortilla z komosy ryżowej",
+      tags: ["sniadanie", "tortilla"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
