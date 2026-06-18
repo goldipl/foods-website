@@ -1,6 +1,6 @@
 import "@/sass/main.scss";
 import Head from "next/head";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { useState } from "react";
@@ -22,7 +22,7 @@ type ArticleGalleryProps = {
 type ArticleInstagramLinkProps = {
   url: string;
   caption: string;
-  image: string;
+  image: string | StaticImageData;
 };
 
 const ArticleInstagramLink = ({

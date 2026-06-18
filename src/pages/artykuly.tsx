@@ -1,20 +1,34 @@
 import "@/sass/main.scss";
+import { useMemo, useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Topbar from "@/components/common/Topbar";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
+import Pagination from "@/components/common/Pagination";
 import { articlesData } from "@/data/articles/articles";
 
 const ArticlesPage = () => {
-  const articles = articlesData
-    .slice()
-    .reverse()
-    .map((article) => ({
-      ...article,
-      href: `/artykuly/${article.slug}`,
-    }));
+  const [currentPage, setCurrentPage] = useState(1);
+  const articles = useMemo(
+    () =>
+      articlesData
+        .slice()
+        .reverse()
+        .map((article) => ({
+          ...article,
+          href: `/artykuly/${article.slug}`,
+        })),
+    [],
+  );
+
+  const articlesPerPage = 6;
+  const totalPages = Math.max(1, Math.ceil(articles.length / articlesPerPage));
+  const paginatedArticles = articles.slice(
+    (currentPage - 1) * articlesPerPage,
+    currentPage * articlesPerPage,
+  );
 
   return (
     <>
@@ -52,7 +66,7 @@ const ArticlesPage = () => {
           </div>
 
           <div className="articles-grid">
-            {articles.map((article) => (
+            {paginatedArticles.map((article) => (
               <Link
                 key={article.slug}
                 href={article.href}
@@ -80,6 +94,12 @@ const ArticlesPage = () => {
               </Link>
             ))}
           </div>
+
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={setCurrentPage}
+          />
 
           <div className="articles-page__navigation">
             <Link href="/" className="primary-button__text">
