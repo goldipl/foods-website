@@ -47,7 +47,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DBJmwKfoFa4/",
       imgSrc: makaronzWeganskimBialymSerem,
       altText: "Bezglutenowy makaron z wegańskim 'Białym Serem'",
-      tags: ["obiad", "wegańskie"],
+      tags: ["obiad", "wegańskie", "makaron"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -58,7 +58,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DB5pgUtIKMZ/",
       imgSrc: pizzazRukola,
       altText: "Bezglutenowa pizza z dynią, pieczarkami, szynką parmeńską, wegańskim serem i oliwą truflową",
-      tags: ["obiad", "pizza"],
+      tags: ["obiad", "pizza", "wegańskie"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -69,6 +69,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/C_CugMjIJ0J/",
       imgSrc: BurgerTeriyakizKurczaka,
       altText: "Bezglutenowy kurczako-burger w stylu Teriyaki",
+      tags: ["obiad", "burger", "kurczak"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -79,6 +80,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DC_zuLFodeV/",
       imgSrc: bezglutenoweLazanki,
       altText: "Bezglutenowe łazanki - idealny przepis na świąteczny stół",
+      tags: ["obiad", "łazanki"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -89,6 +91,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DDjza7Wu_Bn/",
       imgSrc: obiadowyBowlzLososiem,
       altText: "Obiadowy bowl z wędzonym łososiem",
+      tags: ["obiad", "bowl", "łosoś"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -99,6 +102,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DDm5JUeO608/",
       imgSrc: pizzaGoralskazZurawina,
       altText: "Bezglutenowa pizza góralska z boczkiem, oscypkiem i żurawiną",
+      tags: ["obiad", "pizza"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -109,6 +113,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DEb90DGoycD/",
       imgSrc: bezglutenowyKotletCezar,
       altText: "Bezglutenowy kotlet Cezar",
+      tags: ["obiad", "kotlet"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -119,6 +124,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DEnMW8lu1a1/",
       imgSrc: bezglutenowySushiBurger,
       altText: "Bezglutenowy sushi burger",
+      tags: ["obiad", "sushi", "burger"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -129,6 +135,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DExbgKCIYq3/",
       imgSrc: bezglutenowaZupaPho,
       altText: "Bezglutenowa zupa Pho",
+      tags: ["obiad", "zupa"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -139,6 +146,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DFGPPs3OddU/",
       imgSrc: padThai,
       altText: "Pad Thai bez glutenu i bez nabiału",
+      tags: ["obiad", "pad thai"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -149,6 +157,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DGBPZtzIBNJ/",
       imgSrc: wloskiMakaronzKrewetkami,
       altText: "Włoski makaron z krewetkami",
+      tags: ["obiad", "makaron", "krewetki"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -159,6 +168,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DG3svqSOl1j/",
       imgSrc: kurczakwCiescieKokosowym,
       altText: "Kurczak w bezglutenowym cieście kokosowym",
+      tags: ["obiad", "kurczak"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -169,6 +179,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DGfMwDmI-yX/",
       imgSrc: bezglutenoweNalesnikiGryczane,
       altText: "Bezglutenowe naleśniki gryczane",
+      tags: ["obiad", "naleśniki"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -179,6 +190,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DHnSXv1IQy4/",
       imgSrc: greckaPita,
       altText: "Bezglutenowa grecka pita z kurczakiem",
+      tags: ["obiad", "pita", "kurczak"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -189,6 +201,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DJtHU6AoLGz/",
       imgSrc: burgerzKimchi,
       altText: "Bezglutenowy burger wołowy z kimchi",
+      tags: ["obiad", "burger", "wołowina"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -199,6 +212,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DJ4UJPBIPD8/",
       imgSrc: grill,
       altText: "Bezglutenowy, wiosenny grill",
+      tags: ["obiad", "grill"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -209,6 +223,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DKcarnTI1bM/",
       imgSrc: bezglutenoweChiliSinCarne,
       altText: "Bezglutenowe chili sin carne",
+      tags: ["obiad", "chili sin carne", "wegańskie"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -219,6 +234,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DK6ZMAWoPd3/",
       imgSrc: grillKielbasa,
       altText: "Grill, czyli kiełbasa + kajzerka",
+      tags: ["obiad", "grill", "kiełbasa"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -229,6 +245,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DLHpUiCI6uf/",
       imgSrc: carbonara,
       altText: "Carbonara - bezglutenowy makaron z boczkiem i jajkiem (bez nabiału)",
+      tags: ["obiad", "makaron"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -239,6 +256,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DLfiLjKo4Wk/",
       imgSrc: zupaCebulowazGrzankami,
       altText: "Zupa cebulowa z grzankami, w 100% bez glutenu",
+      tags: ["obiad", "zupa"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -249,6 +267,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DMCjFaYIgVU/",
       imgSrc: rosolzBezglutenowymMakaronem,
       altText: "Rosół z makaronem bezglutenowym",
+      tags: ["obiad", "zupa"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -259,6 +278,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DM2XWBZoAgy/",
       imgSrc: bezglutenoweTagliatelle,
       altText: "Bezglutenowe Tagliatelle z suszonymi pomidorami, kurkami i szpinakiem",
+      tags: ["obiad", "makaron"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -269,6 +289,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DOtO_geiI0I/",
       imgSrc: burgerUdzcemKurczaka,
       altText: "Burger bezglutenowy z udźcem z kurczaka",
+      tags: ["obiad", "burger", "kurczak"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -279,6 +300,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DPJZ4vQCAoc/",
       imgSrc: makaronBurakamiFeta,
       altText: "Bezglutenowy makaron z burakami i fetą",
+      tags: ["obiad", "makaron"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -289,6 +311,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DPbrjbliHJe/",
       imgSrc: bezglutenowaPizzaSalamiBurrata,
       altText: "Bezglutenowa pizza z salami i burratą",
+      tags: ["obiad", "pizza"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -299,6 +322,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DRFaUlsiD4m/",
       imgSrc: kremCurry,
       altText: "Zupa krem z dyni i marchwi",
+      tags: ["obiad", "zupa"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -309,6 +333,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DRXeWR7CIX5/",
       imgSrc: viralowyKebab,
       altText: "WIRALOWY KEBAB BEZ GLUTENU 🥙",
+      tags: ["obiad", "kebab"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -319,6 +344,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DSVWHLuCAd-/",
       imgSrc: obiadNaSzybkoLosos,
       altText: "Obiad w 5 minut - wędzony łosoś, kasza, jajko i zielony ogórek",
+      tags: ["obiad", "łosoś"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -329,6 +355,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DUdMfr3iHj2/",
       imgSrc: ekspresowaZupawAzjatyckimStylu,
       altText: "Ekspresowa zupa w azjatyckim stylu",
+      tags: ["obiad", "zupa"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
@@ -339,6 +366,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DZdA1rMIQER/",
       imgSrc: burgerzKurka,
       altText: "Burger z kurką z bezglutenową bułką, bekonem, sałatą, kisoznym ogórkiem, czerwoną cebulą i sosem mango-mayo",
+      tags: ["obiad", "burger", "kurczak"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:

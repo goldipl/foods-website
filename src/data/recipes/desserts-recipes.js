@@ -43,19 +43,19 @@ export const dessertsRecipesData = [
       id: 1,
       href: "https://www.instagram.com/p/C_XerbBoQV-/",
       imgSrc: kokosoweTiramisu,
-      altText: "Kokosowe tiramisu - bez głutenu i bez nabiału",
+      altText: "Kokosowe tiramisu - bez glutenu i bez nabiału",
       tags: ["deser", "bez nabiału", "wegańskie"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
-        "Kokosowe tiramisu - bez głutenu i bez nabiału",
+        "Kokosowe tiramisu - bez glutenu i bez nabiału",
     },
     {
       id: 2,
       href: "https://www.instagram.com/p/DBrI559o2Eb/",
       imgSrc: rozkiAlaOreo,
       altText: "Bezglutenowe rożki z nadzieniem a'la Oreo",
-      tags: ["deser", "szybkie"],
+      tags: ["deser"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -77,6 +77,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/reel/DCebEsDoeVU/",
       imgSrc: wegeSernik,
       altText: "Wege sernik w stylu baskijskim",
+      tags: ["deser", "wegańskie"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -87,6 +88,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DDFUj2ZOXVB/",
       imgSrc: ciasteczkaKukurydziane,
       altText: "Bezglutenowe ciasteczka kukurydziane z czekoladą",
+      tags: ["deser", "ciasteczka"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -97,6 +99,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DDL9TinusK8/",
       imgSrc: jagodoweTiramisu,
       altText: "Bezglutenowe jagodowe Tiramisu",
+      tags: ["deser", "tiramisu"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -107,6 +110,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DDkSsmbOLCI/",
       imgSrc: lepkiPiernik,
       altText: "Bezglutenowy lepki piernik z daktylami i wegańskim, bezglutenowym deserem waniliowym",
+      tags: ["deser", "piernik"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -117,6 +121,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DD1-OaCokLi/",
       imgSrc: bezglutenoweSzyszki,
       altText: "Bezglutenowe świąteczne szyszki",
+      tags: ["deser", "świąteczne"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -127,6 +132,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DD9rLFIoSeo/",
       imgSrc: bezglutenowyMakowiecJaponski,
       altText: "Bezglutenowy makowiec japoński",
+      tags: ["deser", "świąteczne"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -137,6 +143,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DEVCtHWoXHM/",
       imgSrc: bezglutenowyKopiecKreta,
       altText: "Bezglutenowy kopiec kreta",
+      tags: ["deser"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -147,6 +154,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DE0EuYiOxY3/",
       imgSrc: bezglutenowyOmletMarchewkowy,
       altText: "Bezglutenowy omlet marchewkowy",
+      tags: ["deser", "omlet"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -157,6 +165,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DFVw60MOGtx/",
       imgSrc: bezglutenoweTostyFrancuskie,
       altText: "Bezglutenowe tosty francuskie",
+      tags: ["deser", "tosty"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -167,6 +176,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DFvlnndO6JS/",
       imgSrc: bezglutenowaCzekoladaTruskawkowa,
       altText: "Bezglutenowy deser w stylu kultowej truskawkowej czekolady",
+      tags: ["deser", "czekolada"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -177,6 +187,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DF5ULvgoNTg/",
       imgSrc: bezglutenowePuszysteFaworki,
       altText: "Bezglutenowe puszyste faworki",
+      tags: ["deser", "faworki"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -187,6 +198,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DHiihqPo-PE/",
       imgSrc: bezglutenowyLesnyMech,
       altText: "Bezglutenowe ciasto - leśny mech",
+      tags: ["deser", "ciasto"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -197,6 +209,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DIMOkP4IgFw/",
       imgSrc: jadalneSadzonki,
       altText: "Słodkie, jadalne sadzonki",
+      tags: ["deser"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -207,6 +220,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DIeN6ijorry/",
       imgSrc: mazurekPistacjowy,
       altText: "Mazurek pistacjowy",
+      tags: ["deser", "świąteczne"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -217,6 +231,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DJABWdWouqO/",
       imgSrc: bezglutenoweBrioche,
       altText: "Bezglutenowe brioche",
+      tags: ["deser"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -227,6 +242,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DKSDnj2IXrH/",
       imgSrc: bezglutenowaSzarlotka,
       altText: "Bezglutenowa szarlotka",
+      tags: ["deser", "ciasto"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -237,6 +253,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DLAdjiyoklr/",
       imgSrc: nalesnikizTruskawkowaFruzelina,
       altText: "Bezglutenowe naleśniki z truskawkową frużeliną",
+      tags: ["deser", "naleśniki"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -247,6 +264,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DMNj5vKI84o/",
       imgSrc: domoweLodyBezNabialuBezGlutenu,
       altText: "Domowe lody bez nabiału i bez glutenu",
+      tags: ["deser", "lody"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -257,6 +275,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DOq4OM_CCuF/",
       imgSrc: tygrysekMatcha,
       altText: "Ciasto tygrysek matcha",
+      tags: ["deser", "ciasto"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -267,6 +286,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DQeYLiCCBMW/",
       imgSrc: nalesniczkiBezglutenowe,
       altText: "Bezglutenowe naleśniki",
+      tags: ["deser", "naleśniki"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -277,6 +297,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DQ7EDSAiNQS/",
       imgSrc: cynamonkiOrzechowe,
       altText: "Bezglutenowe cynamonki z polewą orzechową i kruszonymi orzechami laskowymi",
+      tags: ["deser", "cynamonki"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -287,6 +308,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/CvC-pbLMxJ3/",
       imgSrc: krucheZJagodami,
       altText: "Kruche ciasto z jagodami BEZ GLUTENU | BEZ NABIAŁU | BEZ CUKRU",
+      tags: ["deser", "ciasto"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -297,6 +319,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/CuxLZoos78L/",
       imgSrc: pistacjoweTiramisu,
       altText: "Pistacjowe tiramisu BEZ GLUTENU | BEZ NABIAŁU | BEZ CUKRU",
+      tags: ["deser", "tiramisu"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -307,6 +330,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DRNdz93CC75/",
       imgSrc: brownie,
       altText: "Bezglutenowe i ekspresowe brownie od Celiko",
+      tags: ["deser", "ciasto"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -317,6 +341,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DRuypQ7iLC6/",
       imgSrc: swiateczneSzyszki,
       altText: "Bezglutenowe świąteczne szyszki",
+      tags: ["deser", "świąteczne"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -327,6 +352,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DSAzOQViKLI/",
       imgSrc: swiateczneKorzenneCiastka,
       altText: "Świąteczne korzenne ciasteczka",
+      tags: ["deser", "świąteczne"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -337,6 +363,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DSiMH8DiHlV/",
       imgSrc: makamonki,
       altText: "Makamonki, czyli coś jak cynamonki ale z makiem",
+      tags: ["deser", "cynamonki"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -347,6 +374,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DS0Wu6fiGPv/?img_index=1",
       imgSrc: ciastkazJablkamizAirfryera,
       altText: "Ciastka z jabłkami z airfryera",
+      tags: ["deser", "ciastka", "jabłka"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -357,6 +385,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DTQgerBiOVl/?img_index=1",
       imgSrc: paczusieBezDrozdzy,
       altText: "Pączusie bez drożdży",
+      tags: ["deser", "pączki"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -367,6 +396,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DUxYyhGiBAT/",
       imgSrc: kokosankiVelKudlacze,
       altText: "Kokosanki vel kudłacze",
+      tags: ["deser", "ciastka"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -377,6 +407,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DVyiKTjjPFE/",
       imgSrc: bezglutenowePistacjoweTiramisu,
       altText: "Pistacjowe tiramisu",
+      tags: ["deser", "tiramisu"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -387,6 +418,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DV22bDBiNzD/?img_index=1",
       imgSrc: tartaToffifee,
       altText: "Tarta Toffifee z białą czekoladą",
+      tags: ["deser", "tarta"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -397,6 +429,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DWLbaS_CF6k/",
       imgSrc: malinowaKostka,
       altText: "Malinowa kostka z białą czekoladą",
+      tags: ["deser", "ciasto"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -407,6 +440,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DXpQEqoiHTO/?img_index=1",
       imgSrc: gofry,
       altText: "Bezglutenowe gofry z bitą śmietaną i owocami",
+      tags: ["deser", "gofry"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -417,6 +451,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DX08HP7IP9E/",
       imgSrc: drozdzowki,
       altText: "Letnie drożdżówki z owocami bez glutenu",
+      tags: ["deser", "drożdżówki"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -427,6 +462,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DYM8DVKIAk1/",
       imgSrc: tiramisu,
       altText: "Tiramisu na bezglutenowym biszkopcie ☕️🍰",
+      tags: ["deser", "tiramisu"],
       label: "Deser",
       labelClass: "dessert-label",
       description:

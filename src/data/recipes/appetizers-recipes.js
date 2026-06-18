@@ -55,6 +55,7 @@ export const appetizersRecipesData = [
         href: "https://www.instagram.com/p/DFdVoGUu7wV/",
         imgSrc: przekaskawStyluShogayaki,
         altText: "Japońska przekąska w stylu Shogayaki",
+        tags: ["przystawka", "japońska"],
         label: "Przystawka",
         labelClass: "appetizer-label",
         description:
@@ -65,6 +66,7 @@ export const appetizersRecipesData = [
         href: "https://www.instagram.com/p/DG6QTm_uj1q/",
         imgSrc: hotdogzCebulka,
         altText: "Bezglutenowe Hot Dogi z cebulką",
+        tags: ["przystawka", "hot dog"],
         label: "Przystawka",
         labelClass: "appetizer-label",
         description:
@@ -75,6 +77,7 @@ export const appetizersRecipesData = [
         href: "https://www.instagram.com/p/DIJn1L0IYVp/",
         imgSrc: jajkawSosieTatarskim,
         altText: "Jajka w sosie tatarskim z grissini",
+        tags: ["przystawka", "jajka"],
         label: "Przystawka",
         labelClass: "appetizer-label",
         description:
@@ -85,6 +88,7 @@ export const appetizersRecipesData = [
         href: "https://www.instagram.com/p/DKFgkFPIm6p/",
         imgSrc: bezglutenowaChalka,
         altText: "Bezglutenowa chałka z truskawkami",
+        tags: ["przystawka", "truskawki"],
         label: "Przystawka",
         labelClass: "appetizer-label",
         description: 
@@ -95,6 +99,7 @@ export const appetizersRecipesData = [
         href: "https://www.instagram.com/p/DKH1M4rI4p6/",
         imgSrc: hotDogiiGrill,
         altText: "Hot Dogi i Grill",
+        tags: ["przystawka", "grill"],
         label: "Przystawka",
         labelClass: "appetizer-label",
         description: 
@@ -105,6 +110,7 @@ export const appetizersRecipesData = [
         href: "https://www.instagram.com/p/DKfAohYIU_p/",
         imgSrc: makaronzTruskawkami,
         altText: "Bezglutenowy makaron z truskawkami",
+        tags: ["truskawki", "makaron"],
         label: "Słodka przekąska",
         labelClass: "appetizer-label",
         description: 
@@ -115,6 +121,7 @@ export const appetizersRecipesData = [
         href: "https://www.instagram.com/p/DL5RPsUIjG7/",
         imgSrc: pizzerki,
         altText: "Bezglutenowe keto pizzerki",
+        tags: ["przystawka", "pizzerki"],
         label: "Przystawka",
         labelClass: "appetizer-label",
         description: 
@@ -125,6 +132,7 @@ export const appetizersRecipesData = [
         href: "https://www.instagram.com/p/DMfyac-IrQg/",
         imgSrc: domoweZapiekanki,
         altText: "Bezglutenowe domowe zapiekanki",
+        tags: ["przystawka", "zapiekanki"],
         label: "Przystawka",
         labelClass: "appetizer-label",
         description: 
@@ -135,6 +143,7 @@ export const appetizersRecipesData = [
         href: "https://www.instagram.com/p/DQmiDuoCG1m/",
         imgSrc: springRolls,
         altText: "Spring Rollsy",
+        tags: ["przystawka", "spring rolls"],
         label: "Przystawka",
         labelClass: "appetizer-label",
         description: 
@@ -145,6 +154,7 @@ export const appetizersRecipesData = [
         href: "https://www.instagram.com/p/DS7DA8RiDIn/",
         imgSrc: kapusniaczkizAirfryera,
         altText: "Kapuśniaczki z airfryera 🥬",
+        tags: ["przystawka"],
         label: "Przystawka",
         labelClass: "appetizer-label",
         description: 
@@ -155,6 +165,7 @@ export const appetizersRecipesData = [
         href: "https://www.instagram.com/p/DTn8StVCBLZ/?img_index=1",
         imgSrc: pieczonyZiemniakZeSledziem,
         altText: "Pieczony ziemniak ze śledziem z majonezem, szczypiorkiem, koperkiem 🥔🌱",
+        tags: ["przystawka", "ziemniak", "śledź"],
         label: "Przystawka",
         labelClass: "appetizer-label",
         description: 
@@ -165,6 +176,7 @@ export const appetizersRecipesData = [
         href: "https://www.instagram.com/p/DUfWUERCF0-/",
         imgSrc: salatkaPieczonyRyz,
         altText: "Sałatka z pieczonym ryżem, ogórkiem, awokado, czerwoną cebulą, szczypiorkiem i sosem",
+        tags: ["sałatka", "ryż"],
         label: "Sałatka",
         labelClass: "appetizer-label",
         description: 
@@ -175,6 +187,7 @@ export const appetizersRecipesData = [
         href: "https://www.instagram.com/p/DVq-5waiJ7R/?img_index=1",
         imgSrc: bezglutenowaPinsa,
         altText: "Bezglutenowa Pinsa w dwóch smakach - z włoską mortadelą i rukolą oraz z kurczakiem BBQ",
+        tags: ["pinsa", "bezglutenowa"],
         label: "Pinsa",
         labelClass: "appetizer-label",
         description: 
@@ -185,6 +198,7 @@ export const appetizersRecipesData = [
         href: "https://www.instagram.com/p/DZRudgboNQT/",
         imgSrc: SalatkazMango,
         altText: "Sałatka z suszonym mango, sałatą rzymską, rukolą, wędzonym łososiem, pestkami dyni, ciecierzycą, pomidorkami koktajlowymi, kaszą gryczaną i sosem na bazie musztardy, soku z cytryny i oliwy",
+        tags: ["sałatka", "mango"],
         label: "Sałatka",
         labelClass: "appetizer-label",
         description: 
