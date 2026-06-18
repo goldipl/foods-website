@@ -1,3 +1,6 @@
+import type { StaticImageData } from "next/image";
+import { dessertsRecipesData } from "@/data/recipes/desserts-recipes";
+
 export type ArticleContentBlock =
   | string
   | {
@@ -9,7 +12,7 @@ export type ArticleContentBlock =
       type: "instagramLink";
       url: string;
       caption: string;
-      image: string;
+      image: string | StaticImageData;
     };
 
 export interface ArticleItem {
@@ -24,6 +27,22 @@ export interface ArticleItem {
   highlights: string[];
   quote: string;
 }
+
+const dessertsArticleContent: ArticleContentBlock[] = [
+  "Desery bezglutenowe mogą być efektowne i jednocześnie bezpieczne dla osób z celiakią. Wystarczy kilka sprawdzonych składników i odrobina kreatywności, by przygotować słodkości, które smakują równie dobrze jak tradycyjne wypieki.",
+  "Podstawą udanych deserów są naturalne słodziki, bezglutenowe mąki oraz świeże owoce. Dzięki temu można stworzyć lekkie, aromatyczne kompozycje bez konieczności rezygnacji z tekstury i bogatego smaku.",
+  ...dessertsRecipesData.slice(-10).flatMap((recipe, index) => [
+    {
+      type: "instagramLink",
+      url: recipe.href,
+      caption: recipe.description,
+      image: recipe.imgSrc,
+    },
+    `${index + 1}. ${recipe.description}`,
+  ]),
+  "Przygotowując desery bezglutenowe, warto eksperymentować z różnymi mąkami: ryżową, migdałową, kokosową czy gryczaną. Dzięki temu każdy przepis zyskuje unikalny smak i konsystencję.",
+  "Pamiętaj, że bezpieczeństwo zaczyna się od składników. Wybieraj produkty certyfikowane jako bezglutenowe, czytaj etykiety i unikaj krzyżowego zanieczyszczenia w kuchni.",
+];
 
 export const articlesData: ArticleItem[] = [
   {
@@ -475,5 +494,25 @@ export const articlesData: ArticleItem[] = [
     ],
     quote:
       "Bezglutenowy burger to nie kompromis, lecz nowe oblicze ulubionej klasyki.",
+  },
+  {
+    slug: "desery-bezglutenowe-10-pomyslow",
+    title: "Desery bezglutenowe: 10 pomysłów na słodkie zakończenie dnia",
+    excerpt:
+      "Poznaj inspiracje na dekadenckie i domowe desery bezglutenowe, które możesz przygotować na weekend, spotkanie z przyjaciółmi lub po prostu na słodki relaks.",
+    image: "/img/recipes/desserts/027_brownie.jpg",
+    category: "Desery",
+    author: "Karolina Wontorska",
+    date: "18.06.2026",
+    content: dessertsArticleContent,
+    highlights: [
+      "Brownie bez glutenu świetnie smakuje z malinami i lodami kokosowymi.",
+      "Sernik jagodowy no-bake to lekka propozycja z orzechowym spodem.",
+      "Kremowa panna cotta z mango to egzotyczny deser na każdą porę roku.",
+      "Crumble z jabłkami i gruszkami jest szybki i pachnie domowym cynamonem.",
+      "Mini tarty pistacjowe z malinami to elegancki pomysł na deser dla gości.",
+    ],
+    quote:
+      "Desery bezglutenowe to dowód, że słodkie zakończenie dnia może być jednocześnie lekkie, kreatywne i bezpieczne.",
   },
 ];
