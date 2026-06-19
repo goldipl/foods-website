@@ -88,7 +88,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DDFUj2ZOXVB/",
       imgSrc: ciasteczkaKukurydziane,
       altText: "Bezglutenowe ciasteczka kukurydziane z czekoladą",
-      tags: ["deser", "ciasteczka"],
+      tags: ["deser", "ciastka"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
