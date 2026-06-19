@@ -18,6 +18,7 @@ import pastaGlutenFreeRoma from "../../public/img/welcome/wloski-makaron-gluten-
 import saskaSushiWarszawa from "../../public/img/restaurants/poland/001_saska_sushi.jpg";
 import bezglutenoweHalloween from "../../public/img/events/011_bezglutenowe_halloween.jpg";
 import glutenFreeHeroMap from "../../public/img/map/gluten-free-hero-map.jpg";
+import searchPage from "../../public/img/hero/searchpage.jpg";
 
 // --- PARTNER IMPORTS ---
 import GlutenexImg from "../../public/img/cooperation/glutenex.png";
@@ -225,6 +226,14 @@ export const HERO_SLIDES: HeroSlideItem[] = [
         className: "white",
       },
     ],
+  },
+  {
+    title: "Wyszukiwarka przepisów bezglutenowych",
+    subtitle:
+      "Baza bezpiecznych i smacznych przepisów bez glutenu, sprawdzonych osobiście przeze mnie",
+    image: searchPage,
+    alt: "Wyszukiwarka przepisów bezglutenowych",
+    links: [{ label: "Sprawdź", href: "/szukaj-przepisow" }],
   },
   {
     title: "Mapa miejsc bezglutenowych",
