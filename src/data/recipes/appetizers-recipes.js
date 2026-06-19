@@ -33,7 +33,7 @@ export const appetizersRecipesData = [
         href: "https://www.instagram.com/p/DEKGQ1duOKK/",
         imgSrc: pieczarkiwCiescieNalesnikowym,
         altText: "Pieczarki w bezglutenowym cieście naleśnikowym",
-        tags: ["przystawka", "airfryer"],
+        tags: ["przystawka"],
         label: "Przystawka",
         labelClass: "appetizer-label",
         description:

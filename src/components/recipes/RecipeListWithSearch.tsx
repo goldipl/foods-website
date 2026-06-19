@@ -33,7 +33,6 @@ const RecipeListWithSearch: React.FC<Props> = ({ data }) => {
       [/wega[nń]/i, "wegańskie"],
       [/wege/i, "wege"],
       [/bez\s?nabia/i, "bez nabiału"],
-      [/airfry/i, "airfryer"],
       [/pizza/i, "pizza"],
       [/tortill/i, "tortilla"],
       [/makaron|spaghetti|tagliatelle|pasta/i, "makaron"],
