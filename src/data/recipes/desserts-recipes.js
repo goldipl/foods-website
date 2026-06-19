@@ -44,7 +44,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/C_XerbBoQV-/",
       imgSrc: kokosoweTiramisu,
       altText: "Kokosowe tiramisu - bez glutenu i bez nabiału",
-      tags: ["deser", "bez nabiału", "wegańskie"],
+      tags: ["deser", "wegańskie"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
