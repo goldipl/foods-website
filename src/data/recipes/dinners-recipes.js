@@ -80,7 +80,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DC_zuLFodeV/",
       imgSrc: bezglutenoweLazanki,
       altText: "Bezglutenowe łazanki - idealny przepis na świąteczny stół",
-      tags: ["obiad", "łazanki"],
+      tags: ["obiad", "makaron", "świąteczne"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
