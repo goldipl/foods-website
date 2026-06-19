@@ -121,7 +121,7 @@ export const appetizersRecipesData = [
         href: "https://www.instagram.com/p/DL5RPsUIjG7/",
         imgSrc: pizzerki,
         altText: "Bezglutenowe keto pizzerki",
-        tags: ["przystawka", "pizzerki"],
+        tags: ["przystawka", "pizza"],
         label: "Przystawka",
         labelClass: "appetizer-label",
         description: 
