@@ -151,7 +151,7 @@ export const breakfastsRecipesData = [
       href: "https://www.instagram.com/p/DRorNJ2iJT3/?img_index=1",
       imgSrc: zapiekaneBulkiSniadaniowe,
       altText: "Zapiekane bułki śniadaniowe",
-      tags: ["śniadanie", "bułki", "jajka"],
+      tags: ["śniadanie", "bułka", "jajka"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
