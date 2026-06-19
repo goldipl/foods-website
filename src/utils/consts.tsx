@@ -19,6 +19,7 @@ import saskaSushiWarszawa from "../../public/img/restaurants/poland/001_saska_su
 import bezglutenoweHalloween from "../../public/img/events/011_bezglutenowe_halloween.jpg";
 import glutenFreeHeroMap from "../../public/img/map/gluten-free-hero-map.jpg";
 import searchPage from "../../public/img/hero/searchpage.jpg";
+import articlesPage from "../../public/img/hero/articles.jpg";
 
 // --- PARTNER IMPORTS ---
 import GlutenexImg from "../../public/img/cooperation/glutenex.png";
@@ -242,6 +243,14 @@ export const HERO_SLIDES: HeroSlideItem[] = [
     image: glutenFreeHeroMap,
     alt: "Mapa miejsc bezglutenowych",
     links: [{ label: "Sprawdź", href: "/bezglutenowe-miejsca" }],
+  },
+  {
+    title: "Artykuły o diecie bezglutenowej",
+    subtitle:
+      "Znajdziesz tu praktyczne teksty, które pomogą Ci bezpiecznie przejść na dietę bezglutenową. Od pierwszych zakupów po codzienne gotowanie i podróże",
+    image: articlesPage,
+    alt: "Artykuły o diecie bezglutenowej",
+    links: [{ label: "Czytaj", href: "/artykuly" }],
   },
   {
     title: "Bezglutenowe śniadania",
