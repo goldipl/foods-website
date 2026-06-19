@@ -187,7 +187,7 @@ export const appetizersRecipesData = [
         href: "https://www.instagram.com/p/DVq-5waiJ7R/?img_index=1",
         imgSrc: bezglutenowaPinsa,
         altText: "Bezglutenowa Pinsa w dwóch smakach - z włoską mortadelą i rukolą oraz z kurczakiem BBQ",
-        tags: ["pinsa", "bezglutenowa"],
+        tags: ["pinsa", "kurczak"],
         label: "Pinsa",
         labelClass: "appetizer-label",
         description: 
