@@ -223,7 +223,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DKcarnTI1bM/",
       imgSrc: bezglutenoweChiliSinCarne,
       altText: "Bezglutenowe chili sin carne",
-      tags: ["obiad", "chili sin carne", "wegańskie"],
+      tags: ["obiad", "wegańskie"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
