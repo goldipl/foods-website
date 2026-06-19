@@ -168,6 +168,17 @@ const RecipeListWithSearch: React.FC<Props> = ({ data }) => {
             </select>
           </div>
 
+          <div className="pagination-info">
+            <span>
+              Wyświetlono{" "}
+              {Math.min(
+                filtered.length,
+                (currentPage - 1) * pageSize + paginated.length,
+              )}{" "}
+              z {filtered.length} wyników
+            </span>
+          </div>
+
           <div className="pagination-size">
             <label>Na stronie:</label>
             <select
@@ -218,17 +229,6 @@ const RecipeListWithSearch: React.FC<Props> = ({ data }) => {
       </div>
 
       <div className="recipes-pagination">
-        <div className="pagination-info">
-          <span>
-            Wyświetlono{" "}
-            {Math.min(
-              filtered.length,
-              (currentPage - 1) * pageSize + paginated.length,
-            )}{" "}
-            z {filtered.length} wyników
-          </span>
-        </div>
-
         {totalPages > 1 && (
           <div className="pagination-controls">
             <div className="pagination-buttons">

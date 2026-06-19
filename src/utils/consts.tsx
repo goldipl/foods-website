@@ -185,7 +185,7 @@ export const HEADER_SOCIAL_LINKS: HeaderSocialLink[] = [
     icon: searchIcon,
     href: "/szukaj-przepisow/",
     target: "_self",
-    handle: "@bezglutenowakarola",
+    handle: "Wyszukiwarka przepisów",
   },
   {
     label: "Mapa miejsc bezglutenowych",
@@ -314,6 +314,7 @@ export const FOOTER_LINKS = [
       { label: "Obiady", href: "#obiady" },
       { label: "Desery / Słodkości", href: "#desery" },
       { label: "Przystawki / Przekąski / Sałatki", href: "#przystawki" },
+      { label: "Wyszukiwarka przepisów", href: "/szukaj-przepisow" },
     ],
   },
   {
