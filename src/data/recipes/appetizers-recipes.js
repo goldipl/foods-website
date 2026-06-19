@@ -99,7 +99,7 @@ export const appetizersRecipesData = [
         href: "https://www.instagram.com/p/DKH1M4rI4p6/",
         imgSrc: hotDogiiGrill,
         altText: "Hot Dogi i Grill",
-        tags: ["przystawka", "grill"],
+        tags: ["przystawka", "grill", "hot dog"],
         label: "Przystawka",
         labelClass: "appetizer-label",
         description: 
