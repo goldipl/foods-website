@@ -4,7 +4,7 @@ import { StaticImageData } from "next/image";
 import logo from "../../public/icons/header/bezglutenowakarola-logo.svg";
 import menuDownIcon from "../../public/icons/common/menu-down-icon.svg";
 import instagramIcon from "../../public/icons/common/instagram.svg";
-import youTubeIcon from "../../public/icons/common/youtube.svg";
+import searchIcon from "../../public/icons/common/search-icon.png";
 import facebookIcon from "../../public/icons/common/facebook.svg";
 import mapIcon from "../../public/img/map/map-icon.png";
 
@@ -173,17 +173,17 @@ export const HEADER_SOCIAL_LINKS: HeaderSocialLink[] = [
     handle: "@bezglutenowakarola",
   },
   {
-    label: "YouTube",
-    icon: youTubeIcon,
-    href: "https://www.youtube.com/@bezglutenowakarola",
-    target: "_blank",
-    handle: "@bezglutenowakarola",
-  },
-  {
     label: "Facebook",
     icon: facebookIcon,
     href: "https://www.facebook.com/profile.php?id=61576336200554",
     target: "_blank",
+    handle: "@bezglutenowakarola",
+  },
+  {
+    label: "Wyszukiwarka przepisów",
+    icon: searchIcon,
+    href: "/szukaj-przepisow/",
+    target: "_self",
     handle: "@bezglutenowakarola",
   },
   {
