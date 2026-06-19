@@ -19,7 +19,7 @@ export const breakfastsRecipesData = [
       href: "https://www.instagram.com/p/C-xC4XMIwvG/",
       imgSrc: sniadanieBoczekzJajkiem,
       altText: "Bezglutenowe śniadanie - jajka, boczek, bezglutenowy chlebek na oliwie",
-      tags: ["śniadanie", "jajka"],
+      tags: ["śniadanie", "jajka", "chleb"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
@@ -30,7 +30,7 @@ export const breakfastsRecipesData = [
       href: "https://www.instagram.com/p/DBnv7v3OYgM/",
       imgSrc: tortillazJajkiem,
       altText: "Bezglutenowa tortilla z jajkiem, pomidorem, awokado i aromatyczną rukolą",
-      tags: ["śniadanie", "tortilla"],
+      tags: ["śniadanie", "tortilla", "jajka"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
@@ -85,7 +85,7 @@ export const breakfastsRecipesData = [
       href: "https://www.instagram.com/p/DJ91QNNI43j/",
       imgSrc: omletzMakiGryczanej,
       altText: "Omlet z bezglutenowej kaszy gryczanej i jajek",
-      tags: ["śniadanie", "omlet"],
+      tags: ["śniadanie", "omlet", "jajka"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
@@ -96,7 +96,7 @@ export const breakfastsRecipesData = [
       href: "https://www.instagram.com/p/DLl-uTfIRWg/",
       imgSrc: sniadanieNaBalkonie,
       altText: "Śniadanie na balkonie - jajka, boczek, pomidory, rukola i bezglutenowy chlebek",
-      tags: ["śniadanie", "jajka"],
+      tags: ["śniadanie", "jajka", "chleb"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
@@ -107,7 +107,7 @@ export const breakfastsRecipesData = [
       href: "https://www.instagram.com/p/DO6P8kGiOta/",
       imgSrc: pomysloweKanapkiCz1,
       altText: "Pomysłowe kanapki część 1",
-      tags: ["śniadanie", "kanapki"],
+      tags: ["śniadanie", "kanapki", "chleb", "bułka", "bajgiel"],
       label: "Śniadanie/Lunchbox",
       labelClass: "breakfast-label",
       description:
@@ -118,7 +118,7 @@ export const breakfastsRecipesData = [
       href: "https://www.instagram.com/p/DO_YlZViDgK/",
       imgSrc: pomysloweKanapkiCz2,
       altText: "Pomysłowe kanapki część 2",
-      tags: ["śniadanie", "kanapki"],
+      tags: ["śniadanie", "kanapki", "chleb", "bułka", "bajgiel"],
       label: "Śniadanie/Lunchbox",
       labelClass: "breakfast-label",
       description:
@@ -140,7 +140,7 @@ export const breakfastsRecipesData = [
       href: "https://www.instagram.com/p/DQ1JeYNiK9B/",
       imgSrc: bezglutenowyBajgiel,
       altText: "Bezglutenowy bajgiel z omletem jajecznym, cukinią, pieczarkami, sałatą, rzodkiewką, ogórkiem, majonezem",
-      tags: ["śniadanie", "bajgiel"],
+      tags: ["śniadanie", "bajgiel", "jajka"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
@@ -151,7 +151,7 @@ export const breakfastsRecipesData = [
       href: "https://www.instagram.com/p/DRorNJ2iJT3/?img_index=1",
       imgSrc: zapiekaneBulkiSniadaniowe,
       altText: "Zapiekane bułki śniadaniowe",
-      tags: ["śniadanie", "bułki"],
+      tags: ["śniadanie", "bułki", "jajka"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
