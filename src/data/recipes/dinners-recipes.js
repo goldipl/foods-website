@@ -135,7 +135,7 @@ export const dinnersRecipesData = [
       href: "https://www.instagram.com/p/DExbgKCIYq3/",
       imgSrc: bezglutenowaZupaPho,
       altText: "Bezglutenowa zupa Pho",
-      tags: ["obiad", "zupa"],
+      tags: ["obiad", "zupa", "wołowina"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
