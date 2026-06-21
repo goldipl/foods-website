@@ -37,6 +37,7 @@ import malinowaKostka from "./../../../public/img/recipes/desserts/036_malinowa_
 import gofry from "./../../../public/img/recipes/desserts/037_gofry.jpg";
 import drozdzowki from "./../../../public/img/recipes/desserts/038_drozdzowki.jpg";
 import tiramisu from "./../../../public/img/recipes/desserts/039_tiramisu.jpg";
+import bezaTruskawkiMaliny from "./../../../public/img/recipes/desserts/040_beza.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -467,5 +468,16 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Tiramisu na bezglutenowym biszkopcie",
+    },
+    {
+      id: 40,
+      href: "https://www.instagram.com/p/DZ2NxG7DJBo/?img_index=1",
+      imgSrc: bezaTruskawkiMaliny,
+      altText: "Beza z mascarpone, truskawkami i malinami",
+      tags: ["deser", "truskawki"],
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Beza z mascarpone, truskawkami i malinami",
     },
 ];
