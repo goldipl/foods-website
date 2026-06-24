@@ -38,6 +38,7 @@ import gofry from "./../../../public/img/recipes/desserts/037_gofry.jpg";
 import drozdzowki from "./../../../public/img/recipes/desserts/038_drozdzowki.jpg";
 import tiramisu from "./../../../public/img/recipes/desserts/039_tiramisu.jpg";
 import bezaTruskawkiMaliny from "./../../../public/img/recipes/desserts/040_beza.jpg";
+import letnieCiastozOwocami from "./../../../public/img/recipes/desserts/041_letnie_ciasto.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -479,5 +480,16 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Beza z mascarpone, truskawkami i malinami",
+    },
+    {
+      id: 41,
+      href: "https://www.instagram.com/p/DZ7yBQvCIVB/?img_index=1",
+      imgSrc: letnieCiastozOwocami,
+      altText: "Letnie ciasto z owocami",
+      tags: ["deser", "ciasto", "truskawki"],
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Letnie ciasto z owocami",
     },
 ];
