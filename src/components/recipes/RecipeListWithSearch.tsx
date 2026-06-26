@@ -94,6 +94,15 @@ const RecipeListWithSearch: React.FC<Props> = ({ data }) => {
     setCurrentPage(1);
   }, [query, selectedTags, sort, pageSize]);
 
+  // --- NOWY EFEKT: Przewijanie do góry przy zmianie strony ---
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // "smooth" dla płynnego animowania, "auto" dla natychmiastowego skoku
+    });
+  }, [currentPage]);
+  // -----------------------------------------------------------
+
   return (
     <>
       <div className="recipes-controls">
