@@ -6,7 +6,7 @@ export const MarkerData = [
     addressLine2: "00-042 Warszawa",
     country: "Polska",
     city: "Warszawa",
-    link: "https://www.instagram.com/reel/C-S0V-rIpJ0/",
+    link: "https://www.instagram.com/p/C-S0V-rIpJ0/",
     position: [52.23067725445316, 21.01386378269282] as [number, number],
   },
   {
@@ -566,7 +566,7 @@ export const MarkerData = [
     addressLine2: "60-252 Poznań",
     country: "Polska",
     city: "Poznań",
-    link: "https://www.instagram.com/bezglutenowakarola/reel/DKpD0PKocvZ/",
+    link: "https://www.instagram.com/p/DKpD0PKocvZ/",
     position: [52.391339, 16.89023] as [number, number],
   },
   {

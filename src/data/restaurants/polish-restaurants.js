@@ -46,7 +46,7 @@ export const polishRestaurantsData = [
     },
     {
       id: 2,
-      href: "https://www.instagram.com/reel/C-S0V-rIpJ0/",
+      href: "https://www.instagram.com/p/C-S0V-rIpJ0/",
       imgSrc: rolaPaoWarszawa,
       altText: "Bezglutenowa restauracja indyjska w Warszawie, Rola Pao, al. Jerozolimskie 42",
       label: "Warszawa",
@@ -56,7 +56,7 @@ export const polishRestaurantsData = [
     },
     {
       id: 3,
-      href: "https://www.instagram.com/reel/DCOjHn-O-LQ/",
+      href: "https://www.instagram.com/p/DCOjHn-O-LQ/",
       imgSrc: kebabEnfesWarszawa,
       altText: "Bezglutenowy kebab i baklava w Warszawie, Enfes Kebab, ul. Leona Berensona 37",
       label: "Warszawa",
@@ -266,7 +266,7 @@ export const polishRestaurantsData = [
     },
     {
       id: 26,
-      href: "https://www.instagram.com/bezglutenowakarola/reel/DKpD0PKocvZ/",
+      href: "https://www.instagram.com/p/DKpD0PKocvZ/",
       imgSrc: pizzaNaturalnaPoznan,
       altText: "Pizza Naturalna, Hetmańska 26/2 wejście od, Kazimierza Jarochowskiego, 60-252 Poznań",
       label: "Poznań",
