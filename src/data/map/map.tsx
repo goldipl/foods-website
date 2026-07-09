@@ -609,4 +609,14 @@ export const MarkerData = [
     link: "https://www.instagram.com/p/DZF0d6_iAL8/?img_index=1",
     position: [51.40195467545976, 21.15440669624938] as [number, number],
   },
+  {
+    id: 63,
+    name: "Hola Tapas",
+    addressLine1: " Ul. Piwna 50/51,",
+    addressLine2: "80-831 Gdańsk",
+    country: "Polska",
+    city: "Gdańsk",
+    link: "https://www.instagram.com/p/DaielTUiHL2/?img_index=1",
+    position: [54.35008560892237, 18.65167350679736] as [number, number],
+  },
 ];

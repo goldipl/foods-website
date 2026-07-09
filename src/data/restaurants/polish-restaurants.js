@@ -32,6 +32,7 @@ import saskaSushizDziewczynami from "./../../../public/img/restaurants/poland/03
 import grooleWarszawa from "./../../../public/img/restaurants/poland/034_groole.jpg";
 import villaKarpaczBezGlutenu from "./../../../public/img/restaurants/poland/035_villa_karpacz_bezglutenu.jpg";
 import hiltonRadom from "./../../../public/img/restaurants/poland/036_hilton_radom.jpg";
+import holaTapasGdansk from "./../../../public/img/restaurants/poland/037_hola_tapas_gdansk.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -373,5 +374,15 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Restauracja Meritum w Hilton Garden Inn Radom, ul. Jana Kilińskiego 14, 26-610 Radom",
+    },
+    {
+      id: 37,
+      href: "https://www.instagram.com/p/DaielTUiHL2/?img_index=1",
+      imgSrc: holaTapasGdansk,
+      altText: "Hola Tapas w Gdańsku to restauracja i cocktail bar łączący smaki Hiszpanii i Meksyku, ul. Piwna 50/51, 80-831 Gdańsk",
+      label: "Gdańsk",
+      labelClass: "poland-label",
+      description:
+        "Hola Tapas w Gdańsku to restauracja i cocktail bar łączący smaki Hiszpanii i Meksyku, ul. Jana Kilińskiego 14, 26-610 Radom",
     },
   ];
