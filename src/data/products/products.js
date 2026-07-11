@@ -30,6 +30,7 @@ import tlustyCzwartekPutka from "./../../../public/img/products/029_tlusty_czwar
 import trzyProdukty from "./../../../public/img/products/030_trzy_produkty.jpg";
 import tydzienCeliakiiPutka from "./../../../public/img/products/031_tydzien_celiakii_putka.jpg";
 import przekaskaBezGlutenuIncola from "./../../../public/img/products/032_przekaska_bez_glutenu_incola.jpg";
+import chrupakiIncola from "./../../../public/img/products/033_chrupaki_incola.jpg";
 
 export const productsData = [
     {
@@ -381,5 +382,15 @@ export const productsData = [
         labelClass: "product-label",
         description: 
             "Kakaowe muffinki i ciasteczka bez glutenu od Incola Gluten Free",
+    },
+    {
+        id: 33,
+        href: "https://www.instagram.com/p/DapT6jviPhB/?img_index=1",
+        imgSrc: chrupakiIncola,
+        altText: "Chrupaki bez glutenu od Incola Gluten Free",
+        label: "Incola Gluten Free",
+        labelClass: "product-label",
+        description: 
+            "Chrupaki bez glutenu od Incola Gluten Free",
     },
   ];
