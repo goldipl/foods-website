@@ -377,11 +377,11 @@ export const dinnersRecipesData = [
       id: 31,
       href: "https://www.instagram.com/p/Darwr2uI8Cq/",
       imgSrc: pizzaDomowa,
-      altText: "Domowa pizza z bezglutenową mieszanką na pizzę na grubym cieście od Moncana",
+      altText: "Domowa pizza z bezglutenowej mieszanki na pizzę na grubym cieście od Moncana",
       tags: ["obiad", "pizza", "wegańskie"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
-        "Domowa pizza z bezglutenową mieszanką na pizzę na grubym cieście od Moncana",
+        "Domowa pizza z bezglutenowej mieszanki na pizzę na grubym cieście od Moncana",
     },
   ];
