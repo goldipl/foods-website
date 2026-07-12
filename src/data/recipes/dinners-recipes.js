@@ -29,6 +29,7 @@ import viralowyKebab from "./../../../public/img/recipes/dinners/028_viralowy_ke
 import obiadNaSzybkoLosos from "./../../../public/img/recipes/dinners/029_obiad_na_szybko_losos.jpg";
 import ekspresowaZupawAzjatyckimStylu from "./../../../public/img/recipes/dinners/030_ekspresowa_zupa_w_azjatyckim_stylu.jpg";
 import burgerzKurka from "./../../../public/img/recipes/dinners/031_burger_z_kurka.jpg";
+import pizzaDomowa from "./../../../public/img/recipes/dinners/032_pizza_domowa.jpg";
 
 export const dinnersRecipesData = [
     {
@@ -371,5 +372,16 @@ export const dinnersRecipesData = [
       labelClass: "dinner-label",
       description:
         "Burger z kurką 🐔🍔 z bezglutenową bułką, bekonem, sałatą, kisoznym ogórkiem, czerwoną cebulą i sosem mango-mayo",
+    },
+    {
+      id: 31,
+      href: "https://www.instagram.com/p/Darwr2uI8Cq/",
+      imgSrc: pizzaDomowa,
+      altText: "Domowa pizza z bezglutenową mieszanką na pizzę na grubym cieście od Moncana",
+      tags: ["obiad", "pizza", "wegańskie"],
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Domowa pizza z bezglutenową mieszanką na pizzę na grubym cieście od Moncana",
     },
   ];
