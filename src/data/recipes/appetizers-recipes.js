@@ -15,6 +15,7 @@ import pieczonyZiemniakZeSledziem from "./../../../public/img/recipes/appetizers
 import salatkaPieczonyRyz from "./../../../public/img/recipes/appetizers/015_salatka_z_pieczonym_ryzem.jpg";
 import bezglutenowaPinsa from "./../../../public/img/recipes/appetizers/016_bezglutenowa_pinsa.jpg";
 import SalatkazMango from "./../../../public/img/recipes/appetizers/017_salatka_z_mango.jpg";
+import letnieHotDogi from "./../../../public/img/recipes/appetizers/018_hot_dogi.jpg";
 
 export const appetizersRecipesData = [
     {
@@ -203,5 +204,16 @@ export const appetizersRecipesData = [
         labelClass: "appetizer-label",
         description: 
             "Sałatka z suszonym mango, sałatą rzymską, rukolą, wędzonym łososiem, pestkami dyni, ciecierzycą, pomidorkami koktajlowymi, kaszą gryczaną i sosem na bazie musztardy, soku z cytryny i oliwy",
+    },
+    {
+        id: 18,
+        href: "https://www.instagram.com/p/DavHOdQCJw7/?img_index=1",
+        imgSrc: letnieHotDogi,
+        altText: "Letnie hot-dogi z prażoną cebulką domowej roboty",
+        tags: ["przystawka", "hot dog"],
+        label: "Przystawka",
+        labelClass: "appetizer-label",
+        description: 
+            "Letnie hot-dogi z prażoną cebulką domowej roboty",
     },
   ];
