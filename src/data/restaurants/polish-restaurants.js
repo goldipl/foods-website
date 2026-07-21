@@ -33,6 +33,7 @@ import grooleWarszawa from "./../../../public/img/restaurants/poland/034_groole.
 import villaKarpaczBezGlutenu from "./../../../public/img/restaurants/poland/035_villa_karpacz_bezglutenu.jpg";
 import hiltonRadom from "./../../../public/img/restaurants/poland/036_hilton_radom.jpg";
 import holaTapasGdansk from "./../../../public/img/restaurants/poland/037_hola_tapas_gdansk.jpg";
+import bezglutenowyKrakow2026 from "./../../../public/img/restaurants/poland/038_bezglutenowy_krakow.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -384,5 +385,15 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Hola Tapas w Gdańsku to restauracja i cocktail bar łączący smaki Hiszpanii i Meksyku, ul. Jana Kilińskiego 14, 26-610 Radom",
+    },
+    {
+      id: 38,
+      href: "https://www.instagram.com/p/DbED5_8iLsJ/?img_index=1",
+      imgSrc: bezglutenowyKrakow2026,
+      altText: "Bonjour Pho Restaurant | Zapiekane Gluten Free Bistro | Old Town Restaurant | Kawiarnia Ciacho bezglutenowe",
+      label: "Kraków",
+      labelClass: "poland-label",
+      description:
+        "Bonjour Pho Restaurant | Zapiekane Gluten Free Bistro | Old Town Restaurant | Kawiarnia Ciacho bezglutenowe",
     },
   ];
