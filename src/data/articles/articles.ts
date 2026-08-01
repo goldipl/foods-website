@@ -559,6 +559,59 @@ export const articlesData: ArticleItem[] = [
       "Bezglutenowy burger to nie kompromis, lecz nowe oblicze ulubionej klasyki.",
   },
   {
+    slug: "bezglutenowe-restauracje-w-krakowie",
+    title: "Bezglutenowe restauracje w Krakowie: sprawdzone miejsca na mieście",
+    excerpt:
+      "Planujesz wyjście do restauracji w Krakowie? Poznaj miejsca z bezglutenowymi opcjami, które warto mieć na swojej kulinarnej mapie.",
+    image: "/img/restaurants/poland/038_bezglutenowy_krakow.jpg",
+    category: "Restauracje",
+    author: "Karolina Wontorska",
+    date: "01.08.2026",
+    content: [
+      "Kraków to jedno z tych miast, w których osoby na diecie bezglutenowej mogą znaleźć coraz więcej ciekawych adresów. Wśród zapisanych miejsc są zarówno restauracje z kuchnią azjatycką, jak i lokale oferujące klasyczne dania, desery oraz szybkie przekąski.",
+      "Na początek warto zajrzeć do Cakester Cafe, Zapiekane Gluten Free Bistro i Bonjour Pho Restaurant. Te miejsca pojawiają się w krakowskich bezglutenowych rekomendacjach i mogą być dobrym punktem wyjścia do planowania spaceru po mieście.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DIbSA8oowfa/",
+        caption:
+          "Cakester Cafe, Zapiekane Gluten Free Bistro i Bonjour Pho Restaurant w Krakowie.",
+        image: "/img/restaurants/poland/008_bezglutenowy_krakow.jpg",
+      },
+      "Jeśli masz ochotę na kuchnię azjatycką, sprawdź OTSU & MisziTo przy ulicy Wielickiej 259. Przed zamówieniem warto dopytać o składniki sosów, sposób przygotowania i możliwość ograniczenia ryzyka kontaktu z glutenem.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DNOLpcBI7Q9/",
+        caption: "OTSU & MisziTo, ul. Wielicka 259, Kraków.",
+        image: "/img/restaurants/poland/014_OTSUMisziTo.jpg",
+      },
+      "W centrum miasta warto zapisać także Old Town przy ulicy Brackiej 6. To adres, który może sprawdzić się podczas zwiedzania Starego Miasta, jednak aktualną ofertę i zasady przygotowania dań najlepiej potwierdzić bezpośrednio w lokalu.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DNbJasAoEdl/",
+        caption: "Old Town, ul. Bracka 6, Kraków.",
+        image: "/img/restaurants/poland/015_OldTownKrakow.jpg",
+      },
+      "Dobrym uzupełnieniem listy są także nowsze krakowskie rekomendacje zebrane w jednym zestawieniu. Warto obserwować lokalne miejsca i profile, ponieważ menu, godziny otwarcia oraz dostępność dań bez glutenu mogą się zmieniać.",
+      {
+        type: "instagramLink",
+        url: "https://www.instagram.com/p/DbED5_8iLsJ/?img_index=1",
+        caption:
+          "Bonjour Pho Restaurant, Zapiekane Gluten Free Bistro, Old Town Restaurant i kawiarnia Ciacho bezglutenowe w Krakowie.",
+        image: "/img/restaurants/poland/038_bezglutenowy_krakow.jpg",
+      },
+      "Przy celiakii sama informacja o daniach bez glutenu nie zawsze wystarcza. Przed wizytą zapytaj o osobne stanowisko lub sprzęt, sosy i dodatki oraz sposób zabezpieczenia potraw przed zanieczyszczeniem krzyżowym. Jeśli lokal nie potrafi jasno odpowiedzieć na pytania, lepiej wybrać inne miejsce.",
+    ],
+    highlights: [
+      "Cakester Cafe, Zapiekane Gluten Free Bistro i Bonjour Pho Restaurant to krakowskie adresy warte sprawdzenia.",
+      "OTSU & MisziTo znajduje się przy ulicy Wielickiej 259.",
+      "Old Town działa przy ulicy Brackiej 6, w centrum Krakowa.",
+      "Przed wizytą potwierdź aktualne menu, godziny otwarcia i procedury dotyczące zanieczyszczenia krzyżowego.",
+      "Linki do Instagramu pomagają zobaczyć najnowsze dania i informacje publikowane przez lokale.",
+    ],
+    quote:
+      "Kraków można odkrywać także od bezglutenowej strony — wystarczy dobrze zaplanować trasę i zadawać konkretne pytania.",
+  },
+  {
     slug: "desery-bezglutenowe-10-pomyslow",
     title: "Desery bezglutenowe: 10 pomysłów na słodkie zakończenie dnia",
     excerpt:
