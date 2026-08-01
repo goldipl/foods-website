@@ -559,6 +559,26 @@ export const articlesData: ArticleItem[] = [
       "Bezglutenowy burger to nie kompromis, lecz nowe oblicze ulubionej klasyki.",
   },
   {
+    slug: "desery-bezglutenowe-10-pomyslow",
+    title: "Desery bezglutenowe: 10 pomysłów na słodkie zakończenie dnia",
+    excerpt:
+      "Poznaj inspiracje na dekadenckie i domowe desery bezglutenowe, które możesz przygotować na weekend, spotkanie z przyjaciółmi lub po prostu na słodki relaks.",
+    image: "/img/recipes/desserts/027_brownie.jpg",
+    category: "Desery",
+    author: "Karolina Wontorska",
+    date: "18.06.2026",
+    content: dessertsArticleContent,
+    highlights: [
+      "Brownie bez glutenu świetnie smakuje z malinami i lodami kokosowymi.",
+      "Sernik jagodowy no-bake to lekka propozycja z orzechowym spodem.",
+      "Kremowa panna cotta z mango to egzotyczny deser na każdą porę roku.",
+      "Crumble z jabłkami i gruszkami jest szybki i pachnie domowym cynamonem.",
+      "Mini tarty pistacjowe z malinami to elegancki pomysł na deser dla gości.",
+    ],
+    quote:
+      "Desery bezglutenowe to dowód, że słodkie zakończenie dnia może być jednocześnie lekkie, kreatywne i bezpieczne.",
+  },
+  {
     slug: "bezglutenowe-restauracje-w-krakowie",
     title: "Bezglutenowe restauracje w Krakowie: sprawdzone miejsca na mieście",
     excerpt:
@@ -610,25 +630,5 @@ export const articlesData: ArticleItem[] = [
     ],
     quote:
       "Kraków można odkrywać także od bezglutenowej strony — wystarczy dobrze zaplanować trasę i zadawać konkretne pytania.",
-  },
-  {
-    slug: "desery-bezglutenowe-10-pomyslow",
-    title: "Desery bezglutenowe: 10 pomysłów na słodkie zakończenie dnia",
-    excerpt:
-      "Poznaj inspiracje na dekadenckie i domowe desery bezglutenowe, które możesz przygotować na weekend, spotkanie z przyjaciółmi lub po prostu na słodki relaks.",
-    image: "/img/recipes/desserts/027_brownie.jpg",
-    category: "Desery",
-    author: "Karolina Wontorska",
-    date: "18.06.2026",
-    content: dessertsArticleContent,
-    highlights: [
-      "Brownie bez glutenu świetnie smakuje z malinami i lodami kokosowymi.",
-      "Sernik jagodowy no-bake to lekka propozycja z orzechowym spodem.",
-      "Kremowa panna cotta z mango to egzotyczny deser na każdą porę roku.",
-      "Crumble z jabłkami i gruszkami jest szybki i pachnie domowym cynamonem.",
-      "Mini tarty pistacjowe z malinami to elegancki pomysł na deser dla gości.",
-    ],
-    quote:
-      "Desery bezglutenowe to dowód, że słodkie zakończenie dnia może być jednocześnie lekkie, kreatywne i bezpieczne.",
   },
 ];
