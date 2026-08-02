@@ -30,6 +30,7 @@ import obiadNaSzybkoLosos from "./../../../public/img/recipes/dinners/029_obiad_
 import ekspresowaZupawAzjatyckimStylu from "./../../../public/img/recipes/dinners/030_ekspresowa_zupa_w_azjatyckim_stylu.jpg";
 import burgerzKurka from "./../../../public/img/recipes/dinners/031_burger_z_kurka.jpg";
 import pizzaDomowa from "./../../../public/img/recipes/dinners/032_pizza_domowa.jpg";
+import zieloneNalesnikizSzarpanaWolowina from "./../../../public/img/recipes/dinner/033_zielone_nalesniki_z_szarpana_wolowina.jpg";
 
 export const dinnersRecipesData = [
     {
@@ -383,5 +384,16 @@ export const dinnersRecipesData = [
       labelClass: "dinner-label",
       description:
         "Domowa pizza z bezglutenowej mieszanki na pizzę na grubym cieście od Moncana",
+    },
+    {
+      id: 32,
+      href: "https://www.instagram.com/p/Dbh2a5HCOWn/?img_index=1",
+      imgSrc: zieloneNalesnikizSzarpanaWolowina,
+      altText: "Zielone naleśniki z szarpaną wołowiną",
+      tags: ["obiad", "naleśniki", "wołowina"],
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Zielone naleśniki z szarpaną wołowiną",
     },
   ];
