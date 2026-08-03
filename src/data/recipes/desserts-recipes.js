@@ -39,6 +39,7 @@ import drozdzowki from "./../../../public/img/recipes/desserts/038_drozdzowki.jp
 import tiramisu from "./../../../public/img/recipes/desserts/039_tiramisu.jpg";
 import bezaTruskawkiMaliny from "./../../../public/img/recipes/desserts/040_beza.jpg";
 import letnieCiastozOwocami from "./../../../public/img/recipes/desserts/041_letnie_ciasto.jpg";
+import deserChiaMonte from "./../../../public/img/recipes/desserts/042_deser_chia_monte.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -491,5 +492,16 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Letnie ciasto z owocami",
+    },
+    {
+      id: 42,
+      href: "https://www.instagram.com/p/DblPEc9MP8a/",
+      imgSrc: deserChiaMonte,
+      altText: "Deser Chia Monte",
+      tags: ["deser", "wegańskie"],
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Deser Chia Monte",
     },
 ];
