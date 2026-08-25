@@ -40,6 +40,7 @@ import tiramisu from "./../../../public/img/recipes/desserts/039_tiramisu.jpg";
 import bezaTruskawkiMaliny from "./../../../public/img/recipes/desserts/040_beza.jpg";
 import letnieCiastozOwocami from "./../../../public/img/recipes/desserts/041_letnie_ciasto.jpg";
 import deserChiaMonte from "./../../../public/img/recipes/desserts/042_deser_chia_monte.jpg";
+import knedleZeSliwka from "./../../../public/img/recipes/desserts/043_knedle_ze_sliwka.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -503,5 +504,16 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Deser Chia Monte",
+    },
+    {
+      id: 43,
+      href: "https://www.instagram.com/p/DcbPSHLiBSb/?img_index=1",
+      imgSrc: knedleZeSliwka,
+      altText: "Knedle ze śliwką",
+      tags: ["deser", "śliwki"],
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Knedle ze śliwką",
     },
 ];

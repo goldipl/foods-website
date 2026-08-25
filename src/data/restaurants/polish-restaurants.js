@@ -34,6 +34,7 @@ import villaKarpaczBezGlutenu from "./../../../public/img/restaurants/poland/035
 import hiltonRadom from "./../../../public/img/restaurants/poland/036_hilton_radom.jpg";
 import holaTapasGdansk from "./../../../public/img/restaurants/poland/037_hola_tapas_gdansk.jpg";
 import bezglutenowyKrakow2026 from "./../../../public/img/restaurants/poland/038_bezglutenowy_krakow.jpg";
+import bezLukruCukruJagodzianki from "./../../../public/img/restaurants/poland/039_bez_lukru_cukru_jagodzianki.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -395,5 +396,15 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Bonjour Pho Restaurant | Zapiekane Gluten Free Bistro | Old Town Restaurant | Kawiarnia Ciacho bezglutenowe",
+    },
+    {
+      id: 39,
+      href: "https://www.instagram.com/p/Dbxf6tUiOxF/?img_index=1",
+      imgSrc: bezLukruCukruJagodzianki,
+      altText: "Jagodzianki i malinianki bezglutenowe w Bez Lukru i Cukru, ul. Bolesława Chrobrego 22, 26-609 Radom",
+      label: "Radom",
+      labelClass: "poland-label",
+      description:
+        "Jagodzianki i malinianki bezglutenowe w Bez Lukru i Cukru, ul. Bolesława Chrobrego 22, 26-609 Radom",
     },
   ];

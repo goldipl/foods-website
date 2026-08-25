@@ -12,6 +12,7 @@ import owsiankaMatcha from "./../../../public/img/recipes/breakfasts/011_owsiank
 import bezglutenowyBajgiel from "./../../../public/img/recipes/breakfasts/012_bezglutenowy_bajgel.jpg";
 import zapiekaneBulkiSniadaniowe from "./../../../public/img/recipes/breakfasts/013_zapiekane_bulki_sniadaniowe.jpg";
 import bezglutenowyChleb from "./../../../public/img/recipes/breakfasts/014_bezglutenowy_chleb.jpg";
+import bezglutenoweBulkiOwsiane from "./../../../public/img/recipes/breakfasts/015_bezglutenowe_bulki_owsiane.jpg";
 
 export const breakfastsRecipesData = [
     {
@@ -167,5 +168,16 @@ export const breakfastsRecipesData = [
       labelClass: "breakfast-label",
       description:
         "Bezglutenowy chleb gryczany z siemieniem lnianym",
+    },
+    {
+      id: 15,
+      href: "https://www.instagram.com/p/Dbz909_IcHZ/",
+      imgSrc: bezglutenoweBulkiOwsiane,
+      altText: "Bezglutenowe bułki owsiane z mieszanki do wypieku od Moncana",
+      tags: ["śniadanie", "chleb", "bułka"],
+      label: "Śniadanie",
+      labelClass: "breakfast-label",
+      description:
+        "Bezglutenowe bułki owsiane z mieszanki do wypieku od Moncana",
     },
   ];

@@ -18,6 +18,8 @@ import celiakiaIcoDalej from "./../../../public/img/events/017_caliakia_i_co_dal
 import coJemNaDiecieBezglutenowej from "./../../../public/img/events/018_co_jem_na_diecie_bezglutenowej.jpg";
 import coSlyszyCeliakVsRzeczywistosc from "./../../../public/img/events/019_co_slyszy_celiak_vs_rzeczywistosc.jpg";
 import glutenOffFestival2026 from "./../../../public/img/events/020_gluten_off_festival_2026.jpg";
+import coOstatnioJadlam from "./../../../public/img/events/021_co_ostatnio_jadlam.jpg";
+import naszSlub from "./../../../public/img/events/022_nasz_slub.jpg";
 
 export const eventsData = [
     {
@@ -219,5 +221,25 @@ export const eventsData = [
       labelClass: "breakfast-label",
       description:
         "Gluten Off Festiwal 2026 - relacja z wydarzenia",
+    },
+    {
+      id: 21,
+      href: "https://www.instagram.com/p/Db6MP9skbGE/?img_index=1",
+      imgSrc: coOstatnioJadlam,
+      altText: "Co ostatnio jadłam na diecie bezglutenowej?",
+      label: "Jedzenie bezglutenowe",
+      labelClass: "breakfast-label",
+      description:
+        "Co ostatnio jadłam na diecie bezglutenowej?",
+    },
+    {
+      id: 22,
+      href: "https://www.instagram.com/p/DcWOlDJoRFr/",
+      imgSrc: naszSlub,
+      altText: "Nasz dzień 15.08.2026 i bezglutenowe jedzenie na weselu",
+      label: "Jedzenie na weselu",
+      labelClass: "breakfast-label",
+      description:
+        "Nasz dzień 15.08.2026 🌻🤍🌻 i bezglutenowe jedzenie na weselu",
     },
   ];
