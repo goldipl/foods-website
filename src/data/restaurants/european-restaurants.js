@@ -11,6 +11,7 @@ import rzymCz5 from "./../../../public/img/restaurants/europe/008_rzym_cz5.jpg";
 import florencjaCz1 from "./../../../public/img/restaurants/europe/009_florencja_cz1.jpg";
 import rzymCz6 from "./../../../public/img/restaurants/europe/012_rzym_cz6.jpg";
 import gastroPodsumowanieZagranica2025 from "./../../../public/img/restaurants/europe/013_gastro_podsumowanie_2025_zagranica.jpg";
+import newFoodRzym from "./../../../public/img/restaurants/europe/014_new_food_rzym.jpg";
 
 export const  europeanRestaurantsData = [
     {
@@ -142,5 +143,15 @@ export const  europeanRestaurantsData = [
       labelClass: "europe-label",
       description:
         "Gastro Podsumowanie 2025 - Bezglutenowe podróże zagraniczne",
+    },
+    {
+      id: 14,
+      href: "https://www.instagram.com/p/Dcfug8ZiCky/?img_index=1",
+      imgSrc: newFoodRzym,
+      altText: "New Food Gluten Free - Ponte Sisto, P.za S. Vincenzo Pallotti, 208, 00186 Roma RM, Włochy",
+      label: "Rzym",
+      labelClass: "europe-label",
+      description:
+        "New Food Gluten Free - Ponte Sisto, P.za S. Vincenzo Pallotti, 208, 00186 Roma RM, Włochy",
     },
   ];
