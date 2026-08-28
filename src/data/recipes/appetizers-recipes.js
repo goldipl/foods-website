@@ -16,6 +16,7 @@ import salatkaPieczonyRyz from "./../../../public/img/recipes/appetizers/015_sal
 import bezglutenowaPinsa from "./../../../public/img/recipes/appetizers/016_bezglutenowa_pinsa.jpg";
 import SalatkazMango from "./../../../public/img/recipes/appetizers/017_salatka_z_mango.jpg";
 import letnieHotDogi from "./../../../public/img/recipes/appetizers/018_hot_dogi.jpg";
+import bruschettaPomidorki from "./../../../public/img/recipes/appetizers/018_hot_dogi.jpg";
 
 export const appetizersRecipesData = [
     {
@@ -215,5 +216,16 @@ export const appetizersRecipesData = [
         labelClass: "appetizer-label",
         description: 
             "Letnie hot-dogi z prażoną cebulką domowej roboty",
+    },
+    {
+        id: 19,
+        href: "https://www.instagram.com/p/DcjEmBMoZZO/",
+        imgSrc: bruschettaPomidorki,
+        altText: "Bruschetta z pomidorkami i oliwą",
+        tags: ["przystawka", "bułka"],
+        label: "Przystawka",
+        labelClass: "appetizer-label",
+        description: 
+            "Bruschetta z pomidorkami i oliwą",
     },
   ];
