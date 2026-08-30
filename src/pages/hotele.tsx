@@ -1,15 +1,26 @@
 import "@/sass/main.scss";
+import { useMemo, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import React from "react";
 import Link from "next/link";
 import { CiInstagram } from "react-icons/ci";
 import { hotelsData } from "@/data/hotels/hotels";
 import Topbar from "@/components/common/Topbar";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
+import Pagination from "@/components/common/Pagination";
 
 const HotelsPage = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const hotels = useMemo(() => hotelsData.slice().reverse(), []);
+
+  const hotelsPerPage = 8;
+  const totalPages = Math.max(1, Math.ceil(hotels.length / hotelsPerPage));
+  const paginatedHotels = hotels.slice(
+    (currentPage - 1) * hotelsPerPage,
+    currentPage * hotelsPerPage,
+  );
+
   return (
     <>
       <Head>
@@ -85,41 +96,44 @@ const HotelsPage = () => {
           </div>
 
           <div className="listing-v1">
-            {hotelsData
-              .slice()
-              .reverse()
-              .slice(0, 4)
-              .map((hotel) => (
-                <Link
-                  key={hotel.id}
-                  href={hotel.href}
-                  className="listing-v1-slot"
-                  target="_blank"
-                >
-                  <div className="listing-v1-slot__img">
-                    <Image
-                      src={hotel.imgSrc}
-                      alt={hotel.altText}
-                      width={400}
-                      height={500}
-                      loading="lazy"
-                    />
+            {paginatedHotels.map((hotel) => (
+              <Link
+                key={hotel.id}
+                href={hotel.href}
+                className="listing-v1-slot"
+                target="_blank"
+              >
+                <div className="listing-v1-slot__img">
+                  <Image
+                    src={hotel.imgSrc}
+                    alt={hotel.altText}
+                    width={400}
+                    height={500}
+                    loading="lazy"
+                  />
+                </div>
+                <div className="listing-v1-slot__text">
+                  <span>{hotel.description}</span>
+                </div>
+                <div className="listing-v1-slot__labels">
+                  <span className={hotel.labelClass}>{hotel.label}</span>
+                </div>
+                <div className="listing-v1-slot__zoom">
+                  <div className="zoom-box">
+                    <CiInstagram />
+                    <span>Zobacz</span>
                   </div>
-                  <div className="listing-v1-slot__text">
-                    <span>{hotel.description}</span>
-                  </div>
-                  <div className="listing-v1-slot__labels">
-                    <span className={hotel.labelClass}>{hotel.label}</span>
-                  </div>
-                  <div className="listing-v1-slot__zoom">
-                    <div className="zoom-box">
-                      <CiInstagram />
-                      <span>Zobacz</span>
-                    </div>
-                  </div>
-                </Link>
-              ))}
+                </div>
+              </Link>
+            ))}
           </div>
+
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={setCurrentPage}
+          />
+
           <div className="primary-button">
             <Link href="/" className="primary-button__text">
               Powrót

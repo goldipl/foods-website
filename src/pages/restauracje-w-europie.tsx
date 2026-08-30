@@ -1,15 +1,32 @@
 import "@/sass/main.scss";
+import { useMemo, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import React from "react";
 import Link from "next/link";
 import { CiInstagram } from "react-icons/ci";
 import { europeanRestaurantsData } from "@/data/restaurants/european-restaurants";
 import Topbar from "@/components/common/Topbar";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
+import Pagination from "@/components/common/Pagination";
 
 const EuropeanRestaurantsData = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const restaurants = useMemo(
+    () => europeanRestaurantsData.slice().reverse(),
+    [],
+  );
+
+  const restaurantsPerPage = 8;
+  const totalPages = Math.max(
+    1,
+    Math.ceil(restaurants.length / restaurantsPerPage),
+  );
+  const paginatedRestaurants = restaurants.slice(
+    (currentPage - 1) * restaurantsPerPage,
+    currentPage * restaurantsPerPage,
+  );
+
   return (
     <>
       <Head>
@@ -80,40 +97,44 @@ const EuropeanRestaurantsData = () => {
           </div>
 
           <div className="listing-v1">
-            {europeanRestaurantsData
-              .slice()
-              .reverse()
-              .map((recipe) => (
-                <Link
-                  key={recipe.id}
-                  href={recipe.href}
-                  className="listing-v1-slot"
-                  target="_blank"
-                >
-                  <div className="listing-v1-slot__img">
-                    <Image
-                      src={recipe.imgSrc}
-                      alt={recipe.altText}
-                      width={400}
-                      height={500}
-                      loading="lazy"
-                    />
+            {paginatedRestaurants.map((recipe) => (
+              <Link
+                key={recipe.id}
+                href={recipe.href}
+                className="listing-v1-slot"
+                target="_blank"
+              >
+                <div className="listing-v1-slot__img">
+                  <Image
+                    src={recipe.imgSrc}
+                    alt={recipe.altText}
+                    width={400}
+                    height={500}
+                    loading="lazy"
+                  />
+                </div>
+                <div className="listing-v1-slot__text">
+                  <span>{recipe.description}</span>
+                </div>
+                <div className="listing-v1-slot__labels">
+                  <span className={recipe.labelClass}>{recipe.label}</span>
+                </div>
+                <div className="listing-v1-slot__zoom">
+                  <div className="zoom-box">
+                    <CiInstagram />
+                    <span>Zobacz</span>
                   </div>
-                  <div className="listing-v1-slot__text">
-                    <span>{recipe.description}</span>
-                  </div>
-                  <div className="listing-v1-slot__labels">
-                    <span className={recipe.labelClass}>{recipe.label}</span>
-                  </div>
-                  <div className="listing-v1-slot__zoom">
-                    <div className="zoom-box">
-                      <CiInstagram />
-                      <span>Zobacz</span>
-                    </div>
-                  </div>
-                </Link>
-              ))}
+                </div>
+              </Link>
+            ))}
           </div>
+
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={setCurrentPage}
+          />
+
           <div className="primary-button">
             <Link href="/" className="primary-button__text">
               Powrót
