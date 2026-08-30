@@ -59,13 +59,13 @@ const MapComponent: React.FC<MapComponentProps> = ({
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
   const paginatedItems = filteredData.slice(
     (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage
+    currentPage * itemsPerPage,
   );
 
   const handleZoomTo = (
     position: [number, number],
     zoomLevel = 17,
-    id?: number
+    id?: number,
   ) => {
     if (mapRef.current) {
       mapRef.current.setView(position, zoomLevel, { animate: true });
@@ -115,8 +115,8 @@ const MapComponent: React.FC<MapComponentProps> = ({
           ref={mapRef}
         >
           <TileLayer
-            attribution="&copy; OpenStreetMap &copy; CARTO"
-            url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+            attribution="&copy; OpenStreetMap contributors"
+            url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
 
           {filteredData.map((m) => (
