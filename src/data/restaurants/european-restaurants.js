@@ -12,6 +12,7 @@ import florencjaCz1 from "./../../../public/img/restaurants/europe/009_florencja
 import rzymCz6 from "./../../../public/img/restaurants/europe/012_rzym_cz6.jpg";
 import gastroPodsumowanieZagranica2025 from "./../../../public/img/restaurants/europe/013_gastro_podsumowanie_2025_zagranica.jpg";
 import newFoodRzym from "./../../../public/img/restaurants/europe/014_new_food_rzym.jpg";
+import vogliaDiPizzaRzym from "./../../../public/img/restaurants/europe/015_vogliadipizza_roma.jpg";
 
 export const  europeanRestaurantsData = [
     {
@@ -153,5 +154,15 @@ export const  europeanRestaurantsData = [
       labelClass: "europe-label",
       description:
         "New Food Gluten Free - Ponte Sisto, P.za S. Vincenzo Pallotti, 208, 00186 Roma RM, Włochy",
+    },
+    {
+      id: 15,
+      href: "https://www.instagram.com/p/DcnZKuBCEUB/?img_index=1",
+      imgSrc: vogliaDiPizzaRzym,
+      altText: "Voglia di Pizza - Gluten free, Via dei Giubbonari, 33, 00186 Roma RM, Włochy",
+      label: "Rzym",
+      labelClass: "europe-label",
+      description:
+        "Voglia di Pizza - Gluten free, Via dei Giubbonari, 33, 00186 Roma RM, Włochy",
     },
   ];

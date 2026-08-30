@@ -619,4 +619,14 @@ export const MarkerData = [
     link: "https://www.instagram.com/p/DaielTUiHL2/?img_index=1",
     position: [54.35008560892237, 18.65167350679736] as [number, number],
   },
+  {
+    id: 64,
+    name: "Voglia di Pizza - Gluten free",
+    addressLine1: "Via dei Giubbonari, 33,",
+    addressLine2: " 00186 Roma RM,",
+    country: "Włochy",
+    city: "Rzym",
+    link: "https://www.instagram.com/p/DcnZKuBCEUB/?img_index=1",
+    position: [41.894444863361905, 12.473687025137789] as [number, number],
+  },
 ];
