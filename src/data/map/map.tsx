@@ -592,7 +592,7 @@ export const MarkerData = [
   {
     id: 61,
     name: "Villa Karpacz GLUTEN FREE",
-    addressLine1: " ul. Curie-Skłodowskiej 9A,",
+    addressLine1: "ul. Curie-Skłodowskiej 9A,",
     addressLine2: "58-540 Karpacz",
     country: "Polska",
     city: "Karpacz",
@@ -602,7 +602,7 @@ export const MarkerData = [
   {
     id: 62,
     name: "Restauracja Meritum w Hilton Garden Inn Radom",
-    addressLine1: " ul. Jana Kilińskiego 14,",
+    addressLine1: "ul. Jana Kilińskiego 14,",
     addressLine2: "26-610 Radom",
     country: "Polska",
     city: "Radom",
@@ -612,7 +612,7 @@ export const MarkerData = [
   {
     id: 63,
     name: "Hola Tapas",
-    addressLine1: " Ul. Piwna 50/51,",
+    addressLine1: "ul. Piwna 50/51,",
     addressLine2: "80-831 Gdańsk",
     country: "Polska",
     city: "Gdańsk",
