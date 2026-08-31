@@ -185,11 +185,11 @@ export const breakfastsRecipesData = [
       id: 16,
       href: "https://www.instagram.com/p/DcrHCpQRrjk/",
       imgSrc: kanapkiBezGlutenuDoSzkoly,
-      altText: "Kanapka BLT, z kurczakiem, szynką i serem, z pastą z tunczyka, jajek, oliwek i szczypiorku",
+      altText: "Kanapka BLT; kanapka z kurczakiem, szynką i serem; kanapka z pastą z tunczyka, jajek, oliwek i szczypiorku",
       tags: ["śniadanie", "chleb", "bułka", "kanapki"],
       label: "Śniadanie",
       labelClass: "breakfast-label",
       description:
-        "Kanapka BLT 🍅🥬, z kurczakiem, szynką i serem 🧀🍗, z pastą z tunczyka, jajek, oliwek i szczypiorku 🐠🥚🫒",
+        "Kanapka BLT 🍅🥬; kanapka z kurczakiem, szynką i serem 🧀🍗; kanapka z pastą z tunczyka, jajek, oliwek i szczypiorku 🐠🥚🫒",
     },
   ];
