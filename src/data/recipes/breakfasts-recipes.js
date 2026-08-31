@@ -13,6 +13,7 @@ import bezglutenowyBajgiel from "./../../../public/img/recipes/breakfasts/012_be
 import zapiekaneBulkiSniadaniowe from "./../../../public/img/recipes/breakfasts/013_zapiekane_bulki_sniadaniowe.jpg";
 import bezglutenowyChleb from "./../../../public/img/recipes/breakfasts/014_bezglutenowy_chleb.jpg";
 import bezglutenoweBulkiOwsiane from "./../../../public/img/recipes/breakfasts/015_bezglutenowe_bulki_owsiane.jpg";
+import kanapkiBezGlutenuDoSzkoly from "./../../../public/img/recipes/breakfasts/016_kanapki_bez_glutenu_do_szkoly.jpg";
 
 export const breakfastsRecipesData = [
     {
@@ -179,5 +180,16 @@ export const breakfastsRecipesData = [
       labelClass: "breakfast-label",
       description:
         "Bezglutenowe bułki owsiane z mieszanki do wypieku od Moncana",
+    },
+    {
+      id: 16,
+      href: "https://www.instagram.com/p/DcrHCpQRrjk/",
+      imgSrc: kanapkiBezGlutenuDoSzkoly,
+      altText: "kanapka BLT, z kurczakiem, szynką i serem, z pastą z tunczyka, jajek, oliwek i szczypiorku",
+      tags: ["śniadanie", "chleb", "bułka", "kanapki"],
+      label: "Śniadanie",
+      labelClass: "breakfast-label",
+      description:
+        "kanapka BLT 🍅🥬, z kurczakiem, szynką i serem 🧀🍗, z pastą z tunczyka, jajek, oliwek i szczypiorku 🐠🥚🫒",
     },
   ];
