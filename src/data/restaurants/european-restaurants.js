@@ -13,6 +13,7 @@ import rzymCz6 from "./../../../public/img/restaurants/europe/012_rzym_cz6.jpg";
 import gastroPodsumowanieZagranica2025 from "./../../../public/img/restaurants/europe/013_gastro_podsumowanie_2025_zagranica.jpg";
 import newFoodRzym from "./../../../public/img/restaurants/europe/014_new_food_rzym.jpg";
 import vogliaDiPizzaRzym from "./../../../public/img/restaurants/europe/015_vogliadipizza_roma.jpg";
+import pastaInCorsoCavourPrati from "./../../../public/img/restaurants/europe/016_pasta_in_corso_cavour_prati.jpg";
 
 export const  europeanRestaurantsData = [
     {
@@ -164,5 +165,15 @@ export const  europeanRestaurantsData = [
       labelClass: "europe-label",
       description:
         "Voglia di Pizza - Gluten free, Via dei Giubbonari, 33, 00186 Roma RM, Włochy",
+    },
+    {
+      id: 16,
+      href: "https://www.instagram.com/p/Dc8f2AnCErY/?img_index=1",
+      imgSrc: pastaInCorsoCavourPrati,
+      altText: "Pasta in Corso Cavour-Prati, Piazza Camillo Benso Conte di Cavour, 17/B, 00193 Roma RM, Włochy",
+      label: "Rzym",
+      labelClass: "europe-label",
+      description:
+        "Pasta in Corso Cavour-Prati, Piazza Camillo Benso Conte di Cavour, 17/B, 00193 Roma RM, Włochy",
     },
   ];
