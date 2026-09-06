@@ -41,6 +41,7 @@ import bezaTruskawkiMaliny from "./../../../public/img/recipes/desserts/040_beza
 import letnieCiastozOwocami from "./../../../public/img/recipes/desserts/041_letnie_ciasto.jpg";
 import deserChiaMonte from "./../../../public/img/recipes/desserts/042_deser_chia_monte.jpg";
 import knedleZeSliwka from "./../../../public/img/recipes/desserts/043_knedle_ze_sliwka.jpg";
+import babkaPiaskowaCytrynowa from "./../../../public/img/recipes/desserts/044_babka_piaskowa_cytrynowa.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -515,5 +516,16 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Knedle ze śliwką",
+    },
+    {
+      id: 44,
+      href: "https://www.instagram.com/p/DcbPSHLiBSb/?img_index=1",
+      imgSrc: babkaPiaskowaCytrynowa,
+      altText: "Babka piaskowa cytrynowa",
+      tags: ["deser", "cytryny", "babka piaskowa", "ciasto"],
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Babka piaskowa cytrynowa",
     },
 ];
