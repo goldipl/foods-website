@@ -14,6 +14,7 @@ import gastroPodsumowanieZagranica2025 from "./../../../public/img/restaurants/e
 import newFoodRzym from "./../../../public/img/restaurants/europe/014_new_food_rzym.jpg";
 import vogliaDiPizzaRzym from "./../../../public/img/restaurants/europe/015_vogliadipizza_roma.jpg";
 import pastaInCorsoCavourPrati from "./../../../public/img/restaurants/europe/016_pasta_in_corso_cavour_prati.jpg";
+import ilmiofornaioglutenfree from "./../../../public/img/restaurants/europe/017_ilmiofornaioglutenfree.jpg";
 
 export const  europeanRestaurantsData = [
     {
@@ -175,5 +176,15 @@ export const  europeanRestaurantsData = [
       labelClass: "europe-label",
       description:
         "Pasta in Corso Cavour-Prati, Piazza Camillo Benso Conte di Cavour, 17/B, 00193 Roma RM, Włochy",
+    },
+    {
+      id: 17,
+      href: "https://www.instagram.com/p/DdG_UJICKrU/?img_index=1",
+      imgSrc: ilmiofornaioglutenfree,
+      altText: "Il Mio Fornaio GlutenFree - Ostia, Via dei Bragozzi, 4, 00121 Lido di Ostia RM, Włochy",
+      label: "Rzym",
+      labelClass: "europe-label",
+      description:
+        "Il Mio Fornaio GlutenFree - Ostia, Via dei Bragozzi, 4, 00121 Lido di Ostia RM, Włochy",
     },
   ];

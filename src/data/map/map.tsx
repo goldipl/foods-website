@@ -639,4 +639,14 @@ export const MarkerData = [
     link: "https://www.instagram.com/p/Dc8f2AnCErY/?img_index=1",
     position: [41.90570417733088, 12.468870549005995] as [number, number],
   },
+  {
+    id: 66,
+    name: "Il Mio Fornaio GlutenFree - Ostia",
+    addressLine1: "Via dei Bragozzi, 4,",
+    addressLine2: "00121 Lido di Ostia RM, Włochy",
+    country: "Włochy",
+    city: "Rzym",
+    link: "https://www.instagram.com/p/DdG_UJICKrU/?img_index=1",
+    position: [41.73344108317369, 12.274283205556477] as [number, number],
+  },
 ];
