@@ -20,6 +20,7 @@ import coSlyszyCeliakVsRzeczywistosc from "./../../../public/img/events/019_co_s
 import glutenOffFestival2026 from "./../../../public/img/events/020_gluten_off_festival_2026.jpg";
 import coOstatnioJadlam from "./../../../public/img/events/021_co_ostatnio_jadlam.jpg";
 import naszSlub from "./../../../public/img/events/022_nasz_slub.jpg";
+import slubWeseleCeliaczki from "./../../../public/img/events/023_slub_wesele_celiaczki.jpg";
 
 export const eventsData = [
     {
@@ -241,5 +242,15 @@ export const eventsData = [
       labelClass: "breakfast-label",
       description:
         "Nasz dzień 15.08.2026 🌻🤍🌻 i bezglutenowe jedzenie na weselu",
+    },
+    {
+      id: 23,
+      href: "https://www.instagram.com/p/DdOxT0BiIv1/?img_index=1",
+      imgSrc: slubWeseleCeliaczki,
+      altText: "Ślub i wesele celiaczki. Jak zorganizować wesele, jeśli masz celiakię?",
+      label: "Wesele",
+      labelClass: "breakfast-label",
+      description:
+        "Ślub i wesele celiaczki. Jak zorganizować wesele, jeśli masz celiakię?",
     },
   ];
