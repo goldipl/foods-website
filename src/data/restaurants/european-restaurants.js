@@ -15,6 +15,7 @@ import newFoodRzym from "./../../../public/img/restaurants/europe/014_new_food_r
 import vogliaDiPizzaRzym from "./../../../public/img/restaurants/europe/015_vogliadipizza_roma.jpg";
 import pastaInCorsoCavourPrati from "./../../../public/img/restaurants/europe/016_pasta_in_corso_cavour_prati.jpg";
 import ilmiofornaioglutenfree from "./../../../public/img/restaurants/europe/017_ilmiofornaioglutenfree.jpg";
+import rosemaryterraesapori from "./../../../public/img/restaurants/europe/018_rosemaryterraesapori.jpg";
 
 export const  europeanRestaurantsData = [
     {
@@ -186,5 +187,15 @@ export const  europeanRestaurantsData = [
       labelClass: "europe-label",
       description:
         "Il Mio Fornaio GlutenFree - Ostia, Via dei Bragozzi, 4, 00121 Lido di Ostia RM, Włochy",
+    },
+    {
+      id: 18,
+      href: "https://www.instagram.com/p/DdZMeymCCw2/?img_index=1",
+      imgSrc: rosemaryterraesapori,
+      altText: "Gdzie zjeść bezglutenowe śniadania w Rzymie? Rosemary terra e sapori, V. Modena, 15, 00184 Roma RM, Włochy",
+      label: "Rzym",
+      labelClass: "europe-label",
+      description:
+        "Gdzie zjeść bezglutenowe śniadania w Rzymie? Rosemary terra e sapori, V. Modena, 15, 00184 Roma RM, Włochy",
     },
   ];

@@ -649,4 +649,14 @@ export const MarkerData = [
     link: "https://www.instagram.com/p/DdG_UJICKrU/?img_index=1",
     position: [41.73344108317369, 12.274283205556477] as [number, number],
   },
+  {
+    id: 67,
+    name: "Rosemary terra e sapori",
+    addressLine1: "V. Modena, 15,",
+    addressLine2: "00184 Roma RM, Włochy,",
+    country: "Włochy",
+    city: "Rzym",
+    link: "https://www.instagram.com/p/DdZMeymCCw2/?img_index=1",
+    position: [41.90200088617893, 12.49406784548353] as [number, number],
+  },
 ];
