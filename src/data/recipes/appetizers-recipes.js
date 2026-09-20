@@ -17,6 +17,7 @@ import bezglutenowaPinsa from "./../../../public/img/recipes/appetizers/016_bezg
 import SalatkazMango from "./../../../public/img/recipes/appetizers/017_salatka_z_mango.jpg";
 import letnieHotDogi from "./../../../public/img/recipes/appetizers/018_hot_dogi.jpg";
 import bruschettaPomidorki from "./../../../public/img/recipes/appetizers/019_bruschetta_z_pomidorami.jpg";
+import domowaGranola from "./../../../public/img/recipes/appetizers/020_domowa_granola.jpg";
 
 export const appetizersRecipesData = [
     {
@@ -227,5 +228,16 @@ export const appetizersRecipesData = [
         labelClass: "appetizer-label",
         description: 
             "Bruschetta z pomidorkami i oliwą",
+    },
+    {
+        id: 20,
+        href: "https://www.instagram.com/p/DdgkTJVowoG/",
+        imgSrc: domowaGranola,
+        altText: "Domowa bezglutenowa granola z orzechami, wiórkami koksowymi, pestkami dyni, nasionami chia i rodzynkami",
+        tags: ["przystawka"],
+        label: "Przystawka",
+        labelClass: "appetizer-label",
+        description: 
+            "Domowa bezglutenowa granola 🥣 z orzechami, wiórkami koksowymi, pestkami dyni, nasionami chia i rodzynkami",
     },
   ];
