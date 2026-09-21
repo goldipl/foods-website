@@ -235,7 +235,7 @@ export const appetizersRecipesData = [
         imgSrc: domowaGranola,
         altText: "Domowa bezglutenowa granola z orzechami, wiórkami koksowymi, pestkami dyni, nasionami chia, syropem z agawy, masłem orzechowym, gorzką czekoladą i rodzynkami",
         tags: ["przystawka"],
-        label: "Przystawka",
+        label: "Przekąska",
         labelClass: "appetizer-label",
         description: 
             "Domowa bezglutenowa granola 🥣 z orzechami, wiórkami koksowymi, pestkami dyni, nasionami chia, syropem z agawy, masłem orzechowym, gorzką czekoladą i rodzynkami",
