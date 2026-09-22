@@ -148,8 +148,6 @@ const ShoppingBasketPlanner = () => {
           >
             <option>Lidl</option>
             <option>Biedronka</option>
-            <option>Carrefour</option>
-            <option>Kaufland</option>
             <option>Dowolny sklep</option>
           </select>
         </label>
