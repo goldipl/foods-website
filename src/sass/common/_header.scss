@@ -63,18 +63,27 @@ body:has(.header-main-container.is-fixed) {
       margin: 0 auto;
       z-index: 1;
 
+      @media (min-width: 1181px) {
+        padding: 0 18px;
+      }
+
       &__logo {
+        flex: 0 0 270px;
+
         a {
           text-decoration: none;
           img {
-            width: 320px;
+            display: block;
+            width: 270px;
             height: auto;
-            margin-top: 6px;
           }
         }
       }
 
       &__nav {
+        flex: 1 1 auto;
+        min-width: 0;
+
         ul * {
           user-select: none;
         }
@@ -83,10 +92,17 @@ body:has(.header-main-container.is-fixed) {
           display: flex;
           flex-direction: row;
           align-items: center;
+          justify-content: flex-end;
+          gap: 2px;
           list-style: none;
 
           li {
             position: relative;
+
+            > a,
+            > span {
+              white-space: nowrap;
+            }
 
             &.header-social-link {
               display: inline-flex;

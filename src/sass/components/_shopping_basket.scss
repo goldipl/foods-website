@@ -1,0 +1,340 @@
+.basket-planner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 74px 24px 110px;
+  color: $color-green05;
+
+  &__intro {
+    max-width: 680px;
+    margin-bottom: 38px;
+
+    h1 {
+      margin: 12px 0 14px;
+      color: $color-green05;
+      font-size: clamp(2.2rem, 4vw, 4.2rem);
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+
+    p {
+      max-width: 570px;
+      margin: 0;
+      color: #53625a;
+      font-size: 1.08rem;
+      line-height: 1.65;
+    }
+  }
+
+  &__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: $color-green02;
+    font-size: 0.73rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1fr auto;
+    gap: 14px;
+    align-items: end;
+    padding: 24px;
+    background: $color-green05;
+    box-shadow: 0 16px 34px rgba(12, 71, 46, 0.16);
+
+    label {
+      display: grid;
+      gap: 8px;
+      color: $color-white;
+      font-size: 0.8rem;
+      font-weight: 700;
+
+      span {
+        color: #b7d68c;
+        font-weight: 500;
+      }
+    }
+
+    select,
+    input {
+      width: 100%;
+      min-height: 48px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 0;
+      padding: 0 13px;
+      background: rgba(255, 255, 255, 0.1);
+      color: $color-white;
+      font: inherit;
+      font-size: 0.95rem;
+      outline: 0;
+    }
+
+    option {
+      color: $color-green05;
+    }
+
+    button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 48px;
+      border: 0;
+      padding: 0 20px;
+      background: $color-green01;
+      color: $color-green05;
+      cursor: pointer;
+      font: inherit;
+      font-weight: 800;
+      white-space: nowrap;
+      transition:
+        background 180ms ease,
+        transform 180ms ease;
+
+      &:hover {
+        background: #a7dc42;
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  &__results {
+    margin-top: 52px;
+    animation: basket-reveal 500ms ease both;
+  }
+
+  &__summary {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 28px;
+    border-bottom: 1px solid #d8e1d9;
+    padding-bottom: 25px;
+
+    h2 {
+      margin: 8px 0 7px;
+      color: $color-green05;
+      font-size: clamp(1.7rem, 3vw, 2.6rem);
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0;
+      color: #66736c;
+      font-size: 0.9rem;
+    }
+  }
+
+  &__total {
+    min-width: 170px;
+    text-align: right;
+
+    strong,
+    span {
+      display: block;
+    }
+
+    strong {
+      color: $color-green02;
+      font-size: 1.55rem;
+    }
+
+    span {
+      margin-top: 4px;
+      color: #718078;
+      font-size: 0.8rem;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+    gap: 64px;
+    padding-top: 30px;
+  }
+
+  &__list {
+    h3,
+    aside h3 {
+      margin: 0 0 16px;
+      color: $color-green05;
+      font-size: 1.25rem;
+    }
+
+    h3 span {
+      float: right;
+      color: #85948b;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+  }
+
+  &__recipes {
+    align-self: start;
+    border-left: 1px solid #d8e1d9;
+    padding-left: 34px;
+
+    h3 {
+      margin: 9px 0 18px;
+      font-size: 1.5rem;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      border-top: 1px solid #d8e1d9;
+      padding: 16px 0;
+      color: $color-green05;
+      font-size: 0.92rem;
+      line-height: 1.35;
+      text-decoration: none;
+      transition:
+        color 180ms ease,
+        padding 180ms ease;
+
+      &:hover {
+        padding-left: 5px;
+        color: $color-green02;
+      }
+    }
+
+    .basket-planner__all-recipes {
+      justify-content: flex-start;
+      border-top: 0;
+      color: $color-green02;
+      font-weight: 800;
+    }
+  }
+}
+
+.basket-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 14px;
+  border: 0;
+  border-top: 1px solid #d8e1d9;
+  padding: 15px 0;
+  background: transparent;
+  color: $color-green05;
+  cursor: pointer;
+  text-align: left;
+
+  &__check {
+    display: grid;
+    flex: 0 0 23px;
+    width: 23px;
+    height: 23px;
+    place-items: center;
+    border: 1px solid #9aaa9f;
+    color: $color-white;
+    font-size: 0.9rem;
+  }
+
+  &__name {
+    display: grid;
+    gap: 4px;
+    flex: 1;
+
+    strong {
+      font-size: 0.98rem;
+    }
+
+    small {
+      color: #7a8981;
+      font-size: 0.76rem;
+    }
+  }
+
+  &__price {
+    color: #718078;
+    font-size: 0.82rem;
+  }
+
+  &.is-checked {
+    .basket-item__check {
+      border-color: $color-green02;
+      background: $color-green02;
+    }
+
+    .basket-item__name {
+      opacity: 0.5;
+      text-decoration: line-through;
+    }
+  }
+}
+
+@keyframes basket-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .basket-planner {
+    &__form {
+      grid-template-columns: repeat(2, 1fr);
+
+      button {
+        grid-column: span 2;
+      }
+    }
+
+    &__content {
+      grid-template-columns: 1fr;
+      gap: 42px;
+    }
+
+    &__recipes {
+      border-top: 1px solid #d8e1d9;
+      border-left: 0;
+      padding: 28px 0 0;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .basket-planner {
+    padding: 52px 18px 80px;
+
+    &__intro h1 {
+      font-size: 2.45rem;
+    }
+
+    &__form {
+      grid-template-columns: 1fr;
+      padding: 18px;
+
+      button {
+        grid-column: auto;
+      }
+    }
+
+    &__summary {
+      display: block;
+    }
+
+    &__total {
+      margin-top: 20px;
+      text-align: left;
+    }
+  }
+
+  .basket-item {
+    align-items: flex-start;
+
+    &__price {
+      max-width: 65px;
+      text-align: right;
+    }
+  }
+}

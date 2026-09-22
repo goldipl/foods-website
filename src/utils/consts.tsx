@@ -84,7 +84,14 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
       { label: "Obiady", href: "/#obiady" },
       { label: "Desery", href: "/#desery" },
       { label: "Przystawki / Przekąski / Sałatki", href: "/#przystawki" },
+    ],
+  },
+  {
+    label: "Narzędzia",
+    children: [
+      { label: "Koszyk zakupowy", href: "/koszyk-zakupowy" },
       { label: "Wyszukiwarka przepisów", href: "/szukaj-przepisow" },
+      { label: "Mapa miejsc bezglutenowych", href: "/bezglutenowe-miejsca" },
     ],
   },
   {
@@ -118,7 +125,6 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
           { label: "Karpacz", href: "/#hotele-i-pensjonaty" },
         ],
       },
-      { label: "Mapa miejsc bezglutenowych", href: "/bezglutenowe-miejsca" },
     ],
   },
   {
@@ -161,9 +167,14 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
       },
     ],
   },
-  { label: "Artykuły", href: "/artykuly" },
-  { label: "O mnie", href: "/#o-mnie" },
-  { label: "Kontakt", href: "/#kontakt", className: "contact" },
+  {
+    label: "O stronie",
+    children: [
+      { label: "Artykuły", href: "/artykuly" },
+      { label: "O mnie", href: "/#o-mnie" },
+      { label: "Kontakt", href: "/#kontakt", className: "contact" },
+    ],
+  },
 ];
 
 export const HEADER_SOCIAL_LINKS: HeaderSocialLink[] = [
