@@ -3,7 +3,6 @@
   margin: 0 auto;
   padding: 74px 24px 110px;
   color: $color-green05;
-  border-radius: 16px;
 
   &__intro {
     max-width: 680px;
@@ -42,6 +41,7 @@
     gap: 14px;
     align-items: end;
     padding: 24px;
+    border-radius: 16px;
     background: $color-green05;
     box-shadow: 0 16px 34px rgba(12, 71, 46, 0.16);
 
