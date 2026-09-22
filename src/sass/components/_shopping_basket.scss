@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 74px 24px 110px;
   color: $color-green05;
+  border-radius: 16px;
 
   &__intro {
     max-width: 680px;
@@ -69,6 +70,7 @@
       font: inherit;
       font-size: 0.95rem;
       outline: 0;
+      border-radius: 8px;
     }
 
     option {
@@ -83,6 +85,7 @@
       min-height: 48px;
       border: 0;
       padding: 0 20px;
+      border-radius: 8px;
       background: $color-green01;
       color: $color-green05;
       cursor: pointer;
