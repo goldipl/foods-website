@@ -20,8 +20,12 @@ import CeliacDiseaseBasicInfoSection from "@/components/main-page/CeliacDiseaseB
 import CeliacDiseaseWhatsNextSection from "@/components/main-page/CeliacDiseaseWhatsNextSection";
 import VideoSection from "@/components/main-page/VideoSection";
 import MapSection from "@/components/main-page/MapSection";
+import FeatureAnnouncementModal from "@/components/common/FeatureAnnouncementModal";
+import { useState } from "react";
 
 const index = () => {
+  const [isFeatureModalOpen, setIsFeatureModalOpen] = useState(true);
+
   return (
     <>
       <Head>
@@ -92,6 +96,11 @@ const index = () => {
       <footer>
         <Footer />
       </footer>
+      {isFeatureModalOpen && (
+        <FeatureAnnouncementModal
+          onClose={() => setIsFeatureModalOpen(false)}
+        />
+      )}
     </>
   );
 };
