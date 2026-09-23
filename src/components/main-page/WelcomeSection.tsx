@@ -28,10 +28,10 @@ const WelcomeSection = () => {
               sytuacji pomóc.
             </p>
             <p>
-              Nazywam się <strong>Karolina Wontorska</strong>. Od dziecka zmagam
-              się z chorobami autoimmunologicznymi. Najpierw zdiagnozowano u
-              mnie łysienie plackowate, potem Hashimoto, a w czerwcu 2023 roku
-              celiakię.
+              Nazywam się <strong>Karolina Wontorska-Godlewska</strong>. Od
+              dziecka zmagam się z chorobami autoimmunologicznymi. Najpierw
+              zdiagnozowano u mnie łysienie plackowate, potem Hashimoto, a w
+              czerwcu 2023 roku celiakię.
             </p>
             <p>
               Czy był to dla mnie szok? Tak, ale jednocześnie ulga, że po roku

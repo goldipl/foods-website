@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "celiakia",
     "bez cukru",
     "bez nabiału",
-    "Karolina Wontorska",
+    "Karolina Wontorska-Godlewska",
     "bezglutenowe",
     "gluten free",
     "przepisy bez glutenu",

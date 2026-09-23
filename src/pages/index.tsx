@@ -32,7 +32,7 @@ const index = () => {
         />
         <meta
           name="keywords"
-          content="przepisy bezglutenowe, dieta bezglutenowa, celiakia, bez cukru, bez nabiału, Karolina Wontorska, bezglutenowe, gluten free, przepisy bez glutenu, zdrowe jedzenie"
+          content="przepisy bezglutenowe, dieta bezglutenowa, celiakia, bez cukru, bez nabiału, Karolina Wontorska-Godlewska, bezglutenowe, gluten free, przepisy bez glutenu, zdrowe jedzenie"
         />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="pl_PL" />

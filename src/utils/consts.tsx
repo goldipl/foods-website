@@ -415,7 +415,7 @@ export const FOOTER_LINKS = [
 
 export const BRAND_DATA = {
   description:
-    "Nazywam się Karolina Wontorska i zapraszam Cię do mojego bezglutenowego świata.",
+    "Nazywam się Karolina Wontorska-Godlewska i zapraszam Cię do mojego bezglutenowego świata.",
   copy: "@BezglutenowaKarola",
   author: "mgodlewskidev.pl",
   authorHref: "https://mgodlewskidev.pl/",

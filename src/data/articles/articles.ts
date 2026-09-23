@@ -116,7 +116,7 @@ export const articlesData: ArticleItem[] = [
       "Hotel Crocus w Zakopanem to 4-gwiazdkowy hotel z basenem, SPA i restauracją Vernus oferującą certyfikowane menu bezglutenowe. Blisko Krupówek, idealny dla rodzin, par i osób z celiakią.",
     image: "/img/hotels/001_hotel_crocus_zakopane.jpg",
     category: "Podróże",
-    author: "Karolina Wontorska",
+    author: "Karolina Wontorska-Godlewska",
     date: "27.11.2025",
     content: [
       "Hotel Crocus**** w Zakopanem to czterogwiazdkowy obiekt w podhalańskim stylu, położony w centrum miasta przy ulicy Tytusa Chałubińskiego 40. Zaledwie 700 m od Krupówek i w kierunku Kuźnic, hotel łączy komfortowe pokoje z bogatą strefą SPA i basenem.",
@@ -151,7 +151,7 @@ export const articlesData: ArticleItem[] = [
       "Pełny przewodnik po celiakii: charakterystyka choroby trzewnej, objawy, gluten i metody leczenia. Poznaj podstawowe informacje o tej chorobie autoimmunologicznej.",
     image: "/img/articles/article-celiac.jpg",
     category: "Celiakia",
-    author: "Karolina Wontorska",
+    author: "Karolina Wontorska-Godlewska",
     date: "15.05.2026",
     content: [
       "Celiakia, inaczej zwana chorobą trzewną, ma podłoże genetyczne i zaliczana jest do grupy chorób autoimmunologicznych. W układzie odpornościowym osoby chorej, po spożyciu glutenu dochodzi do niepożądanej reakcji immunologicznej. Mówiąc najprościej, reakcja ta jest skierowana przeciwko własnym tkankom organizmu chorego.",
@@ -179,7 +179,7 @@ export const articlesData: ArticleItem[] = [
       "Przewodnik dla początkujących: czym jest celiakia, jak rozpoznać gluten i jak bezpiecznie rozpocząć dietę bezglutenową.",
     image: "/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.jpg",
     category: "Celiakia",
-    author: "Karolina Wontorska",
+    author: "Karolina Wontorska-Godlewska",
     date: "18.05.2026",
     content: [
       "Celiakia to choroba autoimmunologiczna, w której spożycie glutenu uruchamia reakcję odpornościową wewnątrz organizmu. Największe szkody powstają w jelicie cienkim, dlatego szybka zmiana diety jest kluczowa dla zdrowia.",
@@ -204,7 +204,7 @@ export const articlesData: ArticleItem[] = [
       "Przegląd najlepszych restauracji i hoteli bezglutenowych oraz praktyczne wskazówki na wyjazdach.",
     image: "/img/restaurants/poland/001_saska_sushi.jpg",
     category: "Podróże",
-    author: "Karolina Wontorska",
+    author: "Karolina Wontorska-Godlewska",
     date: "20.05.2026",
     content: [
       "Podróżując, warto wcześniej sprawdzić ofertę restauracji i hoteli pod kątem bezglutenowych opcji.",
@@ -280,7 +280,7 @@ export const articlesData: ArticleItem[] = [
       "Pomysły na szybkie, zdrowe i sycące śniadania bez glutenu, które ułatwią codzienne poranki.",
     image: "/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.jpg",
     category: "Kuchnia",
-    author: "Karolina Wontorska",
+    author: "Karolina Wontorska-Godlewska",
     date: "27.05.2026",
     content: [
       "Śniadanie jest podstawą dobrego dnia, szczególnie na diecie bezglutenowej. Warto mieć kilka gotowych pomysłów na szybkie posiłki.",
@@ -350,7 +350,7 @@ export const articlesData: ArticleItem[] = [
       "Naucz się rozpoznawać ukryte źródła glutenu i wybierać produkty bezpieczne dla celiakii.",
     image: "/img/articles/article-reading-labels.jpg",
     category: "Porady",
-    author: "Karolina Wontorska",
+    author: "Karolina Wontorska-Godlewska",
     date: "28.05.2026",
     content: [
       "Etykiety potrafią być mylące, ale kilka prostych zasad pozwoli Ci odczytać skład i potencjalne zagrożenia glutenowe.",
@@ -374,7 +374,7 @@ export const articlesData: ArticleItem[] = [
       "Przepis na prosty, pełnowartościowy bezglutenowy obiad z wykorzystaniem popularnych składników.",
     image: "/img/recipes/dinners/016_bezglutenowy_burger_z_kimchi.jpg",
     category: "Kuchnia",
-    author: "Karolina Wontorska",
+    author: "Karolina Wontorska-Godlewska",
     date: "30.05.2026",
     content: [
       "Szybki obiad bez glutenu może być smaczny i odżywczy. Kluczem jest wykorzystanie naturalnych składników i prostych zamienników. Poniżej znajdziesz kilka moich ulubionych przepisów, które sprawdzą się doskonale w każdy dzień tygodnia!",
@@ -444,7 +444,7 @@ export const articlesData: ArticleItem[] = [
       "Villa Karpacz Gluten Free w Karpaczu to pensjonat z wyżywieniem i ofertą dostosowaną do diety bezglutenowej. Komfortowe pokoje, regionalne smaki i bliskość szlaków tworzą idealne warunki na relaks w Karkonoszach.",
     image: "/img/hotels/002_villa_karpacz_bezglutenu.jpg",
     category: "Podróże",
-    author: "Karolina Wontorska",
+    author: "Karolina Wontorska-Godlewska",
     date: "02.06.2026",
     content: [
       "Villa Karpacz Gluten Free to kameralny pensjonat w samym sercu Karkonoszy, przy ul. Curie-Skłodowskiej 9A. Miejsce przyciąga wygodą, nowoczesnym wystrojem i opcją pełnego wyżywienia, dzięki czemu goście mogą skupić się na wypoczynku zamiast na gotowaniu.",
@@ -477,7 +477,7 @@ export const articlesData: ArticleItem[] = [
       "Bezglutenowe sałatki z naturalnymi składnikami. Pomysły na lekkie i smaczne kompozycje, które możesz wykorzystać jako inspirację dla własnych przepisów.",
     image: "/img/recipes/appetizers/015_salatka_z_pieczonym_ryzem.jpg",
     category: "Kuchnia",
-    author: "Karolina Wontorska",
+    author: "Karolina Wontorska-Godlewska",
     date: "07.06.2026",
     content: [
       "Sałatki bezglutenowe mogą być jednocześnie lekkie i sycące. Wystarczy postawić na dobrą bazę, świeże warzywa oraz dodatki, które nadają charakter i teksturę każdemu daniu.",
@@ -516,7 +516,7 @@ export const articlesData: ArticleItem[] = [
       "Przewodnik po burgerach bezglutenowych: jak łączyć lekkie bułki, wyraziste dodatki i pewność, że każda porcja jest bezpieczna dla osób z celiakią.",
     image: "/img/recipes/dinners/024_burger_z_udzcem_kurczaka.jpg",
     category: "Kuchnia",
-    author: "Karolina Wontorska",
+    author: "Karolina Wontorska-Godlewska",
     date: "11.06.2026",
     content: [
       "Bezglutenowy burger może być tak samo soczysty i aromatyczny jak klasyczny, jeśli postawisz na dobre składniki i przemyślane dodatki.",
@@ -565,7 +565,7 @@ export const articlesData: ArticleItem[] = [
       "Poznaj inspiracje na dekadenckie i domowe desery bezglutenowe, które możesz przygotować na weekend, spotkanie z przyjaciółmi lub po prostu na słodki relaks.",
     image: "/img/recipes/desserts/027_brownie.jpg",
     category: "Desery",
-    author: "Karolina Wontorska",
+    author: "Karolina Wontorska-Godlewska",
     date: "18.06.2026",
     content: dessertsArticleContent,
     highlights: [
@@ -585,7 +585,7 @@ export const articlesData: ArticleItem[] = [
       "Planujesz wyjście do restauracji w Krakowie? Poznaj miejsca z bezglutenowymi opcjami, które warto mieć na swojej kulinarnej mapie.",
     image: "/img/restaurants/poland/038_bezglutenowy_krakow.jpg",
     category: "Restauracje",
-    author: "Karolina Wontorska",
+    author: "Karolina Wontorska-Godlewska",
     date: "01.08.2026",
     content: [
       "Kraków to jedno z tych miast, w których osoby na diecie bezglutenowej mogą znaleźć coraz więcej ciekawych adresów. Wśród zapisanych miejsc są zarówno restauracje z kuchnią azjatycką, jak i lokale oferujące klasyczne dania, desery oraz szybkie przekąski.",
