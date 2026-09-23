@@ -1,19 +1,19 @@
 .basket-planner {
-  max-width: 1180px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 74px 24px 110px;
+  padding: 44px 18px 110px;
   color: $color-green05;
 
   &__intro {
-    max-width: 680px;
     margin-bottom: 38px;
 
     h1 {
       margin: 12px 0 14px;
       color: $color-green05;
-      font-size: clamp(2.2rem, 4vw, 4.2rem);
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
       line-height: 0.98;
       letter-spacing: 0;
+      max-width: 680px;
     }
 
     p {
@@ -307,10 +307,14 @@
 
 @media (max-width: 560px) {
   .basket-planner {
-    padding: 52px 18px 80px;
+    padding: 24px 18px 80px;
 
     &__intro h1 {
-      font-size: 2.45rem;
+      font-size: 2rem;
+    }
+
+    &__intro p {
+      font-size: 0.95rem;
     }
 
     &__form {

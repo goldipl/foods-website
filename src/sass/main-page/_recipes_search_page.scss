@@ -3,15 +3,21 @@
     width: 100%;
     max-width: 1280px;
     margin: 0px auto;
-    padding-top: 24px;
+    padding-top: 44px;
     padding-bottom: 48px;
     @media (max-width: 991px) {
       padding: 16px 0;
     }
-    h1 {
-      margin-bottom: 8px;
-      @media (min-width: 992px) {
-        margin: 0px 16px 8px;
+    .section-title {
+      margin: 0 16px 14px;
+
+      h1 {
+        margin: 12px 0 14px;
+        color: $color-green05;
+        font-size: clamp(2.2rem, 4vw, 3.5rem);
+        line-height: 0.98;
+        letter-spacing: 0;
+        max-width: 680px;
       }
     }
 
@@ -19,14 +25,27 @@
       text-align: left;
       color: $color-black02;
       @media (min-width: 992px) {
-        margin: 0px 16px 16px;
+        margin: 0 16px 16px;
       }
     }
-    .section-title,
     .section-desc {
       @media (max-width: 991px) {
         margin: 0 16px;
       }
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  #recipes-search-page .recipes-wrapper {
+    padding-top: 24px;
+
+    .section-title h1 {
+      font-size: 2rem;
+    }
+
+    .lead {
+      font-size: 0.95rem;
     }
   }
 }
