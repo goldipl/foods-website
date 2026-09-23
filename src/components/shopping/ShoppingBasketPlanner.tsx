@@ -15,40 +15,103 @@ type Recipe = {
 
 type BasketItem = {
   name: string;
-  amount: string;
-  price: number;
+  quantityPerPersonPerDay: number;
+  packageSize: number;
+  unit: "g" | "szt." | "ml";
+  packageLabel: string;
+  packagePrice: number;
   category: string;
 };
 
 const baseBasket: BasketItem[] = [
   {
     name: "Chleb bezglutenowy",
-    amount: "1 bochenek",
-    price: 12,
+    quantityPerPersonPerDay: 0.25,
+    packageSize: 1,
+    unit: "szt.",
+    packageLabel: "bochenek",
+    packagePrice: 12,
     category: "Śniadania",
   },
-  { name: "Jajka", amount: "10 szt.", price: 15, category: "Śniadania" },
-  { name: "Kurczak", amount: "około 600 g", price: 26, category: "Obiady" },
-  { name: "Pomidory", amount: "6 szt.", price: 10, category: "Warzywa" },
-  { name: "Mozzarella", amount: "2 kulki", price: 12, category: "Nabiał" },
-  { name: "Ryż", amount: "1 opakowanie", price: 8, category: "Obiady" },
-  { name: "Jogurt naturalny", amount: "2 szt.", price: 7, category: "Nabiał" },
+  {
+    name: "Jajka",
+    quantityPerPersonPerDay: 0.7,
+    packageSize: 10,
+    unit: "szt.",
+    packageLabel: "opakowanie 10 szt.",
+    packagePrice: 15,
+    category: "Śniadania",
+  },
+  {
+    name: "Kurczak",
+    quantityPerPersonPerDay: 100,
+    packageSize: 600,
+    unit: "g",
+    packageLabel: "opakowanie 600 g",
+    packagePrice: 26,
+    category: "Obiady",
+  },
+  {
+    name: "Pomidory",
+    quantityPerPersonPerDay: 0.5,
+    packageSize: 6,
+    unit: "szt.",
+    packageLabel: "opakowanie 6 szt.",
+    packagePrice: 10,
+    category: "Warzywa",
+  },
+  {
+    name: "Mozzarella",
+    quantityPerPersonPerDay: 0.17,
+    packageSize: 2,
+    unit: "szt.",
+    packageLabel: "opakowanie 2 kulek",
+    packagePrice: 12,
+    category: "Nabiał",
+  },
+  {
+    name: "Ryż",
+    quantityPerPersonPerDay: 80,
+    packageSize: 400,
+    unit: "g",
+    packageLabel: "opakowanie 400 g",
+    packagePrice: 8,
+    category: "Obiady",
+  },
+  {
+    name: "Jogurt naturalny",
+    quantityPerPersonPerDay: 0.33,
+    packageSize: 2,
+    unit: "szt.",
+    packageLabel: "opakowanie 2 szt.",
+    packagePrice: 7,
+    category: "Nabiał",
+  },
   {
     name: "Przekąska bezglutenowa",
-    amount: "1 opakowanie",
-    price: 9,
+    quantityPerPersonPerDay: 0.33,
+    packageSize: 1,
+    unit: "szt.",
+    packageLabel: "opakowanie",
+    packagePrice: 9,
     category: "Przekąski",
   },
   {
     name: "Warzywa do sałatki",
-    amount: "1 zestaw",
-    price: 12,
+    quantityPerPersonPerDay: 0.33,
+    packageSize: 1,
+    unit: "szt.",
+    packageLabel: "zestaw",
+    packagePrice: 12,
     category: "Warzywa",
   },
   {
     name: "Oliwa i przyprawy",
-    amount: "zapas domowy",
-    price: 8,
+    quantityPerPersonPerDay: 0.08,
+    packageSize: 1,
+    unit: "szt.",
+    packageLabel: "zestaw",
+    packagePrice: 8,
     category: "Spiżarnia",
   },
 ];
@@ -71,40 +134,48 @@ const recipeMatches = [
   "sałatka",
 ];
 
+const packageWord = (count: number) => {
+  if (count === 1) return "opakowanie";
+  if (count >= 2 && count <= 4) return "opakowania";
+  return "opakowań";
+};
+
 const ShoppingBasketPlanner = () => {
   const [shop, setShop] = useState("Lidl");
   const [budget, setBudget] = useState("150");
   const [people, setPeople] = useState("2");
   const [days, setDays] = useState("3");
+  const [mode, setMode] = useState("standard");
   const [hasGenerated, setHasGenerated] = useState(false);
   const [checkedItems, setCheckedItems] = useState<string[]>([]);
 
   const basket = useMemo(() => {
-    const scale = Math.max(
-      0.65,
-      Math.min(1.3, ((Number(people) / 2) * Number(days)) / 3),
-    );
-    const target = Number(budget) || 150;
-    const itemCount =
-      target < 100
-        ? 7
-        : target < 140
-          ? 8
-          : target < 190
-            ? 10
-            : baseBasket.length;
+    const servings = Number(people) * Number(days);
+    const priceMultiplier =
+      shop === "Biedronka" ? 0.94 : shop === "Dowolny sklep" ? 1 : 1.04;
+    const modeMultiplier = mode === "economy" ? 0.85 : 1;
 
-    return baseBasket.slice(0, itemCount).map((item) => ({
-      ...item,
-      amount:
-        scale === 1
-          ? item.amount
-          : `${item.amount} (${scale > 1 ? "więcej" : "mniej"})`,
-      price: Math.round(item.price * scale),
-    }));
-  }, [budget, days, people]);
+    return baseBasket.map((item) => {
+      const requiredUnits = item.quantityPerPersonPerDay * servings;
+      const packages = Math.max(1, Math.ceil(requiredUnits / item.packageSize));
+      const quantity = packages * item.packageSize;
+
+      return {
+        ...item,
+        packages,
+        amount: `${item.unit === "g" ? quantity.toLocaleString("pl-PL") : quantity} ${item.unit}`,
+        price: Math.round(
+          item.packagePrice * packages * priceMultiplier * modeMultiplier,
+        ),
+      };
+    });
+  }, [days, mode, people, shop]);
 
   const total = basket.reduce((sum, item) => sum + item.price, 0);
+  const budgetValue = Number(budget) || 0;
+  const budgetDifference = budgetValue - total;
+  const costPerPerson = total / Number(people);
+  const costPerPersonPerDay = total / (Number(people) * Number(days));
   const selectedRecipes = useMemo(() => {
     const matchingRecipes = recipes.filter((recipe) =>
       recipe.tags?.some((tag) => recipeMatches.includes(tag.toLowerCase())),
@@ -185,6 +256,16 @@ const ShoppingBasketPlanner = () => {
             <option value="7">7 dni</option>
           </select>
         </label>
+        <label>
+          Wariant cenowy
+          <select
+            value={mode}
+            onChange={(event) => setMode(event.target.value)}
+          >
+            <option value="standard">Standardowy</option>
+            <option value="economy">Ekonomiczny</option>
+          </select>
+        </label>
         <button type="submit">
           Stwórz koszyk <FiChevronRight />
         </button>
@@ -202,10 +283,23 @@ const ShoppingBasketPlanner = () => {
                 Lista dla {people} {people === "1" ? "osoby" : "osób"}. Ceny są
                 orientacyjne i mogą różnić się między sklepami.
               </p>
+              <div className="basket-planner__stats">
+                <span>
+                  <strong>{costPerPerson.toFixed(2)} zł</strong> / osoba
+                </span>
+                <span>
+                  <strong>{costPerPersonPerDay.toFixed(2)} zł</strong> / osoba /
+                  dzień
+                </span>
+              </div>
             </div>
             <div className="basket-planner__total">
               <strong>około {total} zł</strong>
-              <span>z budżetu {budget} zł</span>
+              <span className={budgetDifference < 0 ? "is-over-budget" : ""}>
+                {budgetDifference >= 0
+                  ? `${budgetDifference.toFixed(2)} zł zostanie z budżetu`
+                  : `${Math.abs(budgetDifference).toFixed(2)} zł ponad budżet`}
+              </span>
             </div>
           </div>
 
@@ -232,7 +326,8 @@ const ShoppingBasketPlanner = () => {
                     <span className="basket-item__name">
                       <strong>{item.name}</strong>
                       <small>
-                        {item.amount} · {item.category}
+                        {item.amount} · {item.packages}{" "}
+                        {packageWord(item.packages)} · {item.category}
                       </small>
                     </span>
                     <span className="basket-item__price">
