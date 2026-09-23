@@ -208,6 +208,16 @@
       font-size: 1.5rem;
     }
 
+    a small {
+      display: block;
+      margin-bottom: 5px;
+      color: $color-green02;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
     a {
       display: flex;
       align-items: center;
@@ -235,6 +245,41 @@
       color: $color-green02;
       font-weight: 800;
     }
+  }
+
+  &__ai-image {
+    margin-bottom: 8px;
+
+    &-preview {
+      min-height: 175px;
+      border-radius: 10px;
+      background-position: center;
+      background-size: cover;
+      box-shadow: 0 10px 22px rgba(12, 71, 46, 0.12);
+    }
+
+    > span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 8px;
+      color: #849188;
+      font-size: 0.7rem;
+    }
+  }
+
+  &__regenerate {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 0;
+    padding: 8px 0;
+    background: transparent;
+    color: $color-green02;
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.78rem;
+    font-weight: 800;
   }
 }
 

@@ -1,6 +1,11 @@
 import { FormEvent, useMemo, useState } from "react";
 import Link from "next/link";
-import { FiCheck, FiChevronRight, FiShoppingBag } from "react-icons/fi";
+import {
+  FiCheck,
+  FiChevronRight,
+  FiImage,
+  FiShoppingBag,
+} from "react-icons/fi";
 import { appetizersRecipesData } from "@/data/recipes/appetizers-recipes";
 import { breakfastsRecipesData } from "@/data/recipes/breakfasts-recipes";
 import { dessertsRecipesData } from "@/data/recipes/desserts-recipes";
@@ -10,7 +15,12 @@ type Recipe = {
   id: number;
   href: string;
   description: string;
+  imgSrc?: { src: string } | string;
   tags?: string[];
+};
+
+type SuggestedMeal = Recipe & {
+  mealType: "Śniadanie" | "Obiad" | "Kolacja";
 };
 
 type BasketItem = {
@@ -114,6 +124,141 @@ const baseBasket: BasketItem[] = [
     packagePrice: 8,
     category: "Spiżarnia",
   },
+  {
+    name: "Awokado",
+    quantityPerPersonPerDay: 0.17,
+    packageSize: 2,
+    unit: "szt.",
+    packageLabel: "siatka 2 szt.",
+    packagePrice: 11,
+    category: "Warzywa",
+  },
+  {
+    name: "Papryka",
+    quantityPerPersonPerDay: 0.33,
+    packageSize: 3,
+    unit: "szt.",
+    packageLabel: "opakowanie 3 szt.",
+    packagePrice: 10,
+    category: "Warzywa",
+  },
+  {
+    name: "Cebula",
+    quantityPerPersonPerDay: 0.5,
+    packageSize: 1,
+    unit: "szt.",
+    packageLabel: "siatka",
+    packagePrice: 5,
+    category: "Warzywa",
+  },
+  {
+    name: "Czosnek",
+    quantityPerPersonPerDay: 0.08,
+    packageSize: 1,
+    unit: "szt.",
+    packageLabel: "główka",
+    packagePrice: 3,
+    category: "Warzywa",
+  },
+  {
+    name: "Marchew",
+    quantityPerPersonPerDay: 0.5,
+    packageSize: 1,
+    unit: "szt.",
+    packageLabel: "pęczek",
+    packagePrice: 5,
+    category: "Warzywa",
+  },
+  {
+    name: "Łosoś",
+    quantityPerPersonPerDay: 70,
+    packageSize: 300,
+    unit: "g",
+    packageLabel: "opakowanie 300 g",
+    packagePrice: 25,
+    category: "Ryby",
+  },
+  {
+    name: "Feta",
+    quantityPerPersonPerDay: 35,
+    packageSize: 200,
+    unit: "g",
+    packageLabel: "opakowanie 200 g",
+    packagePrice: 9,
+    category: "Nabiał",
+  },
+  {
+    name: "Ciecierzyca",
+    quantityPerPersonPerDay: 0.17,
+    packageSize: 2,
+    unit: "szt.",
+    packageLabel: "puszki 2 szt.",
+    packagePrice: 8,
+    category: "Spiżarnia",
+  },
+  {
+    name: "Mleko",
+    quantityPerPersonPerDay: 80,
+    packageSize: 1000,
+    unit: "ml",
+    packageLabel: "karton 1 l",
+    packagePrice: 4,
+    category: "Nabiał",
+  },
+  {
+    name: "Płatki owsiane bezglutenowe",
+    quantityPerPersonPerDay: 35,
+    packageSize: 500,
+    unit: "g",
+    packageLabel: "opakowanie 500 g",
+    packagePrice: 9,
+    category: "Spiżarnia",
+  },
+  {
+    name: "Mąka gryczana",
+    quantityPerPersonPerDay: 25,
+    packageSize: 500,
+    unit: "g",
+    packageLabel: "opakowanie 500 g",
+    packagePrice: 8,
+    category: "Spiżarnia",
+  },
+  {
+    name: "Makaron bezglutenowy",
+    quantityPerPersonPerDay: 45,
+    packageSize: 400,
+    unit: "g",
+    packageLabel: "opakowanie 400 g",
+    packagePrice: 9,
+    category: "Spiżarnia",
+  },
+  {
+    name: "Passata pomidorowa",
+    quantityPerPersonPerDay: 80,
+    packageSize: 500,
+    unit: "ml",
+    packageLabel: "butelka 500 ml",
+    packagePrice: 6,
+    category: "Spiżarnia",
+  },
+  {
+    name: "Banany",
+    quantityPerPersonPerDay: 0.33,
+    packageSize: 1,
+    unit: "szt.",
+    packageLabel: "kiść",
+    packagePrice: 6,
+    category: "Owoce",
+  },
+  {
+    name: "Mrożone owoce",
+    quantityPerPersonPerDay: 35,
+    packageSize: 450,
+    unit: "g",
+    packageLabel: "opakowanie 450 g",
+    packagePrice: 13,
+    category: "Owoce",
+  },
 ];
 
 const recipes: Recipe[] = [
@@ -123,15 +268,10 @@ const recipes: Recipe[] = [
   ...(dessertsRecipesData as Recipe[]),
 ];
 
-const recipeMatches = [
-  "jajka",
-  "kurczak",
-  "pomidor",
-  "ryż",
-  "mozzarella",
-  "jogurt",
-  "chleb",
-  "sałatka",
+const mealTypes: SuggestedMeal["mealType"][] = [
+  "Śniadanie",
+  "Obiad",
+  "Kolacja",
 ];
 
 const packageWord = (count: number) => {
@@ -148,6 +288,7 @@ const ShoppingBasketPlanner = () => {
   const [mode, setMode] = useState("standard");
   const [hasGenerated, setHasGenerated] = useState(false);
   const [checkedItems, setCheckedItems] = useState<string[]>([]);
+  const [imageSeed, setImageSeed] = useState(0);
 
   const basket = useMemo(() => {
     const servings = Number(people) * Number(days);
@@ -176,16 +317,40 @@ const ShoppingBasketPlanner = () => {
   const budgetDifference = budgetValue - total;
   const costPerPerson = total / Number(people);
   const costPerPersonPerDay = total / (Number(people) * Number(days));
-  const selectedRecipes = useMemo(() => {
-    const matchingRecipes = recipes.filter((recipe) =>
-      recipe.tags?.some((tag) => recipeMatches.includes(tag.toLowerCase())),
-    );
-    return matchingRecipes.slice(0, 3);
-  }, []);
+  const selectedMeals = useMemo<SuggestedMeal[]>(
+    () =>
+      mealTypes.map((mealType, index) => {
+        const mealRecipes = recipes.filter((recipe) =>
+          recipe.tags?.some((tag) =>
+            mealType === "Śniadanie"
+              ? tag.toLowerCase() === "śniadanie"
+              : mealType === "Obiad"
+                ? tag.toLowerCase() === "obiad"
+                : tag.toLowerCase() === "przystawka" ||
+                  tag.toLowerCase() === "kolacja",
+          ),
+        );
+
+        return {
+          ...(mealRecipes[index % Math.max(mealRecipes.length, 1)] ??
+            recipes[index]),
+          mealType,
+        };
+      }),
+    [],
+  );
+
+  const aiImageUrl = useMemo(() => {
+    const prompt = selectedMeals.map((meal) => meal.description).join(", ");
+    return `https://image.pollinations.ai/prompt/${encodeURIComponent(
+      `A bright editorial food photograph of a gluten-free meal plan: ${prompt}. Natural light, appetizing, overhead composition, no text`,
+    )}?width=960&height=640&nologo=true&seed=${imageSeed}`;
+  }, [imageSeed, selectedMeals]);
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setCheckedItems([]);
+    setImageSeed((seed) => seed + 1);
     setHasGenerated(true);
   };
 
@@ -339,17 +504,38 @@ const ShoppingBasketPlanner = () => {
             </div>
             <aside className="basket-planner__recipes">
               <span className="basket-planner__eyebrow">Z TEGO ZROBISZ</span>
-              <h3>Pomysły na przepisy</h3>
-              {selectedRecipes.map((recipe) => (
+              <h3>Plan dań</h3>
+              <div className="basket-planner__ai-image">
+                <div
+                  className="basket-planner__ai-image-preview"
+                  role="img"
+                  aria-label="Zdjęcie wygenerowane przez AI dla sugerowanego planu dań"
+                  style={{ backgroundImage: `url("${aiImageUrl}")` }}
+                />
+                <span>
+                  <FiImage /> Zdjęcie wygenerowane przez AI
+                </span>
+              </div>
+              {selectedMeals.map((meal) => (
                 <Link
-                  href={recipe.href}
+                  href={meal.href}
                   target="_blank"
-                  key={`${recipe.id}-${recipe.description}`}
+                  key={`${meal.mealType}-${meal.id}-${meal.description}`}
                 >
-                  <span>{recipe.description}</span>
+                  <span>
+                    <small>{meal.mealType}</small>
+                    {meal.description}
+                  </span>
                   <FiChevronRight />
                 </Link>
               ))}
+              <button
+                className="basket-planner__regenerate"
+                type="button"
+                onClick={() => setImageSeed((seed) => seed + 1)}
+              >
+                Wygeneruj inne zdjęcie <FiImage />
+              </button>
               <Link
                 className="basket-planner__all-recipes"
                 href="/szukaj-przepisow"
