@@ -165,12 +165,15 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
         label: "Bezglutenowe marki - współpraca",
         href: "/#wspolpraca",
       },
+      {
+        label: "Artykuły",
+        href: "/artykuly",
+      },
     ],
   },
   {
     label: "O stronie",
     children: [
-      { label: "Artykuły", href: "/artykuly" },
       { label: "O mnie", href: "/#o-mnie" },
       { label: "Kontakt", href: "/#kontakt", className: "contact" },
     ],
@@ -379,6 +382,10 @@ export const FOOTER_LINKS = [
       {
         label: "Bezglutenowe marki - współpraca",
         href: "/#wspolpraca",
+      },
+      {
+        label: "Artykuły",
+        href: "/artykuly",
       },
     ],
   },
