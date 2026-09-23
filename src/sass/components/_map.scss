@@ -55,9 +55,14 @@
 @media (max-width: 560px) {
   .map-page .map-section {
     padding-top: 24px;
+    padding-bottom: 48px;
 
-    .section-title h1 {
-      font-size: 2rem;
+    .section-title {
+      margin: 0;
+      h1 {
+        font-size: 1.7rem;
+        margin-top: 0;
+      }
     }
   }
 }
