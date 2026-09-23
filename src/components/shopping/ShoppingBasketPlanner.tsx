@@ -529,13 +529,6 @@ const ShoppingBasketPlanner = () => {
                   <FiChevronRight />
                 </Link>
               ))}
-              <button
-                className="basket-planner__regenerate"
-                type="button"
-                onClick={() => setImageSeed((seed) => seed + 1)}
-              >
-                Wygeneruj inne zdjęcie <FiImage />
-              </button>
               <Link
                 className="basket-planner__all-recipes"
                 href="/szukaj-przepisow"
