@@ -1,9 +1,15 @@
 import { FormEvent, useMemo, useState } from "react";
 import Link from "next/link";
 import {
+  FiCheckCircle,
   FiCheck,
   FiChevronRight,
+  FiCopy,
+  FiDownload,
+  FiFilter,
   FiImage,
+  FiRefreshCw,
+  FiSearch,
   FiShoppingBag,
 } from "react-icons/fi";
 import { appetizersRecipesData } from "@/data/recipes/appetizers-recipes";
@@ -289,6 +295,13 @@ const ShoppingBasketPlanner = () => {
   const [hasGenerated, setHasGenerated] = useState(false);
   const [checkedItems, setCheckedItems] = useState<string[]>([]);
   const [imageSeed, setImageSeed] = useState(0);
+  const [activeCategory, setActiveCategory] = useState("Wszystkie");
+  const [listView, setListView] = useState<"all" | "todo" | "checked">("all");
+  const [searchTerm, setSearchTerm] = useState("");
+  const [sortBy, setSortBy] = useState<"default" | "price" | "category">(
+    "default",
+  );
+  const [copied, setCopied] = useState(false);
 
   const basket = useMemo(() => {
     const servings = Number(people) * Number(days);
@@ -317,6 +330,37 @@ const ShoppingBasketPlanner = () => {
   const budgetDifference = budgetValue - total;
   const costPerPerson = total / Number(people);
   const costPerPersonPerDay = total / (Number(people) * Number(days));
+  const categories = useMemo(
+    () => ["Wszystkie", ...new Set(basket.map((item) => item.category))],
+    [basket],
+  );
+  const visibleBasket = useMemo(() => {
+    const normalizedSearch = searchTerm.trim().toLowerCase();
+    return [...basket]
+      .filter(
+        (item) =>
+          activeCategory === "Wszystkie" || item.category === activeCategory,
+      )
+      .filter((item) => {
+        if (listView === "todo") return !checkedItems.includes(item.name);
+        if (listView === "checked") return checkedItems.includes(item.name);
+        return true;
+      })
+      .filter((item) => item.name.toLowerCase().includes(normalizedSearch))
+      .sort((first, second) => {
+        if (sortBy === "price") return second.price - first.price;
+        if (sortBy === "category")
+          return first.category.localeCompare(second.category);
+        return basket.indexOf(first) - basket.indexOf(second);
+      });
+  }, [activeCategory, basket, checkedItems, listView, searchTerm, sortBy]);
+  const budgetProgress = Math.min(
+    100,
+    Math.round((total / Math.max(budgetValue, 1)) * 100),
+  );
+  const areAllVisibleChecked =
+    visibleBasket.length > 0 &&
+    visibleBasket.every((item) => checkedItems.includes(item.name));
   const selectedMeals = useMemo<SuggestedMeal[]>(
     () =>
       mealTypes.map((mealType, index) => {
@@ -360,6 +404,44 @@ const ShoppingBasketPlanner = () => {
         ? current.filter((item) => item !== name)
         : [...current, name],
     );
+  };
+
+  const toggleAllVisible = () => {
+    const visibleNames = visibleBasket.map((item) => item.name);
+    const allVisibleChecked =
+      visibleNames.length > 0 &&
+      visibleNames.every((name) => checkedItems.includes(name));
+    setCheckedItems((current) =>
+      allVisibleChecked
+        ? current.filter((name) => !visibleNames.includes(name))
+        : [...new Set([...current, ...visibleNames])],
+    );
+  };
+
+  const downloadList = () => {
+    const content = basket
+      .map(
+        (item) =>
+          `${checkedItems.includes(item.name) ? "[x]" : "[ ]"} ${item.name} - ${item.amount}, ${item.packages} ${packageWord(item.packages)} - ok. ${item.price} zl`,
+      )
+      .join("\n");
+    const file = new Blob([`Bezglutenowy koszyk - ${shop}\n\n${content}`], {
+      type: "text/plain;charset=utf-8",
+    });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(file);
+    link.download = "bezglutenowy-koszyk.txt";
+    link.click();
+    URL.revokeObjectURL(link.href);
+  };
+
+  const copyList = async () => {
+    const content = basket
+      .map((item) => `${item.name}: ${item.amount}`)
+      .join("\n");
+    await navigator.clipboard.writeText(content);
+    setCopied(true);
+    window.setTimeout(() => setCopied(false), 1800);
   };
 
   return (
@@ -465,18 +547,114 @@ const ShoppingBasketPlanner = () => {
                   ? `${budgetDifference.toFixed(2)} zł zostanie z budżetu`
                   : `${Math.abs(budgetDifference).toFixed(2)} zł ponad budżet`}
               </span>
+              <div className="basket-planner__budget-meter">
+                <span style={{ width: `${budgetProgress}%` }} />
+              </div>
+              <small>{budgetProgress}% wykorzystanego budżetu</small>
             </div>
           </div>
 
           <div className="basket-planner__content">
             <div className="basket-planner__list">
-              <h3>
-                Lista zakupów{" "}
-                <span>
-                  {checkedItems.length}/{basket.length}
-                </span>
-              </h3>
-              {basket.map((item) => {
+              <div className="basket-planner__list-heading">
+                <div>
+                  <span className="basket-planner__eyebrow">
+                    <FiFilter /> ORGANIZACJA
+                  </span>
+                  <h3>
+                    Lista zakupów{" "}
+                    <span>
+                      {checkedItems.length}/{basket.length}
+                    </span>
+                  </h3>
+                </div>
+                <div className="basket-planner__list-actions">
+                  <button
+                    type="button"
+                    onClick={toggleAllVisible}
+                    title="Zaznacz lub odznacz widoczne produkty"
+                  >
+                    <FiCheckCircle />{" "}
+                    {areAllVisibleChecked
+                      ? "Odznacz widoczne"
+                      : "Zaznacz widoczne"}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={downloadList}
+                    title="Pobierz listę zakupów"
+                  >
+                    <FiDownload /> Pobierz
+                  </button>
+                  <button
+                    type="button"
+                    onClick={copyList}
+                    title="Kopiuj listę zakupów"
+                  >
+                    <FiCopy /> {copied ? "Skopiowano" : "Kopiuj"}
+                  </button>
+                </div>
+              </div>
+              <div className="basket-planner__toolbar">
+                <label className="basket-planner__search">
+                  <FiSearch />
+                  <input
+                    value={searchTerm}
+                    onChange={(event) => setSearchTerm(event.target.value)}
+                    placeholder="Szukaj produktu"
+                    aria-label="Szukaj produktu"
+                  />
+                </label>
+                <select
+                  value={sortBy}
+                  onChange={(event) =>
+                    setSortBy(event.target.value as typeof sortBy)
+                  }
+                  aria-label="Sortuj produkty"
+                >
+                  <option value="default">Kolejność planu</option>
+                  <option value="price">Najdroższe</option>
+                  <option value="category">Kategoria</option>
+                </select>
+              </div>
+              <div
+                className="basket-planner__tabs"
+                role="tablist"
+                aria-label="Widok listy"
+              >
+                {(["all", "todo", "checked"] as const).map((view) => (
+                  <button
+                    key={view}
+                    type="button"
+                    className={listView === view ? "is-active" : ""}
+                    onClick={() => setListView(view)}
+                  >
+                    {view === "all"
+                      ? "Wszystkie"
+                      : view === "todo"
+                        ? "Do kupienia"
+                        : "Kupione"}
+                  </button>
+                ))}
+              </div>
+              <div className="basket-planner__categories">
+                {categories.map((category) => (
+                  <button
+                    key={category}
+                    type="button"
+                    className={activeCategory === category ? "is-active" : ""}
+                    onClick={() => setActiveCategory(category)}
+                  >
+                    {category}
+                  </button>
+                ))}
+              </div>
+              {visibleBasket.length === 0 && (
+                <p className="basket-planner__empty">
+                  Nie ma produktów pasujących do wybranych filtrów.
+                </p>
+              )}
+              {visibleBasket.map((item) => {
                 const checked = checkedItems.includes(item.name);
                 return (
                   <button
@@ -515,6 +693,13 @@ const ShoppingBasketPlanner = () => {
                 <span>
                   <FiImage /> Zdjęcie wygenerowane przez AI
                 </span>
+                <button
+                  type="button"
+                  className="basket-planner__regenerate"
+                  onClick={() => setImageSeed((seed) => seed + 1)}
+                >
+                  <FiRefreshCw /> Wylosuj inną inspirację
+                </button>
               </div>
               {selectedMeals.map((meal) => (
                 <Link
