@@ -259,10 +259,11 @@ const GlutenFreeCatcher = () => {
     setGameState("playing");
     if (window.matchMedia("(max-width: 760px)").matches) {
       window.requestAnimationFrame(() => {
-        catcherPanelRef.current?.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
+        const panel = catcherPanelRef.current;
+        if (!panel) return;
+        const targetTop =
+          window.scrollY + panel.getBoundingClientRect().top - 60;
+        window.scrollTo({ top: targetTop, behavior: "smooth" });
       });
     }
   };
