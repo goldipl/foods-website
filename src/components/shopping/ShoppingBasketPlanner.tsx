@@ -361,28 +361,44 @@ const ShoppingBasketPlanner = () => {
   const areAllVisibleChecked =
     visibleBasket.length > 0 &&
     visibleBasket.every((item) => checkedItems.includes(item.name));
-  const selectedMeals = useMemo<SuggestedMeal[]>(
-    () =>
-      mealTypes.map((mealType, index) => {
-        const mealRecipes = recipes.filter((recipe) =>
-          recipe.tags?.some((tag) =>
-            mealType === "Śniadanie"
-              ? tag.toLowerCase() === "śniadanie"
-              : mealType === "Obiad"
-                ? tag.toLowerCase() === "obiad"
-                : tag.toLowerCase() === "przystawka" ||
-                  tag.toLowerCase() === "kolacja",
-          ),
-        );
+  const selectedMeals = useMemo<SuggestedMeal[]>(() => {
+    const getMealPool = (mealType: SuggestedMeal["mealType"]) =>
+      recipes.filter((recipe) =>
+        recipe.tags?.some((tag) => {
+          const normalizedTag = tag.toLowerCase();
 
-        return {
-          ...(mealRecipes[index % Math.max(mealRecipes.length, 1)] ??
-            recipes[index]),
-          mealType,
-        };
-      }),
-    [],
-  );
+          if (mealType === "Śniadanie") return normalizedTag === "śniadanie";
+          if (mealType === "Obiad") return normalizedTag === "obiad";
+
+          return normalizedTag === "przystawka" || normalizedTag === "kolacja";
+        }),
+      );
+
+    const chosenMeals: SuggestedMeal[] = [];
+    const usedRecipeIds = new Set<number>();
+
+    mealTypes.forEach((mealType) => {
+      const availableMeals = getMealPool(mealType).filter(
+        (recipe) => !usedRecipeIds.has(recipe.id),
+      );
+      const fallbackMeals = recipes.filter(
+        (recipe) => !usedRecipeIds.has(recipe.id),
+      );
+      const pool = availableMeals.length > 0 ? availableMeals : fallbackMeals;
+      const randomMeal =
+        pool[Math.floor(Math.random() * pool.length)] ?? recipes[0];
+
+      if (!randomMeal) return;
+
+      chosenMeals.push({
+        ...randomMeal,
+        mealType,
+      });
+      usedRecipeIds.add(randomMeal.id);
+    });
+
+    return chosenMeals;
+  }, [imageSeed]);
 
   const aiImageUrl = useMemo(() => {
     const prompt = selectedMeals.map((meal) => meal.description).join(", ");
@@ -681,7 +697,9 @@ const ShoppingBasketPlanner = () => {
               })}
             </div>
             <aside className="basket-planner__recipes">
-              <span className="basket-planner__eyebrow">Z TEGO ZROBISZ</span>
+              <span className="basket-planner__eyebrow">
+                PRZYKŁADOWE POSIŁKI NA CAŁY DZIEŃ
+              </span>
               <h3>Plan dań</h3>
               <div className="basket-planner__ai-image">
                 <div
