@@ -58,7 +58,21 @@ The site is built with Next.js using React, TypeScript, and Sass. It includes bo
 - mark items as purchased,
 - recipe suggestions linked to the selected shopping list.
 
-### 5. Informational and community sections
+### 5. Gluten-free catcher game
+
+- available from the **Tools** dropdown at `/gra-lapacz`,
+- nickname entry in a start/restart modal,
+- timed 45-second catcher game with falling food emoji,
+- desktop controls with arrow keys or `A` / `D`,
+- mobile controls with touch-friendly direction buttons,
+- safe products such as fruit, vegetables, salads, and ice cream award 10 points,
+- gluten-related products such as bread, pizza, pasta, and baked goods remove one life,
+- three-heart life system with visual damage feedback when a life is lost,
+- animated score, timer, basket movement, and game feedback,
+- local top-10 leaderboard stored in the browser with `localStorage`,
+- responsive three-column desktop layout with instructions, centered game board, and leaderboard.
+
+### 6. Informational and community sections
 
 - educational articles and posts,
 - information about celiac disease,
@@ -66,7 +80,7 @@ The site is built with Next.js using React, TypeScript, and Sass. It includes bo
 - events and workshops,
 - collaboration and contact section.
 
-### 6. Responsive UI
+### 7. Responsive UI
 
 - built for different screen sizes,
 - reusable components,
@@ -143,6 +157,7 @@ foods-website/
 │   ├── app/                      # Next.js app configuration
 │   ├── components/
 │   │   ├── common/               # shared components (header, footer, modal, searchbar)
+│   │   ├── games/                # interactive gluten-free catcher game
 │   │   ├── main-page/            # landing page sections
 │   │   ├── map/                 # map component and geolocation logic
 │   │   ├── recipes/             # recipe lists and search
@@ -175,6 +190,7 @@ foods-website/
 - `/wydarzenia` — events calendar
 - `/bezglutenowe-miejsca` — interactive map of locations
 - `/koszyk-zakupowy` — shopping planner
+- `/gra-lapacz` — timed gluten-free catcher game
 - `/artykuly` — article list
 
 ## Deployment
