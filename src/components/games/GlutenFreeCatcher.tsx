@@ -4,9 +4,11 @@ import { useEffect, useRef, useState } from "react";
 import {
   FiAward,
   FiClock,
+  FiInfo,
   FiPlay,
   FiRotateCcw,
   FiShield,
+  FiX,
 } from "react-icons/fi";
 
 type FallingProduct = {
@@ -77,6 +79,7 @@ const GlutenFreeCatcher = () => {
   const [lives, setLives] = useState(STARTING_LIVES);
   const [timeLeft, setTimeLeft] = useState(GAME_LENGTH);
   const [showNicknameModal, setShowNicknameModal] = useState(true);
+  const [showInstructionsModal, setShowInstructionsModal] = useState(false);
   const [damageFlash, setDamageFlash] = useState(false);
   const [products, setProducts] = useState<FallingProduct[]>([]);
   const [results, setResults] = useState<Result[]>([]);
@@ -87,6 +90,7 @@ const GlutenFreeCatcher = () => {
   const livesRef = useRef(STARTING_LIVES);
   const productsRef = useRef<FallingProduct[]>([]);
   const nextId = useRef(0);
+  const catcherPanelRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     try {
@@ -248,6 +252,14 @@ const GlutenFreeCatcher = () => {
     setProducts([]);
     setShowNicknameModal(false);
     setGameState("playing");
+    if (window.matchMedia("(max-width: 760px)").matches) {
+      window.requestAnimationFrame(() => {
+        catcherPanelRef.current?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      });
+    }
   };
   const openNicknameModal = () => setShowNicknameModal(true);
   const setMovement = (direction: number) => {
@@ -289,7 +301,7 @@ const GlutenFreeCatcher = () => {
             </li>
           </ul>
         </aside>
-        <div className="catcher-panel">
+        <div className="catcher-panel" ref={catcherPanelRef}>
           <div className="catcher-stats">
             <span>
               <FiClock aria-hidden="true" /> {timeLeft}s
@@ -486,7 +498,49 @@ const GlutenFreeCatcher = () => {
             <button className="catcher-start-button" type="submit">
               <FiPlay aria-hidden="true" /> Start gry
             </button>
+            <button
+              className="catcher-info-button"
+              type="button"
+              onClick={() => setShowInstructionsModal(true)}
+            >
+              <FiInfo aria-hidden="true" /> Jak grać?
+            </button>
           </form>
+        </div>
+      )}
+      {showInstructionsModal && (
+        <div className="catcher-modal-backdrop" role="presentation">
+          <div
+            className="catcher-info-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="catcher-instructions-title"
+          >
+            <button
+              className="catcher-modal-close"
+              type="button"
+              onClick={() => setShowInstructionsModal(false)}
+              aria-label="Zamknij instrukcję"
+            >
+              <FiX aria-hidden="true" />
+            </button>
+            <span className="catcher-overlay-icon">🎮</span>
+            <h2 id="catcher-instructions-title">Jak grać?</h2>
+            <ul>
+              <li>Przesuwaj koszyk klawiszami ← → lub A / D.</li>
+              <li>Na telefonie przytrzymuj przyciski kierunku.</li>
+              <li>Łap owoce, warzywa, sałatki i lody za +10 punktów.</li>
+              <li>Unikaj pieczywa, pizzy, makaronów i wypieków.</li>
+              <li>Każdy niebezpieczny produkt zabiera jedno z trzech żyć.</li>
+            </ul>
+            <button
+              className="catcher-start-button"
+              type="button"
+              onClick={() => setShowInstructionsModal(false)}
+            >
+              Rozumiem
+            </button>
+          </div>
         </div>
       )}
     </section>
