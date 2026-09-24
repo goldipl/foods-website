@@ -362,6 +362,7 @@
   background: rgba(23, 59, 61, 0.58);
 }
 .catcher-nickname-modal {
+  position: relative;
   width: min(100%, 460px);
   max-height: calc(100dvh - 40px);
   overflow-y: auto;
@@ -395,7 +396,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 18px;
+  margin-bottom: 8px;
 }
 .catcher-nickname-input input {
   flex: 1;
@@ -413,6 +414,16 @@
 .catcher-nickname-input span {
   color: rgba(23, 59, 61, 0.6);
   font-size: 13px;
+}
+.catcher-nickname-error {
+  margin: 0 0 12px !important;
+  color: #b42318 !important;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+}
+.catcher-nickname-input input[aria-invalid="true"] {
+  border-color: #b42318;
 }
 .catcher-nickname-modal .catcher-start-button {
   display: inline-flex;

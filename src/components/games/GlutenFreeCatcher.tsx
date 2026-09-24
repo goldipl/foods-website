@@ -79,6 +79,7 @@ const GlutenFreeCatcher = () => {
   const [lives, setLives] = useState(STARTING_LIVES);
   const [timeLeft, setTimeLeft] = useState(GAME_LENGTH);
   const [showNicknameModal, setShowNicknameModal] = useState(true);
+  const [nicknameError, setNicknameError] = useState(false);
   const [showInstructionsModal, setShowInstructionsModal] = useState(false);
   const [damageFlash, setDamageFlash] = useState(false);
   const [products, setProducts] = useState<FallingProduct[]>([]);
@@ -238,7 +239,11 @@ const GlutenFreeCatcher = () => {
   }, []);
 
   const startGame = () => {
-    if (!nickname.trim()) return;
+    if (!nickname.trim()) {
+      setNicknameError(true);
+      return;
+    }
+    setNicknameError(false);
     playerX.current = 50;
     setPlayerPosition(50);
     moveDirection.current = 0;
@@ -474,6 +479,14 @@ const GlutenFreeCatcher = () => {
               startGame();
             }}
           >
+            <button
+              className="catcher-modal-close"
+              type="button"
+              onClick={() => setShowNicknameModal(false)}
+              aria-label="Zamknij okno startu gry"
+            >
+              <FiX aria-hidden="true" />
+            </button>
             <span className="catcher-overlay-icon">🥖</span>
             <h2>
               {gameState === "finished"
@@ -489,12 +502,28 @@ const GlutenFreeCatcher = () => {
                 id="catcher-nickname"
                 maxLength={18}
                 value={nickname}
-                onChange={(event) => setNickname(event.target.value)}
+                onChange={(event) => {
+                  setNickname(event.target.value);
+                  if (nicknameError) setNicknameError(false);
+                }}
                 placeholder="np. BezglutenowaMoc"
                 autoFocus
+                aria-invalid={nicknameError}
+                aria-describedby={
+                  nicknameError ? "catcher-nickname-error" : undefined
+                }
               />
               <span>/ 18</span>
             </div>
+            {nicknameError && (
+              <p
+                className="catcher-nickname-error"
+                id="catcher-nickname-error"
+                role="alert"
+              >
+                Wpisz swój nick
+              </p>
+            )}
             <button className="catcher-start-button" type="submit">
               <FiPlay aria-hidden="true" /> Start gry
             </button>
