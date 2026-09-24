@@ -358,10 +358,13 @@
   display: grid;
   place-items: center;
   padding: 20px;
+  overflow-y: auto;
   background: rgba(23, 59, 61, 0.58);
 }
 .catcher-nickname-modal {
   width: min(100%, 460px);
+  max-height: calc(100dvh - 40px);
+  overflow-y: auto;
   padding: 34px;
   border: 1px solid rgba(23, 59, 61, 0.14);
   border-radius: 8px;
@@ -499,6 +502,17 @@
     text-align: center;
   }
   .catcher-nickname-modal {
-    padding: 28px 20px;
+    width: 100%;
+    max-height: calc(100dvh - 28px);
+    padding: 24px 16px;
+  }
+  .catcher-nickname-modal h2 {
+    font-size: 21px;
+  }
+  .catcher-nickname-modal p {
+    font-size: 14px;
+  }
+  .catcher-nickname-input {
+    gap: 6px;
   }
 }
