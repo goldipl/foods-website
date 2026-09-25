@@ -78,7 +78,7 @@ const GlutenFreeCatcher = () => {
   const [score, setScore] = useState(0);
   const [lives, setLives] = useState(STARTING_LIVES);
   const [timeLeft, setTimeLeft] = useState(GAME_LENGTH);
-  const [showNicknameModal, setShowNicknameModal] = useState(true);
+  const [showNicknameModal, setShowNicknameModal] = useState(false);
   const [nicknameError, setNicknameError] = useState(false);
   const [showInstructionsModal, setShowInstructionsModal] = useState(false);
   const [damageFlash, setDamageFlash] = useState(false);
@@ -443,8 +443,8 @@ const GlutenFreeCatcher = () => {
             </button>
           </div>
           <p className="catcher-hint">
-            Desktop: użyj klawiszy ← → lub A / D. Telefon: przytrzymaj przycisk
-            kierunku.
+            Desktop: użyj klawiszy ⬅️ ➡️ lub A / D. Telefon: przytrzymaj
+            przycisk kierunku.
           </p>
         </div>
         <aside className="catcher-ranking">
