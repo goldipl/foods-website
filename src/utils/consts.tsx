@@ -150,6 +150,10 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
     label: "Celiakia (co dalej?)",
     children: [
       {
+        label: "Artykuły",
+        href: "/artykuly",
+      },
+      {
         label: "Podstawowe informacje",
         href: "/#celiakia-podstawowe-informacje",
       },
@@ -165,10 +169,6 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
       {
         label: "Bezglutenowe marki - współpraca",
         href: "/#wspolpraca",
-      },
-      {
-        label: "Artykuły",
-        href: "/artykuly",
       },
     ],
   },
@@ -368,6 +368,10 @@ export const FOOTER_LINKS = [
     title: "Celiakia (co dalej?)",
     links: [
       {
+        label: "Artykuły",
+        href: "/artykuly",
+      },
+      {
         label: "Podstawowe informacje",
         href: "/#celiakia-podstawowe-informacje",
       },
@@ -383,10 +387,6 @@ export const FOOTER_LINKS = [
       {
         label: "Bezglutenowe marki - współpraca",
         href: "/#wspolpraca",
-      },
-      {
-        label: "Artykuły",
-        href: "/artykuly",
       },
     ],
   },
