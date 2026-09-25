@@ -21,8 +21,10 @@ type Recipe = {
   id: number;
   href: string;
   description: string;
+  altText?: string;
   imgSrc?: { src: string } | string;
   tags?: string[];
+  label?: string;
 };
 
 type SuggestedMeal = Recipe & {
@@ -280,6 +282,34 @@ const mealTypes: SuggestedMeal["mealType"][] = [
   "Kolacja",
 ];
 
+const ingredientKeywords: Record<string, string[]> = {
+  "Chleb bezglutenowy": ["chleb", "kanapk", "grzank", "tost"],
+  Jajka: ["jajk", "omlet", "naleśnik", "nalesnik"],
+  Kurczak: ["kurczak", "kurczaka", "drób", "drobiu"],
+  Pomidory: ["pomidor"],
+  Mozzarella: ["mozzarella"],
+  Ryż: ["ryż", "ryzu", "sushi"],
+  "Jogurt naturalny": ["jogurt"],
+  "Przekąska bezglutenowa": ["przekąsk", "ciastecz", "fawork", "baton"],
+  "Warzywa do sałatki": ["sałatk", "salatk"],
+  "Oliwa i przyprawy": ["oliw", "przypraw", "curry", "teriyaki"],
+  Awokado: ["awokado"],
+  Papryka: ["papryk"],
+  Cebula: ["cebul"],
+  Czosnek: ["czosnek", "czosnk"],
+  Marchew: ["marchew", "marchewk"],
+  Łosoś: ["łosoś", "losos"],
+  Feta: ["feta"],
+  Ciecierzyca: ["ciecierzyc"],
+  Mleko: ["mleko"],
+  "Płatki owsiane bezglutenowe": ["owsian", "płatk", "platk"],
+  "Mąka gryczana": ["gryczan", "mąk", "mak"],
+  "Makaron bezglutenowy": ["makaron", "tagliatelle", "spaghetti", "pasta"],
+  "Passata pomidorowa": ["passat"],
+  Banany: ["banan"],
+  "Mrożone owoce": ["owoc", "jagod", "truskawk", "malin"],
+};
+
 const packageWord = (count: number) => {
   if (count === 1) return "opakowanie";
   if (count >= 2 && count <= 4) return "opakowania";
@@ -362,6 +392,24 @@ const ShoppingBasketPlanner = () => {
     visibleBasket.length > 0 &&
     visibleBasket.every((item) => checkedItems.includes(item.name));
   const selectedMeals = useMemo<SuggestedMeal[]>(() => {
+    const getRecipeText = (recipe: Recipe) =>
+      [recipe.description, recipe.altText, ...(recipe.tags ?? [])]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase();
+
+    const getIngredientScore = (recipe: Recipe) => {
+      const text = getRecipeText(recipe);
+      return basket.reduce((score, item) => {
+        const keywords = ingredientKeywords[item.name] ?? [
+          item.name.toLowerCase(),
+        ];
+        return (
+          score + (keywords.some((keyword) => text.includes(keyword)) ? 1 : 0)
+        );
+      }, 0);
+    };
+
     const getMealPool = (mealType: SuggestedMeal["mealType"]) =>
       recipes.filter((recipe) =>
         recipe.tags?.some((tag) => {
@@ -378,27 +426,37 @@ const ShoppingBasketPlanner = () => {
     const usedRecipeIds = new Set<number>();
 
     mealTypes.forEach((mealType) => {
-      const availableMeals = getMealPool(mealType).filter(
-        (recipe) => !usedRecipeIds.has(recipe.id),
+      const mealPool = getMealPool(mealType).length
+        ? getMealPool(mealType)
+        : recipes;
+      const pool = mealPool
+        .filter((recipe) => !usedRecipeIds.has(recipe.id))
+        .sort((first, second) => {
+          const scoreDifference =
+            getIngredientScore(second) - getIngredientScore(first);
+          if (scoreDifference !== 0) return scoreDifference;
+          return first.id - second.id;
+        });
+      const bestScore = pool.length > 0 ? getIngredientScore(pool[0]) : 0;
+      const bestMatches = pool.filter(
+        (recipe) => getIngredientScore(recipe) === bestScore,
       );
-      const fallbackMeals = recipes.filter(
-        (recipe) => !usedRecipeIds.has(recipe.id),
-      );
-      const pool = availableMeals.length > 0 ? availableMeals : fallbackMeals;
-      const randomMeal =
-        pool[Math.floor(Math.random() * pool.length)] ?? recipes[0];
+      const selectedMeal =
+        bestMatches[
+          (imageSeed + mealTypes.indexOf(mealType)) % bestMatches.length
+        ] ?? pool[0];
 
-      if (!randomMeal) return;
+      if (!selectedMeal) return;
 
       chosenMeals.push({
-        ...randomMeal,
+        ...selectedMeal,
         mealType,
       });
-      usedRecipeIds.add(randomMeal.id);
+      usedRecipeIds.add(selectedMeal.id);
     });
 
     return chosenMeals;
-  }, [imageSeed]);
+  }, [basket, imageSeed]);
 
   const aiImageUrl = useMemo(() => {
     const prompt = selectedMeals.map((meal) => meal.description).join(", ");
