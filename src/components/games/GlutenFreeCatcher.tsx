@@ -295,12 +295,12 @@ const GlutenFreeCatcher = () => {
               Przesuwaj koszyk klawiszami ⬅️ ➡️ lub przyciskami na telefonie.
             </li>
             <li>
-              <b>+10 pkt:</b> łap owoce, warzywa, sałatki i lody, np. 🍎 🥕 🥗
-              🍦.
+              <b>+10 pkt:</b> łap owoce, warzywa, sałatki i lody gluten-free,
+              np. 🍎 🥕 🥗 🍦.
             </li>
             <li>
-              <b>-1 życie:</b> omijaj pieczywo, pizzę, makarony i wypieki, np.
-              🍞 🍕 🍝 🍰.
+              <b>-1 życie:</b> omijaj pszenne pieczywo, pizzę, makarony i
+              wypieki, np. 🍞 🍕 🍝 🍰.
             </li>
             <li>
               Masz <b>3 życia</b>. Gra kończy się także po 45 sekundach.
@@ -559,8 +559,10 @@ const GlutenFreeCatcher = () => {
             <ul>
               <li>Przesuwaj koszyk klawiszami ← → lub A / D.</li>
               <li>Na telefonie przytrzymuj przyciski kierunku.</li>
-              <li>Łap owoce, warzywa, sałatki i lody za +10 punktów.</li>
-              <li>Unikaj pieczywa, pizzy, makaronów i wypieków.</li>
+              <li>
+                Łap owoce, warzywa, sałatki i lody gluten-free za +10 punktów.
+              </li>
+              <li>Unikaj pszennego pieczywa, pizzy, makaronów i wypieków.</li>
               <li>Każdy niebezpieczny produkt zabiera jedno z trzech żyć.</li>
             </ul>
             <button
