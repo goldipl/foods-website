@@ -35,6 +35,7 @@ import hiltonRadom from "./../../../public/img/restaurants/poland/036_hilton_rad
 import holaTapasGdansk from "./../../../public/img/restaurants/poland/037_hola_tapas_gdansk.jpg";
 import bezglutenowyKrakow2026 from "./../../../public/img/restaurants/poland/038_bezglutenowy_krakow.jpg";
 import bezLukruCukruJagodzianki from "./../../../public/img/restaurants/poland/039_bez_lukru_cukru_jagodzianki.jpg";
+import madMochiDonutsLodz from "./../../../public/img/restaurants/poland/040_mad_mochi_donuts_lodz.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -406,5 +407,15 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Jagodzianki i malinianki bezglutenowe w Bez Lukru i Cukru, ul. Bolesława Chrobrego 22, 26-609 Radom",
+    },
+    {
+      id: 40,
+      href: "https://www.instagram.com/p/Dd8cBISEWq2/?img_index=1",
+      imgSrc: madMochiDonutsLodz,
+      altText: "Mad Mochi - Japońskie Mochi Pączki & Matcha, Piotrkowska 146, 90-001 Łódź",
+      label: "Łódź",
+      labelClass: "poland-label",
+      description:
+        "Mad Mochi - Japońskie Mochi Pączki & Matcha, Piotrkowska 146, 90-001 Łódź",
     },
   ];

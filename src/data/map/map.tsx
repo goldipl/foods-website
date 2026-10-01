@@ -659,4 +659,14 @@ export const MarkerData = [
     link: "https://www.instagram.com/p/DdZMeymCCw2/?img_index=1",
     position: [41.90200088617893, 12.49406784548353] as [number, number],
   },
+  {
+    id: 68,
+    name: "Mad Mochi - Japońskie Mochi Pączki & Matcha,",
+    addressLine1: "ul. Piotrkowska 146,",
+    addressLine2: "90-001 Łódź",
+    country: "Polska",
+    city: "Łódź",
+    link: "https://www.instagram.com/p/Dd8cBISEWq2/?img_index=1",
+    position: [51.76036606371466, 19.458502063181854] as [number, number],
+  },
 ];
