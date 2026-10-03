@@ -36,6 +36,7 @@ import holaTapasGdansk from "./../../../public/img/restaurants/poland/037_hola_t
 import bezglutenowyKrakow2026 from "./../../../public/img/restaurants/poland/038_bezglutenowy_krakow.jpg";
 import bezLukruCukruJagodzianki from "./../../../public/img/restaurants/poland/039_bez_lukru_cukru_jagodzianki.jpg";
 import madMochiDonutsLodz from "./../../../public/img/restaurants/poland/040_mad_mochi_donuts_lodz.jpg";
+import ciachoBezCukruBielskoBiala from "./../../../public/img/restaurants/poland/041_ciacho_bez_cukru_bielskobiala.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -417,5 +418,15 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Mad Mochi - Japońskie Mochi Pączki & Matcha, Piotrkowska 146, 90-001 Łódź",
+    },
+    {
+      id: 41,
+      href: "https://www.instagram.com/p/DeCbI16iDAg/?img_index=1",
+      imgSrc: ciachoBezCukruBielskoBiala,
+      altText: "Kawiarnia Cukiernia bezglutenowa Ciacho bez cukru, ul. Norberta Barlickiego 5, 43-300 Bielsko-Biała",
+      label: "Bielsko-Biała",
+      labelClass: "poland-label",
+      description:
+        "Kawiarnia Cukiernia bezglutenowa Ciacho bez cukru, ul. Norberta Barlickiego 5, 43-300 Bielsko-Biała",
     },
   ];

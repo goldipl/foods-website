@@ -669,4 +669,14 @@ export const MarkerData = [
     link: "https://www.instagram.com/p/Dd8cBISEWq2/?img_index=1",
     position: [51.76036606371466, 19.458502063181854] as [number, number],
   },
+  {
+    id: 69,
+    name: "Kawiarnia Cukiernia bezglutenowa Ciacho bez cukru,",
+    addressLine1: "ul. Norberta Barlickiego 5,",
+    addressLine2: "43-300 Bielsko-Biała",
+    country: "Polska",
+    city: "Bielsko-Biała",
+    link: "https://www.instagram.com/p/DeCbI16iDAg/?img_index=1",
+    position: [49.823227070541996, 19.046267453739013] as [number, number],
+  },
 ];
