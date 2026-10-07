@@ -679,4 +679,14 @@ export const MarkerData = [
     link: "https://www.instagram.com/p/DeCbI16iDAg/?img_index=1",
     position: [49.823227070541996, 19.046267453739013] as [number, number],
   },
+  {
+    id: 70,
+    name: "WOLNA - piekarnia bezglutenowa,",
+    addressLine1: "ul. Szlak 11,",
+    addressLine2: "31-161 Kraków",
+    country: "Polska",
+    city: "Kraków",
+    link: "https://www.instagram.com/p/DeKJkpoCIVt/?img_index=1",
+    position: [50.07067713739237, 19.934662623055914] as [number, number],
+  },
 ];

@@ -37,6 +37,7 @@ import bezglutenowyKrakow2026 from "./../../../public/img/restaurants/poland/038
 import bezLukruCukruJagodzianki from "./../../../public/img/restaurants/poland/039_bez_lukru_cukru_jagodzianki.jpg";
 import madMochiDonutsLodz from "./../../../public/img/restaurants/poland/040_mad_mochi_donuts_lodz.jpg";
 import ciachoBezCukruBielskoBiala from "./../../../public/img/restaurants/poland/041_ciacho_bez_cukru_bielskobiala.jpg";
+import wolnaPiekarniaKrakow from "./../../../public/img/restaurants/poland/042_wolna_piekarnia_krakow.jpg";
 
 export const polishRestaurantsData = [
     {
@@ -428,5 +429,15 @@ export const polishRestaurantsData = [
       labelClass: "poland-label",
       description:
         "Kawiarnia Cukiernia bezglutenowa Ciacho bez cukru, ul. Norberta Barlickiego 5, 43-300 Bielsko-Biała",
+    },
+    {
+      id: 42,
+      href: "https://www.instagram.com/p/DeKJkpoCIVt/?img_index=1",
+      imgSrc: wolnaPiekarniaKrakow,
+      altText: "WOLNA - piekarnia bezglutenowa, ul. Szlak 11, 31-161 Kraków",
+      label: "Kraków",
+      labelClass: "poland-label",
+      description:
+        "WOLNA - piekarnia bezglutenowa, ul. Szlak 11, 31-161 Kraków",
     },
   ];
