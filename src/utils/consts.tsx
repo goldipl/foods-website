@@ -36,7 +36,6 @@ export interface HeaderNavItem {
   label: string;
   href?: string;
   children?: HeaderNavItem[];
-  grid?: boolean;
   className?: string;
 }
 
@@ -132,7 +131,6 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
   },
   {
     label: "Produkty",
-    grid: true,
     children: [
       { label: "Putka bez glutenu", href: "/#produkty" },
       { label: "Tymbark Just Plants", href: "/#produkty" },

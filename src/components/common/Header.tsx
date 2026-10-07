@@ -161,7 +161,7 @@ const Header = () => {
 
                   {item.children && (
                     <ul
-                      className={`nav-second-lvl ${item.grid ? "grid-3-col" : ""} ${activeDropdown === item.label ? "active" : ""}`}
+                      className={`nav-second-lvl ${activeDropdown === item.label ? "active" : ""}`}
                     >
                       {item.children.map((subItem) => (
                         <li
