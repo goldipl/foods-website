@@ -142,11 +142,6 @@ body:has(.header-main-container.is-fixed) {
                   opacity: 1;
                   transform: translateY(0);
                   min-width: 264px;
-                  @media (min-width: 1181px) {
-                    display: grid;
-                    grid-template-columns: repeat(2, minmax(100px, 1fr));
-                    width: max-content;
-                  }
                 }
               }
               .nav-second-lvl {
@@ -421,6 +416,12 @@ body:has(.header-main-container.is-fixed) {
       display: flex;
       opacity: 1;
       transform: translateX(0);
+
+      @media (min-width: 1181px) {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(120px, max-content));
+        width: max-content;
+      }
     }
   }
 }
