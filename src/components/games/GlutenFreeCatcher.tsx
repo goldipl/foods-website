@@ -453,23 +453,34 @@ const GlutenFreeCatcher = () => {
             <FiAward aria-hidden="true" />
             <h2>Tablica wyników</h2>
           </div>
+          <p className="catcher-ranking-caption">
+            Najlepsze wyniki zapisane na tym urządzeniu
+          </p>
           {results.length === 0 ? (
             <p className="ranking-empty">
-              Zagraj jako pierwszy i wpisz się na listę!
+              Jeszcze nie ma wyników. Zagraj jako pierwszy i wpisz się na listę!
             </p>
           ) : (
             <ol>
               {results.map((result, index) => (
                 <li key={`${result.date}-${index}`}>
-                  <span>
-                    <b>{index + 1}</b>
-                    {result.nickname}
+                  <span className="catcher-rank-number">
+                    {index < 3 ? ["🥇", "🥈", "🥉"][index] : index + 1}
                   </span>
-                  <strong>{result.score}</strong>
+                  <span className="catcher-rank-player">
+                    <strong>{result.nickname}</strong>
+                    <time dateTime={result.date}>
+                      {new Date(result.date).toLocaleDateString("pl-PL")}
+                    </time>
+                  </span>
+                  <b className="catcher-rank-score">{result.score}</b>
                 </li>
               ))}
             </ol>
           )}
+          <p className="catcher-ranking-note">
+            Wyniki są przechowywane lokalnie w przeglądarce.
+          </p>
         </aside>
       </div>
       {showNicknameModal && (

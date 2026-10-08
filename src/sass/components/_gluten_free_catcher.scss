@@ -290,6 +290,11 @@
 .catcher-ranking {
   padding: 24px;
 }
+.catcher-ranking-caption {
+  margin: 9px 0 0;
+  color: rgba(23, 59, 61, 0.64);
+  font-size: 12px;
+}
 .ranking-heading {
   display: flex;
   align-items: center;
@@ -307,32 +312,52 @@
 }
 .catcher-ranking ol {
   list-style: none;
-  margin: 22px 0 0;
+  margin: 16px 0 0;
   padding: 0;
 }
 .catcher-ranking li {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(23, 59, 61, 0.12);
+  gap: 9px;
+  padding: 11px 0;
+  border-bottom: 1px solid rgba(23, 59, 61, 0.1);
 }
-.catcher-ranking li span {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.catcher-ranking li b {
+.catcher-rank-number {
   display: grid;
+  flex: 0 0 29px;
+  width: 29px;
+  height: 29px;
   place-items: center;
-  width: 25px;
-  height: 25px;
   border-radius: 50%;
   background: var(--catcher-mint);
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 700;
 }
-.catcher-ranking li strong {
+.catcher-rank-player {
+  display: grid;
+  flex: 1;
+  min-width: 0;
+  gap: 3px;
+}
+.catcher-rank-player strong {
+  overflow: hidden;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.catcher-rank-player time {
+  color: rgba(23, 59, 61, 0.58);
+  font-size: 11px;
+}
+.catcher-rank-score {
   color: var(--catcher-coral);
+  font-size: 15px;
+}
+.catcher-ranking-note {
+  margin: 16px 0 0;
+  color: rgba(23, 59, 61, 0.7);
+  font-size: 11px;
+  line-height: 1.5;
 }
 .catcher-instructions {
   margin-top: 0;
