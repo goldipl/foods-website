@@ -9,6 +9,7 @@ import Hero from "@/components/main-page/Hero";
 import ArticlesPreviewSection from "@/components/main-page/ArticlesPreviewSection";
 import WelcomeSection from "@/components/main-page/WelcomeSection";
 import BoxesInfoSection from "@/components/main-page/BoxesInfoSection";
+import GamesSection from "@/components/main-page/GamesSection";
 import RecipesSection from "@/components/main-page/RecipesSection";
 import RestaurantsSection from "@/components/main-page/RestaurantsSection";
 import HotelsSection from "@/components/main-page/HotelsSection";
@@ -75,6 +76,7 @@ const index = () => {
       <main>
         <Hero />
         <BoxesInfoSection />
+        <GamesSection />
         <ArticlesPreviewSection />
         <WelcomeSection />
         <RecipesSection />

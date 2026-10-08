@@ -236,6 +236,54 @@ export const PARTNERS: PartnerItem[] = [
   { name: "Moncana", href: "https://moncana.pl/", src: MoncanaImg },
 ];
 
+export interface GameSectionItem {
+  title: string;
+  description: string;
+  href: string;
+  icon: string;
+  badge: string;
+  label: string;
+}
+
+export const GAMES_SECTION_ITEMS: GameSectionItem[] = [
+  {
+    title: "Łap bezglutenowe produkty",
+    description:
+      "Zbieraj zdrowe smakołyki i sprawdzaj, ile punktów uda Ci się zdobyć na jedną rundę.",
+    href: "/gra-lapacz",
+    icon: "🧺",
+    badge: "Ruch",
+    label: "Zagraj teraz",
+  },
+  {
+    title: "Snake",
+    description:
+      "Wybierz kierunek, jedz dalej i zdobywaj coraz lepsze wyniki w tej klasycznej grze.",
+    href: "/gra-snake",
+    icon: "🐍",
+    badge: "Klasyk",
+    label: "Wejdź do gry",
+  },
+  {
+    title: "Bezglutenowy quiz",
+    description:
+      "Sprawdź swoją wiedzę o produktach, składnikach i zdrowych wyborach bez glutenu.",
+    href: "/gra-quiz",
+    icon: "❓",
+    badge: "Wiedza",
+    label: "Sprawdź się",
+  },
+  {
+    title: "Wyścig",
+    description:
+      "Zmieniaj pasy, omijaj pachołki i zbieraj bezglutenowe kromki. Ile punktów zdobędziesz w 60 sekund?",
+    href: "/gra-wyscig",
+    icon: "🏁",
+    badge: "Wyzwanie",
+    label: "Start",
+  },
+];
+
 export const HERO_SLIDES: HeroSlideItem[] = [
   {
     title: "Zdrowo, smacznie, bezglutenowo!",

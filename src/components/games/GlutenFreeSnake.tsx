@@ -299,7 +299,7 @@ const GlutenFreeSnake = () => {
         <span className="snake-kicker">Mała przerwa na zabawę</span>
         <h1>Bezglutenowy Snake</h1>
         <p>
-          Poprowadź węża do jabłek. Zbieraj je, bij własne rekordy i uważaj,
+          Poprowadź węża do kromek bezglutenowego chleba. Zbieraj je, bij własne rekordy i uważaj,
           żeby nie wpaść na siebie!
         </p>
       </div>
@@ -319,7 +319,7 @@ const GlutenFreeSnake = () => {
               planszy.
             </li>
             <li>
-              Zjedz jabłko <b>🍎, aby zdobyć 10 pkt</b> i urosnąć.
+              Zjedz kromkę chleba <b>🍞, aby zdobyć 10 pkt</b> i urosnąć.
             </li>
             <li>
               Nie uderzaj w ściany ani we własny ogon. Z każdym wynikiem wąż
@@ -335,9 +335,9 @@ const GlutenFreeSnake = () => {
             </span>
           </div>
           <div className="snake-fact">
-            <span aria-hidden="true">🍎</span>
+            <span aria-hidden="true">🍞</span>
             <p>
-              Jabłka dodają wężowi sił — smacznego polowania!
+              Bezglutenowe kromki dodają wężowi sił — smacznego!
             </p>
           </div>
         </aside>
@@ -395,7 +395,6 @@ const GlutenFreeSnake = () => {
                       .join(" ")}
                     aria-hidden="true"
                   >
-                    {isFood ? "🍎" : ""}
                   </span>
                 );
               })}
@@ -414,20 +413,22 @@ const GlutenFreeSnake = () => {
                     ? "Gra wstrzymana"
                     : gameStatus === "finished"
                       ? "Koniec gry!"
-                      : "Gotowy na jabłko?"}
+                      : "Gotowy na kromkę?"}
                 </h2>
                 <p>
                   {gameStatus === "paused"
                     ? "Złap oddech i wróć do gry."
                     : gameStatus === "finished"
                       ? `Świetna gra, ${activeNicknameRef.current}! Twój wynik to ${score} pkt.`
-                      : "Zbieraj jabłka i ustanów nowy rekord."}
+                      : "Zbieraj bezglutenowe kromki i ustanów nowy rekord."}
                 </p>
               </div>
             )}
           </div>
           <p className="snake-live-score" aria-live="polite">
-            {score > 0 ? `Zdobyte punkty: ${score}` : "Zjedz pierwsze jabłko i zdobądź 10 punktów"}
+            {score > 0
+              ? `Zdobyte punkty: ${score}`
+              : "Zjedz pierwszą kromkę i zdobądź 10 punktów"}
           </p>
           <div className="snake-controls">
             <button
@@ -556,7 +557,7 @@ const GlutenFreeSnake = () => {
             }}
           >
             <span className="snake-overlay-icon" aria-hidden="true">
-              🍎
+              🍞
             </span>
             <h2 id="snake-player-modal-title">Wskakujesz do gry?</h2>
             <p>
