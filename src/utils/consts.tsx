@@ -94,6 +94,7 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
           { label: "Łap bezglutenowe produkty", href: "/gra-lapacz" },
           { label: "Bezglutenowy Snake", href: "/gra-snake" },
           { label: "Bezglutenowy quiz", href: "/gra-quiz" },
+          { label: "Bezglutenowy wyścig", href: "/gra-wyscig" },
         ],
       },
       { label: "Koszyk zakupowy", href: "/koszyk-zakupowy" },
