@@ -26,6 +26,14 @@ interface MapComponentProps {
   zIndex?: number;
 }
 
+const getPlaceCountLabel = (count: number) => {
+  if (count === 1) return "miejsce";
+  if (count % 10 >= 2 && count % 10 <= 4 && (count % 100 < 12 || count % 100 > 14)) {
+    return "miejsca";
+  }
+  return "miejsc";
+};
+
 const MapComponent: React.FC<MapComponentProps> = ({
   center = [48.2297, 21.0122],
   zoom = 4,
@@ -70,7 +78,9 @@ const MapComponent: React.FC<MapComponentProps> = ({
   ) => {
     if (mapRef.current) {
       mapRef.current.setView(position, zoomLevel, { animate: true });
-      window.scrollTo(0, 0);
+      document
+        .getElementById("mapa-interaktywna")
+        ?.scrollIntoView({ behavior: "smooth", block: "center" });
 
       if (id && markersRef.current[id]) {
         setTimeout(() => {
@@ -151,79 +161,114 @@ const MapComponent: React.FC<MapComponentProps> = ({
             </div>
           </div>
         </div>
-        {/* Map */}
-        <MapContainer
-          id="mapa-interaktywna"
-          center={center}
-          zoom={zoom}
-          scrollWheelZoom={true}
-          style={{ height, width, zIndex }}
-          ref={mapRef}
-        >
-          <TileLayer
-            attribution="&copy; OpenStreetMap contributors"
-            url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-
-          {filteredData.map((m) => (
-            <Marker
-              key={m.id}
-              position={m.position}
-              icon={greenIcon}
-              ref={(marker) => {
-                if (marker) markersRef.current[m.id] = marker;
-              }}
+        <section className="map-explorer" aria-labelledby="map-explorer-title">
+          <div className="map-section-heading">
+            <span className="map-section-eyebrow">Mapa interaktywna</span>
+            <h2 id="map-explorer-title">Odkrywaj bezglutenowe miejsca</h2>
+            <p>
+              Sprawdź lokalizacje na mapie i wybierz miejsce, które chcesz
+              odwiedzić.
+            </p>
+          </div>
+          <div className="map-canvas-card">
+            <div className="map-canvas-toolbar">
+              <div className="map-canvas-toolbar__label">
+                <HiMapPin aria-hidden="true" />
+                <span>Mapa miejsc</span>
+              </div>
+              <span className="map-canvas-toolbar__count">
+                {filteredData.length} {getPlaceCountLabel(filteredData.length)}
+              </span>
+            </div>
+            <MapContainer
+              id="mapa-interaktywna"
+              className="map-canvas"
+              center={center}
+              zoom={zoom}
+              scrollWheelZoom={true}
+              style={{ height, width, zIndex }}
+              ref={mapRef}
             >
-              <Popup>
-                <strong>{m.name}</strong>
-                <div>{m.addressLine1}</div>
-                <div>{m.addressLine2}</div>
-                <div>{m.country}</div>
-                <div>
-                  <Link className="map-link" target="_blank" href={m.link}>
-                    Zobacz to miejsce
-                  </Link>
-                </div>
-              </Popup>
-            </Marker>
-          ))}
-        </MapContainer>
+              <TileLayer
+                attribution="&copy; OpenStreetMap contributors"
+                url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
 
-        <div id="tabela-miejsc-bezglutenowych">
-          <div className="section-title">
-            <h3>Lista miejsc w formie tabelarycznej</h3>
+              {filteredData.map((m) => (
+                <Marker
+                  key={m.id}
+                  position={m.position}
+                  icon={greenIcon}
+                  ref={(marker) => {
+                    if (marker) markersRef.current[m.id] = marker;
+                  }}
+                >
+                  <Popup>
+                    <strong>{m.name}</strong>
+                    <div>{m.addressLine1}</div>
+                    <div>{m.addressLine2}</div>
+                    <div>{m.country}</div>
+                    <div>
+                      <Link className="map-link" target="_blank" href={m.link}>
+                        Zobacz to miejsce
+                      </Link>
+                    </div>
+                  </Popup>
+                </Marker>
+              ))}
+            </MapContainer>
           </div>
+        </section>
 
-          <Searchbar
-            value={search}
-            onChange={setSearch}
-            placeholder="Szukaj po nazwie, kraju lub adresie..."
-          />
-
-          <div className="seo-table-container">
-            <h4>
-              Ilość bezglutenowych miejsc na mojej liście:{" "}
+        <section
+          className="places-directory"
+          id="tabela-miejsc-bezglutenowych"
+          aria-labelledby="places-directory-title"
+        >
+          <div className="places-directory__header">
+            <div>
+              <span className="map-section-eyebrow">Znajdź coś dla siebie</span>
+              <h2 id="places-directory-title">Lista bezglutenowych miejsc</h2>
+              <p>
+                Przeglądaj sprawdzone lokale i szybko wyszukuj po nazwie,
+                adresie, mieście lub kraju.
+              </p>
+            </div>
+            <div className="places-directory__total" aria-live="polite">
               <strong>{filteredData.length}</strong>
-            </h4>
+              <span>{getPlaceCountLabel(filteredData.length)}</span>
+            </div>
           </div>
 
-          {/* Table */}
+          <div className="places-directory__tools">
+            <Searchbar
+              value={search}
+              onChange={setSearch}
+              placeholder="Szukaj po nazwie, kraju lub adresie..."
+            />
+            <p className="places-directory__result-count" aria-live="polite">
+              {filteredData.length === 0
+                ? "Nie znaleziono miejsc"
+                : `Liczba wyników: ${filteredData.length}`}
+            </p>
+          </div>
+
           <div className="places-table-container">
             <table className="places-table">
               <thead>
                 <tr>
-                  <th>Nazwa</th>
-                  <th>Adres</th>
-                  <th>Kraj</th>
-                  <th>Miasto</th>
-                  <th>Link</th>
-                  <th>Mapa</th>
+                  <th scope="col">Nazwa</th>
+                  <th scope="col">Adres</th>
+                  <th scope="col">Kraj</th>
+                  <th scope="col">Miasto</th>
+                  <th scope="col">Link</th>
+                  <th scope="col">Mapa</th>
                 </tr>
               </thead>
               <tbody>
                 {paginatedItems.map((m) => (
                   <tr key={m.id}>
-                    <td>{m.name}</td>
+                    <td className="places-table__name">{m.name}</td>
                     <td>
                       <span className="table-address-line">
                         {m.addressLine1}
@@ -241,7 +286,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
                         rel="noopener noreferrer"
                         className="places-link"
                       >
-                        Zobacz to miejsce
+                        Zobacz miejsce
                       </a>
                     </td>
                     <td>
@@ -250,7 +295,8 @@ const MapComponent: React.FC<MapComponentProps> = ({
                         className="zoom-button"
                         type="button"
                       >
-                        🔍 Pokaż na mapie
+                        <HiMapPin aria-hidden="true" />
+                        Pokaż na mapie
                       </button>
                     </td>
                   </tr>
@@ -258,11 +304,8 @@ const MapComponent: React.FC<MapComponentProps> = ({
 
                 {filteredData.length === 0 && (
                   <tr>
-                    <td
-                      colSpan={5}
-                      style={{ textAlign: "center", padding: 20 }}
-                    >
-                      Brak wyników.
+                    <td colSpan={6} className="places-table__empty">
+                      Brak wyników. Spróbuj zmienić wyszukiwaną frazę.
                     </td>
                   </tr>
                 )}
@@ -270,13 +313,14 @@ const MapComponent: React.FC<MapComponentProps> = ({
             </table>
           </div>
 
-          {/* Pagination */}
-          <Pagination
-            currentPage={currentPage}
-            totalPages={totalPages}
-            onPageChange={setCurrentPage}
-          />
-        </div>
+          {totalPages > 1 && (
+            <Pagination
+              currentPage={currentPage}
+              totalPages={totalPages}
+              onPageChange={setCurrentPage}
+            />
+          )}
+        </section>
 
         <div className="primary-button">
           <Link href="/" className="primary-button__text">
