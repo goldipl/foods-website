@@ -91,7 +91,6 @@
     width: 320px;
     height: 320px;
     transform: translateY(-50%);
-    animation: meal-float 7s ease-in-out infinite;
   }
 
   &__hero-orbit {
@@ -119,8 +118,8 @@
     color: #c1e477;
     font-size: 135px;
     line-height: 1;
-    transform: translate(-50%, -50%) rotate(-12deg);
-    animation: meal-turn 32s linear infinite;
+    transform: translate(-50%, -50%);
+    animation: meal-bounce 1.8s ease-in-out infinite;
   }
 
   &__hero-note {
@@ -554,13 +553,13 @@
   }
 }
 
-@keyframes meal-float {
+@keyframes meal-bounce {
   0%,
   100% {
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
   }
   50% {
-    transform: translateY(calc(-50% - 10px));
+    transform: translate(-50%, calc(-50% - 10px));
   }
 }
 
