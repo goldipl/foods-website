@@ -103,7 +103,7 @@ const MealPlanPlanner = () => {
             </p>
             <div className="meal-planner__trust">
               <span>
-                <FiCalendar aria-hidden="true" /> Plan na 1–5 dni
+                <FiCalendar aria-hidden="true" /> Plan na 1–7 dni
               </span>
               <span>
                 <FiHeart aria-hidden="true" /> Same bezglutenowe inspiracje
@@ -130,7 +130,7 @@ const MealPlanPlanner = () => {
           </div>
           <div className="meal-planner__controls">
             <div className="meal-planner__day-picker" aria-label="Liczba dni">
-              {[1, 2, 3, 4, 5].map((dayCount) => (
+              {[1, 2, 3, 4, 5, 6, 7].map((dayCount) => (
                 <button
                   key={dayCount}
                   type="button"

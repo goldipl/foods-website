@@ -380,7 +380,7 @@
     box-shadow: 0 8px 28px rgba(12, 71, 46, 0.045);
     animation: meal-rise 450ms ease both;
 
-    @for $i from 1 through 5 {
+    @for $i from 1 through 7 {
       &:nth-child(#{$i}) {
         animation-delay: #{$i * 65}ms;
       }
