@@ -17,7 +17,7 @@
 
 This is a modern website dedicated to healthy, gluten-free, sugar-free, and dairy-free eating. Its main goal is to provide culinary inspiration, information about gluten-free diets, location recommendations, and practical tools for people with celiac disease and those following elimination diets.
 
-The site is built with Next.js using React, TypeScript, and Sass. It includes both informational content and interactive features such as a recipe search, a gluten-free places map, a shopping planner, and educational sections.
+The site is built with Next.js using React, TypeScript, and Sass. It includes informational content and interactive features such as recipe search, a gluten-free places map, and educational sections.
 
 ## Features
 
@@ -49,16 +49,7 @@ The site is built with Next.js using React, TypeScript, and Sass. It includes bo
 - pagination,
 - option to jump to the selected location on the map.
 
-### 4. Shopping planner
-
-- store selection,
-- budget, number of people, and number of days,
-- automatically generated shopping list,
-- cost summary,
-- mark items as purchased,
-- recipe suggestions linked to the selected shopping list.
-
-### 5. Gluten-free catcher game
+### 4. Gluten-free catcher game
 
 - available from the **Tools** dropdown at `/gra-lapacz`,
 - nickname entry in a start/restart modal,
@@ -72,7 +63,7 @@ The site is built with Next.js using React, TypeScript, and Sass. It includes bo
 - local top-10 leaderboard stored in the browser with `localStorage`,
 - responsive three-column desktop layout with instructions, centered game board, and leaderboard.
 
-### 6. Informational and community sections
+### 5. Informational and community sections
 
 - educational articles and posts,
 - information about celiac disease,
@@ -80,7 +71,7 @@ The site is built with Next.js using React, TypeScript, and Sass. It includes bo
 - events and workshops,
 - collaboration and contact section.
 
-### 7. Responsive UI
+### 6. Responsive UI
 
 - built for different screen sizes,
 - reusable components,
@@ -161,7 +152,6 @@ foods-website/
 │   │   ├── main-page/            # landing page sections
 │   │   ├── map/                 # map component and geolocation logic
 │   │   ├── recipes/             # recipe lists and search
-│   │   └── shopping/            # shopping planner
 │   ├── css/                      # external CSS libraries
 │   ├── data/                     # recipe, events, hotels, restaurant, and map data
 │   ├── fonts/                    # custom fonts
@@ -189,7 +179,6 @@ foods-website/
 - `/hotele` — hotel recommendations
 - `/wydarzenia` — events calendar
 - `/bezglutenowe-miejsca` — interactive map of locations
-- `/koszyk-zakupowy` — shopping planner
 - `/gra-lapacz` — timed gluten-free catcher game
 - `/artykuly` — article list
 
