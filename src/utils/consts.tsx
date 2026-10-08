@@ -97,7 +97,7 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
           { label: "Bezglutenowy wyścig", href: "/gra-wyscig" },
         ],
       },
-      { label: "Koszyk zakupowy", href: "/koszyk-zakupowy" },
+      { label: "Bezglutenowy planer posiłków", href: "/planer-posilkow" },
       { label: "Wyszukiwarka przepisów", href: "/szukaj-przepisow" },
       { label: "Mapa miejsc bezglutenowych", href: "/bezglutenowe-miejsca" },
     ],
