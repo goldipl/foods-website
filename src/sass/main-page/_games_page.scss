@@ -9,7 +9,11 @@
   min-height: 570px;
   overflow: hidden;
   background:
-    radial-gradient(ellipse at 78% 48%, rgba(255, 255, 255, 0.14), transparent 30%),
+    radial-gradient(
+      ellipse at 78% 48%,
+      rgba(255, 255, 255, 0.14),
+      transparent 30%
+    ),
     linear-gradient(120deg, #194c34 0%, #286c48 56%, #4a8b4d 100%);
   isolation: isolate;
 }
@@ -35,7 +39,7 @@
 
   h1 {
     margin: 22px 0 16px;
-    font-size: clamp(3.2rem, 6.5vw, 5.8rem);
+    font-size: clamp(3.2rem, 6.5vw, 5rem);
     font-weight: 800;
     letter-spacing: -0.065em;
     line-height: 0.98;
@@ -85,7 +89,9 @@
   font-size: 0.98rem;
   font-weight: 700;
   text-decoration: none;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 
   &:hover {
     transform: translateY(-3px);
@@ -144,7 +150,11 @@
   aspect-ratio: 1;
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 32% 40% 35% 42%;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.07));
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.07)
+  );
   box-shadow: 0 28px 70px rgba(11, 39, 26, 0.2);
   font-size: clamp(6rem, 15vw, 11rem);
   transform: rotate(-9deg);
@@ -221,8 +231,8 @@
 }
 
 .games-page__floating--three {
-  top: 22%;
-  right: 8%;
+  top: 13%;
+  right: 30%;
   font-size: 2rem;
   animation: gamesPageTwinkle 2.4s ease-in-out infinite;
 }
@@ -280,7 +290,10 @@
     #fff;
   box-shadow: 0 8px 24px rgba(29, 55, 37, 0.055);
   animation: gamesPageRiseIn 0.6s ease both;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
 
   &:hover {
     transform: translateY(-8px);
@@ -379,7 +392,10 @@
   font-size: 0.91rem;
   font-weight: 700;
   text-decoration: none;
-  transition: color 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
 
   svg {
     transition: transform 0.25s ease;

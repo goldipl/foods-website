@@ -6,6 +6,7 @@ import L from "leaflet";
 import { MarkerData } from "@/data/map/map";
 import Searchbar from "@/components/common/Searchbar";
 import Pagination from "@/components/common/Pagination";
+import { HiArrowRight, HiMapPin, HiSparkles } from "react-icons/hi2";
 
 const greenIcon = new L.Icon({
   iconUrl:
@@ -86,28 +87,73 @@ const MapComponent: React.FC<MapComponentProps> = ({
   return (
     <main className="map-page">
       <section className="map-section">
-        <div className="section-title">
-          <h1>Mapa miejsc bezglutenowych</h1>
-          <h4>
-            Przeglądaj mapę, <strong>klikaj w znaczniki</strong> i przemierzaj
-            świat bezglutenowych miejscówek i restauracji.
-          </h4>
-          <h4>
-            Miejsca sprawdzone przeze mnie osobiście. Do każdej lokalizacji
-            dołączam relację w formie foto/wideo — zapraszam do oglądania!
-          </h4>
-          <div className="primary-button">
-            <Link
-              href="#tabela-miejsc-bezglutenowych"
-              className="primary-button__text"
-            >
-              Przejdź do tabeli
-            </Link>
+        <div className="map-page__hero">
+          <div
+            className="map-page__hero-orb map-page__hero-orb--one"
+            aria-hidden="true"
+          />
+          <div
+            className="map-page__hero-orb map-page__hero-orb--two"
+            aria-hidden="true"
+          />
+          <div className="map-page__hero-inner">
+            <div className="map-page__hero-content">
+              <span className="map-page__hero-eyebrow">
+                Bezpiecznie i bez glutenu
+              </span>
+              <h1 id="map-page-title">
+                Mapa miejsc
+                <span>bezglutenowych</span>
+              </h1>
+              <p>
+                Znajdź restauracje i lokale, w których bezglutenowe odkrycia
+                czekają tuż za rogiem — albo na drugim końcu świata.
+              </p>
+              <div className="map-page__hero-actions">
+                <Link className="map-page__hero-cta" href="#mapa-interaktywna">
+                  Odkrywaj na mapie <HiArrowRight aria-hidden="true" />
+                </Link>
+                <Link
+                  className="map-page__hero-cta map-page__hero-cta--secondary"
+                  href="#tabela-miejsc-bezglutenowych"
+                >
+                  Przejdź do tabeli <HiArrowRight aria-hidden="true" />
+                </Link>
+              </div>
+              <div className="map-page__hero-note">
+                <HiMapPin aria-hidden="true" />
+                {MarkerData.length} sprawdzonych miejsc
+              </div>
+            </div>
+
+            <div className="map-page__hero-art" aria-hidden="true">
+              <div className="map-page__hero-grid">
+                <span className="map-page__hero-road map-page__hero-road--one" />
+                <span className="map-page__hero-road map-page__hero-road--two" />
+                <span className="map-page__hero-road map-page__hero-road--three" />
+                <span className="map-page__hero-park" />
+                <span className="map-page__hero-pin map-page__hero-pin--one">
+                  <HiMapPin />
+                </span>
+                <span className="map-page__hero-pin map-page__hero-pin--two">
+                  <HiMapPin />
+                </span>
+                <span className="map-page__hero-pin map-page__hero-pin--three">
+                  <HiMapPin />
+                </span>
+              </div>
+              <div className="map-page__hero-chip map-page__hero-chip--top">
+                <span>📍</span> Miejsca warte odkrycia
+              </div>
+              <div className="map-page__hero-chip map-page__hero-chip--bottom">
+                <span>🌍</span> Polska i świat
+              </div>
+            </div>
           </div>
         </div>
-
         {/* Map */}
         <MapContainer
+          id="mapa-interaktywna"
           center={center}
           zoom={zoom}
           scrollWheelZoom={true}

@@ -20,10 +20,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: min(1160px, calc(100% - 48px));
+    max-width: 1280px;
+    padding: 64px 24px;
     min-height: 390px;
     margin: 0 auto;
-    padding: 68px 0 76px;
   }
 
   &__hero-copy {
