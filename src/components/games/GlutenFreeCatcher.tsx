@@ -278,6 +278,7 @@ const GlutenFreeCatcher = () => {
   return (
     <section className="catcher-page">
       <div className="catcher-intro">
+        <span className="catcher-kicker">Mała przerwa na zabawę</span>
         <h1>Łap bezglutenowe produkty</h1>
         <p>
           Przesuwaj koszyk i złap jak najwięcej produktów, zanim skończy się

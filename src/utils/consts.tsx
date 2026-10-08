@@ -88,10 +88,16 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
   {
     label: "Narzędzia",
     children: [
+      {
+        label: "Gry",
+        children: [
+          { label: "Łap bezglutenowe produkty", href: "/gra-lapacz" },
+          { label: "Bezglutenowy Snake", href: "/gra-snake" },
+        ],
+      },
       { label: "Koszyk zakupowy", href: "/koszyk-zakupowy" },
       { label: "Wyszukiwarka przepisów", href: "/szukaj-przepisow" },
       { label: "Mapa miejsc bezglutenowych", href: "/bezglutenowe-miejsca" },
-      { label: "Gra - Łap bezglutenowe produkty", href: "/gra-lapacz" },
     ],
   },
   {
