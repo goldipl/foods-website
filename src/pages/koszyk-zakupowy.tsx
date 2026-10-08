@@ -12,7 +12,7 @@ const MealPlannerPage = () => {
         <title>Bezglutenowy planer posiłków | Bezglutenowa Karola</title>
         <meta
           name="description"
-          content="Ułóż bezglutenowy plan posiłków na 1–5 dni na bazie przepisów Bezglutenowej Karoli. Znajdź inspirację na śniadanie, obiad i kolację."
+          content="Zaplanuj bezglutenowe posiłki na kilka dni i odkryj sprawdzone przepisy Karoli na śniadanie, obiad i kolację."
         />
       </Head>
       <header>

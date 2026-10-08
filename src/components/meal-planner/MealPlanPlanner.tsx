@@ -98,8 +98,8 @@ const MealPlanPlanner = () => {
               <span>Więcej dobrego jedzenia.</span>
             </h1>
             <p>
-              Ułóż swój bezglutenowy plan posiłków i miej pomysł na każdy dzień.
-              Wszystkie inspiracje pochodzą z przepisów Karoli.
+              Zaplanuj bezglutenowe posiłki na kilka dni i odkryj sprawdzone
+              przepisy Karoli na śniadanie, obiad i kolację.
             </p>
             <div className="meal-planner__trust">
               <span>
