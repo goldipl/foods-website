@@ -395,7 +395,7 @@
 
 @media (max-width: 680px) {
   .map-page .map-section {
-    padding-top: 24px;
+    padding-top: 0;
   }
 
   .map-page__hero {
@@ -436,10 +436,11 @@
   }
 
   .map-page__hero-cta {
-    width: fit-content;
-    min-height: 52px;
     justify-content: space-between;
+    width: fit-content;
+    min-height: 44px;
     padding: 0 20px;
+    font-size: 13px;
   }
 
   .map-page__hero-note {
