@@ -129,23 +129,7 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
       },
     ],
   },
-  {
-    label: "Produkty",
-    children: [
-      { label: "Putka bez glutenu", href: "/#produkty" },
-      { label: "Tymbark Just Plants", href: "/#produkty" },
-      { label: "Czapielskie Pudełka", href: "/#produkty" },
-      { label: "Vallongo Tradizione Italiana", href: "/#produkty" },
-      { label: "Biedronka", href: "/#produkty" },
-      { label: "Stokrotka", href: "/#produkty" },
-      { label: "Żabka", href: "/#produkty" },
-      { label: "Incola", href: "/#produkty" },
-      { label: "Glutenex", href: "/#produkty" },
-      { label: "Cucina Gluten Free", href: "/#produkty" },
-      { label: "Sadvit", href: "/#produkty" },
-      { label: "Inne", href: "/#produkty" },
-    ],
-  },
+  { label: "Produkty", href: "/produkty" },
   {
     label: "Celiakia (co dalej?)",
     children: [

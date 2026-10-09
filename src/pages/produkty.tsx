@@ -3,7 +3,12 @@ import { useMemo, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { CiInstagram } from "react-icons/ci";
+import {
+  HiArrowRight,
+  HiMagnifyingGlass,
+  HiShoppingBag,
+  HiSparkles,
+} from "react-icons/hi2";
 import { productsData } from "@/data/products/products";
 import Topbar from "@/components/common/Topbar";
 import Header from "@/components/common/Header";
@@ -13,10 +18,38 @@ import Pagination from "@/components/common/Pagination";
 const ProductsPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const products = useMemo(() => productsData.slice().reverse(), []);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedShop, setSelectedShop] = useState("");
 
-  const productsPerPage = 8;
-  const totalPages = Math.max(1, Math.ceil(products.length / productsPerPage));
-  const paginatedProducts = products.slice(
+  const shops = useMemo(
+    () =>
+      Array.from(
+        new Set(products.map((product) => product.labelShop || product.label)),
+      ).sort((firstShop, secondShop) =>
+        firstShop.localeCompare(secondShop, "pl"),
+      ),
+    [products],
+  );
+  const filteredProducts = useMemo(() => {
+    const normalizedSearch = searchTerm.trim().toLocaleLowerCase("pl-PL");
+
+    return products.filter((product) => {
+      const shop = product.labelShop || product.label;
+      const matchesShop = !selectedShop || shop === selectedShop;
+      const matchesSearch =
+        !normalizedSearch ||
+        [product.description, product.label, product.altText, shop]
+          .join(" ")
+          .toLocaleLowerCase("pl-PL")
+          .includes(normalizedSearch);
+
+      return matchesShop && matchesSearch;
+    });
+  }, [products, searchTerm, selectedShop]);
+
+  const productsPerPage = 12;
+  const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
+  const paginatedProducts = filteredProducts.slice(
     (currentPage - 1) * productsPerPage,
     currentPage * productsPerPage,
   );
@@ -27,7 +60,7 @@ const ProductsPage = () => {
         <title>Produkty Bezglutenowe | Bezglutenowa Karola</title>
         <meta
           name="description"
-          content="Odkryj najlepsze produkty bezglutenowe dostępne na rynku. Wybierane przez Karolinę - naturalne, zdrowe i smaczne produkty bez glutenu."
+          content="Odkrywaj bezglutenowe produkty, nowości i przeglądy ze sklepów. Wyszukuj materiały o produktach i sprawdzaj źródła."
         />
       </Head>
       <header>
@@ -35,97 +68,185 @@ const ProductsPage = () => {
         <Header />
       </header>
       <main>
-        <section id="category-page">
-          <div className="section-description">
-            <div className="section-title">
-              <h1>Produkty bezglutenowe – zdrowy wybór na co dzień</h1>
-            </div>
-            <div className="section-desc">
-              <p>
-                Szukasz sprawdzonych produktów bezglutenowych, które są zdrowe,
-                smaczne i pełne wartości odżywczych? Dobrze trafiłeś! Coraz
-                więcej osób wybiera dietę bezglutenową nie tylko ze względów
-                zdrowotnych, ale także z chęci jedzenia lżej i bardziej
-                naturalnie. Dzięki szerokiemu wyborowi produktów bezglutenowych,
-                możesz bez trudu skomponować pełnowartościowe posiłki – od
-                śniadania po kolację.
-              </p>
-              <h2>Dlaczego warto wybierać produkty bezglutenowe?</h2>
-              <p>
-                Produkty bezglutenowe to doskonałe rozwiązanie dla osób z
-                celiakią, nietolerancją glutenu lub po prostu dbających o zdrowy
-                styl życia. Ich regularne stosowanie może:
-              </p>
-              <ul>
-                <li>poprawić trawienie i samopoczucie po posiłkach,</li>
-                <li>zmniejszyć uczucie ciężkości i wzdęć,</li>
-                <li>wspomóc pracę układu odpornościowego,</li>
-                <li>
-                  dostarczyć organizmowi naturalnych składników odżywczych.
-                </li>
-              </ul>
-              <p>
-                W sklepach znajdziesz coraz więcej produktów bezglutenowych,
-                takich jak: pieczywo z mąk ryżowych i gryczanych, makarony
-                kukurydziane, ciastka i batony bezglutenowe, a także przyprawy,
-                sosy i przekąski oznaczone symbolem „przekreślonego kłosa”.
-                Dzięki nim możesz cieszyć się różnorodną, smaczną i bezpieczną
-                dietą – bez konieczności rezygnowania z ulubionych potraw.
-              </p>
-              <p>
-                Produkty bezglutenowe to nie chwilowa moda, lecz świadomy wybór,
-                który wspiera zdrowie i dobre samopoczucie. Sięgaj po nie na co
-                dzień, a Twoja dieta stanie się lżejsza, bardziej naturalna i
-                pełna energii.
-              </p>
-            </div>
-          </div>
+        <div className="products-page">
+          <section
+            className="products-page__hero"
+            aria-labelledby="products-page-title"
+          >
+            <div
+              className="products-page__orb products-page__orb--one"
+              aria-hidden="true"
+            />
+            <div
+              className="products-page__orb products-page__orb--two"
+              aria-hidden="true"
+            />
+            <div className="products-page__hero-inner">
+              <div className="products-page__hero-content">
+                <span className="products-page__eyebrow">
+                  <HiSparkles aria-hidden="true" /> Produkty i inspiracje
+                </span>
+                <h1 id="products-page-title">
+                  Bezglutenowe
+                  <span>odkrycia na co dzień</span>
+                </h1>
+                <p>
+                  Przeglądaj nowości, produkty ze sklepów i materiały „Czy to ma
+                  gluten?”. Wyszukaj markę lub sklep i przejdź do źródła, by
+                  dowiedzieć się więcej.
+                </p>
+                <Link
+                  className="products-page__hero-cta"
+                  href="#lista-produktow"
+                >
+                  Odkryj produkty <HiArrowRight aria-hidden="true" />
+                </Link>
+                <div className="products-page__hero-note">
+                  <HiShoppingBag aria-hidden="true" />
+                  {products.length} materiałów do odkrycia
+                </div>
+              </div>
 
-          <div className="listing-v1">
-            {paginatedProducts.map((recipe) => (
-              <Link
-                key={recipe.id}
-                href={recipe.href}
-                className="listing-v1-slot"
-                target="_blank"
-              >
-                <div className="listing-v1-slot__img">
+              <div className="products-page__hero-art" aria-hidden="true">
+                <div className="products-page__hero-image">
                   <Image
-                    src={recipe.imgSrc}
-                    alt={recipe.altText}
-                    width={400}
-                    height={500}
-                    loading="lazy"
+                    src={products[0].imgSrc}
+                    alt=""
+                    fill
+                    priority
+                    sizes="(max-width: 760px) 80vw, 36vw"
                   />
                 </div>
-                <div className="listing-v1-slot__text">
-                  <span>{recipe.description}</span>
+                <div className="products-page__art-chip products-page__art-chip--top">
+                  <HiShoppingBag /> Nowości ze sklepów
                 </div>
-                <div className="listing-v1-slot__labels">
-                  <span className={recipe.labelClass}>{recipe.label}</span>
+                <div className="products-page__art-chip products-page__art-chip--bottom">
+                  <HiSparkles /> Odkrywaj sprawdzone inspiracje
                 </div>
-                <div className="listing-v1-slot__zoom">
-                  <div className="zoom-box">
-                    <CiInstagram />
-                    <span>Zobacz</span>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
+              </div>
+            </div>
+          </section>
 
-          <Pagination
-            currentPage={currentPage}
-            totalPages={totalPages}
-            onPageChange={setCurrentPage}
-          />
+          <section
+            id="lista-produktow"
+            className="products-page__listing"
+            aria-labelledby="products-list-title"
+          >
+            <div className="products-page__listing-heading">
+              <div>
+                <span className="products-page__section-kicker">
+                  Znajdź coś dla siebie
+                </span>
+                <h2 id="products-list-title">Produkty i przeglądy</h2>
+              </div>
+              <p>
+                Szukaj po nazwie produktu lub wybierz sklep, aby szybciej
+                odnaleźć interesujący Cię wpis.
+              </p>
+            </div>
 
-          <div className="primary-button">
-            <Link href="/" className="primary-button__text">
-              Powrót
-            </Link>
-          </div>
-        </section>
+            <div className="products-page__filters">
+              <label className="products-page__search" htmlFor="product-search">
+                <HiMagnifyingGlass aria-hidden="true" />
+                <input
+                  id="product-search"
+                  type="search"
+                  value={searchTerm}
+                  onChange={(event) => {
+                    setSearchTerm(event.target.value);
+                    setCurrentPage(1);
+                  }}
+                  placeholder="Np. pieczywo, Lidl, Incola…"
+                />
+              </label>
+              <label className="products-page__shop-filter" htmlFor="shop-filter">
+                <span>Sklep lub marka</span>
+                <select
+                  id="shop-filter"
+                  value={selectedShop}
+                  onChange={(event) => {
+                    setSelectedShop(event.target.value);
+                    setCurrentPage(1);
+                  }}
+                >
+                  <option value="">Wszystkie sklepy i marki</option>
+                  {shops.map((shop) => (
+                    <option key={shop} value={shop}>
+                      {shop}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            </div>
+
+            <p
+              className="products-page__results-count"
+              aria-live="polite"
+              aria-atomic="true"
+            >
+              {filteredProducts.length === 1
+                ? "1 materiał"
+                : `${filteredProducts.length} materiałów`}
+            </p>
+
+            {paginatedProducts.length > 0 ? (
+              <div className="products-page__grid">
+                {paginatedProducts.map((product) => (
+                  <Link
+                    key={product.id}
+                    href={product.href}
+                    className="products-page__card"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${product.description} — otwórz materiał na Instagramie`}
+                  >
+                    <div className="products-page__card-image">
+                      <Image
+                        src={product.imgSrc}
+                        alt={product.altText}
+                        width={480}
+                        height={360}
+                        loading="lazy"
+                      />
+                      <span className="products-page__card-label">
+                        {product.labelShop || product.label}
+                      </span>
+                    </div>
+                    <div className="products-page__card-content">
+                      <h3>{product.description}</h3>
+                      <span className="products-page__card-link">
+                        Zobacz materiał <HiArrowRight aria-hidden="true" />
+                      </span>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            ) : (
+              <div className="products-page__empty" role="status">
+                <HiMagnifyingGlass aria-hidden="true" />
+                <h3>Nie znaleźliśmy takich materiałów</h3>
+                <p>
+                  Zmień frazę lub wybierz „Wszystkie sklepy i marki”, aby
+                  zobaczyć więcej.
+                </p>
+              </div>
+            )}
+
+            {totalPages > 1 && (
+              <Pagination
+                currentPage={currentPage}
+                totalPages={totalPages}
+                onPageChange={setCurrentPage}
+              />
+            )}
+
+            <p className="products-page__disclaimer">
+              Skład i dostępność produktów mogą się zmieniać. Zawsze sprawdzaj
+              aktualne opakowanie i informacje producenta — wpisy na stronie
+              mają charakter informacyjny.
+            </p>
+          </section>
+        </div>
       </main>
       <footer>
         <Footer />
