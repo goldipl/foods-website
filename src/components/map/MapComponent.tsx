@@ -28,7 +28,11 @@ interface MapComponentProps {
 
 const getPlaceCountLabel = (count: number) => {
   if (count === 1) return "miejsce";
-  if (count % 10 >= 2 && count % 10 <= 4 && (count % 100 < 12 || count % 100 > 14)) {
+  if (
+    count % 10 >= 2 &&
+    count % 10 <= 4 &&
+    (count % 100 < 12 || count % 100 > 14)
+  ) {
     return "miejsca";
   }
   return "miejsc";
@@ -167,8 +171,11 @@ const MapComponent: React.FC<MapComponentProps> = ({
             <h2 id="map-explorer-title">Odkrywaj bezglutenowe miejsca</h2>
             <p>
               Sprawdź lokalizacje na mapie i wybierz miejsce, które chcesz
-              odwiedzić. Każde z nich sprawdziłam osobiście, a na moim
-              Instagramie znajdziesz relację zdjęciową lub wideo.
+              odwiedzić.
+            </p>
+            <p>
+              Każde z nich sprawdziłam osobiście, a na moim Instagramie
+              znajdziesz relację zdjęciową lub wideo.
             </p>
           </div>
           <div className="map-canvas-card">
