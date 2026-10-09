@@ -44,7 +44,9 @@ const Footer = () => {
               {section.links.map((link: FooterLink) => (
                 <Link
                   key={link.label}
-                  href={link.href}
+                  href={
+                    link.href.startsWith("#") ? `/${link.href}` : link.href
+                  }
                   target={link.isExternal ? "_blank" : undefined}
                   rel={link.isExternal ? "noopener noreferrer" : undefined}
                 >
