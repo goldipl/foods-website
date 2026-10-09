@@ -167,7 +167,8 @@ const MapComponent: React.FC<MapComponentProps> = ({
             <h2 id="map-explorer-title">Odkrywaj bezglutenowe miejsca</h2>
             <p>
               Sprawdź lokalizacje na mapie i wybierz miejsce, które chcesz
-              odwiedzić.
+              odwiedzić. Każde z nich sprawdziłam osobiście, a na moim
+              Instagramie znajdziesz relację zdjęciową lub wideo.
             </p>
           </div>
           <div className="map-canvas-card">
