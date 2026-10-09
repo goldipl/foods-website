@@ -137,7 +137,7 @@ const ProductsPage = () => {
                 <span className="products-page__section-kicker">
                   Znajdź coś dla siebie
                 </span>
-                <h2 id="products-list-title">Produkty i przeglądy</h2>
+                <h2 id="products-list-title">Produkty</h2>
               </div>
               <p>
                 Szukaj po nazwie produktu lub wybierz sklep, aby szybciej
@@ -159,7 +159,10 @@ const ProductsPage = () => {
                   placeholder="Np. pieczywo, Lidl, Incola…"
                 />
               </label>
-              <label className="products-page__shop-filter" htmlFor="shop-filter">
+              <label
+                className="products-page__shop-filter"
+                htmlFor="shop-filter"
+              >
                 <span>Sklep lub marka</span>
                 <select
                   id="shop-filter"
