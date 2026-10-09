@@ -95,7 +95,7 @@ const HotelsPage = () => {
             </div>
           </div>
 
-          <div className="listing-v1">
+          <div id="lista-hoteli" className="listing-v1">
             {paginatedHotels.map((hotel) => (
               <Link
                 key={hotel.id}
@@ -132,6 +132,7 @@ const HotelsPage = () => {
             currentPage={currentPage}
             totalPages={totalPages}
             onPageChange={setCurrentPage}
+            scrollTargetId="lista-hoteli"
           />
 
           <div className="primary-button">

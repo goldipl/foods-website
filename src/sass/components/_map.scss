@@ -476,6 +476,10 @@
 
 .map-explorer,
 .places-directory {
+  scroll-margin-top: 112px;
+  @media (max-width: 760px) {
+    scroll-margin-top: 84px;
+  }
   width: min(100% - 48px, 1232px);
   margin-right: auto;
   margin-left: auto;
@@ -582,7 +586,6 @@
   border-radius: 24px;
   background: #fff;
   box-shadow: 0 16px 44px rgba(29, 55, 38, 0.07);
-  scroll-margin-top: 32px;
 }
 
 .places-directory__header {

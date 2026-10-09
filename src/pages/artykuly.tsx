@@ -161,6 +161,7 @@ const ArticlesPage = () => {
               currentPage={currentPage}
               totalPages={totalPages}
               onPageChange={setCurrentPage}
+              scrollTargetId="lista-artykulow"
             />
 
             <div className="articles-page__navigation">

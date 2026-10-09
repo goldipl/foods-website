@@ -326,6 +326,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
               currentPage={currentPage}
               totalPages={totalPages}
               onPageChange={setCurrentPage}
+              scrollTargetId="tabela-miejsc-bezglutenowych"
             />
           )}
         </section>

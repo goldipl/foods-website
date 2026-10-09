@@ -96,7 +96,7 @@ const EuropeanRestaurantsData = () => {
             </div>
           </div>
 
-          <div className="listing-v1">
+          <div id="lista-restauracji" className="listing-v1">
             {paginatedRestaurants.map((recipe) => (
               <Link
                 key={recipe.id}
@@ -133,6 +133,7 @@ const EuropeanRestaurantsData = () => {
             currentPage={currentPage}
             totalPages={totalPages}
             onPageChange={setCurrentPage}
+            scrollTargetId="lista-restauracji"
           />
 
           <div className="primary-button">

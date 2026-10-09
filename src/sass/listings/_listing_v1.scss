@@ -23,9 +23,13 @@ body:has(.recipes-tags) {
   justify-content: flex-start;
   align-items: center;
   gap: 24px;
+  scroll-margin-top: 112px;
   @media (max-width: 992px) {
     gap: 12px;
     justify-content: center;
+  }
+  @media (max-width: 760px) {
+    scroll-margin-top: 84px;
   }
   &-slot {
     position: relative;

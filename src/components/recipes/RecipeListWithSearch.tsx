@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { CiInstagram } from "react-icons/ci";
@@ -25,6 +25,7 @@ const RecipeListWithSearch: React.FC<Props> = ({ data }) => {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [pageSize, setPageSize] = useState<number>(12);
   const [isExpanded, setIsExpanded] = useState(false);
+  const recipesListRef = useRef<HTMLDivElement>(null);
 
   const inferTagsFromText = (text: string) => {
     const t = (text || "").toLowerCase();
@@ -94,14 +95,15 @@ const RecipeListWithSearch: React.FC<Props> = ({ data }) => {
     setCurrentPage(1);
   }, [query, selectedTags, sort, pageSize]);
 
-  // --- NOWY EFEKT: Przewijanie do góry przy zmianie strony ---
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth", // "smooth" dla płynnego animowania, "auto" dla natychmiastowego skoku
+  const changePage = (page: number) => {
+    setCurrentPage(page);
+    recipesListRef.current?.scrollIntoView({
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? "auto"
+        : "smooth",
+      block: "start",
     });
-  }, [currentPage]);
-  // -----------------------------------------------------------
+  };
 
   return (
     <>
@@ -201,7 +203,7 @@ const RecipeListWithSearch: React.FC<Props> = ({ data }) => {
         </div>
       </div>
 
-      <div className="listing-v1">
+      <div ref={recipesListRef} className="listing-v1">
         {paginated.map((recipe) => (
           <Link
             key={recipe.id}
@@ -241,7 +243,7 @@ const RecipeListWithSearch: React.FC<Props> = ({ data }) => {
           <div className="pagination-controls">
             <div className="pagination-buttons">
               <button
-                onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                onClick={() => changePage(Math.max(1, currentPage - 1))}
                 disabled={currentPage === 1}
               >
                 ←
@@ -251,16 +253,14 @@ const RecipeListWithSearch: React.FC<Props> = ({ data }) => {
                 <button
                   key={i}
                   className={i + 1 === currentPage ? "active" : ""}
-                  onClick={() => setCurrentPage(i + 1)}
+                  onClick={() => changePage(i + 1)}
                 >
                   {i + 1}
                 </button>
               ))}
 
               <button
-                onClick={() =>
-                  setCurrentPage((p) => Math.min(totalPages, p + 1))
-                }
+                onClick={() => changePage(Math.min(totalPages, currentPage + 1))}
                 disabled={currentPage === totalPages}
               >
                 →

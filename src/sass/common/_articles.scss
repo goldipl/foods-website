@@ -251,6 +251,7 @@
 .articles-page__listing {
   width: 100%;
   padding: 56px 24px 0;
+  scroll-margin-top: 112px;
 }
 
 .articles-page__listing-heading {
@@ -882,6 +883,7 @@
 @media (max-width: 760px) {
   .articles-page__listing {
     padding: 16px 16px 40px;
+    scroll-margin-top: 84px;
   }
 
   .articles-page__hero,
