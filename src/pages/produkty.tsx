@@ -1,5 +1,5 @@
 import "@/sass/main.scss";
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,6 +17,7 @@ import Pagination from "@/components/common/Pagination";
 
 const ProductsPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
+  const productsSectionRef = useRef<HTMLElement>(null);
   const products = useMemo(() => productsData.slice().reverse(), []);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedShop, setSelectedShop] = useState("");
@@ -53,6 +54,16 @@ const ProductsPage = () => {
     (currentPage - 1) * productsPerPage,
     currentPage * productsPerPage,
   );
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    productsSectionRef.current?.scrollIntoView({
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? "auto"
+        : "smooth",
+      block: "start",
+    });
+  };
 
   return (
     <>
@@ -128,6 +139,7 @@ const ProductsPage = () => {
           </section>
 
           <section
+            ref={productsSectionRef}
             id="lista-produktow"
             className="products-page__listing"
             aria-labelledby="products-list-title"
@@ -236,7 +248,7 @@ const ProductsPage = () => {
               <Pagination
                 currentPage={currentPage}
                 totalPages={totalPages}
-                onPageChange={setCurrentPage}
+                onPageChange={handlePageChange}
               />
             )}
 
