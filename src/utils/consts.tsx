@@ -93,7 +93,6 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
       { label: "Mapa miejsc bezglutenowych", href: "/bezglutenowe-miejsca" },
     ],
   },
-  { label: "Gry", href: "/gry" },
   {
     label: "Miejsca",
     children: [
@@ -163,6 +162,7 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
       { label: "Kontakt", href: "/#kontakt", className: "contact" },
     ],
   },
+  { label: "Gry", href: "/gry" },
 ];
 
 export const HEADER_SOCIAL_LINKS: HeaderSocialLink[] = [
