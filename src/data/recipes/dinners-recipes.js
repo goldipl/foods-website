@@ -31,6 +31,7 @@ import ekspresowaZupawAzjatyckimStylu from "./../../../public/img/recipes/dinner
 import burgerzKurka from "./../../../public/img/recipes/dinners/031_burger_z_kurka.jpg";
 import pizzaDomowa from "./../../../public/img/recipes/dinners/032_pizza_domowa.jpg";
 import zieloneNalesnikizSzarpanaWolowina from "./../../../public/img/recipes/dinners/033_zielone_nalesniki_z_szarpana_wolowina.jpg";
+import makaronPoAzjatycku from "./../../../public/img/recipes/dinners/034_makaron_po_azjatycku.jpg";
 
 export const dinnersRecipesData = [
     {
@@ -395,5 +396,16 @@ export const dinnersRecipesData = [
       labelClass: "dinner-label",
       description:
         "Zielone naleśniki z szarpaną wołowiną",
+    },
+    {
+      id: 33,
+      href: "https://www.instagram.com/p/DeZtuN2RIRi/",
+      imgSrc: makaronPoAzjatycku,
+      altText: "Makaron z wołowiną po azjatycku",
+      tags: ["obiad", "makaron", "wołowina"],
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Makaron z wołowiną po azjatycku 🍝 w 100% bez glutenu",
     },
   ];
