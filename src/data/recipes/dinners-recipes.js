@@ -299,7 +299,7 @@ export const dinnersRecipesData = [
         "Burger bezglutenowy z udźcem z kurczaka",
     },
     {
-      id: 24,
+      id: 25,
       href: "https://www.instagram.com/p/DPJZ4vQCAoc/",
       imgSrc: makaronBurakamiFeta,
       altText: "Bezglutenowy makaron z burakami i fetą",
@@ -310,7 +310,7 @@ export const dinnersRecipesData = [
         "Bezglutenowy makaron z burakami i fetą",
     },
     {
-      id: 25,
+      id: 26,
       href: "https://www.instagram.com/p/DPbrjbliHJe/",
       imgSrc: bezglutenowaPizzaSalamiBurrata,
       altText: "Bezglutenowa pizza z salami i burratą",
@@ -321,7 +321,7 @@ export const dinnersRecipesData = [
         "Bezglutenowa pizza z salami i burratą",
     },
     {
-      id: 26,
+      id: 27,
       href: "https://www.instagram.com/p/DRFaUlsiD4m/",
       imgSrc: kremCurry,
       altText: "Zupa krem z dyni i marchwi",
@@ -332,7 +332,7 @@ export const dinnersRecipesData = [
         "Zupa krem z dyni i marchwi",
     },
     {
-      id: 27,
+      id: 28,
       href: "https://www.instagram.com/p/DRXeWR7CIX5/",
       imgSrc: viralowyKebab,
       altText: "WIRALOWY KEBAB BEZ GLUTENU 🥙",
@@ -343,7 +343,7 @@ export const dinnersRecipesData = [
         "WIRALOWY KEBAB BEZ GLUTENU 🥙",
     },
     {
-      id: 28,
+      id: 29,
       href: "https://www.instagram.com/p/DSVWHLuCAd-/",
       imgSrc: obiadNaSzybkoLosos,
       altText: "Obiad w 5 minut - wędzony łosoś, kasza, jajko i zielony ogórek",
@@ -354,7 +354,7 @@ export const dinnersRecipesData = [
         "Obiad w 5 minut - wędzony łosoś, kasza, jajko i zielony ogórek",
     },
     {
-      id: 29,
+      id: 30,
       href: "https://www.instagram.com/p/DUdMfr3iHj2/",
       imgSrc: ekspresowaZupawAzjatyckimStylu,
       altText: "Ekspresowa zupa w azjatyckim stylu",
@@ -365,7 +365,7 @@ export const dinnersRecipesData = [
         "Ekspresowa zupa w azjatyckim stylu",
     },
     {
-      id: 30,
+      id: 31,
       href: "https://www.instagram.com/p/DZdA1rMIQER/",
       imgSrc: burgerzKurka,
       altText: "Burger z kurką z bezglutenową bułką, bekonem, sałatą, kisoznym ogórkiem, czerwoną cebulą i sosem mango-mayo",
@@ -376,7 +376,7 @@ export const dinnersRecipesData = [
         "Burger z kurką 🐔🍔 z bezglutenową bułką, bekonem, sałatą, kisoznym ogórkiem, czerwoną cebulą i sosem mango-mayo",
     },
     {
-      id: 31,
+      id: 32,
       href: "https://www.instagram.com/p/Darwr2uI8Cq/",
       imgSrc: pizzaDomowa,
       altText: "Domowa pizza z bezglutenowej mieszanki na pizzę na grubym cieście od Moncana",
@@ -387,7 +387,7 @@ export const dinnersRecipesData = [
         "Domowa pizza z bezglutenowej mieszanki na pizzę na grubym cieście od Moncana",
     },
     {
-      id: 32,
+      id: 33,
       href: "https://www.instagram.com/p/Dbh2a5HCOWn/?img_index=1",
       imgSrc: zieloneNalesnikizSzarpanaWolowina,
       altText: "Zielone naleśniki z szarpaną wołowiną",
@@ -398,7 +398,7 @@ export const dinnersRecipesData = [
         "Zielone naleśniki z szarpaną wołowiną",
     },
     {
-      id: 33,
+      id: 34,
       href: "https://www.instagram.com/p/DeZtuN2RIRi/",
       imgSrc: makaronPoAzjatycku,
       altText: "Makaron z wołowiną po azjatycku",
