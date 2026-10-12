@@ -296,14 +296,6 @@ export const HERO_SLIDES: HeroSlideItem[] = [
     reverse: true,
   },
   {
-    title: "Gry dla każdego",
-    subtitle:
-      "Zrób sobie chwilę przerwy i wybierz jedną z gier przygotowanych dla Ciebie",
-    image: gamesHero,
-    alt: "Ilustracja kontrolera do bezglutenowych gier",
-    links: [{ label: "Zagraj teraz", href: "/gry" }],
-  },
-  {
     title: "Wyszukiwarka przepisów bezglutenowych",
     subtitle:
       "Baza bezpiecznych i smacznych przepisów bez glutenu, sprawdzonych osobiście przeze mnie",
@@ -326,6 +318,14 @@ export const HERO_SLIDES: HeroSlideItem[] = [
     image: articlesPage,
     alt: "Artykuły o diecie bezglutenowej",
     links: [{ label: "Czytaj", href: "/artykuly" }],
+  },
+  {
+    title: "Gry dla każdego",
+    subtitle:
+      "Zrób sobie chwilę przerwy i wybierz jedną z gier przygotowanych dla Ciebie",
+    image: gamesHero,
+    alt: "Ilustracja kontrolera do bezglutenowych gier",
+    links: [{ label: "Zagraj teraz", href: "/gry" }],
   },
   {
     title: "Bezglutenowe śniadania",
