@@ -20,6 +20,8 @@ import bezglutenoweHalloween from "../../public/img/events/011_bezglutenowe_hall
 import glutenFreeHeroMap from "../../public/img/map/gluten-free-hero-map.jpg";
 import searchPage from "../../public/img/hero/searchpage.jpg";
 import articlesPage from "../../public/img/hero/articles.jpg";
+import mealPlannerHero from "../../public/img/hero/meal-planner.jpg";
+import gamesHero from "../../public/img/hero/games-page.jpg";
 
 // --- PARTNER IMPORTS ---
 import GlutenexImg from "../../public/img/cooperation/glutenex.png";
@@ -283,6 +285,23 @@ export const HERO_SLIDES: HeroSlideItem[] = [
         className: "white",
       },
     ],
+  },
+  {
+    title: "Bezglutenowy planer posiłków",
+    subtitle:
+      "Zaplanuj posiłki na cały tydzień i odkryj sprawdzone, bezglutenowe przepisy",
+    image: mealPlannerHero,
+    alt: "Ilustracja tygodniowego planera posiłków z propozycjami dań",
+    links: [{ label: "Zaplanuj posiłki", href: "/planer-posilkow" }],
+    reverse: true,
+  },
+  {
+    title: "Gry dla każdego",
+    subtitle:
+      "Zrób sobie chwilę przerwy i wybierz jedną z gier przygotowanych dla Ciebie",
+    image: gamesHero,
+    alt: "Ilustracja kontrolera do bezglutenowych gier",
+    links: [{ label: "Zagraj teraz", href: "/gry" }],
   },
   {
     title: "Wyszukiwarka przepisów bezglutenowych",
