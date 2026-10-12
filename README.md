@@ -17,7 +17,7 @@
 
 This is a modern website dedicated to healthy, gluten-free, sugar-free, and dairy-free eating. Its main goal is to provide culinary inspiration, information about gluten-free diets, location recommendations, and practical tools for people with celiac disease and those following elimination diets.
 
-The site is built with Next.js using React, TypeScript, and Sass. It includes informational content and interactive features such as recipe search, a gluten-free places map, and educational sections.
+The site is built with Next.js using React, TypeScript, and Sass. It includes informational content and interactive features such as recipe search, a gluten-free places map, a product discovery page, and educational sections.
 
 ## Features
 
@@ -40,7 +40,15 @@ The site is built with Next.js using React, TypeScript, and Sass. It includes in
 - search by data and tags,
 - individual pages for each recipe group.
 
-### 3. Interactive map of gluten-free places
+### 3. Product discovery page
+
+- searchable catalog of gluten-free products,
+- filter by product name and store/brand,
+- pagination for larger collections,
+- quick access to external product sources,
+- responsive card layout with product previews and metadata.
+
+### 4. Interactive map of gluten-free places
 
 - map powered by Leaflet and react-leaflet,
 - location markers,
@@ -49,7 +57,7 @@ The site is built with Next.js using React, TypeScript, and Sass. It includes in
 - pagination,
 - option to jump to the selected location on the map.
 
-### 4. Gluten-free catcher game
+### 5. Gluten-free catcher game
 
 - available from the **Tools** dropdown at `/gra-lapacz`,
 - nickname entry in a start/restart modal,
@@ -63,7 +71,7 @@ The site is built with Next.js using React, TypeScript, and Sass. It includes in
 - local top-10 leaderboard stored in the browser with `localStorage`,
 - responsive three-column desktop layout with instructions, centered game board, and leaderboard.
 
-### 5. Informational and community sections
+### 6. Informational and community sections
 
 - educational articles and posts,
 - information about celiac disease,
@@ -71,7 +79,7 @@ The site is built with Next.js using React, TypeScript, and Sass. It includes in
 - events and workshops,
 - collaboration and contact section.
 
-### 6. Responsive UI
+### 7. Responsive UI
 
 - built for different screen sizes,
 - reusable components,
@@ -170,6 +178,7 @@ foods-website/
 
 - `/` — homepage with informational sections and promotions
 - `/szukaj-przepisow` — recipe search and all-recipe list
+- `/produkty` — searchable product catalog with filters and external source links
 - `/sniadania` — breakfast recipes
 - `/obiady` — dinner recipes
 - `/przekaski` — snack recipes
