@@ -17,7 +17,7 @@ import pierogi from "../../public/img/products/022_bezglutenowe_panettone.jpg";
 import pastaGlutenFreeRoma from "../../public/img/welcome/wloski-makaron-gluten-free.jpg";
 import saskaSushiWarszawa from "../../public/img/restaurants/poland/001_saska_sushi.jpg";
 import bezglutenoweHalloween from "../../public/img/events/011_bezglutenowe_halloween.jpg";
-import glutenFreeHeroMap from "../../public/img/map/gluten-free-hero-map.jpg";
+import glutenFreeHeroMap from "../../public/img/hero/glutenfreemap.jpg";
 import searchPage from "../../public/img/hero/searchpage.jpg";
 import articlesPage from "../../public/img/hero/articles.jpg";
 import mealPlannerHero from "../../public/img/hero/meal-planner.jpg";
