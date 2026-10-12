@@ -50,6 +50,17 @@
   }
 }
 
+@keyframes recipesSearchRiseIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .recipes-search-hero__eyebrow,
 .recipes-search-hero__note {
   display: inline-flex;
@@ -341,27 +352,16 @@
       transform: scale(1.08) rotate(8deg);
     }
   }
+}
 
-  @keyframes recipesSearchRiseIn {
-    from {
-      opacity: 0;
-      transform: translateY(18px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .recipes-search-hero *,
-    .recipes-search-hero *::before,
-    .recipes-search-hero *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      scroll-behavior: auto !important;
-      transition-duration: 0.01ms !important;
-    }
+@media (prefers-reduced-motion: reduce) {
+  .recipes-search-hero *,
+  .recipes-search-hero *::before,
+  .recipes-search-hero *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
   }
 }
 
