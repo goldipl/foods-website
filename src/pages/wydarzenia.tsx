@@ -1,4 +1,5 @@
 import "@/sass/main.scss";
+import { useMemo, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,8 +8,18 @@ import { eventsData } from "@/data/events/events";
 import Topbar from "@/components/common/Topbar";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
+import Pagination from "@/components/common/Pagination";
 
 const EventsPage = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const events = useMemo(() => eventsData.slice().reverse(), []);
+  const eventsPerPage = 8;
+  const totalPages = Math.max(1, Math.ceil(events.length / eventsPerPage));
+  const paginatedEvents = events.slice(
+    (currentPage - 1) * eventsPerPage,
+    currentPage * eventsPerPage,
+  );
+
   return (
     <>
       <Head>
@@ -96,41 +107,46 @@ const EventsPage = () => {
             </div>
           </div>
 
-          <div className="listing-v1">
-            {eventsData
-              .slice()
-              .reverse()
-              .map((recipe) => (
-                <Link
-                  key={recipe.id}
-                  href={recipe.href}
-                  className="listing-v1-slot"
-                  target="_blank"
-                >
-                  <div className="listing-v1-slot__img">
-                    <Image
-                      src={recipe.imgSrc}
-                      alt={recipe.altText}
-                      width={400}
-                      height={500}
-                      loading="lazy"
-                    />
+          <div className="listing-v1" id="lista-wydarzen">
+            {paginatedEvents.map((event) => (
+              <Link
+                key={event.id}
+                href={event.href}
+                className="listing-v1-slot"
+                target="_blank"
+              >
+                <div className="listing-v1-slot__img">
+                  <Image
+                    src={event.imgSrc}
+                    alt={event.altText}
+                    width={400}
+                    height={500}
+                    loading="lazy"
+                  />
+                </div>
+                <div className="listing-v1-slot__text">
+                  <span>{event.description}</span>
+                </div>
+                <div className="listing-v1-slot__labels">
+                  <span className={event.labelClass}>{event.label}</span>
+                </div>
+                <div className="listing-v1-slot__zoom">
+                  <div className="zoom-box">
+                    <CiInstagram />
+                    <span>Zobacz</span>
                   </div>
-                  <div className="listing-v1-slot__text">
-                    <span>{recipe.description}</span>
-                  </div>
-                  <div className="listing-v1-slot__labels">
-                    <span className={recipe.labelClass}>{recipe.label}</span>
-                  </div>
-                  <div className="listing-v1-slot__zoom">
-                    <div className="zoom-box">
-                      <CiInstagram />
-                      <span>Zobacz</span>
-                    </div>
-                  </div>
-                </Link>
-              ))}
+                </div>
+              </Link>
+            ))}
           </div>
+          {totalPages > 1 && (
+            <Pagination
+              currentPage={currentPage}
+              totalPages={totalPages}
+              onPageChange={setCurrentPage}
+              scrollTargetId="lista-wydarzen"
+            />
+          )}
           <div className="primary-button">
             <Link href="/" className="primary-button__text">
               Powrót
