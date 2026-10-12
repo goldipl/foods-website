@@ -21,70 +21,65 @@ The site is built with Next.js using React, TypeScript, and Sass. It includes in
 
 ## Features
 
-### 1. Rich landing page
+### 1. Recipe database and recipe search
 
-- hero section with main message and CTA,
-- intro and infographic sections,
-- article showcase,
-- educational sections about celiac disease,
-- recommendations for products, restaurants, hotels, and collaboration,
-- events and contact section,
-- video content and informational modal.
+- dedicated pages for breakfasts, dinners, snacks, and desserts,
+- recipe categories and product-focused discovery,
+- search/filter experience for gluten-free recipes,
+- clearly organized recipe cards and detailed individual recipe pages.
 
-### 2. Recipe collections by category
+### 2. Meal planner and weekly organization
 
-- breakfasts,
-- dinners,
-- snacks,
-- desserts,
-- search by data and tags,
-- individual pages for each recipe group.
+- weekly gluten-free meal planning,
+- practical organization of dishes across the week,
+- a helpfully structured planning flow for everyday eating.
 
-### 3. Product discovery page
+### 3. Product catalog and shopping discovery
 
 - searchable catalog of gluten-free products,
-- filter by product name and store/brand,
-- pagination for larger collections,
-- quick access to external product sources,
-- responsive card layout with product previews and metadata.
+- filters by product name and store or brand,
+- product cards with basic metadata and external source links,
+- convenient browsing for grocery shopping and product comparisons.
 
-### 4. Interactive map of gluten-free places
+### 4. Map of gluten-free places
 
-- map powered by Leaflet and react-leaflet,
-- location markers,
+- interactive map with location markers,
 - search by name, address, city, and country,
-- tabular list of places,
-- pagination,
-- option to jump to the selected location on the map.
+- list view with pagination and location jumping,
+- recommendations for restaurants, bakeries, cafés, and other places in Poland and Europe.
 
-### 5. Gluten-free catcher game
+### 5. Educational content and community resources
 
-- available from the **Tools** dropdown at `/gra-lapacz`,
-- nickname entry in a start/restart modal,
-- timed 45-second catcher game with falling food emoji,
-- desktop controls with arrow keys or `A` / `D`,
-- mobile controls with touch-friendly direction buttons,
-- safe products such as fruit, vegetables, salads, and ice cream award 10 points,
-- gluten-related products such as bread, pizza, pasta, and baked goods remove one life,
-- three-heart life system with visual damage feedback when a life is lost,
-- animated score, timer, basket movement, and game feedback,
-- local top-10 leaderboard stored in the browser with `localStorage`,
-- responsive three-column desktop layout with instructions, centered game board, and leaderboard.
+- articles about celiac disease and gluten-free living,
+- practical advice for everyday life after diagnosis,
+- events, workshops, and collaboration opportunities,
+- inspiration for eating, traveling, and staying well informed.
 
-### 6. Informational and community sections
+### 6. Games and entertainment hub
 
-- educational articles and posts,
-- information about celiac disease,
-- recommendations for places in Poland and Europe,
-- events and workshops,
-- collaboration and contact section.
+- dedicated games page at `/gry`,
+- lightweight browser games designed for short breaks,
+- local score tracking in the browser,
+- playful educational and reaction-based experiences around gluten-free living.
 
-### 7. Responsive UI
+### 7. Responsive, modern UI
 
-- built for different screen sizes,
-- reusable components,
-- styling with SCSS,
-- integration of sliders (Swiper) and icons (react-icons).
+- mobile-friendly and desktop-friendly layout,
+- reusable components and consistent styling,
+- SCSS-based design system,
+- integration of sliders, icons, and visual content.
+
+## Games available
+
+The site includes a full mini-game section with five games accessible from `/gry`:
+
+- `Łap bezglutenowe produkty` (`/gra-lapacz`) – a timed reaction-catching game where you collect safe gluten-free items and avoid gluten-containing ones.
+- `Snake` (`/gra-snake`) – the classic Snake experience with increasing difficulty and score chasing.
+- `Bezglutenowy quiz` (`/gra-quiz`) – a knowledge game focused on gluten-free products, ingredients, and healthy choices.
+- `Wyścig` (`/gra-wyscig`) – a fast-paced racing challenge built for score-focused play.
+- `Maria i bezglutenowa kraina` (`/gra-maria`) – a platformer adventure with jumping, collecting rewards, and progressing through levels.
+
+Each game includes a different gameplay style and is designed to make the gluten-free lifestyle more engaging and fun.
 
 ## Tech stack
 
@@ -156,7 +151,7 @@ foods-website/
 │   ├── app/                      # Next.js app configuration
 │   ├── components/
 │   │   ├── common/               # shared components (header, footer, modal, searchbar)
-│   │   ├── games/                # interactive gluten-free catcher game
+│   │   ├── games/                # interactive mini-games: catcher, Snake, quiz, race, platformer
 │   │   ├── main-page/            # landing page sections
 │   │   ├── map/                 # map component and geolocation logic
 │   │   ├── recipes/             # recipe lists and search
@@ -178,6 +173,7 @@ foods-website/
 
 - `/` — homepage with informational sections and promotions
 - `/szukaj-przepisow` — recipe search and all-recipe list
+- `/planer-posilkow` — weekly gluten-free meal planner
 - `/produkty` — searchable product catalog with filters and external source links
 - `/sniadania` — breakfast recipes
 - `/obiady` — dinner recipes
@@ -188,8 +184,13 @@ foods-website/
 - `/hotele` — hotel recommendations
 - `/wydarzenia` — events calendar
 - `/bezglutenowe-miejsca` — interactive map of locations
-- `/gra-lapacz` — timed gluten-free catcher game
 - `/artykuly` — article list
+- `/gry` — games hub with all available mini-games
+- `/gra-lapacz` — timed gluten-free catcher game
+- `/gra-snake` — classic Snake game
+- `/gra-quiz` — gluten-free knowledge quiz
+- `/gra-wyscig` — racing game
+- `/gra-maria` — platformer adventure
 
 ## Deployment
 
