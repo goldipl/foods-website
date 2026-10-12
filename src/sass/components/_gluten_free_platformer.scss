@@ -1,0 +1,287 @@
+.platformer-page {
+  --platformer-ink: #173b3d;
+  --platformer-green: #5d853f;
+  --platformer-coral: #db7654;
+  min-height: 760px;
+  padding: 72px 20px 92px;
+  color: var(--platformer-ink);
+  background: linear-gradient(135deg, #f7f3e9 0%, #eef7ee 58%, #dff1e8 100%);
+}
+
+.platformer-intro,
+.platformer-layout {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.platformer-intro {
+  margin-bottom: 30px;
+}
+
+.platformer-kicker {
+  color: var(--platformer-coral);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.platformer-intro h1 {
+  margin: 8px 0 10px;
+  font-size: clamp(34px, 5vw, 58px);
+  line-height: 1.05;
+}
+
+.platformer-intro > p {
+  max-width: 760px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.platformer-layout {
+  display: grid;
+  grid-template-columns: minmax(230px, 300px) minmax(0, 1fr);
+  align-items: start;
+  gap: 22px;
+}
+
+.platformer-card,
+.platformer-game-card {
+  border: 1px solid rgba(23, 59, 61, 0.14);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 18px 38px rgba(23, 59, 61, 0.08);
+}
+
+.platformer-instructions {
+  padding: 23px;
+}
+
+.platformer-instructions h2 {
+  margin: 0;
+  font-size: 21px;
+}
+
+.platformer-instructions ol {
+  margin: 17px 0;
+  padding-left: 21px;
+  color: rgba(23, 59, 61, 0.8);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.platformer-instructions li + li {
+  margin-top: 11px;
+}
+
+.platformer-hint {
+  margin: 0;
+  padding: 13px;
+  border-radius: 9px;
+  background: #e5f1e2;
+  color: #40652d;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.platformer-game-card {
+  min-width: 0;
+  padding: 16px;
+}
+
+.platformer-hud {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 0.8fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.platformer-hud > div {
+  display: grid;
+  min-width: 0;
+  gap: 4px;
+}
+
+.platformer-hud span {
+  color: rgba(23, 59, 61, 0.63);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.platformer-hud strong {
+  overflow: hidden;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.platformer-canvas-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #b6e8f2;
+}
+
+.platformer-canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 24 / 11;
+}
+
+.platformer-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(19, 45, 44, 0.72);
+  color: #fff;
+  text-align: center;
+}
+
+.platformer-overlay > span {
+  font-size: 42px;
+}
+
+.platformer-overlay h2 {
+  margin: 9px 0 6px;
+  font-size: clamp(22px, 3vw, 30px);
+}
+
+.platformer-overlay p {
+  max-width: 460px;
+  margin: 0 0 18px;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.platformer-primary-button,
+.platformer-pause-button,
+.platformer-touch-controls button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 999px;
+  background: #d7f09a;
+  color: #244326;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+.platformer-primary-button:hover,
+.platformer-pause-button:hover:not(:disabled),
+.platformer-touch-controls button:hover {
+  background: #c6e77e;
+}
+
+.platformer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: 13px;
+}
+
+.platformer-pause-button {
+  min-height: 40px;
+  padding: 0 14px;
+  background: #f0f4e8;
+  font-size: 13px;
+}
+
+.platformer-pause-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.platformer-touch-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.platformer-touch-controls button {
+  width: 48px;
+  min-height: 44px;
+  padding: 0;
+  border: 1px solid rgba(23, 59, 61, 0.12);
+  background: #f5f5ef;
+  touch-action: none;
+}
+
+.platformer-touch-controls svg {
+  width: 20px;
+  height: 20px;
+}
+
+.platformer-jump-accent {
+  display: none;
+}
+
+.platformer-page button:focus-visible {
+  outline: 3px solid #dd8e56;
+  outline-offset: 3px;
+}
+
+@media (max-width: 800px) {
+  .platformer-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .platformer-instructions {
+    order: 2;
+  }
+}
+
+@media (max-width: 560px) {
+  .platformer-page {
+    padding: 48px 14px 64px;
+  }
+
+  .platformer-game-card {
+    padding: 10px;
+  }
+
+  .platformer-hud {
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+  }
+
+  .platformer-hud > div:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .platformer-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .platformer-overlay {
+    padding: 12px;
+  }
+
+  .platformer-overlay > span {
+    display: none;
+  }
+
+  .platformer-overlay p {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .platformer-primary-button {
+    min-height: 38px;
+    font-size: 13px;
+  }
+}

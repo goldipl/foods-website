@@ -277,13 +277,14 @@
 
 .games-page__grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 20px;
 }
 
 .games-page__card {
   --game-accent: #dff0dc;
   display: flex;
+  grid-column: span 2;
   flex-direction: column;
   min-height: 355px;
   padding: 23px;
@@ -328,7 +329,14 @@
 
 .games-page__card--4 {
   --game-accent: #f8dcd2;
+  grid-column: 2 / span 2;
   animation-delay: 0.24s;
+}
+
+.games-page__card--5 {
+  --game-accent: #dce8fb;
+  grid-column: 4 / span 2;
+  animation-delay: 0.3s;
 }
 
 .games-page__card-top {
@@ -516,7 +524,14 @@
   }
 
   .games-page__card {
+    grid-column: auto;
     min-height: 330px;
+  }
+
+  .games-page__card--5 {
+    grid-column: 1 / -1;
+    width: calc(50% - 10px);
+    justify-self: center;
   }
 
   .games-page__outro {
@@ -592,6 +607,8 @@
   }
 
   .games-page__card {
+    grid-column: auto;
+    width: 100%;
     min-height: 300px;
   }
 

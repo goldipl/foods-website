@@ -258,6 +258,15 @@ export const GAMES_SECTION_ITEMS: GameSectionItem[] = [
     badge: "Wyzwanie",
     label: "Start",
   },
+  {
+    title: "Maria i bezglutenowa kraina",
+    description:
+      "Skacz po platformach, zbieraj złote ziarenka i pokonaj pięć coraz trudniejszych poziomów.",
+    href: "/gra-maria",
+    icon: "🌾",
+    badge: "Platformówka",
+    label: "Wyrusz w drogę",
+  },
 ];
 
 export const HERO_SLIDES: HeroSlideItem[] = [

@@ -76,7 +76,6 @@ const index = () => {
       <main>
         <Hero />
         <BoxesInfoSection />
-        <GamesSection />
         <ArticlesPreviewSection />
         <WelcomeSection />
         <RecipesSection />
@@ -88,6 +87,7 @@ const index = () => {
         <CeliacDiseaseWhatsNextSection />
         <Events />
         <CooperationSection />
+        <GamesSection />
         <MapSection />
         <Contact />
       </main>

@@ -53,7 +53,7 @@ const GamesPage = () => (
               Wybieram grę <HiArrowRight aria-hidden="true" />
             </Link>
             <div className="games-page__hero-note">
-              <span aria-hidden="true">🎮</span> Cztery gry. Jedna pyszna zabawa.
+              <span aria-hidden="true">🎮</span> Pięć gier. Jedna pyszna zabawa.
             </div>
           </div>
 
