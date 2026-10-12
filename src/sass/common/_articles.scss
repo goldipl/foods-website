@@ -49,10 +49,10 @@
   background:
     radial-gradient(
       ellipse at 78% 48%,
-      rgba(255, 255, 255, 0.14),
-      transparent 30%
+      rgba(146, 255, 227, 0.2),
+      transparent 34%
     ),
-    linear-gradient(120deg, #194c34 0%, #286c48 56%, #4a8b4d 100%);
+    linear-gradient(120deg, #123b58 0%, #14717a 56%, #35a88d 100%);
   color: #fff;
 }
 
@@ -84,7 +84,7 @@
 
   h1 span {
     display: block;
-    color: #f4d870;
+    color: #a4f5d9;
   }
 
   p {
@@ -109,7 +109,7 @@
   border: 1px solid rgba(255, 255, 255, 0.24);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.1);
-  color: #f8e8a0;
+  color: #baf7e4;
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -126,9 +126,9 @@
   margin-top: 14px;
   padding: 0 24px;
   border-radius: 999px;
-  background: #f4d870;
-  box-shadow: 0 10px 28px rgba(11, 39, 26, 0.22);
-  color: #173b2a;
+  background: #a4f5d9;
+  box-shadow: 0 10px 28px rgba(9, 39, 51, 0.24);
+  color: #123b46;
   font-size: 0.98rem;
   font-weight: 700;
   text-decoration: none;
@@ -142,7 +142,7 @@
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 14px 34px rgba(11, 39, 26, 0.32);
+    box-shadow: 0 14px 34px rgba(9, 39, 51, 0.34);
   }
 
   &:hover svg {
@@ -186,8 +186,8 @@
   overflow: hidden;
   border: 8px solid rgba(255, 255, 255, 0.9);
   border-radius: 26px;
-  background: #f8e8a0;
-  box-shadow: 0 28px 70px rgba(11, 39, 26, 0.26);
+  background: #baf7e4;
+  box-shadow: 0 28px 70px rgba(9, 39, 51, 0.3);
   transform: rotate(-5deg);
 
   img {
@@ -230,7 +230,7 @@
   position: absolute;
   z-index: -1;
   border-radius: 50%;
-  background: rgba(238, 211, 106, 0.12);
+  background: rgba(164, 245, 217, 0.17);
   filter: blur(2px);
 }
 

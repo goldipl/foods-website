@@ -10,11 +10,16 @@
   overflow: hidden;
   background:
     radial-gradient(
-      ellipse at 78% 48%,
-      rgba(255, 255, 255, 0.14),
-      transparent 30%
+      ellipse at 78% 45%,
+      rgba(39, 226, 255, 0.3),
+      transparent 32%
     ),
-    linear-gradient(120deg, #194c34 0%, #286c48 56%, #4a8b4d 100%);
+    radial-gradient(
+      ellipse at 24% 110%,
+      rgba(185, 89, 255, 0.38),
+      transparent 43%
+    ),
+    linear-gradient(120deg, #111536 0%, #35206f 53%, #126b88 100%);
   isolation: isolate;
 }
 
@@ -46,7 +51,7 @@
   }
 
   h1 span {
-    color: #f4d870;
+    color: #91f4f0;
   }
 
   p {
@@ -73,7 +78,7 @@
   border: 1px solid rgba(255, 255, 255, 0.24);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.1);
-  color: #f8e8a0;
+  color: #b6fbf4;
   backdrop-filter: blur(8px);
 }
 
@@ -108,12 +113,12 @@
 
 .games-page__hero-cta {
   margin-top: 26px;
-  background: #f4d870;
-  color: #173b2a;
-  box-shadow: 0 10px 28px rgba(11, 39, 26, 0.22);
+  background: linear-gradient(110deg, #b6fbf4 0%, #80eaff 100%);
+  color: #17234a;
+  box-shadow: 0 10px 28px rgba(12, 18, 55, 0.34);
 
   &:hover {
-    box-shadow: 0 14px 34px rgba(11, 39, 26, 0.32);
+    box-shadow: 0 14px 34px rgba(12, 18, 55, 0.46);
   }
 }
 
@@ -152,10 +157,10 @@
   border-radius: 32% 40% 35% 42%;
   background: linear-gradient(
     145deg,
-    rgba(255, 255, 255, 0.2),
-    rgba(255, 255, 255, 0.07)
+    rgba(255, 255, 255, 0.24),
+    rgba(134, 226, 255, 0.1)
   );
-  box-shadow: 0 28px 70px rgba(11, 39, 26, 0.2);
+  box-shadow: 0 28px 70px rgba(12, 18, 55, 0.35);
   font-size: clamp(6rem, 15vw, 11rem);
   transform: rotate(-9deg);
 }
@@ -192,7 +197,7 @@
   position: absolute;
   z-index: -1;
   border-radius: 50%;
-  background: rgba(238, 211, 106, 0.12);
+  background: rgba(113, 237, 255, 0.18);
   filter: blur(2px);
 }
 
