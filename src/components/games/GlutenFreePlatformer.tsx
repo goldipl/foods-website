@@ -371,28 +371,10 @@ const GlutenFreePlatformer = () => {
         if (game.defeated.has(index)) return;
         const enemyX = getEnemyPosition(enemy, time);
         const enemyY = 340 + Math.sin(time / 150 + index) * 2;
-        context.fillStyle = level.theme === "cave" ? "#c18b84" : level.theme === "berry" ? "#b94470" : "#d56d51";
-        context.beginPath();
-        context.ellipse(enemyX, enemyY + 15, 17, 15, 0, Math.PI, Math.PI * 2);
-        context.lineTo(enemyX + 17, enemyY + 17);
-        context.quadraticCurveTo(enemyX + 11, enemyY + 30, enemyX, enemyY + 26);
-        context.quadraticCurveTo(enemyX - 12, enemyY + 31, enemyX - 17, enemyY + 17);
-        context.closePath();
-        context.fill();
-        context.fillStyle = "#719b60";
-        context.beginPath();
-        context.ellipse(enemyX, enemyY + 2, 10, 4, 0, Math.PI, Math.PI * 2);
-        context.fill();
-        context.fillStyle = "#fff";
-        context.beginPath();
-        context.arc(enemyX - 5, enemyY + 14, 4, 0, Math.PI * 2);
-        context.arc(enemyX + 5, enemyY + 14, 4, 0, Math.PI * 2);
-        context.fill();
-        context.fillStyle = "#283d34";
-        context.beginPath();
-        context.arc(enemyX - 4, enemyY + 15, 1.5, 0, Math.PI * 2);
-        context.arc(enemyX + 6, enemyY + 15, 1.5, 0, Math.PI * 2);
-        context.fill();
+        context.font = '32px "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif';
+        context.textAlign = "center";
+        context.textBaseline = "bottom";
+        context.fillText("👾", enemyX, enemyY + 30);
       });
 
       context.fillStyle = "#725943";
@@ -409,18 +391,10 @@ const GlutenFreePlatformer = () => {
       const playerY = game.y;
       const invisible = time < game.invulnerableUntil && Math.floor(time / 90) % 2 === 0;
       if (!invisible) {
-        context.fillStyle = "#385d40";
-        context.fillRect(playerX + 4, playerY + 34, 11, 14);
-        context.fillRect(playerX + 20, playerY + 34, 11, 14);
-        context.fillStyle = "#f3c49c";
-        context.fillRect(playerX + 5, playerY + 12, 25, 25);
-        context.fillStyle = "#568c55";
-        context.fillRect(playerX + 2, playerY + 24, 31, 15);
-        context.fillStyle = "#de7656";
-        context.fillRect(playerX + 2, playerY + 7, 31, 8);
-        context.fillRect(playerX + 9, playerY, 17, 10);
-        context.fillStyle = "#283d34";
-        context.fillRect(playerX + 21, playerY + 17, 3, 4);
+        context.font = '42px "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif';
+        context.textAlign = "center";
+        context.textBaseline = "bottom";
+        context.fillText("👩🏻‍🌾", playerX + PLAYER_WIDTH / 2, playerY + PLAYER_HEIGHT);
       }
       if (time < game.shieldUntil) {
         context.strokeStyle = "rgba(117,198,210,0.8)";
