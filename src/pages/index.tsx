@@ -6,7 +6,7 @@ import Topbar from "@/components/common/Topbar";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import Hero from "@/components/main-page/Hero";
-import MariaGamePromo from "@/components/main-page/MariaGamePromo";
+import KarolaGamePromo from "@/components/main-page/KarolaGamePromo";
 import ArticlesPreviewSection from "@/components/main-page/ArticlesPreviewSection";
 import WelcomeSection from "@/components/main-page/WelcomeSection";
 import BoxesInfoSection from "@/components/main-page/BoxesInfoSection";
@@ -77,7 +77,7 @@ const index = () => {
       <main>
         <Hero />
         <BoxesInfoSection />
-        <MariaGamePromo />
+        <KarolaGamePromo />
         <ArticlesPreviewSection />
         <WelcomeSection />
         <RecipesSection />

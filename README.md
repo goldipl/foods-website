@@ -1,4 +1,4 @@
-﻿<div align="center">
+<div align="center">
   <h1>Bezglutenowa Karola</h1>
   <img src="./public/img/white-bg-logo.jpg" height="80" alt="Bezglutenowa Karola logo" />
   <p><em>A recipe, advice, and recommendation website for people with celiac disease and gluten-free diets.</em></p>
@@ -77,7 +77,7 @@ The site includes a full mini-game section with five games accessible from `/gry
 - `Snake` (`/gra-snake`) – the classic Snake experience with increasing difficulty and score chasing.
 - `Bezglutenowy quiz` (`/gra-quiz`) – a knowledge game focused on gluten-free products, ingredients, and healthy choices.
 - `Wyścig` (`/gra-wyscig`) – a fast-paced racing challenge built for score-focused play.
-- `Maria i bezglutenowa kraina` (`/gra-maria`) – a platformer adventure with jumping, collecting rewards, and progressing through levels.
+- `Karola i bezglutenowa kraina` (`/gra-karola`) – a platformer adventure with jumping, collecting rewards, and progressing through levels.
 
 Each game includes a different gameplay style and is designed to make the gluten-free lifestyle more engaging and fun.
 
@@ -190,7 +190,7 @@ foods-website/
 - `/gra-snake` — classic Snake game
 - `/gra-quiz` — gluten-free knowledge quiz
 - `/gra-wyscig` — racing game
-- `/gra-maria` — platformer adventure
+- `/gra-karola` — platformer adventure
 
 ## Deployment
 

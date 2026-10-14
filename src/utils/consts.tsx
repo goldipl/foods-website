@@ -261,10 +261,10 @@ export const GAMES_SECTION_ITEMS: GameSectionItem[] = [
     label: "Start",
   },
   {
-    title: "Maria i bezglutenowa kraina",
+    title: "Karola i bezglutenowa kraina",
     description:
       "Skacz po platformach, zbieraj złote ziarenka i pokonaj pięć coraz trudniejszych poziomów.",
-    href: "/gra-maria",
+    href: "/gra-karola",
     icon: "🌾",
     badge: "Platformówka",
     label: "Wyrusz w drogę",

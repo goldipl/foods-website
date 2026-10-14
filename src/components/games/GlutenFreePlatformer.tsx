@@ -608,7 +608,7 @@ const GlutenFreePlatformer = () => {
     <section className="platformer-page">
       <div className="platformer-intro">
         <span className="platformer-kicker">Przygoda dla małych i dużych</span>
-        <h1>Maria i bezglutenowa kraina</h1>
+        <h1>Karola i bezglutenowa kraina</h1>
         <p>
           Wyrusz z Marią po złote ziarenka! Pokonuj potworki, zbieraj pomocne
           bonusy i odkrywaj pięć coraz dłuższych, zupełnie różnych krain.

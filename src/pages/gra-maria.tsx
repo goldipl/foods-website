@@ -1,29 +1,11 @@
-import Head from "next/head";
-import Topbar from "@/components/common/Topbar";
-import Header from "@/components/common/Header";
-import Footer from "@/components/common/Footer";
-import GlutenFreePlatformer from "@/components/games/GlutenFreePlatformer";
+import { useEffect } from "react";
 
-const GlutenFreePlatformerPage = () => (
-  <>
-    <Head>
-      <title>Maria i bezglutenowa kraina | Bezglutenowa Karola</title>
-      <meta
-        name="description"
-        content="Pomóż Marii przejść pięć długich, różnorodnych krain. Pokonuj potworki, zbieraj złote ziarenka i korzystaj z pomocnych bonusów."
-      />
-    </Head>
-    <header>
-      <Topbar />
-      <Header />
-    </header>
-    <main>
-      <GlutenFreePlatformer />
-    </main>
-    <footer>
-      <Footer />
-    </footer>
-  </>
-);
+const LegacyMariaGamePage = () => {
+  useEffect(() => {
+    window.location.replace("/gra-karola");
+  }, []);
 
-export default GlutenFreePlatformerPage;
+  return null;
+};
+
+export default LegacyMariaGamePage;
