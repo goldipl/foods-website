@@ -64,6 +64,7 @@ type LevelBlueprint = {
 
 const CANVAS_WIDTH = 960;
 const CANVAS_HEIGHT = 440;
+const MOBILE_GAME_ZOOM = 1.25;
 const PLAYER_WIDTH = 34;
 const PLAYER_HEIGHT = 48;
 const MAX_LIVES = 5;
@@ -227,21 +228,28 @@ const GlutenFreePlatformer = () => {
     const context = canvas?.getContext("2d");
     if (!canvas || !context) return undefined;
 
+    const mobileViewport = window.matchMedia("(max-width: 560px)");
+    const resizeCanvas = () => {
+      canvas.height = Math.round(CANVAS_HEIGHT * (mobileViewport.matches ? MOBILE_GAME_ZOOM : 1));
+    };
+    resizeCanvas();
+    mobileViewport.addEventListener("change", resizeCanvas);
+
     let frame = 0;
     let previousTime = performance.now();
     let hudElapsed = 0;
 
-    const drawBackdrop = (level: Level, camera: number, time: number) => {
+    const drawBackdrop = (level: Level, camera: number, time: number, viewportWidth: number) => {
       const palette = PALETTES[level.theme];
       const sky = context.createLinearGradient(0, 0, 0, CANVAS_HEIGHT);
       sky.addColorStop(0, palette.skyTop);
       sky.addColorStop(1, palette.skyBottom);
       context.fillStyle = sky;
-      context.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+      context.fillRect(0, 0, viewportWidth, CANVAS_HEIGHT);
 
       const parallax = camera * 0.2;
       const firstHill = Math.floor(parallax / 340) * 340;
-      for (let x = firstHill; x < parallax + CANVAS_WIDTH + 340; x += 340) {
+      for (let x = firstHill; x < parallax + viewportWidth + 340; x += 340) {
         const screenX = x - parallax;
         context.fillStyle = palette.hills[Math.floor(x / 340) % palette.hills.length];
         context.beginPath();
@@ -287,7 +295,7 @@ const GlutenFreePlatformer = () => {
 
       if (level.theme === "festival") {
         const colors = ["#db7654", "#f4d267", "#719b60", "#8876ac"];
-        for (let x = -((camera * 0.38) % 120); x < CANVAS_WIDTH; x += 120) {
+        for (let x = -((camera * 0.38) % 120); x < viewportWidth; x += 120) {
           context.fillStyle = colors[Math.floor((x + camera * 0.38 + 1200) / 120) % colors.length];
           context.beginPath();
           context.moveTo(x, 18);
@@ -302,10 +310,12 @@ const GlutenFreePlatformer = () => {
     const draw = (time: number) => {
       const game = gameRef.current;
       const level = LEVELS[game.level];
+      const zoom = mobileViewport.matches ? MOBILE_GAME_ZOOM : 1;
+      const viewportWidth = CANVAS_WIDTH / zoom;
       context.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
-      drawBackdrop(level, game.camera, time);
-
       context.save();
+      context.scale(zoom, zoom);
+      drawBackdrop(level, game.camera, time, viewportWidth);
       context.translate(-game.camera, 0);
       const palette = PALETTES[level.theme];
 
@@ -532,10 +542,8 @@ const GlutenFreePlatformer = () => {
           if (checkpoint !== undefined) game.checkpointX = checkpoint;
         }
 
-        game.camera = Math.max(
-          0,
-          Math.min(level.width - CANVAS_WIDTH, game.x - CANVAS_WIDTH * 0.34),
-        );
+        const viewportWidth = CANVAS_WIDTH / (mobileViewport.matches ? MOBILE_GAME_ZOOM : 1);
+        game.camera = Math.max(0, Math.min(level.width - viewportWidth, game.x - viewportWidth * 0.34));
         hudElapsed += delta;
         if (hudElapsed >= 0.12) {
           hudElapsed = 0;
@@ -549,7 +557,10 @@ const GlutenFreePlatformer = () => {
     };
 
     frame = window.requestAnimationFrame(tick);
-    return () => window.cancelAnimationFrame(frame);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      mobileViewport.removeEventListener("change", resizeCanvas);
+    };
   }, [changeStatus]);
 
   const jump = useCallback(() => {
@@ -672,8 +683,8 @@ const GlutenFreePlatformer = () => {
             </button>
             <div className="platformer-touch-controls" aria-label="Sterowanie dotykowe">
               <button type="button" aria-label="Idź w lewo" onPointerDown={() => setDirection("left", true)} onPointerUp={() => setDirection("left", false)} onPointerLeave={() => setDirection("left", false)} onPointerCancel={() => setDirection("left", false)}><FiArrowLeft /></button>
-              <button type="button" aria-label="Idź w prawo" onPointerDown={() => setDirection("right", true)} onPointerUp={() => setDirection("right", false)} onPointerLeave={() => setDirection("right", false)} onPointerCancel={() => setDirection("right", false)}><FiArrowRight /></button>
               <button type="button" aria-label="Skocz" onPointerDown={jump}><FiArrowUp /><FiArrowDown className="platformer-jump-accent" /></button>
+              <button type="button" aria-label="Idź w prawo" onPointerDown={() => setDirection("right", true)} onPointerUp={() => setDirection("right", false)} onPointerLeave={() => setDirection("right", false)} onPointerCancel={() => setDirection("right", false)}><FiArrowRight /></button>
             </div>
           </div>
         </div>
