@@ -10,7 +10,7 @@ const GlutenFreePlatformerPage = () => (
       <title>Maria i bezglutenowa kraina | Bezglutenowa Karola</title>
       <meta
         name="description"
-        content="Pomóż Marii przejść pięć platformowych poziomów, zbieraj złote ziarenka i uważaj na przeszkody w bezglutenowej krainie."
+        content="Pomóż Marii przejść pięć długich, różnorodnych krain. Pokonuj potworki, zbieraj złote ziarenka i korzystaj z pomocnych bonusów."
       />
     </Head>
     <header>
