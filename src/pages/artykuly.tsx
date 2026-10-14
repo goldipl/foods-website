@@ -65,7 +65,7 @@ const ArticlesPage = () => {
             <div className="articles-page__hero-inner">
               <div className="articles-page__hero-content">
                 <span className="articles-page__eyebrow">
-                  <HiSparkles aria-hidden="true" /> Wiedza i inspiracje
+                  Wiedza i inspiracje
                 </span>
                 <h1 id="articles-page-title">
                   Artykuły i poradniki

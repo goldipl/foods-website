@@ -84,7 +84,7 @@ const ProductsPage = () => {
             <div className="products-page__hero-inner">
               <div className="products-page__hero-content">
                 <span className="products-page__eyebrow">
-                  <HiSparkles aria-hidden="true" /> Produkty i inspiracje
+                  Produkty i inspiracje
                 </span>
                 <h1 id="products-page-title">
                   Bezglutenowe
