@@ -7,10 +7,11 @@
   }
 }
 
-body:has(.header-main-container.is-fixed) {
-  padding-top: 100px;
+body:has(.header-main-container.is-fixed) > header {
+  padding-bottom: 92px;
+
   @media (max-width: 1180px) {
-    padding-top: 72px;
+    padding-bottom: 70px;
   }
 }
 
