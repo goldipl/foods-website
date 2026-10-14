@@ -101,12 +101,6 @@
       animation: heroFoodFloat 5s ease-in-out infinite;
     }
 
-    .hero-food-float--grain {
-      top: 8px;
-      left: 18%;
-      rotate: -11deg;
-    }
-
     .hero-food-float--bread {
       top: 25%;
       right: -8px;
@@ -119,13 +113,6 @@
       left: -8px;
       animation-delay: -2.4s;
       rotate: 9deg;
-    }
-
-    .hero-food-float--pretzel {
-      right: 18%;
-      bottom: 8px;
-      animation-delay: -3.5s;
-      rotate: -9deg;
     }
 
     .swiper {
@@ -391,15 +378,6 @@
     left: -18px;
   }
 
-  #hero .hero-wrapper .hero-food-float--pretzel {
-    top: auto;
-    bottom: 40px;
-    left: -24px;
-  }
-
-  #hero .hero-wrapper .hero-food-float--grain {
-    display: none;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
