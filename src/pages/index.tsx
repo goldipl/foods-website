@@ -88,8 +88,8 @@ const index = () => {
         <VideoSection />
         <CeliacDiseaseWhatsNextSection />
         <Events />
-        <CooperationSection />
         <GamesSection />
+        <CooperationSection />
         <MapSection />
         <Contact />
       </main>

@@ -9,6 +9,7 @@ const MapSection = () => {
     <section id="mapa" className="map-section">
       <div className="map-section-wrapper">
         <div className="section-title">
+          <span className="map-section__eyebrow">Odkrywaj bez glutenu</span>
           <h2>Mapa restauracji / miejsc gluten free</h2>
           <h4>Kliknij w mapę i sprawdź więcej miejsc.</h4>
         </div>
