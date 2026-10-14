@@ -1,40 +1,53 @@
 #games-section {
-  --games-ink: #0c472e;
+  --games-ink: #123e32;
   position: relative;
   display: flex;
   overflow: hidden;
   isolation: isolate;
-  color: $color-green05;
+  color: #fff;
   background:
-    radial-gradient(ellipse at 88% 18%, rgba(127, 180, 2, 0.1), transparent 32%),
-    linear-gradient(180deg, #f4f2eb 0%, #ecf1e9 100%);
+    radial-gradient(
+      ellipse at 82% 8%,
+      rgba(197, 231, 114, 0.2),
+      transparent 34%
+    ),
+    linear-gradient(115deg, #123e32 0%, #1b5941 52%, #34764c 100%);
 
   &::before,
   &::after {
     position: absolute;
     z-index: -1;
-    border: 1px solid rgba(100, 143, 0, 0.1);
     border-radius: 50%;
     content: "";
     pointer-events: none;
+    animation: mariaGlowDrift 12s ease-in-out infinite;
   }
 
   &::before {
-    top: 110px;
-    right: -190px;
-    width: 480px;
-    height: 480px;
-    box-shadow:
-      0 0 0 28px rgba(100, 143, 0, 0.035),
-      0 0 0 58px rgba(100, 143, 0, 0.025);
+    top: -250px;
+    right: 4%;
+    width: 440px;
+    height: 440px;
+    background: radial-gradient(
+      circle,
+      rgba(197, 231, 114, 0.2) 0%,
+      rgba(197, 231, 114, 0.08) 42%,
+      transparent 72%
+    );
   }
 
   &::after {
-    bottom: -270px;
-    left: -150px;
-    width: 450px;
-    height: 450px;
-    background: rgba(127, 180, 2, 0.06);
+    bottom: -310px;
+    left: 3%;
+    width: 520px;
+    height: 520px;
+    background: radial-gradient(
+      circle,
+      rgba(250, 207, 104, 0.15) 0%,
+      rgba(250, 207, 104, 0.06) 43%,
+      transparent 72%
+    );
+    animation-delay: -6s;
   }
 
   .games-section__wrapper {
@@ -43,14 +56,14 @@
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 90px 24px 98px;
+    padding: 56px 24px;
   }
 
   .games-section__floating {
     position: absolute;
     z-index: 0;
     font-size: 2rem;
-    filter: drop-shadow(0 8px 14px rgba(12, 71, 46, 0.13));
+    filter: drop-shadow(0 8px 14px rgba(7, 35, 26, 0.3));
     pointer-events: none;
     animation: gamesSectionFloat 5s ease-in-out infinite;
   }
@@ -85,6 +98,7 @@
     max-width: 760px;
 
     h2 {
+      color: #fff;
       margin-top: 19px;
       font-size: clamp(2.6rem, 5vw, 4.4rem);
       font-weight: 800;
@@ -95,13 +109,13 @@
     h2 span {
       display: block;
       margin-top: 5px;
-      color: $color-green02;
+      color: #d4ee91;
     }
 
     p {
       max-width: 610px;
       margin-top: 17px;
-      color: rgba(12, 71, 46, 0.76);
+      color: rgba(255, 255, 255, 0.82);
       font-size: 1rem;
       line-height: 1.7;
     }
@@ -111,14 +125,14 @@
     display: inline-flex;
     align-items: center;
     gap: 9px;
-    padding: 10px 15px;
-    border: 1px solid rgba(100, 143, 0, 0.16);
+    padding: 9px 14px;
+    border: 0;
     border-radius: 999px;
-    background: rgba(100, 143, 0, 0.08);
-    color: $color-green02;
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
+    background: rgba(226, 244, 193, 0.12);
+    color: #e1f2af;
+    font-size: 0.76rem;
+    font-weight: 750;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
   }
 
@@ -128,25 +142,25 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    min-height: 50px;
-    padding: 0 21px;
-    border: 1px solid rgba(100, 143, 0, 0.22);
+    min-height: 54px;
+    padding: 0 24px;
+    border: 0;
     border-radius: 999px;
-    background: #fff;
-    color: $color-green02;
-    font-size: 0.93rem;
-    font-weight: 700;
+    background: linear-gradient(135deg, #ffe98e, #f7cb59);
+    box-shadow: 0 9px 25px rgba(247, 203, 89, 0.22);
+    color: #28482d;
+    font-size: 0.98rem;
+    font-weight: 800;
     text-decoration: none;
     transition:
-      border-color 0.25s ease,
-      background 0.25s ease,
-      transform 0.25s ease;
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      filter 0.25s ease;
 
     &:hover {
       transform: translateY(-3px);
-      border-color: $color-green02;
-      background: $color-green02;
-      color: #fff;
+      box-shadow: 0 14px 30px rgba(247, 203, 89, 0.34);
+      filter: brightness(1.04);
     }
 
     svg {
@@ -155,6 +169,11 @@
 
     &:hover svg {
       transform: translateX(4px);
+    }
+
+    &:focus-visible {
+      outline: 3px solid #fff;
+      outline-offset: 4px;
     }
   }
 
@@ -173,12 +192,12 @@
     min-height: 326px;
     padding: 22px;
     overflow: hidden;
-    border: 1px solid rgba(12, 71, 46, 0.08);
+    border: 1px solid rgba(226, 244, 193, 0.22);
     border-radius: 22px;
     background:
-      radial-gradient(circle at 88% 28%, var(--card-accent) 0, transparent 39%),
-      #fff;
-    box-shadow: 0 8px 24px rgba(29, 55, 37, 0.08);
+      radial-gradient(circle at 88% 28%, var(--card-accent) 0, transparent 46%),
+      rgba(245, 249, 235, 0.96);
+    box-shadow: 0 8px 24px rgba(7, 35, 26, 0.18);
     color: var(--games-ink);
     text-decoration: none;
     transition:
@@ -188,8 +207,8 @@
 
     &:hover {
       transform: translateY(-7px);
-      border-color: rgba(100, 143, 0, 0.32);
-      box-shadow: 0 18px 38px rgba(29, 55, 37, 0.15);
+      border-color: rgba(255, 233, 142, 0.8);
+      box-shadow: 0 18px 38px rgba(7, 35, 26, 0.3);
     }
 
     &:hover .game-card__icon {
@@ -201,7 +220,7 @@
     }
 
     &:focus-visible {
-      outline: 3px solid $color-green01;
+      outline: 3px solid #ffe98e;
       outline-offset: 4px;
     }
   }
@@ -235,7 +254,7 @@
     align-self: flex-start;
     padding: 7px 11px;
     border-radius: 999px;
-    background: rgba(100, 143, 0, 0.1);
+    background: rgba(100, 143, 0, 0.12);
     color: $color-green02;
     font-size: 0.7rem;
     font-weight: 700;
@@ -244,7 +263,7 @@
   }
 
   .game-card__number {
-    color: #aab6aa;
+    color: #788b79;
     font-size: 0.82rem;
     font-weight: 700;
   }
@@ -266,14 +285,14 @@
   .game-card__content {
     h3 {
       margin: 0;
-      color: $color-green05;
+      color: #123e32;
       font-size: 1.14rem;
       line-height: 1.35;
     }
 
     p {
       margin-top: 9px;
-      color: rgba(12, 71, 46, 0.76);
+      color: rgba(18, 62, 50, 0.78);
       font-size: 0.88rem;
       line-height: 1.6;
     }
@@ -285,7 +304,7 @@
     gap: 8px;
     margin-top: auto;
     padding-top: 17px;
-    color: $color-green02;
+    color: #527b31;
     font-size: 0.9rem;
     font-weight: 700;
 

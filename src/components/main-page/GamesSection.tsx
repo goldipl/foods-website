@@ -9,21 +9,28 @@ const GamesSection = () => {
       className="games-section"
       aria-labelledby="games-section-title"
     >
-      <span className="games-section__floating games-section__floating--bread" aria-hidden="true">
+      <span
+        className="games-section__floating games-section__floating--bread"
+        aria-hidden="true"
+      >
         🍞
       </span>
-      <span className="games-section__floating games-section__floating--avocado" aria-hidden="true">
+      <span
+        className="games-section__floating games-section__floating--avocado"
+        aria-hidden="true"
+      >
         🥑
       </span>
-      <span className="games-section__floating games-section__floating--sparkle" aria-hidden="true">
+      <span
+        className="games-section__floating games-section__floating--sparkle"
+        aria-hidden="true"
+      >
         ✨
       </span>
       <div className="games-section__wrapper">
         <div className="games-section__header">
           <div className="games-section__heading-copy">
-            <span className="games-section__eyebrow">
-              <HiSparkles aria-hidden="true" /> Zagraj i odpocznij
-            </span>
+            <span className="games-section__eyebrow">Zagraj i odpocznij</span>
             <h2 id="games-section-title">
               Mała przerwa.
               <span>Wielka frajda!</span>

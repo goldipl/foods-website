@@ -5,6 +5,7 @@ const VideoSection = () => {
     <section id="video" className="video-section">
       <div className="video-section-wrapper">
         <div className="section-title">
+          <span className="video-section__eyebrow">Posłuchaj i poznaj</span>
           <h2>Jak wygląda życie z celiakią?</h2>
           <h4>Zapraszam do wysłuchania podcastu.</h4>
         </div>
