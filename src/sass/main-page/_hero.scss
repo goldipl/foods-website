@@ -3,9 +3,24 @@
   display: flex;
   width: 100%;
   background:
-    radial-gradient(ellipse at 4% 46%, rgba(154, 198, 102, 0.2) 0%, rgba(154, 198, 102, 0.08) 24%, transparent 47%),
-    radial-gradient(ellipse at 96% 72%, rgba(247, 202, 111, 0.15) 0%, rgba(247, 202, 111, 0.06) 27%, transparent 51%),
-    radial-gradient(ellipse at 54% -18%, rgba(106, 165, 119, 0.2) 0%, rgba(106, 165, 119, 0.07) 34%, transparent 60%),
+    radial-gradient(
+      ellipse at 4% 46%,
+      rgba(154, 198, 102, 0.2) 0%,
+      rgba(154, 198, 102, 0.08) 24%,
+      transparent 47%
+    ),
+    radial-gradient(
+      ellipse at 96% 72%,
+      rgba(247, 202, 111, 0.15) 0%,
+      rgba(247, 202, 111, 0.06) 27%,
+      transparent 51%
+    ),
+    radial-gradient(
+      ellipse at 54% -18%,
+      rgba(106, 165, 119, 0.2) 0%,
+      rgba(106, 165, 119, 0.07) 34%,
+      transparent 60%
+    ),
     linear-gradient(118deg, #0c472e 0%, #123e32 38%, #1b5941 72%, #214e36 100%);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -30,8 +45,14 @@
   &::before {
     top: 2%;
     right: -12%;
-    background:
-      radial-gradient(circle at 50% 50%, rgba(195, 235, 121, 0.28) 0%, rgba(166, 218, 116, 0.18) 24%, rgba(126, 196, 133, 0.09) 46%, rgba(126, 196, 133, 0.025) 63%, transparent 72%);
+    background: radial-gradient(
+      circle at 50% 50%,
+      rgba(195, 235, 121, 0.28) 0%,
+      rgba(166, 218, 116, 0.18) 24%,
+      rgba(126, 196, 133, 0.09) 46%,
+      rgba(126, 196, 133, 0.025) 63%,
+      transparent 72%
+    );
     animation-name: heroGlowBreathe;
   }
 
@@ -40,8 +61,14 @@
     left: -15%;
     width: clamp(480px, 60vw, 840px);
     height: clamp(480px, 60vw, 840px);
-    background:
-      radial-gradient(circle at 50% 50%, rgba(247, 218, 139, 0.2) 0%, rgba(203, 222, 140, 0.14) 28%, rgba(126, 190, 134, 0.08) 48%, rgba(126, 190, 134, 0.02) 64%, transparent 73%);
+    background: radial-gradient(
+      circle at 50% 50%,
+      rgba(247, 218, 139, 0.2) 0%,
+      rgba(203, 222, 140, 0.14) 28%,
+      rgba(126, 190, 134, 0.08) 48%,
+      rgba(126, 190, 134, 0.02) 64%,
+      transparent 73%
+    );
     animation: heroGlowDrift 22s ease-in-out -8s infinite alternate;
   }
 
@@ -137,7 +164,6 @@
             font-size: 14px;
           }
         }
-
       }
 
       &-button-next,
@@ -347,6 +373,31 @@
 
 @media (max-width: 992px) {
   #hero .hero-food-float {
+    display: none;
+  }
+
+  #hero .hero-wrapper .hero-food-float--bread,
+  #hero .hero-wrapper .hero-food-float--avocado {
+    display: grid;
+  }
+
+  #hero .hero-wrapper .hero-food-float--bread {
+    right: -24px;
+  }
+
+  #hero .hero-wrapper .hero-food-float--avocado {
+    top: 16px;
+    bottom: auto;
+    left: -18px;
+  }
+
+  #hero .hero-wrapper .hero-food-float--pretzel {
+    top: auto;
+    bottom: 40px;
+    left: -24px;
+  }
+
+  #hero .hero-wrapper .hero-food-float--grain {
     display: none;
   }
 }
