@@ -57,7 +57,7 @@
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 56px 24px;
+    padding: 120px 24px;
 
     .section-title {
       display: flex;
@@ -112,7 +112,7 @@
     }
 
     @media (max-width: 640px) {
-      padding: 48px 18px;
+      padding: 72px 18px;
 
       .section-title {
         margin-bottom: 24px;
