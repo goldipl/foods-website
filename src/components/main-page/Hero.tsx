@@ -39,6 +39,10 @@ const Hero: React.FC = () => {
   return (
     <section id="hero" className="hero">
       <div className="hero-wrapper">
+        <span className="hero-food-float hero-food-float--grain" aria-hidden="true">🌾</span>
+        <span className="hero-food-float hero-food-float--bread" aria-hidden="true">🍞</span>
+        <span className="hero-food-float hero-food-float--avocado" aria-hidden="true">🥑</span>
+        <span className="hero-food-float hero-food-float--pretzel" aria-hidden="true">🥨</span>
         <Swiper
           spaceBetween={30}
           slidesPerView={1}
