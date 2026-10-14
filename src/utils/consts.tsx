@@ -81,10 +81,10 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
   {
     label: "Przepisy",
     children: [
-      { label: "Śniadania", href: "/#sniadania" },
-      { label: "Obiady", href: "/#obiady" },
-      { label: "Desery", href: "/#desery" },
-      { label: "Przystawki / Przekąski / Sałatki", href: "/#przystawki" },
+      { label: "Śniadania", href: "/sniadania" },
+      { label: "Obiady", href: "/obiady" },
+      { label: "Desery", href: "/desery" },
+      { label: "Przystawki / Przekąski / Sałatki", href: "/przekaski" },
     ],
   },
   {
@@ -394,34 +394,34 @@ export const FOOTER_LINKS = [
   {
     title: "Przepisy",
     links: [
-      { label: "Śniadania", href: "#sniadania" },
-      { label: "Obiady", href: "#obiady" },
-      { label: "Desery / Słodkości", href: "#desery" },
-      { label: "Przystawki / Przekąski / Sałatki", href: "#przystawki" },
+      { label: "Śniadania", href: "/sniadania" },
+      { label: "Obiady", href: "/obiady" },
+      { label: "Desery / Słodkości", href: "/desery" },
+      { label: "Przystawki / Przekąski / Sałatki", href: "/przekaski" },
       { label: "Wyszukiwarka przepisów", href: "/szukaj-przepisow" },
     ],
   },
   {
     title: "Miejsca",
     links: [
-      { label: "Restauracje w Polsce", href: "/#restauracje-polska" },
-      { label: "Restauracje w Europie", href: "/#restauracje-europa" },
-      { label: "Hotele i pensjonaty", href: "/#hotele-i-pensjonaty" },
+      { label: "Restauracje w Polsce", href: "/restauracje-w-polsce" },
+      { label: "Restauracje w Europie", href: "/restauracje-w-europie" },
+      { label: "Hotele i pensjonaty", href: "/hotele" },
       { label: "Mapa miejsc bezglutenowych", href: "/bezglutenowe-miejsca" },
     ],
   },
   {
     title: "Produkty",
     links: [
-      { label: "Lidl", href: "#produkty" },
-      { label: "Biedronka", href: "#produkty" },
-      { label: "Stokrotka", href: "#produkty" },
-      { label: "Aldi", href: "#produkty" },
-      { label: "Kaufland", href: "#produkty" },
-      { label: "Żabka", href: "#produkty" },
-      { label: "Carrefour", href: "#produkty" },
-      { label: "Half Price", href: "#produkty" },
-      { label: "Inne", href: "#produkty" },
+      { label: "Lidl", href: "/produkty" },
+      { label: "Biedronka", href: "/produkty" },
+      { label: "Stokrotka", href: "/produkty" },
+      { label: "Aldi", href: "/produkty" },
+      { label: "Kaufland", href: "/produkty" },
+      { label: "Żabka", href: "/produkty" },
+      { label: "Carrefour", href: "/produkty" },
+      { label: "Half Price", href: "/produkty" },
+      { label: "Inne", href: "/produkty" },
     ],
   },
   {
@@ -442,7 +442,7 @@ export const FOOTER_LINKS = [
       { label: "Jak wygląda życie z celiakią? (podcast)", href: "/#video" },
       {
         label: "Wydarzenia, warsztaty bezglutenowe i przydatne informacje",
-        href: "/#wydarzenia",
+        href: "/wydarzenia",
       },
       {
         label: "Bezglutenowe marki - współpraca",
