@@ -2,21 +2,57 @@
   position: relative;
   display: flex;
   width: 100%;
-  background: url(./../../../public/img/backgrounds/bg-gradient02.png);
+  background:
+    radial-gradient(ellipse at 4% 46%, rgba(154, 198, 102, 0.2) 0%, rgba(154, 198, 102, 0.08) 24%, transparent 47%),
+    radial-gradient(ellipse at 96% 72%, rgba(247, 202, 111, 0.15) 0%, rgba(247, 202, 111, 0.06) 27%, transparent 51%),
+    radial-gradient(ellipse at 54% -18%, rgba(106, 165, 119, 0.2) 0%, rgba(106, 165, 119, 0.07) 34%, transparent 60%),
+    linear-gradient(118deg, #0c472e 0%, #123e32 38%, #1b5941 72%, #214e36 100%);
   background-repeat: no-repeat;
-  background-size: 250vw;
+  background-size: 100% 100%;
   height: auto;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   overflow: hidden;
   z-index: 0;
+
+  &::before,
+  &::after {
+    position: absolute;
+    z-index: 0;
+    width: clamp(420px, 54vw, 760px);
+    height: clamp(420px, 54vw, 760px);
+    border-radius: 50%;
+    content: "";
+    filter: blur(12px);
+    pointer-events: none;
+    animation: heroGlowDrift 18s ease-in-out infinite;
+  }
+
+  &::before {
+    top: 2%;
+    right: -12%;
+    background:
+      radial-gradient(circle at 50% 50%, rgba(195, 235, 121, 0.28) 0%, rgba(166, 218, 116, 0.18) 24%, rgba(126, 196, 133, 0.09) 46%, rgba(126, 196, 133, 0.025) 63%, transparent 72%);
+    animation-name: heroGlowBreathe;
+  }
+
+  &::after {
+    bottom: 0;
+    left: -15%;
+    width: clamp(480px, 60vw, 840px);
+    height: clamp(480px, 60vw, 840px);
+    background:
+      radial-gradient(circle at 50% 50%, rgba(247, 218, 139, 0.2) 0%, rgba(203, 222, 140, 0.14) 28%, rgba(126, 190, 134, 0.08) 48%, rgba(126, 190, 134, 0.02) 64%, transparent 73%);
+    animation: heroGlowDrift 22s ease-in-out -8s infinite alternate;
+  }
 
   .hero-wrapper {
     display: flex;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 48px 24px 64px;
+    padding: 56px 24px 72px;
     position: relative;
+    z-index: 1;
 
     .swiper {
       height: 640px;
@@ -25,7 +61,9 @@
       box-shadow:
         0px 9px 28px 8px #0000000d,
         0px 3px 6px -4px #0000001f,
-        0px 6px 16px 0px #00000014;
+        0px 6px 16px 0px #00000014,
+        0 22px 68px -38px rgba(50, 112, 66, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.65);
 
       &-slide {
         display: flex;
@@ -52,6 +90,7 @@
             font-size: 14px;
           }
         }
+
       }
 
       &-button-next,
@@ -202,6 +241,79 @@
         }
       }
     }
+  }
+}
+
+@media (min-width: 993px) {
+  #hero .hero-wrapper .swiper {
+    &-slide {
+      height: 100%;
+    }
+
+    .slide-content,
+    .swiper-slide-box {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide-box__img {
+      align-self: stretch;
+      min-width: 0;
+      min-height: 0;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  #hero {
+    &::before {
+      top: 0;
+      right: -60%;
+      width: 420px;
+      height: 420px;
+    }
+
+    &::after {
+      bottom: 0;
+      left: -62%;
+      width: 480px;
+      height: 480px;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #hero::before,
+  #hero::after {
+    animation: none;
+  }
+}
+
+@keyframes heroGlowDrift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(-16px, 18px, 0);
+  }
+}
+
+@keyframes heroGlowBreathe {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(0.94);
+    opacity: 0.78;
+  }
+  50% {
+    transform: translate3d(-22px, 18px, 0) scale(1.06);
+    opacity: 1;
   }
 }
 

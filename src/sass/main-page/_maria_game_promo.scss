@@ -1,0 +1,568 @@
+.maria-game-promo {
+  position: relative;
+  z-index: 1;
+  padding: 56px 24px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      ellipse at 82% 8%,
+      rgba(197, 231, 114, 0.2),
+      transparent 34%
+    ),
+    linear-gradient(115deg, #123e32 0%, #1b5941 52%, #34764c 100%);
+
+  &::before,
+  &::after {
+    position: absolute;
+    z-index: 0;
+    width: 440px;
+    height: 440px;
+    border-radius: 50%;
+    content: "";
+    filter: blur(2px);
+    pointer-events: none;
+    animation: mariaGlowDrift 12s ease-in-out infinite;
+  }
+
+  &::before {
+    top: -250px;
+    right: 4%;
+    background: radial-gradient(
+      circle,
+      rgba(197, 231, 114, 0.2) 0%,
+      rgba(197, 231, 114, 0.08) 42%,
+      transparent 72%
+    );
+  }
+
+  &::after {
+    bottom: -310px;
+    left: 3%;
+    width: 520px;
+    height: 520px;
+    background: radial-gradient(
+      circle,
+      rgba(250, 207, 104, 0.15) 0%,
+      rgba(250, 207, 104, 0.06) 43%,
+      transparent 72%
+    );
+    animation-delay: -6s;
+  }
+
+  &__card {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 28px;
+    width: 100%;
+    max-width: 1232px;
+    min-height: 390px;
+    margin: 0 auto;
+    padding: 50px 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    color: #fff;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    max-width: 580px;
+  }
+
+  &__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 9px 14px;
+    border: 0;
+    border-radius: 999px;
+    background: rgba(226, 244, 193, 0.12);
+    color: #e1f2af;
+    font-size: 0.76rem;
+    font-weight: 750;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    svg {
+      font-size: 1.05rem;
+    }
+  }
+
+  h2 {
+    margin: 22px 0 14px;
+    color: #fff;
+    font-size: clamp(2.45rem, 4.5vw, 4.2rem);
+    font-weight: 850;
+    letter-spacing: -0.065em;
+    line-height: 0.98;
+  }
+
+  h2 span {
+    display: block;
+    margin-top: 8px;
+    color: #d4ee91;
+  }
+
+  &__content > p {
+    max-width: 540px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  &__features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin: 21px 0 23px;
+
+    span {
+      padding: 8px 11px;
+      border: 0;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 0.76rem;
+      font-weight: 650;
+    }
+  }
+
+  &__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 54px;
+    padding: 0 24px;
+    border: 0;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #ffe98e, #f7cb59);
+    box-shadow: 0 9px 25px rgba(247, 203, 89, 0.22);
+    color: #28482d;
+    font-size: 0.98rem;
+    font-weight: 800;
+    text-decoration: none;
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      filter 0.25s ease;
+
+    svg {
+      font-size: 1.15rem;
+      transition: transform 0.25s ease;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 30px rgba(247, 203, 89, 0.34);
+      filter: brightness(1.04);
+    }
+
+    &:hover svg {
+      transform: translateX(4px);
+    }
+
+    &:focus-visible {
+      outline: 3px solid #fff;
+      outline-offset: 4px;
+    }
+  }
+
+  &__world {
+    position: relative;
+    align-self: stretch;
+    min-height: 300px;
+    overflow: hidden;
+    border: 0;
+    border-radius: 27px;
+    background: linear-gradient(
+      180deg,
+      rgba(151, 218, 213, 0.87) 0%,
+      rgba(215, 237, 181, 0.87) 73%,
+      rgba(124, 167, 91, 0.94) 100%
+    );
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.45),
+      0 18px 38px rgba(7, 35, 26, 0.22);
+    animation: mariaWorldFloat 6s ease-in-out infinite;
+  }
+
+  &__sun {
+    position: absolute;
+    top: 32px;
+    right: 55px;
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    background: #ffdf79;
+    box-shadow:
+      0 0 0 11px rgba(255, 223, 121, 0.18),
+      0 0 42px rgba(255, 235, 160, 0.7);
+    animation: mariaSunPulse 4s ease-in-out infinite;
+  }
+
+  &__cloud {
+    position: absolute;
+    width: 88px;
+    height: 24px;
+    border-radius: 99px;
+    background: rgba(255, 255, 255, 0.8);
+    filter: drop-shadow(0 5px 7px rgba(60, 112, 95, 0.08));
+
+    &::before,
+    &::after {
+      position: absolute;
+      bottom: 5px;
+      border-radius: 50%;
+      background: inherit;
+      content: "";
+    }
+
+    &::before {
+      left: 16px;
+      width: 31px;
+      height: 31px;
+    }
+
+    &::after {
+      right: 15px;
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  &__cloud--one {
+    top: 82px;
+    left: 35px;
+    animation: mariaCloudDrift 8s ease-in-out infinite;
+  }
+
+  &__cloud--two {
+    top: 145px;
+    right: 16px;
+    transform: scale(0.66);
+    animation: mariaCloudDrift 9s ease-in-out -3s infinite;
+  }
+
+  &__hill {
+    position: absolute;
+    right: -12%;
+    bottom: -115px;
+    left: -12%;
+    height: 215px;
+    border-radius: 50% 50% 0 0 / 32% 32% 0 0;
+  }
+
+  &__hill--back {
+    bottom: -133px;
+    left: 25%;
+    background: #95bd70;
+    transform: rotate(-7deg);
+  }
+
+  &__hill--front {
+    bottom: -162px;
+    right: 23%;
+    background: linear-gradient(180deg, #719d59, #527b49);
+    transform: rotate(8deg);
+  }
+
+  &__platform {
+    position: absolute;
+    z-index: 2;
+    height: 17px;
+    border: 0;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #a9cd72 0 32%, #60874e 33% 100%);
+    box-shadow: 0 8px 12px rgba(42, 83, 50, 0.19);
+  }
+
+  &__platform--one {
+    right: 11%;
+    bottom: 89px;
+    width: 38%;
+    animation: mariaPlatformBob 4s ease-in-out infinite;
+  }
+
+  &__platform--two {
+    bottom: 139px;
+    left: 17%;
+    width: 28%;
+    transform: scale(0.85);
+    animation: mariaPlatformBob 4s ease-in-out -1.5s infinite;
+  }
+
+  &__maria,
+  &__monster {
+    position: absolute;
+    z-index: 3;
+    display: grid;
+    place-items: center;
+    filter: drop-shadow(0 7px 5px rgba(34, 66, 44, 0.2));
+  }
+
+  &__maria {
+    bottom: 150px;
+    left: 38%;
+    font-size: clamp(3.2rem, 6vw, 5rem);
+    animation: mariaCharacterJump 2.8s cubic-bezier(0.36, 0, 0.62, 1) infinite;
+  }
+
+  &__monster {
+    right: 18%;
+    bottom: 103px;
+    font-size: 2.55rem;
+    animation: mariaMonsterHop 2.2s ease-in-out infinite;
+  }
+
+  &__coin,
+  &__sparkle {
+    position: absolute;
+    z-index: 4;
+    display: grid;
+    place-items: center;
+    color: #fff5a6;
+    text-shadow: 0 0 12px rgba(255, 226, 114, 0.8);
+    animation: mariaCoinFloat 2s ease-in-out infinite;
+  }
+
+  &__coin {
+    font-size: 1.9rem;
+  }
+
+  &__coin--one {
+    top: 45%;
+    left: 19%;
+  }
+
+  &__coin--two {
+    top: 33%;
+    left: 51%;
+    animation-delay: -0.7s;
+  }
+
+  &__coin--three {
+    top: 53%;
+    right: 12%;
+    animation-delay: -1.3s;
+  }
+
+  &__sparkle {
+    color: #fff;
+    font-size: 1.55rem;
+    animation: mariaSparkle 2.4s ease-in-out infinite;
+  }
+
+  &__sparkle--one {
+    top: 22%;
+    left: 39%;
+  }
+
+  &__sparkle--two {
+    top: 56%;
+    right: 39%;
+    animation-delay: -1.2s;
+  }
+}
+
+@keyframes mariaWorldFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-7px) rotate(0.6deg);
+  }
+}
+
+@keyframes mariaGlowDrift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(-18px, 14px, 0);
+  }
+}
+
+@keyframes mariaSunPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.07);
+  }
+}
+
+@keyframes mariaCloudDrift {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 12px 0;
+  }
+}
+
+@keyframes mariaPlatformBob {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -5px;
+  }
+}
+
+@keyframes mariaCharacterJump {
+  0%,
+  55%,
+  100% {
+    translate: 0 0;
+    rotate: 0deg;
+  }
+  25% {
+    translate: 0 -48px;
+    rotate: -8deg;
+  }
+  38% {
+    translate: 0 -50px;
+    rotate: 5deg;
+  }
+}
+
+@keyframes mariaMonsterHop {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -10px;
+  }
+}
+
+@keyframes mariaCoinFloat {
+  0%,
+  100% {
+    translate: 0 0;
+    scale: 1;
+  }
+  50% {
+    translate: 0 -9px;
+    scale: 1.12;
+  }
+}
+
+@keyframes mariaSparkle {
+  0%,
+  100% {
+    opacity: 0.35;
+    scale: 0.7;
+    rotate: 0deg;
+  }
+  50% {
+    opacity: 1;
+    scale: 1.2;
+    rotate: 40deg;
+  }
+}
+
+@media (max-width: 900px) {
+  .maria-game-promo {
+    &__card {
+      grid-template-columns: 1fr 0.8fr;
+      gap: 20px;
+      padding: 40px 34px;
+    }
+
+    &__world {
+      min-height: 290px;
+    }
+
+    h2 {
+      font-size: clamp(2.3rem, 5vw, 3.4rem);
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .maria-game-promo {
+    padding: 32px 14px;
+
+    &__card {
+      grid-template-columns: 1fr;
+      gap: 24px;
+      padding: 32px 24px 24px;
+    }
+
+    h2 {
+      margin-top: 18px;
+      font-size: clamp(2.35rem, 10vw, 3.4rem);
+    }
+
+    &__content > p {
+      font-size: 0.93rem;
+    }
+
+    &__features {
+      gap: 7px;
+      margin: 17px 0 20px;
+
+      span {
+        font-size: 0.7rem;
+      }
+    }
+
+    &__cta {
+      min-height: 50px;
+    }
+
+    &__world {
+      min-height: 245px;
+      border-radius: 20px;
+    }
+
+    &__sun {
+      top: 25px;
+      right: 34px;
+      width: 48px;
+      height: 48px;
+    }
+
+    &__maria {
+      bottom: 125px;
+      font-size: 3.6rem;
+    }
+
+    &__monster {
+      bottom: 87px;
+      font-size: 2.1rem;
+    }
+
+    &__platform--one {
+      bottom: 74px;
+    }
+
+    &__platform--two {
+      bottom: 118px;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .maria-game-promo *,
+  .maria-game-promo *::before,
+  .maria-game-promo *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
