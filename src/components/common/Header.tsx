@@ -99,13 +99,14 @@ const Header = () => {
   }, []);
 
   return (
-    <header
-      className={`header-main-container 
+    <div className="header-slot">
+      <div
+        className={`header-main-container
         ${isScrolled ? "is-fixed" : ""} 
         ${isScrolled && showInstaLabel ? "insta-fixed-active" : ""}`}
-    >
-      <div className="header" ref={headerRef}>
-        <div className="header-wrapper">
+      >
+        <div className="header" ref={headerRef}>
+          <div className="header-wrapper">
           <div className="header-wrapper__logo">
             <Link href="/" onClick={handleCloseAll}>
               <Image
@@ -248,9 +249,10 @@ const Header = () => {
               })}
             </ul>
           </nav>
+          </div>
         </div>
       </div>
-    </header>
+    </div>
   );
 };
 
