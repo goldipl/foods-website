@@ -27,6 +27,7 @@ const DinnersPage = () => {
       </header>
       <main>
         <CategoryPageHero
+          theme="dinner"
           eyebrow="Obiady bezglutenowe"
           title="Codzienny obiad,"
           highlight="bez kompromisów."

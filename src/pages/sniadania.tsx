@@ -30,6 +30,7 @@ const BreakfastsPage = () => {
       </header>
       <main>
         <CategoryPageHero
+          theme="breakfast"
           eyebrow="Śniadania bezglutenowe"
           title="Dobry początek dnia,"
           highlight="pełen smaku."

@@ -30,6 +30,7 @@ const DessertsPage = () => {
       </header>
       <main>
         <CategoryPageHero
+          theme="dessert"
           eyebrow="Desery bezglutenowe"
           title="Słodka chwila,"
           highlight="bez glutenu."

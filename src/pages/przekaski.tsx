@@ -27,6 +27,7 @@ const AppetizersPage = () => {
       </header>
       <main>
         <CategoryPageHero
+          theme="appetizer"
           eyebrow="Przekąski i przystawki"
           title="Małe dania,"
           highlight="wielka przyjemność."

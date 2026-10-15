@@ -3,6 +3,7 @@ import Link from "next/link";
 import { HiArrowRight, HiHeart, HiSparkles } from "react-icons/hi2";
 
 interface CategoryPageHeroProps {
+  theme?: "breakfast" | "dinner" | "dessert" | "appetizer";
   eyebrow: string;
   title: string;
   highlight: string;
@@ -14,6 +15,7 @@ interface CategoryPageHeroProps {
 }
 
 const CategoryPageHero: React.FC<CategoryPageHeroProps> = ({
+  theme,
   eyebrow,
   title,
   highlight,
@@ -23,7 +25,10 @@ const CategoryPageHero: React.FC<CategoryPageHeroProps> = ({
   itemLabel,
   targetId,
 }) => (
-  <section className="category-hero" aria-label={title}>
+  <section
+    className={`category-hero${theme ? ` category-hero--${theme}` : ""}`}
+    aria-label={title}
+  >
     <span
       className="category-hero__orb category-hero__orb--one"
       aria-hidden="true"
