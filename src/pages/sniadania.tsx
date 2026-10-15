@@ -8,6 +8,7 @@ import { breakfastsRecipesData } from "@/data/recipes/breakfasts-recipes";
 import Topbar from "@/components/common/Topbar";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
+import CategoryPageHero from "@/components/common/CategoryPageHero";
 import RecipeListWithSearch from "@/components/recipes/RecipeListWithSearch";
 
 const BreakfastsPage = () => {
@@ -28,6 +29,16 @@ const BreakfastsPage = () => {
         <Header />
       </header>
       <main>
+        <CategoryPageHero
+          eyebrow="Śniadania bezglutenowe"
+          title="Dobry początek dnia,"
+          highlight="pełen smaku."
+          description="Poznaj sprawdzone pomysły na bezglutenowe śniadania — od szybkich dań na co dzień po wyjątkowe weekendowe inspiracje."
+          emoji="🥑"
+          itemCount={breakfastsRecipesData.length}
+          itemLabel="przepisów"
+          targetId="category-results"
+        />
         <section id="category-page">
           <div className="section-description">
             <div className="section-title">
@@ -55,7 +66,10 @@ const BreakfastsPage = () => {
             </div>
           </div>
 
-          <RecipeListWithSearch data={breakfastsRecipesData} />
+          <RecipeListWithSearch
+            data={breakfastsRecipesData}
+            listId="category-results"
+          />
           <div className="primary-button">
             <Link href="/" className="primary-button__text">
               Powrót

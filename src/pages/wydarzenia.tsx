@@ -9,6 +9,7 @@ import Topbar from "@/components/common/Topbar";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import Pagination from "@/components/common/Pagination";
+import CategoryPageHero from "@/components/common/CategoryPageHero";
 
 const EventsPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -37,6 +38,16 @@ const EventsPage = () => {
         <Header />
       </header>
       <main>
+        <CategoryPageHero
+          eyebrow="Wiedza i spotkania"
+          title="Wydarzenia,"
+          highlight="które łączą."
+          description="Sprawdź warsztaty, spotkania i wydarzenia związane z kuchnią bezglutenową oraz życiem z celiakią."
+          emoji="✨"
+          itemCount={events.length}
+          itemLabel="wydarzeń"
+          targetId="lista-wydarzen"
+        />
         <section id="category-page">
           <div className="section-description">
             <div className="section-title">

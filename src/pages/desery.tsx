@@ -8,6 +8,7 @@ import { dessertsRecipesData } from "@/data/recipes/desserts-recipes";
 import Topbar from "@/components/common/Topbar";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
+import CategoryPageHero from "@/components/common/CategoryPageHero";
 import RecipeListWithSearch from "@/components/recipes/RecipeListWithSearch";
 
 const DessertsPage = () => {
@@ -28,6 +29,16 @@ const DessertsPage = () => {
         <Header />
       </header>
       <main>
+        <CategoryPageHero
+          eyebrow="Desery bezglutenowe"
+          title="Słodka chwila,"
+          highlight="bez glutenu."
+          description="Odkrywaj ciasta, ciasteczka i inne słodkości bez glutenu — pełne smaku i gotowe na każdą okazję."
+          emoji="🍰"
+          itemCount={dessertsRecipesData.length}
+          itemLabel="przepisów"
+          targetId="category-results"
+        />
         <section id="category-page">
           <div className="section-description">
             <div className="section-title">
@@ -72,7 +83,10 @@ const DessertsPage = () => {
             </div>
           </div>
 
-          <RecipeListWithSearch data={dessertsRecipesData} />
+          <RecipeListWithSearch
+            data={dessertsRecipesData}
+            listId="category-results"
+          />
           <div className="primary-button">
             <Link href="/" className="primary-button__text">
               Powrót

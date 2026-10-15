@@ -8,6 +8,7 @@ import { appetizersRecipesData } from "@/data/recipes/appetizers-recipes";
 import Topbar from "@/components/common/Topbar";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
+import CategoryPageHero from "@/components/common/CategoryPageHero";
 import RecipeListWithSearch from "@/components/recipes/RecipeListWithSearch";
 
 const AppetizersPage = () => {
@@ -25,6 +26,16 @@ const AppetizersPage = () => {
         <Header />
       </header>
       <main>
+        <CategoryPageHero
+          eyebrow="Przekąski i przystawki"
+          title="Małe dania,"
+          highlight="wielka przyjemność."
+          description="Zainspiruj się bezglutenowymi przekąskami, przystawkami i sałatkami na co dzień, spotkania i wyjątkowe okazje."
+          emoji="🥗"
+          itemCount={appetizersRecipesData.length}
+          itemLabel="przepisów"
+          targetId="category-results"
+        />
         <section id="category-page">
           <div className="section-description">
             <div className="section-title">
@@ -66,7 +77,10 @@ const AppetizersPage = () => {
             </div>
           </div>
 
-          <RecipeListWithSearch data={appetizersRecipesData} />
+          <RecipeListWithSearch
+            data={appetizersRecipesData}
+            listId="category-results"
+          />
           <div className="primary-button">
             <Link href="/" className="primary-button__text">
               Powrót

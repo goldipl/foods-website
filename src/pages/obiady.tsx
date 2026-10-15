@@ -8,6 +8,7 @@ import { dinnersRecipesData } from "@/data/recipes/dinners-recipes";
 import Topbar from "@/components/common/Topbar";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
+import CategoryPageHero from "@/components/common/CategoryPageHero";
 import RecipeListWithSearch from "@/components/recipes/RecipeListWithSearch";
 
 const DinnersPage = () => {
@@ -25,6 +26,16 @@ const DinnersPage = () => {
         <Header />
       </header>
       <main>
+        <CategoryPageHero
+          eyebrow="Obiady bezglutenowe"
+          title="Codzienny obiad,"
+          highlight="bez kompromisów."
+          description="Znajdź sycące i różnorodne przepisy na bezglutenowe obiady, które sprawdzą się w domu i przy wspólnym stole."
+          emoji="🍲"
+          itemCount={dinnersRecipesData.length}
+          itemLabel="przepisów"
+          targetId="category-results"
+        />
         <section id="category-page">
           <div className="section-description">
             <div className="section-title">
@@ -64,7 +75,10 @@ const DinnersPage = () => {
             </div>
           </div>
 
-          <RecipeListWithSearch data={dinnersRecipesData} />
+          <RecipeListWithSearch
+            data={dinnersRecipesData}
+            listId="category-results"
+          />
           <div className="primary-button">
             <Link href="/" className="primary-button__text">
               Powrót

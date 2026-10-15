@@ -9,6 +9,7 @@ import Topbar from "@/components/common/Topbar";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import Pagination from "@/components/common/Pagination";
+import CategoryPageHero from "@/components/common/CategoryPageHero";
 
 const EuropeanRestaurantsData = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -44,6 +45,16 @@ const EuropeanRestaurantsData = () => {
         <Header />
       </header>
       <main>
+        <CategoryPageHero
+          eyebrow="Bezglutenowe miejsca w Europie"
+          title="Podróżuj dalej,"
+          highlight="odkrywaj smaki."
+          description="Zaplanuj swoją kolejną podróż i poznaj europejskie restauracje oraz lokale z bezglutenowymi propozycjami."
+          emoji="🌍"
+          itemCount={restaurants.length}
+          itemLabel="miejsc"
+          targetId="lista-restauracji"
+        />
         <section id="category-page">
           <div className="section-description">
             <div className="section-title">

@@ -9,6 +9,7 @@ import Topbar from "@/components/common/Topbar";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import Pagination from "@/components/common/Pagination";
+import CategoryPageHero from "@/components/common/CategoryPageHero";
 
 const HotelsPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -35,6 +36,16 @@ const HotelsPage = () => {
         <Header />
       </header>
       <main>
+        <CategoryPageHero
+          eyebrow="Noclegi przyjazne diecie bezglutenowej"
+          title="Odpocznij spokojnie,"
+          highlight="podróżuj bezpiecznie."
+          description="Znajdź hotele i pensjonaty, które uwzględniają potrzeby osób na diecie bezglutenowej podczas pobytu."
+          emoji="🏨"
+          itemCount={hotels.length}
+          itemLabel="obiektów"
+          targetId="lista-hoteli"
+        />
         <section id="category-page">
           <div className="section-description">
             <div className="section-title">

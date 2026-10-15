@@ -16,9 +16,10 @@ type Recipe = {
 
 interface Props {
   data: Recipe[];
+  listId?: string;
 }
 
-const RecipeListWithSearch: React.FC<Props> = ({ data }) => {
+const RecipeListWithSearch: React.FC<Props> = ({ data, listId }) => {
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState<"newest" | "oldest">("newest");
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
@@ -203,7 +204,7 @@ const RecipeListWithSearch: React.FC<Props> = ({ data }) => {
         </div>
       </div>
 
-      <div ref={recipesListRef} className="listing-v1">
+      <div id={listId} ref={recipesListRef} className="listing-v1">
         {paginated.map((recipe) => (
           <Link
             key={recipe.id}

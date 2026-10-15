@@ -9,6 +9,7 @@ import Topbar from "@/components/common/Topbar";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import Pagination from "@/components/common/Pagination";
+import CategoryPageHero from "@/components/common/CategoryPageHero";
 
 const PolishRestaurantsPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -44,6 +45,16 @@ const PolishRestaurantsPage = () => {
         <Header />
       </header>
       <main>
+        <CategoryPageHero
+          eyebrow="Bezglutenowe miejsca w Polsce"
+          title="Poznaj Polskę,"
+          highlight="smak po smaku."
+          description="Odkrywaj restauracje i lokale w Polsce, w których możesz znaleźć bezglutenowe propozycje i zaplanować kolejną kulinarną podróż."
+          emoji="🍽️"
+          itemCount={restaurants.length}
+          itemLabel="miejsc"
+          targetId="lista-restauracji"
+        />
         <section id="category-page">
           <div className="section-description">
             <div className="section-title">
