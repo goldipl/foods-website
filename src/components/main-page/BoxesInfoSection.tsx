@@ -14,7 +14,7 @@ export const BoxesInfoItems = [
   },
   {
     icon: IoLocationOutline,
-    title: "Resturacje bez glutenu",
+    title: "Restauracje bez glutenu",
     subtitle: "Sprawdź lokale w Twojej okolicy",
     href: "/bezglutenowe-miejsca",
     label: "Znajdź restauracje",

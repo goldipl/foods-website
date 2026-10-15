@@ -99,34 +99,16 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
     label: "Miejsca",
     children: [
       {
-        label: "Resturacje/cukiernie w Polsce",
-        children: [
-          { label: "Warszawa", href: "/#restauracje-polska" },
-          { label: "Trójmiasto", href: "/#restauracje-polska" },
-          { label: "Kraków", href: "/#restauracje-polska" },
-          { label: "Kielce", href: "/#restauracje-polska" },
-          { label: "Zakopane", href: "/#restauracje-polska" },
-          { label: "Karpacz", href: "/#restauracje-polska" },
-          { label: "Radom", href: "/#restauracje-polska" },
-          { label: "Poznań", href: "/#restauracje-polska" },
-          { label: "Łódź", href: "/#restauracje-polska" },
-          { label: "Bielsko-Biała", href: "/#restauracje-polska" },
-        ],
+        label: "Restauracje/cukiernie w Polsce",
+        href: "/restauracje-w-polsce",
       },
       {
-        label: "Resturacje/cukiernie w Europie",
-        children: [
-          { label: "Włochy", href: "/#restauracje-europa" },
-          { label: "Cypr", href: "/#restauracje-europa" },
-          { label: "Rumunia", href: "/#restauracje-europa" },
-        ],
+        label: "Restauracje/cukiernie w Europie",
+        href: "/restauracje-w-europie",
       },
       {
         label: "Hotele i pensjonaty",
-        children: [
-          { label: "Zakopane", href: "/#hotele-i-pensjonaty" },
-          { label: "Karpacz", href: "/#hotele-i-pensjonaty" },
-        ],
+        href: "/hotele",
       },
     ],
   },
