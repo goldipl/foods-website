@@ -149,7 +149,7 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
       { label: "Jak wygląda życie z celiakią? (podcast)", href: "/#video" },
       {
         label: "Wydarzenia, warsztaty bezglutenowe i przydatne informacje",
-        href: "/#wydarzenia",
+        href: "/wydarzenia",
       },
       {
         label: "Bezglutenowe marki - współpraca",
@@ -384,7 +384,7 @@ export const HERO_SLIDES: HeroSlideItem[] = [
       "Bezglutenowe eventy, warsztaty i spotkania dla osób na diecie bezglutenowej",
     image: bezglutenoweHalloween,
     alt: "Bezglutenowe wydarzenia",
-    links: [{ label: "Sprawdź", href: "#wydarzenia" }],
+    links: [{ label: "Sprawdź", href: "/wydarzenia" }],
   },
 ];
 
