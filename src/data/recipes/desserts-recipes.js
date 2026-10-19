@@ -43,6 +43,7 @@ import deserChiaMonte from "./../../../public/img/recipes/desserts/042_deser_chi
 import knedleZeSliwka from "./../../../public/img/recipes/desserts/043_knedle_ze_sliwka.jpg";
 import babkaPiaskowaCytrynowa from "./../../../public/img/recipes/desserts/044_babka_piaskowa_cytrynowa.jpg";
 import deserChatka from "./../../../public/img/recipes/desserts/045_deser_chatka.jpg";
+import deserPucharkowy from "./../../../public/img/recipes/desserts/046_pucharkowy_deser_w_5_minut.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -539,5 +540,16 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Deser Chatka z malinami i białą czekoladą",
+    },
+    {
+      id: 46,
+      href: "https://www.instagram.com/p/Deme6YuCGwU/?img_index=1",
+      imgSrc: deserPucharkowy,
+      altText: "Pucharkowy deser w 5 minut - bez glutenu i bez nabiału",
+      tags: ["deser", "wegańskie"],
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Pucharkowy deser w 5 minut - bez glutenu i bez nabiału",
     },
 ];
