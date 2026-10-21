@@ -14,6 +14,7 @@ import zapiekaneBulkiSniadaniowe from "./../../../public/img/recipes/breakfasts/
 import bezglutenowyChleb from "./../../../public/img/recipes/breakfasts/014_bezglutenowy_chleb.jpg";
 import bezglutenoweBulkiOwsiane from "./../../../public/img/recipes/breakfasts/015_bezglutenowe_bulki_owsiane.jpg";
 import kanapkiBezGlutenuDoSzkoly from "./../../../public/img/recipes/breakfasts/016_kanapki_bez_glutenu_do_szkoly.jpg";
+import bezglutenowyChleb from "./../../../public/img/recipes/breakfasts/017_bezglutenowy_chleb.jpg";
 
 export const breakfastsRecipesData = [
     {
@@ -191,5 +192,16 @@ export const breakfastsRecipesData = [
       labelClass: "breakfast-label",
       description:
         "Kanapka BLT 🍅🥬; kanapka z kurczakiem, szynką i serem 🧀🍗; kanapka z pastą z tunczyka, jajek, oliwek i szczypiorku 🐠🥚🫒",
+    },
+    {
+      id: 17,
+      href: "https://www.instagram.com/p/Dew2QDFEfnO/?img_index=1",
+      imgSrc: bezglutenowyChleb,
+      altText: "Bezglutenowy chleb toskański z mieszanki do wypieku od Moncana",
+      tags: ["śniadanie", "chleb", "kanapki"],
+      label: "Śniadanie",
+      labelClass: "breakfast-label",
+      description:
+        "Bezglutenowy chleb toskański z mieszanki do wypieku od Moncana",
     },
   ];
