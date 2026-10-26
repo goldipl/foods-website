@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import { PARTNERS } from "@/utils/consts";
+import SectionHeader from "@/components/common/SectionHeader";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -13,9 +14,7 @@ const CooperationSection = () => {
   return (
     <section id="wspolpraca" className="cooperation-section">
       <div className="cooperation-wrapper">
-        <header className="section-title">
-          <h2>Współpraca</h2>
-        </header>
+        <SectionHeader eyebrow="Partnerzy" title="Współpraca" align="center" />
 
         <div className="swiper-container">
           <Swiper

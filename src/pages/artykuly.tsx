@@ -142,16 +142,19 @@ const ArticlesPage = () => {
                       height={280}
                       loading="lazy"
                     />
-                  </div>
-                  <div className="article-card__content">
                     <span className="article-card__category">
                       {article.category}
                     </span>
+                  </div>
+                  <div className="article-card__content">
                     <h2>{article.title}</h2>
                     <p>{article.excerpt}</p>
                   </div>
                   <div className="article-card__footer">
                     <span>Czytaj więcej</span>
+                    <span className="article-card__arrow" aria-hidden="true">
+                      <HiArrowRight />
+                    </span>
                   </div>
                 </Link>
               ))}

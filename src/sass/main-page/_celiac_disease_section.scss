@@ -1,100 +1,89 @@
 .celiac-disease-section {
-  position: relative;
-  display: flex;
-  width: 100%;
-  background: url(./../../../public/img/backgrounds/bg-gradient02.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 0;
-  .celiac-disease-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 80px 16px;
-    @media (max-width: 992px) {
-      padding: 32px 0 48px 0;
+  // Masonry-like columns keep cards of very different lengths compact
+  .celiac-disease-list {
+    column-count: 2;
+    column-gap: 24px;
+
+    @media (max-width: 860px) {
+      column-count: 1;
     }
-    h2 {
-      font-size: 36px;
-      line-height: 1.3;
-      margin-bottom: 14px;
-      font-weight: 600;
-      color: $color-green05;
-      margin-bottom: 24px;
-      margin-top: 0;
-      @media (max-width: 992px) {
-        font-size: 24px;
-        margin: 0 auto 24px;
-      }
+  }
+
+  .item {
+    position: relative;
+    display: block;
+    margin-bottom: 24px;
+    padding: 28px 28px 28px 96px;
+    border: 1px solid rgba(12, 71, 46, 0.08);
+    border-radius: 24px;
+    background: $color-green03;
+    break-inside: avoid;
+    transition:
+      box-shadow 0.3s ease,
+      background 0.3s ease;
+
+    &:hover {
+      background: $white-bg-color;
+      box-shadow: 0 18px 40px rgba(12, 71, 46, 0.1);
     }
-    .item {
-      background-color: $light-grey-bg;
-      padding: 40px 40px 40px 80px;
-      position: relative;
-      margin-bottom: 15px;
+
+    .number {
+      position: absolute;
+      top: 26px;
+      left: 26px;
+      display: grid;
+      width: 48px;
+      height: 48px;
+      place-items: center;
       border-radius: 16px;
+      background: #c1e477;
+      box-shadow: 0 8px 20px rgba(127, 180, 2, 0.3);
+      color: #173b2a;
+      font-size: 1.15rem;
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+    }
+
+    strong {
+      display: block;
+      color: $color-green05;
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.35;
+    }
+
+    p,
+    .subitem {
+      margin-top: 10px;
+      color: rgba(12, 71, 46, 0.75);
+      font-size: 0.97rem;
+      line-height: 1.75;
+    }
+
+    @media (max-width: 560px) {
+      margin-bottom: 14px;
+      padding: 22px 20px 22px 76px;
+      border-radius: 20px;
 
       .number {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        background-color: $main-bg-green-color03;
-        color: $color-black;
-        font-size: 52px;
-        width: 80px;
-        height: 80px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 16px;
-        opacity: 0.4;
-        @media (max-width: 992px) {
-          font-size: 46px;
-        }
+        top: 20px;
+        left: 18px;
+        width: 42px;
+        height: 42px;
+        border-radius: 14px;
+        font-size: 1rem;
       }
 
       strong {
-        display: block;
-        font-weight: bold;
-        font-size: 1.2em;
-        color: $color-black;
-        margin-bottom: 10px;
+        font-size: 1.02rem;
       }
 
-      p {
-        font-size: 1em;
-        color: $color-black;
-        margin-top: 10px;
-
-        @media (max-width: 992px) {
-          font-size: 0.9em;
-        }
-      }
-
+      p,
       .subitem {
-        margin-top: 10px;
-        font-size: 1em;
-        color: $color-black;
-
-        @media (max-width: 992px) {
-          font-size: 0.9em;
-        }
-      }
-    }
-
-    @media (max-width: 992px) {
-      padding: 15px;
-
-      .item {
-        padding: 48px 15px 15px 64px;
-        .number {
-          font-size: 40px;
-          width: 64px;
-          height: 64px;
-        }
+        font-size: 0.9rem;
       }
     }
   }
 }
+

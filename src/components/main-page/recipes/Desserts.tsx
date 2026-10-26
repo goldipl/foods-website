@@ -1,60 +1,16 @@
-import Image from "next/image";
 import React from "react";
-import Link from "next/link";
-import { CiInstagram } from "react-icons/ci";
+import InstaListingBlock from "../InstaListingBlock";
 import { dessertsRecipesData } from "@/data/recipes/desserts-recipes";
-import { HiChevronRight } from "react-icons/hi2";
 
-const Desserts = () => {
-  return (
-    <>
-      <div className="section-title">
-        <h2 id="desery">Bezglutenowe desery / słodkości</h2>
-      </div>
-      <div className="listing-v1">
-        {dessertsRecipesData
-          .slice()
-          .reverse()
-          .slice(0, 4)
-          .map((recipe) => (
-            <Link
-              key={recipe.id}
-              href={recipe.href}
-              className="listing-v1-slot"
-              target="_blank"
-            >
-              <div className="listing-v1-slot__img">
-                <Image
-                  src={recipe.imgSrc}
-                  alt={recipe.altText}
-                  width={400}
-                  height={500}
-                  loading="lazy"
-                />
-              </div>
-              <div className="listing-v1-slot__text">
-                <span>{recipe.description}</span>
-              </div>
-              <div className="listing-v1-slot__labels">
-                <span className={recipe.labelClass}>{recipe.label}</span>
-              </div>
-              <div className="listing-v1-slot__zoom">
-                <div className="zoom-box">
-                  <CiInstagram />
-                  <span>Zobacz</span>
-                </div>
-              </div>
-            </Link>
-          ))}
-      </div>
-
-      <div className="primary-button">
-        <Link href="/desery/" className="primary-button__text">
-          Więcej z sekcji Desery <HiChevronRight />
-        </Link>
-      </div>
-    </>
-  );
-};
+const Desserts = () => (
+  <InstaListingBlock
+    id="desery"
+    eyebrow="Przepisy"
+    title="Bezglutenowe desery / słodkości"
+    items={dessertsRecipesData}
+    moreHref="/desery/"
+    moreLabel="Wszystkie desery"
+  />
+);
 
 export default Desserts;

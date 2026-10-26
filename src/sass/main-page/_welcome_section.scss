@@ -1,98 +1,227 @@
 .welcome-section {
-  position: relative;
-  display: flex;
-  width: 100%;
-  background-color: $white-bg-color;
-  padding: 80px 16px 0;
-  z-index: 0;
-  @media (max-width: 992px) {
-    padding: 16px 0 0 0;
+  &__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: 80px;
+    align-items: center;
   }
-  .welcome-section-wrapper {
-    display: flex;
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 80px 16px 24px;
 
-    .more-text {
-      max-height: 0;
-      overflow: hidden;
-      opacity: 0;
-      transition:
-        max-height 0.7s ease,
-        opacity 0.8s ease;
-      &.open {
-        max-height: 2000px;
-        opacity: 1;
-      }
+  // --- Photo ---
+
+  &__media {
+    position: relative;
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+
+    // Offset accent frame behind the photo
+    &::before {
+      position: absolute;
+      inset: 24px -24px -24px 24px;
+      z-index: 0;
+      border: 1px solid rgba(127, 180, 2, 0.45);
+      border-radius: 36px;
+      content: "";
     }
-    .img-text-box {
+  }
+
+  &__photo {
+    position: relative;
+    z-index: 1;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    border-radius: 32px;
+    background: $color-green04;
+    box-shadow: 0 24px 56px rgba(12, 71, 46, 0.18);
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    z-index: 2;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 999px;
+    background: #fffdf6;
+    box-shadow: 0 12px 34px rgba(11, 39, 26, 0.16);
+    color: #244934;
+    font-size: 0.82rem;
+    font-weight: 700;
+    white-space: nowrap;
+
+    &--top {
+      top: 32px;
+      left: -28px;
+      padding: 12px 16px;
+      animation: welcomeBadgeFloat 5s ease-in-out infinite;
+    }
+
+    &--bottom {
+      right: -36px;
+      bottom: 44px;
       display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      gap: 40px;
-      height: auto;
-      @media (max-width: 992px) {
-        flex-direction: column;
-        gap: 16px;
-      }
-      .img-box {
-        margin: 0 auto;
-        .border-img {
-          border-radius: 24px;
-          overflow: hidden;
-          box-shadow:
-            0px 9px 28px 8px #0000000d,
-            0px 3px 6px -4px #0000001f,
-            0px 6px 16px 0px #00000014;
-          width: 300px;
-          height: 300px;
-          object-fit: cover;
-          object-position: top;
-        }
-        @media (max-width: 992px) {
-          order: 2;
-          .border-img {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            height: auto;
-            margin: 24px auto 0;
-          }
-        }
-      }
-      .text-box {
-        h1 {
-          margin-bottom: 12px;
-        }
-        h2 {
-          font-size: 32px;
-          line-height: 1.3;
-          margin-bottom: 14px;
-          font-weight: 600;
-          color: $color-green05;
-        }
-        p {
-          font-size: 16px;
-          margin-bottom: 14px;
-          font-weight: 400;
-          text-align: justify;
-        }
-        @media (max-width: 992px) {
-          order: 1;
-          h1 {
-            font-size: 27px;
-            line-height: 33px;
-          }
-          h2 {
-            font-size: 24px;
-          }
-          p {
-            font-size: 14px;
-          }
-        }
+      flex-direction: column;
+      padding: 12px 20px;
+      border-radius: 20px;
+      color: rgba(36, 73, 52, 0.7);
+      font-size: 0.75rem;
+      font-weight: 500;
+      animation: welcomeBadgeFloat 5s ease-in-out -2.5s infinite;
+
+      strong {
+        color: $color-green05;
+        font-size: 1rem;
+        font-weight: 700;
       }
     }
+  }
+
+  // --- Text ---
+
+  &__content {
+    .section-header {
+      margin-bottom: 24px;
+    }
+
+    p {
+      max-width: 640px;
+      margin-bottom: 14px;
+      color: rgba(12, 71, 46, 0.78);
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    strong {
+      color: $color-green05;
+    }
+
+    .welcome-section__lead {
+      color: $color-green05;
+      font-size: 1.15rem;
+      font-weight: 500;
+    }
+  }
+
+  .more-text {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition:
+      max-height 0.7s ease,
+      opacity 0.8s ease;
+
+    &.open {
+      max-height: 2000px;
+      opacity: 1;
+    }
+  }
+
+  &__toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 50px;
+    margin-top: 12px;
+    padding: 0 22px;
+    border: none;
+    border-radius: 999px;
+    background: $color-green05;
+    box-shadow: 0 10px 28px rgba(12, 71, 46, 0.2);
+    color: $color-white;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease;
+
+    svg {
+      font-size: 1.1rem;
+      transition: transform 0.3s ease;
+    }
+
+    &[aria-expanded="true"] svg {
+      transform: rotate(180deg);
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 34px rgba(12, 71, 46, 0.28);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-green02;
+      outline-offset: 3px;
+    }
+  }
+}
+
+@keyframes welcomeBadgeFloat {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -8px;
+  }
+}
+
+@media (max-width: 992px) {
+  .welcome-section {
+    &__grid {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 56px;
+    }
+
+    &__media {
+      max-width: 340px;
+
+      &::before {
+        inset: 16px -16px -16px 16px;
+        border-radius: 30px;
+      }
+    }
+
+    &__photo {
+      border-radius: 26px;
+    }
+
+    &__badge {
+      font-size: 0.75rem;
+
+      &--top {
+        left: -12px;
+        padding: 10px 14px;
+      }
+
+      &--bottom {
+        right: -14px;
+        bottom: 28px;
+        padding: 10px 16px;
+      }
+    }
+
+    &__content {
+      p {
+        font-size: 0.95rem;
+        line-height: 1.75;
+      }
+
+      .welcome-section__lead {
+        font-size: 1.05rem;
+      }
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .welcome-section__badge {
+    animation: none;
   }
 }

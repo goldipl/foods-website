@@ -71,20 +71,3 @@
   align-items: center;
   margin: 40px auto;
 }
-
-.read-more-btn {
-  margin-top: 16px;
-  @extend .hero-cta;
-  background: $color-green04;
-  color: $color-green05;
-  &:hover {
-    background: $color-green04;
-    color: $color-green05;
-  }
-  @media (max-width: 992px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 16px auto 0;
-  }
-}

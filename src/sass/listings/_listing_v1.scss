@@ -38,138 +38,75 @@ body:has(.recipes-tags) {
     width: 294px;
     height: 380px;
     overflow: hidden;
+    isolation: isolate;
+    border-radius: 20px;
+    background: $color-green04;
+    box-shadow: 0 10px 26px rgba(12, 71, 46, 0.1);
     color: $color-black;
-    border-radius: 12px;
+    transition:
+      transform 0.35s ease,
+      box-shadow 0.35s ease;
     @media (max-width: 992px) {
       width: 45vw;
       height: 54vw;
-    }
-    span[class$="-label"] {
-      border-radius: 8px;
-    }
-    &:has(.breakfast-label) {
-      .zoom-box {
-        span {
-          color: $breakfast-label-bg;
-        }
-        svg {
-          filter: saturate(100%) invert(91%) sepia(54%) saturate(2411%)
-            hue-rotate(328deg) brightness(121%) contrast(92%);
-        }
-      }
-    }
-    &:has(.dessert-label) {
-      .zoom-box {
-        span {
-          color: $dessert-label-bg;
-        }
-        svg {
-          filter: saturate(100%) invert(78%) sepia(12%) saturate(4609%)
-            hue-rotate(160deg) brightness(103%) contrast(97%);
-        }
-      }
-    }
-    &:has(.hotel-label) {
-      .zoom-box {
-        span {
-          color: $hotel-label-bg;
-        }
-        svg {
-          filter: brightness(0) saturate(100%) invert(35%) sepia(88%)
-            saturate(5024%) hue-rotate(143deg) brightness(96%) contrast(106%);
-        }
-      }
-    }
-    &:has(.poland-label) {
-      .zoom-box {
-        span {
-          color: $poland-label-bg;
-          filter: brightness(2);
-        }
-        svg {
-          filter: saturate(100%) invert(6%) sepia(96%) saturate(6176%)
-            hue-rotate(277deg) brightness(141%) contrast(94%);
-        }
-      }
-    }
-    &:has(.europe-label) {
-      .zoom-box {
-        span {
-          color: $europe-label-bg;
-          filter: brightness(2);
-        }
-        svg {
-          filter: saturate(100%) invert(32%) sepia(7%) saturate(15%)
-            hue-rotate(326deg) brightness(203%) contrast(88%);
-        }
-      }
-    }
-    &:has(.product-label) {
-      .zoom-box {
-        span {
-          color: $product-label-bg;
-          filter: brightness(1);
-        }
-        svg {
-          filter: invert(50%) sepia(97%) saturate(1254%) hue-rotate(126deg)
-            brightness(89%) contrast(101%);
-        }
-      }
-    }
-    &:has(.appetizer-label) {
-      .zoom-box {
-        span {
-          color: $appetizer-label-bg;
-          filter: brightness(1);
-        }
-        svg {
-          filter: invert(83%) sepia(22%) saturate(7179%) hue-rotate(20deg)
-            brightness(93%) contrast(103%);
-        }
-      }
+      border-radius: 16px;
     }
     &:hover {
-      box-shadow: $green-box-shadow;
-      .listing-v1-slot__text {
-        transition: all 0.6s;
-        height: 100%;
-        background-color: $black-shadow-text-bg-color02;
-        span {
-          font-size: 0;
+      transform: translateY(-4px);
+      box-shadow: 0 20px 44px rgba(12, 71, 46, 0.2);
+      .listing-v1-slot__img {
+        img {
+          transform: scale(1.06);
         }
-      }
-      .listing-v1-slot__zoom {
-        .zoom-box {
+        &::after {
           opacity: 1;
-          transition: opacity 0.6s;
         }
       }
-      .listing-v1-slot__labels {
-        display: none;
-        span {
-          font-size: 0;
-        }
+      .zoom-box {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
       }
     }
+    &:focus-visible {
+      outline: 2px solid $color-green02;
+      outline-offset: 3px;
+    }
     &__img {
+      position: relative;
       height: 100%;
       width: 100%;
       img {
+        display: block;
         object-fit: cover;
         height: 100%;
         width: 100%;
+        transition: transform 0.6s ease;
+      }
+      // Darken the photo on hover so the Instagram pill stands out
+      &::after {
+        position: absolute;
+        inset: 0;
+        background: rgba(6, 32, 21, 0.28);
+        content: "";
+        opacity: 0;
+        transition: opacity 0.35s ease;
       }
     }
     &__text {
       position: absolute;
       bottom: 0;
       left: 0;
-      background-color: $black-shadow-text-bg-color01;
-      padding: 16px;
       width: 100%;
-      height: 27%;
+      padding: 64px 18px 18px;
+      background: linear-gradient(
+        180deg,
+        rgba(6, 32, 21, 0) 0%,
+        rgba(6, 32, 21, 0.62) 45%,
+        rgba(6, 32, 21, 0.9) 100%
+      );
+      pointer-events: none;
       @media (max-width: 992px) {
-        padding: 8px;
+        padding: 40px 12px 12px;
       }
       span {
         display: -webkit-box;
@@ -177,8 +114,10 @@ body:has(.recipes-tags) {
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        font-size: 15px;
         color: $color-white;
+        font-size: 0.92rem;
+        font-weight: 500;
+        line-height: 1.45;
         @media (max-width: 640px) {
           font-size: 12px;
           line-clamp: 2;
@@ -191,16 +130,21 @@ body:has(.recipes-tags) {
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
-      top: 10px;
-      left: 10px;
-      right: 10px;
+      top: 12px;
+      left: 12px;
+      right: 12px;
       span {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 14px;
-        font-weight: 600;
-        padding: 2px 12px;
+        padding: 4px 12px;
+        border-radius: 999px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.14);
+        font-size: 12px;
+        font-weight: 700;
+        &:empty {
+          display: none;
+        }
         &.breakfast-label {
           background-color: $breakfast-label-bg;
         }
@@ -245,8 +189,8 @@ body:has(.recipes-tags) {
           color: $color-white;
         }
         @media (max-width: 992px) {
-          font-size: 12px;
-          padding: 2px 8px;
+          padding: 3px 9px;
+          font-size: 11px;
         }
       }
     }
@@ -255,32 +199,38 @@ body:has(.recipes-tags) {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 18px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.94);
+        box-shadow: 0 12px 30px rgba(6, 32, 21, 0.25);
+        color: $color-green05;
         opacity: 0;
+        transform: translate(-50%, -50%) scale(0.9);
+        transition:
+          opacity 0.3s ease,
+          transform 0.3s ease;
+        pointer-events: none;
         svg {
-          width: 120px;
-          height: 120px;
-          filter: brightness(0) saturate(100%) invert(81%) sepia(16%)
-            saturate(6619%) hue-rotate(53deg) brightness(99%) contrast(99%);
+          width: 18px;
+          height: 18px;
+          color: $color-instagram;
         }
         span {
-          display: flex;
-          font-size: 17px;
-          font-weight: 400;
-          text-align: center;
-          justify-content: center;
-          color: $color-green01;
-        }
-        @media (max-width: 772px) {
-          svg {
-            width: 70px;
-            height: 70px;
-          }
-          span {
-            font-size: 15px;
-          }
+          font-size: 0.88rem;
+          font-weight: 700;
         }
       }
     }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .listing-v1-slot,
+  .listing-v1-slot__img img,
+  .listing-v1-slot .zoom-box {
+    transition: none;
   }
 }

@@ -1,59 +1,19 @@
-import Link from "next/link";
 import React from "react";
-import { CiInstagram } from "react-icons/ci";
-import Image from "next/image";
+import InstaListingBlock from "./InstaListingBlock";
 import { eventsData } from "@/data/events/events";
-import { HiChevronRight } from "react-icons/hi2";
 
 const Events = () => {
   return (
-    <section id="wydarzenia" className="events-section events-title">
-      <div className="events-wrapper">
-        <div className="section-title">
-          <h2>Wydarzenia, warsztaty bezglutenowe i przydatne informacje</h2>
-        </div>
-        <div className="listing-v1">
-          {eventsData
-            .slice()
-            .reverse()
-            .slice(0, 8)
-            .map((event) => (
-              <Link
-                key={event.id}
-                href={event.href}
-                className="listing-v1-slot"
-                target="_blank"
-              >
-                <div className="listing-v1-slot__img">
-                  <Image
-                    src={event.imgSrc}
-                    alt={event.altText}
-                    width={400}
-                    height={500}
-                    loading="lazy"
-                  />
-                </div>
-                <div className="listing-v1-slot__text">
-                  <span>{event.description}</span>
-                </div>
-                <div className="listing-v1-slot__labels">
-                  <span className={event.labelClass}>{event.label}</span>
-                </div>
-                <div className="listing-v1-slot__zoom">
-                  <div className="zoom-box">
-                    <CiInstagram />
-                    <span>Zobacz</span>
-                  </div>
-                </div>
-              </Link>
-            ))}
-        </div>
-
-        <div className="primary-button">
-          <Link href="/wydarzenia/" className="primary-button__text">
-            Więcej z sekcji Wydarzenia <HiChevronRight />
-          </Link>
-        </div>
+    <section id="wydarzenia" className="events-section home-section">
+      <div className="events-wrapper home-section__wrapper">
+        <InstaListingBlock
+          eyebrow="Wydarzenia"
+          title="Wydarzenia, warsztaty bezglutenowe i przydatne informacje"
+          items={eventsData}
+          limit={8}
+          moreHref="/wydarzenia/"
+          moreLabel="Wszystkie wydarzenia"
+        />
       </div>
     </section>
   );

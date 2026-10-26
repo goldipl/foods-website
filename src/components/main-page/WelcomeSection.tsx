@@ -1,28 +1,47 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import { HiChevronRight } from "react-icons/hi2";
+import { HiChevronDown } from "react-icons/hi2";
+import SectionHeader from "@/components/common/SectionHeader";
 import karolaImg from "./../../../public/img/welcome/karola.jpg";
 
 const WelcomeSection = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <section id="o-mnie" className="welcome-section">
-      <div className="welcome-section-wrapper">
-        <div className="img-text-box">
-          <div className="img-box">
-            <Image
-              className="border-img"
-              src={karolaImg}
-              alt="bezglutenowa Karola"
-              width={400}
-              height={491}
-            />
+    <section id="o-mnie" className="welcome-section home-section">
+      <div className="welcome-section-wrapper home-section__wrapper">
+        <div className="welcome-section__grid">
+          <div className="welcome-section__media">
+            <div className="welcome-section__photo">
+              <Image
+                src={karolaImg}
+                alt="bezglutenowa Karola"
+                width={400}
+                height={491}
+                sizes="(max-width: 992px) 80vw, 420px"
+              />
+            </div>
+            <span
+              className="welcome-section__badge welcome-section__badge--top"
+              aria-hidden="true"
+            >
+              💚 Celiakia od 2023
+            </span>
+            <span
+              className="welcome-section__badge welcome-section__badge--bottom"
+              aria-hidden="true"
+            >
+              <strong>Karolina</strong>
+              Bezglutenowa Karola
+            </span>
           </div>
 
-          <div className="text-box">
-            <h2>Cześć! Miło mi, że tu jesteś!</h2>
-            <p>
+          <div className="welcome-section__content">
+            <SectionHeader
+              eyebrow="O mnie"
+              title="Cześć! Miło mi, że tu jesteś!"
+            />
+            <p className="welcome-section__lead">
               Jeśli tu trafiłaś/eś, zapewne temat diety bezglutenowej nie jest
               Ci z jakiegoś powodu obcy. Rozgość się, a ja postaram Ci w tej
               sytuacji pomóc.
@@ -37,7 +56,10 @@ const WelcomeSection = () => {
               Czy był to dla mnie szok? Tak, ale jednocześnie ulga, że po roku
               poszukiwań, wreszcie otrzymałam diagnozę.
             </p>
-            <div className={`more-text ${isOpen ? "open" : ""}`}>
+            <div
+              id="o-mnie-wiecej"
+              className={`more-text ${isOpen ? "open" : ""}`}
+            >
               <p>
                 Miałam to szczęście, że przejście na dietę bezglutenową było dla
                 mnie stosunkowo prostym i płynnym procesem. Już wcześniej, od
@@ -73,11 +95,14 @@ const WelcomeSection = () => {
             </div>
 
             <button
-              className="read-more-btn"
+              type="button"
+              className="welcome-section__toggle"
+              aria-expanded={isOpen}
+              aria-controls="o-mnie-wiecej"
               onClick={() => setIsOpen(!isOpen)}
             >
               {isOpen ? "Zwiń" : "Dowiedz się więcej o mnie"}
-              <HiChevronRight />
+              <HiChevronDown aria-hidden="true" />
             </button>
           </div>
         </div>

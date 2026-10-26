@@ -1,14 +1,19 @@
 import Link from "next/link";
 import Image from "next/image";
+import { HiArrowRight } from "react-icons/hi2";
 import { articlesData } from "@/data/articles/articles";
+import SectionHeader from "@/components/common/SectionHeader";
 
 const ArticlesPreviewSection = () => {
   return (
-    <section id="articles-preview" className="articles-preview">
-      <div className="articles-preview-wrapper">
-        <div className="section-title">
-          <h2>Najświeższe artykuły</h2>
-        </div>
+    <section id="articles-preview" className="articles-preview home-section">
+      <div className="articles-preview-wrapper home-section__wrapper">
+        <SectionHeader
+          eyebrow="Poradnik"
+          title="Najświeższe artykuły"
+          description="Praktyczne teksty o życiu bez glutenu: od pierwszych zakupów po gotowanie i podróże."
+          action={{ href: "/artykuly", label: "Wszystkie artykuły" }}
+        />
 
         <div className="articles-grid articles-preview__grid">
           {articlesData
@@ -29,25 +34,22 @@ const ArticlesPreviewSection = () => {
                     height={280}
                     loading="lazy"
                   />
-                </div>
-                <div className="article-card__content">
                   <span className="article-card__category">
                     {article.category}
                   </span>
-                  <h2>{article.title}</h2>
+                </div>
+                <div className="article-card__content">
+                  <h3>{article.title}</h3>
                   <p>{article.excerpt}</p>
                 </div>
                 <div className="article-card__footer">
                   <span>Czytaj więcej</span>
+                  <span className="article-card__arrow" aria-hidden="true">
+                    <HiArrowRight />
+                  </span>
                 </div>
               </Link>
             ))}
-        </div>
-
-        <div className="articles-preview__more">
-          <Link href="/artykuly" className="primary-button__text">
-            Zobacz wszystkie artykuły
-          </Link>
         </div>
       </div>
     </section>

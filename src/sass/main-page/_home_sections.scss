@@ -1,0 +1,86 @@
+// Shared layout for the light content sections of the home page
+.home-section {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background: $white-bg-color;
+
+  &__wrapper {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 96px 24px;
+
+    @media (max-width: 992px) {
+      padding: 64px 20px;
+    }
+
+    @media (max-width: 560px) {
+      padding: 56px 16px;
+    }
+  }
+
+  // Alternate tinted sections so the long page has a clear rhythm
+  &#o-mnie,
+  &#restaurants-section,
+  &#products-section,
+  &#wydarzenia {
+    background: $color-green03;
+  }
+}
+
+// Instagram post listings (recipes, places, hotels, products, events)
+.insta-block + .insta-block {
+  margin-top: 88px;
+
+  @media (max-width: 992px) {
+    margin-top: 64px;
+  }
+}
+
+.home-section .listing-v1 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  margin: 0;
+
+  .listing-v1-slot {
+    width: auto;
+    height: auto;
+    aspect-ratio: 4 / 5;
+  }
+
+  @media (max-width: 1100px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    // Hide every 4th card so 4- and 8-item listings end with full rows
+    .listing-v1-slot:nth-child(4n) {
+      display: none;
+    }
+  }
+
+  // Swipeable row on phones
+  @media (max-width: 760px) {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 72%;
+    gap: 14px;
+    margin: 0 -16px;
+    padding: 4px 16px 16px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-padding-inline: 16px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .listing-v1-slot,
+    .listing-v1-slot:nth-child(4n) {
+      display: flex;
+      scroll-snap-align: start;
+    }
+  }
+}

@@ -6,8 +6,11 @@ import Appetizers from "./recipes/Appetizers";
 
 const RecipesSection = () => {
   return (
-    <section id="recipes-section" className="recipes-section insta-slots">
-      <div className="recipes-wrapper">
+    <section
+      id="recipes-section"
+      className="recipes-section insta-slots home-section"
+    >
+      <div className="recipes-wrapper home-section__wrapper">
         <Breakfasts />
         <Dinners />
         <Desserts />
