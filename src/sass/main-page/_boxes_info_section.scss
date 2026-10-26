@@ -1,141 +1,251 @@
 #boxes-info-section {
   position: relative;
   display: flex;
+  background: linear-gradient(180deg, $color-green03 0%, $white-bg-color 100%);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 
   .boxes-info-wrapper {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 90px 16px 98px 16px;
+    padding: 72px 24px 80px;
+  }
 
-    @media (max-width: 992px) {
-      padding: 40px 16px;
+  .boxes-info {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .boxes-info-slot {
+    --slot-accent: #c1e477;
+    --slot-accent-rgb: 193, 228, 119;
+    --slot-ink: #173b2a;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    min-height: 300px;
+    padding: 32px;
+    overflow: hidden;
+    isolation: isolate;
+    border: 1px solid rgba(12, 71, 46, 0.08);
+    border-radius: 28px;
+    background: $white-bg-color;
+    box-shadow: 0 12px 32px rgba(12, 71, 46, 0.07);
+    color: $color-green05;
+    text-decoration: none;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease,
+      border-color 0.3s ease;
+
+    &--places {
+      --slot-accent: #ffc184;
+      --slot-accent-rgb: 255, 193, 132;
+      --slot-ink: #4b2417;
+    }
+
+    &--products {
+      --slot-accent: #82e6d5;
+      --slot-accent-rgb: 130, 230, 213;
+      --slot-ink: #124349;
+    }
+
+    // Decorative accent blob in the top-right corner
+    &::before {
+      position: absolute;
+      top: -90px;
+      right: -90px;
+      z-index: -1;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: rgba(var(--slot-accent-rgb), 0.22);
+      content: "";
+      transition: transform 0.45s ease;
+    }
+
+    &__top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    &__icon {
+      display: grid;
+      width: 64px;
+      height: 64px;
+      place-items: center;
+      border-radius: 20px;
+      background: var(--slot-accent);
+      box-shadow: 0 10px 24px rgba(var(--slot-accent-rgb), 0.45);
+      color: var(--slot-ink);
+      font-size: 32px;
+      transition: transform 0.3s ease;
+    }
+
+    &__number {
+      color: rgba(12, 71, 46, 0.18);
+      font-size: 2.6rem;
+      font-weight: 700;
+      letter-spacing: -0.05em;
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      h3 {
+        color: $color-green05;
+        font-size: 1.4rem;
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        line-height: 1.2;
+      }
+
+      p {
+        color: rgba(12, 71, 46, 0.7);
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+    }
+
+    &__cta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: auto;
+      padding-top: 20px;
+      border-top: 1px solid rgba(12, 71, 46, 0.08);
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    &__arrow {
+      display: grid;
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+      place-items: center;
+      border-radius: 50%;
+      background: $color-green04;
+      color: $color-green05;
+      font-size: 1.1rem;
+      transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+    }
+
+    &:hover {
+      transform: translateY(-6px);
+      border-color: rgba(var(--slot-accent-rgb), 0.9);
+      box-shadow: 0 22px 48px rgba(12, 71, 46, 0.14);
+
+      &::before {
+        transform: scale(1.35);
+      }
+
+      .boxes-info-slot__icon {
+        transform: rotate(-6deg) scale(1.05);
+      }
+
+      .boxes-info-slot__arrow {
+        background: $color-green05;
+        color: $color-white;
+        transform: translateX(4px);
+      }
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-green05;
+      outline-offset: 4px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #boxes-info-section {
+    .boxes-info-wrapper {
+      padding: 48px 20px 56px;
     }
 
     .boxes-info {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: stretch;
-      gap: 18px;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 16px;
+    }
 
-      @media (max-width: 992px) {
-        gap: 32px;
+    .boxes-info-slot {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 4px 18px;
+      align-items: center;
+      min-height: 0;
+      padding: 22px;
+      border-radius: 24px;
+
+      &::before {
+        width: 160px;
+        height: 160px;
+        top: -70px;
+        right: -70px;
       }
 
-      &-slot {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        width: 31%;
-        padding: 40px;
+      &__top {
+        grid-row: span 2;
+      }
+
+      &__icon {
+        width: 56px;
+        height: 56px;
         border-radius: 18px;
-        background-color: $white-bg-color;
-        box-shadow: $grey-box-shadow;
-        min-height: 325px;
-        text-decoration: none;
-        transition: all 0.35s ease;
-        cursor: pointer;
+        font-size: 28px;
+      }
 
-        @media (max-width: 992px) {
-          width: 45%;
-          padding: 24px;
+      &__number {
+        display: none;
+      }
+
+      &__text {
+        gap: 4px;
+
+        h3 {
+          font-size: 1.1rem;
         }
 
-        @media (max-width: 640px) {
-          width: 100%;
-          min-height: auto;
+        p {
+          font-size: 0.9rem;
+          line-height: 1.5;
         }
+      }
 
-        &:hover {
-          box-shadow: $green-box-shadow;
-          transform: translateY(-4px);
+      &__cta {
+        grid-column: 2;
+        padding-top: 10px;
+        margin-top: 6px;
+        font-size: 0.88rem;
+      }
 
-          .boxes-info-slot__cta svg {
-            transform: translateX(4px);
-          }
-        }
-
-        &__icon {
-          width: 96px;
-          height: 96px;
-          margin-bottom: 12px;
-
-          @media (max-width: 992px) {
-            width: 72px;
-            height: 72px;
-          }
-
-          svg,
-          img {
-            width: 96px;
-            height: 96px;
-            background-color: $color-green04;
-            border-radius: 100%;
-            padding: 18px;
-            fill: $color-green02;
-            stroke: $color-green02;
-
-            @media (max-width: 992px) {
-              width: 72px;
-              height: 72px;
-              padding: 14px;
-            }
-          }
-        }
-
-        &__text {
-          display: flex;
-          flex-direction: column;
-
-          h3 {
-            font-size: 20px;
-            font-weight: 600;
-            text-align: center;
-            color: $color-green05;
-
-            @media (max-width: 992px) {
-              font-size: 18px;
-            }
-          }
-
-          h4 {
-            font-size: 16px;
-            font-weight: 400;
-            margin-top: 8px;
-            text-align: center;
-            min-height: 50px;
-            color: $color-green05;
-
-            @media (max-width: 992px) {
-              font-size: 14px;
-              min-height: unset;
-            }
-          }
-        }
-
-        &__cta {
-          margin-top: 20px;
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          font-size: 16px;
-          font-weight: 500;
-          color: $color-green02;
-
-          svg {
-            transition: transform 0.3s ease;
-          }
-
-          @media (max-width: 992px) {
-            font-size: 14px;
-          }
-        }
+      &__arrow {
+        width: 32px;
+        height: 32px;
+        font-size: 0.95rem;
       }
     }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #boxes-info-section .boxes-info-slot,
+  #boxes-info-section .boxes-info-slot::before,
+  #boxes-info-section .boxes-info-slot__icon,
+  #boxes-info-section .boxes-info-slot__arrow {
+    transition: none;
   }
 }
