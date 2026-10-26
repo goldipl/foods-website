@@ -19,7 +19,7 @@ const ArticlesPreviewSection = () => {
           {articlesData
             .slice()
             .reverse()
-            .slice(0, 3)
+            .slice(0, 4)
             .map((article) => (
               <Link
                 key={article.slug}

@@ -7,17 +7,15 @@
   }
 }
 
-// Only opacity and a whole-pixel bob: scaling text makes it jitter and blur.
+// A whole-pixel bob only: no fading, and no scaling (text would jitter/blur).
 // Centering lives in the separate `translate` property so it never animates.
-@keyframes instaBubbleBlink {
+@keyframes instaBubbleBounce {
   0%,
   100% {
-    opacity: 1;
     transform: translateY(0);
   }
   50% {
-    opacity: 0.6;
-    transform: translateY(3px);
+    transform: translateY(4px);
   }
 }
 
@@ -348,7 +346,7 @@
     white-space: nowrap;
     pointer-events: none;
     translate: -50% 0;
-    animation: instaBubbleBlink 1.4s ease-in-out infinite;
+    animation: instaBubbleBounce 1.4s ease-in-out infinite;
 
     &::before {
       position: absolute;
