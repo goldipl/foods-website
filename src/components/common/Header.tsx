@@ -3,6 +3,7 @@
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { HiChevronDown } from "react-icons/hi2";
 
 import {
   HEADER_NAV_ITEMS,
@@ -10,246 +11,241 @@ import {
   HEADER_ICONS,
 } from "./../../utils/consts";
 
+const MOBILE_BREAKPOINT = 1180;
+const FIXED_SCROLL_OFFSET = 300;
+const INSTA_BUBBLE_DURATION = 10000;
+
+const toDropdownId = (label: string) =>
+  `menu-${label
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[^a-z0-9]+/g, "-")}`;
+
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-  const [activeSubDropdown, setActiveSubDropdown] = useState<string | null>(
-    null,
-  );
-  const [openHamburger, setOpenHamburger] = useState(false);
-  const [showInstaLabel, setShowInstaLabel] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showInstaBubble, setShowInstaBubble] = useState(false);
 
   const headerRef = useRef<HTMLDivElement | null>(null);
 
-  // --- Logic: Body Scroll Lock ---
-  const toggleBodyScroll = (isBlocked: boolean) => {
-    if (typeof document === "undefined") return;
+  const instagramLink = HEADER_SOCIAL_LINKS.find(
+    (social) => social.label === "Instagram",
+  );
+  const iconLinks = HEADER_SOCIAL_LINKS.filter(
+    (social) => social !== instagramLink,
+  );
 
-    // Only apply the block if the menu is open AND width is below 1180px
-    const shouldBlock = isBlocked && window.innerWidth <= 1180;
-    const action = shouldBlock ? "add" : "remove";
-
-    document.body.classList[action]("blocked-body");
-    document.documentElement.classList[action]("blocked-body");
-  };
-
-  // Update scroll lock when hamburger state changes
+  // --- Body scroll lock while the mobile menu is open ---
   useEffect(() => {
-    toggleBodyScroll(openHamburger);
-  }, [openHamburger]);
-
-  // Handle window resizing (e.g., rotating tablet or resizing browser)
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 1180) {
-        toggleBodyScroll(false);
-      } else if (openHamburger) {
-        toggleBodyScroll(true);
-      }
+    const syncScrollLock = () => {
+      const shouldBlock = openMenu && window.innerWidth <= MOBILE_BREAKPOINT;
+      document.body.classList.toggle("blocked-body", shouldBlock);
+      document.documentElement.classList.toggle("blocked-body", shouldBlock);
     };
 
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, [openHamburger]);
+    syncScrollLock();
+    window.addEventListener("resize", syncScrollLock);
+    return () => {
+      window.removeEventListener("resize", syncScrollLock);
+      document.body.classList.remove("blocked-body");
+      document.documentElement.classList.remove("blocked-body");
+    };
+  }, [openMenu]);
 
-  const handleCloseAll = () => {
-    setActiveDropdown(null);
-    setActiveSubDropdown(null);
-    setOpenHamburger(false);
-    toggleBodyScroll(false);
-  };
+  // Instagram promo bubble: on load on desktop, when the menu opens on mobile
+  useEffect(() => {
+    const isMobile = window.innerWidth <= MOBILE_BREAKPOINT;
+    if (!isMobile || openMenu) setShowInstaBubble(true);
+  }, [openMenu]);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 300);
-    };
-    window.addEventListener("scroll", handleScroll);
+    if (!showInstaBubble) return;
+    const timer = setTimeout(
+      () => setShowInstaBubble(false),
+      INSTA_BUBBLE_DURATION,
+    );
+    return () => clearTimeout(timer);
+  }, [showInstaBubble]);
+
+  useEffect(() => {
+    const handleScroll = () =>
+      setIsScrolled(window.scrollY > FIXED_SCROLL_OFFSET);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    const isMobile = window.innerWidth <= 1180;
-    if (isMobile) {
-      if (openHamburger) setShowInstaLabel(true);
-    } else {
-      setShowInstaLabel(true);
-    }
-  }, [openHamburger]);
-
-  useEffect(() => {
-    if (showInstaLabel) {
-      const timer = setTimeout(() => setShowInstaLabel(false), 10000);
-      return () => clearTimeout(timer);
-    }
-  }, [showInstaLabel]);
-
+  // Close dropdowns on outside click and everything on Escape
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
-        window.innerWidth >= 992 &&
+        window.innerWidth > MOBILE_BREAKPOINT &&
         headerRef.current &&
         !headerRef.current.contains(event.target as Node)
       ) {
         setActiveDropdown(null);
-        setActiveSubDropdown(null);
       }
     };
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setActiveDropdown(null);
+        setOpenMenu(false);
+      }
+    };
+
     document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
   }, []);
+
+  const handleCloseAll = () => {
+    setActiveDropdown(null);
+    setOpenMenu(false);
+  };
+
+  const toggleDropdown = (label: string) =>
+    setActiveDropdown((current) => (current === label ? null : label));
 
   return (
     <div className="header-slot">
       <div
-        className={`header-main-container
-        ${isScrolled ? "is-fixed" : ""} 
-        ${isScrolled && showInstaLabel ? "insta-fixed-active" : ""}`}
+        className={`site-header ${isScrolled ? "is-fixed" : ""} ${openMenu ? "menu-open" : ""}`}
+        ref={headerRef}
       >
-        <div className="header" ref={headerRef}>
-          <div className="header-wrapper">
-          <div className="header-wrapper__logo">
-            <Link href="/" onClick={handleCloseAll}>
-              <Image
-                src={HEADER_ICONS.logo}
-                alt="Logo"
-                height={90}
-                width={300}
-                priority
-              />
-            </Link>
-          </div>
+        <div className="site-header__inner">
+          <Link href="/" className="site-header__logo" onClick={handleCloseAll}>
+            <Image
+              src={HEADER_ICONS.logo}
+              alt="Bezglutenowa Karola - strona główna"
+              height={53}
+              width={231}
+              priority
+            />
+          </Link>
 
-          <div
-            className={`hamburger ${openHamburger ? "open" : ""}`}
-            onClick={() => setOpenHamburger(!openHamburger)}
+          <nav
+            id="main-menu"
+            className={`site-header__nav ${openMenu ? "open" : ""}`}
+            aria-label="Menu główne"
           >
-            {[...Array(6)].map((_, i) => (
-              <span key={i} className="hamburger-line" />
-            ))}
-          </div>
-
-          <nav className={`header-wrapper__nav ${openHamburger ? "open" : ""}`}>
-            <ul className="nav-first-lvl">
-              {HEADER_NAV_ITEMS.map((item) => (
-                <li
-                  key={item.label}
-                  className={item.children ? "nav-expand" : ""}
-                >
-                  {item.href ? (
-                    <Link
-                      href={item.href}
-                      className={item.className}
-                      onClick={handleCloseAll}
-                    >
-                      {item.label}
-                    </Link>
-                  ) : (
-                    <span
-                      onClick={() =>
-                        setActiveDropdown(
-                          activeDropdown === item.label ? null : item.label,
-                        )
-                      }
-                    >
-                      {item.label}
-                      <Image
-                        src={HEADER_ICONS.menuDownIcon}
-                        alt="arrow"
-                        className={`arrow-img ${activeDropdown === item.label ? "rotate" : ""}`}
-                      />
-                    </span>
-                  )}
-
-                  {item.children && (
-                    <ul
-                      className={`nav-second-lvl ${activeDropdown === item.label ? "active" : ""}`}
-                    >
-                      {item.children.map((subItem) => (
-                        <li
-                          key={subItem.label}
-                          className={subItem.children ? "nav-sub-expand" : ""}
-                        >
-                          {subItem.href ? (
-                            <Link href={subItem.href} onClick={handleCloseAll}>
-                              {subItem.label}
-                            </Link>
-                          ) : (
-                            <>
-                              <span
-                                onClick={() =>
-                                  setActiveSubDropdown(
-                                    activeSubDropdown === subItem.label
-                                      ? null
-                                      : subItem.label,
-                                  )
-                                }
-                              >
-                                {subItem.label}
-                                <Image
-                                  src={HEADER_ICONS.menuDownIcon}
-                                  alt="arrow"
-                                  className={`arrow-img ${activeSubDropdown === subItem.label ? "rotate" : ""}`}
-                                />
-                              </span>
-                              <ul
-                                className={`nav-third-lvl ${activeSubDropdown === subItem.label ? "active" : ""}`}
-                              >
-                                {subItem.children?.map((deepItem) => (
-                                  <li key={deepItem.label}>
-                                    <Link
-                                      href={deepItem.href!}
-                                      onClick={handleCloseAll}
-                                    >
-                                      {deepItem.label}
-                                    </Link>
-                                  </li>
-                                ))}
-                              </ul>
-                            </>
-                          )}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </li>
-              ))}
-
-              {HEADER_SOCIAL_LINKS.map((social) => {
-                const isInstagram = social.label === "Instagram";
-                const shouldAnimate = isInstagram && showInstaLabel;
+            <ul className="site-header__menu">
+              {HEADER_NAV_ITEMS.map((item) => {
+                const isOpen = activeDropdown === item.label;
+                const dropdownId = toDropdownId(item.label);
 
                 return (
                   <li
-                    key={social.label}
-                    className={`header-social-link has-tooltip ${shouldAnimate ? "insta-shake" : ""}`}
+                    key={item.label}
+                    className={`site-header__item ${isOpen ? "is-open" : ""}`}
                   >
-                    <Link
-                      href={social.href}
-                      target={social.target}
-                      onClick={handleCloseAll}
-                      style={{ position: "relative" }}
-                    >
-                      <Image
-                        src={social.icon}
-                        alt={social.label}
-                        width={24}
-                        height={24}
-                        className="social-icon"
-                      />
-                      <span>{social.handle}</span>
-                      {shouldAnimate && (
-                        <div className="insta-promo-bubble">
-                          Zaobserwuj mnie na Instagramie
-                        </div>
-                      )}
-                    </Link>
-                    <span className="tooltip">{social.label}</span>
+                    {item.href ? (
+                      <Link
+                        href={item.href}
+                        className="site-header__link"
+                        onClick={handleCloseAll}
+                      >
+                        {item.label}
+                      </Link>
+                    ) : (
+                      <button
+                        type="button"
+                        className="site-header__link site-header__trigger"
+                        aria-expanded={isOpen}
+                        aria-controls={dropdownId}
+                        onClick={() => toggleDropdown(item.label)}
+                      >
+                        {item.label}
+                        <HiChevronDown aria-hidden="true" />
+                      </button>
+                    )}
+
+                    {item.children && (
+                      <ul id={dropdownId} className="site-header__dropdown">
+                        {item.children.map((subItem) => (
+                          <li key={subItem.label}>
+                            <Link
+                              href={subItem.href ?? "/"}
+                              className={subItem.className}
+                              onClick={handleCloseAll}
+                            >
+                              {subItem.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </li>
                 );
               })}
             </ul>
+
+            <div className="site-header__actions">
+              {instagramLink && (
+                <Link
+                  href={instagramLink.href}
+                  target={instagramLink.target}
+                  rel="noopener noreferrer"
+                  className={`site-header__icon site-header__icon--instagram ${showInstaBubble ? "has-bubble" : ""}`}
+                  data-tooltip={instagramLink.label}
+                  onClick={handleCloseAll}
+                >
+                  <instagramLink.icon aria-hidden="true" />
+                  <span className="site-header__icon-label">
+                    {instagramLink.handle}
+                  </span>
+                  {showInstaBubble && (
+                    <span
+                      className="site-header__insta-bubble"
+                      aria-hidden="true"
+                    >
+                      Zaobserwuj mnie na Instagramie
+                    </span>
+                  )}
+                </Link>
+              )}
+              {iconLinks.map((social) => {
+                const Icon = social.icon;
+
+                return (
+                  <Link
+                    key={social.label}
+                    href={social.href}
+                    target={social.target}
+                    rel={
+                      social.target === "_blank"
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
+                    className="site-header__icon"
+                    data-tooltip={social.label}
+                    onClick={handleCloseAll}
+                  >
+                    <Icon aria-hidden="true" />
+                    <span className="site-header__icon-label">
+                      {social.label}
+                    </span>
+                  </Link>
+                );
+              })}
+            </div>
           </nav>
-          </div>
+
+          <button
+            type="button"
+            className={`site-header__burger ${openMenu ? "open" : ""}`}
+            aria-expanded={openMenu}
+            aria-controls="main-menu"
+            aria-label={openMenu ? "Zamknij menu" : "Otwórz menu"}
+            onClick={() => setOpenMenu((open) => !open)}
+          >
+            <span />
+            <span />
+            <span />
+          </button>
         </div>
       </div>
     </div>

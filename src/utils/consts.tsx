@@ -1,12 +1,10 @@
 import { StaticImageData } from "next/image";
+import { IconType } from "react-icons";
+import { FaFacebookF, FaInstagram } from "react-icons/fa6";
+import { HiMagnifyingGlass, HiOutlineMapPin } from "react-icons/hi2";
 
 // --- ICON IMPORTS ---
 import logo from "../../public/icons/header/bezglutenowakarola-logo.svg";
-import menuDownIcon from "../../public/icons/common/menu-down-icon.svg";
-import instagramIcon from "../../public/icons/common/instagram.svg";
-import searchIcon from "../../public/icons/common/search-icon.png";
-import facebookIcon from "../../public/icons/common/facebook.svg";
-import mapIcon from "../../public/img/map/map-icon.png";
 
 // --- HERO SLIDE IMPORTS ---
 import welcomeImg from "../../public/img/profile/Karola-profile2026.jpg";
@@ -43,7 +41,7 @@ export interface HeaderNavItem {
 
 export interface HeaderSocialLink {
   label: string;
-  icon: string | StaticImageData;
+  icon: IconType;
   href: string;
   target: string;
   handle: string;
@@ -73,7 +71,6 @@ export interface PartnerItem {
 
 export const HEADER_ICONS = {
   logo,
-  menuDownIcon,
 };
 
 export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
@@ -151,28 +148,28 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
 export const HEADER_SOCIAL_LINKS: HeaderSocialLink[] = [
   {
     label: "Instagram",
-    icon: instagramIcon,
+    icon: FaInstagram,
     href: "https://www.instagram.com/bezglutenowakarola/",
     target: "_blank",
     handle: "@bezglutenowakarola",
   },
   {
     label: "Facebook",
-    icon: facebookIcon,
+    icon: FaFacebookF,
     href: "https://www.facebook.com/profile.php?id=61576336200554",
     target: "_blank",
     handle: "@bezglutenowakarola",
   },
   {
     label: "Wyszukiwarka przepisów",
-    icon: searchIcon,
+    icon: HiMagnifyingGlass,
     href: "/szukaj-przepisow/",
     target: "_self",
     handle: "Wyszukiwarka przepisów",
   },
   {
     label: "Mapa miejsc bezglutenowych",
-    icon: mapIcon,
+    icon: HiOutlineMapPin,
     href: "/bezglutenowe-miejsca",
     target: "_self",
     handle: "Mapa miejsc bezglutenowych",

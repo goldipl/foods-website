@@ -226,24 +226,8 @@
       text-decoration: none;
       transition: color 0.2s ease;
 
-      svg {
-        margin-left: 6px;
-        font-size: 0.8em;
-        vertical-align: -0.05em;
-        opacity: 0;
-        transform: translateX(-4px);
-        transition:
-          opacity 0.2s ease,
-          transform 0.2s ease;
-      }
-
       &:hover {
-        color: $color-white;
-
-        svg {
-          opacity: 1;
-          transform: translateX(0);
-        }
+        color: var(--footer-accent);
       }
     }
   }

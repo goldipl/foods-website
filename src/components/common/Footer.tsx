@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { IconType } from "react-icons";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa6";
-import { HiArrowRight, HiArrowUp, HiMagnifyingGlass } from "react-icons/hi2";
+import { HiArrowUp, HiMagnifyingGlass } from "react-icons/hi2";
 import logo from "./../../../public/icons/header/bezglutenowakarola-logo.svg";
 import { FOOTER_LINKS, BRAND_DATA } from "./../../utils/consts";
 
@@ -123,7 +123,6 @@ const Footer = () => {
                         }
                       >
                         {link.label}
-                        <HiArrowRight aria-hidden="true" />
                       </Link>
                     </li>
                   ))}
