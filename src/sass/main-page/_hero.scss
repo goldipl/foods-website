@@ -513,14 +513,178 @@
   }
 }
 
-@media (max-width: 560px) {
+// Mobile: immersive full-bleed card with copy laid over the image
+@media (max-width: 768px) {
   #hero {
+    --hero-radius: 28px;
+    --hero-shade-rgb: 7, 36, 23;
+    --hero-pad-top: 16px;
+    --hero-pad-x: 14px;
+    --hero-inset: 14px;
+
     .hero-wrapper {
-      padding: 28px 16px 32px;
+      padding: var(--hero-pad-top) var(--hero-pad-x) 32px;
     }
 
-    .hero-slide__eyebrow {
-      font-size: 0.62rem;
+    .swiper {
+      height: clamp(540px, 78svh, 680px);
+      border-radius: var(--hero-radius);
+      box-shadow:
+        0 14px 30px rgba(4, 24, 15, 0.35),
+        0 0 0 1px rgba(var(--hero-accent-rgb), 0.18);
+      // Keeps the rounded clip on Safari during the fade transition
+      transform: translateZ(0);
+    }
+
+    .hero-slide {
+      position: relative;
+      display: block;
+
+      &__media {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        aspect-ratio: auto;
+        border-radius: 0;
+        box-shadow: none;
+
+        img {
+          object-position: center 20%;
+        }
+
+        // Darkens the top for the controls and the bottom for the copy
+        &::after {
+          position: absolute;
+          inset: 0;
+          background:
+            linear-gradient(
+              180deg,
+              rgba(var(--hero-shade-rgb), 0.55) 0%,
+              rgba(var(--hero-shade-rgb), 0) 22%
+            ),
+            linear-gradient(
+              0deg,
+              rgba(var(--hero-shade-rgb), 0.97) 0%,
+              rgba(var(--hero-shade-rgb), 0.88) 34%,
+              rgba(var(--hero-shade-rgb), 0.35) 58%,
+              rgba(var(--hero-shade-rgb), 0) 76%
+            );
+          content: "";
+        }
+      }
+
+      &__content {
+        position: absolute;
+        inset: auto 0 0;
+        z-index: 1;
+        padding: 0 20px 22px;
+      }
+
+      &__eyebrow {
+        padding: 7px 12px;
+        border: 1px solid rgba(var(--hero-accent-rgb), 0.35);
+        border-radius: 999px;
+        background: rgba(var(--hero-shade-rgb), 0.45);
+        font-size: 0.64rem;
+        backdrop-filter: blur(10px);
+      }
+
+      &__title {
+        margin: 14px 0 10px;
+        font-size: clamp(1.85rem, 8.4vw, 2.35rem);
+        line-height: 1.06;
+        text-shadow: 0 2px 18px rgba(0, 0, 0, 0.25);
+      }
+
+      &__subtitle {
+        display: -webkit-box;
+        overflow: hidden;
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 0.94rem;
+        line-height: 1.55;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+      }
+
+      &__actions {
+        flex-wrap: nowrap;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      &__cta {
+        flex: 1 1 0;
+        min-height: 50px;
+        padding: 0 16px;
+      }
+    }
+
+    .hero-stage__decor {
+      inset: 0;
+    }
+
+    .hero-stage__frame {
+      height: 100%;
+      aspect-ratio: auto;
+
+      &::before {
+        content: none;
+      }
+    }
+
+    // Decorations would cover the photo on mobile; the eyebrow pill carries the brand
+    .hero-stage__food,
+    .hero-stage__chip {
+      display: none;
+    }
+
+    // Stories-style bar pinned to the top of the card
+    .hero-controls {
+      position: absolute;
+      top: calc(var(--hero-pad-top) + var(--hero-inset));
+      right: calc(var(--hero-pad-x) + var(--hero-inset));
+      left: calc(var(--hero-pad-x) + var(--hero-inset));
+      z-index: 3;
+      gap: 10px;
+      margin: 0;
+
+      &__btn {
+        order: 1;
+        width: 38px;
+        height: 38px;
+        border-color: rgba(255, 255, 255, 0.3);
+        background: rgba(var(--hero-shade-rgb), 0.4);
+        font-size: 1rem;
+        backdrop-filter: blur(10px);
+      }
+
+      &__counter {
+        order: -1;
+        min-width: 0;
+        padding: 7px 11px;
+        border-radius: 999px;
+        background: rgba(var(--hero-shade-rgb), 0.4);
+        font-size: 0.72rem;
+        backdrop-filter: blur(10px);
+
+        strong {
+          font-size: 0.85rem;
+        }
+      }
+
+      &__progress {
+        background: rgba(255, 255, 255, 0.25);
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  #hero {
+    .hero-slide__cta {
+      padding: 0 12px;
+      font-size: 0.85rem;
     }
   }
 }
