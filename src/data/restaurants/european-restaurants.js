@@ -16,6 +16,7 @@ import vogliaDiPizzaRzym from "./../../../public/img/restaurants/europe/015_vogl
 import pastaInCorsoCavourPrati from "./../../../public/img/restaurants/europe/016_pasta_in_corso_cavour_prati.jpg";
 import ilmiofornaioglutenfree from "./../../../public/img/restaurants/europe/017_ilmiofornaioglutenfree.jpg";
 import rosemaryterraesapori from "./../../../public/img/restaurants/europe/018_rosemaryterraesapori.jpg";
+import kopenhagaCz1 from "./../../../public/img/restaurants/europe/019_kopenhaga_cz1.jpg";
 
 export const  europeanRestaurantsData = [
     {
@@ -197,5 +198,15 @@ export const  europeanRestaurantsData = [
       labelClass: "europe-label",
       description:
         "Gdzie zjeść bezglutenowe śniadania w Rzymie? Rosemary terra e sapori, V. Modena, 15, 00184 Roma RM, Włochy",
+    },
+    {
+      id: 19,
+      href: "https://www.instagram.com/p/De7Y611Eaox/?img_index=1",
+      imgSrc: kopenhagaCz1,
+      altText: "Bezglutenowa Kopenhaga cz. 1, Dania",
+      label: "Kopenhaga",
+      labelClass: "europe-label",
+      description:
+        "Bezglutenowa Kopenhaga cz. 1, Dania",
     },
   ];
