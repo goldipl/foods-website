@@ -61,7 +61,6 @@ export interface HeroSlideItem {
   image: StaticImageData;
   alt: string;
   links: SlideLink[];
-  reverse?: boolean;
 }
 
 export interface PartnerItem {
@@ -275,7 +274,6 @@ export const HERO_SLIDES: HeroSlideItem[] = [
     image: mealPlannerHero,
     alt: "Ilustracja tygodniowego planera posiłków z propozycjami dań",
     links: [{ label: "Zaplanuj posiłki", href: "/planer-posilkow" }],
-    reverse: true,
   },
   {
     title: "Wyszukiwarka przepisów bezglutenowych",
@@ -315,7 +313,6 @@ export const HERO_SLIDES: HeroSlideItem[] = [
       "Szukasz pomysłów na śniadania bezglutenowe, które są nie tylko zdrowe, ale i pyszne? Dobrze trafiłeś!",
     image: breakfastImg,
     alt: "Bezglutenowa śniadaniowa tortilla z komosy ryżowej",
-    reverse: true,
     links: [{ label: "Sprawdź przepisy", href: "#sniadania" }],
   },
   {
@@ -332,7 +329,6 @@ export const HERO_SLIDES: HeroSlideItem[] = [
       "Marzysz o pysznych deserach bezglutenowych, które zachwycą smakiem, a przy tym będą lekkie i zdrowe? Jesteś we właściwym miejscu!",
     image: dessertImg,
     alt: "Wege sernik",
-    reverse: true,
     links: [{ label: "Sprawdź przepisy", href: "#desery" }],
   },
   {
@@ -349,7 +345,6 @@ export const HERO_SLIDES: HeroSlideItem[] = [
       "Szukasz miejsc, gdzie możesz zjeść pysznie i bez glutenu na świecie? Oto moje rekomendacje!",
     image: pastaGlutenFreeRoma,
     alt: "Restauracja Mama Eat, Włochy",
-    reverse: true,
     links: [{ label: "Sprawdź", href: "#restauracje-europa" }],
   },
   {

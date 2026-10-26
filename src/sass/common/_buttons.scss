@@ -72,17 +72,6 @@
   margin: 40px auto;
 }
 
-.hero-cta-box {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  @media (max-width: 992px) {
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-  }
-}
-
 .read-more-btn {
   margin-top: 16px;
   @extend .hero-cta;
