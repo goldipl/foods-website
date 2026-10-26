@@ -51,20 +51,23 @@ body:has(.recipes-tags) {
       height: 54vw;
       border-radius: 16px;
     }
-    &:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 20px 44px rgba(12, 71, 46, 0.2);
-      .listing-v1-slot__img {
-        img {
-          transform: scale(1.06);
+    // Only on real pointers: on touch screens a tap while swiping would trigger it
+    @media (hover: hover) {
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 44px rgba(12, 71, 46, 0.2);
+        .listing-v1-slot__img {
+          img {
+            transform: scale(1.06);
+          }
+          &::after {
+            opacity: 1;
+          }
         }
-        &::after {
+        .zoom-box {
           opacity: 1;
+          transform: translate(-50%, -50%) scale(1);
         }
-      }
-      .zoom-box {
-        opacity: 1;
-        transform: translate(-50%, -50%) scale(1);
       }
     }
     &:focus-visible {

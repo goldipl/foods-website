@@ -59,19 +59,26 @@
     }
   }
 
-  // Swipeable row on phones
+  // Swipeable row on phones, bleeding to the screen edges
   @media (max-width: 760px) {
+    --listing-bleed: 20px;
+
     grid-template-columns: none;
     grid-auto-flow: column;
     grid-auto-columns: 72%;
+    // Override the global centered layout: centered overflow cuts off the first card
+    justify-content: start;
+    align-items: stretch;
     gap: 14px;
-    margin: 0 -16px;
-    padding: 4px 16px 16px;
+    margin: 0 calc(var(--listing-bleed) * -1);
+    padding: 4px var(--listing-bleed) 16px;
     overflow-x: auto;
+    overflow-y: hidden;
     overscroll-behavior-x: contain;
-    scroll-padding-inline: 16px;
+    scroll-padding-inline: var(--listing-bleed);
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
 
     &::-webkit-scrollbar {
       display: none;
@@ -82,5 +89,11 @@
       display: flex;
       scroll-snap-align: start;
     }
+  }
+
+  @media (max-width: 560px) {
+    --listing-bleed: 16px;
+
+    grid-auto-columns: 78%;
   }
 }
