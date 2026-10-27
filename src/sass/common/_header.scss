@@ -638,7 +638,24 @@
 
     &__icon--instagram {
       grid-column: 1 / -1;
-      justify-content: center;
+    }
+
+    // Quieter tool buttons next to the branded social ones
+    &__icon--search,
+    &__icon--map {
+      border: 1px solid rgba(12, 71, 46, 0.1);
+      background: $color-green04;
+      color: $color-green05;
+
+      svg {
+        color: $color-green02;
+      }
+
+      &:hover {
+        background: $color-green03;
+        color: $color-green05;
+        filter: none;
+      }
     }
 
     &__insta-bubble {

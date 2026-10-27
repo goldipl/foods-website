@@ -83,8 +83,8 @@ const Footer = () => {
               <Image
                 src={logo.src}
                 alt="Bezglutenowa Karola Logo"
-                height={53}
-                width={231}
+                height={112}
+                width={372}
               />
             </Link>
             <p>{BRAND_DATA.description}</p>

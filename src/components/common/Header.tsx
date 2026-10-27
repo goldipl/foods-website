@@ -121,8 +121,8 @@ const Header = () => {
             <Image
               src={HEADER_ICONS.logo}
               alt="Bezglutenowa Karola - strona główna"
-              height={53}
-              width={231}
+              height={112}
+              width={372}
               priority
             />
           </Link>
