@@ -50,6 +50,11 @@
     aspect-ratio: 4 / 5;
   }
 
+  // Hover matches the article cards: no darkening, only the arrow and the pill
+  .listing-v1-slot__img::after {
+    content: none;
+  }
+
   // "Nowość" badge on the newest post is a desktop-only bento accent
   .new-label {
     display: none;
@@ -84,11 +89,7 @@
         .listing-v1-slot__go {
           width: 42px;
           height: 42px;
-
-          svg {
-            width: 20px;
-            height: 20px;
-          }
+          font-size: 1.05rem;
         }
 
         span {
@@ -244,8 +245,7 @@
   }
 
   .home-section .listing-v1-slot__img img,
-  .home-section .listing-v1-slot__go,
-  .home-section .listing-v1-slot__go svg {
+  .home-section .listing-v1-slot__go {
     transition: none;
   }
 }

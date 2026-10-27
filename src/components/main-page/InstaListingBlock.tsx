@@ -2,7 +2,7 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { FaInstagram } from "react-icons/fa6";
-import { FiArrowUpRight } from "react-icons/fi";
+import { HiArrowRight } from "react-icons/hi2";
 import SectionHeader from "@/components/common/SectionHeader";
 
 export interface InstaListingItem {
@@ -75,7 +75,7 @@ const InstaListingBlock: React.FC<InstaListingBlockProps> = ({
             <div className="listing-v1-slot__text">
               <span>{item.description}</span>
               <div className="listing-v1-slot__go" aria-hidden="true">
-                <FiArrowUpRight />
+                <HiArrowRight />
               </div>
             </div>
             <div className="listing-v1-slot__labels">

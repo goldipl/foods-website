@@ -44,21 +44,22 @@ body:has(.recipes-tags) {
     box-shadow: 0 10px 26px rgba(12, 71, 46, 0.1);
     color: $color-black;
     transition:
-      transform 0.35s ease,
-      box-shadow 0.35s ease;
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
     @media (max-width: 992px) {
       width: 45vw;
       height: 54vw;
       border-radius: 16px;
     }
     // Only on real pointers: on touch screens a tap while swiping would trigger it
+    // Lift, shadow, photo zoom and arrow match the article cards (.article-card)
     @media (hover: hover) {
       &:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 20px 44px rgba(12, 71, 46, 0.2);
+        transform: translateY(-6px);
+        box-shadow: 0 22px 48px rgba(12, 71, 46, 0.14);
         .listing-v1-slot__img {
           img {
-            transform: scale(1.06);
+            transform: scale(1.05);
           }
           &::after {
             opacity: 1;
@@ -69,11 +70,9 @@ body:has(.recipes-tags) {
           transform: translate(-50%, -50%) scale(1);
         }
         .listing-v1-slot__go {
-          background: $color-green01;
+          background: $color-green05;
           color: $color-white;
-          svg {
-            transform: translate(2px, -2px);
-          }
+          transform: translateX(4px);
         }
       }
     }
@@ -147,26 +146,20 @@ body:has(.recipes-tags) {
       display: grid;
       flex: none;
       place-items: center;
-      width: 34px;
-      height: 34px;
+      width: 36px;
+      height: 36px;
       border-radius: 50%;
       background: $color-green04;
       color: $color-green05;
+      font-size: 0.92rem;
       transition:
-        background-color 0.3s ease,
-        color 0.3s ease;
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
       @media (max-width: 992px) {
         width: 28px;
         height: 28px;
-      }
-      svg {
-        width: 17px;
-        height: 17px;
-        transition: transform 0.3s ease;
-        @media (max-width: 992px) {
-          width: 14px;
-          height: 14px;
-        }
+        font-size: 0.85rem;
       }
     }
     &__labels {
