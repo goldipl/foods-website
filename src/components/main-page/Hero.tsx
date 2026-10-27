@@ -7,7 +7,6 @@ import {
   HiArrowRight,
   HiChevronLeft,
   HiChevronRight,
-  HiHeart,
 } from "react-icons/hi2";
 
 // Import data and types
@@ -31,10 +30,6 @@ const HeroSlide: React.FC<{ slide: HeroSlideItem; index: number }> = ({
   return (
     <div className="hero-slide">
       <div className="hero-slide__content">
-        <span className="hero-slide__eyebrow">
-          <HiHeart aria-hidden="true" />
-          Bezglutenowa Karola
-        </span>
         <Heading className="hero-slide__title">{slide.title}</Heading>
         <p className="hero-slide__subtitle">{slide.subtitle}</p>
         <div className="hero-slide__actions">

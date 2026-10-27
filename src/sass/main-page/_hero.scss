@@ -85,19 +85,8 @@
       max-width: 600px;
     }
 
-    &__eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      color: var(--hero-accent);
-      font-size: 0.72rem;
-      font-weight: 800;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-    }
-
     &__title {
-      margin: 20px 0 18px;
+      margin: 0 0 18px;
       color: $color-white;
       font-size: clamp(2.2rem, 3.6vw, 3.4rem);
       font-weight: 700;
@@ -580,17 +569,8 @@
         padding: 0 20px 22px;
       }
 
-      &__eyebrow {
-        padding: 7px 12px;
-        border: 1px solid rgba(var(--hero-accent-rgb), 0.35);
-        border-radius: 999px;
-        background: rgba(var(--hero-shade-rgb), 0.45);
-        font-size: 0.64rem;
-        backdrop-filter: blur(10px);
-      }
-
       &__title {
-        margin: 14px 0 10px;
+        margin: 0 0 10px;
         font-size: clamp(1.85rem, 8.4vw, 2.35rem);
         line-height: 1.06;
         text-shadow: 0 2px 18px rgba(0, 0, 0, 0.25);
@@ -633,7 +613,7 @@
       }
     }
 
-    // Decorations would cover the photo on mobile; the eyebrow pill carries the brand
+    // Decorations would cover the photo on mobile
     .hero-stage__food,
     .hero-stage__chip {
       display: none;
