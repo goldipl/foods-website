@@ -7,7 +7,6 @@ import { HiMagnifyingGlass, HiOutlineMapPin } from "react-icons/hi2";
 import logo from "../../public/icons/header/bezglutenowakarola-logo.svg";
 
 // --- HERO SLIDE IMPORTS ---
-import welcomeImg from "../../public/img/profile/Karola-profile2026.jpg";
 import breakfastImg from "../../public/img/recipes/breakfasts/003_sniadaniowa_tortilla_z_jajkiem.jpg";
 import dinnerImg from "../../public/img/recipes/dinners/004_bezglutenowy_burger_z_kurczaka_teriyaki.jpg";
 import dessertImg from "../../public/img/recipes/desserts/004_wege_sernik.jpg";
@@ -15,6 +14,7 @@ import pierogi from "../../public/img/products/022_bezglutenowe_panettone.jpg";
 import pastaGlutenFreeRoma from "../../public/img/welcome/wloski-makaron-gluten-free.jpg";
 import saskaSushiWarszawa from "../../public/img/restaurants/poland/001_saska_sushi.jpg";
 import bezglutenoweHalloween from "../../public/img/events/011_bezglutenowe_halloween.jpg";
+import karolaHero from "../../public/img/hero/karola-hero.jpg";
 import glutenFreeHeroMap from "../../public/img/hero/glutenfreemap.jpg";
 import searchPage from "../../public/img/hero/searchpage.jpg";
 import articlesPage from "../../public/img/hero/articles.jpg";
@@ -258,8 +258,8 @@ export const HERO_SLIDES: HeroSlideItem[] = [
   {
     title: "Zdrowo, smacznie, bezglutenowo!",
     subtitle: "Przepisy, restauracje i porady dla osób na diecie bezglutenowej",
-    image: welcomeImg,
-    alt: "Restauracja Rola Pao w Warszawie",
+    image: karolaHero,
+    alt: "Karola – autorka bloga Bezglutenowa Karola",
     links: [
       { label: "Przepisy", href: "#sniadania" },
       {
