@@ -10,7 +10,6 @@ const Events = () => {
           eyebrow="Wydarzenia"
           title="Wydarzenia, warsztaty bezglutenowe i przydatne informacje"
           items={eventsData}
-          limit={8}
           moreHref="/wydarzenia/"
           moreLabel="Wszystkie wydarzenia"
         />

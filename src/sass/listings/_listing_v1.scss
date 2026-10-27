@@ -68,6 +68,13 @@ body:has(.recipes-tags) {
           opacity: 1;
           transform: translate(-50%, -50%) scale(1);
         }
+        .listing-v1-slot__go {
+          background: $color-green01;
+          color: $color-white;
+          svg {
+            transform: translate(2px, -2px);
+          }
+        }
       }
     }
     &:focus-visible {
@@ -97,34 +104,68 @@ body:has(.recipes-tags) {
     }
     &__text {
       position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      padding: 64px 18px 18px;
-      background: linear-gradient(
-        180deg,
-        rgba(6, 32, 21, 0) 0%,
-        rgba(6, 32, 21, 0.62) 45%,
-        rgba(6, 32, 21, 0.9) 100%
-      );
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      padding: 12px 12px 12px 14px;
+      border-radius: 14px;
+      background: $color-white;
+      box-shadow: 0 8px 22px rgba(6, 32, 21, 0.16);
       pointer-events: none;
       @media (max-width: 992px) {
-        padding: 40px 12px 12px;
+        gap: 8px;
+        bottom: 8px;
+        left: 8px;
+        right: 8px;
+        padding: 9px 9px 9px 11px;
+        border-radius: 11px;
       }
       span {
+        flex: 1;
+        min-width: 0;
         display: -webkit-box;
         line-clamp: 3;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        color: $color-white;
+        color: $color-black;
         font-size: 0.92rem;
-        font-weight: 500;
-        line-height: 1.45;
+        font-weight: 600;
+        line-height: 1.4;
         @media (max-width: 640px) {
           font-size: 12px;
           line-clamp: 2;
           -webkit-line-clamp: 2;
+        }
+      }
+    }
+    // Round "go to post" arrow at the end of the caption panel
+    &__go {
+      display: grid;
+      flex: none;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: $color-green04;
+      color: $color-green05;
+      transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+      @media (max-width: 992px) {
+        width: 28px;
+        height: 28px;
+      }
+      svg {
+        width: 17px;
+        height: 17px;
+        transition: transform 0.3s ease;
+        @media (max-width: 992px) {
+          width: 14px;
+          height: 14px;
         }
       }
     }

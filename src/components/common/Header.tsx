@@ -220,7 +220,7 @@ const Header = () => {
                         ? "noopener noreferrer"
                         : undefined
                     }
-                    className="site-header__icon"
+                    className={`site-header__icon site-header__icon--${social.theme}`}
                     data-tooltip={social.label}
                     onClick={handleCloseAll}
                   >

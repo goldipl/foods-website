@@ -279,8 +279,8 @@
       z-index: 5;
       padding: 6px 10px;
       border-radius: 8px;
-      background: $color-green05;
-      color: $color-white;
+      background: var(--header-accent);
+      color: $color-green05;
       content: attr(data-tooltip);
       font-size: 0.75rem;
       font-weight: 600;
@@ -310,12 +310,12 @@
   }
 
   &__icon--instagram {
-    border-color: transparent;
+    // No border at all: a transparent one leaves a dark anti-aliased fringe
+    border: 0;
     background: linear-gradient(45deg, #f58529, #dd2a7b 55%, #8134af);
     color: $color-white;
 
     &:hover {
-      border-color: transparent;
       background: linear-gradient(45deg, #f58529, #dd2a7b 55%, #8134af);
       filter: brightness(1.08);
     }
@@ -328,6 +328,32 @@
         content: none;
       }
     }
+  }
+
+  // Colorful gradient icons, same treatment as Instagram
+  &__icon--facebook,
+  &__icon--search,
+  &__icon--map {
+    border: 0;
+    background: var(--icon-gradient);
+    color: $color-white;
+
+    &:hover {
+      background: var(--icon-gradient);
+      filter: brightness(1.08);
+    }
+  }
+
+  &__icon--facebook {
+    --icon-gradient: linear-gradient(45deg, #0866ff, #3b8bff 55%, #00c6ff);
+  }
+
+  &__icon--search {
+    --icon-gradient: linear-gradient(45deg, #0c472e, #1f8a4c 55%, #7ed957);
+  }
+
+  &__icon--map {
+    --icon-gradient: linear-gradient(45deg, #ff6a3d, #f5365c 55%, #c2185b);
   }
 
   &__insta-bubble {

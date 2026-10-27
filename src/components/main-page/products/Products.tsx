@@ -8,7 +8,6 @@ const Products = () => (
     eyebrow="Zakupy"
     title="Bezglutenowe produkty"
     items={productsData}
-    limit={8}
     moreHref="/produkty/"
     moreLabel="Wszystkie produkty"
   />

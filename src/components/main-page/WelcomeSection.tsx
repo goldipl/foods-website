@@ -25,7 +25,7 @@ const WelcomeSection = () => {
               className="welcome-section__badge welcome-section__badge--top"
               aria-hidden="true"
             >
-              💚 Celiakia od 2023
+              Celiakia od 2023
             </span>
             <span
               className="welcome-section__badge welcome-section__badge--bottom"

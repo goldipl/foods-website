@@ -50,6 +50,117 @@
     aspect-ratio: 4 / 5;
   }
 
+  // "Nowość" badge on the newest post is a desktop-only bento accent
+  .new-label {
+    display: none;
+  }
+
+  // Bento grid on desktop: in every group of four posts the newest gets a
+  // large 2x2 tile, the next a tall tile and the last two stack as small ones
+  @media (min-width: 1101px) {
+    grid-auto-flow: row dense;
+    grid-auto-rows: clamp(250px, 22.5vw, 284px);
+    align-items: stretch;
+    gap: 20px;
+
+    .listing-v1-slot {
+      aspect-ratio: auto;
+      border-radius: 24px;
+    }
+
+    .listing-v1-slot:nth-child(4n + 1) {
+      grid-column: 1 / span 2;
+      grid-row: span 2;
+      border-radius: 28px;
+
+      .listing-v1-slot__text {
+        bottom: 16px;
+        left: 16px;
+        right: 16px;
+        gap: 16px;
+        padding: 18px 18px 18px 22px;
+        border-radius: 18px;
+
+        .listing-v1-slot__go {
+          width: 42px;
+          height: 42px;
+
+          svg {
+            width: 20px;
+            height: 20px;
+          }
+        }
+
+        span {
+          max-width: 46ch;
+          font-size: 1.22rem;
+          font-weight: 600;
+          line-height: 1.4;
+          line-clamp: 4;
+          -webkit-line-clamp: 4;
+        }
+      }
+
+      .listing-v1-slot__labels {
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        gap: 8px;
+
+        span {
+          padding: 6px 14px;
+          font-size: 13px;
+        }
+      }
+
+      .zoom-box {
+        padding: 13px 24px;
+
+        span {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .listing-v1-slot:nth-child(4n + 2) {
+      grid-column: 3;
+      grid-row: span 2;
+
+      .listing-v1-slot__text span {
+        line-clamp: 4;
+        -webkit-line-clamp: 4;
+      }
+    }
+
+    .listing-v1-slot:nth-child(4n + 3),
+    .listing-v1-slot:nth-child(4n + 4) {
+      grid-column: 4;
+
+      .listing-v1-slot__text span {
+        font-size: 0.86rem;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+      }
+    }
+
+    .new-label {
+      display: inline-flex;
+      gap: 7px;
+      background: $color-white;
+      color: $color-green05;
+
+      &::before {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: $color-green01;
+        box-shadow: 0 0 0 0 rgba(127, 180, 2, 0.6);
+        content: "";
+        animation: new-label-pulse 2s ease-out infinite;
+      }
+    }
+  }
+
   @media (max-width: 1100px) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
 
@@ -95,5 +206,46 @@
     --listing-bleed: 16px;
 
     grid-auto-columns: 78%;
+  }
+}
+
+// Mirror every other bento block so stacked listings zig-zag down the page
+@media (min-width: 1101px) {
+  .home-section .insta-block:nth-child(even) .listing-v1 {
+    .listing-v1-slot:nth-child(4n + 1) {
+      grid-column: 3 / span 2;
+    }
+
+    .listing-v1-slot:nth-child(4n + 2) {
+      grid-column: 2;
+    }
+
+    .listing-v1-slot:nth-child(4n + 3),
+    .listing-v1-slot:nth-child(4n + 4) {
+      grid-column: 1;
+    }
+  }
+}
+
+@keyframes new-label-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(127, 180, 2, 0.6);
+  }
+
+  70%,
+  100% {
+    box-shadow: 0 0 0 7px rgba(127, 180, 2, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-section .new-label::before {
+    animation: none;
+  }
+
+  .home-section .listing-v1-slot__img img,
+  .home-section .listing-v1-slot__go,
+  .home-section .listing-v1-slot__go svg {
+    transition: none;
   }
 }

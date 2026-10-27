@@ -2,6 +2,7 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { FaInstagram } from "react-icons/fa6";
+import { FiArrowUpRight } from "react-icons/fi";
 import SectionHeader from "@/components/common/SectionHeader";
 
 export interface InstaListingItem {
@@ -55,7 +56,7 @@ const InstaListingBlock: React.FC<InstaListingBlockProps> = ({
         .slice()
         .reverse()
         .slice(0, limit)
-        .map((item) => (
+        .map((item, index) => (
           <Link
             key={item.id}
             href={item.href}
@@ -73,8 +74,12 @@ const InstaListingBlock: React.FC<InstaListingBlockProps> = ({
             </div>
             <div className="listing-v1-slot__text">
               <span>{item.description}</span>
+              <div className="listing-v1-slot__go" aria-hidden="true">
+                <FiArrowUpRight />
+              </div>
             </div>
             <div className="listing-v1-slot__labels">
+              {index === 0 && <span className="new-label">Nowość</span>}
               <span className={item.labelClass}>{item.label}</span>
               {item.labelShop && (
                 <span className={item.labelShopClass}>{item.labelShop}</span>

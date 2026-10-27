@@ -45,6 +45,7 @@ export interface HeaderSocialLink {
   href: string;
   target: string;
   handle: string;
+  theme: "instagram" | "facebook" | "search" | "map";
 }
 
 export interface SlideLink {
@@ -152,6 +153,7 @@ export const HEADER_SOCIAL_LINKS: HeaderSocialLink[] = [
     href: "https://www.instagram.com/bezglutenowakarola/",
     target: "_blank",
     handle: "@bezglutenowakarola",
+    theme: "instagram",
   },
   {
     label: "Facebook",
@@ -159,6 +161,7 @@ export const HEADER_SOCIAL_LINKS: HeaderSocialLink[] = [
     href: "https://www.facebook.com/profile.php?id=61576336200554",
     target: "_blank",
     handle: "@bezglutenowakarola",
+    theme: "facebook",
   },
   {
     label: "Wyszukiwarka przepisów",
@@ -166,6 +169,7 @@ export const HEADER_SOCIAL_LINKS: HeaderSocialLink[] = [
     href: "/szukaj-przepisow/",
     target: "_self",
     handle: "Wyszukiwarka przepisów",
+    theme: "search",
   },
   {
     label: "Mapa miejsc bezglutenowych",
@@ -173,6 +177,7 @@ export const HEADER_SOCIAL_LINKS: HeaderSocialLink[] = [
     href: "/bezglutenowe-miejsca",
     target: "_self",
     handle: "Mapa miejsc bezglutenowych",
+    theme: "map",
   },
 ];
 
