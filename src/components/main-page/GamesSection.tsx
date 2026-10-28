@@ -1,6 +1,15 @@
 import Link from "next/link";
-import { HiArrowRight, HiChevronRight, HiSparkles } from "react-icons/hi2";
+import { HiArrowRight, HiPlay } from "react-icons/hi2";
+import { IoGameControllerOutline } from "react-icons/io5";
 import { GAMES_SECTION_ITEMS } from "@/utils/consts";
+import SectionHeader from "@/components/common/SectionHeader";
+
+const featuredGame =
+  GAMES_SECTION_ITEMS.find((game) => game.featured) ?? GAMES_SECTION_ITEMS[0];
+const otherGames = GAMES_SECTION_ITEMS.filter((game) => game !== featuredGame);
+
+// "/gra-lapacz" -> "gra-lapacz", used for the per-game colour theme
+const getGameSlug = (href: string) => href.replace(/^\//, "");
 
 const GamesSection = () => {
   return (
@@ -9,65 +18,71 @@ const GamesSection = () => {
       className="games-section"
       aria-labelledby="games-section-title"
     >
-      <span
-        className="games-section__floating games-section__floating--bread"
-        aria-hidden="true"
-      >
-        🍞
-      </span>
-      <span
-        className="games-section__floating games-section__floating--avocado"
-        aria-hidden="true"
-      >
-        🥑
-      </span>
-      <span
-        className="games-section__floating games-section__floating--sparkle"
-        aria-hidden="true"
-      >
-        ✨
-      </span>
       <div className="games-section__wrapper">
-        <div className="games-section__header">
-          <div className="games-section__heading-copy">
-            <span className="games-section__eyebrow">Zagraj i odpocznij</span>
-            <h2 id="games-section-title">
-              Mała przerwa.
-              <span>Wielka frajda!</span>
-            </h2>
-            <p>
-              Wybierz bezglutenową przygodę, sprawdź swoją wiedzę albo pobij
-              rekord. Która gra będzie dziś Twoja?
-            </p>
-          </div>
-          <Link className="games-section__all-games" href="/gry">
-            Strefa gier <HiArrowRight aria-hidden="true" />
-          </Link>
-        </div>
+        <SectionHeader
+          id="games-section-title"
+          theme="dark"
+          eyebrow={
+            <>
+              <IoGameControllerOutline aria-hidden="true" />
+              Gry
+            </>
+          }
+          title="Mała przerwa, wielka frajda!"
+          description="Wybierz bezglutenową przygodę, sprawdź swoją wiedzę albo pobij rekord. Która gra będzie dziś Twoja?"
+          action={{ href: "/gry", label: "Strefa gier" }}
+        />
 
         <div className="games-section__grid">
-          {GAMES_SECTION_ITEMS.map((game, index) => (
+          <Link
+            href={featuredGame.href}
+            className={`game-card game-card--featured game-card--${getGameSlug(
+              featuredGame.href,
+            )}`}
+          >
+            <div className="game-card__screen" aria-hidden="true">
+              <span className="game-card__sun" />
+              <span className="game-card__hill game-card__hill--back" />
+              <span className="game-card__hill game-card__hill--front" />
+              <span className="game-card__spark game-card__spark--one">✦</span>
+              <span className="game-card__spark game-card__spark--two">✧</span>
+              <span className="game-card__spark game-card__spark--three">
+                ✦
+              </span>
+              <span className="game-card__icon">{featuredGame.icon}</span>
+            </div>
+            <div className="game-card__body">
+              <div className="game-card__meta">
+                <span className="game-card__badge">{featuredGame.badge}</span>
+                <span className="game-card__tag">Polecana gra</span>
+              </div>
+              <h3>{featuredGame.title}</h3>
+              <p>{featuredGame.description}</p>
+              <span className="game-card__button">
+                <HiPlay aria-hidden="true" /> {featuredGame.label}
+              </span>
+            </div>
+          </Link>
+
+          {otherGames.map((game) => (
             <Link
               key={game.href}
               href={game.href}
-              className={`game-card game-card--${index + 1}`}
+              className={`game-card game-card--${getGameSlug(game.href)}`}
             >
-              <div className="game-card__top">
+              <div className="game-card__screen" aria-hidden="true">
                 <span className="game-card__badge">{game.badge}</span>
-                <span className="game-card__number">0{index + 1}</span>
+                <span className="game-card__icon">{game.icon}</span>
+                <span className="game-card__play">
+                  <HiPlay />
+                </span>
               </div>
-              <div className="game-card__icon" aria-hidden="true">
-                {game.icon}
-              </div>
-
-              <div className="game-card__content">
+              <div className="game-card__body">
                 <h3>{game.title}</h3>
                 <p>{game.description}</p>
-              </div>
-
-              <div className="game-card__cta">
-                <span>{game.label}</span>
-                <HiChevronRight />
+                <span className="game-card__cta">
+                  {game.label} <HiArrowRight aria-hidden="true" />
+                </span>
               </div>
             </Link>
           ))}

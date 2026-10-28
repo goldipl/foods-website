@@ -204,6 +204,7 @@ export interface GameSectionItem {
   icon: string;
   badge: string;
   label: string;
+  featured?: boolean;
 }
 
 export const GAMES_SECTION_ITEMS: GameSectionItem[] = [
@@ -251,6 +252,7 @@ export const GAMES_SECTION_ITEMS: GameSectionItem[] = [
     icon: "🌾",
     badge: "Platformówka",
     label: "Wyrusz w drogę",
+    featured: true,
   },
 ];
 

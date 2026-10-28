@@ -3,20 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import glutenFreeMap from "./../../../public/img/map/gluten-free-map.jpg";
 import { MarkerData } from "@/data/map/map";
+import { pluralize } from "@/utils/pluralize";
 import { HiArrowRight, HiMapPin } from "react-icons/hi2";
 import { TfiZoomIn } from "react-icons/tfi";
-
-const pluralize = (count: number, one: string, few: string, many: string) => {
-  if (count === 1) return one;
-  if (
-    count % 10 >= 2 &&
-    count % 10 <= 4 &&
-    (count % 100 < 12 || count % 100 > 14)
-  ) {
-    return few;
-  }
-  return many;
-};
 
 const placesCount = MarkerData.length;
 const countriesCount = new Set(MarkerData.map((m) => m.country)).size;

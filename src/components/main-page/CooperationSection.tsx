@@ -1,61 +1,71 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import { HiArrowUpRight, HiOutlineEnvelope } from "react-icons/hi2";
+import { PiHandshake } from "react-icons/pi";
 import { PARTNERS } from "@/utils/consts";
 import SectionHeader from "@/components/common/SectionHeader";
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
 const CooperationSection = () => {
   return (
-    <section id="wspolpraca" className="cooperation-section">
-      <div className="cooperation-wrapper">
-        <SectionHeader eyebrow="Partnerzy" title="Współpraca" align="center" />
+    <section id="wspolpraca" className="cooperation-section home-section">
+      <div className="cooperation-wrapper home-section__wrapper">
+        <SectionHeader
+          id="cooperation-title"
+          eyebrow={
+            <>
+              <PiHandshake aria-hidden="true" />
+              Partnerzy
+            </>
+          }
+          title="Marki, z którymi współpracuję"
+          description="Poznaj bezglutenowych producentów, z którymi miałam przyjemność działać. Kliknij w logo, aby dowiedzieć się więcej."
+        />
 
-        <div className="swiper-container">
-          <Swiper
-            modules={[Autoplay, Pagination, Navigation]}
-            spaceBetween={30}
-            slidesPerView={1}
-            navigation
-            pagination={{ clickable: true }}
-            loop={true}
-            autoplay={{
-              delay: 2200,
-              disableOnInteraction: false,
-            }}
-            breakpoints={{
-              640: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
-            }}
-          >
-            {PARTNERS.map((partner) => (
-              <SwiperSlide key={partner.name}>
-                <div className="slide-content">
-                  <Link
-                    href={partner.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="cooperation-link"
-                  >
-                    <Image
-                      className="partner-logo"
-                      src={partner.src}
-                      alt={`${partner.name} logo`}
-                      width={260}
-                      height={122}
-                      style={{ objectFit: "contain" }}
-                    />
-                  </Link>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+        <ul className="cooperation-grid">
+          {PARTNERS.map((partner) => (
+            <li key={partner.name}>
+              <Link
+                href={partner.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="partner-card"
+              >
+                <span className="partner-card__logo">
+                  <Image
+                    src={partner.src}
+                    alt={`${partner.name} logo`}
+                    sizes="(max-width: 560px) 45vw, 260px"
+                  />
+                </span>
+                <span className="partner-card__footer">
+                  <span className="partner-card__name">{partner.name}</span>
+                  <span className="partner-card__arrow" aria-hidden="true">
+                    <HiArrowUpRight />
+                  </span>
+                </span>
+              </Link>
+            </li>
+          ))}
+
+          <li className="cooperation-grid__cta">
+            <Link
+              href="mailto:karolinawontorska@gmail.com"
+              className="partner-invite"
+            >
+              <span className="partner-invite__icon" aria-hidden="true">
+                <PiHandshake />
+              </span>
+              <strong>Twoja marka w tym gronie?</strong>
+              <span className="partner-invite__text">
+                Chętnie poznam produkty i miejsca przyjazne osobom z celiakią.
+              </span>
+              <span className="partner-invite__button">
+                <HiOutlineEnvelope aria-hidden="true" /> Napisz do mnie
+              </span>
+            </Link>
+          </li>
+        </ul>
       </div>
     </section>
   );
