@@ -131,7 +131,7 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
         href: "/wydarzenia",
       },
       {
-        label: "Bezglutenowe marki - współpraca",
+        label: "Bezglutenowe marki, które polecam",
         href: "/#wspolpraca",
       },
     ],
@@ -426,7 +426,7 @@ export const FOOTER_LINKS = [
         href: "/wydarzenia",
       },
       {
-        label: "Bezglutenowe marki - współpraca",
+        label: "Bezglutenowe marki, które polecam",
         href: "/#wspolpraca",
       },
     ],

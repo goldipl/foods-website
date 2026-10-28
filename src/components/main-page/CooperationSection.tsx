@@ -15,11 +15,11 @@ const CooperationSection = () => {
           eyebrow={
             <>
               <PiHandshake aria-hidden="true" />
-              Partnerzy
+              Polecane marki
             </>
           }
-          title="Marki, z którymi współpracuję"
-          description="Poznaj bezglutenowych producentów, z którymi miałam przyjemność działać. Kliknij w logo, aby dowiedzieć się więcej."
+          title="Marki, które polecam"
+          description="Poznaj bezglutenowych producentów, których produkty sprawdziłam i chętnie polecam. Kliknij w logo, aby dowiedzieć się więcej."
         />
 
         <ul className="cooperation-grid">
