@@ -413,11 +413,11 @@ export const dinnersRecipesData = [
       id: 35,
       href: "https://www.instagram.com/p/DfFuuIykacn/?img_index=1",
       imgSrc: pizzazTunczykiemiOliwkami,
-      altText: "Bezglutenowa pizza z tuńczykiem i oliwkami",
+      altText: "Bezglutenowa pizza z tuńczykiem i oliwkami od Pizza Naturalna",
       tags: ["obiad", "pizza", "tuńczyk"],
       label: "Obiad",
       labelClass: "dinner-label",
       description:
-        "Bezglutenowa pizza z tuńczykiem i oliwkami",
+        "Bezglutenowa pizza z tuńczykiem i oliwkami od Pizza Naturalna",
     },
   ];
