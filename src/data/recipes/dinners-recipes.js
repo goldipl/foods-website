@@ -32,6 +32,7 @@ import burgerzKurka from "./../../../public/img/recipes/dinners/031_burger_z_kur
 import pizzaDomowa from "./../../../public/img/recipes/dinners/032_pizza_domowa.jpg";
 import zieloneNalesnikizSzarpanaWolowina from "./../../../public/img/recipes/dinners/033_zielone_nalesniki_z_szarpana_wolowina.jpg";
 import makaronPoAzjatycku from "./../../../public/img/recipes/dinners/034_makaron_po_azjatycku.jpg";
+import pizzazTunczykiemiOliwkami from "./../../../public/img/recipes/dinners/035_pizza_z_tunczykiemioliwkami.jpg";
 
 export const dinnersRecipesData = [
     {
@@ -407,5 +408,16 @@ export const dinnersRecipesData = [
       labelClass: "dinner-label",
       description:
         "Makaron z wołowiną po azjatycku 🍝 w 100% bez glutenu",
+    },
+    {
+      id: 35,
+      href: "https://www.instagram.com/bezglutenowakarola/",
+      imgSrc: pizzazTunczykiemiOliwkami,
+      altText: "Bezglutenowa pizza z tuńczykiem i oliwkami",
+      tags: ["obiad", "pizza", "tuńczyk"],
+      label: "Obiad",
+      labelClass: "dinner-label",
+      description:
+        "Bezglutenowa pizza z tuńczykiem i oliwkami",
     },
   ];
