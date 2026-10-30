@@ -411,7 +411,7 @@ export const dinnersRecipesData = [
     },
     {
       id: 35,
-      href: "https://www.instagram.com/bezglutenowakarola/",
+      href: "https://www.instagram.com/p/DfFuuIykacn/?img_index=1",
       imgSrc: pizzazTunczykiemiOliwkami,
       altText: "Bezglutenowa pizza z tuńczykiem i oliwkami",
       tags: ["obiad", "pizza", "tuńczyk"],
