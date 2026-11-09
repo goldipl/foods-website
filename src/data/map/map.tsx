@@ -709,4 +709,14 @@ export const MarkerData = [
     link: "https://www.instagram.com/p/DfKOB9-kRCF/?img_index=1",
     position: [55.69036676815268, 12.575212137556228] as [number, number],
   },
+  {
+    id: 73,
+    name: "Restaurant Tight,",
+    addressLine1: "Hyskenstræde 10,",
+    addressLine2: "1207 København, Dania",
+    country: "Dania",
+    city: "Kopenhaga",
+    link: "https://www.instagram.com/p/De7Y611Eaox/?img_index=1",
+    position: [55.678103887096704, 12.57645878752534] as [number, number],
+  },
 ];
