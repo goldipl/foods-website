@@ -31,6 +31,7 @@ import trzyProdukty from "./../../../public/img/products/030_trzy_produkty.jpg";
 import tydzienCeliakiiPutka from "./../../../public/img/products/031_tydzien_celiakii_putka.jpg";
 import przekaskaBezGlutenuIncola from "./../../../public/img/products/032_przekaska_bez_glutenu_incola.jpg";
 import chrupakiIncola from "./../../../public/img/products/033_chrupaki_incola.jpg";
+import manufakturaCukierkow from "./../../../public/img/products/034_manufaktura_cukierkow.jpg";
 
 export const productsData = [
     {
@@ -392,5 +393,15 @@ export const productsData = [
         labelClass: "product-label",
         description: 
             "Chrupaki bez glutenu od Incola Gluten Free",
+    },
+    {
+        id: 34,
+        href: "https://www.instagram.com/p/DfiEHjYxB6D/",
+        imgSrc: manufakturaCukierkow,
+        altText: "Manufaktura cukierków - świąteczny czas",
+        label: "Manufaktura cukierków",
+        labelClass: "product-label",
+        description: 
+            "Manufaktura cukierków - świąteczny czas",
     },
   ];
