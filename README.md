@@ -266,7 +266,7 @@ Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
 
 - Website: [bezglutenowakarola.pl](https://bezglutenowakarola.pl)
 - GitHub: [goldipl/foods-website](https://github.com/goldipl/foods-website)
-- Project author: Karolina Wontorska-Godlewska
+- Project authors: Karolina Wontorska-Godlewska & Marcin Godlewski
 - Technical support / maintenance: Marcin Godlewski
 
 ---
