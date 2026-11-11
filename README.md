@@ -1,11 +1,12 @@
 <div align="center">
   <h1>Bezglutenowa Karola</h1>
-  <img src="./public/img/white-bg-logo.jpg" height="80" alt="Bezglutenowa Karola logo" />
+  <img src="./public/icons/header/bezglutenowakarola-logo.svg" height="90" alt="Bezglutenowa Karola logo" />
   <p><em>A recipe, advice, and recommendation website for people with celiac disease and gluten-free diets.</em></p>
 </div>
 
 <div align="center">
   <a href="https://bezglutenowakarola.pl">🌐 Live site</a> •
+  <a href="#screenshots">Screenshots</a> •
   <a href="#features">Features</a> •
   <a href="#local-setup">Local setup</a> •
   <a href="#project-structure">Project structure</a>
@@ -18,6 +19,48 @@
 This is a modern website dedicated to healthy, gluten-free, sugar-free, and dairy-free eating. Its main goal is to provide culinary inspiration, information about gluten-free diets, location recommendations, and practical tools for people with celiac disease and those following elimination diets.
 
 The site is built with Next.js using React, TypeScript, and Sass. It includes informational content and interactive features such as recipe search, a gluten-free places map, a product discovery page, and educational sections.
+
+## Screenshots
+
+### Homepage
+
+![Homepage](./screenshots/home.jpg)
+
+### Recipe search and gluten-free places map
+
+<table>
+  <tr>
+    <td width="50%"><img src="./screenshots/recipes.jpg" alt="Recipe search page" /></td>
+    <td width="50%"><img src="./screenshots/map.jpg" alt="Gluten-free places map page" /></td>
+  </tr>
+  <tr>
+    <td align="center"><em>Recipe search</em> (<code>/szukaj-przepisow</code>)</td>
+    <td align="center"><em>Gluten-free places map</em> (<code>/bezglutenowe-miejsca</code>)</td>
+  </tr>
+</table>
+
+### Products, meal planner, and games
+
+<table>
+  <tr>
+    <td width="33%"><img src="./screenshots/products.jpg" alt="Product catalog page" /></td>
+    <td width="33%"><img src="./screenshots/planner.jpg" alt="Meal planner page" /></td>
+    <td width="33%"><img src="./screenshots/games.jpg" alt="Games hub page" /></td>
+  </tr>
+  <tr>
+    <td align="center"><em>Products</em> (<code>/produkty</code>)</td>
+    <td align="center"><em>Meal planner</em> (<code>/planer-posilkow</code>)</td>
+    <td align="center"><em>Games</em> (<code>/gry</code>)</td>
+  </tr>
+</table>
+
+### Mobile view
+
+<p align="center">
+  <img src="./screenshots/mobile-home.jpg" width="260" alt="Homepage on mobile" />
+  &nbsp;&nbsp;
+  <img src="./screenshots/mobile-map.jpg" width="260" alt="Gluten-free places map on mobile" />
+</p>
 
 ## Features
 
