@@ -44,6 +44,7 @@ import knedleZeSliwka from "./../../../public/img/recipes/desserts/043_knedle_ze
 import babkaPiaskowaCytrynowa from "./../../../public/img/recipes/desserts/044_babka_piaskowa_cytrynowa.jpg";
 import deserChatka from "./../../../public/img/recipes/desserts/045_deser_chatka.jpg";
 import deserPucharkowy from "./../../../public/img/recipes/desserts/046_pucharkowy_deser_w_5_minut.jpg";
+import drozdzowkiBialyMak from "./../../../public/img/recipes/desserts/047_drozdzowki_z_bialym_makiem.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -139,7 +140,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DD9rLFIoSeo/",
       imgSrc: bezglutenowyMakowiecJaponski,
       altText: "Bezglutenowy makowiec japoński",
-      tags: ["deser", "świąteczne"],
+      tags: ["deser", "świąteczne", "mak"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -370,7 +371,7 @@ export const dessertsRecipesData = [
       href: "https://www.instagram.com/p/DSiMH8DiHlV/",
       imgSrc: makamonki,
       altText: "Makamonki, czyli coś jak cynamonki ale z makiem",
-      tags: ["deser", "cynamonki"],
+      tags: ["deser", "cynamonki", "mak"],
       label: "Deser",
       labelClass: "dessert-label",
       description:
@@ -551,5 +552,16 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Pucharkowy deser w 5 minut - bez glutenu i bez nabiału",
+    },
+    {
+      id: 47,
+      href: "https://www.instagram.com/p/Deme6YuCGwU/?img_index=1",
+      imgSrc: drozdzowkiBialyMak,
+      altText: "Drożdżówki z białym makiem",
+      tags: ["deser", "drozdzowki", "mak"],
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Drożdżówki z białym makiem",
     },
 ];
