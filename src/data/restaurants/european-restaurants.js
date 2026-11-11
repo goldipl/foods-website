@@ -17,6 +17,7 @@ import pastaInCorsoCavourPrati from "./../../../public/img/restaurants/europe/01
 import ilmiofornaioglutenfree from "./../../../public/img/restaurants/europe/017_ilmiofornaioglutenfree.jpg";
 import rosemaryterraesapori from "./../../../public/img/restaurants/europe/018_rosemaryterraesapori.jpg";
 import kopenhagaCz1 from "./../../../public/img/restaurants/europe/019_kopenhaga_cz1.jpg";
+import kopenhagaCz2 from "./../../../public/img/restaurants/europe/020_kopenhaga_cz2.jpg";
 
 export const  europeanRestaurantsData = [
     {
@@ -203,10 +204,20 @@ export const  europeanRestaurantsData = [
       id: 19,
       href: "https://www.instagram.com/p/De7Y611Eaox/?img_index=1",
       imgSrc: kopenhagaCz1,
-      altText: "Bezglutenowa Kopenhaga cz. 1, Dania",
+      altText: "Restaurant Tight - Bezglutenowa Kopenhaga cz. 1, Dania",
       label: "Kopenhaga",
       labelClass: "europe-label",
       description:
-        "Bezglutenowa Kopenhaga cz. 1, Dania",
+        "Restaurant Tight - Bezglutenowa Kopenhaga cz. 1, Dania",
+    },
+    {
+      id: 20,
+      href: "https://www.instagram.com/p/DfKOB9-kRCF/?img_index=1",
+      imgSrc: kopenhagaCz2,
+      altText: "H.U.G Bageri | H.U.G Deli - Bezglutenowa Kopenhaga cz. 2, Dania",
+      label: "Kopenhaga",
+      labelClass: "europe-label",
+      description:
+        "H.U.G Bageri | H.U.G Deli - Bezglutenowa Kopenhaga cz. 2, Dania",
     },
   ];
