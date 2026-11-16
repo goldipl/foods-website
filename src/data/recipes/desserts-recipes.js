@@ -45,6 +45,7 @@ import babkaPiaskowaCytrynowa from "./../../../public/img/recipes/desserts/044_b
 import deserChatka from "./../../../public/img/recipes/desserts/045_deser_chatka.jpg";
 import deserPucharkowy from "./../../../public/img/recipes/desserts/046_pucharkowy_deser_w_5_minut.jpg";
 import drozdzowkiBialyMak from "./../../../public/img/recipes/desserts/047_drozdzowki_z_bialym_makiem.jpg";
+import ciastkaJezyki from "./../../../public/img/recipes/desserts/048_ciastka_jezyki.jpg";
 
 export const dessertsRecipesData = [
     {
@@ -563,5 +564,16 @@ export const dessertsRecipesData = [
       labelClass: "dessert-label",
       description:
         "Drożdżówki z białym makiem",
+    },
+    {
+      id: 48,
+      href: "https://www.instagram.com/p/DfwlHKVRvmr/",
+      imgSrc: ciastkaJezyki,
+      altText: "Ciastka jeżyki - bez glutenu i bez nabiału",
+      tags: ["deser", "ciastka", "czekolada"],
+      label: "Deser",
+      labelClass: "dessert-label",
+      description:
+        "Ciastka jeżyki 🍪🦔 - bez glutenu i bez nabiału",
     },
 ];
