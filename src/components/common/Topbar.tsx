@@ -17,7 +17,7 @@ const PROMO_CODES = [
     discount: "-10%",
     code: "BEZGLUTENOWAKAROLA",
     shop: "Manufaktura Cukierków",
-    href: "https://manufakturacukierkow.pl/",
+    href: "https://manufaktura-cukierkow.pl/",
   },
   {
     discount: "-10%",
