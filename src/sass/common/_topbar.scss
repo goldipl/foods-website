@@ -161,4 +161,11 @@
   .topbar__label {
     display: none;
   }
+
+  // Long code + long shop name (e.g. Manufaktura Cukierków) won't fit in one line
+  .topbar__promo {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 4px;
+  }
 }

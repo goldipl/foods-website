@@ -8,14 +8,28 @@ import {
 
 const PROMO_CODES = [
   {
+    discount: "-10%",
     code: "BEZGLUTENOWAKAROLA",
     shop: "Moncana",
     href: "https://moncana.pl/",
   },
   {
+    discount: "-10%",
+    code: "BEZGLUTENOWAKAROLA",
+    shop: "Manufaktura Cukierków",
+    href: "https://manufakturacukierkow.pl/",
+  },
+  {
+    discount: "-10%",
     code: "karola10",
     shop: "Balviten Gluten Free",
     href: "https://sklep.balviten.com/pl",
+  },
+  {
+    discount: "-20%",
+    code: "BGKAROLA",
+    shop: "Bezgluten",
+    href: "https://bezgluten.pl/",
   },
 ];
 
@@ -24,7 +38,8 @@ const COPIED_RESET_DELAY = 2000;
 
 const Topbar = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [copiedCode, setCopiedCode] = useState<string | null>(null);
+  // Tracked by index - the same code can be listed for more than one shop
+  const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
 
   // On phones only one promo is visible at a time, so rotate them
   useEffect(() => {
@@ -36,15 +51,15 @@ const Topbar = () => {
   }, []);
 
   useEffect(() => {
-    if (!copiedCode) return;
-    const timer = setTimeout(() => setCopiedCode(null), COPIED_RESET_DELAY);
+    if (copiedIndex === null) return;
+    const timer = setTimeout(() => setCopiedIndex(null), COPIED_RESET_DELAY);
     return () => clearTimeout(timer);
-  }, [copiedCode]);
+  }, [copiedIndex]);
 
-  const copyCode = async (code: string) => {
+  const copyCode = async (code: string, index: number) => {
     try {
       await navigator.clipboard.writeText(code);
-      setCopiedCode(code);
+      setCopiedIndex(index);
     } catch {
       // Clipboard unavailable (e.g. insecure context) - the code stays visible
     }
@@ -54,19 +69,19 @@ const Topbar = () => {
     <div id="topbar" className="topbar">
       <div className="topbar__inner">
         {PROMO_CODES.map((promo, index) => {
-          const isCopied = copiedCode === promo.code;
+          const isCopied = copiedIndex === index;
 
           return (
             <p
-              key={promo.code}
+              key={`${promo.code}-${promo.shop}`}
               className={`topbar__promo ${index === activeIndex ? "is-active" : ""}`}
             >
-              <span className="topbar__badge">-10%</span>
+              <span className="topbar__badge">{promo.discount}</span>
               <span className="topbar__label">z kodem</span>
               <button
                 type="button"
                 className={`topbar__code ${isCopied ? "is-copied" : ""}`}
-                onClick={() => copyCode(promo.code)}
+                onClick={() => copyCode(promo.code, index)}
                 aria-label={`Skopiuj kod ${promo.code}`}
               >
                 {promo.code}
