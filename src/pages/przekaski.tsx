@@ -9,6 +9,9 @@ import Topbar from "@/components/common/Topbar";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import CategoryPageHero from "@/components/common/CategoryPageHero";
+import appetizerSpringRolls from "../../public/img/recipes/appetizers/012_spring_rolls.jpg";
+import appetizerSkewers from "../../public/img/recipes/appetizers/001_paluszkowe_koreczki_z_wege_fety.jpg";
+import appetizerTonnato from "../../public/img/recipes/appetizers/003_seler_sos_tonnato.jpg";
 import RecipeListWithSearch from "@/components/recipes/RecipeListWithSearch";
 
 const AppetizersPage = () => {
@@ -32,7 +35,12 @@ const AppetizersPage = () => {
           title="Małe dania,"
           highlight="wielka przyjemność."
           description="Zainspiruj się bezglutenowymi przekąskami, przystawkami i sałatkami na co dzień, spotkania i wyjątkowe okazje."
-          emoji="🥗"
+          images={[
+            { src: appetizerSkewers, alt: "Koreczki z wege fetą" },
+            { src: appetizerSpringRolls, alt: "Spring rolls" },
+            { src: appetizerTonnato, alt: "Seler w sosie tonnato" },
+          ]}
+          photoLayout="strip"
           itemCount={appetizersRecipesData.length}
           itemLabel="przepisów"
           targetId="category-results"

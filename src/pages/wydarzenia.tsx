@@ -5,6 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { CiInstagram } from "react-icons/ci";
 import { eventsData } from "@/data/events/events";
+import glutenOffFestival from "../../public/img/events/020_gluten_off_festival_2026.jpg";
+import pizzaWorkshop from "../../public/img/events/005_warsztaty_bezglutenowej_pizzy_radom.jpg";
+import celiacMeetup from "../../public/img/events/008_spotkanie_celiakow_w_ciachobezcukru_radom.jpg";
 import Topbar from "@/components/common/Topbar";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
@@ -43,7 +46,11 @@ const EventsPage = () => {
           title="Wydarzenia,"
           highlight="które łączą."
           description="Sprawdź warsztaty, spotkania i wydarzenia związane z kuchnią bezglutenową oraz życiem z celiakią."
-          emoji="✨"
+          images={[
+            { src: pizzaWorkshop, alt: "Warsztaty bezglutenowej pizzy w Radomiu" },
+            { src: glutenOffFestival, alt: "Gluten Off Festiwal 2026" },
+            { src: celiacMeetup, alt: "Spotkanie celiaków w Radomiu" },
+          ]}
           itemCount={events.length}
           itemLabel="wydarzeń"
           targetId="lista-wydarzen"

@@ -35,6 +35,7 @@ import pierogi from "../../public/img/products/022_bezglutenowe_panettone.jpg";
 import pastaGlutenFreeRoma from "../../public/img/welcome/wloski-makaron-gluten-free.jpg";
 import saskaSushiWarszawa from "../../public/img/restaurants/poland/001_saska_sushi.jpg";
 import bezglutenoweHalloween from "../../public/img/events/011_bezglutenowe_halloween.jpg";
+import glutenOffFestival2026 from "../../public/img/events/020_gluten_off_festival_2026.jpg";
 import karolaHero from "../../public/img/hero/karola-hero.jpg";
 import glutenFreeHeroMap from "../../public/img/hero/glutenfreemap.jpg";
 import searchPage from "../../public/img/hero/searchpage.jpg";
@@ -43,7 +44,6 @@ import mealPlannerHero from "../../public/img/hero/meal-planner.jpg";
 import gamesHero from "../../public/img/hero/games-page.jpg";
 
 // --- MEGA MENU IMPORTS ---
-import karolaProfile from "../../public/img/profile/Karola-profile2026.jpg";
 
 // --- PARTNER IMPORTS ---
 import GlutenexImg from "../../public/img/cooperation/glutenex.png";
@@ -319,8 +319,8 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
         label: "Wydarzenia",
         href: "/wydarzenia",
         description: "Warsztaty i bezglutenowe spotkania",
-        image: bezglutenoweHalloween,
-        alt: "Bezglutenowe Halloween",
+        image: glutenOffFestival2026,
+        alt: "Gluten Off Festiwal 2026",
       },
     ],
     groups: [
@@ -380,7 +380,7 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
         label: "O mnie",
         href: "/#o-mnie",
         description: "Kim jestem i skąd wziął się ten blog",
-        image: karolaProfile,
+        image: karolaHero,
         alt: "Karola - autorka bloga",
       },
     ],

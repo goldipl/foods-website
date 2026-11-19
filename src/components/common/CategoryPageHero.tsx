@@ -1,4 +1,5 @@
 import React from "react";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { HiArrowRight, HiHeart, HiSparkles } from "react-icons/hi2";
 
@@ -8,7 +9,18 @@ interface CategoryPageHeroProps {
   title: string;
   highlight: string;
   description: string;
-  emoji: string;
+  emoji?: string;
+  /** Optional photos shown as a fanned stack instead of the emoji */
+  images?: { src: StaticImageData; alt: string }[];
+  /** How the photos are arranged inside the hero art circle */
+  photoLayout?:
+    | "fan"
+    | "cascade"
+    | "mosaic"
+    | "tiles"
+    | "strip"
+    | "stack"
+    | "polaroid";
   itemCount: number;
   itemLabel: string;
   targetId: string;
@@ -21,6 +33,8 @@ const CategoryPageHero: React.FC<CategoryPageHeroProps> = ({
   highlight,
   description,
   emoji,
+  images,
+  photoLayout = "fan",
   itemCount,
   itemLabel,
   targetId,
@@ -56,10 +70,30 @@ const CategoryPageHero: React.FC<CategoryPageHeroProps> = ({
           {itemCount} {itemLabel} do odkrycia
         </div>
       </div>
-      <div className="category-hero__art" aria-hidden="true">
+      <div
+        className={`category-hero__art${
+          images?.length ? ` category-hero__art--${photoLayout}` : ""
+        }`}
+        aria-hidden="true"
+      >
         <span className="category-hero__orbit category-hero__orbit--one" />
         <span className="category-hero__orbit category-hero__orbit--two" />
-        <span className="category-hero__emoji">{emoji}</span>
+        {images && images.length > 0 ? (
+          <span
+            className={`category-hero__photos category-hero__photos--${photoLayout}`}
+          >
+            {images.slice(0, 3).map((image, idx) => (
+              <span
+                key={`category-hero-photo-${idx}`}
+                className={`category-hero__photo category-hero__photo--${idx + 1}`}
+              >
+                <Image src={image.src} alt="" fill sizes="200px" />
+              </span>
+            ))}
+          </span>
+        ) : (
+          <span className="category-hero__emoji">{emoji}</span>
+        )}
         <span className="category-hero__chip">💚 Bez glutenu</span>
       </div>
     </div>

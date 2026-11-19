@@ -10,6 +10,9 @@ import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import Pagination from "@/components/common/Pagination";
 import CategoryPageHero from "@/components/common/CategoryPageHero";
+import placeKrakow from "../../public/img/restaurants/poland/042_wolna_piekarnia_krakow.jpg";
+import placePoznan from "../../public/img/restaurants/poland/026_pizza_naturalna_poznan.jpg";
+import placeGdansk from "../../public/img/restaurants/poland/037_hola_tapas_gdansk.jpg";
 
 const PolishRestaurantsPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -50,7 +53,12 @@ const PolishRestaurantsPage = () => {
           title="Poznaj Polskę,"
           highlight="smak po smaku."
           description="Odkrywaj restauracje i lokale w Polsce, w których możesz znaleźć bezglutenowe propozycje i zaplanować kolejną kulinarną podróż."
-          emoji="🍽️"
+          images={[
+            { src: placeKrakow, alt: "Bezglutenowa piekarnia w Krakowie" },
+            { src: placePoznan, alt: "Pizza Naturalna w Poznaniu" },
+            { src: placeGdansk, alt: "Hola Tapas w Gdańsku" },
+          ]}
+          photoLayout="stack"
           itemCount={restaurants.length}
           itemLabel="miejsc"
           targetId="lista-restauracji"

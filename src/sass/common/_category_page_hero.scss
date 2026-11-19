@@ -234,7 +234,238 @@
     animation: category-hero-float 4s ease-in-out infinite;
   }
 
+  &__photos {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    animation: category-hero-bob 4s ease-in-out infinite;
+  }
+
+  &__photo {
+    --photo-rotate: 0deg;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 128px;
+    height: 164px;
+    overflow: hidden;
+    border: 4px solid #fffdf6;
+    border-radius: 18px;
+    background: #fffdf6;
+    box-shadow: 0 16px 32px rgba(11, 39, 26, 0.28);
+    transform: translate(-50%, -50%) rotate(var(--photo-rotate));
+
+    img {
+      object-fit: cover;
+    }
+
+    &--1 {
+      --photo-rotate: -13deg;
+
+      margin-left: -78px;
+      margin-top: 10px;
+    }
+
+    &--2 {
+      z-index: 2;
+      width: 140px;
+      height: 180px;
+      margin-top: -14px;
+    }
+
+    &--3 {
+      --photo-rotate: 12deg;
+
+      margin-left: 80px;
+      margin-top: 14px;
+    }
+  }
+
+  // --- Photo layouts (fan is the default defined above) ---
+  &__photos--cascade &__photo {
+    width: 118px;
+    height: 150px;
+    border-radius: 20px;
+
+    &--1 {
+      --photo-rotate: -6deg;
+
+      margin-left: -82px;
+      margin-top: -62px;
+    }
+
+    &--2 {
+      --photo-rotate: 4deg;
+
+      width: 118px;
+      height: 150px;
+      margin: 0;
+    }
+
+    &--3 {
+      --photo-rotate: -3deg;
+
+      z-index: 3;
+      margin-left: 82px;
+      margin-top: 62px;
+    }
+  }
+
+  &__photos--mosaic &__photo {
+    &--1 {
+      --photo-rotate: -4deg;
+
+      width: 190px;
+      height: 190px;
+      margin-left: -14px;
+      margin-top: 0;
+      border-radius: 32px;
+    }
+
+    &--2,
+    &--3 {
+      --photo-rotate: 0deg;
+
+      z-index: 2;
+      border-radius: 50%;
+    }
+
+    &--2 {
+      width: 96px;
+      height: 96px;
+      margin-left: 92px;
+      margin-top: -84px;
+    }
+
+    &--3 {
+      width: 108px;
+      height: 108px;
+      margin-left: -96px;
+      margin-top: 86px;
+    }
+  }
+
+  // Dessert bento: one tall tile on the left, two short tiles on the right
+  &__photos--tiles &__photo {
+    --photo-rotate: 0deg;
+
+    border-radius: 18px;
+
+    &--1 {
+      width: 124px;
+      height: 184px;
+      margin-left: -64px;
+      margin-top: 0;
+    }
+
+    &--2,
+    &--3 {
+      width: 108px;
+      height: 86px;
+      margin-left: 64px;
+    }
+
+    &--2 {
+      margin-top: -49px;
+    }
+
+    &--3 {
+      margin-top: 49px;
+    }
+  }
+
+  // Appetizer film strip: three equal tiles along a tilted line
+  &__photos--strip &__photo {
+    --photo-rotate: -8deg;
+
+    width: 88px;
+    height: 150px;
+    border-radius: 14px;
+
+    &--1 {
+      margin-left: -96px;
+      margin-top: 14px;
+    }
+
+    &--2 {
+      width: 88px;
+      height: 150px;
+      margin-left: 0;
+      margin-top: 0;
+    }
+
+    &--3 {
+      z-index: 3;
+      margin-left: 96px;
+      margin-top: -14px;
+    }
+  }
+
+  &__photos--stack &__photo {
+    width: 180px;
+    height: 124px;
+    border-width: 6px;
+    border-radius: 14px;
+
+    &--1 {
+      --photo-rotate: -10deg;
+
+      margin-left: -16px;
+      margin-top: -50px;
+    }
+
+    &--2 {
+      --photo-rotate: 6deg;
+
+      width: 180px;
+      height: 124px;
+      margin-left: 18px;
+      margin-top: 0;
+    }
+
+    &--3 {
+      --photo-rotate: -2deg;
+
+      z-index: 3;
+      margin-left: -8px;
+      margin-top: 52px;
+    }
+  }
+
+  &__photos--polaroid &__photo {
+    width: 112px;
+    height: 136px;
+    border-width: 6px 6px 26px;
+    border-radius: 4px;
+
+    &--1 {
+      --photo-rotate: -14deg;
+
+      margin-left: -88px;
+      margin-top: 24px;
+    }
+
+    &--2 {
+      --photo-rotate: 3deg;
+
+      width: 112px;
+      height: 136px;
+      margin-left: 0;
+      margin-top: -28px;
+    }
+
+    &--3 {
+      --photo-rotate: 12deg;
+
+      margin-left: 88px;
+      margin-top: 26px;
+    }
+  }
+
   &__chip {
+    z-index: 3;
     position: absolute;
     right: -8px;
     bottom: 36px;
@@ -247,6 +478,12 @@
     font-size: 0.82rem;
     font-weight: 700;
     white-space: nowrap;
+  }
+
+  // Cascade photos fill the bottom-right corner, so the chip moves left
+  &__art--cascade &__chip {
+    right: auto;
+    left: -8px;
   }
 
   &__orb {
@@ -280,6 +517,16 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes category-hero-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
   }
 }
 
@@ -377,7 +624,8 @@
 
 @media (prefers-reduced-motion: reduce) {
   .category-hero__content,
-  .category-hero__emoji {
+  .category-hero__emoji,
+  .category-hero__photos {
     animation: none;
   }
 }

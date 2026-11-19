@@ -9,6 +9,9 @@ import Topbar from "@/components/common/Topbar";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import CategoryPageHero from "@/components/common/CategoryPageHero";
+import dessertMeringue from "../../public/img/recipes/desserts/040_beza.jpg";
+import dessertWaffles from "../../public/img/recipes/desserts/037_gofry.jpg";
+import dessertBrownie from "../../public/img/recipes/desserts/027_brownie.jpg";
 import RecipeListWithSearch from "@/components/recipes/RecipeListWithSearch";
 
 const DessertsPage = () => {
@@ -35,7 +38,12 @@ const DessertsPage = () => {
           title="Słodka chwila,"
           highlight="bez glutenu."
           description="Odkrywaj ciasta, ciasteczka i inne słodkości bez glutenu — pełne smaku i gotowe na każdą okazję."
-          emoji="🍰"
+          images={[
+            { src: dessertMeringue, alt: "Beza z truskawkami" },
+            { src: dessertWaffles, alt: "Gofry z owocami" },
+            { src: dessertBrownie, alt: "Brownie" },
+          ]}
+          photoLayout="tiles"
           itemCount={dessertsRecipesData.length}
           itemLabel="przepisów"
           targetId="category-results"

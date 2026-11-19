@@ -9,6 +9,9 @@ import Topbar from "@/components/common/Topbar";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import CategoryPageHero from "@/components/common/CategoryPageHero";
+import breakfastPancakes from "../../public/img/recipes/breakfasts/004_nalesniki_z_dzemem.jpg";
+import breakfastPlate from "../../public/img/recipes/breakfasts/001_sniadanie_boczek_z_jajkiem.jpg";
+import breakfastOats from "../../public/img/recipes/breakfasts/011_owsianka_z_matcha.jpg";
 import RecipeListWithSearch from "@/components/recipes/RecipeListWithSearch";
 
 const BreakfastsPage = () => {
@@ -35,7 +38,12 @@ const BreakfastsPage = () => {
           title="Dobry początek dnia,"
           highlight="pełen smaku."
           description="Poznaj sprawdzone pomysły na bezglutenowe śniadania — od szybkich dań na co dzień po wyjątkowe weekendowe inspiracje."
-          emoji="🥑"
+          images={[
+            { src: breakfastPancakes, alt: "Naleśniki z dżemem" },
+            { src: breakfastPlate, alt: "Śniadanie z boczkiem i jajkiem" },
+            { src: breakfastOats, alt: "Owsianka z matchą" },
+          ]}
+          photoLayout="cascade"
           itemCount={breakfastsRecipesData.length}
           itemLabel="przepisów"
           targetId="category-results"

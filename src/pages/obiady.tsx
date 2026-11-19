@@ -9,6 +9,9 @@ import Topbar from "@/components/common/Topbar";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import CategoryPageHero from "@/components/common/CategoryPageHero";
+import dinnerPadThai from "../../public/img/recipes/dinners/011_pad_thai.jpg";
+import dinnerBurger from "../../public/img/recipes/dinners/004_bezglutenowy_burger_z_kurczaka_teriyaki.jpg";
+import dinnerPasta from "../../public/img/recipes/dinners/012_wloski_makaron_z_krewetkami.jpg";
 import RecipeListWithSearch from "@/components/recipes/RecipeListWithSearch";
 
 const DinnersPage = () => {
@@ -32,7 +35,12 @@ const DinnersPage = () => {
           title="Codzienny obiad,"
           highlight="bez kompromisów."
           description="Znajdź sycące i różnorodne przepisy na bezglutenowe obiady, które sprawdzą się w domu i przy wspólnym stole."
-          emoji="🍲"
+          images={[
+            { src: dinnerPadThai, alt: "Pad Thai" },
+            { src: dinnerBurger, alt: "Burger z kurczaka teriyaki" },
+            { src: dinnerPasta, alt: "Makaron z krewetkami" },
+          ]}
+          photoLayout="mosaic"
           itemCount={dinnersRecipesData.length}
           itemLabel="przepisów"
           targetId="category-results"

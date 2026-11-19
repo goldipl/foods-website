@@ -10,6 +10,9 @@ import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import Pagination from "@/components/common/Pagination";
 import CategoryPageHero from "@/components/common/CategoryPageHero";
+import placeCopenhagen from "../../public/img/restaurants/europe/019_kopenhaga_cz1.jpg";
+import placeNicosia from "../../public/img/restaurants/europe/011_burger_shop_nikozja_cypr.jpg";
+import placeFlorence from "../../public/img/restaurants/europe/009_florencja_cz1.jpg";
 
 const EuropeanRestaurantsData = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -50,7 +53,12 @@ const EuropeanRestaurantsData = () => {
           title="Podróżuj dalej,"
           highlight="odkrywaj smaki."
           description="Zaplanuj swoją kolejną podróż i poznaj europejskie restauracje oraz lokale z bezglutenowymi propozycjami."
-          emoji="🌍"
+          images={[
+            { src: placeCopenhagen, alt: "Kopenhaga bez glutenu" },
+            { src: placeNicosia, alt: "Burger Shop w Nikozji" },
+            { src: placeFlorence, alt: "Florencja bez glutenu" },
+          ]}
+          photoLayout="polaroid"
           itemCount={restaurants.length}
           itemLabel="miejsc"
           targetId="lista-restauracji"
