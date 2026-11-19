@@ -43,7 +43,6 @@ import mealPlannerHero from "../../public/img/hero/meal-planner.jpg";
 import gamesHero from "../../public/img/hero/games-page.jpg";
 
 // --- MEGA MENU IMPORTS ---
-import menuDinnerImg from "../../public/img/recipes/dinners/020_carbonara.jpg";
 import karolaProfile from "../../public/img/profile/Karola-profile2026.jpg";
 
 // --- PARTNER IMPORTS ---
@@ -130,8 +129,8 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
         label: "Obiady",
         href: "/obiady",
         description: "Makarony, burgery i zupy - sycące dania bez glutenu",
-        image: menuDinnerImg,
-        alt: "Bezglutenowa carbonara",
+        image: dinnerImg,
+        alt: "Bezglutenowy burger z kurczaka teriyaki",
       },
       {
         label: "Desery",
