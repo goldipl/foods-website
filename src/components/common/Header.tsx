@@ -14,7 +14,6 @@ import {
 const MOBILE_BREAKPOINT = 1180;
 const FIXED_SCROLL_OFFSET = 300;
 const INSTA_BUBBLE_DURATION = 10000;
-const MEGA_CLOSE_DELAY = 180;
 
 const toDropdownId = (label: string) =>
   `menu-${label
@@ -29,10 +28,6 @@ const Header = () => {
   const [showInstaBubble, setShowInstaBubble] = useState(false);
 
   const headerRef = useRef<HTMLDivElement | null>(null);
-  const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  // The menu a mouse hover just opened: the click that usually follows the
-  // hover must keep it open instead of toggling it shut again
-  const hoverOpenedRef = useRef<string | null>(null);
 
   const instagramLink = HEADER_SOCIAL_LINKS.find(
     (social) => social.label === "Instagram",
@@ -112,42 +107,8 @@ const Header = () => {
     setOpenMenu(false);
   };
 
-  const clearCloseTimer = () => {
-    if (closeTimerRef.current) {
-      clearTimeout(closeTimerRef.current);
-      closeTimerRef.current = null;
-    }
-  };
-
-  useEffect(() => clearCloseTimer, []);
-
-  const isDesktopMouse = (event: React.PointerEvent) =>
-    event.pointerType === "mouse" && window.innerWidth > MOBILE_BREAKPOINT;
-
-  // Desktop: hovering a menu item opens its panel, plain links close others
-  const handleItemEnter = (event: React.PointerEvent, label: string | null) => {
-    if (!isDesktopMouse(event)) return;
-    clearCloseTimer();
-    hoverOpenedRef.current = label;
-    setActiveDropdown(label);
-  };
-
-  const handleItemLeave = (event: React.PointerEvent) => {
-    if (!isDesktopMouse(event)) return;
-    clearCloseTimer();
-    closeTimerRef.current = setTimeout(() => {
-      hoverOpenedRef.current = null;
-      setActiveDropdown(null);
-    }, MEGA_CLOSE_DELAY);
-  };
-
+  // Clicking a trigger toggles its panel and closes any other open one
   const handleTriggerClick = (label: string) => {
-    if (hoverOpenedRef.current === label) {
-      hoverOpenedRef.current = null;
-      setActiveDropdown(label);
-      return;
-    }
-    hoverOpenedRef.current = null;
     setActiveDropdown((current) => (current === label ? null : label));
   };
 
@@ -183,10 +144,6 @@ const Header = () => {
                   <li
                     key={item.label}
                     className={`site-header__item ${isOpen ? "is-open" : ""}`}
-                    onPointerEnter={(event) =>
-                      handleItemEnter(event, hasMega ? item.label : null)
-                    }
-                    onPointerLeave={handleItemLeave}
                   >
                     {item.href ? (
                       <Link
