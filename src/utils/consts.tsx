@@ -35,7 +35,6 @@ import pierogi from "../../public/img/products/022_bezglutenowe_panettone.jpg";
 import pastaGlutenFreeRoma from "../../public/img/welcome/wloski-makaron-gluten-free.jpg";
 import saskaSushiWarszawa from "../../public/img/restaurants/poland/001_saska_sushi.jpg";
 import bezglutenoweHalloween from "../../public/img/events/011_bezglutenowe_halloween.jpg";
-import glutenOffFestival2026 from "../../public/img/events/020_gluten_off_festival_2026.jpg";
 import karolaHero from "../../public/img/hero/karola-hero.jpg";
 import glutenFreeHeroMap from "../../public/img/hero/glutenfreemap.jpg";
 import searchPage from "../../public/img/hero/searchpage.jpg";
@@ -44,6 +43,12 @@ import mealPlannerHero from "../../public/img/hero/meal-planner.jpg";
 import gamesHero from "../../public/img/hero/games-page.jpg";
 
 // --- MEGA MENU IMPORTS ---
+import dinnersPageShot from "../../public/img/hero/dinners-page.jpg";
+import dessertsPageShot from "../../public/img/hero/desserts-page.jpg";
+import restaurantsPolandPageShot from "../../public/img/hero/restaurants-poland-page.jpg";
+import restaurantsEuropePageShot from "../../public/img/hero/restaurants-europe-page.jpg";
+import eventsPageShot from "../../public/img/hero/events-page.jpg";
+import aboutMePageShot from "../../public/img/hero/about-me-page.jpg";
 
 // --- PARTNER IMPORTS ---
 import GlutenexImg from "../../public/img/cooperation/glutenex.png";
@@ -129,15 +134,15 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
         label: "Obiady",
         href: "/obiady",
         description: "Makarony, burgery i zupy - sycące dania bez glutenu",
-        image: dinnerImg,
-        alt: "Bezglutenowy burger z kurczaka teriyaki",
+        image: dinnersPageShot,
+        alt: "Strona z bezglutenowymi obiadami",
       },
       {
         label: "Desery",
         href: "/desery",
         description: "Ciasta, serniki i słodkości, które smakują jak dawniej",
-        image: dessertImg,
-        alt: "Wegański sernik bez glutenu",
+        image: dessertsPageShot,
+        alt: "Strona z bezglutenowymi deserami",
       },
     ],
     groups: [
@@ -252,15 +257,15 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
         label: "Restauracje w Polsce",
         href: "/restauracje-w-polsce",
         description: "Lokale i cukiernie, w których jem bez obaw",
-        image: saskaSushiWarszawa,
-        alt: "Bezglutenowe sushi w Warszawie",
+        image: restaurantsPolandPageShot,
+        alt: "Strona z restauracjami bezglutenowymi w Polsce",
       },
       {
         label: "Restauracje w Europie",
         href: "/restauracje-w-europie",
         description: "Bezglutenowe odkrycia z podróży",
-        image: pastaGlutenFreeRoma,
-        alt: "Włoski makaron bez glutenu",
+        image: restaurantsEuropePageShot,
+        alt: "Strona z restauracjami bezglutenowymi w Europie",
       },
     ],
     groups: [
@@ -319,8 +324,8 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
         label: "Wydarzenia",
         href: "/wydarzenia",
         description: "Warsztaty i bezglutenowe spotkania",
-        image: glutenOffFestival2026,
-        alt: "Gluten Off Festiwal 2026",
+        image: eventsPageShot,
+        alt: "Strona z bezglutenowymi wydarzeniami",
       },
     ],
     groups: [
@@ -380,8 +385,8 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
         label: "O mnie",
         href: "/#o-mnie",
         description: "Kim jestem i skąd wziął się ten blog",
-        image: karolaHero,
-        alt: "Karola - autorka bloga",
+        image: aboutMePageShot,
+        alt: "Sekcja O mnie na stronie głównej",
       },
     ],
     groups: [
