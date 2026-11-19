@@ -28,6 +28,7 @@ const Header = () => {
   const [showInstaBubble, setShowInstaBubble] = useState(false);
 
   const headerRef = useRef<HTMLDivElement | null>(null);
+  const backdropRef = useRef<HTMLDivElement | null>(null);
 
   const instagramLink = HEADER_SOCIAL_LINKS.find(
     (social) => social.label === "Instagram",
@@ -76,13 +77,17 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close dropdowns on outside click and everything on Escape
+  // Close dropdowns on outside click and everything on Escape.
+  // The backdrop closes on its own `click`, so the click never falls
+  // through to the page content underneath it.
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as Node;
       if (
         window.innerWidth > MOBILE_BREAKPOINT &&
         headerRef.current &&
-        !headerRef.current.contains(event.target as Node)
+        !headerRef.current.contains(target) &&
+        !backdropRef.current?.contains(target)
       ) {
         setActiveDropdown(null);
       }
@@ -344,6 +349,14 @@ const Header = () => {
           </button>
         </div>
       </div>
+
+      {/* Desktop only: dims and blurs the page under an open mega menu */}
+      <div
+        ref={backdropRef}
+        className={`site-header-backdrop ${activeDropdown ? "is-visible" : ""}`}
+        aria-hidden="true"
+        onClick={() => setActiveDropdown(null)}
+      />
     </div>
   );
 };

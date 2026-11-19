@@ -702,6 +702,34 @@
   }
 }
 
+// Page overlay under an open desktop mega menu; sits just below the header
+.site-header-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 998;
+  background: rgba(12, 71, 46, 0.35);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.25s ease,
+    visibility 0s linear 0.25s;
+
+  &.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition:
+      opacity 0.25s ease,
+      visibility 0s;
+  }
+
+  @media (max-width: 1180px) {
+    display: none;
+  }
+}
+
 // Tighter spacing on narrower desktops
 @media (min-width: 1181px) and (max-width: 1320px) {
   .site-header {
@@ -971,5 +999,9 @@
   .site-header__icon--instagram.has-bubble,
   .site-header__insta-bubble {
     animation: none !important;
+  }
+
+  .site-header-backdrop {
+    transition: none;
   }
 }
