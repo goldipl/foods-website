@@ -2,6 +2,27 @@ import { StaticImageData } from "next/image";
 import { IconType } from "react-icons";
 import { FaFacebookF, FaInstagram } from "react-icons/fa6";
 import { HiMagnifyingGlass, HiOutlineMapPin } from "react-icons/hi2";
+import {
+  PiAirplaneTilt,
+  PiBed,
+  PiBookOpenText,
+  PiBowlFood,
+  PiCake,
+  PiCalendarCheck,
+  PiCalendarStar,
+  PiCoffee,
+  PiCookie,
+  PiEnvelopeSimple,
+  PiFootprints,
+  PiForkKnife,
+  PiGameController,
+  PiHeart,
+  PiInfo,
+  PiMagnifyingGlass,
+  PiMapPin,
+  PiMicrophone,
+  PiUser,
+} from "react-icons/pi";
 
 // --- ICON IMPORTS ---
 import logo from "../../public/icons/header/bezglutenowakarola-logo.svg";
@@ -21,6 +42,10 @@ import articlesPage from "../../public/img/hero/articles.jpg";
 import mealPlannerHero from "../../public/img/hero/meal-planner.jpg";
 import gamesHero from "../../public/img/hero/games-page.jpg";
 
+// --- MEGA MENU IMPORTS ---
+import menuDinnerImg from "../../public/img/recipes/dinners/020_carbonara.jpg";
+import karolaProfile from "../../public/img/profile/Karola-profile2026.jpg";
+
 // --- PARTNER IMPORTS ---
 import GlutenexImg from "../../public/img/cooperation/glutenex.png";
 import IncolaImg from "../../public/img/cooperation/incola.jpg";
@@ -32,11 +57,34 @@ import PutkaBezGlutenuImg from "../../public/img/cooperation/putka-bez-glutenu.p
 
 // --- INTERFACES ---
 
+export interface HeaderMenuLink {
+  label: string;
+  href: string;
+  description?: string;
+  icon?: IconType;
+  className?: string;
+}
+
+export interface HeaderMenuFeatured {
+  label: string;
+  href: string;
+  description: string;
+  image: StaticImageData;
+  alt: string;
+}
+
+export interface HeaderMenuGroup {
+  title: string;
+  links: HeaderMenuLink[];
+}
+
 export interface HeaderNavItem {
   label: string;
   href?: string;
-  children?: HeaderNavItem[];
-  className?: string;
+  // Mega menu content (desktop panel / mobile accordion)
+  featured?: HeaderMenuFeatured[];
+  groups?: HeaderMenuGroup[];
+  footerLink?: { label: string; href: string };
 }
 
 export interface HeaderSocialLink {
@@ -77,70 +125,285 @@ export const HEADER_ICONS = {
 export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
   {
     label: "Przepisy",
-    children: [
-      { label: "Śniadania", href: "/sniadania" },
-      { label: "Obiady", href: "/obiady" },
-      { label: "Desery", href: "/desery" },
-      { label: "Przystawki / Przekąski / Sałatki", href: "/przekaski" },
+    featured: [
+      {
+        label: "Obiady",
+        href: "/obiady",
+        description: "Makarony, burgery i zupy - sycące dania bez glutenu",
+        image: menuDinnerImg,
+        alt: "Bezglutenowa carbonara",
+      },
+      {
+        label: "Desery",
+        href: "/desery",
+        description: "Ciasta, serniki i słodkości, które smakują jak dawniej",
+        image: dessertImg,
+        alt: "Wegański sernik bez glutenu",
+      },
     ],
+    groups: [
+      {
+        title: "Kategorie",
+        links: [
+          {
+            label: "Śniadania",
+            href: "/sniadania",
+            description: "Owsianki, tortille i pieczywo",
+            icon: PiCoffee,
+          },
+          {
+            label: "Obiady",
+            href: "/obiady",
+            description: "Dania główne na co dzień",
+            icon: PiBowlFood,
+          },
+          {
+            label: "Desery",
+            href: "/desery",
+            description: "Ciasta, ciastka i wypieki",
+            icon: PiCake,
+          },
+          {
+            label: "Przystawki i sałatki",
+            href: "/przekaski",
+            description: "Przekąski na imprezy i lunch",
+            icon: PiCookie,
+          },
+        ],
+      },
+      {
+        title: "Odkrywaj",
+        links: [
+          {
+            label: "Wyszukiwarka przepisów",
+            href: "/szukaj-przepisow",
+            description: "Szukaj po nazwie i składnikach",
+            icon: PiMagnifyingGlass,
+          },
+          {
+            label: "Planer posiłków",
+            href: "/planer-posilkow",
+            description: "Ułóż bezglutenowy jadłospis",
+            icon: PiCalendarCheck,
+          },
+        ],
+      },
+    ],
+    footerLink: { label: "Wszystkie przepisy", href: "/szukaj-przepisow" },
   },
   {
     label: "Narzędzia",
-    children: [
-      { label: "Bezglutenowy planer posiłków", href: "/planer-posilkow" },
-      { label: "Wyszukiwarka przepisów", href: "/szukaj-przepisow" },
-      { label: "Mapa miejsc bezglutenowych", href: "/bezglutenowe-miejsca" },
+    featured: [
+      {
+        label: "Planer posiłków",
+        href: "/planer-posilkow",
+        description: "Zaplanuj tydzień i wygeneruj listę zakupów",
+        image: mealPlannerHero,
+        alt: "Bezglutenowy planer posiłków",
+      },
+      {
+        label: "Mapa miejsc",
+        href: "/bezglutenowe-miejsca",
+        description: "Sprawdzone bezglutenowe lokale na mapie",
+        image: glutenFreeHeroMap,
+        alt: "Mapa miejsc bezglutenowych",
+      },
+    ],
+    groups: [
+      {
+        title: "Planuj i szukaj",
+        links: [
+          {
+            label: "Planer posiłków",
+            href: "/planer-posilkow",
+            description: "Jadłospis i lista zakupów",
+            icon: PiCalendarCheck,
+          },
+          {
+            label: "Wyszukiwarka przepisów",
+            href: "/szukaj-przepisow",
+            description: "Znajdź przepis w kilka sekund",
+            icon: PiMagnifyingGlass,
+          },
+          {
+            label: "Mapa miejsc bezglutenowych",
+            href: "/bezglutenowe-miejsca",
+            description: "Restauracje, cukiernie i hotele",
+            icon: PiMapPin,
+          },
+        ],
+      },
+      {
+        title: "Dla relaksu",
+        links: [
+          {
+            label: "Bezglutenowe gry",
+            href: "/gry",
+            description: "Quizy i gry zręcznościowe",
+            icon: PiGameController,
+          },
+        ],
+      },
     ],
   },
   {
     label: "Miejsca",
-    children: [
+    featured: [
       {
-        label: "Restauracje/cukiernie w Polsce",
+        label: "Restauracje w Polsce",
         href: "/restauracje-w-polsce",
+        description: "Lokale i cukiernie, w których jem bez obaw",
+        image: saskaSushiWarszawa,
+        alt: "Bezglutenowe sushi w Warszawie",
       },
       {
-        label: "Restauracje/cukiernie w Europie",
+        label: "Restauracje w Europie",
         href: "/restauracje-w-europie",
-      },
-      {
-        label: "Hotele i pensjonaty",
-        href: "/hotele",
+        description: "Bezglutenowe odkrycia z podróży",
+        image: pastaGlutenFreeRoma,
+        alt: "Włoski makaron bez glutenu",
       },
     ],
+    groups: [
+      {
+        title: "Jedzenie na mieście",
+        links: [
+          {
+            label: "Restauracje w Polsce",
+            href: "/restauracje-w-polsce",
+            description: "Restauracje i cukiernie",
+            icon: PiForkKnife,
+          },
+          {
+            label: "Restauracje w Europie",
+            href: "/restauracje-w-europie",
+            description: "Polecajki z podróży",
+            icon: PiAirplaneTilt,
+          },
+        ],
+      },
+      {
+        title: "Podróże",
+        links: [
+          {
+            label: "Hotele i pensjonaty",
+            href: "/hotele",
+            description: "Noclegi przyjazne celiakom",
+            icon: PiBed,
+          },
+          {
+            label: "Mapa miejsc",
+            href: "/bezglutenowe-miejsca",
+            description: "Wszystkie miejsca na mapie",
+            icon: PiMapPin,
+          },
+        ],
+      },
+    ],
+    footerLink: {
+      label: "Zobacz mapę miejsc",
+      href: "/bezglutenowe-miejsca",
+    },
   },
   { label: "Produkty", href: "/produkty" },
   {
     label: "Celiakia (co dalej?)",
-    children: [
+    featured: [
       {
         label: "Artykuły",
         href: "/artykuly",
+        description: "Etykiety, dieta i codzienność z celiakią",
+        image: articlesPage,
+        alt: "Artykuły o celiakii",
       },
       {
-        label: "Podstawowe informacje",
-        href: "/#celiakia-podstawowe-informacje",
-      },
-      {
-        label: "Pierwsze kroki po diagnozie",
-        href: "/#pierwsze-kroki-po-diagnozie",
-      },
-      { label: "Jak wygląda życie z celiakią? (podcast)", href: "/#video" },
-      {
-        label: "Wydarzenia, warsztaty bezglutenowe i przydatne informacje",
+        label: "Wydarzenia",
         href: "/wydarzenia",
-      },
-      {
-        label: "Bezglutenowe marki, które polecam",
-        href: "/#wspolpraca",
+        description: "Warsztaty i bezglutenowe spotkania",
+        image: bezglutenoweHalloween,
+        alt: "Bezglutenowe Halloween",
       },
     ],
+    groups: [
+      {
+        title: "Wiedza",
+        links: [
+          {
+            label: "Artykuły",
+            href: "/artykuly",
+            description: "Poradniki i ciekawostki",
+            icon: PiBookOpenText,
+          },
+          {
+            label: "Podstawowe informacje",
+            href: "/#celiakia-podstawowe-informacje",
+            description: "Czym jest celiakia?",
+            icon: PiInfo,
+          },
+          {
+            label: "Pierwsze kroki po diagnozie",
+            href: "/#pierwsze-kroki-po-diagnozie",
+            description: "Od czego zacząć",
+            icon: PiFootprints,
+          },
+          {
+            label: "Życie z celiakią (podcast)",
+            href: "/#video",
+            description: "Rozmowa o codzienności",
+            icon: PiMicrophone,
+          },
+        ],
+      },
+      {
+        title: "Społeczność",
+        links: [
+          {
+            label: "Wydarzenia i warsztaty",
+            href: "/wydarzenia",
+            description: "Przydatne informacje i spotkania",
+            icon: PiCalendarStar,
+          },
+          {
+            label: "Marki, które polecam",
+            href: "/#wspolpraca",
+            description: "Sprawdzone produkty bez glutenu",
+            icon: PiHeart,
+          },
+        ],
+      },
+    ],
+    footerLink: { label: "Wszystkie artykuły", href: "/artykuly" },
   },
   {
     label: "O stronie",
-    children: [
-      { label: "O mnie", href: "/#o-mnie" },
-      { label: "Kontakt", href: "/#kontakt", className: "contact" },
+    featured: [
+      {
+        label: "O mnie",
+        href: "/#o-mnie",
+        description: "Kim jestem i skąd wziął się ten blog",
+        image: karolaProfile,
+        alt: "Karola - autorka bloga",
+      },
+    ],
+    groups: [
+      {
+        title: "Poznajmy się",
+        links: [
+          {
+            label: "O mnie",
+            href: "/#o-mnie",
+            description: "Moja historia z celiakią",
+            icon: PiUser,
+          },
+          {
+            label: "Kontakt",
+            href: "/#kontakt",
+            description: "Napisz do mnie - odpowiadam!",
+            icon: PiEnvelopeSimple,
+            className: "is-highlight",
+          },
+        ],
+      },
     ],
   },
   { label: "Gry", href: "/gry" },

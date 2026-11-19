@@ -39,6 +39,17 @@
   }
 }
 
+@keyframes headerMegaIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 // Reserves the header height so the page does not jump when it becomes fixed
 .header-slot {
   --header-height: 84px;
@@ -126,10 +137,6 @@
     list-style: none;
   }
 
-  &__item {
-    position: relative;
-  }
-
   &__link {
     display: inline-flex;
     align-items: center;
@@ -171,66 +178,308 @@
     }
   }
 
-  &__dropdown {
+  // --- Desktop mega menu ---
+
+  // Static on desktop so the panel spans the whole header, not the item
+  &__item {
+    position: static;
+  }
+
+  &__mega {
     position: absolute;
-    top: calc(100% + 12px);
+    top: 100%;
+    right: 0;
     left: 0;
     display: none;
-    flex-direction: column;
-    gap: 0;
-    min-width: 260px;
-    max-width: 340px;
-    padding: 6px;
-    border: 1px solid rgba(12, 71, 46, 0.08);
-    border-radius: 20px;
+    overflow: hidden;
+    border-top: 1px solid rgba(12, 71, 46, 0.08);
+    border-bottom: 1px solid rgba(12, 71, 46, 0.08);
     background: $white-bg-color;
-    box-shadow: 0 24px 48px rgba(12, 71, 46, 0.16);
-    list-style: none;
+    box-shadow: 0 30px 60px -20px rgba(12, 71, 46, 0.28);
+  }
 
-    a {
-      display: block;
-      padding: 6px 12px;
-      border-radius: 10px;
-      color: $color-green05;
-      font-size: 0.9rem;
-      font-weight: 500;
-      line-height: 1.35;
-      text-decoration: none;
-      transition:
-        background 0.2s ease,
-        color 0.2s ease;
+  &__item.is-open &__mega {
+    display: block;
+    animation: headerMegaIn 0.25s ease both;
+  }
 
-      &:hover {
-        background: $color-green03;
+  &__mega-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  &__mega--compact &__mega-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  // Tinted column whose background runs out to the left viewport edge
+  &__mega-featured {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 28px 32px 28px 0;
+    border-right: 1px solid rgba(12, 71, 46, 0.08);
+    background: $color-green04;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 100%;
+      bottom: 0;
+      width: 100vw;
+      background: inherit;
+      content: "";
+    }
+  }
+
+  &__mega-card {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 8px;
+    border-radius: 18px;
+    color: $color-green05;
+    text-decoration: none;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.65);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-green02;
+      outline-offset: 2px;
+    }
+  }
+
+  // Frame with a little browser window inside
+  &__mega-frame {
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    align-items: flex-end;
+    justify-content: center;
+    width: 210px;
+    height: 132px;
+    overflow: hidden;
+    border: 1px solid rgba(12, 71, 46, 0.14);
+    border-radius: 14px;
+    background-color: #dfe9d3;
+  }
+
+  &__mega-window {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: $white-bg-color;
+  }
+
+  &__mega-bar {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 4px;
+    height: 16px;
+    padding: 0 8px;
+    border-bottom: 1px solid rgba(12, 71, 46, 0.1);
+    background: $color-green03;
+
+    i {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: rgba(12, 71, 46, 0.3);
+
+      &:nth-child(1) {
+        background: #ff7a6b;
       }
 
-      &:focus-visible {
-        outline: 2px solid $color-green02;
-        outline-offset: -2px;
+      &:nth-child(2) {
+        background: #ffc94d;
       }
 
-      &.contact {
-        margin-top: 4px;
-        background: $color-green05;
-        color: $color-white;
-        font-weight: 600;
-
-        &:hover {
-          background: $color-green02;
-        }
+      &:nth-child(3) {
+        background: $color-green01;
       }
     }
   }
 
-  &__item.is-open &__dropdown {
-    display: flex;
-    animation: headerDropdownIn 0.25s ease both;
+  &__mega-img {
+    display: block;
+    flex: 1;
+    width: 100%;
+    min-height: 0;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease;
   }
 
-  // Last dropdowns open to the left so they stay on screen
-  &__item:nth-last-child(-n + 3) &__dropdown {
-    right: 0;
-    left: auto;
+  &__mega-card:hover &__mega-img {
+    transform: scale(1.06);
+  }
+
+  &__mega-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+  }
+
+  &__mega-card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    transition: color 0.2s ease;
+  }
+
+  &__mega-card:hover &__mega-card-title {
+    color: $color-green02;
+  }
+
+  &__mega-card-desc {
+    color: rgba(12, 71, 46, 0.68);
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  &__mega-main {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  &__mega-groups {
+    display: grid;
+    flex: 1;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 8px 40px;
+    padding: 30px 0 26px 40px;
+  }
+
+  &__mega--compact &__mega-groups {
+    padding-left: 0;
+  }
+
+  &__mega-group {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      list-style: none;
+    }
+  }
+
+  &__mega-group-title {
+    margin: 0 0 12px;
+    padding-left: 10px;
+    color: $color-green02;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  &__mega-link {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 9px 10px;
+    border-radius: 14px;
+    color: $color-green05;
+    text-decoration: none;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: $color-green03;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-green02;
+      outline-offset: -2px;
+    }
+  }
+
+  &__mega-icon {
+    display: grid;
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    place-items: center;
+    border: 1px solid rgba(12, 71, 46, 0.14);
+    border-radius: 11px;
+    background: $white-bg-color;
+    color: $color-green02;
+    font-size: 1.2rem;
+    transition:
+      background 0.2s ease,
+      border-color 0.2s ease,
+      color 0.2s ease;
+  }
+
+  &__mega-link:hover &__mega-icon {
+    border-color: $color-green05;
+    background: $color-green05;
+    color: $color-white;
+  }
+
+  &__mega-link.is-highlight &__mega-icon {
+    border-color: transparent;
+    background: var(--header-accent);
+    color: $color-green05;
+  }
+
+  &__mega-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+    padding-top: 1px;
+  }
+
+  &__mega-label {
+    font-size: 0.93rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  &__mega-desc {
+    color: rgba(12, 71, 46, 0.62);
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  &__mega-footer {
+    display: inline-flex;
+    align-items: center;
+    align-self: stretch;
+    gap: 6px;
+    padding: 18px 0 20px 50px;
+    border-top: 1px solid rgba(12, 71, 46, 0.08);
+    color: $color-green05;
+    font-size: 0.92rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    svg {
+      color: $color-green02;
+      transition: transform 0.2s ease;
+    }
+
+    &:hover svg {
+      transform: translateX(4px);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-green02;
+      outline-offset: -2px;
+    }
   }
 
   // --- Actions ---
@@ -572,26 +821,61 @@
       background: transparent;
     }
 
-    &__dropdown,
-    &__item:nth-last-child(-n + 3) &__dropdown {
+    &__mega {
       position: static;
-      min-width: 0;
-      max-width: none;
+      overflow: visible;
       margin: 0 0 12px;
-      padding: 6px;
       border: 0;
       border-radius: 16px;
       background: $color-green03;
       box-shadow: none;
+    }
 
-      a {
-        padding: 12px 14px;
-        font-size: 0.95rem;
+    &__item.is-open &__mega {
+      animation: headerDropdownIn 0.25s ease both;
+    }
 
-        &:hover {
-          background: $white-bg-color;
-        }
+    &__mega-inner,
+    &__mega--compact &__mega-inner {
+      display: block;
+      padding: 6px;
+    }
+
+    // Image cards and the footer link are desktop extras
+    &__mega-featured,
+    &__mega-footer {
+      display: none;
+    }
+
+    &__mega-groups,
+    &__mega--compact &__mega-groups {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 0;
+    }
+
+    &__mega-group-title {
+      margin: 10px 0 6px;
+      padding-left: 12px;
+    }
+
+    &__mega-link {
+      align-items: center;
+      padding: 10px 12px;
+
+      &:hover {
+        background: $white-bg-color;
       }
+    }
+
+    &__mega-icon {
+      width: 36px;
+      height: 36px;
+    }
+
+    &__mega-label {
+      font-size: 0.95rem;
     }
 
     &__actions {
@@ -680,7 +964,9 @@
 @media (prefers-reduced-motion: reduce) {
   .site-header,
   .site-header__nav.open,
-  .site-header__item.is-open .site-header__dropdown,
+  .site-header__item.is-open .site-header__mega,
+  .site-header__mega-window,
+  .site-header__mega-img,
   .site-header__icon--instagram.has-bubble,
   .site-header__insta-bubble {
     animation: none !important;

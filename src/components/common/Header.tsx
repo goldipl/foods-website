@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { HiChevronDown } from "react-icons/hi2";
+import { HiChevronDown, HiChevronRight } from "react-icons/hi2";
 
 import {
   HEADER_NAV_ITEMS,
@@ -14,6 +14,7 @@ import {
 const MOBILE_BREAKPOINT = 1180;
 const FIXED_SCROLL_OFFSET = 300;
 const INSTA_BUBBLE_DURATION = 10000;
+const MEGA_CLOSE_DELAY = 180;
 
 const toDropdownId = (label: string) =>
   `menu-${label
@@ -28,6 +29,10 @@ const Header = () => {
   const [showInstaBubble, setShowInstaBubble] = useState(false);
 
   const headerRef = useRef<HTMLDivElement | null>(null);
+  const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  // The menu a mouse hover just opened: the click that usually follows the
+  // hover must keep it open instead of toggling it shut again
+  const hoverOpenedRef = useRef<string | null>(null);
 
   const instagramLink = HEADER_SOCIAL_LINKS.find(
     (social) => social.label === "Instagram",
@@ -107,8 +112,44 @@ const Header = () => {
     setOpenMenu(false);
   };
 
-  const toggleDropdown = (label: string) =>
+  const clearCloseTimer = () => {
+    if (closeTimerRef.current) {
+      clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
+    }
+  };
+
+  useEffect(() => clearCloseTimer, []);
+
+  const isDesktopMouse = (event: React.PointerEvent) =>
+    event.pointerType === "mouse" && window.innerWidth > MOBILE_BREAKPOINT;
+
+  // Desktop: hovering a menu item opens its panel, plain links close others
+  const handleItemEnter = (event: React.PointerEvent, label: string | null) => {
+    if (!isDesktopMouse(event)) return;
+    clearCloseTimer();
+    hoverOpenedRef.current = label;
+    setActiveDropdown(label);
+  };
+
+  const handleItemLeave = (event: React.PointerEvent) => {
+    if (!isDesktopMouse(event)) return;
+    clearCloseTimer();
+    closeTimerRef.current = setTimeout(() => {
+      hoverOpenedRef.current = null;
+      setActiveDropdown(null);
+    }, MEGA_CLOSE_DELAY);
+  };
+
+  const handleTriggerClick = (label: string) => {
+    if (hoverOpenedRef.current === label) {
+      hoverOpenedRef.current = null;
+      setActiveDropdown(label);
+      return;
+    }
+    hoverOpenedRef.current = null;
     setActiveDropdown((current) => (current === label ? null : label));
+  };
 
   return (
     <div className="header-slot">
@@ -136,11 +177,16 @@ const Header = () => {
               {HEADER_NAV_ITEMS.map((item) => {
                 const isOpen = activeDropdown === item.label;
                 const dropdownId = toDropdownId(item.label);
+                const hasMega = Boolean(item.groups?.length);
 
                 return (
                   <li
                     key={item.label}
                     className={`site-header__item ${isOpen ? "is-open" : ""}`}
+                    onPointerEnter={(event) =>
+                      handleItemEnter(event, hasMega ? item.label : null)
+                    }
+                    onPointerLeave={handleItemLeave}
                   >
                     {item.href ? (
                       <Link
@@ -156,27 +202,120 @@ const Header = () => {
                         className="site-header__link site-header__trigger"
                         aria-expanded={isOpen}
                         aria-controls={dropdownId}
-                        onClick={() => toggleDropdown(item.label)}
+                        onClick={() => handleTriggerClick(item.label)}
                       >
                         {item.label}
                         <HiChevronDown aria-hidden="true" />
                       </button>
                     )}
 
-                    {item.children && (
-                      <ul id={dropdownId} className="site-header__dropdown">
-                        {item.children.map((subItem) => (
-                          <li key={subItem.label}>
-                            <Link
-                              href={subItem.href ?? "/"}
-                              className={subItem.className}
-                              onClick={handleCloseAll}
-                            >
-                              {subItem.label}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
+                    {hasMega && (
+                      <div
+                        id={dropdownId}
+                        className={`site-header__mega ${item.featured?.length ? "" : "site-header__mega--compact"}`}
+                      >
+                        <div className="site-header__mega-inner">
+                          {item.featured && item.featured.length > 0 && (
+                            <div className="site-header__mega-featured">
+                              {item.featured.map((feature) => (
+                                <Link
+                                  key={feature.label}
+                                  href={feature.href}
+                                  className="site-header__mega-card"
+                                  onClick={handleCloseAll}
+                                >
+                                  <span
+                                    className="site-header__mega-frame"
+                                    aria-hidden="true"
+                                  >
+                                    <span className="site-header__mega-window">
+                                      <span className="site-header__mega-bar">
+                                        <i />
+                                        <i />
+                                        <i />
+                                      </span>
+                                      <Image
+                                        src={feature.image}
+                                        alt={feature.alt}
+                                        sizes="220px"
+                                        className="site-header__mega-img"
+                                      />
+                                    </span>
+                                  </span>
+                                  <span className="site-header__mega-card-body">
+                                    <span className="site-header__mega-card-title">
+                                      {feature.label}
+                                    </span>
+                                    <span className="site-header__mega-card-desc">
+                                      {feature.description}
+                                    </span>
+                                  </span>
+                                </Link>
+                              ))}
+                            </div>
+                          )}
+
+                          <div className="site-header__mega-main">
+                            <div className="site-header__mega-groups">
+                              {item.groups?.map((group) => (
+                                <div
+                                  key={group.title}
+                                  className="site-header__mega-group"
+                                >
+                                  <p className="site-header__mega-group-title">
+                                    {group.title}
+                                  </p>
+                                  <ul>
+                                    {group.links.map((link) => {
+                                      const Icon = link.icon;
+
+                                      return (
+                                        <li key={link.label}>
+                                          <Link
+                                            href={link.href}
+                                            className={`site-header__mega-link ${link.className ?? ""}`}
+                                            onClick={handleCloseAll}
+                                          >
+                                            {Icon && (
+                                              <span
+                                                className="site-header__mega-icon"
+                                                aria-hidden="true"
+                                              >
+                                                <Icon />
+                                              </span>
+                                            )}
+                                            <span className="site-header__mega-text">
+                                              <span className="site-header__mega-label">
+                                                {link.label}
+                                              </span>
+                                              {link.description && (
+                                                <span className="site-header__mega-desc">
+                                                  {link.description}
+                                                </span>
+                                              )}
+                                            </span>
+                                          </Link>
+                                        </li>
+                                      );
+                                    })}
+                                  </ul>
+                                </div>
+                              ))}
+                            </div>
+
+                            {item.footerLink && (
+                              <Link
+                                href={item.footerLink.href}
+                                className="site-header__mega-footer"
+                                onClick={handleCloseAll}
+                              >
+                                {item.footerLink.label}
+                                <HiChevronRight aria-hidden="true" />
+                              </Link>
+                            )}
+                          </div>
+                        </div>
+                      </div>
                     )}
                   </li>
                 );
@@ -197,7 +336,7 @@ const Header = () => {
                   <span className="site-header__icon-label">
                     {instagramLink.handle}
                   </span>
-                  {showInstaBubble && (
+                  {showInstaBubble && !activeDropdown && (
                     <span
                       className="site-header__insta-bubble"
                       aria-hidden="true"
