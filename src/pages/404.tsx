@@ -85,24 +85,6 @@ const NotFoundPage = () => (
           className="not-found-page__orb not-found-page__orb--two"
           aria-hidden="true"
         />
-        <span
-          className="not-found-page__floating not-found-page__floating--one"
-          aria-hidden="true"
-        >
-          🥑
-        </span>
-        <span
-          className="not-found-page__floating not-found-page__floating--two"
-          aria-hidden="true"
-        >
-          🍓
-        </span>
-        <span
-          className="not-found-page__floating not-found-page__floating--three"
-          aria-hidden="true"
-        >
-          ✨
-        </span>
 
         <div className="not-found-page__inner">
           <div className="not-found-page__code" aria-hidden="true">

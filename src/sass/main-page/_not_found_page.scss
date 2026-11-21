@@ -232,35 +232,6 @@
   }
 }
 
-.not-found-page__floating {
-  position: absolute;
-  z-index: 0;
-  font-size: 44px;
-  line-height: 1;
-  filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.2));
-  pointer-events: none;
-  animation: not-found-float 4.5s ease-in-out infinite;
-
-  &--one {
-    top: 18%;
-    left: 12%;
-  }
-
-  &--two {
-    top: 26%;
-    right: 12%;
-    font-size: 38px;
-    animation-delay: -1.5s;
-  }
-
-  &--three {
-    bottom: 16%;
-    left: 18%;
-    font-size: 30px;
-    animation-delay: -3s;
-  }
-}
-
 // --- Suggested links ---
 
 .not-found-page__links {
@@ -396,39 +367,11 @@
   }
 }
 
-@keyframes not-found-float {
-  0%,
-  100% {
-    transform: translateY(0) rotate(-6deg);
-  }
-  50% {
-    transform: translateY(-12px) rotate(6deg);
-  }
-}
-
 // --- Responsive ---
 
 @media (max-width: 900px) {
   .not-found-page__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .not-found-page__floating {
-    opacity: 0.55;
-
-    &--one {
-      top: 8%;
-      left: 6%;
-    }
-
-    &--two {
-      top: 12%;
-      right: 6%;
-    }
-
-    &--three {
-      display: none;
-    }
   }
 }
 
@@ -476,16 +419,11 @@
   .not-found-page__grid {
     grid-template-columns: 1fr;
   }
-
-  .not-found-page__floating {
-    display: none;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .not-found-page__inner,
-  .not-found-page__plate,
-  .not-found-page__floating {
+  .not-found-page__plate {
     animation: none;
   }
 }
