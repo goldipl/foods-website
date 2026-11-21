@@ -18,6 +18,7 @@ import ilmiofornaioglutenfree from "./../../../public/img/restaurants/europe/017
 import rosemaryterraesapori from "./../../../public/img/restaurants/europe/018_rosemaryterraesapori.jpg";
 import kopenhagaCz1 from "./../../../public/img/restaurants/europe/019_kopenhaga_cz1.jpg";
 import kopenhagaCz2 from "./../../../public/img/restaurants/europe/020_kopenhaga_cz2.jpg";
+import kopenhagaCz3 from "./../../../public/img/restaurants/europe/021_kopenhaga_cz3.jpg";
 
 export const  europeanRestaurantsData = [
     {
@@ -219,5 +220,15 @@ export const  europeanRestaurantsData = [
       labelClass: "europe-label",
       description:
         "H.U.G Bageri | H.U.G Deli - Bezglutenowa Kopenhaga cz. 2, Dania",
+    },
+    {
+      id: 21,
+      href: "https://www.instagram.com/p/Df_x1N5EegB/?img_index=1",
+      imgSrc: kopenhagaCz3,
+      altText: "Be Gluten Free | Pastry & Cafe - Bezglutenowa Kopenhaga cz. 3, Dania",
+      label: "Kopenhaga",
+      labelClass: "europe-label",
+      description:
+        "Be Gluten Free | Pastry & Cafe - Bezglutenowa Kopenhaga cz. 3, Dania",
     },
   ];

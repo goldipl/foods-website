@@ -661,7 +661,7 @@ export const MarkerData = [
   },
   {
     id: 68,
-    name: "Mad Mochi - Japońskie Mochi Pączki & Matcha,",
+    name: "Mad Mochi - Japońskie Mochi Pączki & Matcha",
     addressLine1: "ul. Piotrkowska 146,",
     addressLine2: "90-001 Łódź",
     country: "Polska",
@@ -671,7 +671,7 @@ export const MarkerData = [
   },
   {
     id: 69,
-    name: "Kawiarnia Cukiernia bezglutenowa Ciacho bez cukru,",
+    name: "Kawiarnia Cukiernia bezglutenowa Ciacho bez cukru",
     addressLine1: "ul. Norberta Barlickiego 5,",
     addressLine2: "43-300 Bielsko-Biała",
     country: "Polska",
@@ -681,7 +681,7 @@ export const MarkerData = [
   },
   {
     id: 70,
-    name: "WOLNA - piekarnia bezglutenowa,",
+    name: "WOLNA - piekarnia bezglutenowa",
     addressLine1: "ul. Szlak 11,",
     addressLine2: "31-161 Kraków",
     country: "Polska",
@@ -691,7 +691,7 @@ export const MarkerData = [
   },
   {
     id: 71,
-    name: "H.U.G Bageri,",
+    name: "H.U.G Bageri",
     addressLine1: "Øster Farimagsgade 20,",
     addressLine2: "2100 København, Dania",
     country: "Dania",
@@ -701,7 +701,7 @@ export const MarkerData = [
   },
   {
     id: 72,
-    name: "H.U.G Deli,",
+    name: "H.U.G Deli",
     addressLine1: "Øster Farimagsgade 27,",
     addressLine2: "2100 København, Dania",
     country: "Dania",
@@ -711,12 +711,22 @@ export const MarkerData = [
   },
   {
     id: 73,
-    name: "Restaurant Tight,",
+    name: "Restaurant Tight",
     addressLine1: "Hyskenstræde 10,",
     addressLine2: "1207 København, Dania",
     country: "Dania",
     city: "Kopenhaga",
     link: "https://www.instagram.com/p/De7Y611Eaox/?img_index=1",
     position: [55.678103887096704, 12.57645878752534] as [number, number],
+  },
+  {
+    id: 74,
+    name: "Be Gluten Free | Pastry & Cafe",
+    addressLine1: "Østerbrogade 190,",
+    addressLine2: "2100 København, Dania",
+    country: "Dania",
+    city: "Kopenhaga",
+    link: "https://www.instagram.com/p/Df_x1N5EegB/?img_index=1",
+    position: [55.710958160241454, 12.57815792132556] as [number, number],
   },
 ];
