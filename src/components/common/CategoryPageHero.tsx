@@ -1,7 +1,7 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import { HiArrowRight, HiHeart, HiSparkles } from "react-icons/hi2";
+import { HiArrowRight, HiHeart, HiMapPin } from "react-icons/hi2";
 
 interface CategoryPageHeroProps {
   theme?: "breakfast" | "dinner" | "dessert" | "appetizer";
@@ -66,7 +66,7 @@ const CategoryPageHero: React.FC<CategoryPageHeroProps> = ({
           Odkryj inspiracje <HiArrowRight aria-hidden="true" />
         </Link>
         <div className="category-hero__note">
-          <HiSparkles aria-hidden="true" />
+          <HiMapPin aria-hidden="true" />
           {itemCount} {itemLabel} do odkrycia
         </div>
       </div>
