@@ -32,7 +32,7 @@ import tydzienCeliakiiPutka from "./../../../public/img/products/031_tydzien_cel
 import przekaskaBezGlutenuIncola from "./../../../public/img/products/032_przekaska_bez_glutenu_incola.jpg";
 import chrupakiIncola from "./../../../public/img/products/033_chrupaki_incola.jpg";
 import manufakturaCukierkow from "./../../../public/img/products/034_manufaktura_cukierkow.jpg";
-import bezglutenoweDrozdzowki from "./../../../public/img/products/035_bezglutenowe_drozdzowki.jpg";
+import bezglutenoweDrozdzowki from "./../../../public/img/products/035_bezglutenowe_drozdzowki_bezgluten.jpg";
 
 export const productsData = [
     {
