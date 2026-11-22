@@ -32,6 +32,7 @@ import tydzienCeliakiiPutka from "./../../../public/img/products/031_tydzien_cel
 import przekaskaBezGlutenuIncola from "./../../../public/img/products/032_przekaska_bez_glutenu_incola.jpg";
 import chrupakiIncola from "./../../../public/img/products/033_chrupaki_incola.jpg";
 import manufakturaCukierkow from "./../../../public/img/products/034_manufaktura_cukierkow.jpg";
+import bezglutenoweDrozdzowki from "./../../../public/img/products/035_bezglutenowe_drozdzowki.jpg";
 
 export const productsData = [
     {
@@ -403,5 +404,15 @@ export const productsData = [
         labelClass: "product-label",
         description: 
             "Manufaktura cukierków - świąteczny czas",
+    },
+    {
+        id: 35,
+        href: "https://www.instagram.com/p/DgCcBgQkSYK/?img_index=1",
+        imgSrc: bezglutenoweDrozdzowki,
+        altText: "Drożdżówki bezglutenowe z kruszonką",
+        label: "Bezgluten",
+        labelClass: "product-label",
+        description: 
+            "Drożdżówki bezglutenowe z kruszonką",
     },
   ];
