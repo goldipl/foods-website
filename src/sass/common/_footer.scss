@@ -219,10 +219,14 @@
       list-style: none;
     }
 
+    li {
+      line-height: 1.2;
+    }
+
     a {
       color: rgba(255, 255, 255, 0.72);
       font-size: 0.88rem;
-      line-height: 1.45;
+      line-height: 1.2;
       text-decoration: none;
       transition: color 0.2s ease;
 
