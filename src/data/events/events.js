@@ -21,6 +21,8 @@ import glutenOffFestival2026 from "./../../../public/img/events/020_gluten_off_f
 import coOstatnioJadlam from "./../../../public/img/events/021_co_ostatnio_jadlam.jpg";
 import naszSlub from "./../../../public/img/events/022_nasz_slub.jpg";
 import slubWeseleCeliaczki from "./../../../public/img/events/023_slub_wesele_celiaczki.jpg";
+import nieTesknieZaGlutenemCz1 from "./../../../public/img/events/024_nie_tesknie_za_glutenem_cz1.jpg";
+import nieTesknieZaGlutenemCz2 from "./../../../public/img/events/025_nie_tesknie_za_glutenem_cz2.jpg";
 
 export const eventsData = [
     {
@@ -252,5 +254,25 @@ export const eventsData = [
       labelClass: "breakfast-label",
       description:
         "Ślub i wesele celiaczki. Jak zorganizować wesele, jeśli masz celiakię?",
+    },
+    {
+      id: 24,
+      href: "https://www.instagram.com/p/DfQG6V5ROZF/",
+      imgSrc: nieTesknieZaGlutenemCz1,
+      altText: "Nie tesknię za glutenem - część 1. Jak wygląda życie celiaczki na diecie bezglutenowej?",
+      label: "Celiakia i dieta bezglutenowa",
+      labelClass: "breakfast-label",
+      description:
+        "Nie tesknię za glutenem - część 1. Jak wygląda życie celiaczki na diecie bezglutenowej?",
+    },
+    {
+      id: 25,
+      href: "https://www.instagram.com/p/DgLPRZHx5JC/",
+      imgSrc: nieTesknieZaGlutenemCz2,
+      altText: "Nie tesknię za glutenem - część 2. Jak wygląda życie celiaczki na diecie bezglutenowej?",
+      label: "Celiakia i dieta bezglutenowa",
+      labelClass: "breakfast-label",
+      description:
+        "Nie tesknię za glutenem - część 2. Jak wygląda życie celiaczki na diecie bezglutenowej?",
     },
   ];
