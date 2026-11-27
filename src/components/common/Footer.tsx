@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { IconType } from "react-icons";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa6";
 import { HiArrowUp, HiMagnifyingGlass } from "react-icons/hi2";
@@ -80,11 +80,12 @@ const Footer = () => {
         <div className="footer__main">
           <div className="footer__brand">
             <Link href="/" className="footer__logo">
-              <Image
+              <ExportedImage
                 src={logo.src}
                 alt="Bezglutenowa Karola Logo"
                 height={112}
                 width={372}
+                placeholder="empty"
               />
             </Link>
             <p>{BRAND_DATA.description}</p>

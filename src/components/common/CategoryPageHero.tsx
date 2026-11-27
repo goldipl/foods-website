@@ -1,5 +1,6 @@
 import React from "react";
-import Image, { StaticImageData } from "next/image";
+import ExportedImage from "next-image-export-optimizer";
+import type { StaticImageData } from "next/image";
 import Link from "next/link";
 import { HiArrowRight, HiHeart, HiMapPin } from "react-icons/hi2";
 
@@ -87,7 +88,7 @@ const CategoryPageHero: React.FC<CategoryPageHeroProps> = ({
                 key={`category-hero-photo-${idx}`}
                 className={`category-hero__photo category-hero__photo--${idx + 1}`}
               >
-                <Image src={image.src} alt="" fill sizes="200px" />
+                <ExportedImage src={image.src} alt="" fill sizes="200px" />
               </span>
             ))}
           </span>

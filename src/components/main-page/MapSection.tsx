@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import glutenFreeMap from "./../../../public/img/map/gluten-free-map.jpg";
 import { MarkerData } from "@/data/map/map";
@@ -61,7 +61,7 @@ const MapSection = () => {
           aria-label="Otwórz interaktywną mapę miejsc gluten free"
         >
           <span className="home-map__preview-frame">
-            <Image
+            <ExportedImage
               className="home-map__img"
               src={glutenFreeMap}
               alt="Mapa restauracji i miejsc gluten free"

@@ -1,5 +1,6 @@
 import React from "react";
-import Image, { StaticImageData } from "next/image";
+import ExportedImage from "next-image-export-optimizer";
+import type { StaticImageData } from "next/image";
 import Link from "next/link";
 import { FaInstagram } from "react-icons/fa6";
 import { HiArrowRight } from "react-icons/hi2";
@@ -64,7 +65,7 @@ const InstaListingBlock: React.FC<InstaListingBlockProps> = ({
             target="_blank"
           >
             <div className="listing-v1-slot__img">
-              <Image
+              <ExportedImage
                 src={item.imgSrc}
                 alt={item.altText}
                 width={400}

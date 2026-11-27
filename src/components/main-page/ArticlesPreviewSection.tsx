@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { HiArrowRight } from "react-icons/hi2";
 import { articlesData } from "@/data/articles/articles";
 import SectionHeader from "@/components/common/SectionHeader";
@@ -27,7 +27,7 @@ const ArticlesPreviewSection = () => {
                 className="article-card article-card--preview"
               >
                 <div className="article-card__img">
-                  <Image
+                  <ExportedImage
                     src={article.image}
                     alt={article.title}
                     width={420}

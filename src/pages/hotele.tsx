@@ -1,7 +1,7 @@
 import "@/sass/main.scss";
 import { useMemo, useState } from "react";
 import Head from "next/head";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import { CiInstagram } from "react-icons/ci";
 import { hotelsData } from "@/data/hotels/hotels";
@@ -115,7 +115,7 @@ const HotelsPage = () => {
                 target="_blank"
               >
                 <div className="listing-v1-slot__img">
-                  <Image
+                  <ExportedImage
                     src={hotel.imgSrc}
                     alt={hotel.altText}
                     width={400}

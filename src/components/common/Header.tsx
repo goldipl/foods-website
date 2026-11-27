@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { HiChevronDown, HiChevronRight } from "react-icons/hi2";
 
 import {
@@ -125,12 +125,13 @@ const Header = () => {
       >
         <div className="site-header__inner">
           <Link href="/" className="site-header__logo" onClick={handleCloseAll}>
-            <Image
+            <ExportedImage
               src={HEADER_ICONS.logo}
               alt="Bezglutenowa Karola - strona główna"
               height={112}
               width={372}
               priority
+              placeholder="empty"
             />
           </Link>
 
@@ -196,7 +197,7 @@ const Header = () => {
                                         <i />
                                         <i />
                                       </span>
-                                      <Image
+                                      <ExportedImage
                                         src={feature.image}
                                         alt={feature.alt}
                                         sizes="220px"

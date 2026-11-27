@@ -34,3 +34,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# next-image-export-optimizer (generated WebP variants + cache)
+nextImageExportOptimizer/
+next-image-export-optimizer-hashes.json

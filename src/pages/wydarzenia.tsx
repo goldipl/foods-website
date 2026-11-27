@@ -1,7 +1,7 @@
 import "@/sass/main.scss";
 import { useMemo, useState } from "react";
 import Head from "next/head";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import { CiInstagram } from "react-icons/ci";
 import { eventsData } from "@/data/events/events";
@@ -134,7 +134,7 @@ const EventsPage = () => {
                 target="_blank"
               >
                 <div className="listing-v1-slot__img">
-                  <Image
+                  <ExportedImage
                     src={event.imgSrc}
                     alt={event.altText}
                     width={400}

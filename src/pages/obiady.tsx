@@ -1,6 +1,5 @@
 import "@/sass/main.scss";
 import Head from "next/head";
-import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import { CiInstagram } from "react-icons/ci";

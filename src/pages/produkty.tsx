@@ -1,7 +1,7 @@
 import "@/sass/main.scss";
 import { useMemo, useState } from "react";
 import Head from "next/head";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import {
   HiArrowRight,
@@ -109,7 +109,7 @@ const ProductsPage = () => {
 
               <div className="products-page__hero-art" aria-hidden="true">
                 <div className="products-page__hero-image">
-                  <Image
+                  <ExportedImage
                     src={products[0].imgSrc}
                     alt=""
                     fill
@@ -204,7 +204,7 @@ const ProductsPage = () => {
                     aria-label={`${product.description} — otwórz materiał na Instagramie`}
                   >
                     <div className="products-page__card-image">
-                      <Image
+                      <ExportedImage
                         src={product.imgSrc}
                         alt={product.altText}
                         width={480}

@@ -1,5 +1,5 @@
 import React, { useMemo, useState, useEffect, useRef } from "react";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import { CiInstagram } from "react-icons/ci";
 
@@ -213,7 +213,7 @@ const RecipeListWithSearch: React.FC<Props> = ({ data, listId }) => {
             target="_blank"
           >
             <div className="listing-v1-slot__img">
-              <Image
+              <ExportedImage
                 src={recipe.imgSrc}
                 alt={recipe.altText}
                 width={400}

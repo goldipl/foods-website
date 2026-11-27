@@ -1,7 +1,7 @@
 import "@/sass/main.scss";
 import { useMemo, useState } from "react";
 import Head from "next/head";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import { CiInstagram } from "react-icons/ci";
 import { europeanRestaurantsData } from "@/data/restaurants/european-restaurants";
@@ -124,7 +124,7 @@ const EuropeanRestaurantsData = () => {
                 target="_blank"
               >
                 <div className="listing-v1-slot__img">
-                  <Image
+                  <ExportedImage
                     src={recipe.imgSrc}
                     alt={recipe.altText}
                     width={400}

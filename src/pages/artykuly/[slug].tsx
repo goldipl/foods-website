@@ -1,6 +1,7 @@
 import "@/sass/main.scss";
 import Head from "next/head";
-import Image, { StaticImageData } from "next/image";
+import ExportedImage from "next-image-export-optimizer";
+import type { StaticImageData } from "next/image";
 import Link from "next/link";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { useState } from "react";
@@ -38,7 +39,7 @@ const ArticleInstagramLink = ({
   >
     <div className="article-instagram-link__inner">
       <div className="article-instagram-link__image">
-        <Image src={image} alt={caption} width={120} height={120} priority />
+        <ExportedImage src={image} alt={caption} width={120} height={120} priority />
       </div>
       <div className="article-instagram-link__content">
         <svg
@@ -78,7 +79,7 @@ const ArticleGallery = ({
           onClick={() => onThumbnailClick(index)}
           aria-label={`Otwórz zdjęcie ${index + 1} z galerii`}
         >
-          <Image
+          <ExportedImage
             src={src}
             alt={`Zdjęcie galerii ${index + 1}`}
             width={480}
@@ -149,7 +150,7 @@ const ArticleDetailPage = ({ article }: ArticlePageProps) => {
       <main>
         <section id="article-page" className="article-page">
           <div className="article-hero">
-            <Image
+            <ExportedImage
               src={article.image}
               alt={article.title}
               width={1400}
@@ -229,7 +230,7 @@ const ArticleDetailPage = ({ article }: ArticlePageProps) => {
                     ×
                   </button>
                   <div className="article-gallery-modal__image">
-                    <Image
+                    <ExportedImage
                       src={galleryState.images[galleryState.index]}
                       alt={`Zdjęcie ${galleryState.index + 1} z galerii`}
                       width={1200}
@@ -277,7 +278,7 @@ const ArticleDetailPage = ({ article }: ArticlePageProps) => {
                       className="article-related-item"
                     >
                       <div className="article-related-item__img">
-                        <Image
+                        <ExportedImage
                           src={item.image}
                           alt={item.title}
                           width={110}

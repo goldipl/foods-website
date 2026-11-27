@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
-import Image, { StaticImageData } from "next/image";
+import ExportedImage from "next-image-export-optimizer";
+import type { StaticImageData } from "next/image";
 import Link from "next/link";
 import {
   FiArrowRight,
@@ -208,7 +209,7 @@ const MealPlanPlanner = () => {
                           rel="noreferrer"
                         >
                           <div className="meal-planner__meal-image">
-                            <Image
+                            <ExportedImage
                               src={meal.imgSrc}
                               alt={meal.altText}
                               fill

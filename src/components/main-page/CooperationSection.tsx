@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import { HiArrowUpRight, HiOutlineEnvelope } from "react-icons/hi2";
 import { PiHandshake } from "react-icons/pi";
@@ -32,7 +32,7 @@ const CooperationSection = () => {
                 className="partner-card"
               >
                 <span className="partner-card__logo">
-                  <Image
+                  <ExportedImage
                     src={partner.src}
                     alt={`${partner.name} logo`}
                     sizes="(max-width: 560px) 45vw, 260px"

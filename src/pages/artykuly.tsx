@@ -2,7 +2,7 @@ import "@/sass/main.scss";
 import { useMemo, useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { HiArrowRight, HiBookOpen, HiSparkles } from "react-icons/hi2";
 import Topbar from "@/components/common/Topbar";
 import Header from "@/components/common/Header";
@@ -94,7 +94,7 @@ const ArticlesPage = () => {
 
               <div className="articles-page__hero-art" aria-hidden="true">
                 <div className="articles-page__hero-image">
-                  <Image
+                  <ExportedImage
                     src={articlesHeroImage}
                     alt=""
                     fill
@@ -135,7 +135,7 @@ const ArticlesPage = () => {
                   className="article-card"
                 >
                   <div className="article-card__img">
-                    <Image
+                    <ExportedImage
                       src={article.image}
                       alt={article.title}
                       width={420}

@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, EffectFade, A11y } from "swiper/modules";
 import {
@@ -45,7 +45,7 @@ const HeroSlide: React.FC<{ slide: HeroSlideItem; index: number }> = ({
         </div>
       </div>
       <div className="hero-slide__media">
-        <Image
+        <ExportedImage
           src={slide.image}
           alt={slide.alt}
           fill

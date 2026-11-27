@@ -134,12 +134,13 @@ Each game includes a different gameplay style and is designed to make the gluten
 - Swiper
 - react-icons
 - sharp
+- next-image-export-optimizer (WebP image generation for the static export)
 
 ## Local setup
 
 ### Requirements
 
-- Node.js 18+ (recommended 18.18+ or newer)
+- Node.js 20.9+
 - npm / yarn / pnpm / bun
 
 ### Installation
@@ -167,6 +168,12 @@ http://localhost:3000
 ```bash
 npm run build
 ```
+
+The build runs `next build` (static export to `out/`) and then `next-image-export-optimizer`, which converts every JPG/PNG (statically imported images and images in `public/img`) into resized WebP variants. The `<ExportedImage />` component serves them via `srcset`, so the browser downloads only the size it needs. Generated files land in `nextImageExportOptimizer/` folders (git-ignored) and are cached by hash, so only new or changed images are processed on later builds. The first build takes several minutes.
+
+In `npm run dev` the WebP variants may not exist yet; the component then falls back to the original image automatically.
+
+Use `ExportedImage` from `next-image-export-optimizer` instead of `next/image` for new images.
 
 ### Production server
 

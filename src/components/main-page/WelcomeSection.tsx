@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import React, { useState } from "react";
 import { HiChevronDown } from "react-icons/hi2";
 import SectionHeader from "@/components/common/SectionHeader";
@@ -13,7 +13,7 @@ const WelcomeSection = () => {
         <div className="welcome-section__grid">
           <div className="welcome-section__media">
             <div className="welcome-section__photo">
-              <Image
+              <ExportedImage
                 src={karolaImg}
                 alt="bezglutenowa Karola"
                 width={400}
