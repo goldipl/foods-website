@@ -181,6 +181,8 @@ npm run lint
 npm run export
 ```
 
+The project does not include automated unit tests; the key verification step is a local build and linting.
+
 ## Project structure
 
 ```text
@@ -208,7 +210,7 @@ foods-website/
 ├── tsconfig.json                 # TypeScript configuration
 ├── next.config.mjs               # Next.js configuration
 ├── README.md                     # project documentation
-├── LICENSE.md                    # project license
+├── LICENSE                       # project license (view only)
 └── .gitignore                    # files ignored by Git
 ```
 
@@ -243,24 +245,9 @@ The project is prepared for deployment on platforms supporting Next.js, primaril
 - Netlify
 - other hosts supporting Node.js and Next.js
 
-## Contributing
-
-Contributions and improvements are welcome.
-
-1. Fork the repository.
-2. Create a feature branch.
-3. Make your changes and check them locally.
-4. Open a pull request with a description of the changes.
-
-Note that the project currently does not include automated unit tests; the key verification step is local build and linting.
-
 ## License
 
-This project is distributed under the following license:
-
-Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
-
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+**View only. All rights reserved.** This repository is public so the project can be reviewed as part of a portfolio. It is not open source. Copying, reproducing, distributing, modifying, deploying or using the code, design or content in any other project, including for AI training, is prohibited without prior written permission. The "Bezglutenowa Karola" name, logo, photos, texts and recipes belong to Karolina Wontorska-Godlewska and may not be reused without permission. See [LICENSE](LICENSE) for the full terms.
 
 ## Contact
 

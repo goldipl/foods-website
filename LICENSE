@@ -1,0 +1,136 @@
+LICENCJA – WYŁĄCZNIE DO PODGLĄDU / VIEW-ONLY LICENSE
+Bezglutenowa Karola – Website (foods-website)
+
+Copyright (c) 2024–2026 mgodlewskidev.pl. Wszelkie prawa zastrzeżone. All rights reserved.
+
+================================================================================
+WERSJA POLSKA
+================================================================================
+
+1. Przedmiot licencji
+   Niniejsza licencja dotyczy całej zawartości tego repozytorium, w tym kodu
+   źródłowego, struktury projektu, projektu graficznego, układu stron, stylów,
+   skryptów, gier, treści, przepisów, zdjęć, logo i innych zasobów marki
+   (dalej: „Projekt”).
+
+2. Co jest dozwolone
+   Projekt jest udostępniony publicznie wyłącznie w celu prezentacji portfolio.
+   Dozwolone jest jedynie przeglądanie Projektu w serwisie, w którym został
+   opublikowany (np. GitHub), w celu zapoznania się z nim.
+
+3. Czego zabrania się
+   Bez uprzedniej pisemnej zgody właściciela praw zabrania się w szczególności:
+   a) kopiowania i powielania Projektu w całości lub w części, w tym
+      pobierania go w celu dalszego wykorzystania;
+   b) rozpowszechniania, publikowania, udostępniania, sprzedaży, użyczania
+      i sublicencjonowania Projektu;
+   c) modyfikowania Projektu i tworzenia na jego podstawie utworów zależnych
+      (opracowań), w tym wykorzystywania go jako szablonu lub punktu wyjścia
+      dla innych stron i aplikacji;
+   d) uruchamiania i wdrażania Projektu lub jego części na jakimkolwiek
+      serwerze, hostingu lub w innym środowisku publicznym;
+   e) wykorzystywania Projektu w celach komercyjnych i niekomercyjnych;
+   f) usuwania lub zmieniania informacji o prawach autorskich i tej licencji;
+   g) wykorzystywania Projektu do trenowania, dostrajania lub ewaluacji modeli
+      sztucznej inteligencji i uczenia maszynowego.
+
+4. Zasoby marki i treści
+   Nazwa, logo, zdjęcia, teksty, przepisy i pozostałe zasoby marki
+   „Bezglutenowa Karola” należą do Karoliny Wontorskiej-Godlewskiej i nie mogą
+   być wykorzystywane bez uzyskania zgody, niezależnie od postanowień tej
+   licencji.
+
+5. Regulaminy serwisów
+   Jeżeli regulamin serwisu, w którym opublikowano Projekt (np. GitHub),
+   przyznaje użytkownikom określone uprawnienia (np. przeglądanie lub
+   utworzenie kopii typu „fork” w obrębie serwisu), uprawnienia te są
+   ograniczone wyłącznie do zakresu wymaganego przez ten regulamin i nie dają
+   żadnych innych praw do Projektu.
+
+6. Materiały podmiotów trzecich
+   Biblioteki i narzędzia zewnętrzne używane w Projekcie (wymienione
+   w package.json), czcionki (Poppins, Zen Maru Gothic) oraz należące do
+   podmiotów trzecich znaki towarowe, logo i zdjęcia produktów, lokali
+   i partnerów podlegają własnym licencjom i prawom ich właścicieli i nie są
+   objęte tą licencją.
+
+7. Brak gwarancji
+   Projekt jest udostępniony „tak jak jest”, bez jakichkolwiek gwarancji.
+   Właściciel praw nie ponosi odpowiedzialności za szkody wynikające z jego
+   użycia.
+
+8. Naruszenia
+   Każde wykorzystanie Projektu wykraczające poza punkt 2 stanowi naruszenie
+   praw autorskich w rozumieniu ustawy z dnia 4 lutego 1994 r. o prawie
+   autorskim i prawach pokrewnych i może skutkować odpowiedzialnością cywilną
+   oraz karną.
+
+9. Zgoda na wykorzystanie
+   W sprawie zgody na wykorzystanie Projektu prosimy o kontakt przez stronę
+   https://mgodlewskidev.pl/
+
+================================================================================
+ENGLISH VERSION
+================================================================================
+
+1. Scope
+   This license covers the entire contents of this repository, including the
+   source code, project structure, visual design, page layouts, styles,
+   scripts, games, content, recipes, photographs, logo and other brand assets
+   (the "Project").
+
+2. Permitted use
+   The Project is made publicly available for portfolio purposes only. You may
+   only view the Project on the platform where it is published (e.g. GitHub)
+   in order to review it.
+
+3. Prohibited use
+   Without the copyright holder's prior written permission, you may not,
+   in particular:
+   a) copy or reproduce the Project, in whole or in part, including
+      downloading it for further use;
+   b) distribute, publish, share, sell, lend or sublicense the Project;
+   c) modify the Project or create derivative works based on it, including
+      using it as a template or starting point for other websites or
+      applications;
+   d) run or deploy the Project, or any part of it, on any server, hosting
+      service or other public environment;
+   e) use the Project for any commercial or non-commercial purpose;
+   f) remove or alter any copyright notice or this license;
+   g) use the Project to train, fine-tune or evaluate artificial intelligence
+      or machine learning models.
+
+4. Brand assets and content
+   The "Bezglutenowa Karola" name, logo, photographs, texts, recipes and other
+   brand assets belong to Karolina Wontorska-Godlewska and may not be used
+   without permission, regardless of the terms of this license.
+
+5. Platform terms of service
+   Where the terms of service of the platform hosting the Project (e.g. GitHub)
+   grant users certain rights (such as viewing or forking within the
+   platform), those rights are limited strictly to the scope required by those
+   terms and grant no other rights to the Project.
+
+6. Third-party materials
+   Third-party libraries and tools used by the Project (listed in
+   package.json), fonts (Poppins, Zen Maru Gothic), and trademarks, logos and
+   photographs of products, venues and partners owned by third parties are
+   subject to their own licenses and their owners' rights, and are not covered
+   by this license.
+
+7. No warranty
+   The Project is provided "as is", without warranty of any kind. The
+   copyright holder is not liable for any damages arising from its use.
+
+8. Infringement
+   Any use of the Project beyond section 2 constitutes copyright infringement
+   under the Polish Act of 4 February 1994 on Copyright and Related Rights and
+   applicable international law, and may result in civil and criminal
+   liability.
+
+9. Permission requests
+   To request permission to use the Project, please get in touch via
+   https://mgodlewskidev.pl/
+
+In case of any discrepancy between the language versions, the Polish version
+prevails.
