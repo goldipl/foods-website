@@ -17,6 +17,8 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 
 const AUTOPLAY_DELAY = 5500;
+// Crossfade duration; also drives --hero-fade-speed in _hero.scss
+const FADE_SPEED = 700;
 
 const formatIndex = (value: number) => String(value).padStart(2, "0");
 
@@ -62,7 +64,12 @@ const Hero: React.FC = () => {
   const progressRef = useRef<HTMLSpanElement>(null);
 
   return (
-    <section id="hero" className="hero" aria-label="Polecane na stronie">
+    <section
+      id="hero"
+      className="hero"
+      aria-label="Polecane na stronie"
+      style={{ "--hero-fade-speed": `${FADE_SPEED}ms` } as React.CSSProperties}
+    >
       <span className="hero__orb hero__orb--one" aria-hidden="true" />
       <span className="hero__orb hero__orb--two" aria-hidden="true" />
       <div className="hero-wrapper">
@@ -71,7 +78,7 @@ const Hero: React.FC = () => {
             slidesPerView={1}
             effect="fade"
             fadeEffect={{ crossFade: true }}
-            speed={700}
+            speed={FADE_SPEED}
             loop
             navigation={{
               prevEl: ".hero-controls__btn--prev",

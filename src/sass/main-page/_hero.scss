@@ -192,9 +192,31 @@
     .hero-slide__content > :nth-child(4) {
       animation-delay: 0.24s;
     }
+  }
 
+  // Slow zoom-out of the photo. Done with a transition instead of a keyframe
+  // animation so the image never snaps when Swiper moves the active class:
+  // - the static HTML already renders the zoomed-in state, so hydration
+  //   doesn't pop the first photo from scale(1) to scale(1.06),
+  // - the outgoing slide keeps its current zoom while it fades out and only
+  //   resets once the fade is over and it's invisible.
+  .swiper-slide .hero-slide__media img {
+    transform: scale(1.06);
+    transition: transform 0s linear var(--hero-fade-speed, 0.7s);
+  }
+
+  .swiper-slide-active .hero-slide__media img {
+    transform: scale(1);
+    transition: transform 6s ease-out;
+  }
+
+  // Keeps the photo layers of the current and neighbouring slides ready, so
+  // promoting them doesn't hitch the start of the fade
+  .swiper-slide-active,
+  .swiper-slide-prev,
+  .swiper-slide-next {
     .hero-slide__media img {
-      animation: heroZoom 6s ease-out both;
+      will-change: transform;
     }
   }
 
@@ -354,15 +376,6 @@
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes heroZoom {
-  from {
-    transform: scale(1.06);
-  }
-  to {
-    transform: scale(1);
   }
 }
 
@@ -672,8 +685,12 @@
 @media (prefers-reduced-motion: reduce) {
   #hero .hero__orb,
   #hero .hero-stage__food,
-  #hero .swiper-slide-active .hero-slide__content > *,
-  #hero .swiper-slide-active .hero-slide__media img {
+  #hero .swiper-slide-active .hero-slide__content > * {
     animation: none;
+  }
+
+  #hero .swiper-slide .hero-slide__media img {
+    transform: none;
+    transition: none;
   }
 }
