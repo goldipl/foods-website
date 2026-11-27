@@ -200,13 +200,18 @@
   //   doesn't pop the first photo from scale(1) to scale(1.06),
   // - the outgoing slide keeps its current zoom while it fades out and only
   //   resets once the fade is over and it's invisible.
+  // The tiny rotate() is invisible but stops Firefox (WebRender) from
+  // snapping a pure scale transform to whole pixels on every frame, which made
+  // the slow zoom shake there. Don't go below 0.02deg: a smaller angle can be
+  // rounded down to "no rotation" and the snapping comes back.
   .swiper-slide .hero-slide__media img {
-    transform: scale(1.06);
-    transition: transform 0s linear var(--hero-fade-speed, 0.7s);
+    transform: scale(1.06) rotate(0.02deg);
+    // Small margin so the reset never lands on the last frame of the fade
+    transition: transform 0s linear calc(var(--hero-fade-speed, 0.7s) + 0.1s);
   }
 
   .swiper-slide-active .hero-slide__media img {
-    transform: scale(1);
+    transform: scale(1) rotate(0.02deg);
     transition: transform 6s ease-out;
   }
 
